@@ -16,7 +16,7 @@
                         <div class="experience-circle">
                             <div class="circle-body"></div>
                             <div class="circle-option" :class="'e_index_'+experience_index">
-                                <a class="text-circle-option -left active" @click="experience_index = 0">體驗</a>
+                                <a class="text-circle-option -left" @click="experience_index = 0" :class="active">體驗</a>
                                 <a class="text-circle-option -top" @click="experience_index = 1">鍋物</a>
                                 <a class="text-circle-option -right" @click="experience_index = 2">咖啡</a>
                                 <a class="text-circle-option -bottom" @click="experience_index = 3">舒體</a>
@@ -219,7 +219,6 @@
             border-left-color: transparent
             z-index: -2
         .circle-option
-            transform-origin: 50% 50%
             transition: all 2s
             transform: rotate(0)
             &.active
@@ -227,6 +226,9 @@
                 transition: opacity .3s
             .text-circle-option
                 position: absolute
+                &:hover
+                    cursor: pointer
+                    color: #f26d23
                 &.-top
                     top: -50px
                     left: 50%
@@ -235,10 +237,10 @@
                     left: 50%
                 &.-right
                     top: 50%
-                    right: -80px
+                    right: -50px
                 &.-left
                     top: 50%
-                    left: 0
+                    left: -50px
                 a
                     word-break: keep-all
             @for $i from 0 through 3
@@ -418,18 +420,18 @@
                         link_text: '探索橘色體驗',
                     },
                     {
-                        big_title: '橘色舒體',
-                        title: '<span class="fs-inherit text-orange">橘色 </span>舒體',
-                        text: '獨一無二的橘色價值<br/>創造獨一無二的體驗',
-                        link_url: '/',
-                        link_text: '探索橘色體驗',
-                    },
-                    {
                         big_title: '橘色咖啡',
                         title: '<span class="fs-inherit text-orange">橘色 </span>咖啡',
                         text: '獨一無二的橘色價值<br/>創造獨一無二的體驗',
                         link_url: '/',
                         link_text: '探索橘色咖啡',
+                    },
+                    {
+                        big_title: '橘色舒體',
+                        title: '<span class="fs-inherit text-orange">橘色 </span>舒體',
+                        text: '獨一無二的橘色價值<br/>創造獨一無二的體驗',
+                        link_url: '/',
+                        link_text: '探索橘色體驗',
                     },
                 ],
                 experience_index: 0,
