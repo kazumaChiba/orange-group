@@ -16,10 +16,10 @@
                         <div class="experience-circle">
                             <div class="circle-body"></div>
                             <div class="circle-option" :class="'e_index_'+experience_index">
-                                <a class="text-circle-option -left" @click="experience_index = 0" :class="active">體驗</a>
-                                <a class="text-circle-option -top" @click="experience_index = 1">鍋物</a>
-                                <a class="text-circle-option -right" @click="experience_index = 2">咖啡</a>
-                                <a class="text-circle-option -bottom" @click="experience_index = 3">舒體</a>
+                                <a class="text-circle-option -left" @click="experience_index = 0" :class="experience_index == 0 ? 'active' : ''">體驗</a>
+                                <a class="text-circle-option -top" @click="experience_index = 1" :class="experience_index == 1 ? 'active' : ''">鍋物</a>
+                                <a class="text-circle-option -right" @click="experience_index = 2" :class="experience_index == 2 ? 'active' : ''">咖啡</a>
+                                <a class="text-circle-option -bottom" @click="experience_index = 3" :class="experience_index == 3 ? 'active' : ''">舒體</a>
                             </div>
                         </div>
                         <div class="experience-inner position-relative">
@@ -123,7 +123,7 @@
                                 </div>
                             </div>
                             <div class="footer footer-social position-relative">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><font-awesome-icon icon="facebook" /></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
                                 <a href="#"><i class="fab fa-youtube"></i></a>
                                 <a href="#"><i class="fab fa-google-plus-g"></i></a>
@@ -243,10 +243,15 @@
                     left: -50px
                 a
                     word-break: keep-all
+                &.active
+                    opacity: 0
+                    transition: opacity 1s  
+                    transition-delay: .5s
             @for $i from 0 through 3
                 &.e_index_#{$i}
                     transform: rotate($i*(-90deg))
                     a
+                        transition: all .3s 
                         transform: rotate($i*90deg) !important
 
     #block-foods
