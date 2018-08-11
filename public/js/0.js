@@ -433,7 +433,7 @@ exports = module.exports = __webpack_require__(52)(false);
 
 
 // module
-exports.push([module.i, "\n#app .logo {\n  height: 150px;\n}\n#app #header {\n  top: 0;\n  z-index: 999999;\n  width: 100%;\n}\n#app .main-title {\n  line-height: 35px;\n}\n#app .main-title .sub-title {\n    letter-spacing: 16px;\n    font-weight: 400;\n}\n#app .section-pd {\n  padding: 100px 0;\n}\n#app .fade-enter-active, #app .fade-leave-active {\n  -webkit-transition: opacity .5s;\n  transition: opacity .5s;\n}\n#app .fade-enter, #app .fade-leave-to {\n  opacity: 0;\n}\n.bg-black-cover:before {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.7);\n  left: 0;\n}\n#content-experience:before {\n  position: absolute;\n  width: 50%;\n  height: 100vh;\n  background: black;\n  content: \"\";\n  left: 0;\n  opacity: 0.6;\n  top: calc(50% - 50vh);\n  z-index: -1;\n  content: \"\";\n  word-break: keep-all;\n}\n#content-experience .big_title {\n  font-size: 220px;\n  color: rgba(255, 255, 255, 0.2);\n  position: absolute;\n  left: 0;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  width: 50%;\n  word-break: keep-all;\n  overflow: hidden;\n}\n#content-experience .experience-inner {\n  width: 350px;\n  margin: 0 auto;\n  text-align: left;\n  font-weight: 300;\n  top: 100px;\n}\n#content-experience .experience-inner h5 {\n    letter-spacing: 4px;\n    font-weight: 300;\n}\n#content-experience .experience-inner .left-line:before {\n    content: \"\";\n    display: inline-block;\n    width: 20px;\n    height: 5px;\n    background: #f26d23;\n    margin-right: 10px;\n    vertical-align: middle;\n}\n#content-experience .circle-option, #content-experience .circle-body {\n  position: absolute;\n  width: 500px;\n  height: 500px;\n  top: calc(100% - 250px);\n  left: calc(50% - 250px);\n}\n#content-experience .circle-body {\n  border-radius: 500px;\n  border: 30px solid rgba(255, 113, 34, 0.76);\n  border-left-color: transparent;\n  z-index: -2;\n}\n#content-experience .circle-option {\n  -webkit-transition: all 2s;\n  transition: all 2s;\n  -webkit-transform: rotate(0);\n          transform: rotate(0);\n}\n#content-experience .circle-option.active {\n    opacity: 0;\n    -webkit-transition: opacity .3s;\n    transition: opacity .3s;\n}\n#content-experience .circle-option .text-circle-option {\n    position: absolute;\n}\n#content-experience .circle-option .text-circle-option:hover {\n      cursor: pointer;\n      color: #f26d23;\n}\n#content-experience .circle-option .text-circle-option.-top {\n      top: -50px;\n      left: 50%;\n}\n#content-experience .circle-option .text-circle-option.-bottom {\n      bottom: -50px;\n      left: 50%;\n}\n#content-experience .circle-option .text-circle-option.-right {\n      top: 50%;\n      right: -50px;\n}\n#content-experience .circle-option .text-circle-option.-left {\n      top: 50%;\n      left: -50px;\n}\n#content-experience .circle-option .text-circle-option a {\n      word-break: keep-all;\n}\n#content-experience .circle-option .text-circle-option.active {\n      opacity: 0;\n      -webkit-transition: opacity 1s;\n      transition: opacity 1s;\n      -webkit-transition-delay: .5s;\n              transition-delay: .5s;\n}\n#content-experience .circle-option.e_index_0 {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n}\n#content-experience .circle-option.e_index_0 a {\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      -webkit-transform: rotate(0deg) !important;\n              transform: rotate(0deg) !important;\n}\n#content-experience .circle-option.e_index_1 {\n    -webkit-transform: rotate(-90deg);\n            transform: rotate(-90deg);\n}\n#content-experience .circle-option.e_index_1 a {\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      -webkit-transform: rotate(90deg) !important;\n              transform: rotate(90deg) !important;\n}\n#content-experience .circle-option.e_index_2 {\n    -webkit-transform: rotate(-180deg);\n            transform: rotate(-180deg);\n}\n#content-experience .circle-option.e_index_2 a {\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      -webkit-transform: rotate(180deg) !important;\n              transform: rotate(180deg) !important;\n}\n#content-experience .circle-option.e_index_3 {\n    -webkit-transform: rotate(-270deg);\n            transform: rotate(-270deg);\n}\n#content-experience .circle-option.e_index_3 a {\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      -webkit-transform: rotate(270deg) !important;\n              transform: rotate(270deg) !important;\n}\n#block-foods .line-top:before {\n  content: \"\";\n  background: #f46f1b;\n  width: 100px;\n  height: 1px;\n  display: block;\n  margin-bottom: 30px;\n}\n#block-foods .content-food {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  background-position: center;\n  background-repeat: no-repeat;\n  padding: 0 100px;\n}\n#block-foods .content-food .more-food-info {\n    width: 100px;\n    height: 100px;\n    display: inline-block;\n    border-radius: 100%;\n    background-position: center;\n    background-size: cover;\n    cursor: pointer;\n    margin-right: 25px;\n}\n#block-foods .content-food > div {\n    position: relative;\n    z-index: 2;\n}\n#block-foods .content-food.-left:after {\n    content: \"\";\n    position: absolute;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.6);\n}\n#block-foods .content-food.-right:before, #block-foods .content-food.-right:after {\n    content: \"\";\n    position: absolute;\n    border-radius: 100%;\n}\n#block-foods .content-food.-right:before {\n    width: 850px;\n    height: 850px;\n    background: rgba(242, 108, 35, 0.1);\n    right: -540px;\n    bottom: -480px;\n}\n#block-foods .content-food.-right:after {\n    width: 100px;\n    height: 100px;\n    background: rgba(0, 0, 0, 0.22);\n    right: -70px;\n    bottom: 300px;\n}\n#block-foods .content-food.-right .food-info-inner {\n    height: 500px;\n    width: 500px;\n    background: #f26d23;\n    border-radius: 100%;\n    -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);\n            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);\n}\n#block-foods .content-food.-right .food-info-inner .text-food-info {\n      font-weight: 300;\n      letter-spacing: 2px;\n}\n#block-foods .content-food.-right .loader {\n    position: absolute;\n    width: 50vw;\n    height: 100vh;\n    stroke-linecap: round;\n    stroke-width: 5;\n    fill: none;\n    left: 0;\n    top: 120px;\n}\n#block-foods .content-food.-right .loader .internal-circle {\n      stroke: #f26c23;\n      stroke-dasharray: 60%,10%,25%;\n      opacity: .4;\n      -webkit-animation: internal 1.5s ease-in-out alternate;\n              animation: internal 1.5s ease-in-out alternate;\n      -webkit-animation-play-state: paused;\n              animation-play-state: paused;\n      -webkit-transform: rotate(0);\n              transform: rotate(0);\n      -webkit-transform-origin: 350px 400px;\n              transform-origin: 350px 400px;\n}\n#block-foods.active .content-food.-right .internal-circle {\n  -webkit-animation-play-state: running;\n          animation-play-state: running;\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\n@-webkit-keyframes internal {\n100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n}\n}\n@keyframes internal {\n100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n}\n}\n#block-brands {\n  background-repeat: no-repea;\n  background-size: cover;\n}\n#block-brands .container {\n    z-index: 2;\n}\n#block-brands .container .content-brands .info-brands {\n      width: 300px;\n      height: 300px;\n      background: rgba(242, 108, 35, 0.4);\n      border: 1px solid white;\n      padding: 0 40px;\n      font-size: 30px;\n}\n#block-brands .container .text-brands {\n      font-size: 30px;\n      letter-spacing: 20px;\n      line-height: 45px;\n      font-weight: lighter;\n}\n#block-brands .container .text-brands .text-orange {\n        letter-spacing: 20px;\n}\n#block-news:before {\n  content: \"\";\n  background-size: 25px 25px;\n  background-image: radial-gradient(#0000000d 20%, transparent 15%), radial-gradient(#0000000d 20%, transparent 20%);\n  background-position: 10px 25px;\n  position: absolute;\n  width: 100%;\n  height: 400px;\n  left: 0;\n  top: 0;\n}\n#block-news .news-body .category-items {\n  cursor: pointer;\n  -webkit-transition: all .3s;\n  transition: all .3s;\n}\n#block-news .news-body .category-items:hover {\n    color: #f26e22;\n}\n#block-news .news-body .news-list {\n  height: 800px;\n}\n#block-news .news-body .news-list .news-item {\n    width: 30%;\n}\n#block-news .news-body .news-list .news-item .news-head {\n      padding-top: 110%;\n}\n#block-news .news-body .news-list .news-item .news-title {\n      color: black;\n}\n#footer:before {\n  background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n  position: relative;\n  z-index: 2;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n    letter-spacing: 5px;\n}\n", ""]);
+exports.push([module.i, "\n#app .logo {\n  height: 150px;\n}\n#app #header {\n  top: 0;\n  z-index: 999999;\n  width: 100%;\n}\n#app .main-title {\n  line-height: 35px;\n}\n#app .main-title .sub-title {\n    letter-spacing: 16px;\n    font-weight: 400;\n}\n#app .section-pd {\n  padding: 100px 0;\n}\n#app .fade-enter-active, #app .fade-leave-active {\n  -webkit-transition: opacity .5s;\n  transition: opacity .5s;\n}\n#app .fade-enter, #app .fade-leave-to {\n  opacity: 0;\n}\n.bg-black-cover:before {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.7);\n  left: 0;\n}\n#content-experience:before {\n  position: absolute;\n  width: 50%;\n  height: 100vh;\n  background: black;\n  content: \"\";\n  left: 0;\n  opacity: 0.6;\n  top: calc(50% - 50vh);\n  z-index: -1;\n  content: \"\";\n  word-break: keep-all;\n}\n#content-experience .big_title {\n  font-size: 220px;\n  color: rgba(255, 255, 255, 0.2);\n  position: absolute;\n  left: 0;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  width: 50%;\n  word-break: keep-all;\n  overflow: hidden;\n}\n#content-experience .experience-inner {\n  width: 350px;\n  margin: 0 auto;\n  text-align: left;\n  font-weight: 300;\n  top: 100px;\n}\n#content-experience .experience-inner h5 {\n    letter-spacing: 4px;\n    font-weight: 300;\n}\n#content-experience .experience-inner .left-line:before {\n    content: \"\";\n    display: inline-block;\n    width: 20px;\n    height: 5px;\n    background: #f26d23;\n    margin-right: 10px;\n    vertical-align: middle;\n}\n#content-experience .circle-option, #content-experience .circle-body {\n  position: absolute;\n  width: 500px;\n  height: 500px;\n  top: calc(100% - 250px);\n  left: calc(50% - 250px);\n}\n#content-experience .circle-body {\n  border-radius: 500px;\n  border: 30px solid rgba(255, 113, 34, 0.76);\n  border-left-color: transparent;\n  z-index: -2;\n}\n#content-experience .circle-option {\n  -webkit-transition: all 2s;\n  transition: all 2s;\n  -webkit-transform: rotate(0);\n          transform: rotate(0);\n}\n#content-experience .circle-option.active {\n    opacity: 0;\n    -webkit-transition: opacity .3s;\n    transition: opacity .3s;\n}\n#content-experience .circle-option .text-circle-option {\n    position: absolute;\n}\n#content-experience .circle-option .text-circle-option:hover {\n      cursor: pointer;\n      color: #f26d23;\n}\n#content-experience .circle-option .text-circle-option.-top {\n      top: -50px;\n      left: 50%;\n}\n#content-experience .circle-option .text-circle-option.-bottom {\n      bottom: -50px;\n      left: 50%;\n}\n#content-experience .circle-option .text-circle-option.-right {\n      top: 50%;\n      right: -50px;\n}\n#content-experience .circle-option .text-circle-option.-left {\n      top: 50%;\n      left: -50px;\n}\n#content-experience .circle-option .text-circle-option a {\n      word-break: keep-all;\n}\n#content-experience .circle-option .text-circle-option.active {\n      opacity: 0;\n      -webkit-transition: opacity 1s;\n      transition: opacity 1s;\n      -webkit-transition-delay: .5s;\n              transition-delay: .5s;\n}\n#content-experience .circle-option.e_index_0 {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n}\n#content-experience .circle-option.e_index_0 a {\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      -webkit-transform: rotate(0deg) !important;\n              transform: rotate(0deg) !important;\n}\n#content-experience .circle-option.e_index_1 {\n    -webkit-transform: rotate(-90deg);\n            transform: rotate(-90deg);\n}\n#content-experience .circle-option.e_index_1 a {\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      -webkit-transform: rotate(90deg) !important;\n              transform: rotate(90deg) !important;\n}\n#content-experience .circle-option.e_index_2 {\n    -webkit-transform: rotate(-180deg);\n            transform: rotate(-180deg);\n}\n#content-experience .circle-option.e_index_2 a {\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      -webkit-transform: rotate(180deg) !important;\n              transform: rotate(180deg) !important;\n}\n#content-experience .circle-option.e_index_3 {\n    -webkit-transform: rotate(-270deg);\n            transform: rotate(-270deg);\n}\n#content-experience .circle-option.e_index_3 a {\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      -webkit-transform: rotate(270deg) !important;\n              transform: rotate(270deg) !important;\n}\n#block-foods .line-top:before {\n  content: \"\";\n  background: #f46f1b;\n  width: 100px;\n  height: 1px;\n  display: block;\n  margin-bottom: 30px;\n}\n#block-foods .content-food {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  background-position: center;\n  background-repeat: no-repeat;\n  padding: 0 100px;\n}\n#block-foods .content-food .more-food-info {\n    width: 100px;\n    height: 100px;\n    display: inline-block;\n    border-radius: 100%;\n    background-position: center;\n    background-size: cover;\n    cursor: pointer;\n    margin-right: 25px;\n}\n#block-foods .content-food > div {\n    position: relative;\n    z-index: 2;\n}\n#block-foods .content-food.-left:after {\n    content: \"\";\n    position: absolute;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.6);\n}\n#block-foods .content-food.-right:before, #block-foods .content-food.-right:after {\n    content: \"\";\n    position: absolute;\n    border-radius: 100%;\n}\n#block-foods .content-food.-right:before {\n    width: 850px;\n    height: 850px;\n    background: rgba(242, 108, 35, 0.1);\n    right: -540px;\n    bottom: -480px;\n}\n#block-foods .content-food.-right:after {\n    width: 100px;\n    height: 100px;\n    background: rgba(0, 0, 0, 0.22);\n    right: -70px;\n    bottom: 300px;\n}\n#block-foods .content-food.-right .food-info-inner {\n    height: 500px;\n    width: 500px;\n    background: #f26d23;\n    border-radius: 100%;\n    -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);\n            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);\n}\n#block-foods .content-food.-right .food-info-inner .text-food-info {\n      font-weight: 300;\n      letter-spacing: 2px;\n}\n#block-foods .content-food.-right .loader {\n    position: absolute;\n    width: 50vw;\n    height: 100vh;\n    stroke-linecap: round;\n    stroke-width: 5;\n    fill: none;\n    left: 0;\n    top: 120px;\n}\n#block-foods .content-food.-right .loader .internal-circle {\n      stroke: #f26c23;\n      stroke-dasharray: 60%,10%,25%;\n      opacity: .4;\n      -webkit-animation: internal 1.5s ease-in-out alternate;\n              animation: internal 1.5s ease-in-out alternate;\n      -webkit-animation-play-state: paused;\n              animation-play-state: paused;\n      -webkit-transform: rotate(0);\n              transform: rotate(0);\n      -webkit-transform-origin: 350px 400px;\n              transform-origin: 350px 400px;\n}\n#block-foods.active .content-food.-right .internal-circle {\n  -webkit-animation-play-state: running;\n          animation-play-state: running;\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\n@-webkit-keyframes internal {\n100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n}\n}\n@keyframes internal {\n100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n}\n}\n#block-brands {\n  background-repeat: no-repea;\n  background-size: cover;\n}\n#block-brands .container {\n    z-index: 2;\n}\n#block-brands .container .content-brands .info-brands {\n      width: 300px;\n      height: 300px;\n      background: rgba(242, 108, 35, 0.4);\n      border: 1px solid white;\n      padding: 0 40px;\n      font-size: 30px;\n}\n#block-brands .container .text-brands {\n      font-size: 30px;\n      letter-spacing: 20px;\n      line-height: 45px;\n      font-weight: lighter;\n}\n#block-brands .container .text-brands .text-orange {\n        letter-spacing: 20px;\n}\n#block-news {\n  height: auto !important;\n  overflow: scroll;\n}\n#block-news .fp-tableCell {\n    height: auto !important;\n}\n#block-news:before, #block-news:after {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 400px;\n    left: 0;\n    top: 0;\n}\n#block-news:before {\n    background-size: 25px 25px;\n    background-image: radial-gradient(#0000000d 20%, transparent 15%), radial-gradient(#0000000d 20%, transparent 20%);\n    background-position: 10px 25px;\n}\n#block-news:after {\n    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(white));\n    background: linear-gradient(transparent, white);\n}\n#block-news .container {\n    z-index: 3;\n}\n#block-news .news-body .category-items {\n    cursor: pointer;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n}\n#block-news .news-body .category-items:hover {\n      color: #f26e22;\n}\n#block-news .news-body .news-list {\n    height: 1100px;\n    overflow: hidden;\n}\n#block-news .news-body .news-list .news-item {\n      width: 25%;\n      margin-bottom: 50px;\n      height: 500px;\n      max-height: 500px;\n      overflow: hidden;\n}\n#block-news .news-body .news-list .news-item:nth-child(6n-3) {\n        width: calc(50% - 60px);\n        margin: 0 30px 50px 30px;\n        max-height: 1100px;\n        height: 1100px;\n}\n#block-news .news-body .news-list .news-item:nth-child(6n-3) .news-head {\n          height: auto;\n          -webkit-box-flex: 1;\n              -ms-flex: 1;\n                  flex: 1;\n}\n#block-news .news-body .news-list .news-item .news-head {\n        height: 350px;\n        margin-bottom: 15px;\n}\n#block-news .news-body .news-list .news-item .news-head:before {\n          content: \"\";\n          background: #f26d23;\n          position: absolute;\n          width: 100%;\n          height: 100%;\n          opacity: 0;\n          -webkit-transition: all .3s;\n          transition: all .3s;\n}\n#block-news .news-body .news-list .news-item .news-head:hover:before {\n          opacity: 0.6;\n}\n#block-news .news-body .news-list .news-item .news-head:hover a {\n          display: block;\n}\n#block-news .news-body .news-list .news-item .news-head a {\n          display: none;\n          z-index: 2;\n}\n#block-news .news-body .news-list .news-item .news-head .text-size-1 {\n          font-size: 13px !important;\n}\n#block-news .news-body .news-list .news-item .news-title {\n        color: black;\n}\n#block-news .news-body .news-list .news-item .news-title:hover {\n          color: #f26e22;\n}\n#block-news .btn-orange:hover {\n    background: #f26d23;\n    color: whit;\n}\n#footer:before {\n  background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n  position: relative;\n  z-index: 2;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n    letter-spacing: 5px;\n}\n", ""]);
 
 // exports
 
@@ -447,6 +447,54 @@ exports.push([module.i, "\n#app .logo {\n  height: 150px;\n}\n#app #header {\n  
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_header_menu__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_header_menu___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_components_block_header_menu__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1585,12 +1633,12 @@ var render = function() {
                           ])
                         ]),
                         _vm._v(" "),
-                        _c("div", { staticClass: "news-body" }, [
+                        _c("div", { staticClass: "news-body w-100" }, [
                           _c(
                             "div",
                             {
                               staticClass:
-                                "news-categories d-flex text-size-2 mt-5 mb-3"
+                                "news-categories d-flex justify-content-center text-size-2 mt-5 mb-3"
                             },
                             _vm._l(_vm.newsCategories, function(item, $index) {
                               return _c(
@@ -1608,17 +1656,23 @@ var render = function() {
                             "div",
                             {
                               staticClass:
-                                "news-list d-flex flex-column flex-wrap"
+                                "news-list d-flex flex-column flex-wrap align-items-center"
                             },
                             _vm._l(_vm.newsItems, function(item, $index) {
                               return _c(
                                 "div",
-                                { key: $index, staticClass: "news-item" },
+                                {
+                                  key: $index,
+                                  staticClass: "news-item",
+                                  class:
+                                    $index % 6 == 2 ? "d-flex flex-column" : ""
+                                },
                                 [
                                   _c(
                                     "div",
                                     {
-                                      staticClass: "news-head",
+                                      staticClass:
+                                        "news-head d-flex align-items-center justify-content-center position-relative",
                                       style:
                                         "background: url(" +
                                         item.background +
@@ -1637,27 +1691,33 @@ var render = function() {
                                     1
                                   ),
                                   _vm._v(" "),
-                                  _c("div", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "text-black text-size-1" },
-                                      [_vm._v(_vm._s(item.date))]
-                                    ),
+                                  _c("div", { staticClass: "news-content" }, [
+                                    _c("div", [
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-black text-size-1"
+                                        },
+                                        [_vm._v(_vm._s(item.date))]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-orange text-size-1"
+                                        },
+                                        [_vm._v(_vm._s(item.category))]
+                                      )
+                                    ]),
                                     _vm._v(" "),
-                                    _c(
-                                      "span",
-                                      {
-                                        staticClass: "text-orange text-size-1"
-                                      },
-                                      [_vm._v(_vm._s(item.category))]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("a", {
-                                    staticClass: "news-title",
-                                    attrs: { href: item.link },
-                                    domProps: { innerHTML: _vm._s(item.title) }
-                                  })
+                                    _c("a", {
+                                      staticClass: "news-title",
+                                      attrs: { href: item.link },
+                                      domProps: {
+                                        innerHTML: _vm._s(item.title)
+                                      }
+                                    })
+                                  ])
                                 ]
                               )
                             })

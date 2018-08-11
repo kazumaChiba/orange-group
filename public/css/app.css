@@ -71,11 +71,38 @@ h5 {
   -webkit-transition: all .3s;
   transition: all .3s;
   cursor: pointer;
+  position: relative;
+}
+
+.btn-orange:before {
+  content: "";
+  width: 0;
+  left: 35px;
+  position: absolute;
+  height: 1px;
+  background: white;
+  top: 50%;
 }
 
 .btn-orange:hover {
   background: rgba(0, 0, 0, 0.5);
-  text-decoration: line-through;
+}
+
+.btn-orange:hover:before {
+  width: calc(100% - 70px);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.btn-border {
+  border: 1px solid white;
+  padding: 15px 35px;
+  font-size: 14px;
+}
+
+.btn-border:hover {
+  background: white;
+  color: #f26d23;
 }
 
 .border-radius-100 {
