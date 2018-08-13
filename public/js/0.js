@@ -973,6 +973,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 
+//import SectionBrands from '/components/section-brands'
+
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {

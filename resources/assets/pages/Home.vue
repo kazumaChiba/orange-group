@@ -524,6 +524,8 @@
 
 <script>
     import MenuHeader from 'components/block-header-menu'
+    //import SectionBrands from '/components/section-brands'
+
     export default {
         data: function () {
             return {
