@@ -172,3 +172,7 @@ body,
   z-index: 999999999999;
 }
 
+.section {
+  overflow: hidden;
+}
+
