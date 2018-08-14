@@ -432,7 +432,7 @@ exports = module.exports = __webpack_require__(52)(false);
 
 
 // module
-exports.push([module.i, "\n#app .logo {\n  height: 150px;\n}\n#app #header {\n  top: 0;\n  z-index: 999999;\n  width: 100%;\n}\n#app .fp-scroller {\n  height: 100%;\n}\n#app .main-title {\n  line-height: 35px;\n}\n#app .main-title .sub-title {\n    letter-spacing: 16px;\n    font-weight: 400;\n}\n#app .section-pd {\n  padding: 100px 0;\n}\n#app .fade-enter-active, #app .fade-leave-active {\n  -webkit-transition: opacity .5s;\n  transition: opacity .5s;\n}\n#app .fade-enter-to, #app .fade-leave-to {\n  opacity: 0;\n}\n#app .bg-transition {\n  position: absolute;\n  width: 50%;\n  height: 100%;\n  overflow: hidden;\n}\n#app .bg-transition .bg-inner {\n    background-position-x: 0;\n    background-repeat: no-repeat;\n    background-size: cover;\n    -webkit-transition: all 1s;\n    transition: all 1s;\n    height: 100%;\n    width: 100vw;\n}\n#app .bg-transition.bg-left {\n    -webkit-transform: translateY(-100%);\n            transform: translateY(-100%);\n}\n#app .bg-transition.bg-right {\n    -webkit-transform: translateY(100%);\n            transform: translateY(100%);\n    right: 0;\n}\n#app .bg-transition.bg-right .bg-inner {\n      -webkit-transform: translateX(-50%);\n              transform: translateX(-50%);\n}\n#app .bg-transition.active {\n    -webkit-animation: bgSwitch 1s ease-in-out;\n            animation: bgSwitch 1s ease-in-out;\n}\n@-webkit-keyframes bgSwitch {\n100% {\n    -webkit-transform: translateY(0%);\n            transform: translateY(0%);\n}\n}\n@keyframes bgSwitch {\n100% {\n    -webkit-transform: translateY(0%);\n            transform: translateY(0%);\n}\n}\n.fade-enter-active,\n.fade-leave-active {\n  -webkit-transition: opacity .5s;\n  transition: opacity .5s;\n}\n.fade-enter,\n.fade-leave-to {\n  opacity: 0;\n}\n.bg-black-cover:before {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.7);\n  left: 0;\n}\n.fade-enter-active, .fade-leave-active {\n  -webkit-transition: opacity .5s;\n  transition: opacity .5s;\n}\n.fade-enter, .fade-leave-to {\n  opacity: 0;\n  display: none;\n}\n", ""]);
+exports.push([module.i, "\n#app #fp-nav ul li .fp-tooltip {\n  color: #ccc;\n  opacity: 1;\n  width: auto;\n  font-size: 18px;\n}\n#app .fp-scroller {\n  min-height: 100%;\n}\n#app .logo {\n  height: 150px;\n}\n#app #header {\n  top: 0;\n  z-index: 999999;\n  width: 100%;\n}\n#app .main-title {\n  line-height: 35px;\n}\n#app .main-title .sub-title {\n    letter-spacing: 16px;\n    font-weight: 400;\n}\n#app .section-pd {\n  padding: 100px 0;\n}\n#app .fade-enter-active, #app .fade-leave-active {\n  -webkit-transition: opacity .5s;\n  transition: opacity .5s;\n}\n#app .fade-enter-to, #app .fade-leave-to {\n  opacity: 0;\n}\n#app .bg-transition {\n  position: absolute;\n  top: 0;\n  width: 50%;\n  height: 100%;\n  overflow: hidden;\n}\n#app .bg-transition .bg-inner {\n    background-position-x: 0;\n    background-repeat: no-repeat;\n    background-size: cover;\n    -webkit-transition: all 1s;\n    transition: all 1s;\n    height: 100%;\n    width: 100vw;\n}\n#app .bg-transition.bg-left {\n    -webkit-transform: translateY(-100%);\n            transform: translateY(-100%);\n}\n#app .bg-transition.bg-right {\n    -webkit-transform: translateY(100%);\n            transform: translateY(100%);\n    right: 0;\n}\n#app .bg-transition.bg-right .bg-inner {\n      -webkit-transform: translateX(-50%);\n              transform: translateX(-50%);\n}\n#app .bg-transition.active {\n    -webkit-animation: bgSwitch 1s ease-in-out;\n            animation: bgSwitch 1s ease-in-out;\n}\n@-webkit-keyframes bgSwitch {\n100% {\n    -webkit-transform: translateY(0%);\n            transform: translateY(0%);\n}\n}\n@keyframes bgSwitch {\n100% {\n    -webkit-transform: translateY(0%);\n            transform: translateY(0%);\n}\n}\n.fade-enter-active,\n.fade-leave-active {\n  -webkit-transition: opacity .5s;\n  transition: opacity .5s;\n}\n.fade-enter,\n.fade-leave-to {\n  opacity: 0;\n}\n.bg-black-cover:before {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.7);\n  left: 0;\n}\n.fade-enter-active, .fade-leave-active {\n  -webkit-transition: opacity .5s;\n  transition: opacity .5s;\n}\n.fade-enter, .fade-leave-to {\n  opacity: 0;\n  display: none;\n}\n", ""]);
 
 // exports
 
@@ -478,6 +478,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -492,15 +493,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             options: {
                 // https://github.com/alvarotrigo/fullPage.js/
                 licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-                scrollOverflow: true
-
-            }
+                scrollOverflow: true,
+                navigation: false,
+                navigationTooltips: ['橘色體驗', '橘色價值', '橘色版圖', '橘色新訊'],
+                afterLoad: this.afterLoad,
+                slidesNavigation: true
+            },
+            sectionIndex: 0
         };
     },
     mounted: function mounted() {
         jQuery(document).ready(function () {}); // END jquery ready
     },
-    methods: {},
+    methods: {
+        afterLoad: function afterLoad(originSection, activeSection) {
+            if (!activeSection.isFirst && !activeSection.isLast) {
+                this.options.navigation = true;
+            } else {
+                this.options.navigation = false;
+            }
+            this.sectionIndex = activeSection.index;
+        }
+    },
     components: {
         MenuHeader: __WEBPACK_IMPORTED_MODULE_0_components_block_header_menu___default.a,
         BlockExperience: __WEBPACK_IMPORTED_MODULE_1_components_block_experience___default.a,
@@ -695,14 +709,22 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "block-main" } }, [
-    _c("div", { staticClass: "position-fixed", attrs: { id: "header" } }, [
-      _c(
-        "div",
-        { staticClass: "ml-5 mr-5 mt-5 d-flex" },
-        [_vm._m(0), _vm._v(" "), _c("menu-header")],
-        1
-      )
-    ]),
+    _c(
+      "div",
+      {
+        staticClass: "position-fixed",
+        class: _vm.sectionIndex != 0 ? "fade" : "",
+        attrs: { id: "header" }
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "ml-5 mr-5 mt-5 d-flex" },
+          [_vm._m(0), _vm._v(" "), _c("menu-header")],
+          1
+        )
+      ]
+    ),
     _vm._v(" "),
     _c(
       "div",
@@ -909,7 +931,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 book: '/',
                 text: '小鍋<span class="text-orange">新</span>時尚<br>不管多少人都能吃得精彩！'
             }, {
-                background: '/images/b#block-brandsg_brand_1.png',
+                background: '/images/bg_brand_1.png',
                 title: 'M One Cafe',
                 contact: '/',
                 book: '/',
@@ -1157,7 +1179,7 @@ exports = module.exports = __webpack_require__(52)(false);
 
 
 // module
-exports.push([module.i, "\n#block-news:before, #block-news:after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 400px;\n  left: 0;\n  top: 0;\n}\n#block-news:before {\n  background-size: 25px 25px;\n  background-image: radial-gradient(#0000000d 20%, transparent 15%), radial-gradient(#0000000d 20%, transparent 20%);\n  background-position: 10px 25px;\n}\n#block-news:after {\n  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(white));\n  background: linear-gradient(transparent, white);\n}\n#block-news > div {\n  z-index: 3;\n  position: relative;\n}\n#block-news .news-body .category-items {\n  cursor: pointer;\n  -webkit-transition: all .3s;\n  transition: all .3s;\n}\n#block-news .news-body .category-items:hover {\n    color: #f26e22;\n}\n#block-news .news-body .news-list {\n  height: 1100px;\n  overflow: hidden;\n}\n#block-news .news-body .news-list .news-item {\n    width: 25%;\n    margin-bottom: 50px;\n    height: 500px;\n    max-height: 500px;\n    overflow: hidden;\n}\n#block-news .news-body .news-list .news-item:nth-child(6n-3) {\n      width: calc(50% - 60px);\n      margin: 0 30px 50px 30px;\n      max-height: 1100px;\n      height: 1100px;\n}\n#block-news .news-body .news-list .news-item:nth-child(6n-3) .news-head {\n        height: auto;\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#block-news .news-body .news-list .news-item .news-head {\n      height: 350px;\n      margin-bottom: 15px;\n}\n#block-news .news-body .news-list .news-item .news-head:before {\n        content: \"\";\n        background: #f26d23;\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        opacity: 0;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#block-news .news-body .news-list .news-item .news-head:hover:before {\n        opacity: 0.6;\n}\n#block-news .news-body .news-list .news-item .news-head:hover a {\n        display: block;\n}\n#block-news .news-body .news-list .news-item .news-head a {\n        display: none;\n        z-index: 2;\n}\n#block-news .news-body .news-list .news-item .news-head .text-size-1 {\n        font-size: 13px !important;\n}\n#block-news .news-body .news-list .news-item .news-title {\n      color: black;\n}\n#block-news .news-body .news-list .news-item .news-title:hover {\n        color: #f26e22;\n}\n#block-news .btn-orange:hover {\n  background: #f26d23;\n  color: white;\n}\n", ""]);
+exports.push([module.i, "\n#block-news:before, #block-news:after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 400px;\n  left: 0;\n  top: 0;\n}\n#block-news:before {\n  background-size: 25px 25px;\n  background-image: radial-gradient(#0000000d 20%, transparent 15%), radial-gradient(#0000000d 20%, transparent 20%);\n  background-position: 10px 25px;\n}\n#block-news:after {\n  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(white));\n  background: linear-gradient(transparent, white);\n}\n#block-news > div {\n  z-index: 3;\n  position: relative;\n}\n#block-news .news-body .category-items {\n  cursor: pointer;\n  -webkit-transition: all .3s;\n  transition: all .3s;\n}\n#block-news .news-body .category-items:hover {\n    color: #f26e22;\n}\n#block-news .news-body .news-list {\n  -webkit-transition: all .5s;\n  transition: all .5s;\n}\n#block-news .news-body .news-list .block-list {\n    width: 20%;\n}\n#block-news .news-body .news-list .block-list.-center {\n      width: 50%;\n}\n#block-news .news-body .news-list .block-list .news-item {\n      margin-bottom: 50px;\n      -webkit-transition: all .5s;\n      transition: all .5s;\n}\n#block-news .news-body .news-list .block-list .news-item .news-head {\n        height: 350px;\n        margin-bottom: 15px;\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#block-news .news-body .news-list .block-list .news-item .news-head:before {\n          content: \"\";\n          background: #f26d23;\n          position: absolute;\n          width: 100%;\n          height: 100%;\n          opacity: 0;\n          -webkit-transition: all .3s;\n          transition: all .3s;\n}\n#block-news .news-body .news-list .block-list .news-item .news-head:hover:before {\n          opacity: 0.6;\n}\n#block-news .news-body .news-list .block-list .news-item .news-head:hover a {\n          display: block;\n}\n#block-news .news-body .news-list .block-list .news-item .news-head a {\n          display: none;\n          z-index: 2;\n}\n#block-news .news-body .news-list .block-list .news-item .news-head .text-size-1 {\n          font-size: 13px !important;\n}\n#block-news .news-body .news-list .block-list .news-item .news-title {\n        color: black;\n}\n#block-news .news-body .news-list .block-list .news-item .news-title:hover {\n          color: #f26e22;\n}\n#block-news .btn-orange:hover {\n  background: #f26d23;\n  color: white;\n}\n", ""]);
 
 // exports
 
@@ -1168,6 +1190,63 @@ exports.push([module.i, "\n#block-news:before, #block-news:after {\n  content: \
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1237,10 +1316,52 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/'
+            }, {
+                background: '/images/bg_brand_1.png',
+                date: '2018/3/21',
+                category: 'Extension 1 by 橘色',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/'
+            }, {
+                background: '/images/bg_brand_1.png',
+                date: '2018/3/21',
+                category: 'Extension 1 by 橘色',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/'
+            }, {
+                background: '/images/bg_brand_1.png',
+                date: '2018/3/21',
+                category: 'Extension 1 by 橘色',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/'
+            }, {
+                background: '/images/bg_brand_1.png',
+                date: '2018/3/21',
+                category: 'Extension 1 by 橘色',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/'
+            }, {
+                background: '/images/bg_brand_1.png',
+                date: '2018/3/21',
+                category: 'Extension 1 by 橘色',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/'
             }],
-            newsCategories: ['全部新訊', '橘色涮涮屋', 'Extension 1 by 橘色', 'M One Cafe', 'M One Spa', 'Sakura Spa']
-
+            newsCategories: ['全部新訊', '橘色涮涮屋', 'Extension 1 by 橘色', 'M One Cafe', 'M One Spa', 'Sakura Spa'],
+            newsIndex: 0,
+            viewIndex: 0
         };
+    },
+    methods: {
+        loadMore: function loadMore() {
+            this.viewIndex++;
+            fullpage_api.reBuild();
+        }
     }
 });
 
@@ -1272,86 +1393,314 @@ var render = function() {
             [
               _vm._m(0),
               _vm._v(" "),
-              _c("div", { staticClass: "news-body w-100" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "news-categories d-flex justify-content-center text-size-2 mt-5 mb-3"
-                  },
-                  _vm._l(_vm.newsCategories, function(item, $index) {
-                    return _c(
-                      "div",
-                      { key: $index, staticClass: "category-items mr-4 ml-4" },
-                      [_vm._v(_vm._s(item))]
-                    )
-                  })
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "news-list d-flex flex-column flex-wrap align-items-center"
-                  },
-                  _vm._l(_vm.newsItems, function(item, $index) {
-                    return _c(
-                      "div",
-                      {
-                        key: $index,
-                        staticClass: "news-item",
-                        class: $index % 6 == 2 ? "d-flex flex-column" : ""
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "news-head d-flex align-items-center justify-content-center position-relative",
-                            style: "background: url(" + item.background + ")"
-                          },
-                          [
-                            _c(
-                              "router-link",
-                              { staticClass: "btn-border", attrs: { to: "/" } },
-                              [_vm._v("了解更多")]
-                            )
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "news-content" }, [
-                          _c("div", [
-                            _c(
-                              "span",
-                              { staticClass: "text-black text-size-1" },
-                              [_vm._v(_vm._s(item.date))]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "span",
-                              { staticClass: "text-orange text-size-1" },
-                              [_vm._v(_vm._s(item.category))]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("a", {
-                            staticClass: "news-title",
-                            attrs: { href: item.link },
-                            domProps: { innerHTML: _vm._s(item.title) }
-                          })
-                        ])
-                      ]
-                    )
-                  })
-                )
-              ]),
-              _vm._v(" "),
               _c(
-                "router-link",
-                { staticClass: "btn-orange", attrs: { to: "/" } },
-                [_vm._v("更多橘色新訊")]
-              )
+                "div",
+                { staticClass: "news-body w-100" },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "news-categories d-flex justify-content-center text-size-2 mt-5 mb-3"
+                    },
+                    _vm._l(_vm.newsCategories, function(item, $index) {
+                      return _c(
+                        "div",
+                        {
+                          key: $index,
+                          staticClass: "category-items mr-4 ml-4",
+                          class: _vm.newsIndex == $index ? "active" : "",
+                          on: {
+                            click: function($event) {
+                              _vm.newsIndex = $index
+                            }
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(item) +
+                              "\n                    "
+                          )
+                        ]
+                      )
+                    })
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "transition-group",
+                    {
+                      staticClass:
+                        "news-list d-flex flex-column flex-wrap align-items-center",
+                      attrs: { name: "fade", tag: "div" }
+                    },
+                    _vm._l(_vm.viewIndex + 1, function(n, $groupIndex) {
+                      return _c(
+                        "div",
+                        {
+                          key: $groupIndex,
+                          staticClass:
+                            "news-list d-flex justify-content-between w-100"
+                        },
+                        [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "block-list -beside d-flex flex-column justify-content-between"
+                            },
+                            _vm._l(
+                              _vm.newsItems.slice(
+                                _vm.viewIndex,
+                                _vm.viewIndex + 2
+                              ),
+                              function(item, $index) {
+                                return _c(
+                                  "div",
+                                  { key: $index, staticClass: "news-item" },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "news-head d-flex align-items-center justify-content-center position-relative",
+                                        style:
+                                          "background: url(" +
+                                          item.background +
+                                          ")"
+                                      },
+                                      [
+                                        _c(
+                                          "router-link",
+                                          {
+                                            staticClass: "btn-border",
+                                            attrs: { to: "/" }
+                                          },
+                                          [_vm._v("了解更多")]
+                                        )
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "news-content" }, [
+                                      _c("div", [
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass:
+                                              "text-black text-size-1"
+                                          },
+                                          [_vm._v(_vm._s(item.date))]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass:
+                                              "text-orange text-size-1"
+                                          },
+                                          [_vm._v(_vm._s(item.category))]
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("a", {
+                                        staticClass: "news-title",
+                                        attrs: { href: item.link },
+                                        domProps: {
+                                          innerHTML: _vm._s(item.title)
+                                        }
+                                      })
+                                    ])
+                                  ]
+                                )
+                              }
+                            )
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "block-list -center d-flex flex-column justify-content-between"
+                            },
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "news-item d-flex flex-column h-100 w-100"
+                                },
+                                [
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass:
+                                        "news-head d-flex align-items-center justify-content-center position-relative",
+                                      style:
+                                        "background: url(" +
+                                        _vm.newsItems[_vm.viewIndex + 2]
+                                          .background +
+                                        ")"
+                                    },
+                                    [
+                                      _c(
+                                        "router-link",
+                                        {
+                                          staticClass: "btn-border",
+                                          attrs: { to: "/" }
+                                        },
+                                        [_vm._v("了解更多")]
+                                      )
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "news-content" }, [
+                                    _c("div", [
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-black text-size-1"
+                                        },
+                                        [
+                                          _vm._v(
+                                            _vm._s(
+                                              _vm.newsItems[_vm.viewIndex + 2]
+                                                .date
+                                            )
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-orange text-size-1"
+                                        },
+                                        [
+                                          _vm._v(
+                                            _vm._s(
+                                              _vm.newsItems[_vm.viewIndex + 2]
+                                                .category
+                                            )
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("a", {
+                                      staticClass: "news-title",
+                                      attrs: {
+                                        href:
+                                          _vm.newsItems[_vm.viewIndex + 2].link
+                                      },
+                                      domProps: {
+                                        innerHTML: _vm._s(
+                                          _vm.newsItems[_vm.viewIndex + 2].title
+                                        )
+                                      }
+                                    })
+                                  ])
+                                ]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "block-list -beside d-flex flex-column justify-content-between"
+                            },
+                            _vm._l(
+                              _vm.newsItems.slice(
+                                _vm.viewIndex + 3,
+                                _vm.viewIndex + 5
+                              ),
+                              function(item, $index) {
+                                return _c(
+                                  "div",
+                                  { key: $index, staticClass: "news-item" },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "news-head d-flex align-items-center justify-content-center position-relative",
+                                        style:
+                                          "background: url(" +
+                                          item.background +
+                                          ")"
+                                      },
+                                      [
+                                        _c(
+                                          "router-link",
+                                          {
+                                            staticClass: "btn-border",
+                                            attrs: { to: "/" }
+                                          },
+                                          [_vm._v("了解更多")]
+                                        )
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "news-content" }, [
+                                      _c("div", [
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass:
+                                              "text-black text-size-1"
+                                          },
+                                          [_vm._v(_vm._s(item.date))]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass:
+                                              "text-orange text-size-1"
+                                          },
+                                          [_vm._v(_vm._s(item.category))]
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("a", {
+                                        staticClass: "news-title",
+                                        attrs: { href: item.link },
+                                        domProps: {
+                                          innerHTML: _vm._s(item.title)
+                                        }
+                                      })
+                                    ])
+                                  ]
+                                )
+                              }
+                            )
+                          )
+                        ]
+                      )
+                    })
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("router-link", { attrs: { to: "/" } }, [
+                _c(
+                  "span",
+                  {
+                    staticClass: "btn-load-more btn-orange",
+                    on: {
+                      click: function($event) {
+                        _vm.loadMore()
+                      }
+                    }
+                  },
+                  [_vm._v("更多橘色新訊")]
+                )
+              ])
             ],
             1
           )
@@ -1470,7 +1819,7 @@ exports = module.exports = __webpack_require__(52)(false);
 
 
 // module
-exports.push([module.i, "\n#block-experience {\n  background-size: cover;\n}\n#block-experience #content-experience:before {\n    position: absolute;\n    width: 50%;\n    height: 100vh;\n    background: black;\n    content: \"\";\n    left: 0;\n    opacity: 0.6;\n    top: calc(50% - 50vh);\n    z-index: -1;\n    content: \"\";\n    word-break: keep-all;\n}\n#block-experience #content-experience .big_title {\n    font-size: 220px;\n    color: rgba(255, 255, 255, 0.2);\n    position: absolute;\n    left: 0;\n    top: 50%;\n    -webkit-transform: translateY(-50%);\n            transform: translateY(-50%);\n    width: 50%;\n    word-break: keep-all;\n    overflow: hidden;\n}\n#block-experience #content-experience .experience-inner {\n    width: 350px;\n    margin: 0 auto;\n    text-align: left;\n    font-weight: 300;\n    top: 100px;\n}\n#block-experience #content-experience .experience-inner .experience-item {\n      -webkit-transition: opacity .5s;\n      transition: opacity .5s;\n}\n#block-experience #content-experience .experience-inner h5 {\n      letter-spacing: 4px;\n      font-weight: 300;\n}\n#block-experience #content-experience .experience-inner .left-line:before {\n      content: \"\";\n      display: inline-block;\n      width: 20px;\n      height: 5px;\n      background: #f26d23;\n      margin-right: 10px;\n      vertical-align: middle;\n}\n#block-experience #content-experience .experience-circle {\n    position: absolute;\n    top: calc(50% - 150px);\n    left: calc(50% - 250px);\n}\n#block-experience #content-experience .circle-option, #block-experience #content-experience .circle-body {\n    position: absolute;\n    width: 500px;\n    height: 500px;\n}\n#block-experience #content-experience .circle-body {\n    border-radius: 500px;\n    border: 30px solid rgba(255, 113, 34, 0.76);\n    border-left-color: transparent;\n    z-index: -2;\n}\n#block-experience #content-experience .circle-option {\n    -webkit-transition: all 2s;\n    transition: all 2s;\n    -webkit-transform: rotate(0);\n            transform: rotate(0);\n}\n#block-experience #content-experience .circle-option.active {\n      opacity: 0;\n      -webkit-transition: opacity .3s;\n      transition: opacity .3s;\n}\n#block-experience #content-experience .circle-option .text-circle-option {\n      position: absolute;\n}\n#block-experience #content-experience .circle-option .text-circle-option:hover {\n        cursor: pointer;\n        color: #f26d23;\n}\n#block-experience #content-experience .circle-option .text-circle-option.-top {\n        top: -50px;\n        left: 50%;\n}\n#block-experience #content-experience .circle-option .text-circle-option.-bottom {\n        bottom: -50px;\n        left: 50%;\n}\n#block-experience #content-experience .circle-option .text-circle-option.-right {\n        top: 50%;\n        right: -50px;\n}\n#block-experience #content-experience .circle-option .text-circle-option.-left {\n        top: 50%;\n        left: -50px;\n}\n#block-experience #content-experience .circle-option .text-circle-option a {\n        word-break: keep-all;\n}\n#block-experience #content-experience .circle-option .text-circle-option.active {\n        opacity: 0;\n        -webkit-transition: opacity 1s;\n        transition: opacity 1s;\n        -webkit-transition-delay: .5s;\n                transition-delay: .5s;\n}\n#block-experience #content-experience .circle-option.e_index_0 {\n      -webkit-transform: rotate(0deg);\n              transform: rotate(0deg);\n}\n#block-experience #content-experience .circle-option.e_index_0 a {\n        -webkit-transition: all .3s;\n        transition: all .3s;\n        -webkit-transform: rotate(0deg) !important;\n                transform: rotate(0deg) !important;\n}\n#block-experience #content-experience .circle-option.e_index_1 {\n      -webkit-transform: rotate(-90deg);\n              transform: rotate(-90deg);\n}\n#block-experience #content-experience .circle-option.e_index_1 a {\n        -webkit-transition: all .3s;\n        transition: all .3s;\n        -webkit-transform: rotate(90deg) !important;\n                transform: rotate(90deg) !important;\n}\n#block-experience #content-experience .circle-option.e_index_2 {\n      -webkit-transform: rotate(-180deg);\n              transform: rotate(-180deg);\n}\n#block-experience #content-experience .circle-option.e_index_2 a {\n        -webkit-transition: all .3s;\n        transition: all .3s;\n        -webkit-transform: rotate(180deg) !important;\n                transform: rotate(180deg) !important;\n}\n#block-experience #content-experience .circle-option.e_index_3 {\n      -webkit-transform: rotate(-270deg);\n              transform: rotate(-270deg);\n}\n#block-experience #content-experience .circle-option.e_index_3 a {\n        -webkit-transition: all .3s;\n        transition: all .3s;\n        -webkit-transform: rotate(270deg) !important;\n                transform: rotate(270deg) !important;\n}\n", ""]);
+exports.push([module.i, "\n#block-experience {\n  background-size: cover;\n}\n#block-experience:before, #block-experience .bg-transition.bg-left:before {\n    position: absolute;\n    width: 50%;\n    height: 100vh;\n    background: black;\n    content: \"\";\n    left: 0;\n    opacity: 0.6;\n    top: calc(50% - 50vh);\n    z-index: 0;\n    content: \"\";\n    word-break: keep-all;\n}\n#block-experience .bg-transition.bg-left:before {\n    width: 100%;\n}\n#block-experience .fp-scroller {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n#block-experience #content-experience .big_title {\n    font-size: 220px;\n    color: rgba(255, 255, 255, 0.2);\n    position: absolute;\n    left: 0;\n    top: 50%;\n    -webkit-transform: translateY(-50%);\n            transform: translateY(-50%);\n    width: 50%;\n    word-break: keep-all;\n    overflow: hidden;\n}\n#block-experience #content-experience .experience-inner {\n    width: 350px;\n    margin: 0 auto;\n    text-align: left;\n    font-weight: 300;\n    top: 100px;\n}\n#block-experience #content-experience .experience-inner .experience-item {\n      -webkit-transition: opacity .5s;\n      transition: opacity .5s;\n}\n#block-experience #content-experience .experience-inner h5 {\n      letter-spacing: 4px;\n      font-weight: 300;\n}\n#block-experience #content-experience .experience-inner .left-line:before {\n      content: \"\";\n      display: inline-block;\n      width: 20px;\n      height: 5px;\n      background: #f26d23;\n      margin-right: 10px;\n      vertical-align: middle;\n}\n#block-experience #content-experience .experience-circle {\n    position: absolute;\n    top: calc(50% - 150px);\n    left: calc(50% - 250px);\n}\n#block-experience #content-experience .experience-circle .circle-option, #block-experience #content-experience .experience-circle .circle-body {\n      position: absolute;\n      width: 500px;\n      height: 500px;\n}\n#block-experience #content-experience .experience-circle .circle-body {\n      border-radius: 500px;\n      border: 30px solid rgba(255, 113, 34, 0.76);\n      border-left-color: transparent;\n}\n#block-experience #content-experience .experience-circle .circle-option {\n      -webkit-transition: all 2s;\n      transition: all 2s;\n      -webkit-transform: rotate(0);\n              transform: rotate(0);\n}\n#block-experience #content-experience .experience-circle .circle-option.active {\n        opacity: 0;\n        -webkit-transition: opacity .3s;\n        transition: opacity .3s;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option {\n        position: absolute;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option:hover {\n          cursor: pointer;\n          color: #f26d23;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.-top {\n          top: -50px;\n          left: 50%;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.-bottom {\n          bottom: -50px;\n          left: 50%;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.-right {\n          top: 50%;\n          right: -50px;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.-left {\n          top: 50%;\n          left: -50px;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option a {\n          word-break: keep-all;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.active {\n          opacity: 0;\n          -webkit-transition: opacity 1s;\n          transition: opacity 1s;\n          -webkit-transition-delay: .5s;\n                  transition-delay: .5s;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_0 {\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_0 a {\n          -webkit-transition: all .3s;\n          transition: all .3s;\n          -webkit-transform: rotate(0deg) !important;\n                  transform: rotate(0deg) !important;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_1 {\n        -webkit-transform: rotate(-90deg);\n                transform: rotate(-90deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_1 a {\n          -webkit-transition: all .3s;\n          transition: all .3s;\n          -webkit-transform: rotate(90deg) !important;\n                  transform: rotate(90deg) !important;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_2 {\n        -webkit-transform: rotate(-180deg);\n                transform: rotate(-180deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_2 a {\n          -webkit-transition: all .3s;\n          transition: all .3s;\n          -webkit-transform: rotate(180deg) !important;\n                  transform: rotate(180deg) !important;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_3 {\n        -webkit-transform: rotate(-270deg);\n                transform: rotate(-270deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_3 a {\n          -webkit-transition: all .3s;\n          transition: all .3s;\n          -webkit-transform: rotate(270deg) !important;\n                  transform: rotate(270deg) !important;\n}\n", ""]);
 
 // exports
 
@@ -1540,7 +1889,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             template: '<div>' + '<h2 class="mb-4">橘色鍋物</h2>' + '<h5 class="mb-4"><span class="fs-inherit text-orange">橘色 </span>鍋物</h5>' + '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色鍋物</router-link>' + '</div>'
         },
         'coffee': {
-            template: '<div>' + '<h2 class="mb-4">M One Cafe</h2>' + '<h5 class="mb-4"><span class="fs-inherit text-orange">M One </span>Cafe</h5>' + '<router-link :to="\'\/\'\" class="left-line text-size-2">探索M One Cafe</router-link>' + '</div>'
+            template: '<div>' + '<h3 class="mb-4">M One Cafe</h3>' + '<h5 class="mb-4"><span class="fs-inherit text-orange">M One </span>Cafe</h5>' + '<router-link :to="\'\/\'\" class="left-line text-size-2">探索M One Cafe</router-link>' + '</div>'
         },
         'spa': {
             template: '<div>' + '<h2 class="mb-4">橘色舒體</h2>' + '<h5 class="mb-4"><span class="fs-inherit text-orange">橘色 </span>舒體</h5>' + '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色舒體</router-link>' + '</div>'
@@ -1572,7 +1921,7 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "position-relative section text-white text-center",
+      staticClass: "position-relative section text-white text-center h-100",
       style: "background-image:url(" + _vm.experience[_vm.index_old].url + ")",
       attrs: { id: "block-experience" }
     },
@@ -1614,7 +1963,7 @@ var render = function() {
       _c(
         "div",
         {
-          staticClass: "position-relative position-h-center",
+          staticClass: "position-relative",
           attrs: { id: "content-experience" }
         },
         [

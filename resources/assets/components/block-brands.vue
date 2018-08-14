@@ -57,7 +57,7 @@ export default {
                         text: '小鍋<span class="text-orange">新</span>時尚<br>不管多少人都能吃得精彩！',
                     },
                     {
-                        background: '/images/b#block-brandsg_brand_1.png',
+                        background: '/images/bg_brand_1.png',
                         title: 'M One Cafe',
                         contact: '/',
                         book: '/',

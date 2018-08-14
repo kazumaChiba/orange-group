@@ -1,6 +1,6 @@
 <template>
     <div id="block-main">
-        <div id="header" class="position-fixed">
+        <div id="header" class="position-fixed" :class=" sectionIndex != 0 ? 'fade' : '' ">
             <div class="ml-5 mr-5 mt-5 d-flex">
                 <div class="logo">
                     <img src="/images/index_logo.png">
@@ -17,6 +17,7 @@
                 <block-footer></block-footer>
             </full-page>
         </div>
+        
     </div>
     
 </template>
@@ -36,17 +37,30 @@
                     // https://github.com/alvarotrigo/fullPage.js/
                     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                     scrollOverflow: true,
-
+                    navigation: false,
+                    navigationTooltips: ['橘色體驗','橘色價值','橘色版圖','橘色新訊'],
+                    afterLoad: this.afterLoad,
+                    slidesNavigation: true,
                 }, 
+                sectionIndex: 0,
             }
         },
         mounted: function() {
             jQuery(document).ready(function(){
-
+                
             }) // END jquery ready
         },
         methods: {
-    
+            afterLoad(originSection, activeSection){
+                if(!activeSection.isFirst && !activeSection.isLast){
+                    this.options.navigation = true;
+                }
+                else{
+                    this.options.navigation = false;
+                }
+                this.sectionIndex = activeSection.index;
+            },
+
         },
         components: {
             MenuHeader,
@@ -62,14 +76,22 @@
 
 <style lang="sass">
     #app
+        #fp-nav 
+            ul 
+                li 
+                    .fp-tooltip
+                        color: #ccc
+                        opacity: 1
+                        width: auto
+                        font-size: 18px
+        .fp-scroller
+            min-height: 100%
         .logo
             height: 150px   
         #header
             top: 0
             z-index: 999999
             width: 100% 
-        .fp-scroller
-            height: 100%
         .main-title
             line-height: 35px
             .sub-title
@@ -83,6 +105,7 @@
             opacity: 0
         .bg-transition
             position: absolute
+            top: 0
             width: 50%
             height: 100%
             overflow: hidden

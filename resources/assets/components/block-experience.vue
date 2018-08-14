@@ -1,5 +1,5 @@
 <template>
-    <div id="block-experience" class="position-relative section text-white text-center" :style="'background-image:url('+experience[index_old].url+')'">
+    <div id="block-experience" class="position-relative section text-white text-center h-100" :style="'background-image:url('+experience[index_old].url+')'">
         <div class="bg-transition bg-left" :class="{'active' : bgTransition}">
             <div class="bg-inner" :style="'background-image:url('+experience[experience_index].url+')'"></div>
         </div>
@@ -7,7 +7,7 @@
             <div class="bg-inner" :style="'background-image:url('+experience[experience_index].url+')'"></div>
         </div> 
 
-        <div id="content-experience" class="position-relative position-h-center">
+        <div id="content-experience" class="position-relative">
             <h1 class="big_title">{{experience[experience_index].title}}</h1>
             <div class="experience-circle">
                 <div class="circle-body"></div>
@@ -70,7 +70,7 @@ export default {
             },
             'coffee': {
                 template: '<div>'+
-                          '<h2 class="mb-4">M One Cafe</h2>'+
+                          '<h3 class="mb-4">M One Cafe</h3>'+
                           '<h5 class="mb-4"><span class="fs-inherit text-orange">M One </span>Cafe</h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索M One Cafe</router-link>'+
                           '</div>'
@@ -99,20 +99,28 @@ export default {
 
 <style lang="sass">
     #block-experience
-        background-size: cover         
+        background-size: cover  
+        &:before , .bg-transition.bg-left:before
+            position: absolute
+            width: 50%
+            height: 100vh
+            background: black
+            content: ""
+            left: 0
+            opacity: 0.6
+            top: calc(50% - 50vh)
+            z-index: 0
+            content: ""
+            word-break: keep-all  
+        .bg-transition.bg-left:before
+            width: 100%
+        .fp-scroller
+            display: flex     
+            flex-direction: column
+            justify-content: center
         #content-experience
-            &:before
-                position: absolute
-                width: 50%
-                height: 100vh
-                background: black
-                content: ""
-                left: 0
-                opacity: 0.6
-                top: calc(50% - 50vh)
-                z-index: -1
-                content: ""
-                word-break: keep-all
+            // position: absolute  
+            // left: calc(50% - 250px)
             .big_title
                 font-size: 220px
                 color: rgba(255, 255, 255, 0.2)
@@ -147,48 +155,47 @@ export default {
                 position: absolute
                 top: calc(50% - 150px)
                 left: calc(50% - 250px)
-            .circle-option,.circle-body
-                position: absolute
-                width: 500px
-                height: 500px
-            .circle-body
-                border-radius: 500px
-                border: 30px solid rgba(255, 113, 34, 0.76)
-                border-left-color: transparent
-                z-index: -2
-            .circle-option
-                transition: all 2s
-                transform: rotate(0)
-                &.active
-                    opacity: 0
-                    transition: opacity .3s
-                .text-circle-option
+                .circle-option,.circle-body
                     position: absolute
-                    &:hover
-                        cursor: pointer
-                        color: #f26d23
-                    &.-top
-                        top: -50px
-                        left: 50%
-                    &.-bottom
-                        bottom: -50px
-                        left: 50%
-                    &.-right
-                        top: 50%
-                        right: -50px
-                    &.-left
-                        top: 50%
-                        left: -50px
-                    a
-                        word-break: keep-all
+                    width: 500px
+                    height: 500px
+                .circle-body
+                    border-radius: 500px
+                    border: 30px solid rgba(255, 113, 34, 0.76)
+                    border-left-color: transparent
+                .circle-option
+                    transition: all 2s
+                    transform: rotate(0)
                     &.active
                         opacity: 0
-                        transition: opacity 1s  
-                        transition-delay: .5s
-                @for $i from 0 through 3
-                    &.e_index_#{$i}
-                        transform: rotate($i*(-90deg))
+                        transition: opacity .3s
+                    .text-circle-option
+                        position: absolute
+                        &:hover
+                            cursor: pointer
+                            color: #f26d23
+                        &.-top
+                            top: -50px
+                            left: 50%
+                        &.-bottom
+                            bottom: -50px
+                            left: 50%
+                        &.-right
+                            top: 50%
+                            right: -50px
+                        &.-left
+                            top: 50%
+                            left: -50px
                         a
-                            transition: all .3s 
-                            transform: rotate($i*90deg) !important
+                            word-break: keep-all
+                        &.active
+                            opacity: 0
+                            transition: opacity 1s  
+                            transition-delay: .5s
+                    @for $i from 0 through 3
+                        &.e_index_#{$i}
+                            transform: rotate($i*(-90deg))
+                            a
+                                transition: all .3s 
+                                transform: rotate($i*90deg) !important
 </style>
