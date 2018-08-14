@@ -18,8 +18,10 @@ window.Vue = require('vue');
 import App from './App'
 import router from './router'
 
+// https://github.com/alvarotrigo/fullPage.js/
 import Vue from 'vue'
-import VueFullPage from 'vue-fullpage.js'
+import VueFullPage from 'vue-fullpage.js' 
+require('fullpage.js/vendors/scrolloverflow.min.js')
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
@@ -29,6 +31,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 
 Vue.use(VueFullPage);
+
 
 const app = new Vue({
     el: '#app',
