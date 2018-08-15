@@ -18,15 +18,24 @@ window.Vue = require('vue');
 import App from './App'
 import router from './router'
 
-// https://github.com/alvarotrigo/fullPage.js/
+// Fullpage : https://github.com/alvarotrigo/fullPage.js/
 import Vue from 'vue'
 import VueFullPage from 'vue-fullpage.js' 
 require('fullpage.js/vendors/scrolloverflow.min.js')
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-library.add(faCoffee)
+// FontAwesome : https://github.com/FortAwesome/vue-fontawesome#usage
+import fontawesome from '@fortawesome/fontawesome';
+import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
+
+import faLightbulb from '@fortawesome/fontawesome-pro-light/faLightbulb';
+
+import fabFacebook from '@fortawesome/fontawesome-free-brands/faFacebookF';
+import fabTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
+
+fontawesome.library.add(faLightbulb);
+fontawesome.library.add(fabFacebook);
+fontawesome.library.add(fabTwitter);
+
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 

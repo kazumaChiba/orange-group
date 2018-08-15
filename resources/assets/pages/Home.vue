@@ -1,11 +1,15 @@
 <template>
     <div id="block-main">
-        <div id="header" class="position-fixed" :class=" sectionIndex != 0 ? 'fade' : '' ">
+        <div id="header" class="position-fixed" :class="sectionPosition">
             <div class="ml-5 mr-5 mt-5 d-flex">
-                <div class="logo">
+                <div class="logo" :class=" sectionIndex != 0 ? 'fade' : '' ">
                     <img src="/images/index_logo.png">
                 </div>
-                <menu-header></menu-header>
+                <div id="main-menu" class="d-flex justify-content-end align-items-start">
+                    <menu-header :class="closeMenu ? 'menu-close' : '' || textShadow ? 'menu-shadow' : '' "></menu-header>
+                    <span id="burger-menu" :class="sectionIndex != 0 ? 'menu-close' : ''" @click="closeMenu = !closeMenu"></span>
+                    <font-awesome-icon :icon="['fal','lightbulb']" />
+                </div>
             </div>
         </div> 
         <div>
@@ -37,12 +41,15 @@
                     // https://github.com/alvarotrigo/fullPage.js/
                     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                     scrollOverflow: true,
-                    navigation: false,
+                    navigation: true,
                     navigationTooltips: ['橘色體驗','橘色價值','橘色版圖','橘色新訊'],
                     afterLoad: this.afterLoad,
                     slidesNavigation: true,
                 }, 
                 sectionIndex: 0,
+                sectionPosition: 'section-1',
+                closeMenu: false,
+                textShadow: false,
             }
         },
         mounted: function() {
@@ -53,12 +60,27 @@
         methods: {
             afterLoad(originSection, activeSection){
                 if(!activeSection.isFirst && !activeSection.isLast){
-                    this.options.navigation = true;
+                    jQuery("#fp-nav").addClass("active");
                 }
                 else{
-                    this.options.navigation = false;
+                    jQuery("#fp-nav").removeClass("active");
                 }
                 this.sectionIndex = activeSection.index;
+                this.sectionPosition = 'section-'+activeSection.index;
+
+                if(activeSection.isFirst){
+                    this.closeMenu = false;
+                }
+                else{
+                    this.closeMenu = true;
+                }
+                if(activeSection.index == 1 || activeSection.index == 3){
+                    this.textShadow = true;
+                }
+                else{
+                    this.textShadow = false;
+                }
+
             },
 
         },
@@ -75,15 +97,62 @@
 </script>
 
 <style lang="sass">
+    #burger-menu
+        width: 0px
+        height: 25px
+        text-align: center
+        overflow: hidden
+        transition: all .5s
+        position: absolute
+        right: 0
+        &:before
+            content: "|||"
+            color: #f26c23
+            transform: rotate(90deg)
+            display: inline-block
+            font-weight: bold
+        &:hover
+            cursor: pointer
+        &.menu-close
+            width: 25px
+    #fp-nav
+        opacity: 0
+        display: flex
+        flex-direction: column
+        width: calc(50% - 585px)
+        visibility: hidden
+        transition: opacity .3s
+        &.active
+            visibility: visible
+            opacity: 1
+        ul 
+            li 
+                width: 100%
+                height: 30px
+                margin: 0
+                &:last-child
+                    display: none
+                span
+                    display: none
+                .fp-tooltip.fp-right
+                    color: #ccc
+                    opacity: 1
+                    width: auto
+                    font-size: 17px
+                    letter-spacing: 0px
+                    font-style: italic
+                    top: 50%
+                    right: 50%
+                    overflow: visible
+                    transform: translate(50% , -50%)
+                &:hover
+                    cursor: pointer
+                    background: #f26c23
+                    transition: all .3s
+                    .fp-tooltip.fp-right
+                        color: white
+
     #app
-        #fp-nav 
-            ul 
-                li 
-                    .fp-tooltip
-                        color: #ccc
-                        opacity: 1
-                        width: auto
-                        font-size: 18px
         .fp-scroller
             min-height: 100%
         .logo

@@ -1,25 +1,45 @@
 <template>
-    <div id="main-menu" class="d-flex justify-content-end">
-        <router-link :to="'/'" class="menu-title">橘色體驗</router-link>
-        <router-link :to="'/about'" class="menu-title">關於橘色</router-link>
-        <router-link :to="'/news'" class="menu-title">橘色新訊</router-link>
-        <router-link :to="'/family'" class="menu-title">橘色家庭</router-link>
-        <router-link :to="'/contact'" class="menu-title">聯絡我們</router-link>
+    <div class="menu-outer d-flex justify-content-end">
+        <div class="menu-list">
+            <router-link :to="'/'" class="menu-title">橘色體驗</router-link>
+            <router-link :to="'/about'" class="menu-title">關於橘色</router-link>
+            <router-link :to="'/news'" class="menu-title">橘色新訊</router-link>
+            <router-link :to="'/family'" class="menu-title">橘色家庭</router-link>
+            <router-link :to="'/contact'" class="menu-title">聯絡我們</router-link>
+        </div>
     </div>
 </template>
-<style lang="sass">
+<style lang="sass">   
     #main-menu
         width: 50%
         margin-left: auto
-        .menu-title
-            display: inline-block
-            font-size: 16px
-            font-weight: 500
-            padding: 0 20px
+        overflow: hidden
+        position: relative
+        padding-right: 35px
+        .menu-outer
+            overflow: hidden
+            &.menu-close
+                .menu-list
+                    transform: translateX(100%)
+            .menu-list
+                transition: all .5s ease-in-out
+            .menu-title
+                display: inline-block
+                font-size: 16px
+                font-weight: 500
+                padding: 0 20px
+            &.menu-shadow
+                .menu-list
+                    background: rgba(0, 0, 0, 0.3)
 
 </style>
 <script>
     export default {
+        data: function() {
+            return{
+
+            }
+        },
         methods: {
 
         },
