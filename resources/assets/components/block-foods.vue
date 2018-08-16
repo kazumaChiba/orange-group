@@ -21,8 +21,8 @@
                 </div>
             </div>
             <div class="content-food -right d-flex flex-column justify-content-center position-relative">
-                <svg class="loader">
-                    <circle class="internal-circle" cx="350" cy="400" r="450"></circle>
+                <svg class="loader" :class="{'active' : addTransition}">
+                    <circle class="internal-circle" cx="45%" cy="55%" r="450"></circle>
                 </svg>
                 <h3 class="main-title text-black text-uppercase"><span class="fs-inherit text-orange">橘色 </span>價值<br><span class="text-size-3 sub-title">about value</span></h3>
                 <div class="food-info-circle"></div>
@@ -167,23 +167,14 @@ export default {
                         stroke-width: 5
                         fill: none
                         left: 0 
-                        top: 120px  
                         .internal-circle
                             stroke: #f26c23
-                            stroke-dasharray: 60%,10%,25%
+                            stroke-dasharray: 55%,10%,25%
                             opacity: .4
-                            animation: internal 1.5s ease-in-out alternate
-                            animation-play-state: paused
-                            transform: rotate(0)
-                            transform-origin: 350px 400px
-        &.active
-            .content-food
-                &.-right
-                    .internal-circle       
-                        animation-play-state: running
-                        animation-delay: 0.5s
+                            transform-origin: 45% 55%
+                        &.active
+                            .internal-circle
+                                transform: rotate(360deg)
+                                transition: all 1s
 
-    @keyframes internal 
-        100% 
-            transform: rotate(360deg)
 </style>

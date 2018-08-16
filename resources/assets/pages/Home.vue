@@ -1,14 +1,13 @@
 <template>
     <div id="block-main">
         <div id="header" class="position-fixed" :class="sectionPosition">
-            <div class="ml-5 mr-5 mt-5 d-flex">
+            <div class="mt-5 d-flex">
                 <div class="logo" :class=" sectionIndex != 0 ? 'fade' : '' ">
                     <img src="/images/index_logo.png">
                 </div>
                 <div id="main-menu" class="d-flex justify-content-end align-items-start">
                     <menu-header :class="closeMenu ? 'menu-close' : '' || textShadow ? 'menu-shadow' : '' "></menu-header>
                     <span id="burger-menu" :class="sectionIndex != 0 ? 'menu-close' : ''" @click="closeMenu = !closeMenu"></span>
-                    <font-awesome-icon :icon="['fal','lightbulb']" />
                 </div>
             </div>
         </div> 
@@ -20,10 +19,8 @@
                 <block-news></block-news>
                 <block-footer></block-footer>
             </full-page>
-        </div>
-        
+        </div>    
     </div>
-    
 </template>
 
 <script>

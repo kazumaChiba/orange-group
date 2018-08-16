@@ -10,27 +10,32 @@
     </div>
 </template>
 <style lang="sass">   
-    #main-menu
-        width: 50%
-        margin-left: auto
-        overflow: hidden
-        position: relative
-        padding-right: 35px
-        .menu-outer
+    #header
+        .logo
+            padding-left: 35px
+        #main-menu
+            width: 50%
+            margin-left: auto
             overflow: hidden
-            &.menu-close
+            position: relative
+            padding-right: 35px
+            margin-right: 35px
+            flex: 1
+            .menu-outer
+                overflow: hidden
+                &.menu-close
+                    .menu-list
+                        transform: translateX(100%)
                 .menu-list
-                    transform: translateX(100%)
-            .menu-list
-                transition: all .5s ease-in-out
-            .menu-title
-                display: inline-block
-                font-size: 16px
-                font-weight: 500
-                padding: 0 20px
-            &.menu-shadow
-                .menu-list
-                    background: rgba(0, 0, 0, 0.3)
+                    transition: all .5s ease-in-out
+                .menu-title
+                    display: inline-block
+                    font-size: 16px
+                    font-weight: 500
+                    padding: 0 20px
+                &.menu-shadow
+                    .menu-list
+                        background: rgba(0, 0, 0, 0.3)
 
 </style>
 <script>
