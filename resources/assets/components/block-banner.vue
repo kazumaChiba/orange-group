@@ -2,7 +2,7 @@
     <div id="block-breadcrumb" class="position-absolute w-100 d-flex align-items-center justify-content-center" :style="'background-image:url('+img+')'">
         <div class="position-relative text-white">
             <h2 class="mb-4 " v-html="title"></h2>
-            <el-breadcrumb separator="/" separator-class="el-icon-d-arrow-right">
+            <el-breadcrumb  separator-class="el-icon-arrow-right">
                 <el-breadcrumb-item :to="'/'">Home</el-breadcrumb-item>
                 <el-breadcrumb-item v-if="item.name && item.path !== '/'"
                                     v-for="(item,index)  in $route.matched" :key="item.meta.id"
@@ -19,6 +19,8 @@
 </template>
 <style lang="sass">   
     #block-breadcrumb
+        background-repeat: no-repeat
+        background-size: cover
         background-position: center
         top: 0
         height: 50vh
@@ -28,6 +30,18 @@
             width: 100%
             height: 100%
             background: rgba(0, 0, 0, 0.5)
+        .el-breadcrumb
+            display: flex
+            align-items: center
+            justify-content: center
+            .el-breadcrumb__item
+                .el-breadcrumb__inner
+                    color: white
+                &:not(.no-redirect)
+                    .el-breadcrumb__inner
+                        &:hover
+                            color: #f26d23
+
 </style>
 <script>
     export default {

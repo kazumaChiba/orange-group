@@ -32,6 +32,9 @@ import faLightbulb from '@fortawesome/fontawesome-pro-light/faLightbulb';
 import fabFacebook from '@fortawesome/fontawesome-free-brands/faFacebookF';
 import fabTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
 
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
 fontawesome.library.add(faLightbulb);
 fontawesome.library.add(fabFacebook);
 fontawesome.library.add(fabTwitter);
@@ -41,6 +44,7 @@ Vue.config.productionTip = false
 
 Vue.use(VueFullPage);
 
+Vue.use(ElementUI);
 
 const app = new Vue({
     el: '#app',

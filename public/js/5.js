@@ -370,12 +370,7 @@ var render = function() {
           _vm._v(" "),
           _c(
             "el-breadcrumb",
-            {
-              attrs: {
-                separator: "/",
-                "separator-class": "el-icon-d-arrow-right"
-              }
-            },
+            { attrs: { "separator-class": "el-icon-arrow-right" } },
             [
               _c("el-breadcrumb-item", { attrs: { to: "/" } }, [
                 _vm._v("Home")

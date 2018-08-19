@@ -32,7 +32,8 @@ export default {
             return {
                 bgTransition: false,
                 experience_view: 'ex',
-                experience: [{
+                experience: [
+                    {
                         'url':'/images/slideshow_1.jpg',
                         'title':'橘色體驗'
                     },

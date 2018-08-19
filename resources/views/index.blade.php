@@ -11,6 +11,11 @@
 
         <script src="https://use.typekit.net/jzy1fau.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
+            
+        <!-- 引入样式 -->
+        <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+        <!-- 引入组件库 -->
+        <script src="https://unpkg.com/element-ui/lib/index.js"></script>
     </head>
     <body>
         <div id="app"></div>
