@@ -7,10 +7,10 @@
                     :class="{'active' : bgTransition}"
                 ></div>
             </div>
-            <div class="content-food -left d-flex flex-column justify-content-center position-relative">
+            <div class="content-food -left d-flex flex-column justify-content-between position-relative">
                 <div class="mb-5" :class="{'fade' : addTransition}">
                     <p class="line-top text-size-2" v-html="foodItems[food_index].subTitle"></p>
-                    <h1>{{foodItems[food_index].title}}</h1>
+                    <h1 class="big_title">{{foodItems[food_index].title}}</h1>
                 </div>
                 <div class="align-self-end mt-5">
                     <p class="text-size-2">探索更多橘色價值</p>
@@ -25,7 +25,7 @@
             </div>
             <div class="content-food -right d-flex flex-column justify-content-center position-relative">
                 <svg class="loader" :class="{'active' : addTransition}">
-                    <circle class="internal-circle" cx="45%" cy="55%" r="450"></circle>
+                    <circle class="internal-circle" cx="30%" cy="55%" r="450"></circle>
                 </svg>
                 <h3 class="main-title text-black text-uppercase"><span class="fs-inherit text-orange">橘色 </span>價值<br><span class="text-size-3 sub-title">about value</span></h3>
                 <div class="food-info-circle"></div>
@@ -99,10 +99,10 @@ export default {
             &:before
                 content: ""
                 background: #f46f1b
-                width: 100px
+                width: 60px
                 height: 1px
                 display: block
-                margin-bottom: 30px
+                margin-bottom: 20px
         .block-food-body
             background-repeat: no-repeat
             background-size: cover
@@ -128,6 +128,9 @@ export default {
                 padding: 0 100px
                 overflow: hidden
                 z-index: 2
+                .big_title
+                    font-size: 140px
+                    font-weight: 300
                 .more-food-info
                     width: 100px
                     height: 100px
@@ -150,6 +153,9 @@ export default {
                 &.-left
                     background: transparent
                     transform: translateY(100%)
+                    padding: 100px
+                    .line-top
+                        line-height: 25px
                 &.-right
                     background: white
                     z-index: 2   
@@ -192,7 +198,7 @@ export default {
                             stroke: #f26c23
                             stroke-dasharray: 55%,10%,25%
                             opacity: .4
-                            transform-origin: 45% 55%
+                            transform-origin: 30% 55%
                         &.active
                             .internal-circle
                                 transform: rotate(180deg)

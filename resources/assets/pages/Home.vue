@@ -160,12 +160,11 @@
                     display: flex
                     align-items: center
                     padding: 0 30px
-                &:hover
+                &:hover div, a.active+div
                     cursor: pointer
                     background: #f26c23
                     transition: all .3s
-                    .fp-tooltip.fp-right
-                        color: white
+                    color: white !important
                 a
                     position: absolute
                     top: 0
@@ -175,7 +174,7 @@
         .fp-scroller
             min-height: 100%
         .logo
-            height: 200px   
+            height: 220px   
         #header
             top: 0
             z-index: 999999

@@ -51,7 +51,7 @@ export default {
                     },
                     {
                         'url':'/images/bg_brand_1.png',
-                        'title':'M One Cafe'
+                        'title':'橘色咖啡'
                     },
                     {
                         'url':'/images/bg_food_1.png',
@@ -64,28 +64,28 @@ export default {
         components: {
             'ex': {
                 template: '<div>'+
-                          '<h2 class="mb-4"><span class="fs-inherit text-orange">橘色</span>體驗</h2>'+
+                          '<h2 class="mb-4"><span class="fs-inherit text-orange">橘色</span> 體驗</h2>'+
                           '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色體驗</router-link>'+
                           '</div>'
             },
             'pot': {
                 template: '<div>'+
-                          '<h2 class="mb-4"><span class="fs-inherit text-orange">橘色</span>鍋物</h2>'+
+                          '<h2 class="mb-4"><span class="fs-inherit text-orange">橘色</span> 鍋物</h2>'+
                           '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色鍋物</router-link>'+
                           '</div>'
             },
             'coffee': {
                 template: '<div>'+
-                          '<h3 class="mb-4"><span class="fs-inherit text-orange">M One</span> Cafe</h3>'+
+                          '<h3 class="mb-4"><span class="fs-inherit text-orange">橘色</span> 咖啡</h3>'+
                           '<h5 class="mb-4"><span class="fs-inheri">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
-                          '<router-link :to="\'\/\'\" class="left-line text-size-2">探索M One Cafe</router-link>'+
+                          '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色咖啡</router-link>'+
                           '</div>'
             },
             'spa': {
                 template: '<div>'+
-                          '<h2 class="mb-4"><span class="fs-inherit text-orange">橘色</span>舒體</h2>'+
+                          '<h2 class="mb-4"><span class="fs-inherit text-orange">橘色</span> 舒體</h2>'+
                           '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色舒體</router-link>'+
                           '</div>'
@@ -159,7 +159,8 @@ export default {
         #content-experience
             z-index: 4
             .big_title
-                font-size: 220px
+                font-size: 200px
+                letter-spacing: 30px
                 color: rgba(255, 255, 255, 0.2)
                 position: absolute
                 left: 0
@@ -173,15 +174,15 @@ export default {
                 margin: 0 auto
                 text-align: left
                 font-weight: 300
-                top: 100px
                 .experience-item
                     transition: opacity .5s
                 h5
                     letter-spacing: 4px
                     font-weight: 300
                     span
-                        line-height: 30px
-                        letter-spacing: 5px
+                        letter-spacing: 7px
+                        line-height: 25px
+                        font-size: 22px
                 .left-line
                     &:before
                         content: ""
@@ -193,7 +194,7 @@ export default {
                         vertical-align: middle
             .experience-circle
                 position: absolute
-                top: calc(50% - 150px)
+                top: calc(50% - 250px)
                 left: calc(50% - 250px)
                 .circle-option,.circle-body
                     position: absolute

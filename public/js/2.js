@@ -402,7 +402,7 @@ exports = module.exports = __webpack_require__(78)(false);
 
 
 // module
-exports.push([module.i, "\n#footer .container {\n  padding: 100px 0 20px 0;\n}\n#footer:before {\n  background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n  position: relative;\n  z-index: 2;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  padding: 100px 0 20px 0;\n}\n#footer .fp-tableCell .footer-info-title {\n    letter-spacing: 5px;\n}\n#footer .footer-social .footer-icons {\n  font-size: 20px;\n}\n#footer .btn-orange {\n  padding: 30px 65px;\n}\n#footer .footer .footer-info {\n  margin-bottom: 100px;\n}\n#footer .footer.footer-join:before {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: calc(100% + 150px);\n  background: rgba(0, 0, 0, 0.4);\n  z-index: -1;\n  top: -100px;\n}\n", ""]);
+exports.push([module.i, "\n#footer .container {\n  padding: 60px 0 20px 0;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n  margin-bottom: 60px;\n}\n#footer:before {\n  background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n  position: relative;\n  z-index: 2;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n    letter-spacing: 6px;\n    font-weight: 400;\n    font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n  font-size: 20px;\n}\n#footer .btn-orange {\n  padding: 30px 65px;\n}\n#footer .footer .footer-info {\n  margin-bottom: 100px;\n  line-height: 25px;\n  font-size: 14px;\n  font-weight: 100;\n}\n#footer .footer .footer-info p {\n    margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n    font-size: 18px;\n    font-weight: 100;\n    line-height: 30px;\n}\n#footer .footer.footer-join:before {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: calc(100% + 150px);\n  background: rgba(0, 0, 0, 0.4);\n  z-index: -1;\n  top: -100px;\n}\n", ""]);
 
 // exports
 
@@ -414,8 +414,6 @@ exports.push([module.i, "\n#footer .container {\n  padding: 100px 0 20px 0;\n}\n
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
 //
 //
 //
@@ -519,10 +517,10 @@ var render = function() {
               "div",
               {
                 staticClass:
-                  "footer footer-social position-relative d-flex flex-column align-items-center justify-content-center w-100"
+                  "footer position-relative d-flex flex-column align-items-center justify-content-center w-100"
               },
               [
-                _c("div", { staticClass: "mb-5" }, [
+                _c("div", { staticClass: "footer-social" }, [
                   _c(
                     "a",
                     {
@@ -566,10 +564,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("h4", [
-      _c("h5", { staticClass: "text-left" }, [
-        _c("span", [_vm._v("不僅僅只是台灣最棒的餐飲集團")])
-      ]),
+    return _c("div", { staticClass: "join-us-slogan text-left" }, [
+      _vm._v("\n                    不僅僅只是台灣最棒的餐飲集團"),
+      _c("br"),
       _vm._v(" "),
       _c("span", { staticClass: "text-orange" }, [
         _vm._v("還是實現自我未來的大家庭")
@@ -587,7 +584,7 @@ var staticRenderFns = [
           "footer-info position-relative d-flex justify-content-between align-items-center w-100"
       },
       [
-        _c("div", { staticClass: "text-size-2" }, [
+        _c("div", { staticClass: "footer-text-left" }, [
           _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
             _vm._v("聯絡我們")
           ]),
@@ -608,12 +605,12 @@ var staticRenderFns = [
           attrs: { src: "/images/index_logo.png" }
         }),
         _vm._v(" "),
-        _c("div", { staticClass: "text-size-2" }, [
+        _c("div", { staticClass: "footer-text-right align-self-baseline" }, [
           _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
             _vm._v("橘色精神")
           ]),
           _vm._v(" "),
-          _c("p", { staticClass: "text-size-3" }, [
+          _c("p", { staticClass: "footer-info-subtitle" }, [
             _vm._v("用心 · 貼心 · 安心"),
             _c("br"),
             _vm._v("信心 · 一心 · 同理心")
