@@ -1,5 +1,5 @@
 <template>
-    <div id="block-brands" class="section text-white position-relative text-center bg-black-cover" :style="'background: url(' + brandBg[brandIndex].background + ')'">
+    <div id="block-brands" class="section text-white position-relative text-center bg-black-cover" :style="'background-image: url(' + brandBg[brandIndex].background + ')'">
         <div class="container position-relative m-auto h-100 ">
             <div class="row h-100 flex-column align-items-center justify-content-center">
                 <h3 class="main-title text-uppercase"><span class="fs-inherit text-orange">橘色</span>版圖<br><span class="text-size-3 sub-title">orange brands</span></h3>
@@ -57,7 +57,7 @@ export default {
                         text: '小鍋<span class="text-orange">新</span>時尚<br>不管多少人都能吃得精彩！',
                     },
                     {
-                        background: '/images/bg_brand_1.png',
+                        background: '/images/bg_food_1.png',
                         title: 'M One Cafe',
                         contact: '/',
                         book: '/',

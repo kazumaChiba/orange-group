@@ -1,8 +1,11 @@
 <template>
     <div id="block-foods" class="section text-white position-relative">
-        <div class="block-food-body d-flex h-100 bg-black-filter" :style="'background-image:url('+foodItems[index_old].url+')'">
-            <div class="bg-transition bg-left" :class="{'active' : bgTransition}">
-                <div class="bg-inner" :style="'background-image:url('+foodItems[food_index].url+')'"></div>
+        <div class="block-food-body d-flex bg-black-filter">
+            <div class="bg-transition bg-left">
+                <div class="bg-inner" 
+                    :style="'background-image:url('+foodItems[food_index].url+')'"
+                    :class="{'active' : bgTransition}"
+                ></div>
             </div>
             <div class="content-food -left d-flex flex-column justify-content-center position-relative">
                 <div class="mb-5" :class="{'fade' : addTransition}">
@@ -39,7 +42,6 @@ export default {
             return {
                 bgTransition: false,
                 addTransition: false,
-                index_old: 0,
                 foodItems: [
                     {
                         subTitle: '頂級食材源自產地與挑選<br>只願意提供最美好的食材給每位客戶',
@@ -67,12 +69,9 @@ export default {
         methods: {
             bgAnimated(index){
                 this.bgTransition = true;
-                setTimeout(()=>{
-                    this.index_old = index;
-                },1000);
                 setTimeout(()=>{ 
                     this.bgTransition = false; 
-                }, 1500);
+                }, 500);
             },
             startAnimate(time){
                 this.addTransition = true;
@@ -86,6 +85,15 @@ export default {
 
 <style lang="sass">
     #block-foods
+        &.active
+            .block-food-body
+                .content-food.-left , .content-food.-right
+                    transition-delay: .3s
+                    transform: translateY(0)
+                    opacity: 1
+                .bg-left
+                    .bg-inner
+                        background-position-y: 0
         .line-top
             &:before
                 content: ""
@@ -97,6 +105,7 @@ export default {
         .block-food-body
             background-repeat: no-repeat
             background-size: cover
+            height: 100vh
             &:after
                 content: ""
                 position: absolute
@@ -104,14 +113,23 @@ export default {
                 width: 100%
                 height: 100%
                 background: rgba(0, 0, 0, 0.6)
+            .bg-left
+                .bg-inner
+                    background-position: center
+                    background-size: cover
+                    background-position-y: 100vh
+                    transition: all 1s
+            .bg-inner
+                background-position-y: 0
+                transition: all .4s
+                &.active
+                    background-position-y: 100vh
+                    transition: initial
             .content-food
                 flex: 1
                 padding: 0 100px
                 overflow: hidden
-                .bg-left
-                    width: 100%
-                    left: 0
-                    z-index: 0
+                z-index: 2
                 .more-food-info
                     width: 100px
                     height: 100px
@@ -128,11 +146,16 @@ export default {
                 >div
                     position: relative
                     z-index: 2   
+                &.-left , &.-right
+                    transition: all 1s
+                    opacity: 0
                 &.-left
                     background: transparent
+                    transform: translateY(100%)
                 &.-right
                     background: white
                     z-index: 2   
+                    transform: translateY(-100%)
                     &:before,&:after
                         content: ""
                         position: absolute
@@ -174,7 +197,7 @@ export default {
                             transform-origin: 45% 55%
                         &.active
                             .internal-circle
-                                transform: rotate(360deg)
-                                transition: all 1s
+                                transform: rotate(180deg)
+                                transition: all .5s ease-in-out
 
 </style>

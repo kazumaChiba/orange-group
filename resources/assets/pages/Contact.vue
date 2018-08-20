@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import MenuHeader from 'components/block-header-menu'
+import MenuHeader from 'components/block-menu-header'
 import Banner from 'components/block-banner'
 import ContactForm from 'components/contact-form'
 import BlockFooter from 'components/block-footer'

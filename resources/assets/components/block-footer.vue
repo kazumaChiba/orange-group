@@ -1,12 +1,21 @@
 <template>
     <div id="footer" class="section text-white text-center bg-black-cover position-relative" style="background-image:url('/images/bg_footer.png')">
-        <div class="container h-100 section-pd">
-            <div class="row h-100">
-                <div class="footer footer-join position-relative d-flex align-items-center justify-content-between w-100">
-                    <h4 class="text-left"><span>不僅僅只是台灣最棒的餐飲集團</span><br><span class="text-orange">還是實現自我未來的大家庭</span></h4>
+        <div class="footer footer-join position-relative d-flex align-items-center justify-content-between w-100">
+            <div class="container">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <h4>
+                        <h5 class="text-left">
+                            <span>不僅僅只是台灣最棒的餐飲集團</span>
+                        </h5>
+                        <span class="text-orange">還是實現自我未來的大家庭</span>
+                    </h4>
                     <router-link :to="'/'" class="btn-orange">馬上加入我們</router-link>
                 </div>
-                <div class="footer footer-info position-relative d-flex justify-content-between align-items-center w-100">
+            </div>
+        </div>
+        <div class="footer container">
+            <div class="row d-flex flex-column justify-content-between">
+                <div class="footer-info position-relative d-flex justify-content-between align-items-center w-100">
                     <div class="text-size-2">
                         <p class="text-orange footer-info-title mb-4">聯絡我們</p>
                         <p>台北市大安區仁愛路四段37號3樓之B</p>
@@ -42,6 +51,8 @@ export default {
 
 <style lang="sass">
     #footer
+        .container
+            padding: 100px 0 20px 0
         &:before
             background: rgba(0, 0, 0, 0.85)  
         .fp-tableCell
@@ -49,11 +60,27 @@ export default {
             z-index: 2
             display: flex
             flex-direction: column
-            justify-content: center
+            justify-content: space-between
             align-items: center
+            padding: 100px 0 20px 0
             .footer-info-title
                 letter-spacing: 5px
         .footer-social
             .footer-icons
                 font-size: 20px
+        .btn-orange
+            padding: 30px 65px
+        .footer
+            .footer-info
+                margin-bottom: 100px
+            &.footer-join
+                &:before
+                    content: ""
+                    position: absolute
+                    width: 100%
+                    height: calc(100% + 150px)
+                    background: rgba(0, 0, 0, 0.4)
+                    z-index: -1
+                    top: -100px
+
 </style>

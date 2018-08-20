@@ -1,87 +1,79 @@
 <template>
-    <div id="block-news" class="section text-black position-relative text-center">
-        <div class="container position-relative m-auto section-pd">
-            <div class="row flex-column align-items-center justify-content-center flex-nowrap">
-                <h3 class="main-title text-uppercase"><span class="fs-inherit text-orange">橘色</span>新訊<br><span class="text-size-3 sub-title">events & news</span></h3>
-                <div class="news-body w-100">
-                    <div class="news-categories d-flex justify-content-center text-size-2 mt-5 mb-3">
-                        <div 
-                            v-for="(item,$index) in newsCategories" 
-                            :key="$index" 
-                            class="category-items mr-4 ml-4" 
-                            :class="(newsIndex == $index) ? 'active' : ''"
-                            @click="newsIndex = $index"
-                        >
-                            {{item}}
-                        </div>
-                    </div>
-                    <transition-group
-                        name="fade" 
-                        tag="div" 
-                        class="news-list d-flex flex-column flex-wrap align-items-center">
-                        <div 
-                            class="news-list d-flex justify-content-between w-100"
-                            v-for="(n,$groupIndex) in viewIndex+1"
-                            :key="$groupIndex"
-                        >
-                            <div class="block-list -beside d-flex flex-column justify-content-between">
-                                <div 
-                                    class="news-item"
-                                    v-for="(item,$index) in newsItems.slice(viewIndex,viewIndex+2)"
-                                    :key="$index"    
-                                >
-                                    <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background: url(' + item.background + ')'">
-                                        <router-link :to="'/'" class="btn-border">了解更多</router-link>
-                                    </div>
-                                    <div class="news-content">
-                                        <div>
-                                            <span class="text-black text-size-1">{{item.date}}</span>
-                                            <span class="text-orange text-size-1">{{item.category}}</span>
-                                        </div>
-                                        <a class="news-title" :href="item.link" v-html="item.title"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block-list -center d-flex flex-column justify-content-between">
-                                <div class="news-item d-flex flex-column h-100 w-100">
-                                    <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background: url(' + newsItems[viewIndex+2].background + ')'">
-                                        <router-link :to="'/'" class="btn-border">了解更多</router-link>
-                                    </div>
-                                    <div class="news-content">
-                                        <div>
-                                            <span class="text-black text-size-1">{{newsItems[viewIndex+2].date}}</span>
-                                            <span class="text-orange text-size-1">{{newsItems[viewIndex+2].category}}</span>
-                                        </div>
-                                        <a class="news-title" :href="newsItems[viewIndex+2].link" v-html="newsItems[viewIndex+2].title"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block-list -beside d-flex flex-column justify-content-between">
-                                <div 
-                                    class="news-item"
-                                    v-for="(item,$index) in newsItems.slice(viewIndex+3,viewIndex+5)"
-                                    :key="$index"    
-                                >
-                                    <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background: url(' + item.background + ')'">
-                                        <router-link :to="'/'" class="btn-border">了解更多</router-link>
-                                    </div>
-                                    <div class="news-content">
-                                        <div>
-                                            <span class="text-black text-size-1">{{item.date}}</span>
-                                            <span class="text-orange text-size-1">{{item.category}}</span>
-                                        </div>
-                                        <a class="news-title" :href="item.link" v-html="item.title"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </transition-group>
-                </div>
-                <router-link :to="'/'">
-                    <span class="btn-load-more btn-orange" @click="loadMore()">更多橘色新訊</span>
-                </router-link>
+    <div class="news-body w-100">
+        <div class="news-categories d-flex justify-content-center text-size-2 mt-5 mb-3">
+            <div 
+                v-for="(item,$index) in newsCategories" 
+                :key="$index" 
+                class="category-items mr-4 ml-4" 
+                :class="(newsIndex == $index) ? 'active' : ''"
+                @click="newsIndex = $index"
+            >
+                {{item}}
             </div>
         </div>
+        <transition-group
+            name="fade" 
+            tag="div" 
+            class="news-list d-flex flex-column flex-wrap align-items-center">
+            <div 
+                class="news-list d-flex justify-content-between w-100"
+                v-for="(n,$groupIndex) in viewIndex+1"
+                :key="$groupIndex"
+            >
+                <div class="block-list -beside d-flex flex-column justify-content-between">
+                    <div 
+                        class="news-item"
+                        v-for="(item,$index) in newsItems.slice(viewIndex,viewIndex+2)"
+                        :key="$index"    
+                    >
+                        <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background: url(' + item.background + ')'">
+                            <router-link :to="'/'" class="btn-border">了解更多</router-link>
+                        </div>
+                        <div class="news-content">
+                            <div>
+                                <span class="text-black text-size-1">{{item.date}}</span>
+                                <span class="text-orange text-size-1">{{item.category}}</span>
+                            </div>
+                            <a class="news-title" :href="item.link" v-html="item.title"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-list -center d-flex flex-column justify-content-between">
+                    <div 
+                        class="news-item d-flex flex-column h-100 w-100"
+                    >
+                        <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background: url(' + newsItems[viewIndex+2].background + ')'">
+                            <router-link :to="'/'" class="btn-border">了解更多</router-link>
+                        </div>
+                        <div class="news-content">
+                            <div>
+                                <span class="text-black text-size-1">{{newsItems[viewIndex+2].date}}</span>
+                                <span class="text-orange text-size-1">{{newsItems[viewIndex+2].category}}</span>
+                            </div>
+                            <a class="news-title" :href="newsItems[viewIndex+2].link" v-html="newsItems[viewIndex+2].title"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-list -beside d-flex flex-column justify-content-between">
+                    <div 
+                        class="news-item"
+                        v-for="(item,$index) in newsItems.slice(viewIndex+3,viewIndex+5)"
+                        :key="$index"    
+                    >
+                        <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background: url(' + item.background + ')'">
+                            <router-link :to="'/'" class="btn-border">了解更多</router-link>
+                        </div>
+                        <div class="news-content">
+                            <div>
+                                <span class="text-black text-size-1">{{item.date}}</span>
+                                <span class="text-orange text-size-1">{{item.category}}</span>
+                            </div>
+                            <a class="news-title" :href="item.link" v-html="item.title"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </transition-group>
     </div>
 </template>
 
@@ -177,10 +169,7 @@ export default {
             }
         },
         methods: {
-            loadMore(){
-                this.viewIndex++;
-                fullpage_api.reBuild();
-            }
+
         }
 }
 </script>
@@ -211,7 +200,7 @@ export default {
         .category-items
             cursor: pointer
             transition: all .3s
-            &:hover
+            &:hover , &.active
                 color: #f26e22
         .news-list
             transition: all .5s
@@ -226,6 +215,8 @@ export default {
                         height: 350px
                         margin-bottom: 15px  
                         flex: 1
+                        background-position: center
+                        background-size: cover
                         &:before
                             content: ""
                             background: #f26d23

@@ -15,14 +15,17 @@ h5 {
 
 h1 {
   font-size: 120px;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 75px;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 60px;
+  font-weight: 500;
 }
 
 h4 {
@@ -193,5 +196,56 @@ body,
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   left: 0;
+}
+
+#app .fade-enter-active,
+#app .fade-leave-active {
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+#app .fade-enter-to,
+#app .fade-leave-to {
+  opacity: 0;
+}
+
+#app .bg-transition {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#app .bg-transition .bg-inner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  height: 100%;
+  width: 100vw;
+}
+
+#app .fade-enter-active,
+#app .fade-leave-active {
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+#app .fade-enter,
+#app .fade-leave-to {
+  opacity: 0;
+}
+
+#app .fade-enter-active,
+#app .fade-leave-active {
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+#app .fade-enter,
+#app .fade-leave-to {
+  opacity: 0;
+  display: none;
 }
 

@@ -8,10 +8,13 @@ h1,h2,h3,h4,h5
     font-weight: 400
 h1
     font-size: 120px
+    font-weight: 500
 h2
     font-size: 75px
+    font-weight: 500
 h3
     font-size: 60px
+    font-weight: 500
 h4
     font-size: 45px
 h5
@@ -119,3 +122,47 @@ html,body,#app,#block-main
         height: 100%
         background: rgba(0, 0, 0, 0.7)  
         left: 0  
+
+#app
+    .fade-enter-active, .fade-leave-active
+        transition: opacity .5s
+    .fade-enter-to, .fade-leave-to
+        opacity: 0
+    .bg-transition
+        position: absolute
+        top: 0
+        width: 50%
+        height: 100%
+        overflow: hidden
+        .bg-inner
+            background-repeat: no-repeat
+            background-size: cover
+            transition: all .5s       
+            height: 100% 
+            width: 100vw
+        // &.bg-left
+        //     transform: translateY(100%)
+        // &.bg-right
+        //     transform: translateY(-100%)
+        //     right: 0
+        //     .bg-inner
+        //         transform: translateX(-50%)
+        // &.active
+        //     transform: translateY(0) 
+        //     transition: all 1s   
+                 
+
+    .fade-enter-active,
+    .fade-leave-active
+        transition: opacity .5s
+
+    .fade-enter,
+    .fade-leave-to
+        opacity: 0
+
+    .fade-enter-active, .fade-leave-active 
+        transition: opacity .5s
+        
+    .fade-enter, .fade-leave-to
+        opacity: 0
+        display: none

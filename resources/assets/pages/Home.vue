@@ -1,22 +1,32 @@
 <template>
     <div id="block-main">
-        <div id="header" class="position-fixed" :class="sectionPosition">
+        <div id="header" class="position-fixed" :class="closeMenu ? 'active' : '' + sectionPosition">
             <div class="mt-5 d-flex">
                 <div class="logo" :class=" sectionIndex != 0 ? 'fade' : '' ">
                     <img src="/images/index_logo.png">
                 </div>
                 <div id="main-menu" class="d-flex justify-content-end align-items-start">
                     <menu-header :class="closeMenu ? 'menu-close' : '' || textShadow ? 'menu-shadow' : '' "></menu-header>
-                    <span id="burger-menu" :class="sectionIndex != 0 ? 'menu-close' : ''" @click="closeMenu = !closeMenu"></span>
                 </div>
             </div>
         </div> 
+        <span id="burger-menu" :class="sectionIndex != 0 ? 'menu-close' : ''" @click="closeMenu = !closeMenu"></span>
         <div>
             <full-page id="fullpage" ref="fullpage" :options="options">
                 <block-experience></block-experience>
                 <block-foods></block-foods>
                 <block-brands></block-brands>
-                <block-news></block-news>
+                <div id="block-news" class="section text-black position-relative text-center">
+                    <div class="container position-relative m-auto section-pd">
+                        <div class="row flex-column align-items-center justify-content-center flex-nowrap">
+                            <h3 class="main-title text-uppercase"><span class="fs-inherit text-orange">橘色</span>新訊<br><span class="text-size-3 sub-title">events & news</span></h3>
+                                <block-news></block-news>
+                                <router-link :to="'/news'" class="btn-load-more btn-orange">
+                                    更多橘色新訊
+                                </router-link>
+                        </div>
+                    </div>
+                </div>
                 <block-footer></block-footer>
             </full-page>
         </div>    
@@ -24,7 +34,7 @@
 </template>
 
 <script>
-    import MenuHeader from 'components/block-header-menu'
+    import MenuHeader from 'components/block-menu-header'
     import BlockExperience from 'components/block-experience'
     import BlockBrands from 'components/block-brands'
     import BlockNews from 'components/block-news'
@@ -101,7 +111,9 @@
         overflow: hidden
         transition: all .5s
         position: absolute
-        right: 0
+        right: 30px
+        top: 48px
+        z-index: 9999999
         &:before
             content: "|||"
             color: #f26c23
@@ -112,13 +124,15 @@
             cursor: pointer
         &.menu-close
             width: 25px
-    #fp-nav
+    #fp-nav.fp-right
         opacity: 0
         display: flex
         flex-direction: column
         width: calc(50% - 585px)
         visibility: hidden
         transition: opacity .3s
+        right: 0
+        width: unset
         &.active
             visibility: visible
             opacity: 1
@@ -129,6 +143,7 @@
                 margin: 0
                 &:last-child
                     display: none
+                
                 span
                     display: none
                 .fp-tooltip.fp-right
@@ -138,74 +153,41 @@
                     font-size: 17px
                     letter-spacing: 0px
                     font-style: italic
-                    top: 50%
-                    right: 50%
+                    right: 0
                     overflow: visible
-                    transform: translate(50% , -50%)
+                    position: relative
+                    height: 100%
+                    display: flex
+                    align-items: center
+                    padding: 0 30px
                 &:hover
                     cursor: pointer
                     background: #f26c23
                     transition: all .3s
                     .fp-tooltip.fp-right
                         color: white
+                a
+                    position: absolute
+                    top: 0
+                    left: 0
 
     #app
         .fp-scroller
             min-height: 100%
         .logo
-            height: 150px   
+            height: 200px   
         #header
             top: 0
             z-index: 999999
             width: 100% 
+            &.active
+                z-index: 0
+                transition-delay: 1s
+
         .main-title
             line-height: 35px
             .sub-title
                 letter-spacing: 16px
                 font-weight: 400
-        .fade-enter-active, .fade-leave-active
-            transition: opacity .5s
-        .fade-enter-to, .fade-leave-to
-            opacity: 0
-        .bg-transition
-            position: absolute
-            top: 0
-            width: 50%
-            height: 100%
-            overflow: hidden
-            .bg-inner
-                background-position-x: 0
-                background-repeat: no-repeat
-                background-size: cover
-                transition: all 1s       
-                height: 100% 
-                width: 100vw
-            &.bg-left
-                transform: translateY(-100%)
-            &.bg-right
-                transform: translateY(100%)
-                right: 0
-                .bg-inner
-                    transform: translateX(-50%)
-            &.active
-                animation: bgSwitch 1s ease-in-out             
-
-    @keyframes bgSwitch
-        100%
-            transform: translateY(0%)
-
-    .fade-enter-active,
-    .fade-leave-active
-        transition: opacity .5s
-
-    .fade-enter,
-    .fade-leave-to
-        opacity: 0
-
-    .fade-enter-active, .fade-leave-active 
-        transition: opacity .5s
         
-    .fade-enter, .fade-leave-to
-        opacity: 0
-        display: none
 </style>

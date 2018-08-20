@@ -1,10 +1,18 @@
 <template>
-    <div id="block-experience" class="position-relative section text-white text-center h-100" :style="'background-image:url('+experience[index_old].url+')'">
+    <div id="block-experience" class="position-relative section text-white text-center h-100">
         <div class="bg-transition bg-left" :class="{'active' : bgTransition}">
-            <div class="bg-inner" :style="'background-image:url('+experience[experience_index].url+')'"></div>
+            <div 
+                class="bg-inner position-absolute" 
+                :class="{'active' : bgTransition}"
+                :style="'background-image:url('+experience[experience_index].url+')'"
+            ></div>
         </div>
-        <div class="bg-transition bg-right" :class="{'active' : bgTransition}">
-            <div class="bg-inner" :style="'background-image:url('+experience[experience_index].url+')'"></div>
+        <div class="bg-transition bg-right">
+            <div 
+                class="bg-inner position-absolute" 
+                :class="{'active' : bgTransition}"
+                :style="'background-image:url('+experience[experience_index].url+')'"
+            ></div>
         </div> 
 
         <div id="content-experience" class="position-relative">
@@ -51,35 +59,34 @@ export default {
                     },  
                 ],
                 experience_index: 0,
-                index_old: 0,
             }
         },
         components: {
             'ex': {
                 template: '<div>'+
-                          '<h2 class="mb-4">橘色體驗</h2>'+
-                          '<h5 class="mb-4"><span class="fs-inherit text-orange">橘色 </span>體驗</h5>'+
+                          '<h2 class="mb-4"><span class="fs-inherit text-orange">橘色</span>體驗</h2>'+
+                          '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色體驗</router-link>'+
                           '</div>'
             },
             'pot': {
                 template: '<div>'+
-                          '<h2 class="mb-4">橘色鍋物</h2>'+
-                          '<h5 class="mb-4"><span class="fs-inherit text-orange">橘色 </span>鍋物</h5>'+
+                          '<h2 class="mb-4"><span class="fs-inherit text-orange">橘色</span>鍋物</h2>'+
+                          '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色鍋物</router-link>'+
                           '</div>'
             },
             'coffee': {
                 template: '<div>'+
-                          '<h3 class="mb-4">M One Cafe</h3>'+
-                          '<h5 class="mb-4"><span class="fs-inherit text-orange">M One </span>Cafe</h5>'+
+                          '<h3 class="mb-4"><span class="fs-inherit text-orange">M One</span> Cafe</h3>'+
+                          '<h5 class="mb-4"><span class="fs-inheri">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索M One Cafe</router-link>'+
                           '</div>'
             },
             'spa': {
                 template: '<div>'+
-                          '<h2 class="mb-4">橘色舒體</h2>'+
-                          '<h5 class="mb-4"><span class="fs-inherit text-orange">橘色 </span>舒體</h5>'+
+                          '<h2 class="mb-4"><span class="fs-inherit text-orange">橘色</span>舒體</h2>'+
+                          '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色舒體</router-link>'+
                           '</div>'
             },
@@ -87,12 +94,9 @@ export default {
         methods: {
             bgAnimated(index){
                 this.bgTransition = true;
-                setTimeout(()=>{
-                    this.index_old = index;
-                },1000);
                 setTimeout(()=>{ 
                     this.bgTransition = false; 
-                }, 1500);
+                }, 500);
             },
         },
 }
@@ -101,6 +105,12 @@ export default {
 <style lang="sass">
     #block-experience
         background-size: cover  
+        &.active
+            .bg-transition 
+                &.bg-left , &.bg-right , &.active
+                    .bg-inner
+                        background-position-y: 0
+
         &:before , .bg-transition.bg-left:before
             position: absolute
             width: 50%
@@ -108,20 +118,46 @@ export default {
             background: black
             content: ""
             left: 0
-            opacity: 0.6
+            opacity: 0.4
             top: calc(50% - 50vh)
-            z-index: 0
+            z-index: 4
             content: ""
             word-break: keep-all  
-        .bg-transition.bg-left:before
-            width: 100%
+        .bg-transition
+            &.bg-left , &.bg-right
+                .bg-inner
+                    background-position-y: -100vh
+                    transition-delay: .3s
+                    &.active
+                        background-position-y: 0
+                        opacity: 1
+                        //transition: initial
+            &.bg-right
+                .bg-inner
+                    &.active
+                        background-position-y: 100vh
+                        opacity: 0
+            &.bg-left
+                z-index: 3
+                &:before
+                    width: 100%
+                .bg-inner
+                    left: 0
+                    &.active
+                        background-position-y: -100vh
+                        opacity: 0
+            &.bg-right
+                z-index: 2
+                right: 0
+                .bg-inner
+                    right: 0
+                    background-position-y: 100vh
         .fp-scroller
             display: flex     
             flex-direction: column
             justify-content: center
         #content-experience
-            // position: absolute  
-            // left: calc(50% - 250px)
+            z-index: 4
             .big_title
                 font-size: 220px
                 color: rgba(255, 255, 255, 0.2)
@@ -143,6 +179,9 @@ export default {
                 h5
                     letter-spacing: 4px
                     font-weight: 300
+                    span
+                        line-height: 30px
+                        letter-spacing: 5px
                 .left-line
                     &:before
                         content: ""
