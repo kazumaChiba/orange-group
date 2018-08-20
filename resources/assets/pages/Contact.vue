@@ -1,7 +1,7 @@
 <template>
     <div id="block-contact">
         <banner title="聯絡<span class='text-orange'>我們</span>" img="/images/slideshow_1.jpg"></banner>
-        <div id="header">
+        <div id="header" class="position-absolute w-100">
             <div class="mt-5 d-flex w-100">
                 <div class="logo">
                     <img class="position-relative" src="/images/index_logo.png">
@@ -35,19 +35,11 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <contact-form :brand="brandName"></contact-form>
-                <div id="block-address">
-                    <div>
-                        
-                    </div>
-                </div>
-                <div id="block-map">
-
-                </div>
-            </div>
+        <div id="contact-form">
+            <contact-form :brand="brandName"></contact-form>
         </div>
+        
+        <block-footer></block-footer>
     </div>
 </template>
 
@@ -55,6 +47,7 @@
 import MenuHeader from 'components/block-header-menu'
 import Banner from 'components/block-banner'
 import ContactForm from 'components/contact-form'
+import BlockFooter from 'components/block-footer'
 
 export default {
     data: function () {
@@ -104,16 +97,18 @@ export default {
         MenuHeader,
         Banner,
         ContactForm,
+        BlockFooter,
     },
 }
 </script>
 
 <style lang="sass">
+    #header
+        top: 0
     #block-contact
-        
         #block-contact-brands
-            top: 150px
-            margin-bottom: 250px
+            transform: translateY(-150px)
+            margin-bottom: -50px
             .row
                 height: 500px
                 position: relative

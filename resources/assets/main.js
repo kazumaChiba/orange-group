@@ -28,6 +28,7 @@ import fontawesome from '@fortawesome/fontawesome';
 import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
 
 import faLightbulb from '@fortawesome/fontawesome-pro-light/faLightbulb';
+import falMapMarkerAlt from '@fortawesome/fontawesome-pro-light/faMapMarkerAlt';
 
 import fabFacebook from '@fortawesome/fontawesome-free-brands/faFacebookF';
 import fabTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
@@ -38,6 +39,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 fontawesome.library.add(faLightbulb);
 fontawesome.library.add(fabFacebook);
 fontawesome.library.add(fabTwitter);
+fontawesome.library.add(falMapMarkerAlt);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false

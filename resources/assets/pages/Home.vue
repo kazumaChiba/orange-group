@@ -163,8 +163,6 @@
             .sub-title
                 letter-spacing: 16px
                 font-weight: 400
-        .section-pd
-            padding: 100px 0
         .fade-enter-active, .fade-leave-active
             transition: opacity .5s
         .fade-enter-to, .fade-leave-to
@@ -203,15 +201,6 @@
     .fade-enter,
     .fade-leave-to
         opacity: 0
-
-    .bg-black-cover
-        &:before
-            content: ""
-            position: absolute
-            width: 100%
-            height: 100%
-            background: rgba(0, 0, 0, 0.7)  
-            left: 0  
 
     .fade-enter-active, .fade-leave-active 
         transition: opacity .5s

@@ -1,5 +1,5 @@
 <template>
-    <div id="footer" class="section text-white text-center bg-black-cover" style="background-image:url('/images/bg_footer.png')">
+    <div id="footer" class="section text-white text-center bg-black-cover position-relative" style="background-image:url('/images/bg_footer.png')">
         <div class="container h-100 section-pd">
             <div class="row h-100">
                 <div class="footer footer-join position-relative d-flex align-items-center justify-content-between w-100">
