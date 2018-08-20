@@ -1,5 +1,7 @@
 <template>
-
+    <div id="block-news">
+        
+    </div>
 </template>
 
 <script>

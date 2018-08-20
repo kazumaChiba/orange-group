@@ -96,7 +96,7 @@ export default {
                 this.bgTransition = true;
                 setTimeout(()=>{ 
                     this.bgTransition = false; 
-                }, 500);
+                }, 800);
             },
         },
 }

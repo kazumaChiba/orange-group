@@ -90,7 +90,7 @@ export default {
                     name: 'join',
                 }
             ],
-            brandName: 'shabu',
+            brandName: '',
         }
     },
     components: {

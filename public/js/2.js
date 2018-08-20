@@ -800,7 +800,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 intro: '<p class="text-size-2 font-weight-bold">即刻加入橘色大家庭</p>',
                 name: 'join'
             }],
-            brandName: 'shabu'
+            brandName: ''
         };
     },
     components: {
@@ -1469,6 +1469,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -1532,7 +1533,7 @@ var render = function() {
                     { staticClass: "map-title" },
                     [
                       _c("font-awesome-icon", {
-                        attrs: { icon: ["fal", "map-marker-alt"] }
+                        attrs: { icon: "['fal','map-marker-alt']" }
                       }),
                       _vm._v(" "),
                       _c("span", { staticClass: "text-orange" }, [

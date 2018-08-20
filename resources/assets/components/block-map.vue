@@ -10,7 +10,8 @@
                     @click="mapIndex = $index"
                 >
                     <p class="map-title">
-                        <font-awesome-icon :icon="['fal','map-marker-alt']" />
+                        <!-- <font-awesome-icon :icon="['fal','map-marker-alt']" /> -->
+                        <font-awesome-icon icon="['fal','map-marker-alt']" />
                         <span class="text-orange">{{item.title}}</span>    
                     </p>
                     <p class="map-address font-weight-bold text-size-1">{{item.address}}</p>

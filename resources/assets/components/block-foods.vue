@@ -71,7 +71,7 @@ export default {
                 this.bgTransition = true;
                 setTimeout(()=>{ 
                     this.bgTransition = false; 
-                }, 500);
+                }, 800);
             },
             startAnimate(time){
                 this.addTransition = true;
@@ -93,7 +93,8 @@ export default {
                     opacity: 1
                 .bg-left
                     .bg-inner
-                        background-position-y: 0
+                        transition-delay: .3s   
+                        background-position-y: center
         .line-top
             &:before
                 content: ""
@@ -118,13 +119,10 @@ export default {
                     background-position: center
                     background-size: cover
                     background-position-y: 100vh
-                    transition: all 1s
-            .bg-inner
-                background-position-y: 0
-                transition: all .4s
-                &.active
-                    background-position-y: 100vh
-                    transition: initial
+                    transition: all .5s
+                    &.active
+                        background-position-y: 100vh
+                        transition: initial
             .content-food
                 flex: 1
                 padding: 0 100px
