@@ -79,7 +79,7 @@ h5 {
   transition: all .3s;
   cursor: pointer;
   position: relative;
-  color: white;
+  color: white !important;
   border: none;
 }
 
@@ -97,10 +97,8 @@ h5 {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.btn-orange:hover:before {
-  width: calc(100% - 70px);
-  -webkit-transition: all .5s;
-  transition: all .5s;
+.btn-orange.-fat {
+  padding: 30px 65px;
 }
 
 .btn-border {
@@ -247,5 +245,109 @@ body,
 #app .fade-leave-to {
   opacity: 0;
   display: none;
+}
+
+#block-news:before,
+#block-news:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  left: 0;
+  top: 0;
+}
+
+#block-news:before {
+  background-size: 25px 25px;
+  background-image: radial-gradient(#0000000d 20%, transparent 15%), radial-gradient(#0000000d 20%, transparent 20%);
+  background-position: 10px 25px;
+}
+
+#block-news:after {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(white));
+  background: linear-gradient(transparent, white);
+}
+
+#block-news .category-items {
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-weight: 600;
+}
+
+#block-news .category-items:hover,
+#block-news .category-items.active {
+  color: #f26e22;
+}
+
+#block-news .news-list {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#block-news .news-list .news-item {
+  margin-bottom: 50px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  height: 460px;
+  overflow: hidden;
+}
+
+#block-news .news-list .news-item .news-head {
+  height: 350px;
+  margin-bottom: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-position: center;
+  background-size: cover;
+}
+
+#block-news .news-list .news-item .news-head:before {
+  content: "";
+  background: #f26d23;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#block-news .news-list .news-item .news-head:hover:before {
+  opacity: 0.6;
+}
+
+#block-news .news-list .news-item .news-head:hover a {
+  display: block;
+}
+
+#block-news .news-list .news-item .news-head a {
+  display: none;
+  z-index: 2;
+}
+
+#block-news .news-list .news-item .news-head .text-size-1 {
+  font-size: 13px !important;
+}
+
+#block-news .news-list .news-item .news-title {
+  color: black;
+  font-weight: 500;
+}
+
+#block-news .news-list .news-item .news-title:hover {
+  color: #f26e22;
+}
+
+#block-news .news-content .news-info {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+#block-news .btn-orange:hover {
+  border: 1px solid #f26d23;
+  background: transparent;
+  color: #f26d23 !important;
 }
 

@@ -47,7 +47,7 @@ h5
     transition: all .3s
     cursor: pointer
     position: relative
-    color: white
+    color: white !important
     border: none
     &:before
         content: ""
@@ -59,9 +59,11 @@ h5
         top: 50%
     &:hover
         background: rgba(0, 0, 0, 0.5)    
-        &:before
-            width: calc(100% - 70px)
-            transition: all .5s
+        // &:before
+        //     width: calc(100% - 70px)
+        //     transition: all .5s
+    &.-fat
+        padding: 30px 65px
 .btn-border 
     border: 1px solid white
     padding: 15px 35px
@@ -168,69 +170,68 @@ html,body,#app,#block-main
         display: none
 
 // 橘色新訊
-    #block-news 
-        &:before ,  &:after 
-            content: ""
-            position: absolute
-            width: 100%
-            height: 400px
-            left: 0
-            top: 0
-        &:before
-            background-size: 25px 25px
-            background-image: radial-gradient(#0000000d 20%, transparent 15%), radial-gradient(#0000000d 20%, transparent 20%)
-            background-position: 10px 25px
-        &:after 
-            background: linear-gradient(transparent , white)
-        .category-items
-            cursor: pointer
-            transition: all .3s
-            font-weight: 500
-            &:hover , &.active
-                color: #f26e22
-        .news-list
+#block-news 
+    &:before ,  &:after 
+        content: ""
+        position: absolute
+        width: 100%
+        height: 400px
+        left: 0
+        top: 0
+    &:before
+        background-size: 25px 25px
+        background-image: radial-gradient(#0000000d 20%, transparent 15%), radial-gradient(#0000000d 20%, transparent 20%)
+        background-position: 10px 25px
+    &:after 
+        background: linear-gradient(transparent , white)
+    .category-items
+        cursor: pointer
+        transition: all .3s
+        font-weight: 600
+        &:hover , &.active
+            color: #f26e22
+    .news-list
+        transition: all .5s
+        .news-item
+            margin-bottom: 50px
             transition: all .5s
-            .block-list
-                width: 20%
-                &.-center
-                    width: 50%
-                .news-item
-                    margin-bottom: 50px
-                    transition: all .5s
-                    .news-head
-                        height: 350px
-                        margin-bottom: 10px  
-                        flex: 1
-                        background-position: center
-                        background-size: cover
-                        &:before
-                            content: ""
-                            background: #f26d23
-                            position: absolute
-                            width: 100%
-                            height: 100%
-                            opacity: 0
-                            transition: all .3s
-                        &:hover
-                            &:before
-                                opacity: 0.6
-                            a
-                                display: block
-                        a
-                            display: none
-                            z-index: 2
-                        .text-size-1
-                            font-size: 13px !important
-                    .news-title
-                        color: black
-                        font-weight: 500
-                        &:hover
-                            color: #f26e22
+            height: 460px
+            overflow: hidden
+            .news-head
+                height: 350px
+                margin-bottom: 10px  
+                flex: 1
+                background-position: center
+                background-size: cover
+                &:before
+                    content: ""
+                    background: #f26d23
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    opacity: 0
+                    transition: all .3s
+                &:hover
+                    &:before
+                        opacity: 0.6
+                    a
+                        display: block
+                a
+                    display: none
+                    z-index: 2
+                .text-size-1
+                    font-size: 13px !important
+            .news-title
+                color: black
+                font-weight: 500
+                &:hover
+                    color: #f26e22
     .news-content
         .news-info
             margin-bottom: 5px
             font-weight: 600
     .btn-orange
         &:hover
-            background: #f26d23
-            color: white
+            border: 1px solid #f26d23
+            background: transparent
+            color: #f26d23 !important

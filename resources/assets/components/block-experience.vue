@@ -1,5 +1,5 @@
 <template>
-    <div id="block-experience" class="position-relative section text-white text-center h-100">
+    <div id="block-experience" class="position-relative section text-white text-center h-100" :style="'background-image:url('+experience[experience_index_old].url+')'">
         <div class="bg-transition bg-left" :class="{'active' : bgTransition}">
             <div 
                 class="bg-inner position-absolute" 
@@ -20,10 +20,10 @@
             <div class="experience-circle">
                 <div class="circle-body" :class="{'active' : bgTransition}"></div>
                 <div class="circle-option" :class="'e_index_'+experience_index">
-                    <a class="text-circle-option -left" @click="experience_view='ex'; experience_index = 0; bgAnimated(0)" :class="experience_index == 0 ? 'active' : ''">體驗</a>
-                    <a class="text-circle-option -top" @click="experience_view='pot'; experience_index = 1; bgAnimated(1)" :class="experience_index == 1 ? 'active' : ''">鍋物</a>
-                    <a class="text-circle-option -right" @click="experience_view='coffee'; experience_index = 2; bgAnimated(2)" :class="experience_index == 2 ? 'active' : ''">咖啡</a>
-                    <a class="text-circle-option -bottom" @click="experience_view='spa'; experience_index = 3; bgAnimated(3)" :class="experience_index == 3 ? 'active' : ''">舒體</a>
+                    <a class="text-circle-option -left" @click="experience_view='ex'; experience_index = 0; bgAnimated(800)" :class="experience_index == 0 ? 'active' : ''">體驗</a>
+                    <a class="text-circle-option -top" @click="experience_view='pot'; experience_index = 1; bgAnimated(800)" :class="experience_index == 1 ? 'active' : ''">鍋物</a>
+                    <a class="text-circle-option -right" @click="experience_view='coffee'; experience_index = 2; bgAnimated(800)" :class="experience_index == 2 ? 'active' : ''">咖啡</a>
+                    <a class="text-circle-option -bottom" @click="experience_view='spa'; experience_index = 3; bgAnimated(800)" :class="experience_index == 3 ? 'active' : ''">舒體</a>
                 </div>
             </div>
             <div class="experience-inner position-relative">
@@ -59,6 +59,7 @@ export default {
                     },  
                 ],
                 experience_index: 0,
+                experience_index_old: 0,
             }
         },
         components: {
@@ -92,11 +93,14 @@ export default {
             },
         },
         methods: {
-            bgAnimated(index){
+            bgAnimated(time){
                 this.bgTransition = true;
                 setTimeout(()=>{ 
                     this.bgTransition = false; 
-                }, 800);
+                }, parseInt(time));
+                setTimeout(()=>{ 
+                    this.experience_index_old = this.experience_index;
+                }, parseInt(time) + 800);
             },
         },
 }

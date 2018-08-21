@@ -7,7 +7,7 @@
                         不僅僅只是台灣最棒的餐飲集團<br>
                         <span class="text-orange">還是實現自我未來的大家庭</span>
                     </div>
-                    <router-link :to="'/'" class="btn-orange">馬上加入我們</router-link>
+                    <router-link :to="'/'" class="btn-orange -fat">馬上加入我們</router-link>
                 </div>
             </div>
         </div>
@@ -76,8 +76,6 @@ export default {
         .footer-social
             .footer-icons
                 font-size: 20px
-        .btn-orange
-            padding: 30px 65px
         .footer
             .footer-info
                 margin-bottom: 100px

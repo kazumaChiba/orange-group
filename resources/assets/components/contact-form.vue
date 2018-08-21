@@ -10,33 +10,33 @@
                             class="contact-form-field d-flex flex-column flex-wrap"
                         >
                             <div class="field-item field-user d-flex align-items-center position-relative">
-                                <font-awesome-icon class="field-icon" :icon="['fal','user']" />
                                 <input placeholder="您的姓名">
+                                <font-awesome-icon class="field-icon" :icon="['fal','user']" />
                             </div>
                             <div class="field-item field-envelop d-flex align-items-center position-relative">
-                                <font-awesome-icon class="field-icon" :icon="['fal','envelope']" />
                                 <input placeholder="您的電子信箱">
+                                <font-awesome-icon class="field-icon" :icon="['fal','envelope']" />
                             </div>
                             <div class="field-item field-phone d-flex align-items-center position-relative">
-                                <font-awesome-icon class="field-icon" :icon="['fal','phone']" />
                                 <input placeholder="您的電話">
+                                <font-awesome-icon class="field-icon" :icon="['fal','phone']" />
                             </div>
                             <div class="field-item field-location d-flex align-items-center position-relative">
-                                <font-awesome-icon class="field-icon" :icon="['fal','map-marker']" />
                                 <input placeholder="欲聯繫的橘色分館">
+                                <font-awesome-icon class="field-icon" :icon="['fal','map-marker']" />
                             </div>
                             <div class="field-item field-question d-flex align-items-center position-relative">
-                                <font-awesome-icon class="field-icon" :icon="['fal','question-circle']" />
                                 <input placeholder="欲詢問的問題類型">
+                                <font-awesome-icon class="field-icon" :icon="['fal','question-circle']" />
                             </div>
                             <div class="field-item field-content d-flex align-items-center position-relative h-100">
-                                <font-awesome-icon class="field-icon" :icon="['fal','paper-plane']" />
                                 <textarea placeholder="您的詢問內容"></textarea>
+                                <font-awesome-icon class="field-icon" :icon="['fal','paper-plane']" />
                             </div>
                         </div>
                         <div class="mt-4 clearfix">
                             <span class="text-size-1 float-left text-gray w-50 pr-4">您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝</span>
-                            <input type="submit" value="發送訊息" class="btn-orange w-50 d-inline-block float-right">
+                            <input type="submit" value="發送訊息" class="btn-orange d-inline-block float-right">
                         </div>
                     </form>
                 </div>
@@ -52,6 +52,7 @@
         #contact-form-body
             padding: 0 80px
             .field-item
+                width: 50%
                 .field-icon
                     position: absolute
                     top: 15px
@@ -72,13 +73,19 @@
                 margin-bottom: 20px
                 transition: all .3s
                 &::placeholder
-                    font-size: 14px
+                    font-size: 12px
                 &:focus
                     outline: none
                     border-bottom-color: #f26c23
                     &::placeholder
                         color: transparent
                         transition: all .3s
+                    &+.field-icon
+                        color: #f26c23
+                &.btn-orange
+                    font-size: 14px
+                    padding: 10px 60px
+                    box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3 )   
             textarea
                 margin-left: 30px
                 height: 100%

@@ -1,5 +1,5 @@
 <template>
-    <div id="block-news" class="position-relative">
+    <div class="position-relative">
         <banner title="<span class='text-orange'>橘色</span>新訊" img="/images/slideshow_1.jpg"></banner>
         <div id="header" class="position-absolute w-100">
             <div class="mt-5 d-flex w-100">
@@ -11,41 +11,45 @@
                 </div>
             </div>
         </div> 
-        <div id="block-news-body" class="news-body position-relative">
+        <div id="block-news" class="news-body position-relative">
             <div id="block-news-lists" class="position-relative">
                 <div id="block-news-filter">
                     <div class="container">
-                        <div class="news-categories row">
-                            <div 
-                                id="category-items"
-                                v-for="(item,$index) in newsCategories" 
-                                :key="$index" 
-                                class="category-items mr-4 ml-4" 
-                                :class="(newsIndex == $index) ? 'active' : ''"
-                                @click="newsIndex = $index"
-                            >
-                                {{item}}
-                            </div>
-                            <div id="category-date">
-                                <div class="filter-date -year">
-                                    <el-dropdown trigger="click">
-                                        <span class="el-dropdown-link">
-                                            下拉菜单<i class="el-icon-arrow-down el-icon--right"></i>
-                                        </span>
-                                        <el-dropdown-menu slot="dropdown">
-                                            <el-dropdown-item>黄金糕</el-dropdown-item>
-                                        </el-dropdown-menu>
-                                    </el-dropdown>
+                        <div class="row">
+                            <div class="news-categories -category d-flex">
+                                <div 
+                                    id="category-items"
+                                    v-for="(item,$index) in newsCategories" 
+                                    :key="$index" 
+                                    class="category-items mr-4 ml-4 d-flex align-items-center" 
+                                    :class="(newsIndex == $index) ? 'active' : ''"
+                                    @click="newsIndex = $index"
+                                >
+                                    {{item}}
                                 </div>
-                                <div class="filter-date -month">
-                                    <el-dropdown trigger="click">
-                                        <span class="el-dropdown-link">
-                                            下拉菜单<i class="el-icon-arrow-down el-icon--right"></i>
-                                        </span>
-                                        <el-dropdown-menu slot="dropdown">
-                                            <el-dropdown-item>黄金糕</el-dropdown-item>
-                                        </el-dropdown-menu>
-                                    </el-dropdown>
+                            </div>
+                            <div class="news-categories -date">
+                                <div id="category-date" class="d-flex">
+                                    <div class="filter-date -year">
+                                        <el-dropdown trigger="click" class="text-white">
+                                            <span class="el-dropdown-link">
+                                                2018<i class="el-icon-arrow-down el-icon--right"></i>
+                                            </span>
+                                            <el-dropdown-menu slot="dropdown">
+                                                <el-dropdown-item>年</el-dropdown-item>
+                                            </el-dropdown-menu>
+                                        </el-dropdown>
+                                    </div>
+                                    <div class="filter-date -month">
+                                        <el-dropdown trigger="click" class="text-white">
+                                            <span class="el-dropdown-link">
+                                                9月<i class="el-icon-arrow-down el-icon--right"></i>
+                                            </span>
+                                            <el-dropdown-menu slot="dropdown">
+                                                <el-dropdown-item>月</el-dropdown-item>
+                                            </el-dropdown-menu>
+                                        </el-dropdown>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -56,13 +60,14 @@
                         <div class="row">
                             <div 
                                 class="news-item"
-                                v-for="(item,$index) in newsItems"
+                                v-for="(item,$index) in newsItems.slice(0,viewIndex)"
                                 :key="$index"    
+                                v-if="item.category == newsCategories[newsIndex] || newsIndex == 0"
                             >
                                 <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background: url(' + item.background + ')'">
-                                    <router-link :to="'/'" class="btn-border">了解更多</router-link>
+                                    <router-link :to="'/news/detail'" class="btn-border">了解更多</router-link>
                                 </div>
-                                <div class="news-content">
+                                <div class="news-content text-center">
                                     <div>
                                         <span class="text-black text-size-1">{{item.date}}</span>
                                         <span class="text-orange text-size-1">{{item.category}}</span>
@@ -74,13 +79,20 @@
                     </div>
                 </div>
             </div>
+            <div class="btn-load-more text-center">
+                <a class="btn-load-more btn-orange -fat" @click="loadMore">
+                    載入更多
+                </a>
+            </div>
         </div>
+        <block-footer></block-footer>
     </div>
 </template>
 
 <script>
 import Banner from 'components/block-banner'
 import MenuHeader from 'components/block-menu-header'
+import BlockFooter from 'components/block-footer'
 
 export default {
     data: function () {
@@ -169,16 +181,17 @@ export default {
             ],
             newsCategories: ['全部新訊','橘色涮涮屋','Extension 1 by 橘色','M One Cafe','M One Spa','Sakura Spa'],
             newsIndex: 0,
+            viewIndex: 8,
         }
     },
     components: {
         Banner,
         MenuHeader,
+        BlockFooter,
     },
     methods: {
         loadMore(){
-            this.viewIndex++;
-            fullpage_api.reBuild();
+            this.viewIndex += 4;
         }
     }
 }
@@ -187,22 +200,27 @@ export default {
 <style lang="sass">
     #header
         top: 0
-    #block-news-body
-        &:before , &:after
-            content: ""
-            position: absolute
-            width: 100%
-            height: 400px
-            left: 0
-            top: 0
-        &:before
-            background-size: 25px 25px
-            background-image: radial-gradient(#0000000d 20%, transparent 15%), radial-gradient(#0000000d 20%, transparent 20%)
-            background-position: 10px 25px
-        &:after
-            background: linear-gradient(transparent, white)
+    #block-news
+        margin-bottom: 180px
         #block-news-lists
             z-index: 2
+            margin-bottom: 80px
+            #block-news-filter
+                .news-categories
+                    padding: 55px 0px
+                    font-size: 14px 
+                    &.-category
+                        flex: 1
+                    .filter-date
+                        padding: 15px 20px
+                        background: #f26d23
+                        margin-right: 20px
+                        cursor: pointer
+        #block-news-items
+            .news-item
+                width: 25%
+                padding: 0 16px
+            
     #block-breadcrumb
         .banner-title
             font-size: 90px

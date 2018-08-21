@@ -13,7 +13,6 @@ const routes = [
     },
     {
         path: '/about',
-        redirect: '/about',
         component: resolve => require(['pages/layout/Landing.vue'], resolve),
         children: [
             {
@@ -25,7 +24,6 @@ const routes = [
     },
     {
         path: '/news',
-        redirect: '/news',
         component: resolve => require(['pages/layout/Landing.vue'], resolve),
         children: [
             {
@@ -36,8 +34,18 @@ const routes = [
         ]
     },
     {
+        path: '/news/detail',
+        component: resolve => require(['pages/layout/Landing.vue'], resolve),
+        children: [
+            {
+                path: '',
+                name: '橘色新訊',
+                component: resolve => require(['pages/NewsInner.vue'], resolve),
+            }
+        ]
+    },
+    {
         path: '/contact',
-        redirect: '/contact',
         component: resolve => require(['pages/layout/Landing.vue'], resolve),
         children: [
             {

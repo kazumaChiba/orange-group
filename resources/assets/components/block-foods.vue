@@ -1,5 +1,5 @@
 <template>
-    <div id="block-foods" class="section text-white position-relative">
+    <div id="block-foods" class="section text-white position-relative" :style="'background-image:url('+foodItems[food_index_old].url+')'">
         <div class="block-food-body d-flex bg-black-filter">
             <div class="bg-transition bg-left">
                 <div class="bg-inner" 
@@ -17,7 +17,7 @@
                     <div 
                         v-for="(item , $index) in foodItems" 
                         :key="$index" class="more-food-info" 
-                        @click="food_index = $index;  bgAnimated($index); startAnimate('500')" 
+                        @click="food_index = $index;  bgAnimated(100); startAnimate('500')" 
                         :class="food_index == $index ? 'active' : ''"
                         :style="'background-image:url('+item.url+')'"
                     ></div>
@@ -63,15 +63,19 @@ export default {
                     },
                 ],
                 food_index: 0,
+                food_index_old: 0, 
                 
             }
         },
         methods: {
-            bgAnimated(index){
+            bgAnimated(time){
                 this.bgTransition = true;
                 setTimeout(()=>{ 
                     this.bgTransition = false; 
-                }, 800);
+                }, parseInt(time));
+                setTimeout(()=>{
+                    this.food_index_old = this.food_index;
+                },parseInt(time) + 800);
             },
             startAnimate(time){
                 this.addTransition = true;
@@ -85,6 +89,8 @@ export default {
 
 <style lang="sass">
     #block-foods
+        background-size: cover
+        background-position: 0
         &.active
             .block-food-body
                 .content-food.-left , .content-food.-right

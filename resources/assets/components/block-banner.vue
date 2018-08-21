@@ -3,7 +3,7 @@
         <div class="position-relative text-white">
             <h2 class="mb-4 banner-title" v-html="title"></h2>
             <el-breadcrumb  separator-class="el-icon-arrow-right">
-                <el-breadcrumb-item :to="'/'">Home</el-breadcrumb-item>
+                <el-breadcrumb-item class="text-white" :to="'/'">首頁</el-breadcrumb-item>
                 <el-breadcrumb-item v-if="item.name && item.path !== '/'"
                                     v-for="(item,index)  in $route.matched" :key="item.meta.id"
                                     :class="[{'no-redirect': (index<$route.matched.length-1 && $route.matched[index+1].path == ($route.matched[index].path+'/')) || index==$route.matched.length-1 || $route.matched[index].redirect != undefined}]">

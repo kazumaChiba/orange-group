@@ -21,7 +21,7 @@
                         <div class="row flex-column align-items-center justify-content-center flex-nowrap">
                             <h3 class="main-title text-uppercase"><span class="fs-inherit text-orange">橘色</span>新訊<br><span class="sub-title">events & news</span></h3>
                                 <block-news></block-news>
-                                <router-link :to="'/news'" class="btn-load-more btn-orange">
+                                <router-link :to="'/news'" class="btn-load-more btn-orange  -fat">
                                     更多橘色新訊
                                 </router-link>
                         </div>
@@ -104,10 +104,6 @@
 </script>
 
 <style lang="sass">
-    #block-news
-        .btn-load-more
-            &.btn-orange
-                padding: 30px 65px
     #burger-menu
         width: 0px
         height: 25px
@@ -132,7 +128,6 @@
         opacity: 0
         display: flex
         flex-direction: column
-        width: calc(50% - 585px)
         visibility: hidden
         transition: opacity .3s
         right: 0
@@ -143,8 +138,8 @@
         ul 
             li 
                 width: 100%
-                height: 30px
-                margin: 0
+                height: 25px
+                margin: 5px 0
                 &:last-child
                     display: none
                 
@@ -163,7 +158,8 @@
                     height: 100%
                     display: flex
                     align-items: center
-                    padding: 0 30px
+                    padding: 0 50px
+                    font-weight: 300
                 &:hover div, a.active+div
                     cursor: pointer
                     background: #f26c23
@@ -178,7 +174,10 @@
         .fp-scroller
             min-height: 100%
         .logo
-            height: 220px   
+            position: absolute
+            height: 220px 
+            left: 0
+            top: 0  
         #header
             top: 0
             z-index: 999999

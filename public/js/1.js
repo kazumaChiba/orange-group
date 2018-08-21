@@ -402,7 +402,7 @@ exports = module.exports = __webpack_require__(78)(false);
 
 
 // module
-exports.push([module.i, "\n#footer .container {\n  padding: 60px 0 20px 0;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n  margin-bottom: 60px;\n}\n#footer:before {\n  background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n  position: relative;\n  z-index: 2;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n    letter-spacing: 6px;\n    font-weight: 500;\n    font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n  font-size: 20px;\n}\n#footer .btn-orange {\n  padding: 30px 65px;\n}\n#footer .footer .footer-info {\n  margin-bottom: 100px;\n  line-height: 25px;\n  font-size: 14px;\n  font-weight: 100;\n}\n#footer .footer .footer-info p {\n    margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n    font-size: 18px;\n    font-weight: 100;\n    line-height: 30px;\n}\n#footer .footer.footer-join:before {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: calc(100% + 150px);\n  background: rgba(0, 0, 0, 0.4);\n  z-index: -1;\n  top: -100px;\n}\n", ""]);
+exports.push([module.i, "\n#footer .container {\n  padding: 60px 0 20px 0;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n  margin-bottom: 60px;\n}\n#footer:before {\n  background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n  position: relative;\n  z-index: 2;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n    letter-spacing: 6px;\n    font-weight: 500;\n    font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n  font-size: 20px;\n}\n#footer .footer .footer-info {\n  margin-bottom: 100px;\n  line-height: 25px;\n  font-size: 14px;\n  font-weight: 100;\n}\n#footer .footer .footer-info p {\n    margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n    font-size: 18px;\n    font-weight: 100;\n    line-height: 30px;\n}\n#footer .footer.footer-join:before {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: calc(100% + 150px);\n  background: rgba(0, 0, 0, 0.4);\n  z-index: -1;\n  top: -100px;\n}\n", ""]);
 
 // exports
 
@@ -496,7 +496,7 @@ var render = function() {
                 _vm._v(" "),
                 _c(
                   "router-link",
-                  { staticClass: "btn-orange", attrs: { to: "/" } },
+                  { staticClass: "btn-orange -fat", attrs: { to: "/" } },
                   [_vm._v("馬上加入我們")]
                 )
               ],
@@ -692,7 +692,7 @@ exports = module.exports = __webpack_require__(78)(false);
 
 
 // module
-exports.push([module.i, "\n#block-news .btn-load-more.btn-orange {\n  padding: 30px 65px;\n}\n#burger-menu {\n  width: 0px;\n  height: 25px;\n  text-align: center;\n  overflow: hidden;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  position: absolute;\n  right: 30px;\n  top: 48px;\n  z-index: 9999999;\n}\n#burger-menu:before {\n    content: \"|||\";\n    color: #f26c23;\n    -webkit-transform: rotate(90deg);\n            transform: rotate(90deg);\n    display: inline-block;\n    font-weight: bold;\n}\n#burger-menu:hover {\n    cursor: pointer;\n}\n#burger-menu.menu-close {\n    width: 25px;\n}\n#fp-nav.fp-right {\n  opacity: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: calc(50% - 585px);\n  visibility: hidden;\n  -webkit-transition: opacity .3s;\n  transition: opacity .3s;\n  right: 0;\n  width: unset;\n}\n#fp-nav.fp-right.active {\n    visibility: visible;\n    opacity: 1;\n}\n#fp-nav.fp-right ul li {\n    width: 100%;\n    height: 30px;\n    margin: 0;\n}\n#fp-nav.fp-right ul li:last-child {\n      display: none;\n}\n#fp-nav.fp-right ul li span {\n      display: none;\n}\n#fp-nav.fp-right ul li .fp-tooltip.fp-right {\n      color: #ccc;\n      opacity: 1;\n      width: auto;\n      font-size: 17px;\n      letter-spacing: 0px;\n      font-style: italic;\n      right: 0;\n      overflow: visible;\n      position: relative;\n      height: 100%;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      padding: 0 30px;\n}\n#fp-nav.fp-right ul li:hover div, #fp-nav.fp-right ul li a.active + div {\n      cursor: pointer;\n      background: #f26c23;\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      color: white !important;\n}\n#fp-nav.fp-right ul li a {\n      position: absolute;\n      top: 0;\n      left: 0;\n}\n#app .fp-scroller {\n  min-height: 100%;\n}\n#app .logo {\n  height: 220px;\n}\n#app #header {\n  top: 0;\n  z-index: 999999;\n  width: 100%;\n}\n#app #header.active {\n    z-index: 0;\n    -webkit-transition-delay: 1s;\n            transition-delay: 1s;\n}\n#app .main-title {\n  line-height: 35px;\n}\n#app .main-title .sub-title {\n    letter-spacing: 13px;\n    font-weight: 600;\n    font-size: 18px;\n    font-family: Microsoft JhengHei;\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\n#burger-menu {\n  width: 0px;\n  height: 25px;\n  text-align: center;\n  overflow: hidden;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  position: absolute;\n  right: 30px;\n  top: 48px;\n  z-index: 9999999;\n}\n#burger-menu:before {\n    content: \"|||\";\n    color: #f26c23;\n    -webkit-transform: rotate(90deg);\n            transform: rotate(90deg);\n    display: inline-block;\n    font-weight: bold;\n}\n#burger-menu:hover {\n    cursor: pointer;\n}\n#burger-menu.menu-close {\n    width: 25px;\n}\n#fp-nav.fp-right {\n  opacity: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  visibility: hidden;\n  -webkit-transition: opacity .3s;\n  transition: opacity .3s;\n  right: 0;\n  width: unset;\n}\n#fp-nav.fp-right.active {\n    visibility: visible;\n    opacity: 1;\n}\n#fp-nav.fp-right ul li {\n    width: 100%;\n    height: 25px;\n    margin: 5px 0;\n}\n#fp-nav.fp-right ul li:last-child {\n      display: none;\n}\n#fp-nav.fp-right ul li span {\n      display: none;\n}\n#fp-nav.fp-right ul li .fp-tooltip.fp-right {\n      color: #ccc;\n      opacity: 1;\n      width: auto;\n      font-size: 17px;\n      letter-spacing: 0px;\n      font-style: italic;\n      right: 0;\n      overflow: visible;\n      position: relative;\n      height: 100%;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      padding: 0 50px;\n      font-weight: 300;\n}\n#fp-nav.fp-right ul li:hover div, #fp-nav.fp-right ul li a.active + div {\n      cursor: pointer;\n      background: #f26c23;\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      color: white !important;\n}\n#fp-nav.fp-right ul li a {\n      position: absolute;\n      top: 0;\n      left: 0;\n}\n#app .fp-scroller {\n  min-height: 100%;\n}\n#app .logo {\n  position: absolute;\n  height: 220px;\n  left: 0;\n  top: 0;\n}\n#app #header {\n  top: 0;\n  z-index: 999999;\n  width: 100%;\n}\n#app #header.active {\n    z-index: 0;\n    -webkit-transition-delay: 1s;\n            transition-delay: 1s;\n}\n#app .main-title {\n  line-height: 35px;\n}\n#app .main-title .sub-title {\n    letter-spacing: 10px;\n    font-weight: 200;\n    font-size: 16px;\n    font-family: \"PingFang SC\",微軟正黑體;\n}\n", ""]);
 
 // exports
 
@@ -969,7 +969,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'url': '/images/bg_food_1.png',
                 'title': '橘色舒體'
             }],
-            experience_index: 0
+            experience_index: 0,
+            experience_index_old: 0
         };
     },
     components: {
@@ -987,13 +988,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }
     },
     methods: {
-        bgAnimated: function bgAnimated(index) {
+        bgAnimated: function bgAnimated(time) {
             var _this = this;
 
             this.bgTransition = true;
             setTimeout(function () {
                 _this.bgTransition = false;
-            }, 800);
+            }, parseInt(time));
+            setTimeout(function () {
+                _this.experience_index_old = _this.experience_index;
+            }, parseInt(time) + 800);
         }
     }
 });
@@ -1011,6 +1015,10 @@ var render = function() {
     "div",
     {
       staticClass: "position-relative section text-white text-center h-100",
+      style:
+        "background-image:url(" +
+        _vm.experience[_vm.experience_index_old].url +
+        ")",
       attrs: { id: "block-experience" }
     },
     [
@@ -1076,7 +1084,7 @@ var render = function() {
                       click: function($event) {
                         _vm.experience_view = "ex"
                         _vm.experience_index = 0
-                        _vm.bgAnimated(0)
+                        _vm.bgAnimated(800)
                       }
                     }
                   },
@@ -1092,7 +1100,7 @@ var render = function() {
                       click: function($event) {
                         _vm.experience_view = "pot"
                         _vm.experience_index = 1
-                        _vm.bgAnimated(1)
+                        _vm.bgAnimated(800)
                       }
                     }
                   },
@@ -1108,7 +1116,7 @@ var render = function() {
                       click: function($event) {
                         _vm.experience_view = "coffee"
                         _vm.experience_index = 2
-                        _vm.bgAnimated(2)
+                        _vm.bgAnimated(800)
                       }
                     }
                   },
@@ -1124,7 +1132,7 @@ var render = function() {
                       click: function($event) {
                         _vm.experience_view = "spa"
                         _vm.experience_index = 3
-                        _vm.bgAnimated(3)
+                        _vm.bgAnimated(800)
                       }
                     }
                   },
@@ -1578,7 +1586,7 @@ exports = module.exports = __webpack_require__(78)(false);
 
 
 // module
-exports.push([module.i, "\n#block-news:before, #block-news:after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 400px;\n  left: 0;\n  top: 0;\n}\n#block-news:before {\n  background-size: 25px 25px;\n  background-image: radial-gradient(#0000000d 20%, transparent 15%), radial-gradient(#0000000d 20%, transparent 20%);\n  background-position: 10px 25px;\n}\n#block-news:after {\n  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(white));\n  background: linear-gradient(transparent, white);\n}\n#block-news > div {\n  z-index: 3;\n  position: relative;\n}\n#block-news .news-body .category-items {\n  cursor: pointer;\n  -webkit-transition: all .3s;\n  transition: all .3s;\n  font-weight: 500;\n}\n#block-news .news-body .category-items:hover, #block-news .news-body .category-items.active {\n    color: #f26e22;\n}\n#block-news .news-body .news-list {\n  -webkit-transition: all .5s;\n  transition: all .5s;\n}\n#block-news .news-body .news-list .block-list {\n    width: 20%;\n}\n#block-news .news-body .news-list .block-list.-center {\n      width: 50%;\n}\n#block-news .news-body .news-list .block-list .news-item {\n      margin-bottom: 50px;\n      -webkit-transition: all .5s;\n      transition: all .5s;\n}\n#block-news .news-body .news-list .block-list .news-item .news-head {\n        height: 350px;\n        margin-bottom: 15px;\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n        background-position: center;\n        background-size: cover;\n}\n#block-news .news-body .news-list .block-list .news-item .news-head:before {\n          content: \"\";\n          background: #f26d23;\n          position: absolute;\n          width: 100%;\n          height: 100%;\n          opacity: 0;\n          -webkit-transition: all .3s;\n          transition: all .3s;\n}\n#block-news .news-body .news-list .block-list .news-item .news-head:hover:before {\n          opacity: 0.6;\n}\n#block-news .news-body .news-list .block-list .news-item .news-head:hover a {\n          display: block;\n}\n#block-news .news-body .news-list .block-list .news-item .news-head a {\n          display: none;\n          z-index: 2;\n}\n#block-news .news-body .news-list .block-list .news-item .news-head .text-size-1 {\n          font-size: 13px !important;\n}\n#block-news .news-body .news-list .block-list .news-item .news-title {\n        color: black;\n}\n#block-news .news-body .news-list .block-list .news-item .news-title:hover {\n          color: #f26e22;\n}\n#block-news .btn-orange:hover {\n  background: #f26d23;\n  color: white;\n}\n", ""]);
+exports.push([module.i, "\n#block-news > div {\n  z-index: 3;\n  position: relative;\n}\n#block-news .news-list {\n  -webkit-transition: all .5s;\n  transition: all .5s;\n}\n#block-news .news-list .block-list {\n    width: 20%;\n}\n#block-news .news-list .block-list.-center {\n      width: 50%;\n}\n", ""]);
 
 // exports
 
@@ -1835,7 +1843,7 @@ var render = function() {
                         ),
                         _vm._v(" "),
                         _c("div", { staticClass: "news-content" }, [
-                          _c("div", [
+                          _c("div", { staticClass: "news-info" }, [
                             _c(
                               "span",
                               { staticClass: "text-black text-size-1" },
@@ -1893,7 +1901,7 @@ var render = function() {
                       ),
                       _vm._v(" "),
                       _c("div", { staticClass: "news-content" }, [
-                        _c("div", [
+                        _c("div", { staticClass: "news-info" }, [
                           _c(
                             "span",
                             { staticClass: "text-black text-size-1" },
@@ -1965,7 +1973,7 @@ var render = function() {
                         ),
                         _vm._v(" "),
                         _c("div", { staticClass: "news-content" }, [
-                          _c("div", [
+                          _c("div", { staticClass: "news-info" }, [
                             _c(
                               "span",
                               { staticClass: "text-black text-size-1" },
@@ -2097,7 +2105,7 @@ exports = module.exports = __webpack_require__(78)(false);
 
 
 // module
-exports.push([module.i, "\n#block-foods.active .block-food-body .content-food.-left, #block-foods.active .block-food-body .content-food.-right {\n  -webkit-transition-delay: .3s;\n          transition-delay: .3s;\n  -webkit-transform: translateY(0);\n          transform: translateY(0);\n  opacity: 1;\n}\n#block-foods.active .block-food-body .bg-left .bg-inner {\n  -webkit-transition-delay: .3s;\n          transition-delay: .3s;\n  background-position-y: center;\n}\n#block-foods .line-top:before {\n  content: \"\";\n  background: #f46f1b;\n  width: 60px;\n  height: 1px;\n  display: block;\n  margin-bottom: 20px;\n}\n#block-foods .block-food-body {\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100vh;\n}\n#block-foods .block-food-body:after {\n    content: \"\";\n    position: absolute;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.6);\n}\n#block-foods .block-food-body .bg-left .bg-inner {\n    background-position: center;\n    background-size: cover;\n    background-position-y: 100vh;\n    -webkit-transition: all .5s;\n    transition: all .5s;\n}\n#block-foods .block-food-body .bg-left .bg-inner.active {\n      background-position-y: 100vh;\n      -webkit-transition: initial;\n      transition: initial;\n}\n#block-foods .block-food-body .content-food {\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    padding: 0 100px;\n    overflow: hidden;\n    z-index: 2;\n}\n#block-foods .block-food-body .content-food .big_title {\n      font-size: 140px;\n      font-weight: 300;\n}\n#block-foods .block-food-body .content-food .more-food-info {\n      width: 100px;\n      height: 100px;\n      display: inline-block;\n      border-radius: 100%;\n      background-position: center;\n      background-size: cover;\n      cursor: pointer;\n      margin-right: 25px;\n}\n#block-foods .block-food-body .content-food .more-food-info.active {\n        opacity: 0.8;\n        -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.21);\n                box-shadow: 0 0 15px rgba(255, 255, 255, 0.21);\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#block-foods .block-food-body .content-food > div {\n      position: relative;\n      z-index: 2;\n}\n#block-foods .block-food-body .content-food.-left, #block-foods .block-food-body .content-food.-right {\n      -webkit-transition: all 1s;\n      transition: all 1s;\n      opacity: 0;\n}\n#block-foods .block-food-body .content-food.-left {\n      background: transparent;\n      -webkit-transform: translateY(100%);\n              transform: translateY(100%);\n      padding: 100px;\n}\n#block-foods .block-food-body .content-food.-left .line-top {\n        line-height: 25px;\n}\n#block-foods .block-food-body .content-food.-right {\n      background: white;\n      z-index: 2;\n      -webkit-transform: translateY(-100%);\n              transform: translateY(-100%);\n}\n#block-foods .block-food-body .content-food.-right:before, #block-foods .block-food-body .content-food.-right:after {\n        content: \"\";\n        position: absolute;\n        border-radius: 100%;\n}\n#block-foods .block-food-body .content-food.-right:before {\n        width: 850px;\n        height: 850px;\n        background: rgba(242, 108, 35, 0.1);\n        right: -540px;\n        bottom: -480px;\n}\n#block-foods .block-food-body .content-food.-right:after {\n        width: 100px;\n        height: 100px;\n        background: rgba(0, 0, 0, 0.22);\n        right: -70px;\n        bottom: 300px;\n}\n#block-foods .block-food-body .content-food.-right .food-info-inner {\n        height: 500px;\n        width: 500px;\n        background: #f26d23;\n        border-radius: 100%;\n        -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);\n                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);\n        -webkit-transition: all .5s;\n        transition: all .5s;\n}\n#block-foods .block-food-body .content-food.-right .food-info-inner .text-food-info {\n          font-weight: 300;\n          letter-spacing: 2px;\n}\n#block-foods .block-food-body .content-food.-right .loader {\n        position: absolute;\n        width: 50vw;\n        height: 100vh;\n        stroke-linecap: round;\n        stroke-width: 5;\n        fill: none;\n        left: 0;\n}\n#block-foods .block-food-body .content-food.-right .loader .internal-circle {\n          stroke: #f26c23;\n          stroke-dasharray: 55%,10%,25%;\n          opacity: .4;\n          -webkit-transform-origin: 30% 55%;\n                  transform-origin: 30% 55%;\n}\n#block-foods .block-food-body .content-food.-right .loader.active .internal-circle {\n          -webkit-transform: rotate(180deg);\n                  transform: rotate(180deg);\n          -webkit-transition: all .5s ease-in-out;\n          transition: all .5s ease-in-out;\n}\n", ""]);
+exports.push([module.i, "\n#block-foods {\n  background-size: cover;\n  background-position: 0;\n}\n#block-foods.active .block-food-body .content-food.-left, #block-foods.active .block-food-body .content-food.-right {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n    opacity: 1;\n}\n#block-foods.active .block-food-body .bg-left .bg-inner {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    background-position-y: center;\n}\n#block-foods .line-top:before {\n    content: \"\";\n    background: #f46f1b;\n    width: 60px;\n    height: 1px;\n    display: block;\n    margin-bottom: 20px;\n}\n#block-foods .block-food-body {\n    background-repeat: no-repeat;\n    background-size: cover;\n    height: 100vh;\n}\n#block-foods .block-food-body:after {\n      content: \"\";\n      position: absolute;\n      left: 0;\n      width: 100%;\n      height: 100%;\n      background: rgba(0, 0, 0, 0.6);\n}\n#block-foods .block-food-body .bg-left .bg-inner {\n      background-position: center;\n      background-size: cover;\n      background-position-y: 100vh;\n      -webkit-transition: all .5s;\n      transition: all .5s;\n}\n#block-foods .block-food-body .bg-left .bg-inner.active {\n        background-position-y: 100vh;\n        -webkit-transition: initial;\n        transition: initial;\n}\n#block-foods .block-food-body .content-food {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      padding: 0 100px;\n      overflow: hidden;\n      z-index: 2;\n}\n#block-foods .block-food-body .content-food .big_title {\n        font-size: 140px;\n        font-weight: 300;\n}\n#block-foods .block-food-body .content-food .more-food-info {\n        width: 100px;\n        height: 100px;\n        display: inline-block;\n        border-radius: 100%;\n        background-position: center;\n        background-size: cover;\n        cursor: pointer;\n        margin-right: 25px;\n}\n#block-foods .block-food-body .content-food .more-food-info.active {\n          opacity: 0.8;\n          -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.21);\n                  box-shadow: 0 0 15px rgba(255, 255, 255, 0.21);\n          -webkit-transition: all .3s;\n          transition: all .3s;\n}\n#block-foods .block-food-body .content-food > div {\n        position: relative;\n        z-index: 2;\n}\n#block-foods .block-food-body .content-food.-left, #block-foods .block-food-body .content-food.-right {\n        -webkit-transition: all 1s;\n        transition: all 1s;\n        opacity: 0;\n}\n#block-foods .block-food-body .content-food.-left {\n        background: transparent;\n        -webkit-transform: translateY(100%);\n                transform: translateY(100%);\n        padding: 100px;\n}\n#block-foods .block-food-body .content-food.-left .line-top {\n          line-height: 25px;\n}\n#block-foods .block-food-body .content-food.-right {\n        background: white;\n        z-index: 2;\n        -webkit-transform: translateY(-100%);\n                transform: translateY(-100%);\n}\n#block-foods .block-food-body .content-food.-right:before, #block-foods .block-food-body .content-food.-right:after {\n          content: \"\";\n          position: absolute;\n          border-radius: 100%;\n}\n#block-foods .block-food-body .content-food.-right:before {\n          width: 850px;\n          height: 850px;\n          background: rgba(242, 108, 35, 0.1);\n          right: -540px;\n          bottom: -480px;\n}\n#block-foods .block-food-body .content-food.-right:after {\n          width: 100px;\n          height: 100px;\n          background: rgba(0, 0, 0, 0.22);\n          right: -70px;\n          bottom: 300px;\n}\n#block-foods .block-food-body .content-food.-right .food-info-inner {\n          height: 500px;\n          width: 500px;\n          background: #f26d23;\n          border-radius: 100%;\n          -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);\n                  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);\n          -webkit-transition: all .5s;\n          transition: all .5s;\n}\n#block-foods .block-food-body .content-food.-right .food-info-inner .text-food-info {\n            font-weight: 300;\n            letter-spacing: 2px;\n}\n#block-foods .block-food-body .content-food.-right .loader {\n          position: absolute;\n          width: 50vw;\n          height: 100vh;\n          stroke-linecap: round;\n          stroke-width: 5;\n          fill: none;\n          left: 0;\n}\n#block-foods .block-food-body .content-food.-right .loader .internal-circle {\n            stroke: #f26c23;\n            stroke-dasharray: 55%,10%,25%;\n            opacity: .4;\n            -webkit-transform-origin: 30% 55%;\n                    transform-origin: 30% 55%;\n}\n#block-foods .block-food-body .content-food.-right .loader.active .internal-circle {\n            -webkit-transform: rotate(180deg);\n                    transform: rotate(180deg);\n            -webkit-transition: all .5s ease-in-out;\n            transition: all .5s ease-in-out;\n}\n", ""]);
 
 // exports
 
@@ -2169,18 +2177,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 url: '/images/slideshow_1.jpg',
                 content: '<p class="text-size-2 mb-2">橘色美食背後的秘密</p><h4 class="text-food-title mb-4">食材的<span class="text-black">秘密</span></h4><p class="text-food-info">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>'
             }],
-            food_index: 0
+            food_index: 0,
+            food_index_old: 0
 
         };
     },
     methods: {
-        bgAnimated: function bgAnimated(index) {
+        bgAnimated: function bgAnimated(time) {
             var _this = this;
 
             this.bgTransition = true;
             setTimeout(function () {
                 _this.bgTransition = false;
-            }, 800);
+            }, parseInt(time));
+            setTimeout(function () {
+                _this.food_index_old = _this.food_index;
+            }, parseInt(time) + 800);
         },
         startAnimate: function startAnimate(time) {
             var _this2 = this;
@@ -2206,6 +2218,8 @@ var render = function() {
     "div",
     {
       staticClass: "section text-white position-relative",
+      style:
+        "background-image:url(" + _vm.foodItems[_vm.food_index_old].url + ")",
       attrs: { id: "block-foods" }
     },
     [
@@ -2260,7 +2274,7 @@ var render = function() {
                     on: {
                       click: function($event) {
                         _vm.food_index = $index
-                        _vm.bgAnimated($index)
+                        _vm.bgAnimated(100)
                         _vm.startAnimate("500")
                       }
                     }
@@ -2444,7 +2458,7 @@ var render = function() {
                         _c(
                           "router-link",
                           {
-                            staticClass: "btn-load-more btn-orange",
+                            staticClass: "btn-load-more btn-orange  -fat",
                             attrs: { to: "/news" }
                           },
                           [

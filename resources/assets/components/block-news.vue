@@ -176,72 +176,13 @@ export default {
 
 <style lang="sass">
 #block-news
-    // &:before ,  &:after 
-    //     content: ""
-    //     position: absolute
-    //     width: 100%
-    //     height: 400px
-    //     left: 0
-    //     top: 0
-    // &:before
-    //     background-size: 25px 25px
-    //     background-image: radial-gradient(#0000000d 20%, transparent 15%), radial-gradient(#0000000d 20%, transparent 20%)
-    //     background-position: 10px 25px
-    // &:after 
-    //     background: linear-gradient(transparent , white)
     >div
         z-index: 3
         position: relative
-    .news-body
-        .category-items
-            cursor: pointer
-            transition: all .3s
-            font-weight: 500
-            &:hover , &.active
-                color: #f26e22
-        .news-list
-            .block-list
-                width: 20%
-                &.-center
-                    width: 50%
-                .news-item
-                    margin-bottom: 50px
-                    transition: all .5s
-                    .news-head
-                        height: 350px
-                        margin-bottom: 10px  
-                        flex: 1
-                        background-position: center
-                        background-size: cover
-                        &:before
-                            content: ""
-                            background: #f26d23
-                            position: absolute
-                            width: 100%
-                            height: 100%
-                            opacity: 0
-                            transition: all .3s
-                        &:hover
-                            &:before
-                                opacity: 0.6
-                            a
-                                display: block
-                        a
-                            display: none
-                            z-index: 2
-                        .text-size-1
-                            font-size: 13px !important
-                    .news-title
-                        color: black
-                        font-weight: 500
-                        &:hover
-                            color: #f26e22
-    .news-content
-        .news-info
-            margin-bottom: 5px
-            font-weight: 600
-    .btn-orange
-        &:hover
-            background: #f26d23
-            color: white
+    .news-list
+        transition: all .5s
+        .block-list
+            width: 20%
+            &.-center
+                width: 50%
 </style>
