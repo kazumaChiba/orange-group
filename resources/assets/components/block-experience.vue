@@ -18,7 +18,7 @@
         <div id="content-experience" class="position-relative">
             <h1 class="big_title">{{experience[experience_index].title}}</h1>
             <div class="experience-circle">
-                <div class="circle-body"></div>
+                <div class="circle-body" :class="{'active' : bgTransition}"></div>
                 <div class="circle-option" :class="'e_index_'+experience_index">
                     <a class="text-circle-option -left" @click="experience_view='ex'; experience_index = 0; bgAnimated(0)" :class="experience_index == 0 ? 'active' : ''">體驗</a>
                     <a class="text-circle-option -top" @click="experience_view='pot'; experience_index = 1; bgAnimated(1)" :class="experience_index == 1 ? 'active' : ''">鍋物</a>
@@ -204,6 +204,24 @@ export default {
                     border-radius: 500px
                     border: 30px solid rgba(255, 113, 34, 0.76)
                     border-left-color: transparent
+                    &:before
+                        content: ""
+                        position: absolute
+                        width: 500px
+                        height: 500px
+                        left: -30px
+                        top: -30px
+                        border-radius: 500px
+                        border: 30px solid rgba(255, 113, 34, 0.76)
+                        border-left-color: transparent
+                        border-bottom-color: transparent
+                        border-right-color: transparent
+                        opacity: 0
+                    &.active
+                        &:before
+                            transform: rotate(360deg)
+                            transition: all .8s
+                            opacity: 1
                 .circle-option
                     transition: all 2s
                     transform: rotate(0)

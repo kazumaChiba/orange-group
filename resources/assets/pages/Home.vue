@@ -104,6 +104,10 @@
 </script>
 
 <style lang="sass">
+    #block-news
+        .btn-load-more
+            &.btn-orange
+                padding: 30px 65px
     #burger-menu
         width: 0px
         height: 25px

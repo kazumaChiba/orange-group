@@ -200,6 +200,7 @@ export default {
         .category-items
             cursor: pointer
             transition: all .3s
+            font-weight: 500
             &:hover , &.active
                 color: #f26e22
         .news-list

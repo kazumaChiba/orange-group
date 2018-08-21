@@ -71,7 +71,7 @@ export default {
             align-items: center
             .footer-info-title
                 letter-spacing: 6px
-                font-weight: 400
+                font-weight: 500
                 font-size: 15px
         .footer-social
             .footer-icons
