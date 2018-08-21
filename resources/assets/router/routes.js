@@ -1,12 +1,12 @@
 const routes = [
     {
         path: '/',
-        redirect: '/index',
+        redirect: '/',
         component: resolve => require(['pages/layout/Landing.vue'], resolve),
         children: [
             {
-                path: 'index',
-                name: 'home',
+                path: '/',
+                name: '首頁',
                 component: resolve => require(['pages/Home.vue'], resolve),
             }
         ]
@@ -18,8 +18,20 @@ const routes = [
         children: [
             {
                 path: '',
-                name: 'about',
+                name: '關於橘色',
                 component: resolve => require(['pages/About.vue'], resolve),
+            }
+        ]
+    },
+    {
+        path: '/news',
+        redirect: '/news',
+        component: resolve => require(['pages/layout/Landing.vue'], resolve),
+        children: [
+            {
+                path: '',
+                name: '橘色新訊',
+                component: resolve => require(['pages/News.vue'], resolve),
             }
         ]
     },
@@ -30,7 +42,7 @@ const routes = [
         children: [
             {
                 path: '',
-                name: 'contact',
+                name: '聯絡我們',
                 component: resolve => require(['pages/Contact.vue'], resolve),
             }
         ]

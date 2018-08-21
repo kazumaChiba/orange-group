@@ -35,7 +35,7 @@
                             </div>
                         </div>
                         <div class="mt-4 clearfix">
-                            <span class="text-size-1 w-25 float-left text-gray">您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝</span>
+                            <span class="text-size-1 float-left text-gray w-50 pr-4">您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝</span>
                             <input type="submit" value="發送訊息" class="btn-orange w-50 d-inline-block float-right">
                         </div>
                     </form>

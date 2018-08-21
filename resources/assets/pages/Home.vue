@@ -190,9 +190,9 @@
         .main-title
             line-height: 35px
             .sub-title
-                letter-spacing: 13px
-                font-weight: 600
-                font-size: 18px
-                font-family: Microsoft JhengHei
+                letter-spacing: 10px
+                font-weight: 200
+                font-size: 16px
+                font-family: "PingFang SC",微軟正黑體
         
 </style>

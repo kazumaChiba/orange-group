@@ -1455,11 +1455,15 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "mt-4 clearfix" }, [
-      _c("span", { staticClass: "text-size-1 w-25 float-left text-gray" }, [
-        _vm._v(
-          "您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝"
-        )
-      ]),
+      _c(
+        "span",
+        { staticClass: "text-size-1 float-left text-gray w-50 pr-4" },
+        [
+          _vm._v(
+            "您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝"
+          )
+        ]
+      ),
       _vm._v(" "),
       _c("input", {
         staticClass: "btn-orange w-50 d-inline-block float-right",

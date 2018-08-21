@@ -30,7 +30,7 @@
                             <router-link :to="'/'" class="btn-border">了解更多</router-link>
                         </div>
                         <div class="news-content">
-                            <div>
+                            <div class="news-info">
                                 <span class="text-black text-size-1">{{item.date}}</span>
                                 <span class="text-orange text-size-1">{{item.category}}</span>
                             </div>
@@ -46,7 +46,7 @@
                             <router-link :to="'/'" class="btn-border">了解更多</router-link>
                         </div>
                         <div class="news-content">
-                            <div>
+                            <div class="news-info">
                                 <span class="text-black text-size-1">{{newsItems[viewIndex+2].date}}</span>
                                 <span class="text-orange text-size-1">{{newsItems[viewIndex+2].category}}</span>
                             </div>
@@ -64,7 +64,7 @@
                             <router-link :to="'/'" class="btn-border">了解更多</router-link>
                         </div>
                         <div class="news-content">
-                            <div>
+                            <div class="news-info">
                                 <span class="text-black text-size-1">{{item.date}}</span>
                                 <span class="text-orange text-size-1">{{item.category}}</span>
                             </div>
@@ -176,23 +176,19 @@ export default {
 
 <style lang="sass">
 #block-news
-    // height: auto !important
-    // overflow: scroll
-    // .fp-tableCell
-    //     height: auto !important
-    &:before ,  &:after 
-        content: ""
-        position: absolute
-        width: 100%
-        height: 400px
-        left: 0
-        top: 0
-    &:before
-        background-size: 25px 25px
-        background-image: radial-gradient(#0000000d 20%, transparent 15%), radial-gradient(#0000000d 20%, transparent 20%)
-        background-position: 10px 25px
-    &:after 
-        background: linear-gradient(transparent , white)
+    // &:before ,  &:after 
+    //     content: ""
+    //     position: absolute
+    //     width: 100%
+    //     height: 400px
+    //     left: 0
+    //     top: 0
+    // &:before
+    //     background-size: 25px 25px
+    //     background-image: radial-gradient(#0000000d 20%, transparent 15%), radial-gradient(#0000000d 20%, transparent 20%)
+    //     background-position: 10px 25px
+    // &:after 
+    //     background: linear-gradient(transparent , white)
     >div
         z-index: 3
         position: relative
@@ -204,7 +200,6 @@ export default {
             &:hover , &.active
                 color: #f26e22
         .news-list
-            transition: all .5s
             .block-list
                 width: 20%
                 &.-center
@@ -214,7 +209,7 @@ export default {
                     transition: all .5s
                     .news-head
                         height: 350px
-                        margin-bottom: 15px  
+                        margin-bottom: 10px  
                         flex: 1
                         background-position: center
                         background-size: cover
@@ -238,8 +233,13 @@ export default {
                             font-size: 13px !important
                     .news-title
                         color: black
+                        font-weight: 500
                         &:hover
                             color: #f26e22
+    .news-content
+        .news-info
+            margin-bottom: 5px
+            font-weight: 600
     .btn-orange
         &:hover
             background: #f26d23
