@@ -19,7 +19,7 @@
                 <div id="block-news" class="section text-black position-relative text-center">
                     <div class="container position-relative m-auto section-pd">
                         <div class="row flex-column align-items-center justify-content-center flex-nowrap">
-                            <h3 class="main-title text-uppercase"><span class="fs-inherit text-orange">橘色</span>新訊<br><span class="text-size-3 sub-title">events & news</span></h3>
+                            <h3 class="main-title text-uppercase"><span class="fs-inherit text-orange">橘色</span>新訊<br><span class="sub-title">events & news</span></h3>
                                 <block-news></block-news>
                                 <router-link :to="'/news'" class="btn-load-more btn-orange">
                                     更多橘色新訊
@@ -190,7 +190,9 @@
         .main-title
             line-height: 35px
             .sub-title
-                letter-spacing: 16px
-                font-weight: 400
+                letter-spacing: 13px
+                font-weight: 600
+                font-size: 18px
+                font-family: Microsoft JhengHei
         
 </style>
