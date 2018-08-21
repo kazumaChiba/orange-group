@@ -1256,7 +1256,7 @@ exports = module.exports = __webpack_require__(78)(false);
 
 
 // module
-exports.push([module.i, "\n#block-brands {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  -webkit-transition: all .5;\n  transition: all .5;\n}\n#block-brands .container {\n    z-index: 2;\n}\n#block-brands .container .content-brands .info-brands {\n      width: 300px;\n      height: 300px;\n      background: rgba(242, 108, 35, 0.4);\n      border: 1px solid white;\n      padding: 0 40px;\n      font-size: 30px;\n}\n#block-brands .container .text-brands {\n      font-size: 30px;\n      letter-spacing: 20px;\n      line-height: 45px;\n      font-weight: lighter;\n}\n#block-brands .container .text-brands .text-orange {\n        letter-spacing: 20px;\n}\n", ""]);
+exports.push([module.i, "\n#block-brands {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n}\n#block-brands .container {\n    z-index: 2;\n}\n#block-brands .container .content-brands .info-brands {\n      width: 300px;\n      height: 300px;\n      background: rgba(242, 108, 35, 0.4);\n      border: 1px solid white;\n      padding: 0 40px;\n      font-size: 30px;\n}\n#block-brands .container .text-brands {\n      font-size: 30px;\n      letter-spacing: 20px;\n      line-height: 45px;\n      font-weight: lighter;\n}\n#block-brands .container .text-brands .text-orange {\n        letter-spacing: 20px;\n}\n", ""]);
 
 // exports
 

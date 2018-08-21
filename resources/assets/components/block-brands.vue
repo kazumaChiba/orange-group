@@ -25,7 +25,7 @@
         background-repeat: no-repeat
         background-size: cover  
         background-position: center
-        transition: all .5
+        transition: all .5s
         .container
             z-index: 2
             .content-brands
