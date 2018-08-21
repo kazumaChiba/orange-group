@@ -29,6 +29,14 @@ import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
 
 import faLightbulb from '@fortawesome/fontawesome-pro-light/faLightbulb';
 import falMapMarkerAlt from '@fortawesome/fontawesome-pro-light/faMapMarkerAlt';
+import falPaperPlane from '@fortawesome/fontawesome-pro-light/faPaperPlane';
+import falUser from '@fortawesome/fontawesome-pro-light/faUser';
+import falEnvelope from '@fortawesome/fontawesome-pro-light/faEnvelope';
+import falPhone from '@fortawesome/fontawesome-pro-light/faPhone';
+import falMapMarker from '@fortawesome/fontawesome-pro-light/faMapMarker';
+import falQuestionCircle from '@fortawesome/fontawesome-pro-light/faQuestionCircle';
+
+
 
 import fabFacebook from '@fortawesome/fontawesome-free-brands/faFacebookF';
 import fabTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
@@ -40,6 +48,12 @@ fontawesome.library.add(faLightbulb);
 fontawesome.library.add(fabFacebook);
 fontawesome.library.add(fabTwitter);
 fontawesome.library.add(falMapMarkerAlt);
+fontawesome.library.add(falPaperPlane);
+fontawesome.library.add(falUser);
+fontawesome.library.add(falEnvelope);
+fontawesome.library.add(falPhone);
+fontawesome.library.add(falMapMarker);
+fontawesome.library.add(falQuestionCircle);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
