@@ -1,7 +1,7 @@
 <template>
     <div id="block-main">
         <div id="header" class="position-fixed" :class="closeMenu ? 'active' : '' + sectionPosition">
-            <div class="mt-5 d-flex">
+            <div class="d-flex">
                 <div class="logo" :class=" sectionIndex != 0 ? 'fade' : '' ">
                     <img src="/images/index_logo.png">
                 </div>
@@ -182,6 +182,7 @@
             top: 0
             z-index: 999999
             width: 100% 
+            margin-top: 40px
             &.active
                 z-index: 0
                 transition-delay: 1s
