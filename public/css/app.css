@@ -351,3 +351,11 @@ body,
   color: #f26d23 !important;
 }
 
+.el-breadcrumb__inner.is-link {
+  color: white;
+}
+
+.el-breadcrumb__inner.is-link:hover {
+  color: #f26d23;
+}
+

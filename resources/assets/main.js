@@ -36,10 +36,11 @@ import falPhone from '@fortawesome/fontawesome-pro-light/faPhone';
 import falMapMarker from '@fortawesome/fontawesome-pro-light/faMapMarker';
 import falQuestionCircle from '@fortawesome/fontawesome-pro-light/faQuestionCircle';
 
-
-
 import fabFacebook from '@fortawesome/fontawesome-free-brands/faFacebookF';
 import fabTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
+import fabGoogle from '@fortawesome/fontawesome-free-brands/faGoogle';
+import fabLinkedinIn from '@fortawesome/fontawesome-free-brands/faLinkedinIn';
+
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
@@ -54,6 +55,9 @@ fontawesome.library.add(falEnvelope);
 fontawesome.library.add(falPhone);
 fontawesome.library.add(falMapMarker);
 fontawesome.library.add(falQuestionCircle);
+fontawesome.library.add(fabGoogle);
+fontawesome.library.add(fabLinkedinIn);
+
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false

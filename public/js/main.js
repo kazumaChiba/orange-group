@@ -63045,10 +63045,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__fortawesome_fontawesome_free_brands_faFacebookF___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__fortawesome_fontawesome_free_brands_faFacebookF__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__fortawesome_fontawesome_free_brands_faTwitter__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__fortawesome_fontawesome_free_brands_faTwitter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__fortawesome_fontawesome_free_brands_faTwitter__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_element_ui__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_element_ui___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_element_ui__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_element_ui_lib_theme_chalk_index_css__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_element_ui_lib_theme_chalk_index_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_element_ui_lib_theme_chalk_index_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__fortawesome_fontawesome_free_brands_faGoogle__ = __webpack_require__(303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__fortawesome_fontawesome_free_brands_faGoogle___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__fortawesome_fontawesome_free_brands_faGoogle__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__fortawesome_fontawesome_free_brands_faLinkedinIn__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__fortawesome_fontawesome_free_brands_faLinkedinIn___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__fortawesome_fontawesome_free_brands_faLinkedinIn__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_element_ui__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_element_ui___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_element_ui__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_element_ui_lib_theme_chalk_index_css__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_element_ui_lib_theme_chalk_index_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_element_ui_lib_theme_chalk_index_css__);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -63093,6 +63097,8 @@ __webpack_require__(202);
 
 
 
+
+
 __WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome__["default"].library.add(__WEBPACK_IMPORTED_MODULE_6__fortawesome_fontawesome_pro_light_faLightbulb___default.a);
 __WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome__["default"].library.add(__WEBPACK_IMPORTED_MODULE_14__fortawesome_fontawesome_free_brands_faFacebookF___default.a);
 __WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome__["default"].library.add(__WEBPACK_IMPORTED_MODULE_15__fortawesome_fontawesome_free_brands_faTwitter___default.a);
@@ -63103,13 +63109,15 @@ __WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome__["default"].library.add(__
 __WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome__["default"].library.add(__WEBPACK_IMPORTED_MODULE_11__fortawesome_fontawesome_pro_light_faPhone___default.a);
 __WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome__["default"].library.add(__WEBPACK_IMPORTED_MODULE_12__fortawesome_fontawesome_pro_light_faMapMarker___default.a);
 __WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome__["default"].library.add(__WEBPACK_IMPORTED_MODULE_13__fortawesome_fontawesome_pro_light_faQuestionCircle___default.a);
+__WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome__["default"].library.add(__WEBPACK_IMPORTED_MODULE_16__fortawesome_fontawesome_free_brands_faGoogle___default.a);
+__WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome__["default"].library.add(__WEBPACK_IMPORTED_MODULE_17__fortawesome_fontawesome_free_brands_faLinkedinIn___default.a);
 
 __WEBPACK_IMPORTED_MODULE_2_vue___default.a.component('font-awesome-icon', __WEBPACK_IMPORTED_MODULE_5__fortawesome_vue_fontawesome___default.a);
 __WEBPACK_IMPORTED_MODULE_2_vue___default.a.config.productionTip = false;
 
 __WEBPACK_IMPORTED_MODULE_2_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_3_vue_fullpage_js___default.a);
 
-__WEBPACK_IMPORTED_MODULE_2_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_16_element_ui___default.a);
+__WEBPACK_IMPORTED_MODULE_2_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_18_element_ui___default.a);
 
 var app = new __WEBPACK_IMPORTED_MODULE_2_vue___default.a({
   el: '#app',
@@ -105047,6 +105055,28 @@ module.exports = { prefix: 'fal', iconName: 'map-marker', icon: [384, 512, [], "
 /***/ (function(module, exports) {
 
 module.exports = { prefix: 'fal', iconName: 'question-circle', icon: [512, 512, [], "f059", "M256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28zm7.67-24h-16c-6.627 0-12-5.373-12-12v-.381c0-70.343 77.44-63.619 77.44-107.408 0-20.016-17.761-40.211-57.44-40.211-29.144 0-44.265 9.649-59.211 28.692-3.908 4.98-11.054 5.995-16.248 2.376l-13.134-9.15c-5.625-3.919-6.86-11.771-2.645-17.177C185.658 133.514 210.842 116 255.67 116c52.32 0 97.44 29.751 97.44 80.211 0 67.414-77.44 63.849-77.44 107.408V304c0 6.627-5.373 12-12 12zM256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8z"] };
+
+/***/ }),
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */
+/***/ (function(module, exports) {
+
+module.exports = { prefix: 'fab', iconName: 'google', icon: [488, 512, [], "f1a0", "M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"] };
+
+/***/ }),
+/* 304 */
+/***/ (function(module, exports) {
+
+module.exports = { prefix: 'fab', iconName: 'linkedin-in', icon: [448, 512, [], "f0e1", "M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"] };
 
 /***/ })
 /******/ ]);
