@@ -177,7 +177,10 @@
             position: absolute
             height: 220px 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 235345d... update
             left: 0
             top: 0  
         #header
@@ -188,6 +191,9 @@
             &.active
                 z-index: 0
                 transition-delay: 1s
+<<<<<<< HEAD
+>>>>>>> parent of 235345d... update
+=======
 >>>>>>> parent of 235345d... update
 
         .main-title
