@@ -1,16 +1,6 @@
 <template>
     <div class="position-relative">
         <banner title="<span class='text-orange'>橘色</span>新訊" img="/images/slideshow_1.jpg"></banner>
-        <div id="header" class="position-absolute w-100">
-            <div class="mt-5 d-flex w-100">
-                <div class="logo">
-                    <img class="position-relative" src="/images/index_logo.png">
-                </div>
-                <div id="main-menu" class="d-flex justify-content-end align-items-start">
-                    <menu-header></menu-header>
-                </div>
-            </div>
-        </div> 
         <div id="block-news" class="news-body position-relative">
             <div id="block-news-lists" class="position-relative">
                 <div id="block-news-filter">
@@ -214,8 +204,11 @@ export default {
                     .filter-date
                         padding: 15px 20px
                         background: #f26d23
-                        margin-right: 20px
                         cursor: pointer
+                        &.-month
+                            margin-right: 20px
+                        &.-year
+                            border-right: 1px solid white
         #block-news-items
             .news-item
                 width: 25%

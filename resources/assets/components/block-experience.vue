@@ -18,8 +18,11 @@
         <div id="content-experience" class="position-relative">
             <h1 class="big_title">{{experience[experience_index].title}}</h1>
             <div class="experience-circle">
-                <div class="circle-body" :class="{'active' : bgTransition}"></div>
-                <div class="circle-option" :class="'e_index_'+experience_index">
+                <div class="circle-body position-relative" :class="{'active' : bgTransition}">
+                    <div class="circle-line -left"></div>
+                    <div class="circle-line -right"></div>
+                </div>
+                <div class="circle-option position-absolute" :class="'e_index_'+experience_index">
                     <a class="text-circle-option -left" @click="experience_view='ex'; experience_index = 0; bgAnimated(800)" :class="experience_index == 0 ? 'active' : ''">體驗</a>
                     <a class="text-circle-option -top" @click="experience_view='pot'; experience_index = 1; bgAnimated(800)" :class="experience_index == 1 ? 'active' : ''">鍋物</a>
                     <a class="text-circle-option -right" @click="experience_view='coffee'; experience_index = 2; bgAnimated(800)" :class="experience_index == 2 ? 'active' : ''">咖啡</a>
@@ -115,18 +118,24 @@ export default {
                     .bg-inner
                         background-position-y: 0
 
-        &:before , .bg-transition.bg-left:before
-            position: absolute
-            width: 50%
-            height: 100vh
-            background: black
-            content: ""
-            left: 0
-            opacity: 0.4
-            top: calc(50% - 50vh)
-            z-index: 4
-            content: ""
-            word-break: keep-all  
+        .bg-transition
+            &.bg-left , &.bg-right
+                &:before
+                    position: absolute
+                    width: 50%
+                    height: 100vh
+                    background: black
+                    content: ""
+                    left: 0
+                    opacity: 0.8
+                    top: calc(50% - 50vh)
+                    z-index: 4
+                    content: ""
+                    word-break: keep-all  
+            &.bg-right
+                &:before
+                    width: 100%
+                    opacity: 0.4
         .bg-transition
             &.bg-left , &.bg-right
                 .bg-inner
@@ -200,35 +209,47 @@ export default {
                 position: absolute
                 top: calc(50% - 250px)
                 left: calc(50% - 250px)
-                .circle-option,.circle-body
+                .circle-option
                     position: absolute
                     width: 500px
                     height: 500px
                 .circle-body
-                    border-radius: 500px
-                    border: 30px solid rgba(255, 113, 34, 0.76)
-                    border-left-color: transparent
-                    &:before
-                        content: ""
-                        position: absolute
-                        width: 500px
-                        height: 500px
-                        left: -30px
-                        top: -30px
-                        border-radius: 500px
-                        border: 30px solid rgba(255, 113, 34, 0.76)
-                        border-left-color: transparent
-                        border-bottom-color: transparent
-                        border-right-color: transparent
-                        opacity: 0
+                    transform: rotate(12deg)
+                    width: 500px
+                    height: 500px
                     &.active
-                        &:before
-                            transform: rotate(360deg)
-                            transition: all .8s
-                            opacity: 1
+                        .circle-line
+                            &.-left
+                                &:after
+                                    transform: rotate(320deg)
+                                    transition: all .8s
+                                    opacity: 1
+                    .circle-line
+                        position: absolute
+                        width: 50%
+                        height: 100%
+                        overflow: hidden
+                        &:before , &.-left:after
+                            content: ""
+                            display: block
+                            width: 200%
+                            height: 100%
+                            border: 28px solid rgba(242, 109, 35, 0.8)
+                            border-radius: 100%
+                        &.-left
+                            left: 0
+                            &:before , &:after
+                                border-bottom-color: transparent
+                                border-left-color: transparent
+                                transform: rotate(-40deg)
+                                clip-path: polygon(50% -18%, 100% 20%, 50% 100%, 0% 60%)
+                        &.-right
+                            right: 0
+                            transform: rotate(180deg)
                 .circle-option
                     transition: all 2s
                     transform: rotate(0)
+                    top: 0
                     &.active
                         opacity: 0
                         transition: opacity .3s

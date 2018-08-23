@@ -196,6 +196,30 @@ body,
   left: 0;
 }
 
+#app #header {
+  top: 0;
+  z-index: 999999;
+  width: 100%;
+  margin-top: 40px;
+}
+
+#app #header.active {
+  z-index: 0;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+#app #header .logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#app #footer .logo {
+  position: relative;
+  height: 220px;
+}
+
 #app .fade-enter-active,
 #app .fade-leave-active {
   -webkit-transition: opacity .5s;
@@ -213,6 +237,10 @@ body,
   width: 50%;
   height: 100%;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 #app .bg-transition .bg-inner {

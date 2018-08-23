@@ -126,6 +126,22 @@ html,body,#app,#block-main
         left: 0  
 
 #app
+    #header
+        top: 0
+        z-index: 999999
+        width: 100% 
+        margin-top: 40px
+        &.active
+            z-index: 0
+            transition-delay: 1s
+        .logo
+            position: absolute
+            left: 0
+            top: 0
+    #footer
+        .logo
+            position: relative
+            height: 220px
     .fade-enter-active, .fade-leave-active
         transition: opacity .5s
     .fade-enter-to, .fade-leave-to
@@ -136,6 +152,9 @@ html,body,#app,#block-main
         width: 50%
         height: 100%
         overflow: hidden
+        background-repeat: no-repeat
+        background-size: cover
+        transition: all .5s  
         .bg-inner
             background-repeat: no-repeat
             background-size: cover

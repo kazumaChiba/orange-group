@@ -1,5 +1,7 @@
 <template>
-    <div id="block-brands" class="section text-white position-relative text-center bg-black-cover" :style="'background-image: url(' + brandBg[brandIndex].background + ')'">
+    <div id="block-brands" class="section text-white position-relative text-center">
+        <div class="bg-transition -old bg-black-cover" :class="{'active' : addTransition}" :style="'background-image: url(' + brandBg[brandIndex_old].url + ')'"></div>
+        <div class="bg-transition -new bg-black-cover" :class="{'active' : addTransition}" :style="'background-image: url(' + brandBg[brandIndex].url + ')'"></div>
         <div class="container position-relative m-auto h-100 ">
             <div class="row h-100 flex-column align-items-center justify-content-center">
                 <h3 class="main-title text-uppercase"><span class="fs-inherit text-orange">橘色</span>版圖<br><span class="sub-title">orange brands</span></h3>
@@ -21,28 +23,36 @@
     </div> 
 </template>
 <style lang="sass">
-    #block-brands
-        background-repeat: no-repeat
-        background-size: cover  
-        background-position: center
-        transition: all .5s
-        .container
-            z-index: 2
-            .content-brands
-                .info-brands
-                    width: 300px
-                    height: 300px
-                    background: rgba(242, 108, 35, 0.4)
-                    border: 1px solid white
-                    padding: 0 40px
+    #app
+        #block-brands
+            .bg-transition
+                width: 100%
+                background-position-x: 0
+                transition: background-position-x .5s
+                &.-new
+                    background-position-x: -100vw
+                    opacity: 0
+                    &.active
+                        background-position-x: 0
+                        opacity: 1
+
+            .container
+                z-index: 2
+                .content-brands
+                    .info-brands
+                        width: 300px
+                        height: 300px
+                        background: rgba(242, 108, 35, 0.4)
+                        border: 1px solid white
+                        padding: 0 40px
+                        font-size: 30px
+                .text-brands
                     font-size: 30px
-            .text-brands
-                font-size: 30px
-                letter-spacing: 20px
-                line-height: 45px
-                font-weight: lighter
-                .text-orange
                     letter-spacing: 20px
+                    line-height: 45px
+                    font-weight: lighter
+                    .text-orange
+                        letter-spacing: 20px
 </style>
 <script>
 export default {
@@ -50,16 +60,17 @@ export default {
             return {
                 addTransition: false,
                 brandIndex: 0,
+                brandIndex_old: 0,
                 brandBg: [
                     {
-                        background: '/images/bg_brand_1.png',
+                        url: '/images/bg_brand_1.png',
                         title: 'EXTENSION1 by 橘色',
                         contact: '/',
                         book: '/',
                         text: '小鍋<span class="text-orange">新</span>時尚<br>不管多少人都能吃得精彩！',
                     },
                     {
-                        background: '/images/bg_food_1.png',
+                        url: '/images/bg_food_1.png',
                         title: 'M One Cafe',
                         contact: '/',
                         book: '/',
@@ -73,7 +84,11 @@ export default {
                 this.addTransition = true;
                 setTimeout(()=>{
                     this.addTransition = false;
+                    this.brandIndex_old = this.brandIndex;
                 },parseInt(time));
+                setTimeout(()=>{
+                    
+                },parseInt(time)-300);
             },
         },
 }

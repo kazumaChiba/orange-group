@@ -177,23 +177,6 @@
             position: absolute
             height: 220px 
 
-        #header
-            top: 0
-            z-index: 999999
-            width: 100% 
-            margin-top: 40px
-            &.active
-                z-index: 0
-                transition-delay: 1s
-            .logo
-                position: absolute
-                left: 0
-                top: 0
-        #footer
-            .logo
-                position: relative
-                height: 220px
-
         .main-title
             line-height: 35px
             .sub-title

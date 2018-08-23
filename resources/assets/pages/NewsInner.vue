@@ -1,15 +1,5 @@
 <template>
-    <div id="block-news-item" class="bg-black-cover position-relative" :style="'background-image:url(/images/bg_brand_1.png)'">
-        <div id="header" class="position-absolute w-100">
-            <div class="mt-5 d-flex w-100">
-                <div class="logo">
-                    <img class="position-relative" src="/images/index_logo.png">
-                </div>
-                <div id="main-menu" class="d-flex justify-content-end align-items-start">
-                    <menu-header></menu-header>
-                </div>
-            </div>
-        </div> 
+    <div id="block-news-item" class="bg-black-cover position-relative" :style="'background-image:url(/images/bg_brand_1.png)'"> 
         <div class="text-white align-items-end d-flex position-relative">
             <div class="container">
                 <div class="row">
@@ -111,9 +101,9 @@ export default {
 
 <style lang="sass">
     #block-news-item
-        height: 110vh
+        height: 90vh
         .news-item-head
-            margin-top: 60vh
+            margin-top: 40vh
             .news-item-title
                 font-size: 60px
                 margin-bottom: 70px

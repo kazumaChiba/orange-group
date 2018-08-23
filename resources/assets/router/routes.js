@@ -39,7 +39,7 @@ const routes = [
         children: [
             {
                 path: '',
-                name: '橘色新訊',
+                name: '',
                 component: resolve => require(['pages/NewsInner.vue'], resolve),
             }
         ]
