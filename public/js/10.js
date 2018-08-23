@@ -689,7 +689,11 @@ exports = module.exports = __webpack_require__(78)(false);
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, "\n#block-news-item {\n  height: 90vh;\n}\n#block-news-item .news-item-head {\n    margin-top: 40vh;\n}\n#block-news-item .news-item-head .news-item-title {\n      font-size: 60px;\n      margin-bottom: 70px;\n}\n#block-news-item .news-item-head .news-item-info {\n      margin-bottom: 70px;\n}\n#block-news-item .item-news-body {\n    background: white;\n    color: black;\n    margin-top: 30px;\n}\n#block-news-item .item-news-body .item-intro-text {\n      font-size: 22px;\n      line-height: 35px;\n}\n#block-news-item .item-news-body .item-news-content {\n      line-height: 28px;\n      padding: 100px 180px;\n}\n#block-news-item .item-news-body .item-news-content p, #block-news-item .item-news-body .item-news-content span, #block-news-item .item-news-body .item-news-content ul {\n        margin: 30px 0;\n        font-size: 15px;\n        font-weight: 500;\n}\n#block-news-item .item-news-body .item-news-content img {\n        width: 100%;\n        margin: 30px 0px 20px 0;\n}\n#block-news-item .item-news-body .item-news-content .text-img {\n        margin-top: 0;\n        font-size: 18px;\n}\n#block-news-item .item-news-body .item-news-content .text-big-orange {\n        font-size: 38px;\n        color: #f26e22;\n        text-align: center;\n        padding: 40px 0;\n        margin: 15px 0;\n        position: relative;\n}\n#block-news-item .item-news-body .item-news-content .text-big-orange:after {\n          content: \"\";\n          width: 30px;\n          height: 1px;\n          background: #f26e22;\n          position: absolute;\n          bottom: 0;\n          left: calc(50% - 15px);\n}\n#block-news-item .item-news-body .item-news-content .text-intro-small {\n        font-size: 14px;\n        font-weight: 600;\n}\n#block-news-item .item-news-body .item-news-content .text-intro-title {\n        font-size: 33px;\n        color: #f26e22;\n        padding: 20px 0;\n        margin: 15px 0;\n}\n#block-news-item .item-news-foot {\n    padding-bottom: 30px;\n    margin-bottom: 30px;\n    border-bottom: 1px solid #ccc;\n}\n#block-news-item .item-news-foot .item-tags-list .item-tag {\n      border: 1px solid #ccc;\n      color: #ccc;\n      padding: 5px;\n      font-size: 12px;\n      margin-right: 5px;\n}\n#block-news-item .item-news-foot .item-tags-list .item-tag:hover {\n        border-color: #f26d23;\n        color: #f26d23;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n        cursor: pointer;\n}\n", ""]);
+=======
+exports.push([module.i, "\n#block-news-item {\n  height: 110vh;\n}\n#block-news-item .news-item-head {\n    margin-top: 60vh;\n}\n#block-news-item .news-item-head .news-item-title {\n      font-size: 60px;\n      margin-bottom: 70px;\n}\n#block-news-item .news-item-head .news-item-info {\n      margin-bottom: 70px;\n}\n#block-news-item .item-news-body {\n    background: white;\n    color: black;\n    margin-top: 30px;\n    padding: 100px 180px;\n}\n#block-news-item .item-news-body .item-intro-text {\n      font-size: 22px;\n      line-height: 35px;\n}\n#block-news-item .item-news-body .item-news-content {\n      line-height: 30px;\n}\n#block-news-item .item-news-body .item-news-content .text-big-orange {\n        font-size: 38px;\n        color: #f26e22;\n        text-align: center;\n        padding: 40px 0;\n        margin: 15px 0;\n        position: relative;\n}\n#block-news-item .item-news-body .item-news-content .text-big-orange:after {\n          content: \"\";\n          width: 30px;\n          height: 1px;\n          background: #f26e22;\n          position: absolute;\n          bottom: 0;\n          left: calc(50% - 15px);\n}\n#block-news-item .item-news-body .item-news-content .text-intro-small {\n        font-size: 14px;\n        font-weight: 600;\n}\n#block-news-item .item-news-body .item-news-content .text-intro-title {\n        font-size: 33px;\n        color: #f26e22;\n        padding: 20px 0;\n        margin: 15px 0;\n}\n", ""]);
+>>>>>>> parent of 3c4e27c... update
 
 // exports
 
@@ -1005,7 +1009,7 @@ var staticRenderFns = [
           attrs: { src: "/images/slideshow_1.jpg" }
         }),
         _vm._v(" "),
-        _c("p", { staticClass: "text-center text-img" }, [
+        _c("p", { staticClass: "text-center" }, [
           _vm._v("測試描述文字測試描述文字測試描述文字測試描述")
         ]),
         _vm._v(" "),
@@ -1034,43 +1038,35 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "item-news-foot w-100 d-flex justify-content-between" },
-        [
-          _c("div", { staticClass: "item-tags-list" }, [
-            _c("span", { staticClass: "item-tag" }, [_vm._v("橘色涮涮屋")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "item-tag" }, [_vm._v("新店")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "item-tag" }, [_vm._v("新光三越")])
-          ]),
+      _c("div", { staticClass: "item-news-foot w-100" }, [
+        _c("div", { staticClass: "item-tags-list" }, [
+          _c("span", { staticClass: "item-tag" }, [_vm._v("橘色涮涮屋")]),
           _vm._v(" "),
-          _c("div", { staticClass: "item-social-list" }, [
-            _c("span", [_vm._v("社群分享")]),
-            _vm._v(" "),
-            _c("div", { staticClass: "item-social" })
-          ])
-        ]
-      ),
+          _c("span", { staticClass: "item-tag" }, [_vm._v("新店")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "item-tag" }, [_vm._v("新光三越")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "item-social-list" }, [
+          _c("span", [_vm._v("社群分享")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "item-social" })
+        ])
+      ]),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "item-relatives w-100 d-flex justify-content-between" },
-        [
-          _c("div", { staticClass: "item-relative -pre" }, [
-            _c("span", [_vm._v("上一則訊息")]),
-            _vm._v(" "),
-            _c("p", [_vm._v("消息標題文字")])
-          ]),
+      _c("div", { staticClass: "item-relatives w-100" }, [
+        _c("div", { staticClass: "item-relative -pre" }, [
+          _c("span", [_vm._v("上一則訊息")]),
           _vm._v(" "),
-          _c("div", { staticClass: "item-relative -next" }, [
-            _c("span", [_vm._v("下一則訊息")]),
-            _vm._v(" "),
-            _c("p", [_vm._v("消息標題文字")])
-          ])
-        ]
-      )
+          _c("p", [_vm._v("消息標題文字")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "item-relative -next" }, [
+          _c("span", [_vm._v("下一則訊息")]),
+          _vm._v(" "),
+          _c("p", [_vm._v("消息標題文字")])
+        ])
+      ])
     ])
   }
 ]
