@@ -30,18 +30,6 @@
             height: 100%
             background: rgba(0, 0, 0, 0.5)
             top: 0
-        .el-breadcrumb
-            display: flex
-            align-items: center
-            justify-content: center
-            .el-breadcrumb__item
-                .el-breadcrumb__inner
-                    color: white
-                &:not(.no-redirect)
-                    .el-breadcrumb__inner
-                        &:hover
-                            color: #f26d23
-
 </style>
 <script>
     export default {

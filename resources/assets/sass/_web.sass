@@ -30,7 +30,7 @@ h5
 /* color */
 .text-orange , .link-orange
     transition: all .3s
-    color: #f26e22 !important
+    color: $color-orange !important
 .text-black
     color: black !important
 .text-gray
@@ -91,7 +91,7 @@ a
     &.router-link-active
         color: $color-orange
     &:hover
-        color: #f26e22
+        color: $color-orange
         text-decoration: none
         transition: color .3s
 html,body,#app,#block-main
@@ -208,7 +208,7 @@ html,body,#app,#block-main
         transition: all .3s
         font-weight: 600
         &:hover , &.active
-            color: #f26e22
+            color: $color-orange
     .news-list
         transition: all .5s
         .news-item
@@ -244,7 +244,7 @@ html,body,#app,#block-main
                 color: black
                 font-weight: 500
                 &:hover
-                    color: #f26e22
+                    color: $color-orange
     .news-content
         .news-info
             margin-bottom: 5px
@@ -254,3 +254,20 @@ html,body,#app,#block-main
             border: 1px solid #f26d23
             background: transparent
             color: #f26d23 !important
+
+//麵包屑
+.el-breadcrumb
+    display: flex
+    align-items: center
+    justify-content: center
+    .el-breadcrumb__item
+        .el-breadcrumb__inner
+            color: white
+            &.is-link                   
+                color: white
+                &:hover
+                    color: #f26d23
+        &:not(.no-redirect)
+            .el-breadcrumb__inner
+                &:hover
+                    color: #f26d23

@@ -1,18 +1,70 @@
 webpackJsonp([10],{
 
-/***/ 219:
+/***/ 227:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(220)
+  __webpack_require__(276)
 }
-var normalizeComponent = __webpack_require__(79)
+var normalizeComponent = __webpack_require__(49)
 /* script */
-var __vue_script__ = __webpack_require__(222)
+var __vue_script__ = __webpack_require__(278)
 /* template */
-var __vue_template__ = __webpack_require__(223)
+var __vue_template__ = __webpack_require__(279)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/pages/NewsInner.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-039313c4", Component.options)
+  } else {
+    hotAPI.reload("data-v-039313c4", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 229:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(230)
+}
+var normalizeComponent = __webpack_require__(49)
+/* script */
+var __vue_script__ = __webpack_require__(232)
+/* template */
+var __vue_template__ = __webpack_require__(233)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -52,17 +104,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 220:
+/***/ 230:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(221);
+var content = __webpack_require__(231);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(212)("b8d6fad2", content, false, {});
+var update = __webpack_require__(80)("b8d6fad2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -79,10 +131,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 221:
+/***/ 231:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(78)(false);
+exports = module.exports = __webpack_require__(48)(false);
 // imports
 
 
@@ -94,7 +146,7 @@ exports.push([module.i, "\n#footer .container {\n  padding: 60px 0 20px 0;\n}\n#
 
 /***/ }),
 
-/***/ 222:
+/***/ 232:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -146,7 +198,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 223:
+/***/ 233:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -342,19 +394,19 @@ if (false) {
 
 /***/ }),
 
-/***/ 260:
+/***/ 234:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(261)
+  __webpack_require__(235)
 }
-var normalizeComponent = __webpack_require__(79)
+var normalizeComponent = __webpack_require__(49)
 /* script */
-var __vue_script__ = __webpack_require__(263)
+var __vue_script__ = __webpack_require__(237)
 /* template */
-var __vue_template__ = __webpack_require__(264)
+var __vue_template__ = __webpack_require__(238)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -394,17 +446,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 261:
+/***/ 235:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(262);
+var content = __webpack_require__(236);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(212)("822c5f64", content, false, {});
+var update = __webpack_require__(80)("822c5f64", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -421,38 +473,26 @@ if(false) {
 
 /***/ }),
 
-/***/ 262:
+/***/ 236:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(78)(false);
+exports = module.exports = __webpack_require__(48)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n#block-breadcrumb {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  height: 50vh;\n}\n#block-breadcrumb:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    top: 0;\n}\n#block-breadcrumb .el-breadcrumb {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n#block-breadcrumb .el-breadcrumb .el-breadcrumb__item .el-breadcrumb__inner {\n      color: white;\n}\n#block-breadcrumb .el-breadcrumb .el-breadcrumb__item:not(.no-redirect) .el-breadcrumb__inner:hover {\n      color: #f26d23;\n}\n", ""]);
+exports.push([module.i, "\n#block-breadcrumb {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  height: 50vh;\n}\n#block-breadcrumb:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    top: 0;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 263:
+/***/ 237:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -506,7 +546,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 264:
+/***/ 238:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -602,69 +642,17 @@ if (false) {
 
 /***/ }),
 
-/***/ 298:
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(299)
-}
-var normalizeComponent = __webpack_require__(79)
-/* script */
-var __vue_script__ = __webpack_require__(301)
-/* template */
-var __vue_template__ = __webpack_require__(302)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/pages/NewsInner.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-039313c4", Component.options)
-  } else {
-    hotAPI.reload("data-v-039313c4", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 299:
+/***/ 276:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(300);
+var content = __webpack_require__(277);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(212)("3bcafb7a", content, false, {});
+var update = __webpack_require__(80)("3bcafb7a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -681,35 +669,31 @@ if(false) {
 
 /***/ }),
 
-/***/ 300:
+/***/ 277:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(78)(false);
+exports = module.exports = __webpack_require__(48)(false);
 // imports
 
 
 // module
-<<<<<<< HEAD
-exports.push([module.i, "\n#block-news-item {\n  height: 90vh;\n}\n#block-news-item .news-item-head {\n    margin-top: 40vh;\n}\n#block-news-item .news-item-head .news-item-title {\n      font-size: 60px;\n      margin-bottom: 70px;\n}\n#block-news-item .news-item-head .news-item-info {\n      margin-bottom: 70px;\n}\n#block-news-item .item-news-body {\n    background: white;\n    color: black;\n    margin-top: 30px;\n}\n#block-news-item .item-news-body .item-intro-text {\n      font-size: 22px;\n      line-height: 35px;\n}\n#block-news-item .item-news-body .item-news-content {\n      line-height: 28px;\n      padding: 100px 180px;\n}\n#block-news-item .item-news-body .item-news-content p, #block-news-item .item-news-body .item-news-content span, #block-news-item .item-news-body .item-news-content ul {\n        margin: 30px 0;\n        font-size: 15px;\n        font-weight: 500;\n}\n#block-news-item .item-news-body .item-news-content img {\n        width: 100%;\n        margin: 30px 0px 20px 0;\n}\n#block-news-item .item-news-body .item-news-content .text-img {\n        margin-top: 0;\n        font-size: 18px;\n}\n#block-news-item .item-news-body .item-news-content .text-big-orange {\n        font-size: 38px;\n        color: #f26e22;\n        text-align: center;\n        padding: 40px 0;\n        margin: 15px 0;\n        position: relative;\n}\n#block-news-item .item-news-body .item-news-content .text-big-orange:after {\n          content: \"\";\n          width: 30px;\n          height: 1px;\n          background: #f26e22;\n          position: absolute;\n          bottom: 0;\n          left: calc(50% - 15px);\n}\n#block-news-item .item-news-body .item-news-content .text-intro-small {\n        font-size: 14px;\n        font-weight: 600;\n}\n#block-news-item .item-news-body .item-news-content .text-intro-title {\n        font-size: 33px;\n        color: #f26e22;\n        padding: 20px 0;\n        margin: 15px 0;\n}\n#block-news-item .item-news-foot {\n    padding-bottom: 30px;\n    margin-bottom: 30px;\n    border-bottom: 1px solid #ccc;\n}\n#block-news-item .item-news-foot .item-tags-list .item-tag {\n      border: 1px solid #ccc;\n      color: #ccc;\n      padding: 5px;\n      font-size: 12px;\n      margin-right: 5px;\n}\n#block-news-item .item-news-foot .item-tags-list .item-tag:hover {\n        border-color: #f26d23;\n        color: #f26d23;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n        cursor: pointer;\n}\n", ""]);
-=======
-exports.push([module.i, "\n#block-news-item {\n  height: 110vh;\n}\n#block-news-item .news-item-head {\n    margin-top: 60vh;\n}\n#block-news-item .news-item-head .news-item-title {\n      font-size: 60px;\n      margin-bottom: 70px;\n}\n#block-news-item .news-item-head .news-item-info {\n      margin-bottom: 70px;\n}\n#block-news-item .item-news-body {\n    background: white;\n    color: black;\n    margin-top: 30px;\n    padding: 100px 180px;\n}\n#block-news-item .item-news-body .item-intro-text {\n      font-size: 22px;\n      line-height: 35px;\n}\n#block-news-item .item-news-body .item-news-content {\n      line-height: 30px;\n}\n#block-news-item .item-news-body .item-news-content .text-big-orange {\n        font-size: 38px;\n        color: #f26e22;\n        text-align: center;\n        padding: 40px 0;\n        margin: 15px 0;\n        position: relative;\n}\n#block-news-item .item-news-body .item-news-content .text-big-orange:after {\n          content: \"\";\n          width: 30px;\n          height: 1px;\n          background: #f26e22;\n          position: absolute;\n          bottom: 0;\n          left: calc(50% - 15px);\n}\n#block-news-item .item-news-body .item-news-content .text-intro-small {\n        font-size: 14px;\n        font-weight: 600;\n}\n#block-news-item .item-news-body .item-news-content .text-intro-title {\n        font-size: 33px;\n        color: #f26e22;\n        padding: 20px 0;\n        margin: 15px 0;\n}\n", ""]);
->>>>>>> parent of 3c4e27c... update
+exports.push([module.i, "\n#block-news-item {\n  height: 90vh;\n}\n#block-news-item .news-item-head {\n    margin-top: 40vh;\n}\n#block-news-item .news-item-head .news-item-title {\n      font-size: 60px;\n      margin-bottom: 70px;\n}\n#block-news-item .news-item-head .news-item-info {\n      margin-bottom: 70px;\n}\n#block-news-item .item-news-body {\n    background: white;\n    color: black;\n    margin-top: 30px;\n}\n#block-news-item .item-news-body .item-intro-text {\n      font-size: 22px;\n      line-height: 35px;\n}\n#block-news-item .item-news-body .item-news-content {\n      line-height: 28px;\n      padding: 100px 180px;\n}\n#block-news-item .item-news-body .item-news-content p, #block-news-item .item-news-body .item-news-content span, #block-news-item .item-news-body .item-news-content ul {\n        margin: 30px 0;\n        font-size: 15px;\n        font-weight: 500;\n}\n#block-news-item .item-news-body .item-news-content img {\n        width: 100%;\n        margin: 30px 0px 20px 0;\n}\n#block-news-item .item-news-body .item-news-content .text-img {\n        margin-top: 0;\n        font-size: 18px;\n}\n#block-news-item .item-news-body .item-news-content .text-big-orange {\n        font-size: 38px;\n        color: #f26e22;\n        text-align: center;\n        padding: 40px 0;\n        margin: 15px 0;\n        position: relative;\n}\n#block-news-item .item-news-body .item-news-content .text-big-orange:after {\n          content: \"\";\n          width: 30px;\n          height: 1px;\n          background: #f26e22;\n          position: absolute;\n          bottom: 0;\n          left: calc(50% - 15px);\n}\n#block-news-item .item-news-body .item-news-content .text-intro-small {\n        font-size: 14px;\n        font-weight: 600;\n}\n#block-news-item .item-news-body .item-news-content .text-intro-title {\n        font-size: 33px;\n        color: #f26e22;\n        padding: 20px 0;\n        margin: 15px 0;\n}\n#block-news-item .item-news-foot {\n    padding-bottom: 30px;\n    margin-bottom: 30px;\n    border-bottom: 1px solid #ccc;\n}\n#block-news-item .item-news-foot .item-tags-list .item-tag {\n      border: 1px solid #ccc;\n      color: #ccc;\n      padding: 5px;\n      font-size: 12px;\n      margin-right: 5px;\n}\n#block-news-item .item-news-foot .item-tags-list .item-tag:hover {\n        border-color: #f26d23;\n        color: #f26d23;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n        cursor: pointer;\n}\n#block-news-item .el-breadcrumb {\n    -webkit-box-pack: left;\n        -ms-flex-pack: left;\n            justify-content: left;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 301:
+/***/ 278:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_banner__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_banner__ = __webpack_require__(234);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_banner___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_components_block_banner__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_components_block_menu_header__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_footer__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_footer__ = __webpack_require__(229);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_components_block_footer__);
 //
 //
@@ -811,7 +795,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 302:
+/***/ 279:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -1009,7 +993,7 @@ var staticRenderFns = [
           attrs: { src: "/images/slideshow_1.jpg" }
         }),
         _vm._v(" "),
-        _c("p", { staticClass: "text-center" }, [
+        _c("p", { staticClass: "text-center text-img" }, [
           _vm._v("測試描述文字測試描述文字測試描述文字測試描述")
         ]),
         _vm._v(" "),
@@ -1038,35 +1022,43 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "item-news-foot w-100" }, [
-        _c("div", { staticClass: "item-tags-list" }, [
-          _c("span", { staticClass: "item-tag" }, [_vm._v("橘色涮涮屋")]),
+      _c(
+        "div",
+        { staticClass: "item-news-foot w-100 d-flex justify-content-between" },
+        [
+          _c("div", { staticClass: "item-tags-list" }, [
+            _c("span", { staticClass: "item-tag" }, [_vm._v("橘色涮涮屋")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "item-tag" }, [_vm._v("新店")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "item-tag" }, [_vm._v("新光三越")])
+          ]),
           _vm._v(" "),
-          _c("span", { staticClass: "item-tag" }, [_vm._v("新店")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "item-tag" }, [_vm._v("新光三越")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "item-social-list" }, [
-          _c("span", [_vm._v("社群分享")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "item-social" })
-        ])
-      ]),
+          _c("div", { staticClass: "item-social-list" }, [
+            _c("span", [_vm._v("社群分享")]),
+            _vm._v(" "),
+            _c("div", { staticClass: "item-social" })
+          ])
+        ]
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "item-relatives w-100" }, [
-        _c("div", { staticClass: "item-relative -pre" }, [
-          _c("span", [_vm._v("上一則訊息")]),
+      _c(
+        "div",
+        { staticClass: "item-relatives w-100 d-flex justify-content-between" },
+        [
+          _c("div", { staticClass: "item-relative -pre" }, [
+            _c("span", [_vm._v("上一則訊息")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("消息標題文字")])
+          ]),
           _vm._v(" "),
-          _c("p", [_vm._v("消息標題文字")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "item-relative -next" }, [
-          _c("span", [_vm._v("下一則訊息")]),
-          _vm._v(" "),
-          _c("p", [_vm._v("消息標題文字")])
-        ])
-      ])
+          _c("div", { staticClass: "item-relative -next" }, [
+            _c("span", [_vm._v("下一則訊息")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("消息標題文字")])
+          ])
+        ]
+      )
     ])
   }
 ]

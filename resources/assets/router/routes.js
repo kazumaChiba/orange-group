@@ -45,6 +45,17 @@ const routes = [
         ]
     },
     {
+        path: '/family',
+        component: resolve => require(['pages/layout/Landing.vue'], resolve),
+        children: [
+            {
+                path: '',
+                name: '橘色家庭',
+                component: resolve => require(['pages/Family.vue'], resolve),
+            }
+        ]
+    },
+    {
         path: '/contact',
         component: resolve => require(['pages/layout/Landing.vue'], resolve),
         children: [

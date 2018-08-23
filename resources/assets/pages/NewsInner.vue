@@ -43,7 +43,7 @@
                             <h3 class="text-intro-title">測試描述標題文字</h3>
                             <p>測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>
                             <img class="img-fullwidth" src="/images/slideshow_1.jpg" />
-                            <p class="text-center">測試描述文字測試描述文字測試描述文字測試描述</p>
+                            <p class="text-center text-img">測試描述文字測試描述文字測試描述文字測試描述</p>
                             <h3 class="text-intro-title">測試描述標題文字</h3>
                             <p>測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>
                             <img src="/images/bg_brand_1.png">
@@ -51,7 +51,7 @@
                             <h3 class="text-intro-title">測試描述標題文字</h3>
                             <p>測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>
                         </div>
-                        <div class="item-news-foot w-100">
+                        <div class="item-news-foot w-100 d-flex justify-content-between">
                             <div class="item-tags-list">
                                 <span class="item-tag">橘色涮涮屋</span>
                                 <span class="item-tag">新店</span>
@@ -64,7 +64,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item-relatives w-100">
+                        <div class="item-relatives w-100 d-flex justify-content-between">
                             <div class="item-relative -pre">
                                 <span>上一則訊息</span>
                                 <p>消息標題文字</p>
@@ -113,12 +113,22 @@ export default {
             background: white
             color: black
             margin-top: 30px
-            padding: 100px 180px
             .item-intro-text
                 font-size: 22px
                 line-height: 35px
             .item-news-content
-                line-height: 30px
+                line-height: 28px
+                padding: 100px 180px
+                p , span , ul
+                    margin: 30px 0
+                    font-size: 15px
+                    font-weight: 500
+                img
+                    width: 100%
+                    margin: 30px 0px 20px 0
+                .text-img
+                    margin-top: 0
+                    font-size: 18px
                 .text-big-orange
                     font-size: 38px
                     color: #f26e22
@@ -142,6 +152,24 @@ export default {
                     color: #f26e22
                     padding: 20px 0
                     margin: 15px 0
+        .item-news-foot
+            padding-bottom: 30px
+            margin-bottom: 30px
+            border-bottom: 1px solid #ccc
+            .item-tags-list
+                .item-tag
+                    border: 1px solid #ccc
+                    color: #ccc
+                    padding: 5px
+                    font-size: 12px
+                    margin-right: 5px
+                    &:hover
+                        border-color: #f26d23
+                        color: #f26d23
+                        transition: all .3s
+                        cursor: pointer
+        .el-breadcrumb
+            justify-content: left
         
 
 </style>
