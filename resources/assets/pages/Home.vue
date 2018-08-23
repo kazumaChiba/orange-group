@@ -176,6 +176,19 @@
         .logo
             position: absolute
             height: 220px 
+<<<<<<< HEAD
+=======
+            left: 0
+            top: 0  
+        #header
+            top: 0
+            z-index: 999999
+            width: 100% 
+            margin-top: 40px
+            &.active
+                z-index: 0
+                transition-delay: 1s
+>>>>>>> parent of 235345d... update
 
         .main-title
             line-height: 35px

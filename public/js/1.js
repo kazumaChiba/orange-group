@@ -172,7 +172,20 @@ throw new Error("Module parse failed: Unexpected token (2:0)\nYou may need an ap
 /***/ }),
 
 /***/ 230:
+<<<<<<< HEAD
 /***/ (function(module, exports) {
+=======
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(78)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n@charset \"UTF-8\";\n#burger-menu {\n  width: 0px;\n  height: 25px;\n  text-align: center;\n  overflow: hidden;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  position: absolute;\n  right: 30px;\n  top: 48px;\n  z-index: 9999999;\n}\n#burger-menu:before {\n    content: \"|||\";\n    color: #f26c23;\n    -webkit-transform: rotate(90deg);\n            transform: rotate(90deg);\n    display: inline-block;\n    font-weight: bold;\n}\n#burger-menu:hover {\n    cursor: pointer;\n}\n#burger-menu.menu-close {\n    width: 25px;\n}\n#fp-nav.fp-right {\n  opacity: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  visibility: hidden;\n  -webkit-transition: opacity .3s;\n  transition: opacity .3s;\n  right: 0;\n  width: unset;\n}\n#fp-nav.fp-right.active {\n    visibility: visible;\n    opacity: 1;\n}\n#fp-nav.fp-right ul li {\n    width: 100%;\n    height: 25px;\n    margin: 5px 0;\n}\n#fp-nav.fp-right ul li:last-child {\n      display: none;\n}\n#fp-nav.fp-right ul li span {\n      display: none;\n}\n#fp-nav.fp-right ul li .fp-tooltip.fp-right {\n      color: #ccc;\n      opacity: 1;\n      width: auto;\n      font-size: 17px;\n      letter-spacing: 0px;\n      font-style: italic;\n      right: 0;\n      overflow: visible;\n      position: relative;\n      height: 100%;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      padding: 0 50px;\n      font-weight: 300;\n}\n#fp-nav.fp-right ul li:hover div, #fp-nav.fp-right ul li a.active + div {\n      cursor: pointer;\n      background: #f26c23;\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      color: white !important;\n}\n#fp-nav.fp-right ul li a {\n      position: absolute;\n      top: 0;\n      left: 0;\n}\n#app .fp-scroller {\n  min-height: 100%;\n}\n#app .logo {\n  position: absolute;\n  height: 220px;\n  left: 0;\n  top: 0;\n}\n#app #header {\n  top: 0;\n  z-index: 999999;\n  width: 100%;\n  margin-top: 40px;\n}\n#app #header.active {\n    z-index: 0;\n    -webkit-transition-delay: 1s;\n            transition-delay: 1s;\n}\n#app .main-title {\n  line-height: 35px;\n}\n#app .main-title .sub-title {\n    letter-spacing: 10px;\n    font-weight: 200;\n    font-size: 16px;\n    font-family: \"PingFang SC\",微軟正黑體;\n}\n", ""]);
+
+// exports
+>>>>>>> parent of 235345d... update
 
 throw new Error("Module parse failed: Unexpected character '#' (51:0)\nYou may need an appropriate loader to handle this file type.\n| \n| \n| #footer\n|     .container\n|         padding: 60px 0 20px 0");
 
@@ -791,6 +804,7 @@ throw new Error("Module parse failed: Unexpected character '#' (51:0)\nYou may n
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 248:
 /***/ (function(module, exports) {
 
@@ -829,6 +843,145 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_3__node_modules_vue_loader_lib_
 )
 
 /* hot reload */
+=======
+/***/ 251:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "section text-white position-relative",
+      style:
+        "background-image:url(" + _vm.foodItems[_vm.food_index_old].url + ")",
+      attrs: { id: "block-foods" }
+    },
+    [
+      _c("div", { staticClass: "block-food-body d-flex bg-black-filter" }, [
+        _c("div", { staticClass: "bg-transition bg-left" }, [
+          _c("div", {
+            staticClass: "bg-inner",
+            class: { active: _vm.bgTransition },
+            style:
+              "background-image:url(" + _vm.foodItems[_vm.food_index].url + ")"
+          })
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "content-food -left d-flex flex-column justify-content-between position-relative"
+          },
+          [
+            _c(
+              "div",
+              { staticClass: "mb-5", class: { fade: _vm.addTransition } },
+              [
+                _c("p", {
+                  staticClass: "line-top text-size-2",
+                  domProps: {
+                    innerHTML: _vm._s(_vm.foodItems[_vm.food_index].subTitle)
+                  }
+                }),
+                _vm._v(" "),
+                _c("h1", { staticClass: "big_title" }, [
+                  _vm._v(_vm._s(_vm.foodItems[_vm.food_index].title))
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "align-self-end mt-5" },
+              [
+                _c("p", { staticClass: "text-size-2" }, [
+                  _vm._v("探索更多橘色價值")
+                ]),
+                _vm._v(" "),
+                _vm._l(_vm.foodItems, function(item, $index) {
+                  return _c("div", {
+                    key: $index,
+                    staticClass: "more-food-info",
+                    class: _vm.food_index == $index ? "active" : "",
+                    style: "background-image:url(" + item.url + ")",
+                    on: {
+                      click: function($event) {
+                        _vm.food_index = $index
+                        _vm.bgAnimated(100)
+                        _vm.startAnimate("500")
+                      }
+                    }
+                  })
+                })
+              ],
+              2
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "content-food -right d-flex flex-column justify-content-center position-relative"
+          },
+          [
+            _c(
+              "svg",
+              { staticClass: "loader", class: { active: _vm.addTransition } },
+              [
+                _c("circle", {
+                  staticClass: "internal-circle",
+                  attrs: { cx: "30%", cy: "55%", r: "450" }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _vm._m(0),
+            _vm._v(" "),
+            _c("div", { staticClass: "food-info-circle" }),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "food-info-inner d-flex flex-column justify-content-center p-5"
+              },
+              [
+                _c("div", {
+                  class: { fade: _vm.addTransition },
+                  domProps: {
+                    innerHTML: _vm._s(_vm.foodItems[_vm.food_index].content)
+                  }
+                })
+              ]
+            )
+          ]
+        )
+      ])
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h3", { staticClass: "main-title text-black text-uppercase" }, [
+      _c("span", { staticClass: "fs-inherit text-orange" }, [_vm._v("橘色 ")]),
+      _vm._v("價值"),
+      _c("br"),
+      _c("span", { staticClass: "sub-title" }, [_vm._v("about value")])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+>>>>>>> parent of 235345d... update
 if (false) {
   var api = require("/Users/daydreamlab/Desktop/orangeshabu/node_modules/vue-hot-reload-api/dist/index.js")
   api.install(require('vue'))

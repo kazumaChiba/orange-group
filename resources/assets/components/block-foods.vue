@@ -7,7 +7,7 @@
                     :class="{'active' : bgTransition}"
                 ></div>
             </div>
-            <div class="content-food -left d-flex flex-column justify-content-between position-relative m-auto">
+            <div class="content-food -left d-flex flex-column justify-content-between position-relative">
                 <div class="mb-5" :class="{'fade' : addTransition}">
                     <p class="line-top text-size-2" v-html="foodItems[food_index].subTitle"></p>
                     <h1 class="big_title">{{foodItems[food_index].title}}</h1>
