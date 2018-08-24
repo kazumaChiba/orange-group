@@ -426,10 +426,11 @@ if(false) {
 
 exports = module.exports = __webpack_require__(49)(false);
 // imports
-
+exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css);", ""]);
+exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css);", ""]);
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "\n#block-family .slideshow .slider {\n  height: 100vh;\n}\n#block-family .slideshow .slider .slide-title {\n    font-size: 110px;\n    font-weight: 600;\n}\n#block-family .slideshow .slider .slide-subtitle {\n    font-size: 42px;\n    font-weight: 500;\n}\n#block-family .slideshow .slider .slide-text {\n    font-size: 18px;\n    bottom: 8vh;\n}\n#block-family .slideshow .slider .slide-text:after {\n      content: \"\";\n      position: absolute;\n      width: 2px;\n      height: calc(10vh + 30px);\n      background: white;\n      left: 50%;\n      top: 50px;\n}\n", ""]);
 
 // exports
 
@@ -461,6 +462,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -469,11 +477,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-
             slickOptions: {
-                slidesToShow: 3
-            }
-
+                slidesToShow: 1
+            },
+            slick_items: [{
+                bg: '/images/slideshow_1.jpg',
+                title: '實現你未來的夢想',
+                subtitle: '踏足餐飲業的堅實第一步<br>橘色大家庭為你實現',
+                scrollText: '讓我們帶你實現夢想!'
+            }, {
+                bg: '/images/bg_brand_1.png',
+                title: '實現你未來的夢想',
+                subtitle: '踏足餐飲業的堅實第一步<br>橘色大家庭為你實現',
+                scrollText: '讓我們帶你實現夢想!'
+            }]
         };
     },
     components: {
@@ -487,6 +504,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         prev: function prev() {
             this.$refs.slick.prev();
+        },
+        reInit: function reInit() {
+            var _this = this;
+
+            this.$nextTick(function () {
+                _this.$refs.slick.reSlick();
+            });
+        },
+        handleInit: function handleInit(event, slick) {
+            console.log('handleInit', event, slick);
         }
     }
 });
@@ -3778,37 +3805,41 @@ var render = function() {
     "div",
     { attrs: { id: "block-family" } },
     [
-      _c("slick", { ref: "slick", attrs: { options: _vm.slickOptions } }, [
-        _c("a", { attrs: { href: "http://placehold.it/2000x1000" } }, [
-          _c("img", {
-            attrs: { src: "http://placehold.it/2000x1000", alt: "" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("a", { attrs: { href: "http://placehold.it/2000x1000" } }, [
-          _c("img", {
-            attrs: { src: "http://placehold.it/2000x1000", alt: "" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("a", { attrs: { href: "http://placehold.it/2000x1000" } }, [
-          _c("img", {
-            attrs: { src: "http://placehold.it/2000x1000", alt: "" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("a", { attrs: { href: "http://placehold.it/2000x1000" } }, [
-          _c("img", {
-            attrs: { src: "http://placehold.it/2000x1000", alt: "" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("a", { attrs: { href: "http://placehold.it/2000x1000" } }, [
-          _c("img", {
-            attrs: { src: "http://placehold.it/2000x1000", alt: "" }
-          })
-        ])
-      ])
+      _c(
+        "slick",
+        {
+          ref: "slick",
+          staticClass: "slideshow",
+          attrs: { options: _vm.slickOptions }
+        },
+        _vm._l(_vm.slick_items, function(item, $index) {
+          return _c(
+            "div",
+            {
+              key: $index,
+              staticClass:
+                "slider d-flex flex-column align-items-center justify-content-center",
+              style: "background-image:url(" + item.bg + ")"
+            },
+            [
+              _c("p", { staticClass: "slide-title text-white" }, [
+                _vm._v(_vm._s(item.title))
+              ]),
+              _vm._v(" "),
+              _c("p", {
+                staticClass: "slide-subtitle text-white",
+                domProps: { innerHTML: _vm._s(item.subtitle) }
+              }),
+              _vm._v(" "),
+              _c(
+                "p",
+                { staticClass: "slide-text text-white position-absolute" },
+                [_vm._v(_vm._s(item.scrollText))]
+              )
+            ]
+          )
+        })
+      )
     ],
     1
   )

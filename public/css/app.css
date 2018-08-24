@@ -3,6 +3,7 @@
 body,
 html {
   font-family: "source-han-serif-tc",標楷體,"PingFang TC",Arial,新細明體,serif , sans-serif;
+  letter-spacing: 2px;
 }
 
 h1,
@@ -118,14 +119,6 @@ h5 {
 
 .bg-orange {
   background: #f26c23 !important;
-}
-
-a,
-p,
-span,
-div,
-li {
-  letter-spacing: 1px;
 }
 
 a {
