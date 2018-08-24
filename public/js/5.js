@@ -430,7 +430,7 @@ exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slic
 exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css);", ""]);
 
 // module
-exports.push([module.i, "\n#block-family .slideshow .slider {\n  height: 100vh;\n}\n#block-family .slideshow .slider .slide-title {\n    font-size: 110px;\n    font-weight: 600;\n}\n#block-family .slideshow .slider .slide-subtitle {\n    font-size: 42px;\n    font-weight: 500;\n}\n#block-family .slideshow .slider .slide-text {\n    font-size: 18px;\n    bottom: 8vh;\n}\n#block-family .slideshow .slider .slide-text:after {\n      content: \"\";\n      position: absolute;\n      width: 2px;\n      height: calc(10vh + 30px);\n      background: white;\n      left: 50%;\n      top: 50px;\n}\n", ""]);
+exports.push([module.i, "\n#block-family .slideshow .slider {\n  height: 100vh;\n}\n#block-family .slideshow .slider p {\n    z-index: 2;\n}\n#block-family .slideshow .slider .slide-title {\n    font-size: 110px;\n    font-weight: 600;\n}\n#block-family .slideshow .slider .slide-subtitle {\n    font-size: 42px;\n    font-weight: 500;\n}\n#block-family .slideshow .slider .slide-text {\n    font-size: 18px;\n    bottom: 8vh;\n}\n#block-family .slideshow .slider .slide-text:after {\n      content: \"\";\n      position: absolute;\n      width: 2px;\n      height: calc(10vh + 30px);\n      background: white;\n      left: 50%;\n      top: 50px;\n}\n#block-family .slideshow .slider:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(56, 26, 2, 0.16);\n}\n", ""]);
 
 // exports
 

@@ -81,6 +81,8 @@ export default {
     .slideshow
         .slider
             height: 100vh
+            p
+                z-index: 2
             .slide-title
                 font-size: 110px
                 font-weight: 600
@@ -98,4 +100,10 @@ export default {
                     background: white
                     left: 50%
                     top: 50px
+            &:before
+                content: ""
+                position: absolute
+                width: 100%
+                height: 100%
+                background: rgba(56, 26, 2, 0.16)
 </style>
