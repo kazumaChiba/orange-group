@@ -78,6 +78,7 @@
                 </div>
             </div>
         </div>
+        <block-footer></block-footer>
     </div>
 </template>
 

@@ -430,7 +430,7 @@ exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slic
 exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css);", ""]);
 
 // module
-exports.push([module.i, "\n#block-family .slideshow .slider {\n  height: 100vh;\n}\n#block-family .slideshow .slider p {\n    z-index: 2;\n}\n#block-family .slideshow .slider .slide-title {\n    font-size: 110px;\n    font-weight: 600;\n}\n#block-family .slideshow .slider .slide-subtitle {\n    font-size: 42px;\n    font-weight: 500;\n}\n#block-family .slideshow .slider .slide-text {\n    font-size: 18px;\n    bottom: 8vh;\n}\n#block-family .slideshow .slider .slide-text:after {\n      content: \"\";\n      position: absolute;\n      width: 2px;\n      height: calc(10vh + 30px);\n      background: white;\n      left: 50%;\n      top: 50px;\n}\n#block-family .slideshow .slider:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(56, 26, 2, 0.16);\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\n#block-family .slideshow:before, #block-family .slideshow:after {\n  content: \"\";\n  position: absolute;\n  border-radius: 100%;\n}\n#block-family .slideshow:before {\n  background: #f36f1b;\n  width: 120vw;\n  height: 65vw;\n  bottom: 0vw;\n  right: -20vw;\n  z-index: 1;\n}\n#block-family .slideshow:after {\n  width: 120vw;\n  height: 74vw;\n  background: #ffaa85;\n  left: -13vw;\n  top: -19vh;\n  z-index: 0;\n}\n#block-family .slideshow .slick-list {\n  overflow: visible;\n  overflow-x: hidden;\n  z-index: 2;\n}\n#block-family .slideshow .slick-next, #block-family .slideshow .slick-prev {\n  z-index: 2;\n  color: white;\n  font-size: 12px;\n  letter-spacing: 2px;\n  width: auto;\n  padding: 15px 20px;\n  -webkit-transition: all .3s;\n  transition: all .3s;\n  text-transform: uppercase;\n  font-family: \"PingFang SC\",微軟正黑體;\n  font-weight: 300;\n}\n#block-family .slideshow .slick-next:hover, #block-family .slideshow .slick-prev:hover {\n    background: white;\n    color: #f36e1b;\n    font-weight: 500;\n}\n#block-family .slideshow .slick-next:before, #block-family .slideshow .slick-prev:before {\n    content: none;\n}\n#block-family .slideshow .slick-prev {\n  left: 20px;\n}\n#block-family .slideshow .slick-next {\n  right: 20px;\n}\n#block-family .slideshow .slick-slide {\n  position: relative;\n  overflow: hidden;\n}\n#block-family .slideshow .slick-slide .slider {\n    height: 110vh;\n    -webkit-clip-path: circle(150vh at 54vw -42vh);\n            clip-path: circle(150vh at 54vw -42vh);\n}\n#block-family .slideshow .slick-slide .slider p {\n      z-index: 2;\n}\n#block-family .slideshow .slick-slide .slider .slide-title {\n      font-size: 110px;\n      font-weight: 600;\n}\n#block-family .slideshow .slick-slide .slider .slide-subtitle {\n      font-size: 42px;\n      font-weight: 500;\n}\n#block-family .slideshow .slick-slide .slider .slide-text {\n      font-size: 18px;\n      bottom: 18vh;\n}\n#block-family .slideshow .slick-slide .slider .slide-text:before, #block-family .slideshow .slick-slide .slider .slide-text:after {\n        content: \"\";\n        position: absolute;\n        width: 2px;\n        height: calc(20vh + 30px);\n        background: white;\n        left: 50%;\n        top: 50px;\n}\n#block-family .slideshow .slick-slide .slider .slide-text:before {\n        opacity: 0.6;\n}\n#block-family .slideshow .slick-slide .slider .slide-text:after {\n        height: 30px;\n        -webkit-animation: scrolling 1.5s infinite ease-in-out;\n                animation: scrolling 1.5s infinite ease-in-out;\n}\n#block-family .slideshow .slick-slide .slider:before {\n      content: \"\";\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      background: rgba(56, 26, 2, 0.16);\n}\n@-webkit-keyframes scrolling {\n100% {\n    top: calc(10vh + 30px);\n}\n}\n@keyframes scrolling {\n100% {\n    top: calc(10vh + 30px);\n}\n}\n#block-family #family-intro .family-title {\n  font-size: 45px;\n  padding-right: 10vw;\n  line-height: 67px;\n  position: relative;\n  margin-top: 80px;\n  padding-right: 80px;\n}\n#block-family #family-intro .family-title:before {\n    content: \"\";\n    position: absolute;\n    width: 1.6px;\n    height: 50px;\n    background: #f26e22;\n    top: 14px;\n    right: 65px;\n}\n#block-family #family-intro .family-step-list .family-step {\n  margin-bottom: 270px;\n}\n#block-family #family-intro .family-step-list .family-step:nth-child(2n) {\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: reverse;\n        -ms-flex-direction: row-reverse;\n            flex-direction: row-reverse;\n}\n#block-family #family-intro .family-step-list .family-step .big_title, #block-family #family-intro .family-step-list .family-step .step-title, #block-family #family-intro .family-step-list .family-step .subtitle, #block-family #family-intro .family-step-list .family-step .desc {\n    font-weight: 500;\n    width: 60%;\n}\n#block-family #family-intro .family-step-list .family-step .big_title {\n    opacity: 0.5;\n    font-size: 220px;\n    top: -180px;\n    left: 80px;\n}\n#block-family #family-intro .family-step-list .family-step .step-title {\n    font-size: 35px;\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    margin-bottom: 25px;\n    padding-right: 45px;\n    border-right: 1px solid;\n    line-height: 45px;\n}\n#block-family #family-intro .family-step-list .family-step .subtitle {\n    font-size: 23px;\n    margin-bottom: 40px;\n}\n#block-family #family-intro .family-step-list .family-step .desc {\n    color: gray;\n}\n#block-family #teams-say .teams-content {\n  padding: 200px 300px;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n#block-family #teams-say .teams-content .team-content-texts {\n    width: 60%;\n}\n#block-family #teams-say .teams-content:before {\n    content: \"\";\n    position: absolute;\n    background: rgba(0, 0, 0, 0.3);\n    width: 100%;\n    height: 100%;\n    left: 0;\n    top: 0;\n}\n#block-family #teams-say .teams-content:after {\n    content: \"Q\";\n    font-size: 430px;\n    position: absolute;\n    top: -10px;\n    left: 180px;\n    opacity: 0.4;\n}\n#block-family #teams-say .teams-content h3 {\n    margin-bottom: 50px;\n    font-size: 40px;\n}\n#block-family #teams-say .teams-content .team-desc {\n    line-height: 40px;\n    font-size: 18px;\n    margin-bottom: 30px;\n    padding-left: 100px;\n}\n#block-family #teams-say .teams-content .team-desc:before {\n      content: '\\201C';\n      font-size: 150px;\n      position: absolute;\n      left: auto;\n      top: 20px;\n      color: #f26d22;\n      -webkit-transform: rotate(180deg);\n              transform: rotate(180deg);\n      -webkit-transform-origin: 0 0;\n              transform-origin: 0 0;\n}\n#block-family #teams-say .teams-content .team-name {\n    font-size: 20px;\n}\n#block-family #teams-say .teams .team-item {\n  height: 25vw;\n  cursor: pointer;\n  -webkit-box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.15);\n          box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.15);\n}\n#block-family #teams-say .teams .team-item:nth-child(1) {\n    z-index: 3;\n}\n#block-family #teams-say .teams .team-item:nth-child(2) {\n    z-index: 2;\n}\n#block-family #teams-say .teams .team-item:nth-child(3) {\n    z-index: 1;\n}\n#block-family #teams-say .teams .team-item:nth-child(4) {\n    z-index: 0;\n}\n#block-family #teams-say .teams .team-item .team-title {\n    font-size: 35px;\n    color: #f26c24;\n    z-index: 1;\n}\n#block-family #teams-say .teams .team-item:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: white;\n}\n#block-family #teams-say .teams .team-item:hover .team-title {\n    color: white;\n}\n#block-family #teams-say .teams .team-item:hover:before {\n    background: rgba(242, 108, 36, 0.85);\n    -webkit-transition: all .5s;\n    transition: all .5s;\n}\n", ""]);
 
 // exports
 
@@ -469,6 +469,51 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -478,7 +523,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             slickOptions: {
-                slidesToShow: 1
+                slidesToShow: 1,
+                arrows: true
             },
             slick_items: [{
                 bg: '/images/slideshow_1.jpg',
@@ -490,7 +536,61 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 title: '實現你未來的夢想',
                 subtitle: '踏足餐飲業的堅實第一步<br>橘色大家庭為你實現',
                 scrollText: '讓我們帶你實現夢想!'
-            }]
+            }],
+            family_steps: [{
+                img: '/images/family_1.png',
+                bigTitle: '培育',
+                title: '堅實踏入餐飲的第一步',
+                subtitle: '要學，就像向最好的學習',
+                desc: '測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+            }, {
+                img: '/images/family_2.png',
+                bigTitle: '家庭',
+                title: '堅實踏入餐飲的第一步',
+                subtitle: '要學，就像向最好的學習',
+                desc: '測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+            }, {
+                img: '/images/family_3.png',
+                bigTitle: '夢想',
+                title: '堅實踏入餐飲的第一步',
+                subtitle: '要學，就像向最好的學習',
+                desc: '測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+            }],
+            teamsOption: {
+                slidesToShow: 4
+            },
+            slick_teams: [{
+                team: '橘色公關團隊1',
+                member: '某某某',
+                text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
+                img: '/images/family_s1.png',
+                img_big: '/images/family_b1.png'
+            }, {
+                team: '橘色公關團隊2',
+                member: '某某某',
+                text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
+                img: '/images/family_s1.png',
+                img_big: '/images/family_b1.png'
+            }, {
+                team: '橘色公關團隊3',
+                member: '某某某',
+                text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
+                img: '/images/family_s1.png',
+                img_big: '/images/family_b1.png'
+            }, {
+                team: '橘色公關團隊4',
+                member: '某某某',
+                text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
+                img: '/images/family_s1.png',
+                img_big: '/images/family_b1.png'
+            }, {
+                team: '橘色公關團隊5',
+                member: '某某某',
+                text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
+                img: '/images/family_s1.png',
+                img_big: '/images/family_b1.png'
+            }],
+            teamIndex: 0
         };
     },
     components: {
@@ -3818,7 +3918,7 @@ var render = function() {
             {
               key: $index,
               staticClass:
-                "slider d-flex flex-column align-items-center justify-content-center",
+                "slider position-relative d-flex flex-column align-items-center justify-content-center",
               style: "background-image:url(" + item.bg + ")"
             },
             [
@@ -3839,12 +3939,150 @@ var render = function() {
             ]
           )
         })
-      )
+      ),
+      _vm._v(" "),
+      _c("div", { attrs: { id: "family-intro" } }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "family-step-list" },
+          _vm._l(_vm.family_steps, function(item, $index) {
+            return _c(
+              "div",
+              { key: $index, staticClass: "family-step d-flex" },
+              [
+                _c("div", { staticClass: "w-50 position-relative" }, [
+                  _c(
+                    "h1",
+                    { staticClass: "big_title text-orange position-absolute" },
+                    [_vm._v(_vm._s(item.bigTitle))]
+                  ),
+                  _vm._v(" "),
+                  _c("img", { staticClass: "w-100", attrs: { src: item.img } })
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "w-50 p-5 d-flex flex-column justify-content-center"
+                  },
+                  [
+                    _c("p", { staticClass: "step-title text-orange" }, [
+                      _vm._v(_vm._s(item.title))
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "subtitle" }, [
+                      _vm._v(_vm._s(item.subtitle))
+                    ]),
+                    _vm._v(" "),
+                    _c("p", {
+                      staticClass: "desc",
+                      domProps: { innerHTML: _vm._s(item.desc) }
+                    })
+                  ]
+                )
+              ]
+            )
+          })
+        )
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { attrs: { id: "teams-say" } },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "teams-content text-white position-relative",
+              style:
+                "background-image:url(" +
+                _vm.slick_teams[_vm.teamIndex].img_big +
+                ")"
+            },
+            [
+              _c(
+                "div",
+                { staticClass: "team-content-texts position-relative" },
+                [
+                  _c("h3", {}, [_vm._v("看看我們的夥伴們怎麼說")]),
+                  _vm._v(" "),
+                  _c("p", {
+                    staticClass: "team-desc position-relative",
+                    domProps: {
+                      innerHTML: _vm._s(_vm.slick_teams[_vm.teamIndex].text)
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "team-name d-block text-right" }, [
+                    _vm._v(
+                      "- " +
+                        _vm._s(_vm.slick_teams[_vm.teamIndex].team) +
+                        " " +
+                        _vm._s(_vm.slick_teams[_vm.teamIndex].member)
+                    )
+                  ])
+                ]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "slick",
+            {
+              ref: "slick",
+              staticClass: "teams",
+              attrs: { options: _vm.teamsOption }
+            },
+            _vm._l(_vm.slick_teams, function(item, $index) {
+              return _c(
+                "div",
+                {
+                  key: $index,
+                  staticClass:
+                    "team-item position-relative d-flex flex-column align-items-center justify-content-center",
+                  style: "background-image:url(" + item.img + ")",
+                  on: {
+                    click: function($event) {
+                      _vm.teamIndex = $index
+                    }
+                  }
+                },
+                [
+                  _c("p", { staticClass: "team-title text-center" }, [
+                    _vm._v(_vm._s(item.team)),
+                    _c("br"),
+                    _vm._v(_vm._s(item.member))
+                  ])
+                ]
+              )
+            })
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("block-footer")
     ],
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h2", { staticClass: "family-title text-orange text-right" }, [
+      _vm._v("橘色"),
+      _c("br"),
+      _vm._v("引領你築夢踏實"),
+      _c("br"),
+      _vm._v("一步一步達成夢想")
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {

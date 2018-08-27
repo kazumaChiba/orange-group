@@ -26,7 +26,7 @@
                         v-for="(item,$index) in newsItems.slice(viewIndex,viewIndex+2)"
                         :key="$index"    
                     >
-                        <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background: url(' + item.background + ')'">
+                        <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + item.background + ')'">
                             <router-link :to="'/'" class="btn-border">了解更多</router-link>
                         </div>
                         <div class="news-content">
@@ -42,7 +42,7 @@
                     <div 
                         class="news-item d-flex flex-column h-100 w-100"
                     >
-                        <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background: url(' + newsItems[viewIndex+2].background + ')'">
+                        <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + newsItems[viewIndex+2].background + ')'">
                             <router-link :to="'/'" class="btn-border">了解更多</router-link>
                         </div>
                         <div class="news-content">
@@ -60,7 +60,7 @@
                         v-for="(item,$index) in newsItems.slice(viewIndex+3,viewIndex+5)"
                         :key="$index"    
                     >
-                        <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background: url(' + item.background + ')'">
+                        <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + item.background + ')'">
                             <router-link :to="'/'" class="btn-border">了解更多</router-link>
                         </div>
                         <div class="news-content">

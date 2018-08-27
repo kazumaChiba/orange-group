@@ -1059,7 +1059,9 @@ var render = function() {
                                     staticClass:
                                       "news-head d-flex align-items-center justify-content-center position-relative",
                                     style:
-                                      "background: url(" + item.background + ")"
+                                      "background-image: url(" +
+                                      item.background +
+                                      ")"
                                   },
                                   [
                                     _c(

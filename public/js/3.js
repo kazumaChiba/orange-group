@@ -778,6 +778,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -911,8 +912,11 @@ var render = function() {
             ])
           ])
         ]
-      )
-    ]
+      ),
+      _vm._v(" "),
+      _c("block-footer")
+    ],
+    1
   )
 }
 var staticRenderFns = [

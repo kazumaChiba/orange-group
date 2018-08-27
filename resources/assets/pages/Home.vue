@@ -52,6 +52,8 @@
                     navigationTooltips: ['橘色體驗','橘色價值','橘色版圖','橘色新訊'],
                     afterLoad: this.afterLoad,
                     slidesNavigation: true,
+                    easing: 'easeInOutCubic',
+	                easingcss3: 'ease',
                 }, 
                 sectionIndex: 0,
                 sectionPosition: 'section-1',

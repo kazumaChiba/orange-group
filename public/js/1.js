@@ -506,7 +506,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 navigation: true,
                 navigationTooltips: ['橘色體驗', '橘色價值', '橘色版圖', '橘色新訊'],
                 afterLoad: this.afterLoad,
-                slidesNavigation: true
+                slidesNavigation: true,
+                easing: 'easeInOutCubic',
+                easingcss3: 'ease'
             },
             sectionIndex: 0,
             sectionPosition: 'section-1',
@@ -1601,7 +1603,8 @@ var render = function() {
                           {
                             staticClass:
                               "news-head d-flex align-items-center justify-content-center position-relative",
-                            style: "background: url(" + item.background + ")"
+                            style:
+                              "background-image: url(" + item.background + ")"
                           },
                           [
                             _c(
@@ -1657,7 +1660,7 @@ var render = function() {
                           staticClass:
                             "news-head d-flex align-items-center justify-content-center position-relative",
                           style:
-                            "background: url(" +
+                            "background-image: url(" +
                             _vm.newsItems[_vm.viewIndex + 2].background +
                             ")"
                         },
@@ -1731,7 +1734,8 @@ var render = function() {
                           {
                             staticClass:
                               "news-head d-flex align-items-center justify-content-center position-relative",
-                            style: "background: url(" + item.background + ")"
+                            style:
+                              "background-image: url(" + item.background + ")"
                           },
                           [
                             _c(
