@@ -7,17 +7,20 @@
                         <h2 class="news-item-title">新光三越旗艦店開幕<br>全店享九折優惠</h2>
                         <div class="news-item-info d-flex">
                             <div class="news-info -date d-flex flex-column mr-5">
-                                <span class="info-title">發佈日期</span>
+                                <span class="info-title">發佈日期：</span>
                                 <span class="info-text">2018/3/21</span>
                             </div>
                             <div class="news-info -group d-flex flex-column mr-5">
-                                <span class="info-title">發佈單位</span>
+                                <span class="info-title">發佈單位：</span>
                                 <span class="info-text text-orange">橘色涮涮屋</span>
                             </div>
                             <div class="news-info -cate d-flex flex-column mr-5">
-                                <span class="info-title">發佈類別</span>
+                                <span class="info-title">發佈類別：</span>
                                 <span class="info-text">最新消息</span>
                             </div>
+                        </div>
+                        <div class="news-play text-white">
+                            <span class="btn-play d-inline-flex align-items-center">播放媒體影音</span>
                         </div>
                         <div class="news-item-breadcrumb">
                             <el-breadcrumb  separator-class="el-icon-arrow-right">
@@ -57,21 +60,24 @@
                                 <span class="item-tag">新店</span>
                                 <span class="item-tag">新光三越</span>
                             </div>
-                            <div class="item-social-list">
-                                <span>社群分享</span>
+                            <div class="item-social-list d-flex">
+                                <span class="d-inline-flex align-items-center mr-3">社群分享</span>
                                 <div class="item-social">
-
+                                    <a class="social-icons facebook d-inline-flex align-items-center justify-content-center" href="#"><font-awesome-icon :icon="['fab','facebook-f']" /></a>
+                                    <a class="social-icons twitter d-inline-flex align-items-center justify-content-center" href="#"><font-awesome-icon :icon="['fab','twitter']" /></a>
+                                    <a class="social-icons google d-inline-flex align-items-center justify-content-center" href="#"><font-awesome-icon :icon="['fab','google']" /></a>
+                                    <a class="social-icons linkedin-in d-inline-flex align-items-center justify-content-center" href="#"><font-awesome-icon :icon="['fab','linkedin-in']" /></a>
                                 </div>
                             </div>
                         </div>
                         <div class="item-relatives w-100 d-flex justify-content-between">
-                            <div class="item-relative -pre">
-                                <span>上一則訊息</span>
-                                <p>消息標題文字</p>
+                            <div class="item-relative -pre text-left">
+                                <span class="title-relative">上一則訊息</span>
+                                <a class="position-relative" href="#">消息標題文字</a>
                             </div>
-                            <div class="item-relative -next">
-                                <span>下一則訊息</span>
-                                <p>消息標題文字</p>
+                            <div class="item-relative -next text-right">
+                                <span class="title-relative">下一則訊息</span>
+                                <a class="position-relative" href="#">消息標題文字</a>
                             </div>
                         </div>
                     </div>
@@ -101,19 +107,52 @@ export default {
 </script>
 
 <style lang="sass">
+
     #block-news-item
-        height: 90vh
+        height: 95vh
         .news-item-head
-            margin-top: 40vh
+            margin-top: 25vh
             .news-item-title
                 font-size: 60px
                 margin-bottom: 70px
             .news-item-info
-                margin-bottom: 70px
+                margin-bottom: 50px
+                .info-title
+                    font-size: 13px
+                    color: #b3b3b3
+      
         .item-news-body
             background: white
             color: black
             margin-top: 30px
+            .item-relatives
+                margin: 45px 0
+                .item-relative
+                    &.-pre
+                        padding-left: 30px
+                        a
+                            &:before
+                                right: auto
+                                left: -25px
+                                transform: rotate(180deg)
+                    &.-next
+                        padding-right: 30px
+                    a
+                        &:before
+                            content: "➔"
+                            position: absolute
+                            top: 0
+                            right: -25px
+                    
+                .title-relative
+                    font-size: 13px
+                    color: gray
+                a
+                    display: block
+                    color: black
+                    margin-top: 5px
+                    &:hover
+                        color: #f36f1b
             .item-intro-text
                 font-size: 22px
                 line-height: 35px
@@ -157,11 +196,15 @@ export default {
             padding-bottom: 30px
             margin-bottom: 30px
             border-bottom: 1px solid #ccc
+            .item-social-list
+                span
+                    font-size: 13px
+                    color: gray
             .item-tags-list
                 .item-tag
                     border: 1px solid #ccc
-                    color: #ccc
-                    padding: 5px
+                    color: gray
+                    padding: 5px 15px
                     font-size: 12px
                     margin-right: 5px
                     &:hover
@@ -169,6 +212,21 @@ export default {
                         color: #f26d23
                         transition: all .3s
                         cursor: pointer
+            .item-social
+                .social-icons
+                    width: 30px
+                    height: 30px
+                    border-radius: 100%
+                    &:hover
+                        color: white
+                    &.facebook
+                        background-color: #3b5999
+                    &.twitter
+                        background-color: #53acee
+                    &.google
+                        background-color: #dd4a3a
+                    &.linkedin-in
+                        background-color: #0076b4
         .el-breadcrumb
             justify-content: left
         

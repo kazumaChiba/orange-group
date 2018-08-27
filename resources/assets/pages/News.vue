@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="btn-load-more text-center">
-                <a class="btn-load-more btn-orange -fat" @click="loadMore">
+                <a class="btn-load-more btn-orange fat" @click="loadMore">
                     載入更多
                 </a>
             </div>
@@ -169,7 +169,7 @@ export default {
                     link: '/#/news/detail'
                 },
             ],
-            newsCategories: ['全部新訊','橘色涮涮屋','Extension 1 by 橘色','M One Cafe','M One Spa','Sakura Spa'],
+            newsCategories: ['全部新訊','橘色涮涮屋','Extension 1 by 橘色'],
             newsIndex: 0,
             viewIndex: 8,
         }
@@ -208,7 +208,16 @@ export default {
                         &.-month
                             margin-right: 20px
                         &.-year
-                            border-right: 1px solid white
+                            position: relative
+                            &:after
+                                content: ""
+                                position: absolute
+                                height: 60%
+                                width: 1px
+                                background: white
+                                right: 0
+                                top: 20%
+
         #block-news-items
             .news-item
                 width: 25%

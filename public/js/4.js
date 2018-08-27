@@ -139,7 +139,7 @@ exports = module.exports = __webpack_require__(49)(false);
 
 
 // module
-exports.push([module.i, "\n#footer .container {\n  padding: 60px 0 20px 0;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n  margin-bottom: 60px;\n}\n#footer:before {\n  background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n  position: relative;\n  z-index: 2;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n    letter-spacing: 6px;\n    font-weight: 500;\n    font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n  font-size: 20px;\n}\n#footer .footer .footer-info {\n  margin-bottom: 100px;\n  line-height: 25px;\n  font-size: 14px;\n  font-weight: 100;\n}\n#footer .footer .footer-info p {\n    margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n    font-size: 18px;\n    font-weight: 100;\n    line-height: 30px;\n}\n#footer .footer.footer-join:before {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: calc(100% + 150px);\n  background: rgba(0, 0, 0, 0.4);\n  z-index: -1;\n  top: -100px;\n}\n", ""]);
+exports.push([module.i, "\n#footer {\n  height: 700px;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer .footer-info {\n    margin-bottom: 100px;\n    line-height: 25px;\n    font-size: 14px;\n    font-weight: 100;\n}\n#footer .footer .footer-info div {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer .footer-info p {\n      margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n      font-size: 18px;\n      font-weight: 100;\n      line-height: 30px;\n}\n#footer .footer.footer-join:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: calc(100% + 150px);\n    background: rgba(0, 0, 0, 0.8);\n    top: 0px;\n}\n", ""]);
 
 // exports
 
@@ -151,6 +151,10 @@ exports.push([module.i, "\n#footer .container {\n  padding: 60px 0 20px 0;\n}\n#
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
 //
 //
 //
@@ -233,7 +237,7 @@ var render = function() {
                 _vm._v(" "),
                 _c(
                   "router-link",
-                  { staticClass: "btn-orange -fat", attrs: { to: "/" } },
+                  { staticClass: "btn-orange fat", attrs: { to: "/" } },
                   [_vm._v("馬上加入我們")]
                 )
               ],
@@ -321,19 +325,21 @@ var staticRenderFns = [
           "footer-info position-relative d-flex justify-content-between align-items-center w-100"
       },
       [
-        _c("div", { staticClass: "footer-text-left" }, [
-          _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
-            _vm._v("聯絡我們")
-          ]),
-          _vm._v(" "),
-          _c("p", [_vm._v("台北市大安區仁愛路四段37號3樓之B")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v("Email:  service@orange.co"),
-            _c("br"),
-            _vm._v("Phone:  02-2711-4636"),
-            _c("br"),
-            _vm._v("Fax:  02-2711-4638")
+        _c("div", { staticClass: "footer-text-left text-left" }, [
+          _c("div", { staticClass: "d-inline-block text-center" }, [
+            _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
+              _vm._v("聯絡我們")
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v("台北市大安區仁愛路四段37號3樓之B")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("Email:  service@orange.co"),
+              _c("br"),
+              _vm._v("Phone:  02-2711-4636"),
+              _c("br"),
+              _vm._v("Fax:  02-2711-4638")
+            ])
           ])
         ]),
         _vm._v(" "),
@@ -342,15 +348,17 @@ var staticRenderFns = [
           attrs: { src: "/images/index_logo.png" }
         }),
         _vm._v(" "),
-        _c("div", { staticClass: "footer-text-right align-self-baseline" }, [
-          _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
-            _vm._v("橘色精神")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "footer-info-subtitle" }, [
-            _vm._v("用心 · 貼心 · 安心"),
-            _c("br"),
-            _vm._v("信心 · 一心 · 同理心")
+        _c("div", { staticClass: "footer-text-right text-right" }, [
+          _c("div", { staticClass: "d-inline-block text-center" }, [
+            _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
+              _vm._v("橘色精神")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "footer-info-subtitle" }, [
+              _vm._v("用心 · 貼心 · 安心"),
+              _c("br"),
+              _vm._v("信心 · 一心 · 同理心")
+            ])
           ])
         ])
       ]
@@ -677,7 +685,7 @@ exports = module.exports = __webpack_require__(49)(false);
 
 
 // module
-exports.push([module.i, "\n#header {\n  top: 0;\n}\n#block-news {\n  margin-bottom: 180px;\n}\n#block-news #block-news-lists {\n    z-index: 2;\n    margin-bottom: 80px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories {\n      padding: 55px 0px;\n      font-size: 14px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories.-category {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date {\n        padding: 15px 20px;\n        background: #f26d23;\n        cursor: pointer;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-month {\n          margin-right: 20px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-year {\n          border-right: 1px solid white;\n}\n#block-news #block-news-items .news-item {\n    width: 25%;\n    padding: 0 16px;\n}\n#block-breadcrumb .banner-title {\n  font-size: 90px;\n  font-weight: 300;\n}\n", ""]);
+exports.push([module.i, "\n#header {\n  top: 0;\n}\n#block-news {\n  margin-bottom: 180px;\n}\n#block-news #block-news-lists {\n    z-index: 2;\n    margin-bottom: 80px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories {\n      padding: 55px 0px;\n      font-size: 14px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories.-category {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date {\n        padding: 15px 20px;\n        background: #f26d23;\n        cursor: pointer;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-month {\n          margin-right: 20px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-year {\n          position: relative;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-year:after {\n            content: \"\";\n            position: absolute;\n            height: 60%;\n            width: 1px;\n            background: white;\n            right: 0;\n            top: 20%;\n}\n#block-news #block-news-items .news-item {\n    width: 25%;\n    padding: 0 16px;\n}\n#block-breadcrumb .banner-title {\n  font-size: 90px;\n  font-weight: 300;\n}\n", ""]);
 
 // exports
 
@@ -855,7 +863,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/#/news/detail'
             }],
-            newsCategories: ['全部新訊', '橘色涮涮屋', 'Extension 1 by 橘色', 'M One Cafe', 'M One Spa', 'Sakura Spa'],
+            newsCategories: ['全部新訊', '橘色涮涮屋', 'Extension 1 by 橘色'],
             newsIndex: 0,
             viewIndex: 8
         };
@@ -1122,7 +1130,7 @@ var render = function() {
             _c(
               "a",
               {
-                staticClass: "btn-load-more btn-orange -fat",
+                staticClass: "btn-load-more btn-orange fat",
                 on: { click: _vm.loadMore }
               },
               [_vm._v("\n                載入更多\n            ")]

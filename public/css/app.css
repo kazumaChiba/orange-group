@@ -99,7 +99,7 @@ h5 {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.btn-orange.-fat {
+.btn-orange.fat {
   padding: 30px 65px;
 }
 
@@ -198,7 +198,47 @@ body,
   top: 0;
   z-index: 999999;
   width: 100%;
-  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  height: 70px;
+}
+
+#app #header.position-fixed {
+  background: white;
+}
+
+#app #header.position-fixed .logo {
+  position: relative;
+}
+
+#app #header.position-fixed .logo img {
+  height: 60px;
+}
+
+#app #header.position-fixed .menu-title {
+  color: gray;
+}
+
+#app #header.position-fixed .menu-title.router-link-active {
+  color: #f26e22;
+}
+
+#app #header.position-fixed .menu-title.router-link-exact-active {
+  color: #f26e22;
+}
+
+#app #header.position-fixed .menu-title:hover {
+  color: #f26e22;
+  text-decoration: none;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 
 #app #header.active {
@@ -211,6 +251,12 @@ body,
   position: absolute;
   left: 0;
   top: 0;
+}
+
+#app #footer .container {
+  padding: 60px 0 20px 0;
+  position: relativez;
+  z-index: 2;
 }
 
 #app #footer .logo {
@@ -403,5 +449,50 @@ body,
 
 .el-breadcrumb .el-breadcrumb__item:not(.no-redirect) .el-breadcrumb__inner:hover {
   color: #f26d23;
+}
+
+.btn-play {
+  margin-bottom: 100px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn-play:before {
+  content: "\25B7";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 30px;
+  border: 2px solid;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  padding-left: 7px;
+}
+
+.btn-play:hover {
+  color: #f36f1b;
+}
+
+.btn-play:hover:before {
+  content: "\25B6\FE0E";
+  color: white;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background: #f36f1b;
+  border-color: #f36f1b;
+}
+
+.hidden {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  opacity: 0 !important;
 }
 

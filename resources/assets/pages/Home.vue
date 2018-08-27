@@ -1,11 +1,11 @@
 <template>
     <div id="block-main">
-        <div id="header" class="position-fixed" :class="closeMenu ? 'active' : '' + sectionPosition">
+        <div id="header" :class="closeMenu ? 'active' : '' + sectionPosition">
             <div class="d-flex">
                 <div class="logo" :class=" sectionIndex != 0 ? 'fade' : '' ">
                     <img src="/images/index_logo.png">
                 </div>
-                <div id="main-menu" class="d-flex justify-content-end align-items-start">
+                <div id="main-menu" class="d-flex justify-content-end align-items-center">
                     <menu-header :class="closeMenu ? 'menu-close' : '' || textShadow ? 'menu-shadow' : '' "></menu-header>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                         <div class="row flex-column align-items-center justify-content-center flex-nowrap">
                             <h3 class="main-title text-uppercase"><span class="fs-inherit text-orange">橘色</span>新訊<br><span class="sub-title">events & news</span></h3>
                                 <block-news></block-news>
-                                <router-link :to="'/news'" class="btn-load-more btn-orange  -fat">
+                                <router-link :to="'/news'" class="btn-load-more btn-orange  fat">
                                     更多橘色新訊
                                 </router-link>
                         </div>
@@ -151,7 +151,7 @@
                     color: #ccc
                     opacity: 1
                     width: auto
-                    font-size: 17px
+                    font-size: 14px
                     letter-spacing: 0px
                     font-style: italic
                     right: 0

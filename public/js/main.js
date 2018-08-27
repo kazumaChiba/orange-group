@@ -85766,6 +85766,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_components_block_menu_header__);
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -85790,14 +85792,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ({
+/* harmony default export */ __webpack_exports__["default"] = (_defineProperty({
     name: "app",
     mounted: function mounted() {},
     methods: {},
     components: {
         MenuHeader: __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header___default.a
     }
-});
+}, 'mounted', function mounted() {
+    jQuery(document).ready(function () {
+        jQuery(window).scroll(function () {
+            if (jQuery(window).scrollTop() > 0) {
+                jQuery("#header").addClass("position-fixed");
+            } else {
+                jQuery("#header").removeClass("position-fixed");
+            }
+        });
+    });
+}));
 
 /***/ }),
 /* 113 */
@@ -85834,7 +85846,7 @@ exports = module.exports = __webpack_require__(49)(false);
 
 
 // module
-exports.push([module.i, "\n#header .logo {\n  padding-left: 35px;\n}\n#header #main-menu {\n  width: 50%;\n  margin-left: auto;\n  overflow: hidden;\n  position: relative;\n  padding-right: 35px;\n  margin-right: 35px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n#header #main-menu .menu-outer {\n    overflow: hidden;\n}\n#header #main-menu .menu-outer.menu-close .menu-list {\n      -webkit-transform: translateX(100%);\n              transform: translateX(100%);\n}\n#header #main-menu .menu-outer .menu-list {\n      -webkit-transition: all .5s ease-in-out;\n      transition: all .5s ease-in-out;\n}\n#header #main-menu .menu-outer .menu-title {\n      display: inline-block;\n      font-size: 16px;\n      font-weight: 500;\n      padding: 0 20px;\n}\n#header #main-menu .menu-outer.menu-shadow .menu-list {\n      background: rgba(0, 0, 0, 0.3);\n}\n", ""]);
+exports.push([module.i, "\n#header .logo {\n  padding-left: 35px;\n}\n#header #main-menu {\n  width: 50%;\n  margin-left: auto;\n  overflow: hidden;\n  position: relative;\n  padding-right: 35px;\n  margin-right: 35px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n#header #main-menu .menu-outer {\n    overflow: hidden;\n}\n#header #main-menu .menu-outer.menu-close .menu-list {\n      -webkit-transform: translateX(100%);\n              transform: translateX(100%);\n}\n#header #main-menu .menu-outer .menu-list {\n      -webkit-transition: all .5s ease-in-out;\n      transition: all .5s ease-in-out;\n}\n#header #main-menu .menu-outer .menu-title {\n      display: inline-block;\n      font-size: 14px;\n      font-weight: 500;\n      padding: 0 20px;\n}\n#header #main-menu .menu-outer.menu-shadow .menu-list {\n      background: rgba(0, 0, 0, 0.3);\n}\n", ""]);
 
 // exports
 
@@ -85995,25 +86007,21 @@ var render = function() {
     { attrs: { id: "app" } },
     [
       _vm.$route.path != "/"
-        ? _c(
-            "div",
-            { staticClass: "position-absolute w-100", attrs: { id: "header" } },
-            [
-              _c("div", { staticClass: "d-flex w-100" }, [
-                _vm._m(0),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "d-flex justify-content-end align-items-start",
-                    attrs: { id: "main-menu" }
-                  },
-                  [_c("menu-header")],
-                  1
-                )
-              ])
-            ]
-          )
+        ? _c("div", { staticClass: "w-100", attrs: { id: "header" } }, [
+            _c("div", { staticClass: "d-flex w-100" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "d-flex justify-content-end align-items-center",
+                  attrs: { id: "main-menu" }
+                },
+                [_c("menu-header")],
+                1
+              )
+            ])
+          ])
         : _vm._e(),
       _vm._v(" "),
       _c("router-view")
