@@ -1,8 +1,8 @@
 <template>
     <div id="block-about">
         <banner title="關於<span class='text-orange'>橘色</span>" img="/images/slideshow_1.jpg"></banner>
-        <div id="about-tabs" class="container pl-0 pr-0">
-            <div class="about-tabs-body row container justify-content-between m-auto">
+        <div id="about-tabs" class="container">
+            <div class="about-tabs-body row container pl-0 pr-0 justify-content-between m-auto">
                 <a class="tab text-center active" data-target = '#block-secret'>橘色秘密</a>
                 <a class="tab text-center" data-target = '#block-about-year'>橘色歲月</a>
                 <a class="tab text-center" data-target = '#block-about-video'>用心創造美好的時刻</a>
@@ -288,13 +288,13 @@ export default {
                 jQuery(".tab.active").removeClass("active");
                 jQuery(this).addClass("active");
                 jQuery("html,body").animate({
-                    scrollTop: jQuery(target).offset().top - 120
+                    scrollTop: jQuery(target).offset().top - 62
                 }, 300);
 
             });
             
             jQuery(window).scroll(function(){
-                //scrollTabs();
+                scrollTabs();
             });
 
 	        scrollTabs();
@@ -302,11 +302,12 @@ export default {
             function scrollTabs(){
                 if(jQuery(window).scrollTop() >= jQuery("#block-secret").offset().top - 200){
                     jQuery("#about-tabs").addClass("position-fixed");
-                    //jQuery("#header").addClass("hidden");
+                    jQuery("#header").addClass("hidden");
                 }
                 else{
+	                console.log("bb")
                     jQuery("#about-tabs").removeClass("position-fixed");
-                    //jQuery("#header").removeClass("hidden");
+                    jQuery("#header").removeClass("hidden");
                 }
 
                 let tab = [jQuery("#block-secret").offset().top - 200 , jQuery("#block-about-year").offset().top - 200 , jQuery("#block-about-video").offset().top - 200 ];
@@ -348,18 +349,17 @@ export default {
         font-family: "PingFang SC",微軟正黑體
     #about-tabs
         margin: 50px auto
+        
         &.position-fixed
             border-bottom: 2px solid #efefef
             position: fixed
-            top: 70px
+            top: 0px
             z-index: 99999
             max-width: unset
             background: white
             margin-top: 0
             .about-tabs-body
                 margin-bottom: -2px !important
-            .tab
-                padding: 12px 0
         .tab
             transition: all 0.3s
             color: gray
