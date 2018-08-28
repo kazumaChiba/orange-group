@@ -136,12 +136,16 @@ html,body,#app,#block-main
         position: absolute
         transition: all .5s
         height: 70px
+        justify-content: flex-end
+        margin-top: 30px
         &.position-fixed
             background: white
+            margin-top: 0
             .logo
                 position: relative
                 img
                     height: 60px
+                    width: auto
             .menu-title 
                 color: gray
                 &.router-link-active
@@ -160,6 +164,8 @@ html,body,#app,#block-main
             position: absolute
             left: 0
             top: 0
+            img
+                width: 140px
     #footer
         .container
             padding: 60px 0 20px 0

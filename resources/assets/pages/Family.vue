@@ -30,9 +30,11 @@
                         <img class="w-100" :src="item.img" />
                     </div>
                     <div class="right p-5 d-flex flex-column justify-content-center">
-                        <p class="step-title text-orange">{{item.title}}</p>
-                        <p class="subtitle">{{item.subtitle}}</p>
-                        <p class="desc" v-html="item.desc"></p>
+                        <div class="family-content">
+                            <p class="step-title text-orange">{{item.title}}</p>
+                            <p class="subtitle">{{item.subtitle}}</p>
+                            <p class="desc" v-html="item.desc"></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -237,7 +239,7 @@ export default {
             z-index: 1
         &:after
             width: 120vw
-            height: 74vw
+            height: 130vh
             background: #ffaa85
             left: -13vw
             top: -19vh
@@ -341,16 +343,22 @@ export default {
                     flex: 3
                     opacity: 0
                     transition: all .5s ease-out
+                    .family-content
+                        
                 &:nth-child(2n)
                     flex-direction: row-reverse
+                    .big_title
+                        text-align: right
                 .big_title , .step-title , .subtitle , .desc
                     font-weight: 500
                     width: 60%
                 .big_title
-                    opacity: 0.5
-                    font-size: 220px
-                    top: -180px
-                    left: 80px
+                    opacity: 0.6
+                    font-size: 250px
+                    top: -210px
+                    font-weight: 600
+                    width: 100%
+                    padding: 0 80px
                 .step-title 
                     font-size: 35px
                     width: max-content

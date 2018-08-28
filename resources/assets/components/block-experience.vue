@@ -258,33 +258,18 @@ export default {
                         &:hover
                             cursor: pointer
                             color: #f26d23
-<<<<<<< HEAD
-                        &.-top
+                        &.top
                             top: calc(-40px - 12px)
                             left: calc(50% - 18px)
-                        &.-bottom
+                        &.bottom
                             bottom: calc(-40px - 12px)
                             left: calc(50% - 18px)
-                        &.-right
+                        &.right
                             top: calc(50% - 18px)
                             right: calc(-40px - 12px)
-                        &.-left
+                        &.left
                             top: calc(50% - 18px)
                             left: calc(-40px - 12px)
-=======
-                        &.top
-                            top: -50px
-                            left: 50%
-                        &.bottom
-                            bottom: -50px
-                            left: 50%
-                        &.right
-                            top: 50%
-                            right: -50px
-                        &.left
-                            top: 50%
-                            left: -50px
->>>>>>> c41e0d8c1df8955ce36503b0d9e4c1c7ba5e2ed4
                         a
                             word-break: keep-all
                         &.active

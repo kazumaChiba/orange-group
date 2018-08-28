@@ -146,9 +146,10 @@
                     background-size: cover
                     cursor: pointer
                     margin-right: 25px
-                    &.active
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5)
+                    &.active , &:hover
                         opacity: 0.8
-                        box-shadow: 0 0 15px rgba(255, 255, 255, 0.21)
+                        box-shadow: 0px 0px 20px rgba(0, 0, 0, 1)
                         transition: all .3s
                 > div
                     position: relative

@@ -20,6 +20,10 @@
         <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
         <!-- 引入组件库 -->
         <!--<script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+            
+        <!-- favicon -->
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
     </head>
     <body>
