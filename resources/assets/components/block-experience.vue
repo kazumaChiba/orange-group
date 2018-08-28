@@ -259,19 +259,6 @@ export default {
                             cursor: pointer
                             color: #f26d23
                         &.top
-<<<<<<< HEAD
-                            top: -50px
-                            left: 50%
-                        &.bottom
-                            bottom: -50px
-                            left: 50%
-                        &.right
-                            top: 50%
-                            right: -50px
-                        &.left
-                            top: 50%vue2-scrollbar
-                            left: -50px
-=======
                             top: calc(-40px - 12px)
                             left: calc(50% - 18px)
                         &.bottom
@@ -283,7 +270,6 @@ export default {
                         &.left
                             top: calc(50% - 18px)
                             left: calc(-40px - 12px)
->>>>>>> cb6abb0b1a3fc9aa333f7fe045509d05c8cdd2ae
                         a
                             word-break: keep-all
                         &.active
