@@ -1,9 +1,9 @@
 <template>
     <div id="block-about">
         <banner title="關於<span class='text-orange'>橘色</span>" img="/images/slideshow_1.jpg"></banner>
-        <div id="about-tabs" class="container">
-            <div class="row justify-content-between">
-                <a class="tab text-center" data-target = '#block-secret'>橘色秘密</a>
+        <div id="about-tabs" class="container pl-0 pr-0">
+            <div class="about-tabs-body row container justify-content-between m-auto">
+                <a class="tab text-center active" data-target = '#block-secret'>橘色秘密</a>
                 <a class="tab text-center" data-target = '#block-about-year'>橘色歲月</a>
                 <a class="tab text-center" data-target = '#block-about-video'>用心創造美好的時刻</a>
             </div>
@@ -60,34 +60,52 @@
                     :key="$index"
                     class="year-item text-center position-relative" 
                     :class="yearIndex == $index ? 'active' : ''"
-                    @click="yearIndex = $index"
+                    @click="onClickYear($index);"
                 >
                     <p class="text-year mb-0">{{item.year}}</p>
-                    <span class="dot-year"></span>
+                    <span class="dot-year">
+                        <div class="dot-radar"></div>
+                    </span>
                 </div>
             </slick>
             <div class="year-body">
                 <div class="container">
                     <div class="row">
                         <div class="year-left text-center">
-                            <p><span class="text-orange">{{yearEvents[yearIndex].year}}</span>年</p>
+                            <p>
+                                <span  class="text-orange">
+                                    <span style="margin-right: -0.6rem;">201</span>
+                                    <span class="position-relative">
+                                         <transition-group :name="yearTransition" mode="out-in">
+                                             <span v-for="(yearEvent, $index) in yearEvents" v-if="yearIndex == $index" :key="$index">
+                                                {{yearend(yearEvent.year)}}
+                                             </span>
+                                         </transition-group>
+                                    </span>
+                                </span>
+                                <span>
+                                    年
+                                </span>
+                            </p>
                         </div>
                         <div class="year-right text-center">
-                            <div class="year-month-list">
-                                <div 
-                                    class="year-month-item d-flex" 
-                                    v-for="(item,$index) in yearEvents[yearIndex].content"
-                                    :key="$index"
-                                >
-                                    <div class="left text-left">
-                                        <p class="month">{{item.month}}</p>
-                                    </div>
-                                    <div class="right text-left">
-                                        <p class="title text-orange">{{item.listTitle}}</p>
-                                        <p class="content">{{item.listContent}}</p>
+                            <transition-group enter-active-class="animated faster fadeIn position-absolute" leave-active-class="animated faster fadeOut">
+                                <div class="year-month-list" style="top:0; left: 0" v-for="(yearEvent, $index) in yearEvents" :key="$index" v-if="yearIndex == $index">
+                                    <div
+                                            class="year-month-item d-flex"
+                                            v-for="(item,$index) in yearEvents[yearIndex].content"
+                                            :key="$index"
+                                    >
+                                        <div class="left text-left">
+                                            <p class="month">{{item.month}}</p>
+                                        </div>
+                                        <div class="right text-left">
+                                            <p class="title text-orange">{{item.listTitle}}</p>
+                                            <p class="content">{{item.listContent}}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </transition-group>
                         </div>
                     </div>
                 </div>
@@ -129,11 +147,88 @@ export default {
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 arrows: true,
+	            infinite: false
             },
+	        yearTransition: 'to-small',
             yearIndex: 0,
             yearEvents: [
+	            {
+		            year: 2018,
+		            content: [
+			            {
+				            month: '3月',
+				            listTitle: '新光三越旗艦店開幕',
+				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+			            },
+			            {
+				            month: '1月',
+				            listTitle: '新光三越旗艦店開幕',
+				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+			            }
+		            ]
+	            },
+	            {
+		            year: 2015,
+		            content: [
+			            {
+				            month: '12月',
+				            listTitle: '新光三越旗艦店開幕',
+				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+			            },
+			            {
+				            month: '4月',
+				            listTitle: '新光三越旗艦店開幕',
+				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+			            }
+		            ]
+	            },
+	            {
+		            year: 2013,
+		            content: [
+			            {
+				            month: '7月',
+				            listTitle: '新光三越旗艦店開幕',
+				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+			            },
+			            {
+				            month: '6月',
+				            listTitle: '新光三越旗艦店開幕',
+				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+			            }
+		            ]
+	            },
+	            {
+		            year: 2012,
+		            content: [
+			            {
+				            month: '5月',
+				            listTitle: '新光三越旗艦店開幕',
+				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+			            },
+			            {
+				            month: '3月',
+				            listTitle: '新光三越旗艦店開幕',
+				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+			            }
+		            ]
+	            },
+	            {
+		            year: 2009,
+		            content: [
+			            {
+				            month: '3月',
+				            listTitle: '新光三越旗艦店開幕',
+				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+			            },
+			            {
+				            month: '1月',
+				            listTitle: '新光三越旗艦店開幕',
+				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+			            }
+		            ]
+	            },
                 {
-                    year: '2008',
+                    year: 2008,
                     content: [
                         {
                             month: '12月',
@@ -147,81 +242,6 @@ export default {
                         }
                     ]
                 },
-                {
-                    year: '2009',
-                    content: [
-                        {
-                            month: '3月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        },
-                        {
-                            month: '1月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        }
-                    ]
-                },
-                {
-                    year: '2012',
-                    content: [
-                        {
-                            month: '5月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        },
-                        {
-                            month: '3月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        }
-                    ]
-                },
-                {
-                    year: '2013',
-                    content: [
-                        {
-                            month: '7月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        },
-                        {
-                            month: '6月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        }
-                    ]
-                },
-                {
-                    year: '2015',
-                    content: [
-                        {
-                            month: '12月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        },
-                        {
-                            month: '4月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        }
-                    ]
-                },
-                {
-                    year: '2018',
-                    content: [
-                        {
-                            month: '3月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        },
-                        {
-                            month: '1月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        }
-                    ]
-                }
             ],
 
         }
@@ -239,6 +259,18 @@ export default {
                 this.$refs.slick.reSlick();
             });
         },
+	    yearend(year){
+		    return year.toString().substring(year.toString().length-1, year.toString().length)
+        },
+	    onClickYear(index){
+        	if(this.yearIndex > index){
+		        this.yearTransition = 'to-big'
+            }else{
+		        this.yearTransition = 'to-small'
+            }
+
+		    this.yearIndex = index
+        }
     },
     components: {
         Banner,
@@ -256,7 +288,7 @@ export default {
                 jQuery(".tab.active").removeClass("active");
                 jQuery(this).addClass("active");
                 jQuery("html,body").animate({
-                    scrollTop: jQuery(target).offset().top - 100
+                    scrollTop: jQuery(target).offset().top - 120
                 }, 300);
 
             });
@@ -265,25 +297,30 @@ export default {
                 scrollTabs();
             });
 
+	        scrollTabs();
+
             function scrollTabs(){
                 if(jQuery(window).scrollTop() >= jQuery("#block-secret").offset().top - 200){
                     jQuery("#about-tabs").addClass("position-fixed");
-                    jQuery("#header").addClass("hidden");
+                    //jQuery("#header").addClass("hidden");
                 }
                 else{
                     jQuery("#about-tabs").removeClass("position-fixed");
-                    jQuery("#header").removeClass("hidden");
+                    //jQuery("#header").removeClass("hidden");
                 }
 
                 let tab = [jQuery("#block-secret").offset().top - 200 , jQuery("#block-about-year").offset().top - 200 , jQuery("#block-about-video").offset().top - 200 ];
+
                 if(jQuery(window).scrollTop() >= tab[0] && jQuery(window).scrollTop() < tab[1]){
                     jQuery(".tab.active").removeClass("active");
                     jQuery(".tab").eq(0).addClass("active");
                 }
+
                 else if(jQuery(window).scrollTop() >= tab[1] && jQuery(window).scrollTop() < tab[2]){
                     jQuery(".tab.active").removeClass("active");
                     jQuery(".tab").eq(1).addClass("active");
                 }
+
                 else if(jQuery(window).scrollTop() >= tab[2]){
                     jQuery(".tab.active").removeClass("active");
                     jQuery(".tab").eq(2).addClass("active");
@@ -312,14 +349,19 @@ export default {
     #about-tabs
         margin: 50px auto
         &.position-fixed
+            border-bottom: 2px solid #efefef
             position: fixed
-            top: 0
+            top: 70px
             z-index: 99999
             max-width: unset
             background: white
-            top: 0
             margin-top: 0
-        .tab 
+            .about-tabs-body
+                margin-bottom: -2px !important
+            .tab
+                padding: 12px 0
+        .tab
+            transition: all 0.3s
             color: gray
             font-size: 20px
             flex: 1
@@ -330,7 +372,8 @@ export default {
                 border-bottom: 3px solid #f26c24
                 color: #f26c24
     #block-secret
-        margin: 70px 0 200px 0
+        padding: 70px 0
+        margin: 0 0 130px 0
         .sub-title
             margin-bottom: 40px
         .about-content
@@ -395,6 +438,7 @@ export default {
                         height: 480px
                         width: 90%
     #block-about-year
+        padding-top: 70px
         margin-bottom: 150px
         .year
             .slick-list
@@ -406,16 +450,16 @@ export default {
                     .text-year
                         color: #f26d22
                     .dot-year
-                        &:after
+                        .dot-radar
                             transform: scale(1)
                 &:not(.active)
                     .dot-year
                         &:hover
-                            &:after
+                            .dot-radar
                                 transition: all .5s
-                                animation: yeardot 1s infinite ease-in-out
+                                animation: yeardot 1.2s infinite ease-in-out
                 &:hover
-                    color: #f26d22
+                    color: mix(#f26d22, black, 95%)
                 &:before
                     content: ""
                     background: #f26d22
@@ -436,34 +480,37 @@ export default {
                     &:before
                         content: ""
                         position: absolute
-                        width: 25px
-                        height: 25px
+                        width: 24px
+                        height: 24px
                         background: rgba(255, 205, 177, 0.45)
                         border-radius: 100%
-                        left: -8px
-                        top: -8px
-                    &:after
+                        left: -7px
+                        top: -7px
+                    .dot-radar
                         content: ""
                         position: absolute
                         border-radius: 100%
                         width: 180px
                         height: 180px
+                        transform: scale(0)
                         background: rgba(255, 205, 177, 0.1)
                         left: -85px
                         top: -85px
-                        transform: scale(0.7)
             .slick-arrow
                 color: transparent
                 background: transparent
                 border: none
                 &:before
+                    line-height: 8px
                     content: "➝"
                     display: inline-block
                     color: gray
-                    font-size: 18px
+                    font-size: 22px
                 &.slick-prev
                     &:before
-                        transform: rotate(180deg)
+                        transform: scaleX(-1)
+            .slick-next:focus:before, .slick-next:hover:before, .slick-prev:focus:before, .slick-prev:hover:before
+                color: #f26d22
             .text-year
                 font-size: 20px
                 font-weight: 500    
@@ -475,6 +522,7 @@ export default {
                 p
                     font-size: 20px
                     span
+                        display: inline-block
                         font-size: 35px
             .year-right
                 flex: 5
@@ -541,8 +589,59 @@ export default {
                     bottom: 0
                             
     @keyframes yeardot
+        0%
+            transform: scale(0.3)
         50%
-            transform: scale(1)
+            transform: scale(0.5)
         100%
-            transform: scale(0.7)
+            transform: scale(0.3)
+</style>
+<style lang="sass">
+    .to-small-enter-active
+        animation: to-small-enter 0.3s
+    .to-small-leave-active
+        position: absolute
+        right: 0
+        top: 0
+        animation: to-small-leave 0.3s
+
+    .to-big-enter-active
+        animation: to-big-enter 0.3s
+
+    .to-big-leave-active
+        position: absolute
+        right: 0
+        top: 0
+        animation: to-big-leave 0.3s
+
+    @keyframes to-small-leave
+        from
+            opacity: 1
+            transform: translateY(0)
+        to
+            opacity: 0
+            transform: translateY(-100%)
+    @keyframes to-small-enter
+        from
+            opacity: 0
+            transform: translateY(100%)
+        to
+            opacity: 1
+            transform: translateY(0px)
+
+
+    @keyframes to-big-leave
+        from
+            opacity: 1
+            transform: translateY(0)
+        to
+            opacity: 0
+            transform: translateY(100%)
+    @keyframes to-big-enter
+        from
+            opacity: 0
+            transform: translateY(-100%)
+        to
+            opacity: 1
+            transform: translateY(0px)
 </style>
