@@ -575,42 +575,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             });
 
             container.addEventListener('ps-y-reach-start', function () {
-                fullpage_api.setAllowScrolling(true);
+                setTimeout(function () {
+                    fullpage_api.setAllowScrolling(true);
+                }, 10);
             });
             container.addEventListener('ps-y-reach-end', function () {
-                fullpage_api.setAllowScrolling(true);
-            });
-
-            container.addEventListener('ps-scroll-up', function (e) {
-                if (e.target.scrollTop == 0) {
+                setTimeout(function () {
                     fullpage_api.setAllowScrolling(true);
-                }
+                }, 10);
             });
-
-            /*jQuery('#fullpage').fullpage({
-             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-             sectionSelector: '.section',
-             scrollOverflow: true,
-             navigation: true,
-             navigationTooltips: ['橘色體驗','橘色價值','橘色版圖','橘色新訊'],
-             slidesNavigation: true,
-             easing: 'easeInOutCubic',
-             easingcss3: 'ease'
-            });*/
-
-            //methods
-            //jQuery.fn.fullpage.setAllowScrolling(false);
         });
     },
 
     methods: {
         afterLoad: function afterLoad(originSection, activeSection) {
-            //fullpage_api.setAllowScrolling(false)
             if (this.ps) {
                 this.ps.update();
             }
-
-            //console.log(activeSection)
 
             if (activeSection.index == 3) {
                 fullpage_api.setAllowScrolling(false);
