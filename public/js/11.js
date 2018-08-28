@@ -6,13 +6,13 @@ webpackJsonp([11],{
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(466)
+  __webpack_require__(289)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(48)
 /* script */
-var __vue_script__ = __webpack_require__(468)
+var __vue_script__ = __webpack_require__(291)
 /* template */
-var __vue_template__ = __webpack_require__(479)
+var __vue_template__ = __webpack_require__(302)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -52,19 +52,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 236:
+/***/ 230:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(237)
+  __webpack_require__(231)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(48)
 /* script */
-var __vue_script__ = __webpack_require__(239)
+var __vue_script__ = __webpack_require__(233)
 /* template */
-var __vue_template__ = __webpack_require__(240)
+var __vue_template__ = __webpack_require__(234)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -104,13 +104,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 237:
+/***/ 231:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(238);
+var content = __webpack_require__(232);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -131,26 +131,30 @@ if(false) {
 
 /***/ }),
 
-/***/ 238:
+/***/ 232:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(49)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n#footer .container {\n  padding: 60px 0 20px 0;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n  margin-bottom: 60px;\n}\n#footer:before {\n  background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n  position: relative;\n  z-index: 2;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n    letter-spacing: 6px;\n    font-weight: 500;\n    font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n  font-size: 20px;\n}\n#footer .footer .footer-info {\n  margin-bottom: 100px;\n  line-height: 25px;\n  font-size: 14px;\n  font-weight: 100;\n}\n#footer .footer .footer-info p {\n    margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n    font-size: 18px;\n    font-weight: 100;\n    line-height: 30px;\n}\n#footer .footer.footer-join:before {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: calc(100% + 150px);\n  background: rgba(0, 0, 0, 0.4);\n  z-index: -1;\n  top: -100px;\n}\n", ""]);
+exports.push([module.i, "\n#footer {\n  height: 700px;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer .footer-info {\n    margin-bottom: 100px;\n    line-height: 25px;\n    font-size: 14px;\n    font-weight: 100;\n}\n#footer .footer .footer-info div {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer .footer-info p {\n      margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n      font-size: 18px;\n      font-weight: 100;\n      line-height: 30px;\n}\n#footer .footer.footer-join:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: calc(100% + 150px);\n    background: rgba(0, 0, 0, 0.8);\n    top: 0px;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 239:
+/***/ 233:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
 //
 //
 //
@@ -198,7 +202,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 240:
+/***/ 234:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -321,19 +325,21 @@ var staticRenderFns = [
           "footer-info position-relative d-flex justify-content-between align-items-center w-100"
       },
       [
-        _c("div", { staticClass: "footer-text-left" }, [
-          _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
-            _vm._v("聯絡我們")
-          ]),
-          _vm._v(" "),
-          _c("p", [_vm._v("台北市大安區仁愛路四段37號3樓之B")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v("Email:  service@orange.co"),
-            _c("br"),
-            _vm._v("Phone:  02-2711-4636"),
-            _c("br"),
-            _vm._v("Fax:  02-2711-4638")
+        _c("div", { staticClass: "footer-text-left text-left" }, [
+          _c("div", { staticClass: "d-inline-block text-center" }, [
+            _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
+              _vm._v("聯絡我們")
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v("台北市大安區仁愛路四段37號3樓之B")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("Email:  service@orange.co"),
+              _c("br"),
+              _vm._v("Phone:  02-2711-4636"),
+              _c("br"),
+              _vm._v("Fax:  02-2711-4638")
+            ])
           ])
         ]),
         _vm._v(" "),
@@ -342,15 +348,17 @@ var staticRenderFns = [
           attrs: { src: "/images/index_logo.png" }
         }),
         _vm._v(" "),
-        _c("div", { staticClass: "footer-text-right align-self-baseline" }, [
-          _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
-            _vm._v("橘色精神")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "footer-info-subtitle" }, [
-            _vm._v("用心 · 貼心 · 安心"),
-            _c("br"),
-            _vm._v("信心 · 一心 · 同理心")
+        _c("div", { staticClass: "footer-text-right text-right" }, [
+          _c("div", { staticClass: "d-inline-block text-center" }, [
+            _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
+              _vm._v("橘色精神")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "footer-info-subtitle" }, [
+              _vm._v("用心 · 貼心 · 安心"),
+              _c("br"),
+              _vm._v("信心 · 一心 · 同理心")
+            ])
           ])
         ])
       ]
@@ -394,19 +402,19 @@ if (false) {
 
 /***/ }),
 
-/***/ 245:
+/***/ 235:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(246)
+  __webpack_require__(236)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(48)
 /* script */
-var __vue_script__ = __webpack_require__(248)
+var __vue_script__ = __webpack_require__(238)
 /* template */
-var __vue_template__ = __webpack_require__(249)
+var __vue_template__ = __webpack_require__(239)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -446,13 +454,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 246:
+/***/ 236:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(247);
+var content = __webpack_require__(237);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -473,10 +481,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 247:
+/***/ 237:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(49)(false);
 // imports
 
 
@@ -488,7 +496,7 @@ exports.push([module.i, "\n#block-breadcrumb {\n  background-repeat: no-repeat;\
 
 /***/ }),
 
-/***/ 248:
+/***/ 238:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -546,7 +554,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 249:
+/***/ 239:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -642,13 +650,13 @@ if (false) {
 
 /***/ }),
 
-/***/ 466:
+/***/ 289:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(467);
+var content = __webpack_require__(290);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -669,10 +677,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 467:
+/***/ 290:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(49)(false);
 // imports
 
 
@@ -684,18 +692,18 @@ exports.push([module.i, "\n#header {\n  top: 0;\n}\n#block-contact #block-contac
 
 /***/ }),
 
-/***/ 468:
+/***/ 291:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_banner__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_banner__ = __webpack_require__(235);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_banner___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_components_block_banner__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_contact_form__ = __webpack_require__(469);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_contact_form__ = __webpack_require__(292);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_contact_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_components_contact_form__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_components_block_footer__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_components_block_footer__ = __webpack_require__(230);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_components_block_footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_components_block_footer__);
 //
 //
@@ -785,19 +793,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 469:
+/***/ 292:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(470)
+  __webpack_require__(293)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(48)
 /* script */
-var __vue_script__ = __webpack_require__(472)
+var __vue_script__ = __webpack_require__(295)
 /* template */
-var __vue_template__ = __webpack_require__(478)
+var __vue_template__ = __webpack_require__(301)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -837,13 +845,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 470:
+/***/ 293:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(471);
+var content = __webpack_require__(294);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -864,30 +872,37 @@ if(false) {
 
 /***/ }),
 
-/***/ 471:
+/***/ 294:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(49)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n#contact-form #contact-form-body {\n  padding: 0 80px;\n}\n#contact-form #contact-form-body .field-item {\n    width: 50%;\n}\n#contact-form #contact-form-body .field-item .field-icon {\n      position: absolute;\n      top: 15px;\n}\n#contact-form #contact-form-body .field-item .field-icon.fa-paper-plane {\n        font-size: 60px;\n        color: #f26c23;\n        right: 0;\n        top: -70px;\n}\n#contact-form .contact-form-title {\n  font-size: 28px;\n}\n#contact-form .contact-form-field {\n  height: 325px;\n}\n#contact-form .contact-form-field input, #contact-form .contact-form-field textarea {\n    width: calc(100% - 15px);\n    border: none;\n    border-bottom: 1px solid #ccc;\n    padding: 10px 25px;\n    margin-bottom: 20px;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n}\n#contact-form .contact-form-field input::-webkit-input-placeholder, #contact-form .contact-form-field textarea::-webkit-input-placeholder {\n      font-size: 12px;\n}\n#contact-form .contact-form-field input:-ms-input-placeholder, #contact-form .contact-form-field textarea:-ms-input-placeholder {\n      font-size: 12px;\n}\n#contact-form .contact-form-field input::-ms-input-placeholder, #contact-form .contact-form-field textarea::-ms-input-placeholder {\n      font-size: 12px;\n}\n#contact-form .contact-form-field input::placeholder, #contact-form .contact-form-field textarea::placeholder {\n      font-size: 12px;\n}\n#contact-form .contact-form-field input:focus, #contact-form .contact-form-field textarea:focus {\n      outline: none;\n      border-bottom-color: #f26c23;\n}\n#contact-form .contact-form-field input:focus::-webkit-input-placeholder, #contact-form .contact-form-field textarea:focus::-webkit-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus:-ms-input-placeholder, #contact-form .contact-form-field textarea:focus:-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::-ms-input-placeholder, #contact-form .contact-form-field textarea:focus::-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::placeholder, #contact-form .contact-form-field textarea:focus::placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus + .field-icon, #contact-form .contact-form-field textarea:focus + .field-icon {\n        color: #f26c23;\n}\n#contact-form .contact-form-field input.btn-orange, #contact-form .contact-form-field textarea.btn-orange {\n      font-size: 14px;\n      padding: 10px 60px;\n      -webkit-box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n              box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n}\n#contact-form .contact-form-field textarea {\n    margin-left: 30px;\n    height: 100%;\n}\n#contact-form form {\n  margin-bottom: 100px;\n}\n", ""]);
+exports.push([module.i, "\n#contact-form .btn-orange {\n  padding: 10px 55px;\n  font-size: 14px;\n  -webkit-box-shadow: 5px 5px 10px rgba(242, 109, 35, 0.3);\n          box-shadow: 5px 5px 10px rgba(242, 109, 35, 0.3);\n}\n#contact-form .btn-orange:hover {\n    background: rgba(0, 0, 0, 0.85);\n}\n#contact-form #contact-form-body {\n  padding: 0 80px;\n}\n#contact-form #contact-form-body .field-item {\n    width: 50%;\n}\n#contact-form #contact-form-body .field-item .field-icon {\n      position: absolute;\n      top: 15px;\n}\n#contact-form #contact-form-body .field-item .field-icon.plane {\n        font-size: 60px;\n        color: #f26c23;\n        right: 0;\n        top: -70px;\n}\n#contact-form .contact-form-title {\n  font-size: 28px;\n}\n#contact-form .contact-form-field {\n  height: 330px;\n}\n#contact-form .contact-form-field input, #contact-form .contact-form-field textarea {\n    width: calc(100% - 15px);\n    border: none;\n    border-bottom: 1px solid #ccc;\n    padding: 10px 30px;\n    margin-bottom: 20px;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n}\n#contact-form .contact-form-field input::-webkit-input-placeholder, #contact-form .contact-form-field textarea::-webkit-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input:-ms-input-placeholder, #contact-form .contact-form-field textarea:-ms-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input::-ms-input-placeholder, #contact-form .contact-form-field textarea::-ms-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input::placeholder, #contact-form .contact-form-field textarea::placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input:focus, #contact-form .contact-form-field textarea:focus {\n      outline: none;\n      border-bottom-color: #f26c23;\n      border-width: 2px;\n}\n#contact-form .contact-form-field input:focus::-webkit-input-placeholder, #contact-form .contact-form-field textarea:focus::-webkit-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus:-ms-input-placeholder, #contact-form .contact-form-field textarea:focus:-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::-ms-input-placeholder, #contact-form .contact-form-field textarea:focus::-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::placeholder, #contact-form .contact-form-field textarea:focus::placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus + .field-icon, #contact-form .contact-form-field textarea:focus + .field-icon {\n        color: #f26c23;\n}\n#contact-form .contact-form-field input.btn-orange, #contact-form .contact-form-field textarea.btn-orange {\n      font-size: 14px;\n      padding: 10px 60px;\n      -webkit-box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n              box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n}\n#contact-form .contact-form-field textarea {\n    margin-left: 30px;\n    height: 305px;\n}\n#contact-form form {\n  margin-bottom: 100px;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 472:
+/***/ 295:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_map__ = __webpack_require__(473);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_map__ = __webpack_require__(296);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_components_block_map__);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1013,19 +1028,19 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ 473:
+/***/ 296:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(474)
+  __webpack_require__(297)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(48)
 /* script */
-var __vue_script__ = __webpack_require__(476)
+var __vue_script__ = __webpack_require__(299)
 /* template */
-var __vue_template__ = __webpack_require__(477)
+var __vue_template__ = __webpack_require__(300)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -1065,13 +1080,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 474:
+/***/ 297:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(475);
+var content = __webpack_require__(298);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -1092,10 +1107,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 475:
+/***/ 298:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(49)(false);
 // imports
 
 
@@ -1107,7 +1122,7 @@ exports.push([module.i, "\n#block-map .map-list {\n  margin-bottom: 80px;\n  pad
 
 /***/ }),
 
-/***/ 476:
+/***/ 299:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1170,7 +1185,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ 477:
+/***/ 300:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -1254,7 +1269,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 478:
+/***/ 301:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -1278,128 +1293,7 @@ var render = function() {
                   _vm._v(_vm._s(_vm.fields[_vm.brand].subtitle))
                 ]),
                 _vm._v(" "),
-                _c("form", [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "contact-form-field d-flex flex-column flex-wrap"
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "field-item field-user d-flex align-items-center position-relative"
-                        },
-                        [
-                          _c("input", { attrs: { placeholder: "您的姓名" } }),
-                          _vm._v(" "),
-                          _c("font-awesome-icon", {
-                            staticClass: "field-icon",
-                            attrs: { icon: ["fal", "user"] }
-                          })
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "field-item field-envelop d-flex align-items-center position-relative"
-                        },
-                        [
-                          _c("input", {
-                            attrs: { placeholder: "您的電子信箱" }
-                          }),
-                          _vm._v(" "),
-                          _c("font-awesome-icon", {
-                            staticClass: "field-icon",
-                            attrs: { icon: ["fal", "envelope"] }
-                          })
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "field-item field-phone d-flex align-items-center position-relative"
-                        },
-                        [
-                          _c("input", { attrs: { placeholder: "您的電話" } }),
-                          _vm._v(" "),
-                          _c("font-awesome-icon", {
-                            staticClass: "field-icon",
-                            attrs: { icon: ["fal", "phone"] }
-                          })
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "field-item field-location d-flex align-items-center position-relative"
-                        },
-                        [
-                          _c("input", {
-                            attrs: { placeholder: "欲聯繫的橘色分館" }
-                          }),
-                          _vm._v(" "),
-                          _c("font-awesome-icon", {
-                            staticClass: "field-icon",
-                            attrs: { icon: ["fal", "map-marker"] }
-                          })
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "field-item field-question d-flex align-items-center position-relative"
-                        },
-                        [
-                          _c("input", {
-                            attrs: { placeholder: "欲詢問的問題類型" }
-                          }),
-                          _vm._v(" "),
-                          _c("font-awesome-icon", {
-                            staticClass: "field-icon",
-                            attrs: { icon: ["fal", "question-circle"] }
-                          })
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "field-item field-content d-flex align-items-center position-relative h-100"
-                        },
-                        [
-                          _c("textarea", {
-                            attrs: { placeholder: "您的詢問內容" }
-                          }),
-                          _vm._v(" "),
-                          _c("font-awesome-icon", {
-                            staticClass: "field-icon",
-                            attrs: { icon: ["fal", "paper-plane"] }
-                          })
-                        ],
-                        1
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _vm._m(0)
-                ])
+                _vm._m(0)
               ]
             )
           ])
@@ -1419,21 +1313,125 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mt-4 clearfix" }, [
+    return _c("form", [
       _c(
-        "span",
-        { staticClass: "text-size-1 float-left text-gray w-50 pr-4" },
+        "div",
+        { staticClass: "contact-form-field d-flex flex-column flex-wrap" },
         [
-          _vm._v(
-            "您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝"
+          _c(
+            "div",
+            {
+              staticClass:
+                "field-item field-user d-flex align-items-center position-relative"
+            },
+            [
+              _c("input", { attrs: { placeholder: "您的姓名" } }),
+              _vm._v(" "),
+              _c("img", {
+                staticClass: "field-icon",
+                attrs: { src: "/images/icon-user.png" }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "field-item field-envelop d-flex align-items-center position-relative"
+            },
+            [
+              _c("input", { attrs: { placeholder: "您的電子信箱" } }),
+              _vm._v(" "),
+              _c("img", {
+                staticClass: "field-icon",
+                attrs: { src: "/images/icon-mail.png" }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "field-item field-phone d-flex align-items-center position-relative"
+            },
+            [
+              _c("input", { attrs: { placeholder: "您的電話" } }),
+              _vm._v(" "),
+              _c("img", {
+                staticClass: "field-icon",
+                attrs: { src: "/images/icon-phone.png" }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "field-item field-location d-flex align-items-center position-relative"
+            },
+            [
+              _c("input", { attrs: { placeholder: "欲聯繫的橘色分館" } }),
+              _vm._v(" "),
+              _c("img", {
+                staticClass: "field-icon",
+                attrs: { src: "/images/icon-location.png" }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "field-item field-question d-flex align-items-center position-relative"
+            },
+            [
+              _c("input", { attrs: { placeholder: "欲詢問的問題類型" } }),
+              _vm._v(" "),
+              _c("img", {
+                staticClass: "field-icon",
+                attrs: { src: "/images/icon-ask.png" }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "field-item field-content d-flex align-items-center position-relative h-100"
+            },
+            [
+              _c("textarea", { attrs: { placeholder: "您的詢問內容" } }),
+              _vm._v(" "),
+              _c("img", {
+                staticClass: "field-icon plane",
+                attrs: { src: "/images/icon-plane.png" }
+              })
+            ]
           )
         ]
       ),
       _vm._v(" "),
-      _c("input", {
-        staticClass: "btn-orange d-inline-block float-right",
-        attrs: { type: "submit", value: "發送訊息" }
-      })
+      _c("div", { staticClass: "mt-4 clearfix" }, [
+        _c(
+          "span",
+          { staticClass: "text-size-1 float-left text-gray w-50 pr-4" },
+          [
+            _vm._v(
+              "您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝"
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "btn-orange d-inline-block float-right",
+          attrs: { type: "submit", value: "發送訊息" }
+        })
+      ])
     ])
   }
 ]
@@ -1448,7 +1446,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 479:
+/***/ 302:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {

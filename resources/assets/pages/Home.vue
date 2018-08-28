@@ -172,6 +172,9 @@
 </script>
 
 <style lang="sass">
+    #fullpage
+        transition-duration: .8s !important
+        transition-timing-function: cubic-bezier(.5,0,0,1) !important
     #burger-menu
         width: 0px
         height: 25px
