@@ -156,7 +156,22 @@ export default {
 		            year: 2018,
 		            content: [
 			            {
+				            month: '4月',
+				            listTitle: '新光三越旗艦店開幕',
+				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+			            },
+			            {
 				            month: '3月',
+				            listTitle: '新光三越旗艦店開幕',
+				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+			            },
+			            {
+				            month: '3月',
+				            listTitle: '新光三越旗艦店開幕',
+				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+			            },
+			            {
+				            month: '2月',
 				            listTitle: '新光三越旗艦店開幕',
 				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
 			            },
@@ -177,6 +192,11 @@ export default {
 			            },
 			            {
 				            month: '4月',
+				            listTitle: '新光三越旗艦店開幕',
+				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+			            },
+			            {
+				            month: '1月',
 				            listTitle: '新光三越旗艦店開幕',
 				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
 			            }
@@ -349,7 +369,7 @@ export default {
         font-family: "PingFang SC",微軟正黑體
     #about-tabs
         margin: 50px auto
-        
+
         &.position-fixed
             border-bottom: 2px solid #efefef
             position: fixed
@@ -382,7 +402,7 @@ export default {
             line-height: 30px
             font-weight: 500
     #block-about-service
-        height: 1000px
+        margin-bottom: 200px
         .service-body
             height: 500px
             background-size: cover
