@@ -1,5 +1,5 @@
 <template>
-    <div id="footer" class="section text-white text-center bg-black-cover position-relative" style="background-image:url('/images/bg_footer.png')">
+    <div id="footer" class="section text-white text-center bg-black-cover position-relative" style="background-image:url('/images/footer.png')">
         <div class="footer footer-join position-relative d-flex align-items-center justify-content-between w-100">
             <div class="container">
                 <div class="row d-flex justify-content-between align-items-center">
@@ -103,5 +103,10 @@ export default {
                     height: calc(100% + 150px)
                     background: rgba(0, 0, 0, 0.8)
                     top: 0px
+            .btn-orange
+                &:hover
+                    background: white
+                    color: #f26d23 !important
+                    font-weight: 500
 
 </style>

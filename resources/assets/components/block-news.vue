@@ -174,7 +174,6 @@ export default {
 <style lang="sass">
 
 #block-news
-    height: 100vh
     .fp-tableCell
         height: auto !important
     >div

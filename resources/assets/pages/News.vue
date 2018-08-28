@@ -214,7 +214,7 @@ export default {
                                 position: absolute
                                 height: 60%
                                 width: 1px
-                                background: white
+                                background: #bfbfbf
                                 right: 0
                                 top: 20%
 

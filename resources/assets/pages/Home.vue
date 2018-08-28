@@ -183,7 +183,7 @@
         transition: all .5s
         position: absolute
         right: 30px
-        top: 48px
+        top: 53px
         z-index: 9999999
         &:before
             content: "|||"

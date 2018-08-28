@@ -33,7 +33,7 @@
                         <p :class="{'fade' : addTransition}">
                             {{brandBg[brandIndex].title}}
                         </p>
-                        <div class="d-flex text-size-3" :class="{'fade' : addTransition}">
+                        <div class="d-flex text-size-3 justify-content-center" :class="{'fade' : addTransition}">
                             <router-link :to="brandBg[brandIndex].contact" class="brands-link">聯絡我們</router-link>
                             <span>・</span>
                             <router-link :to="brandBg[brandIndex].book" class="brands-link">線上訂位</router-link>
