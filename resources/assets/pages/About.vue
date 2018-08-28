@@ -488,6 +488,7 @@ export default {
                         top: -7px
                     .dot-radar
                         content: ""
+                        transition: transform 0.3s
                         position: absolute
                         border-radius: 100%
                         width: 180px
