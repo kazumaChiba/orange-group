@@ -30,7 +30,7 @@
                     transition: all .5s ease-in-out
                 .menu-title
                     display: inline-block
-                    font-size: 14px
+                    font-size: 15px
                     font-weight: 500
                     padding: 0 20px
                 &.menu-shadow

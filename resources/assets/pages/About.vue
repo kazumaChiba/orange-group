@@ -249,7 +249,7 @@ export default {
     mounted: function() {
         jQuery(document).ready(function(){
 
-            scrollTabs();
+            //scrollTabs();
 
             jQuery(".tab").click(function(){
                 let target = jQuery(this).attr("data-target");
@@ -262,7 +262,7 @@ export default {
             });
             
             jQuery(window).scroll(function(){
-                scrollTabs();
+                //scrollTabs();
             });
 
             function scrollTabs(){

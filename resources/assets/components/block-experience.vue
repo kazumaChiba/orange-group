@@ -45,19 +45,19 @@ export default {
                 experience_view: 'ex',
                 experience: [
                     {
-                        'url':'/images/slideshow_1.jpg',
+                        'url':'/images/home1_ex.png',
                         'title':'橘色體驗'
                     },
                     {
-                        'url':'/images/bg_food_1.png',
+                        'url':'/images/home1_pot.png',
                         'title':'橘色鍋物'
                     },
                     {
-                        'url':'/images/bg_brand_1.png',
+                        'url':'/images/home1_coffee.png',
                         'title':'橘色咖啡'
                     },
                     {
-                        'url':'/images/bg_footer.png',
+                        'url':'/images/home1_spa.png',
                         'title':'橘色舒體'
                     },  
                 ],

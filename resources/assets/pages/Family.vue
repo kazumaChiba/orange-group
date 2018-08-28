@@ -226,29 +226,12 @@ export default {
         transition: all .5s ease-out
 
     .slideshow
-        &:before , &:after
-            content: ""
-            position: absolute
-            border-radius: 100%
-        &:before
-            background: #f36f1b
-            width: 120vw
-            height: 65vw
-            bottom: 0vw
-            right: -20vw
-            z-index: 1
-        &:after
-            width: 120vw
-            height: 130vh
-            background: #ffaa85
-            left: -13vw
-            top: -19vh
-            z-index: 0
         .slick-list
             overflow: visible
             overflow-x: hidden
             z-index: 2
         .slick-next, .slick-prev
+            opacity: 0 //隱藏
             z-index: 3
             color: white
             font-size: 12px
@@ -272,9 +255,28 @@ export default {
         .slick-slide
             position: relative
             overflow: hidden
+            &:before , &:after
+                content: ""
+                position: absolute
+                border-radius: 100%
+            &:before
+                background: rgba(255, 107, 12, 0.9)
+                width: 120vw
+                height: 65vw
+                bottom: 0vw
+                right: -20vw
+                z-index: 1
+            &:after
+                width: 120vw
+                height: 130vh
+                background: #ffaa85
+                left: -13vw
+                top: -19vh
+                z-index: 0
             .slider
-                height: 110vh
-                clip-path: circle(150vh at 54vw -42vh)
+                height: 111vh
+                clip-path: ellipse(80vw 75vh at 50vw 27vh)
+                z-index: 2
                 p
                     z-index: 2
                 .slide-title
@@ -290,7 +292,7 @@ export default {
                         content: ""
                         position: absolute
                         width: 2px
-                        height: calc(20vh + 30px)
+                        height: calc(11vh + 60px)
                         background: white
                         left: 50%
                         top: 50px
@@ -344,11 +346,14 @@ export default {
                     opacity: 0
                     transition: all .5s ease-out
                     .family-content
-                        
+
                 &:nth-child(2n)
                     flex-direction: row-reverse
                     .big_title
                         text-align: right
+                    .big_title , .step-title , .subtitle , .desc
+                        margin-right: 0
+                        margin-left: auto
                 .big_title , .step-title , .subtitle , .desc
                     font-weight: 500
                     width: 60%
@@ -390,12 +395,15 @@ export default {
                 left: 0
                 top: 0
             &:after
-                content: "Q"
-                font-size: 430px
+                content: ""
                 position: absolute
-                top: -10px
+                top: calc(50% - 215px)
                 left: 180px
-                opacity: 0.4
+                background-image: url(/images/q.png)
+                background-repeat: no-repeat
+                background-size: contain
+                width: 332px
+                height: 430px
             h3
                 margin-bottom: 50px
                 font-size: 40px
