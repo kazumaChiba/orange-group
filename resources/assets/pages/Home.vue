@@ -34,12 +34,7 @@
                                 </h3>
 
                                 <block-news></block-news>
-<<<<<<< HEAD
-
                                 <router-link :to="'/news'" class="btn-load-more btn-orange fat">
-=======
-                                <router-link :to="'/news'" class="btn-load-more btn-orange  fat">
->>>>>>> 0a07e92d1982c3dd10f58d8b830db7ad0f8dc548
                                     更多橘色新訊
                                 </router-link>
                             </div>

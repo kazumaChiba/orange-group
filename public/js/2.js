@@ -437,7 +437,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n@charset \"UTF-8\";\n#burger-menu {\n  width: 0px;\n  height: 25px;\n  text-align: center;\n  overflow: hidden;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  position: absolute;\n  right: 30px;\n  top: 48px;\n  z-index: 9999999;\n}\n#burger-menu:before {\n    content: \"|||\";\n    color: #f26c23;\n    -webkit-transform: rotate(90deg);\n            transform: rotate(90deg);\n    display: inline-block;\n    font-weight: bold;\n}\n#burger-menu:hover {\n    cursor: pointer;\n}\n#burger-menu.menu-close {\n    width: 25px;\n}\n#fp-nav.fp-right {\n  opacity: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  visibility: hidden;\n  -webkit-transition: opacity .3s;\n  transition: opacity .3s;\n  right: 0;\n  width: unset;\n}\n#fp-nav.fp-right.active {\n    visibility: visible;\n    opacity: 1;\n}\n#fp-nav.fp-right ul li {\n    width: 100%;\n    height: 25px;\n    margin: 5px 0;\n}\n#fp-nav.fp-right ul li:last-child {\n      display: none;\n}\n#fp-nav.fp-right ul li span {\n      display: none;\n}\n#fp-nav.fp-right ul li .fp-tooltip.fp-right {\n      color: #ccc;\n      opacity: 1;\n      width: auto;\n      font-size: 17px;\n      letter-spacing: 0px;\n      font-style: italic;\n      right: 0;\n      overflow: visible;\n      position: relative;\n      height: 100%;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      padding: 0 50px;\n      font-weight: 300;\n}\n#fp-nav.fp-right ul li:hover div, #fp-nav.fp-right ul li a.active + div {\n      cursor: pointer;\n      background: #f26c23;\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      color: white !important;\n}\n#fp-nav.fp-right ul li a {\n      position: absolute;\n      top: 0;\n      left: 0;\n}\n#app .fp-scroller {\n  min-height: 100%;\n}\n#app .logo {\n  position: absolute;\n  height: 220px;\n}\n#app .main-title {\n  line-height: 35px;\n}\n#app .main-title .sub-title {\n    letter-spacing: 10px;\n    font-weight: 200;\n    font-size: 16px;\n    font-family: \"PingFang SC\",微軟正黑體;\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\n#burger-menu {\n  width: 0px;\n  height: 25px;\n  text-align: center;\n  overflow: hidden;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  position: absolute;\n  right: 30px;\n  top: 48px;\n  z-index: 9999999;\n}\n#burger-menu:before {\n    content: \"|||\";\n    color: #f26c23;\n    -webkit-transform: rotate(90deg);\n            transform: rotate(90deg);\n    display: inline-block;\n    font-weight: bold;\n}\n#burger-menu:hover {\n    cursor: pointer;\n}\n#burger-menu.menu-close {\n    width: 25px;\n}\n#fp-nav.fp-right {\n  opacity: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  visibility: hidden;\n  -webkit-transition: opacity .3s;\n  transition: opacity .3s;\n  right: 0;\n  width: unset;\n}\n#fp-nav.fp-right.active {\n    visibility: visible;\n    opacity: 1;\n}\n#fp-nav.fp-right ul li {\n    width: 100%;\n    height: 25px;\n    margin: 5px 0;\n}\n#fp-nav.fp-right ul li:last-child {\n      display: none;\n}\n#fp-nav.fp-right ul li span {\n      display: none;\n}\n#fp-nav.fp-right ul li .fp-tooltip.fp-right {\n      color: #ccc;\n      opacity: 1;\n      width: auto;\n      font-size: 14px;\n      letter-spacing: 0px;\n      font-style: italic;\n      right: 0;\n      overflow: visible;\n      position: relative;\n      height: 100%;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      padding: 0 50px;\n      font-weight: 300;\n}\n#fp-nav.fp-right ul li:hover div, #fp-nav.fp-right ul li a.active + div {\n      cursor: pointer;\n      background: #f26c23;\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      color: white !important;\n}\n#fp-nav.fp-right ul li a {\n      position: absolute;\n      top: 0;\n      left: 0;\n}\n#app .fp-scroller {\n  min-height: 100%;\n}\n#app .logo {\n  position: absolute;\n  height: 220px;\n}\n#app .main-title {\n  line-height: 35px;\n}\n#app .main-title .sub-title {\n    letter-spacing: 10px;\n    font-weight: 200;\n    font-size: 16px;\n    font-family: \"PingFang SC\",微軟正黑體;\n}\n", ""]);
 
 // exports
 
@@ -468,7 +468,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue2_scrollbar__ = __webpack_require__(332);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue2_scrollbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_vue2_scrollbar__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_perfect_scrollbar__ = __webpack_require__(333);
-//
 //
 //
 //
@@ -747,11 +746,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-<<<<<<< HEAD
 exports.push([module.i, "\n#block-experience {\n  background-size: cover;\n}\n#block-experience.active .bg-transition.bg-left .bg-inner, #block-experience.active .bg-transition.bg-right .bg-inner, #block-experience.active .bg-transition.active .bg-inner {\n    background-position-y: 0;\n}\n#block-experience .bg-transition.bg-left:before, #block-experience .bg-transition.bg-right:before {\n    position: absolute;\n    width: 50%;\n    height: 100vh;\n    background: black;\n    content: \"\";\n    left: 0;\n    opacity: 0.8;\n    top: calc(50% - 50vh);\n    z-index: 4;\n    content: \"\";\n    word-break: keep-all;\n}\n#block-experience .bg-transition.bg-right:before {\n    width: 100%;\n    opacity: 0.4;\n}\n#block-experience .bg-transition.bg-left .bg-inner, #block-experience .bg-transition.bg-right .bg-inner {\n    background-position-y: -100vh;\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n}\n#block-experience .bg-transition.bg-left .bg-inner.active, #block-experience .bg-transition.bg-right .bg-inner.active {\n      background-position-y: 0;\n      opacity: 1;\n}\n#block-experience .bg-transition.bg-right .bg-inner.active {\n    background-position-y: 100vh;\n    opacity: 0;\n}\n#block-experience .bg-transition.bg-left {\n    z-index: 3;\n}\n#block-experience .bg-transition.bg-left:before {\n      width: 100%;\n}\n#block-experience .bg-transition.bg-left .bg-inner {\n      left: 0;\n}\n#block-experience .bg-transition.bg-left .bg-inner.active {\n        background-position-y: -100vh;\n        opacity: 0;\n}\n#block-experience .bg-transition.bg-right {\n    z-index: 2;\n    right: 0;\n}\n#block-experience .bg-transition.bg-right .bg-inner {\n      right: 0;\n      background-position-y: 100vh;\n}\n#block-experience .fp-scroller {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n#block-experience #content-experience {\n    z-index: 4;\n}\n#block-experience #content-experience .big_title {\n      font-size: 200px;\n      letter-spacing: 30px;\n      color: rgba(255, 255, 255, 0.2);\n      position: absolute;\n      left: 0;\n      top: 50%;\n      -webkit-transform: translateY(-50%);\n              transform: translateY(-50%);\n      width: 50%;\n      word-break: keep-all;\n      overflow: hidden;\n}\n#block-experience #content-experience .experience-inner {\n      width: 350px;\n      margin: 0 auto;\n      text-align: left;\n      font-weight: 300;\n}\n#block-experience #content-experience .experience-inner .experience-item {\n        -webkit-transition: opacity .5s;\n        transition: opacity .5s;\n}\n#block-experience #content-experience .experience-inner h5 {\n        letter-spacing: 4px;\n        font-weight: 300;\n}\n#block-experience #content-experience .experience-inner h5 span {\n          letter-spacing: 7px;\n          line-height: 25px;\n          font-size: 22px;\n}\n#block-experience #content-experience .experience-inner .left-line:before {\n        content: \"\";\n        display: inline-block;\n        width: 20px;\n        height: 5px;\n        background: #f26d23;\n        margin-right: 10px;\n        vertical-align: middle;\n}\n#block-experience #content-experience .experience-circle {\n      position: absolute;\n      top: calc(50% - 250px);\n      left: calc(50% - 250px);\n}\n#block-experience #content-experience .experience-circle .circle-option {\n        position: absolute;\n        width: 500px;\n        height: 500px;\n}\n#block-experience #content-experience .experience-circle .circle-body {\n        -webkit-transform: rotate(12deg);\n                transform: rotate(12deg);\n        width: 500px;\n        height: 500px;\n}\n#block-experience #content-experience .experience-circle .circle-body.active .circle-line.left:after {\n          -webkit-transform: rotate(320deg);\n                  transform: rotate(320deg);\n          -webkit-transition: all .8s;\n          transition: all .8s;\n          opacity: 1;\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line {\n          position: absolute;\n          width: 50%;\n          height: 100%;\n          overflow: hidden;\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line:before, #block-experience #content-experience .experience-circle .circle-body .circle-line.left:after {\n            content: \"\";\n            display: block;\n            width: 200%;\n            height: 100%;\n            border: 28px solid rgba(242, 109, 35, 0.8);\n            border-radius: 100%;\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line.left {\n            left: 0;\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line.left:before, #block-experience #content-experience .experience-circle .circle-body .circle-line.left:after {\n              border-bottom-color: transparent;\n              border-left-color: transparent;\n              -webkit-transform: rotate(-40deg);\n                      transform: rotate(-40deg);\n              -webkit-clip-path: polygon(50% -18%, 100% 20%, 50% 100%, 0% 60%);\n                      clip-path: polygon(50% -18%, 100% 20%, 50% 100%, 0% 60%);\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line.right {\n            right: 0;\n            -webkit-transform: rotate(180deg);\n                    transform: rotate(180deg);\n}\n#block-experience #content-experience .experience-circle .circle-option {\n        -webkit-transition: all 2s;\n        transition: all 2s;\n        -webkit-transform: rotate(0);\n                transform: rotate(0);\n        top: 0;\n}\n#block-experience #content-experience .experience-circle .circle-option.active {\n          opacity: 0;\n          -webkit-transition: opacity .3s;\n          transition: opacity .3s;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option {\n          position: absolute;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option:hover {\n            cursor: pointer;\n            color: #f26d23;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.top {\n            top: -50px;\n            left: 50%;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.bottom {\n            bottom: -50px;\n            left: 50%;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.right {\n            top: 50%;\n            right: -50px;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.left {\n            top: 50%;\n            left: -50px;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option a {\n            word-break: keep-all;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.active {\n            opacity: 0;\n            -webkit-transition: opacity 1s;\n            transition: opacity 1s;\n            -webkit-transition-delay: .5s;\n                    transition-delay: .5s;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_0 {\n          -webkit-transform: rotate(0deg);\n                  transform: rotate(0deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_0 a {\n            -webkit-transition: all .3s;\n            transition: all .3s;\n            -webkit-transform: rotate(0deg) !important;\n                    transform: rotate(0deg) !important;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_1 {\n          -webkit-transform: rotate(-90deg);\n                  transform: rotate(-90deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_1 a {\n            -webkit-transition: all .3s;\n            transition: all .3s;\n            -webkit-transform: rotate(90deg) !important;\n                    transform: rotate(90deg) !important;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_2 {\n          -webkit-transform: rotate(-180deg);\n                  transform: rotate(-180deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_2 a {\n            -webkit-transition: all .3s;\n            transition: all .3s;\n            -webkit-transform: rotate(180deg) !important;\n                    transform: rotate(180deg) !important;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_3 {\n          -webkit-transform: rotate(-270deg);\n                  transform: rotate(-270deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_3 a {\n            -webkit-transition: all .3s;\n            transition: all .3s;\n            -webkit-transform: rotate(270deg) !important;\n                    transform: rotate(270deg) !important;\n}\n", ""]);
-=======
-exports.push([module.i, "\n#contact-form .btn-orange {\n  padding: 10px 55px;\n  font-size: 14px;\n  -webkit-box-shadow: 5px 5px 10px rgba(242, 109, 35, 0.3);\n          box-shadow: 5px 5px 10px rgba(242, 109, 35, 0.3);\n}\n#contact-form .btn-orange:hover {\n    background: rgba(0, 0, 0, 0.85);\n}\n#contact-form #contact-form-body {\n  padding: 0 80px;\n}\n#contact-form #contact-form-body .field-item {\n    width: 50%;\n}\n#contact-form #contact-form-body .field-item .field-icon {\n      position: absolute;\n      top: 15px;\n}\n#contact-form #contact-form-body .field-item .field-icon.plane {\n        font-size: 60px;\n        color: #f26c23;\n        right: 0;\n        top: -70px;\n}\n#contact-form .contact-form-title {\n  font-size: 28px;\n}\n#contact-form .contact-form-field {\n  height: 330px;\n}\n#contact-form .contact-form-field input, #contact-form .contact-form-field textarea {\n    width: calc(100% - 15px);\n    border: none;\n    border-bottom: 1px solid #ccc;\n    padding: 10px 30px;\n    margin-bottom: 20px;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n}\n#contact-form .contact-form-field input::-webkit-input-placeholder, #contact-form .contact-form-field textarea::-webkit-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input:-ms-input-placeholder, #contact-form .contact-form-field textarea:-ms-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input::-ms-input-placeholder, #contact-form .contact-form-field textarea::-ms-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input::placeholder, #contact-form .contact-form-field textarea::placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input:focus, #contact-form .contact-form-field textarea:focus {\n      outline: none;\n      border-bottom-color: #f26c23;\n      border-width: 2px;\n}\n#contact-form .contact-form-field input:focus::-webkit-input-placeholder, #contact-form .contact-form-field textarea:focus::-webkit-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus:-ms-input-placeholder, #contact-form .contact-form-field textarea:focus:-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::-ms-input-placeholder, #contact-form .contact-form-field textarea:focus::-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::placeholder, #contact-form .contact-form-field textarea:focus::placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus + .field-icon, #contact-form .contact-form-field textarea:focus + .field-icon {\n        color: #f26c23;\n}\n#contact-form .contact-form-field input.btn-orange, #contact-form .contact-form-field textarea.btn-orange {\n      font-size: 14px;\n      padding: 10px 60px;\n      -webkit-box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n              box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n}\n#contact-form .contact-form-field textarea {\n    margin-left: 30px;\n    height: 305px;\n}\n#contact-form form {\n  margin-bottom: 100px;\n}\n", ""]);
->>>>>>> 0a07e92d1982c3dd10f58d8b830db7ad0f8dc548
 
 // exports
 
@@ -802,24 +797,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-<<<<<<< HEAD
-=======
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
->>>>>>> 0a07e92d1982c3dd10f58d8b830db7ad0f8dc548
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -1403,7 +1380,6 @@ if (false) {
 /***/ 320:
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -1437,174 +1413,6 @@ if (false) {(function () {
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), false)
   if (!hotAPI.compatible) return
-=======
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm.fields[_vm.brand]
-      ? _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c(
-              "div",
-              { staticClass: "w-100", attrs: { id: "contact-form-body" } },
-              [
-                _c("p", {
-                  staticClass: "contact-form-title mb-1",
-                  domProps: { innerHTML: _vm._s(_vm.fields[_vm.brand].title) }
-                }),
-                _vm._v(" "),
-                _c("p", { staticClass: "text-size-1 font-weight-bold" }, [
-                  _vm._v(_vm._s(_vm.fields[_vm.brand].subtitle))
-                ]),
-                _vm._v(" "),
-                _vm._m(0)
-              ]
-            )
-          ])
-        ])
-      : _vm._e(),
-    _vm._v(" "),
-    _c(
-      "div",
-      { attrs: { id: "block-map" } },
-      [_c("block-map", { attrs: { brand: _vm.brand } })],
-      1
-    )
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("form", [
-      _c(
-        "div",
-        { staticClass: "contact-form-field d-flex flex-column flex-wrap" },
-        [
-          _c(
-            "div",
-            {
-              staticClass:
-                "field-item field-user d-flex align-items-center position-relative"
-            },
-            [
-              _c("input", { attrs: { placeholder: "您的姓名" } }),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "field-icon",
-                attrs: { src: "/images/icon-user.png" }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "field-item field-envelop d-flex align-items-center position-relative"
-            },
-            [
-              _c("input", { attrs: { placeholder: "您的電子信箱" } }),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "field-icon",
-                attrs: { src: "/images/icon-mail.png" }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "field-item field-phone d-flex align-items-center position-relative"
-            },
-            [
-              _c("input", { attrs: { placeholder: "您的電話" } }),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "field-icon",
-                attrs: { src: "/images/icon-phone.png" }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "field-item field-location d-flex align-items-center position-relative"
-            },
-            [
-              _c("input", { attrs: { placeholder: "欲聯繫的橘色分館" } }),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "field-icon",
-                attrs: { src: "/images/icon-location.png" }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "field-item field-question d-flex align-items-center position-relative"
-            },
-            [
-              _c("input", { attrs: { placeholder: "欲詢問的問題類型" } }),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "field-icon",
-                attrs: { src: "/images/icon-ask.png" }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "field-item field-content d-flex align-items-center position-relative h-100"
-            },
-            [
-              _c("textarea", { attrs: { placeholder: "您的詢問內容" } }),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "field-icon plane",
-                attrs: { src: "/images/icon-plane.png" }
-              })
-            ]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "mt-4 clearfix" }, [
-        _c(
-          "span",
-          { staticClass: "text-size-1 float-left text-gray w-50 pr-4" },
-          [
-            _vm._v(
-              "您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝"
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c("input", {
-          staticClass: "btn-orange d-inline-block float-right",
-          attrs: { type: "submit", value: "發送訊息" }
-        })
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
->>>>>>> 0a07e92d1982c3dd10f58d8b830db7ad0f8dc548
   module.hot.accept()
   if (!module.hot.data) {
     hotAPI.createRecord("data-v-1e9078d8", Component.options)
@@ -11776,7 +11584,6 @@ var render = function() {
     _c(
       "div",
       {
-        staticClass: "position-fixed",
         class: _vm.closeMenu ? "active" : "" + _vm.sectionPosition,
         attrs: { id: "header" }
       },
@@ -11791,7 +11598,7 @@ var render = function() {
           _c(
             "div",
             {
-              staticClass: "d-flex justify-content-end align-items-start",
+              staticClass: "d-flex justify-content-end align-items-center",
               attrs: { id: "main-menu" }
             },
             [
