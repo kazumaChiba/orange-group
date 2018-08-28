@@ -8,72 +8,69 @@
                 :class="(newsIndex == $index) ? 'active' : ''"
                 @click="newsIndex = $index"
             >
-                {{item}}
             </div>
         </div>
         <transition-group
-            name="fade" 
-            tag="div" 
-            class="news-list d-flex flex-column flex-wrap align-items-center">
-            <div 
+            name="fade"
+            tag="div"
+            class="news-list d-flex flex-column flex-wrap align-items-center">-->
+            <div
                 class="news-list d-flex justify-content-between w-100"
                 v-for="(n,$groupIndex) in viewIndex+1"
-                :key="$groupIndex"
-            >
-                <div class="block-list -beside d-flex flex-column justify-content-between">
-                    <div 
-                        class="news-item"
-                        v-for="(item,$index) in newsItems.slice(viewIndex,viewIndex+2)"
-                        :key="$index"    
-                    >
-                        <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + item.background + ')'">
-                            <router-link :to="'/'" class="btn-border">了解更多</router-link>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-info">
-                                <span class="text-black text-size-1">{{item.date}}</span>
-                                <span class="text-orange text-size-1">{{item.category}}</span>
+                :key="$groupIndex">
+                    <div class="block-list beside d-flex flex-column justify-content-between">
+                        <div
+                                class="news-item"
+                                v-for="(item,$index) in newsItems.slice(viewIndex,viewIndex+2)"
+                                :key="$index + 'a'"
+                        >
+                            <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + item.background + ')'">
+                                <router-link :to="'/'" class="btn-border">了解更多</router-link>
                             </div>
-                            <a class="news-title" :href="item.link" v-html="item.title"></a>
+                            <div class="news-content">
+                                <div class="news-info">
+                                    <span class="text-black text-size-1">{{item.date}}</span>
+                                    <span class="text-orange text-size-1">{{item.category}}</span>
+                                </div>
+                                <a class="news-title" :href="item.link" v-html="item.title"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-list center d-flex flex-column justify-content-between">
+                        <div
+                                class="news-item d-flex flex-column h-100 w-100"
+                        >
+                            <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + newsItems[viewIndex+2].background + ')'">
+                                <router-link :to="'/'" class="btn-border">了解更多</router-link>
+                            </div>
+                            <div class="news-content">
+                                <div class="news-info">
+                                    <span class="text-black text-size-1">{{newsItems[viewIndex+2].date}}</span>
+                                    <span class="text-orange text-size-1">{{newsItems[viewIndex+2].category}}</span>
+                                </div>
+                                <a class="news-title" :href="newsItems[viewIndex+2].link" v-html="newsItems[viewIndex+2].title"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-list beside d-flex flex-column justify-content-between">
+                        <div class="news-item"
+                             v-for="(item, $index) in newsItems.slice(viewIndex + 3, viewIndex + 5)"
+                             :key="$index"
+                        >
+                            <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + item.background + ')'">
+                                <router-link :to="'/'" class="btn-border">了解更多</router-link>
+                            </div>
+                            <div class="news-content">
+                                <div class="news-info">
+                                    <span class="text-black text-size-1">{{item.date}}</span>
+                                    <span class="text-orange text-size-1">{{item.category}}</span>
+                                </div>
+                                <a class="news-title" :href="item.link" v-html="item.title"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="block-list -center d-flex flex-column justify-content-between">
-                    <div 
-                        class="news-item d-flex flex-column h-100 w-100"
-                    >
-                        <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + newsItems[viewIndex+2].background + ')'">
-                            <router-link :to="'/'" class="btn-border">了解更多</router-link>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-info">
-                                <span class="text-black text-size-1">{{newsItems[viewIndex+2].date}}</span>
-                                <span class="text-orange text-size-1">{{newsItems[viewIndex+2].category}}</span>
-                            </div>
-                            <a class="news-title" :href="newsItems[viewIndex+2].link" v-html="newsItems[viewIndex+2].title"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="block-list -beside d-flex flex-column justify-content-between">
-                    <div 
-                        class="news-item"
-                        v-for="(item,$index) in newsItems.slice(viewIndex+3,viewIndex+5)"
-                        :key="$index"    
-                    >
-                        <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + item.background + ')'">
-                            <router-link :to="'/'" class="btn-border">了解更多</router-link>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-info">
-                                <span class="text-black text-size-1">{{item.date}}</span>
-                                <span class="text-orange text-size-1">{{item.category}}</span>
-                            </div>
-                            <a class="news-title" :href="item.link" v-html="item.title"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </transition-group>
+            </transition-group>
     </div>
 </template>
 
@@ -175,7 +172,11 @@ export default {
 </script>
 
 <style lang="sass">
+
 #block-news
+    height: 100vh
+    .fp-tableCell
+        height: auto !important
     >div
         z-index: 3
         position: relative
@@ -183,6 +184,6 @@ export default {
         transition: all .5s
         .block-list
             width: 20%
-            &.-center
+            &.center
                 width: 50%
 </style>

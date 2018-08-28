@@ -1,25 +1,18 @@
 const routes = [
     {
         path: '/',
-        redirect: '/',
-        component: resolve => require(['pages/layout/Landing.vue'], resolve),
-        children: [
-            {
-                path: '/',
-                name: '首頁',
-                component: resolve => require(['pages/Home.vue'], resolve),
-            }
-        ]
-    },
-    {
-        path: '/about',
-        component: resolve => require(['pages/layout/Landing.vue'], resolve),
+	    component: resolve => require(['pages/layout/Landing.vue'], resolve),
         children: [
             {
                 path: '',
-                name: '關於橘色',
-                component: resolve => require(['pages/About.vue'], resolve),
-            }
+                name: '首頁',
+                component: resolve => require(['pages/Home.vue'], resolve),
+            },
+	        {
+		        path: 'about',
+		        name: '關於橘色',
+		        component: resolve => require(['pages/About.vue'], resolve),
+	        }
         ]
     },
     {

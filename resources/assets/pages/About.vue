@@ -389,9 +389,9 @@ export default {
             .service-right
                 top: -80px
                 .service-item
-                    &.-top
+                    &.top
                         height: 350px
-                    &.-bottom
+                    &.bottom
                         height: 480px
                         width: 90%
     #block-about-year

@@ -2,42 +2,42 @@
     <div id="block-foods" class="section text-white position-relative" :style="'background-image:url('+foodItems[food_index_old].url+')'">
         <div class="block-food-body d-flex bg-black-filter">
             <div class="bg-transition bg-left">
-                <div class="bg-inner" 
-                    :style="'background-image:url('+foodItems[food_index].url+')'"
-                    :class="{'active' : bgTransition}"
-                ></div>
+                 <div class="bg-inner"
+                     :style="'background-image:url('+foodItems[food_index].url+')'"
+                     :class="{active : bgTransition}"
+                 ></div>
+             </div>
+            <div class="content-food left-content d-flex flex-column justify-content-between position-relative m-auto">
+                <div class="mb-5" :class="{fade: addTransition}">
+                     <p class="line-top text-size-2" v-html="foodItems[food_index].subTitle"></p>
+                     <h1 class="big_title">{{foodItems[food_index].title}}</h1>
+                 </div>
+                 <div class="align-self-end mt-5">
+                     <p class="text-size-2">探索更多橘色價值</p>
+                     <div
+                         v-for="(item , $index) in foodItems"
+                         :key="$index" class="more-food-info"
+                         @click="food_index = $index;  bgAnimated(100); startAnimate(500)"
+                         :class="food_index == $index ? 'active' : ''"
+                         :style="'background-image:url('+item.url+')'"
+                     ></div>
+                 </div>
             </div>
-            <div class="content-food -left d-flex flex-column justify-content-between position-relative m-auto">
-                <div class="mb-5" :class="{'fade' : addTransition}">
-                    <p class="line-top text-size-2" v-html="foodItems[food_index].subTitle"></p>
-                    <h1 class="big_title">{{foodItems[food_index].title}}</h1>
-                </div>
-                <div class="align-self-end mt-5">
-                    <p class="text-size-2">探索更多橘色價值</p>
-                    <div 
-                        v-for="(item , $index) in foodItems" 
-                        :key="$index" class="more-food-info" 
-                        @click="food_index = $index;  bgAnimated(100); startAnimate('500')" 
-                        :class="food_index == $index ? 'active' : ''"
-                        :style="'background-image:url('+item.url+')'"
-                    ></div>
-                </div>
-            </div>
-            <div class="content-food -right d-flex flex-column justify-content-center position-relative">
-                <svg class="loader" :class="{'active' : addTransition}">
+            <div class="content-food right-content d-flex flex-column justify-content-center position-relative">
+                <svg class="loader" :class="{active : addTransition}">
                     <circle class="internal-circle" cx="30%" cy="55%" r="450"></circle>
                 </svg>
                 <h3 class="main-title text-black text-uppercase"><span class="fs-inherit text-orange">橘色 </span>價值<br><span class="sub-title">about value</span></h3>
                 <div class="food-info-circle"></div>
                 <div class="food-info-inner d-flex flex-column justify-content-center p-5">
-                    <div :class="{'fade' : addTransition}" v-html="foodItems[food_index].content"></div>
+                    <div :class="{fade : addTransition}" v-html="foodItems[food_index].content"></div>
                 </div>
             </div>
-        </div>
+         </div>
     </div>
 </template>
 <script>
-export default {
+	export default {
         data: function () {
             return {
                 bgTransition: false,
@@ -45,33 +45,33 @@ export default {
                 foodItems: [
                     {
                         subTitle: '頂級食材源自產地與挑選<br>只願意提供最美好的食材給每位客戶',
-                        title: '頂級食材1',
+                        title: '頂級食材',
                         url: '/images/bg_food_1.png',
                         content: '<p class="text-size-2 mb-2">橘色美食背後的秘密</p><h4 class="text-food-title mb-4">食材的<span class="text-black">秘密</span></h4><p class="text-food-info">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>'
                     },
                     {
                         subTitle: '頂級食材源自產地與挑選<br>只願意提供最美好的食材給每位客戶',
-                        title: '頂級食材2',
+                        title: '頂級食材',
                         url: '/images/bg_brand_1.png',
                         content: '<p class="text-size-2 mb-2">橘色美食背後的秘密</p><h4 class="text-food-title mb-4">食材的<span class="text-black">秘密</span></h4><p class="text-food-info">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>'
                     },
                     {
                         subTitle: '頂級食材源自產地與挑選<br>只願意提供最美好的食材給每位客戶',
-                        title: '頂級食材3',
+                        title: '頂級食材',
                         url: '/images/slideshow_1.jpg',
                         content: '<p class="text-size-2 mb-2">橘色美食背後的秘密</p><h4 class="text-food-title mb-4">食材的<span class="text-black">秘密</span></h4><p class="text-food-info">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>'
                     },
                 ],
                 food_index: 0,
-                food_index_old: 0, 
-                
+                food_index_old: 0,
+
             }
         },
         methods: {
             bgAnimated(time){
                 this.bgTransition = true;
-                setTimeout(()=>{ 
-                    this.bgTransition = false; 
+                setTimeout(()=>{
+                    this.bgTransition = false;
                 }, parseInt(time));
                 setTimeout(()=>{
                     this.food_index_old = this.food_index;
@@ -84,22 +84,22 @@ export default {
                 },parseInt(time));
             },
         }
-}
+    }
 </script>
-
-<style lang="sass">
+<style lang="sass" rel="stylesheet/sass">
     #block-foods
         background-size: cover
         background-position: 0
         &.active
             .block-food-body
-                .content-food.-left , .content-food.-right
-                    transition-delay: .3s
-                    transform: translateY(0)
-                    opacity: 1
+                .content-food
+                    &.left-content, &.right-content
+                        transition-delay: .3s
+                        transform: translateY(0)
+                        opacity: 1
                 .bg-left
                     .bg-inner
-                        transition-delay: .3s   
+                        transition-delay: .3s
                         background-position-y: center
         .line-top
             &:before
@@ -150,19 +150,19 @@ export default {
                         opacity: 0.8
                         box-shadow: 0 0 15px rgba(255, 255, 255, 0.21)
                         transition: all .3s
-                >div
+                > div
                     position: relative
-                    z-index: 2   
-                &.-left , &.-right
-                    transition: all 1s
+                    z-index: 2
+                &.left-content, &.right-content
+                    transition: transform 1s, opacity 1s
                     opacity: 0
-                &.-left
+                &.left-content
                     background: transparent
-                    transform: translateY(100%)
+                    //transform: translateY(100%)
                     padding: 100px
                     .line-top
                         line-height: 25px
-                &.-right
+                &.right-content
                     background: white
                     z-index: 2   
                     transform: translateY(-100%)
@@ -187,7 +187,7 @@ export default {
                         width: 500px
                         background: #f26d23
                         border-radius: 100%
-                        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3)
+                        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3)
                         transition: all .5s
                         .text-food-info
                             font-weight: 300
