@@ -20,9 +20,15 @@ import router from './router'
 
 // Fullpage : https://github.com/alvarotrigo/fullPage.js/
 import Vue from 'vue'
-import VueFullPage from 'vue-fullpage.js' 
-require('fullpage.js/vendors/scrolloverflow.min.js')
 
+//https://www.npmjs.com/package/vue2-scrollbar
+
+
+//
+//import VueFullPage from 'vue-fullpage.js'
+//import VueFullPageScrolOverflow from 'fullpage.js/vendors/scrolloverflow.js'
+//require('fullpage.js/vendors/scrolloverflow.min.js')
+//
 // FontAwesome : https://github.com/FortAwesome/vue-fontawesome#usage
 import fontawesome from '@fortawesome/fontawesome';
 import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
@@ -62,8 +68,7 @@ fontawesome.library.add(fabLinkedinIn);
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 
-Vue.use(VueFullPage);
-
+//Vue.use(VueFullPage);
 Vue.use(ElementUI);
 
 const app = new Vue({

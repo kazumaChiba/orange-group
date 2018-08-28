@@ -1,7 +1,7 @@
 <template>
     <div class="menu-outer d-flex justify-content-end">
         <div class="menu-list">
-            <router-link :to="'/'" class="menu-title">橘色體驗</router-link>
+            <router-link :to="'/'" exact class="menu-title">橘色體驗</router-link>
             <router-link :to="'/about'" class="menu-title">關於橘色</router-link>
             <router-link :to="'/news'" class="menu-title">橘色新訊</router-link>
             <router-link :to="'/family'" class="menu-title">橘色家庭</router-link>

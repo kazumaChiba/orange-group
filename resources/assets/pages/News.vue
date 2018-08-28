@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="btn-load-more text-center">
-                <a class="btn-load-more btn-orange -fat" @click="loadMore">
+                <a class="btn-load-more btn-orange fat" @click="loadMore">
                     載入更多
                 </a>
             </div>
@@ -197,7 +197,7 @@ export default {
             margin-bottom: 80px
             #block-news-filter
                 .news-categories
-                    padding: 55px 0px
+                    padding: 55px 0
                     font-size: 14px 
                     &.-category
                         flex: 1

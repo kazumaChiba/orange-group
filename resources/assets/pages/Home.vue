@@ -12,20 +12,38 @@
         </div> 
         <span id="burger-menu" :class="sectionIndex != 0 ? 'menu-close' : ''" @click="closeMenu = !closeMenu"></span>
         <div>
-            <full-page id="fullpage" ref="fullpage" :options="options">
+            <!--<div id="fullpage">
+                <div class="section active">Some section</div>
+                <div class="section">Some section</div>
+                <div class="section"><div style="height: 150vh">Some sectionasda</div></div>
+                <div class="section">Some section</div>
+            </div>-->
+            <full-page v-if="display_fullpage" id="fullpage" ref="fullpage" :options="options">
                 <block-experience></block-experience>
                 <block-foods></block-foods>
                 <block-brands></block-brands>
                 <div id="block-news" class="section text-black position-relative text-center">
-                    <div class="container position-relative m-auto section-pd">
-                        <div class="row flex-column align-items-center justify-content-center flex-nowrap">
-                            <h3 class="main-title text-uppercase"><span class="fs-inherit text-orange">橘色</span>新訊<br><span class="sub-title">events & news</span></h3>
+
+                    <div id="block-news-scroll" style="height: 100vh; position: relative">
+                        <!--<el-scrollbar>-->
+                        <div class="container position-relative m-auto section-pd">
+                            <!--<vue-scrollbar classes="my-scrollbar" ref="Scrollbar" :onMaxScroll="handleMaxScroll" :style="{height: '100vh'}">-->
+                            <div class="row flex-column align-items-center justify-content-center flex-nowrap">
+                                <h3 class="main-title text-uppercase">
+                                    <span class="fs-inherit text-orange">橘色</span>新訊<br><span class="sub-title">events & news</span>
+                                </h3>
+
                                 <block-news></block-news>
-                                <router-link :to="'/news'" class="btn-load-more btn-orange  -fat">
+
+                                <router-link :to="'/news'" class="btn-load-more btn-orange fat">
                                     更多橘色新訊
                                 </router-link>
+                            </div>
+                            <!--</vue-scrollbar>-->
                         </div>
+                        <!--</el-scrollbar>-->
                     </div>
+
                 </div>
                 <block-footer></block-footer>
             </full-page>
@@ -41,37 +59,101 @@
     import BlockFoods from 'components/block-foods'
     import BlockFooter from 'components/block-footer'
 
+    import VueFullPage from 'vue-fullpage.js'
+    import 'fullpage.js/vendors/scrolloverflow.js'
+
+    import VueScrollbar from 'vue2-scrollbar';
+
+    import PerfectScrollbar from 'perfect-scrollbar';
+
+
     export default {
         data: function () {
+	        // https://github.com/alvarotrigo/fullPage.js/
             return {
                 options: {
-                    // https://github.com/alvarotrigo/fullPage.js/
                     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-                    scrollOverflow: true,
+	                sectionSelector: '.section',
+                    scrollOverflow: false,
                     navigation: true,
                     navigationTooltips: ['橘色體驗','橘色價值','橘色版圖','橘色新訊'],
                     afterLoad: this.afterLoad,
                     slidesNavigation: true,
                     easing: 'easeInOutCubic',
 	                easingcss3: 'ease',
+	                lazyLoading: true,
+	                resetSliders: true
                 }, 
                 sectionIndex: 0,
                 sectionPosition: 'section-1',
                 closeMenu: false,
                 textShadow: false,
+                display_fullpage: true,
+                api: undefined,
+                ps: undefined
             }
         },
-        mounted: function() {
-            jQuery(document).ready(function(){
-                
-            }) // END jquery ready
+	    mounted() {
+		    jQuery(document).ready(()=> {
+
+                const container = document.querySelector('#block-news-scroll');
+
+			    this.ps = new PerfectScrollbar(container, {
+				    wheelSpeed: 2,
+				    wheelPropagation: true,
+				    minScrollbarLength: 20
+			    });
+
+		        container.addEventListener('ps-y-reach-start', function () {
+			        fullpage_api.setAllowScrolling(true)
+			    });
+		        container.addEventListener('ps-y-reach-end', function () {
+			        fullpage_api.setAllowScrolling(true)
+			    });
+
+
+			    container.addEventListener('ps-scroll-up', function (e) {
+				    if(e.target.scrollTop == 0){
+					    fullpage_api.setAllowScrolling(true)
+                    }
+			    });
+
+
+
+			    /*jQuery('#fullpage').fullpage({
+				    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+				    sectionSelector: '.section',
+				    scrollOverflow: true,
+				    navigation: true,
+				    navigationTooltips: ['橘色體驗','橘色價值','橘色版圖','橘色新訊'],
+				    slidesNavigation: true,
+				    easing: 'easeInOutCubic',
+				    easingcss3: 'ease'
+			    });*/
+
+			    //methods
+			    //jQuery.fn.fullpage.setAllowScrolling(false);
+		    });
         },
         methods: {
             afterLoad(originSection, activeSection){
+	            //fullpage_api.setAllowScrolling(false)
+                if(this.ps){
+	                this.ps.update();
+                }
+
+                //console.log(activeSection)
+
+                if(activeSection.index == 3){
+	                fullpage_api.setAllowScrolling(false)
+                }
+
                 if(!activeSection.isFirst && !activeSection.isLast){
+	                //this.options.navigation = true
                     jQuery("#fp-nav").addClass("active");
                 }
                 else{
+	                //this.options.navigation = false
                     jQuery("#fp-nav").removeClass("active");
                 }
                 this.sectionIndex = activeSection.index;
@@ -83,17 +165,23 @@
                 else{
                     this.closeMenu = true;
                 }
+
                 if(activeSection.index == 1 || activeSection.index == 3){
                     this.textShadow = true;
                 }
                 else{
                     this.textShadow = false;
                 }
-
             },
-
+	        handleMaxScroll(direction) {
+            	console.log(direction)
+		        //fullpage_api.setAllowScrolling(true)
+		        //console.log(direction);
+	        }
         },
         components: {
+	        VueScrollbar,
+	        VueFullPage,
             MenuHeader,
             BlockExperience,
             BlockBrands,

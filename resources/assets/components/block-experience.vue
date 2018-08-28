@@ -19,14 +19,14 @@
             <h1 class="big_title">{{experience[experience_index].title}}</h1>
             <div class="experience-circle">
                 <div class="circle-body position-relative" :class="{'active' : bgTransition}">
-                    <div class="circle-line -left"></div>
-                    <div class="circle-line -right"></div>
+                    <div class="circle-line left"></div>
+                    <div class="circle-line right"></div>
                 </div>
                 <div class="circle-option position-absolute" :class="'e_index_'+experience_index">
-                    <a class="text-circle-option -left" @click="experience_view='ex'; experience_index = 0; bgAnimated(800)" :class="experience_index == 0 ? 'active' : ''">體驗</a>
-                    <a class="text-circle-option -top" @click="experience_view='pot'; experience_index = 1; bgAnimated(800)" :class="experience_index == 1 ? 'active' : ''">鍋物</a>
-                    <a class="text-circle-option -right" @click="experience_view='coffee'; experience_index = 2; bgAnimated(800)" :class="experience_index == 2 ? 'active' : ''">咖啡</a>
-                    <a class="text-circle-option -bottom" @click="experience_view='spa'; experience_index = 3; bgAnimated(800)" :class="experience_index == 3 ? 'active' : ''">舒體</a>
+                    <a class="text-circle-option left" @click="experience_view='ex'; experience_index = 0; bgAnimated(800)" :class="experience_index == 0 ? 'active' : ''">體驗</a>
+                    <a class="text-circle-option top" @click="experience_view='pot'; experience_index = 1; bgAnimated(800)" :class="experience_index == 1 ? 'active' : ''">鍋物</a>
+                    <a class="text-circle-option right" @click="experience_view='coffee'; experience_index = 2; bgAnimated(800)" :class="experience_index == 2 ? 'active' : ''">咖啡</a>
+                    <a class="text-circle-option bottom" @click="experience_view='spa'; experience_index = 3; bgAnimated(800)" :class="experience_index == 3 ? 'active' : ''">舒體</a>
                 </div>
             </div>
             <div class="experience-inner position-relative">
@@ -219,7 +219,7 @@ export default {
                     height: 500px
                     &.active
                         .circle-line
-                            &.-left
+                            &.left
                                 &:after
                                     transform: rotate(320deg)
                                     transition: all .8s
@@ -229,21 +229,21 @@ export default {
                         width: 50%
                         height: 100%
                         overflow: hidden
-                        &:before , &.-left:after
+                        &:before , &.left:after
                             content: ""
                             display: block
                             width: 200%
                             height: 100%
                             border: 28px solid rgba(242, 109, 35, 0.8)
                             border-radius: 100%
-                        &.-left
+                        &.left
                             left: 0
                             &:before , &:after
                                 border-bottom-color: transparent
                                 border-left-color: transparent
                                 transform: rotate(-40deg)
                                 clip-path: polygon(50% -18%, 100% 20%, 50% 100%, 0% 60%)
-                        &.-right
+                        &.right
                             right: 0
                             transform: rotate(180deg)
                 .circle-option
@@ -258,16 +258,16 @@ export default {
                         &:hover
                             cursor: pointer
                             color: #f26d23
-                        &.-top
+                        &.top
                             top: -50px
                             left: 50%
-                        &.-bottom
+                        &.bottom
                             bottom: -50px
                             left: 50%
-                        &.-right
+                        &.right
                             top: 50%
                             right: -50px
-                        &.-left
+                        &.left
                             top: 50%
                             left: -50px
                         a

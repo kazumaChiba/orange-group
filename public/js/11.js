@@ -1,18 +1,18 @@
 webpackJsonp([11],{
 
-/***/ 226:
+/***/ 229:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(272)
+  __webpack_require__(466)
 }
 var normalizeComponent = __webpack_require__(49)
 /* script */
-var __vue_script__ = __webpack_require__(274)
+var __vue_script__ = __webpack_require__(468)
 /* template */
-var __vue_template__ = __webpack_require__(275)
+var __vue_template__ = __webpack_require__(479)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -29,7 +29,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/pages/News.vue"
+Component.options.__file = "resources/assets/pages/Contact.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -38,9 +38,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-03657a3c", Component.options)
+    hotAPI.createRecord("data-v-20caa861", Component.options)
   } else {
-    hotAPI.reload("data-v-03657a3c", Component.options)
+    hotAPI.reload("data-v-20caa861", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -52,19 +52,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 229:
+/***/ 236:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(230)
+  __webpack_require__(237)
 }
 var normalizeComponent = __webpack_require__(49)
 /* script */
-var __vue_script__ = __webpack_require__(232)
+var __vue_script__ = __webpack_require__(239)
 /* template */
-var __vue_template__ = __webpack_require__(233)
+var __vue_template__ = __webpack_require__(240)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -104,13 +104,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 230:
+/***/ 237:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(231);
+var content = __webpack_require__(238);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -131,7 +131,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 231:
+/***/ 238:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(48)(false);
@@ -146,7 +146,7 @@ exports.push([module.i, "\n#footer .container {\n  padding: 60px 0 20px 0;\n}\n#
 
 /***/ }),
 
-/***/ 232:
+/***/ 239:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -198,7 +198,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 233:
+/***/ 240:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -233,7 +233,7 @@ var render = function() {
                 _vm._v(" "),
                 _c(
                   "router-link",
-                  { staticClass: "btn-orange -fat", attrs: { to: "/" } },
+                  { staticClass: "btn-orange fat", attrs: { to: "/" } },
                   [_vm._v("馬上加入我們")]
                 )
               ],
@@ -394,19 +394,19 @@ if (false) {
 
 /***/ }),
 
-/***/ 234:
+/***/ 245:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(235)
+  __webpack_require__(246)
 }
 var normalizeComponent = __webpack_require__(49)
 /* script */
-var __vue_script__ = __webpack_require__(237)
+var __vue_script__ = __webpack_require__(248)
 /* template */
-var __vue_template__ = __webpack_require__(238)
+var __vue_template__ = __webpack_require__(249)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -446,13 +446,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 235:
+/***/ 246:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(236);
+var content = __webpack_require__(247);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -473,7 +473,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 236:
+/***/ 247:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(48)(false);
@@ -488,7 +488,7 @@ exports.push([module.i, "\n#block-breadcrumb {\n  background-repeat: no-repeat;\
 
 /***/ }),
 
-/***/ 237:
+/***/ 248:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -546,7 +546,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 238:
+/***/ 249:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -642,23 +642,23 @@ if (false) {
 
 /***/ }),
 
-/***/ 272:
+/***/ 466:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(273);
+var content = __webpack_require__(467);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(80)("42e1514a", content, false, {});
+var update = __webpack_require__(80)("7ed73c01", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03657a3c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./News.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03657a3c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./News.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-20caa861\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Contact.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-20caa861\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Contact.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -669,7 +669,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 273:
+/***/ 467:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(48)(false);
@@ -677,24 +677,26 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#header {\n  top: 0;\n}\n#block-news {\n  margin-bottom: 180px;\n}\n#block-news #block-news-lists {\n    z-index: 2;\n    margin-bottom: 80px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories {\n      padding: 55px 0px;\n      font-size: 14px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories.-category {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date {\n        padding: 15px 20px;\n        background: #f26d23;\n        cursor: pointer;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-month {\n          margin-right: 20px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-year {\n          border-right: 1px solid white;\n}\n#block-news #block-news-items .news-item {\n    width: 25%;\n    padding: 0 16px;\n}\n#block-breadcrumb .banner-title {\n  font-size: 90px;\n  font-weight: 300;\n}\n", ""]);
+exports.push([module.i, "\n#header {\n  top: 0;\n}\n#block-contact #block-contact-brands {\n  -webkit-transform: translateY(-150px);\n          transform: translateY(-150px);\n  margin-bottom: -50px;\n}\n#block-contact #block-contact-brands .row {\n    height: 500px;\n    position: relative;\n    background: white;\n}\n#block-contact #block-contact-brands .row .contact-brands-item {\n      width: 25%;\n      -webkit-box-shadow: -10px -10px 60px rgba(0, 0, 0, 0.1);\n              box-shadow: -10px -10px 60px rgba(0, 0, 0, 0.1);\n      overflow: hidden;\n      padding: 40px;\n      position: relative;\n}\n#block-contact #block-contact-brands .row .contact-brands-item:before, #block-contact #block-contact-brands .row .contact-brands-item:after {\n        content: \"\";\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        opacity: 0;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#block-contact #block-contact-brands .row .contact-brands-item:before {\n        background-image: url(/images/bg_brand_1.png);\n        background-repeat: no-repeat;\n        background-position: center;\n        background-size: cover;\n}\n#block-contact #block-contact-brands .row .contact-brands-item:after {\n        background: #f26d23;\n}\n#block-contact #block-contact-brands .row .contact-brands-item.-intro-text {\n        width: 50%;\n}\n#block-contact #block-contact-brands .row .contact-brands-item img {\n        width: 80px;\n}\n#block-contact #block-contact-brands .row .contact-brands-item > * {\n        z-index: 2;\n}\n#block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text):hover, #block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text).active {\n        cursor: pointer;\n}\n#block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text):hover .brand-title, #block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text):hover p, #block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text).active .brand-title, #block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text).active p {\n          color: white !important;\n}\n#block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text):hover:before, #block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text).active:before {\n          opacity: 1;\n}\n#block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text):hover:after, #block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text).active:after {\n          opacity: 0.5;\n}\n#block-contact #block-contact-brands .row .brand-intro-title {\n      font-size: 38px;\n      font-weight: 500;\n      margin-bottom: 10px;\n}\n#block-contact #block-contact-brands .row .brand-intro-subtitle {\n      font-size: 22px;\n      color: gray;\n      font-weight: 500;\n}\n#block-contact #block-contact-brands .row .text-line-left {\n      margin-bottom: 20px;\n      font-weight: 500;\n}\n#block-contact #block-contact-brands .row .text-line-left:before {\n        content: \"\";\n        position: absolute;\n        width: 50%;\n        height: 1px;\n        background: #f26d23;\n        top: 50%;\n        left: calc(-50% - 20px);\n}\n#block-contact #block-contact-brands .row .brand-title {\n      font-size: 22px;\n      font-weight: 500;\n      margin-bottom: 0;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 274:
+/***/ 468:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_banner__ = __webpack_require__(234);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_banner___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_components_block_banner__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_components_block_menu_header__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_footer__ = __webpack_require__(229);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_components_block_footer__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_banner__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_banner___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_components_block_banner__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_contact_form__ = __webpack_require__(469);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_contact_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_components_contact_form__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_components_block_footer__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_components_block_footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_components_block_footer__);
 //
 //
 //
@@ -730,52 +732,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 
 
 
@@ -784,97 +741,714 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            newsItems: [{
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: '橘色涮涮屋',
-                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+            brandItems: [{
+                img: '/images/index_logo.png',
+                title: '橘色涮涮屋',
+                intro: '',
+                name: 'shabu'
             }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: '橘色涮涮屋',
-                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                img: '/images/index_logo.png',
+                title: 'EXTENSION 1 BY 橘色',
+                intro: '',
+                name: 'extension_1'
             }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: '橘色涮涮屋',
-                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                img: '/images/index_logo.png',
+                title: 'M ONE CAFE',
+                intro: '',
+                name: 'm_one_cafe'
             }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: '橘色涮涮屋',
-                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                img: '/images/index_logo.png',
+                title: 'M ONE SPA',
+                intro: '',
+                name: 'm_one_spa'
             }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: '橘色涮涮屋',
-                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                img: '/images/index_logo.png',
+                title: 'SAKURA SPA',
+                intro: '',
+                name: 'sakura_spa'
             }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: 'Extension 1 by 橘色',
-                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
-            }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: 'Extension 1 by 橘色',
-                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
-            }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: 'Extension 1 by 橘色',
-                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
-            }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: 'Extension 1 by 橘色',
-                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
-            }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: 'Extension 1 by 橘色',
-                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                img: '/images/index_logo.png',
+                title: '人力招募',
+                intro: '<p class="text-size-2 font-weight-bold">即刻加入橘色大家庭</p>',
+                name: 'join'
             }],
-            newsCategories: ['全部新訊', '橘色涮涮屋', 'Extension 1 by 橘色', 'M One Cafe', 'M One Spa', 'Sakura Spa'],
-            newsIndex: 0,
-            viewIndex: 8
+            brandName: ''
         };
     },
     components: {
-        Banner: __WEBPACK_IMPORTED_MODULE_0_components_block_banner___default.a,
-        MenuHeader: __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header___default.a,
-        BlockFooter: __WEBPACK_IMPORTED_MODULE_2_components_block_footer___default.a
+        MenuHeader: __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header___default.a,
+        Banner: __WEBPACK_IMPORTED_MODULE_1_components_block_banner___default.a,
+        ContactForm: __WEBPACK_IMPORTED_MODULE_2_components_contact_form___default.a,
+        BlockFooter: __WEBPACK_IMPORTED_MODULE_3_components_block_footer___default.a
+    }
+});
+
+/***/ }),
+
+/***/ 469:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(470)
+}
+var normalizeComponent = __webpack_require__(49)
+/* script */
+var __vue_script__ = __webpack_require__(472)
+/* template */
+var __vue_template__ = __webpack_require__(478)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/components/contact-form.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7f8a4e54", Component.options)
+  } else {
+    hotAPI.reload("data-v-7f8a4e54", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 470:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(471);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(80)("3c4d6a73", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7f8a4e54\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./contact-form.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7f8a4e54\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./contact-form.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 471:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(48)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#contact-form #contact-form-body {\n  padding: 0 80px;\n}\n#contact-form #contact-form-body .field-item {\n    width: 50%;\n}\n#contact-form #contact-form-body .field-item .field-icon {\n      position: absolute;\n      top: 15px;\n}\n#contact-form #contact-form-body .field-item .field-icon.fa-paper-plane {\n        font-size: 60px;\n        color: #f26c23;\n        right: 0;\n        top: -70px;\n}\n#contact-form .contact-form-title {\n  font-size: 28px;\n}\n#contact-form .contact-form-field {\n  height: 325px;\n}\n#contact-form .contact-form-field input, #contact-form .contact-form-field textarea {\n    width: calc(100% - 15px);\n    border: none;\n    border-bottom: 1px solid #ccc;\n    padding: 10px 25px;\n    margin-bottom: 20px;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n}\n#contact-form .contact-form-field input::-webkit-input-placeholder, #contact-form .contact-form-field textarea::-webkit-input-placeholder {\n      font-size: 12px;\n}\n#contact-form .contact-form-field input:-ms-input-placeholder, #contact-form .contact-form-field textarea:-ms-input-placeholder {\n      font-size: 12px;\n}\n#contact-form .contact-form-field input::-ms-input-placeholder, #contact-form .contact-form-field textarea::-ms-input-placeholder {\n      font-size: 12px;\n}\n#contact-form .contact-form-field input::placeholder, #contact-form .contact-form-field textarea::placeholder {\n      font-size: 12px;\n}\n#contact-form .contact-form-field input:focus, #contact-form .contact-form-field textarea:focus {\n      outline: none;\n      border-bottom-color: #f26c23;\n}\n#contact-form .contact-form-field input:focus::-webkit-input-placeholder, #contact-form .contact-form-field textarea:focus::-webkit-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus:-ms-input-placeholder, #contact-form .contact-form-field textarea:focus:-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::-ms-input-placeholder, #contact-form .contact-form-field textarea:focus::-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::placeholder, #contact-form .contact-form-field textarea:focus::placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus + .field-icon, #contact-form .contact-form-field textarea:focus + .field-icon {\n        color: #f26c23;\n}\n#contact-form .contact-form-field input.btn-orange, #contact-form .contact-form-field textarea.btn-orange {\n      font-size: 14px;\n      padding: 10px 60px;\n      -webkit-box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n              box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n}\n#contact-form .contact-form-field textarea {\n    margin-left: 30px;\n    height: 100%;\n}\n#contact-form form {\n  margin-bottom: 100px;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 472:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_map__ = __webpack_require__(473);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_components_block_map__);
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        var _fields;
+
+        return {
+            fields: (_fields = {}, _defineProperty(_fields, 'shabu', {
+                title: '聯絡<span class="text-orange">橘色涮涮屋</span>',
+                subtitle: '隨時歡迎您與我們聯繫，無論是訂位餐飲或是任何其他相關問題，都可以提出詢問！'
+            }), _defineProperty(_fields, 'extension_1', {
+                title: '聯絡<span class="text-orange">Extension 1 By橘色</span>',
+                subtitle: '隨時歡迎您與我們聯繫，無論是訂位餐飲或是任何其他相關問題，都可以提出詢問！'
+            }), _fields)
+        };
     },
-    methods: {
-        loadMore: function loadMore() {
-            this.viewIndex += 4;
+    components: {
+        BlockMap: __WEBPACK_IMPORTED_MODULE_0_components_block_map___default.a
+    },
+    props: {
+        brand: {
+            type: String,
+            default: 'shabu'
         }
     }
 });
 
 /***/ }),
 
-/***/ 275:
+/***/ 473:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(474)
+}
+var normalizeComponent = __webpack_require__(49)
+/* script */
+var __vue_script__ = __webpack_require__(476)
+/* template */
+var __vue_template__ = __webpack_require__(477)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/components/block-map.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-27da9b67", Component.options)
+  } else {
+    hotAPI.reload("data-v-27da9b67", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 474:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(475);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(80)("682b8be5", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-27da9b67\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-map.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-27da9b67\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-map.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 475:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(48)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#block-map .map-list {\n  margin-bottom: 80px;\n  padding: 0 80px;\n}\n#block-map .map-list .map-item {\n    max-width: calc(100%/3);\n    padding: 20px;\n}\n#block-map .map-list .map-item .map-title {\n      font-size: 20px;\n}\n#block-map .map-list .map-item .map-address:after {\n      content: \"\";\n      display: block;\n      width: 50px;\n      height: 1px;\n      background: #f26c23;\n      margin-top: 16px;\n}\n#block-map .map-list .map-item:hover, #block-map .map-list .map-item.active {\n      -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.1);\n              box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.1);\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      cursor: pointer;\n}\n#block-map .map-iframe {\n  border: none;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 476:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            mapItems: _defineProperty({}, 'shabu', [{
+                title: '橘色涮涮屋一館',
+                address: '106台北市大安區大安路一段135號',
+                infos: '+886 2 8780 59559<br>service@group.com'
+            }, {
+                title: '橘色涮涮屋二館',
+                address: '106台北市大安區仁愛路四段29-2號',
+                infos: '+886 2 8780 59559<br>service@group.com'
+            }, {
+                title: '橘色涮涮屋新光A9旗艦',
+                address: '110台北市信義區松壽路9號5樓',
+                infos: '+886 2 8780 59559<br>service@group.com'
+            }]),
+            mapIndex: 0
+        };
+    },
+    methods: {},
+    props: {
+        brand: {
+            type: String,
+            default: 'shabu'
+        }
+    }
+});
+
+/***/ }),
+
+/***/ 477:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm.mapItems[_vm.brand]
+    ? _c("div", { attrs: { id: "block-map-body" } }, [
+        _c("div", { staticClass: "map-list container" }, [
+          _c(
+            "div",
+            { staticClass: "row d-flex justify-content-between " },
+            _vm._l(_vm.mapItems[_vm.brand], function(item, $index) {
+              return _c(
+                "div",
+                {
+                  key: $index,
+                  staticClass: "map-item",
+                  class: _vm.mapIndex == $index ? "active" : "",
+                  on: {
+                    click: function($event) {
+                      _vm.mapIndex = $index
+                    }
+                  }
+                },
+                [
+                  _c(
+                    "p",
+                    { staticClass: "map-title" },
+                    [
+                      _c("font-awesome-icon", {
+                        attrs: { icon: ["fal", "map-marker-alt"] }
+                      }),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "text-orange" }, [
+                        _vm._v(_vm._s(item.title))
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    { staticClass: "map-address font-weight-bold text-size-1" },
+                    [_vm._v(_vm._s(item.address))]
+                  ),
+                  _vm._v(" "),
+                  _c("p", {
+                    staticClass: "map-infos text-gray text-size-1",
+                    domProps: { innerHTML: _vm._s(item.infos) }
+                  })
+                ]
+              )
+            })
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "map-iframe" }, [
+          _c("iframe", {
+            staticClass: "w-100",
+            attrs: {
+              height: "450",
+              src:
+                "https://www.google.com/maps/embed/v1/search?&key=AIzaSyD-Yjh575xmaPu3O-gBx_kk4AZ1Nyx_GjI&q=" +
+                _vm.mapItems[_vm.brand][_vm.mapIndex].address
+            }
+          })
+        ])
+      ])
+    : _vm._e()
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-27da9b67", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 478:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm.fields[_vm.brand]
+      ? _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              { staticClass: "w-100", attrs: { id: "contact-form-body" } },
+              [
+                _c("p", {
+                  staticClass: "contact-form-title mb-1",
+                  domProps: { innerHTML: _vm._s(_vm.fields[_vm.brand].title) }
+                }),
+                _vm._v(" "),
+                _c("p", { staticClass: "text-size-1 font-weight-bold" }, [
+                  _vm._v(_vm._s(_vm.fields[_vm.brand].subtitle))
+                ]),
+                _vm._v(" "),
+                _c("form", [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "contact-form-field d-flex flex-column flex-wrap"
+                    },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "field-item field-user d-flex align-items-center position-relative"
+                        },
+                        [
+                          _c("input", { attrs: { placeholder: "您的姓名" } }),
+                          _vm._v(" "),
+                          _c("font-awesome-icon", {
+                            staticClass: "field-icon",
+                            attrs: { icon: ["fal", "user"] }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "field-item field-envelop d-flex align-items-center position-relative"
+                        },
+                        [
+                          _c("input", {
+                            attrs: { placeholder: "您的電子信箱" }
+                          }),
+                          _vm._v(" "),
+                          _c("font-awesome-icon", {
+                            staticClass: "field-icon",
+                            attrs: { icon: ["fal", "envelope"] }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "field-item field-phone d-flex align-items-center position-relative"
+                        },
+                        [
+                          _c("input", { attrs: { placeholder: "您的電話" } }),
+                          _vm._v(" "),
+                          _c("font-awesome-icon", {
+                            staticClass: "field-icon",
+                            attrs: { icon: ["fal", "phone"] }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "field-item field-location d-flex align-items-center position-relative"
+                        },
+                        [
+                          _c("input", {
+                            attrs: { placeholder: "欲聯繫的橘色分館" }
+                          }),
+                          _vm._v(" "),
+                          _c("font-awesome-icon", {
+                            staticClass: "field-icon",
+                            attrs: { icon: ["fal", "map-marker"] }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "field-item field-question d-flex align-items-center position-relative"
+                        },
+                        [
+                          _c("input", {
+                            attrs: { placeholder: "欲詢問的問題類型" }
+                          }),
+                          _vm._v(" "),
+                          _c("font-awesome-icon", {
+                            staticClass: "field-icon",
+                            attrs: { icon: ["fal", "question-circle"] }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "field-item field-content d-flex align-items-center position-relative h-100"
+                        },
+                        [
+                          _c("textarea", {
+                            attrs: { placeholder: "您的詢問內容" }
+                          }),
+                          _vm._v(" "),
+                          _c("font-awesome-icon", {
+                            staticClass: "field-icon",
+                            attrs: { icon: ["fal", "paper-plane"] }
+                          })
+                        ],
+                        1
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _vm._m(0)
+                ])
+              ]
+            )
+          ])
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _c(
+      "div",
+      { attrs: { id: "block-map" } },
+      [_c("block-map", { attrs: { brand: _vm.brand } })],
+      1
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mt-4 clearfix" }, [
+      _c(
+        "span",
+        { staticClass: "text-size-1 float-left text-gray w-50 pr-4" },
+        [
+          _vm._v(
+            "您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝"
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c("input", {
+        staticClass: "btn-orange d-inline-block float-right",
+        attrs: { type: "submit", value: "發送訊息" }
+      })
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-7f8a4e54", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 479:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -883,11 +1457,11 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "position-relative" },
+    { attrs: { id: "block-contact" } },
     [
       _c("banner", {
         attrs: {
-          title: "<span class='text-orange'>橘色</span>新訊",
+          title: "聯絡<span class='text-orange'>我們</span>",
           img: "/images/slideshow_1.jpg"
         }
       }),
@@ -895,238 +1469,62 @@ var render = function() {
       _c(
         "div",
         {
-          staticClass: "news-body position-relative",
-          attrs: { id: "block-news" }
+          staticClass: "position-relative",
+          attrs: { id: "block-contact-brands" }
         },
         [
-          _c(
-            "div",
-            {
-              staticClass: "position-relative",
-              attrs: { id: "block-news-lists" }
-            },
-            [
-              _c("div", { attrs: { id: "block-news-filter" } }, [
-                _c("div", { staticClass: "container" }, [
-                  _c("div", { staticClass: "row" }, [
-                    _c(
-                      "div",
-                      { staticClass: "news-categories -category d-flex" },
-                      _vm._l(_vm.newsCategories, function(item, $index) {
-                        return _c(
-                          "div",
-                          {
-                            key: $index,
-                            staticClass:
-                              "category-items mr-4 ml-4 d-flex align-items-center",
-                            class: _vm.newsIndex == $index ? "active" : "",
-                            attrs: { id: "category-items" },
-                            on: {
-                              click: function($event) {
-                                _vm.newsIndex = $index
-                              }
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "\n                                " +
-                                _vm._s(item) +
-                                "\n                            "
-                            )
-                          ]
-                        )
-                      })
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "news-categories -date" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "d-flex",
-                          attrs: { id: "category-date" }
-                        },
-                        [
-                          _c(
-                            "div",
-                            { staticClass: "filter-date -year" },
-                            [
-                              _c(
-                                "el-dropdown",
-                                {
-                                  staticClass: "text-white",
-                                  attrs: { trigger: "click" }
-                                },
-                                [
-                                  _c(
-                                    "span",
-                                    { staticClass: "el-dropdown-link" },
-                                    [
-                                      _vm._v(
-                                        "\n                                            2018"
-                                      ),
-                                      _c("i", {
-                                        staticClass:
-                                          "el-icon-arrow-down el-icon--right"
-                                      })
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "el-dropdown-menu",
-                                    {
-                                      attrs: { slot: "dropdown" },
-                                      slot: "dropdown"
-                                    },
-                                    [_c("el-dropdown-item", [_vm._v("年")])],
-                                    1
-                                  )
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "filter-date -month" },
-                            [
-                              _c(
-                                "el-dropdown",
-                                {
-                                  staticClass: "text-white",
-                                  attrs: { trigger: "click" }
-                                },
-                                [
-                                  _c(
-                                    "span",
-                                    { staticClass: "el-dropdown-link" },
-                                    [
-                                      _vm._v(
-                                        "\n                                            9月"
-                                      ),
-                                      _c("i", {
-                                        staticClass:
-                                          "el-icon-arrow-down el-icon--right"
-                                      })
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "el-dropdown-menu",
-                                    {
-                                      attrs: { slot: "dropdown" },
-                                      slot: "dropdown"
-                                    },
-                                    [_c("el-dropdown-item", [_vm._v("月")])],
-                                    1
-                                  )
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          )
-                        ]
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "news-list", attrs: { id: "block-news-items" } },
-                [
-                  _c("div", { staticClass: "container" }, [
-                    _c(
-                      "div",
-                      { staticClass: "row" },
-                      _vm._l(_vm.newsItems.slice(0, _vm.viewIndex), function(
-                        item,
-                        $index
-                      ) {
-                        return item.category ==
-                          _vm.newsCategories[_vm.newsIndex] ||
-                          _vm.newsIndex == 0
-                          ? _c(
-                              "div",
-                              { key: $index, staticClass: "news-item" },
-                              [
-                                _c(
-                                  "div",
-                                  {
-                                    staticClass:
-                                      "news-head d-flex align-items-center justify-content-center position-relative",
-                                    style:
-                                      "background: url(" + item.background + ")"
-                                  },
-                                  [
-                                    _c(
-                                      "router-link",
-                                      {
-                                        staticClass: "btn-border",
-                                        attrs: { to: "/news/detail" }
-                                      },
-                                      [_vm._v("了解更多")]
-                                    )
-                                  ],
-                                  1
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "news-content text-center" },
-                                  [
-                                    _c("div", [
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "text-black text-size-1"
-                                        },
-                                        [_vm._v(_vm._s(item.date))]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "text-orange text-size-1"
-                                        },
-                                        [_vm._v(_vm._s(item.category))]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("a", {
-                                      staticClass: "news-title",
-                                      attrs: { href: item.link },
-                                      domProps: {
-                                        innerHTML: _vm._s(item.title)
-                                      }
-                                    })
-                                  ]
-                                )
-                              ]
-                            )
-                          : _vm._e()
-                      })
-                    )
-                  ])
-                ]
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "btn-load-more text-center" }, [
+          _c("div", { staticClass: "container" }, [
             _c(
-              "a",
-              {
-                staticClass: "btn-load-more btn-orange -fat",
-                on: { click: _vm.loadMore }
-              },
-              [_vm._v("\n                載入更多\n            ")]
+              "div",
+              { staticClass: "row" },
+              [
+                _vm._m(0),
+                _vm._v(" "),
+                _vm._l(_vm.brandItems, function(item, $index) {
+                  return _c(
+                    "div",
+                    {
+                      key: $index,
+                      staticClass:
+                        "contact-brands-item d-flex flex-column align-items-center justify-content-center",
+                      class: _vm.brandName == item.name ? "active" : "",
+                      on: {
+                        click: function($event) {
+                          _vm.brandName = item.name
+                        }
+                      }
+                    },
+                    [
+                      _c("img", {
+                        staticClass: "position-relative mb-2",
+                        attrs: { src: item.img }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "p",
+                        {
+                          staticClass:
+                            "text-orange brand-title position-relative text-center"
+                        },
+                        [_vm._v(_vm._s(item.title))]
+                      ),
+                      _vm._v(" "),
+                      _c("div", { domProps: { innerHTML: _vm._s(item.intro) } })
+                    ]
+                  )
+                })
+              ],
+              2
             )
           ])
         ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { attrs: { id: "contact-form" } },
+        [_c("contact-form", { attrs: { brand: _vm.brandName } })],
+        1
       ),
       _vm._v(" "),
       _c("block-footer")
@@ -1134,13 +1532,48 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "contact-brands-item -intro-text d-flex justify-content-center align-items-center"
+      },
+      [
+        _c("div", [
+          _c(
+            "span",
+            {
+              staticClass:
+                "text-orange text-size-2 text-line-left d-block position-relative"
+            },
+            [_vm._v("竭誠歡迎與我們聯繫")]
+          ),
+          _vm._v(" "),
+          _c("p", { staticClass: "brand-intro-title" }, [
+            _vm._v("橘色餐飲集團")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "brand-intro-subtitle" }, [
+            _vm._v("請選擇您想聯繫的集團單位"),
+            _c("br"),
+            _vm._v("我們會儘速與您聯絡，謝謝。")
+          ])
+        ])
+      ]
+    )
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-03657a3c", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-20caa861", module.exports)
   }
 }
 

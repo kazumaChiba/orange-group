@@ -35,13 +35,13 @@
                             </div>
                         </div>
                         <div class="service-right position-relative">
-                            <div class="service-item -top d-flex position-relative justify-content-center align-items-center text-center" style="background-image:url('/images/slideshow_1.jpg');">
+                            <div class="service-item top d-flex position-relative justify-content-center align-items-center text-center" style="background-image:url('/images/slideshow_1.jpg');">
                                 <div class="service-content position-relative text-white">
                                     <p class="service-title">用心服務</p>
                                     <p class="service-desc mb-0">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>
                                 </div>
                             </div>
-                            <div class="service-item -bottom d-flex position-relative justify-content-center align-items-center text-center" style="background-image:url('/images/slideshow_1.jpg');">
+                            <div class="service-item bottom d-flex position-relative justify-content-center align-items-center text-center" style="background-image:url('/images/slideshow_1.jpg');">
                                 <div class="service-content text-white position-relative">
                                     <p class="service-title">用心服務</p>
                                     <p class="service-desc">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>
@@ -84,10 +84,10 @@
                                     v-for="(item,$index) in yearEvents[yearIndex].content"
                                     :key="$index"
                                 >
-                                    <div class="-left">
+                                    <div class="left">
                                         <p class="-month">{{item.month}}</p>
                                     </div>
-                                    <div class="-right">
+                                    <div class="right">
                                         <p class="-title">{{item.listTitle}}</p>
                                         <p class="-content">{{item.listContent}}</p>
                                     </div>
@@ -313,9 +313,9 @@ export default {
             .service-right
                 top: -80px
                 .service-item
-                    &.-top
+                    &.top
                         height: 350px
-                    &.-bottom
+                    &.bottom
                         height: 480px
                         width: 90%
 </style>
