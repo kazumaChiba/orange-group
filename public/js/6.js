@@ -6,13 +6,13 @@ webpackJsonp([6],{
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(464)
+  __webpack_require__(460)
 }
 var normalizeComponent = __webpack_require__(49)
 /* script */
-var __vue_script__ = __webpack_require__(466)
+var __vue_script__ = __webpack_require__(462)
 /* template */
-var __vue_template__ = __webpack_require__(467)
+var __vue_template__ = __webpack_require__(463)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -540,14 +540,9 @@ if (typeof window !== 'undefined') {
       __WEBPACK_IMPORTED_MODULE_1_jquery___default()(this.$el).slick('slickPrev');
     },
 
-<<<<<<< HEAD
-// module
-exports.push([module.i, "\n@charset \"UTF-8\";\n#app #header.hidden {\n  display: none;\n}\n.main-title {\n  font-size: 50px;\n  margin-bottom: 0;\n}\n.sub-title {\n  font-size: 20px;\n  letter-spacing: 10px;\n  font-family: \"PingFang SC\",微軟正黑體;\n}\n#about-tabs {\n  margin: 50px auto;\n}\n#about-tabs.position-fixed {\n    position: fixed;\n    top: 0;\n    z-index: 99999;\n    max-width: unset;\n    background: white;\n    top: 0;\n    margin-top: 0;\n}\n#about-tabs .tab {\n    color: gray;\n    font-size: 20px;\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    border-bottom: 2px solid #efefef;\n    padding: 15px 0;\n    cursor: pointer;\n}\n#about-tabs .tab.active, #about-tabs .tab:hover {\n      border-bottom: 3px solid #f26c24;\n      color: #f26c24;\n}\n#block-secret {\n  margin: 70px 0 200px 0;\n}\n#block-secret .sub-title {\n    margin-bottom: 40px;\n}\n#block-secret .about-content {\n    width: 70%;\n    margin: 0 auto;\n    line-height: 30px;\n    font-weight: 500;\n}\n#block-about-service {\n  height: 1000px;\n}\n#block-about-service .service-body {\n    height: 500px;\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n}\n#block-about-service .service-body:before {\n      content: \"\";\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      background: black;\n      opacity: 0.7;\n}\n#block-about-service .service-body .service-item {\n      padding: 80px;\n      background-size: cover;\n      background-repeat: no-repeat;\n      background-position: center;\n}\n#block-about-service .service-body .service-item .service-content {\n        opacity: 0;\n}\n#block-about-service .service-body .service-item .service-content .service-title {\n          font-size: 35px;\n          margin-bottom: 5px;\n}\n#block-about-service .service-body .service-item .service-content .service-desc {\n          line-height: 35px;\n          font-size: 20px;\n}\n#block-about-service .service-body .service-item:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: #f26c23;\n        opacity: 0;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#block-about-service .service-body .service-item:hover:before {\n        opacity: 0.9;\n}\n#block-about-service .service-body .service-item:hover .service-content {\n        opacity: 1;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#block-about-service .service-body .service-left, #block-about-service .service-body .service-right {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#block-about-service .service-body .service-left {\n      top: -80px;\n}\n#block-about-service .service-body .service-left .service-item {\n        height: 750px;\n        position: relative;\n}\n#block-about-service .service-body .service-right {\n      top: -80px;\n}\n#block-about-service .service-body .service-right .service-item.-top {\n        height: 350px;\n}\n#block-about-service .service-body .service-right .service-item.-bottom {\n        height: 480px;\n        width: 90%;\n}\n#block-about-year {\n  margin-bottom: 150px;\n}\n#block-about-year .year .slick-list {\n    height: 350px;\n}\n#block-about-year .year .year-item {\n    top: 110px;\n    padding-bottom: 35px;\n}\n#block-about-year .year .year-item.active .text-year {\n      color: #f26d22;\n}\n#block-about-year .year .year-item.active .dot-year:after {\n      -webkit-transform: scale(1);\n              transform: scale(1);\n}\n#block-about-year .year .year-item:not(.active) .dot-year:hover:after {\n      -webkit-transition: all .5s;\n      transition: all .5s;\n      -webkit-animation: yeardot 1s infinite ease-in-out;\n              animation: yeardot 1s infinite ease-in-out;\n}\n#block-about-year .year .year-item:hover {\n      color: #f26d22;\n}\n#block-about-year .year .year-item:before {\n      content: \"\";\n      background: #f26d22;\n      position: absolute;\n      width: 100%;\n      height: 2px;\n      bottom: 0;\n      left: 0;\n}\n#block-about-year .year .year-item .dot-year {\n      width: 10px;\n      height: 10px;\n      position: absolute;\n      background: #f26d22;\n      border-radius: 100%;\n      top: 58px;\n      left: calc(50% - 5px);\n      cursor: pointer;\n}\n#block-about-year .year .year-item .dot-year:before {\n        content: \"\";\n        position: absolute;\n        width: 25px;\n        height: 25px;\n        background: rgba(255, 205, 177, 0.45);\n        border-radius: 100%;\n        left: -8px;\n        top: -8px;\n}\n#block-about-year .year .year-item .dot-year:after {\n        content: \"\";\n        position: absolute;\n        border-radius: 100%;\n        width: 180px;\n        height: 180px;\n        background: rgba(255, 205, 177, 0.1);\n        left: -85px;\n        top: -85px;\n        -webkit-transform: scale(0.7);\n                transform: scale(0.7);\n}\n#block-about-year .year .slick-arrow {\n    color: transparent;\n    background: transparent;\n    border: none;\n}\n#block-about-year .year .slick-arrow:before {\n      content: \"\\279D\";\n      display: inline-block;\n      color: gray;\n      font-size: 18px;\n}\n#block-about-year .year .slick-arrow.slick-prev:before {\n      -webkit-transform: rotate(180deg);\n              transform: rotate(180deg);\n}\n#block-about-year .year .text-year {\n    font-size: 20px;\n    font-weight: 500;\n}\n#block-about-year .year-body .year-left {\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    border-right: 1px solid #fbc1a2;\n    padding-right: 50px;\n}\n#block-about-year .year-body .year-left p {\n      font-size: 20px;\n}\n#block-about-year .year-body .year-left p span {\n        font-size: 35px;\n}\n#block-about-year .year-body .year-right {\n    -webkit-box-flex: 5;\n        -ms-flex: 5;\n            flex: 5;\n    padding-left: 100px;\n}\n#block-about-year .year-body .year-month-list .year-month-item .left {\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n}\n#block-about-year .year-body .year-month-list .year-month-item .left .month {\n      font-size: 22px;\n}\n#block-about-year .year-body .year-month-list .year-month-item .right {\n    -webkit-box-flex: 6;\n        -ms-flex: 6;\n            flex: 6;\n    border-bottom: 1px solid #ececec;\n    margin-bottom: 20px;\n    padding: 0 50px;\n}\n#block-about-year .year-body .year-month-list .year-month-item .right .title {\n      font-size: 25px;\n      margin-bottom: 5px;\n}\n#block-about-year .year-body .year-month-list .year-month-item:last-child .right {\n    border-bottom: none;\n}\n#block-about-video {\n  height: 550px;\n  background-image: url(\"/images/about_create.png\");\n}\n#block-about-video:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background-image: linear-gradient(120deg, transparent 60%, white);\n}\n#block-about-video .btn-play {\n    -webkit-box-flex: 3;\n        -ms-flex: 3;\n            flex: 3;\n}\n#block-about-video .btn-play:before {\n      width: 100px;\n      height: 100px;\n      content: \"\\25B6\\FE0E\";\n      color: white;\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      background: #f36f1b;\n      border-color: #f36f1b;\n}\n#block-about-video .btn-play:hover:before {\n      background: #f55701;\n      border-color: #f55701;\n}\n#block-about-video .video-content {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n    color: white;\n}\n#block-about-video .video-content .sub-title {\n      font-size: 18px;\n      margin-bottom: 20px;\n}\n#block-about-video .video-content h3 {\n      font-size: 50px;\n}\n#block-about-video .video-content .video-desc {\n      margin-bottom: 40px;\n      padding-bottom: 40px;\n}\n#block-about-video .video-content .video-desc:after {\n        content: \"\";\n        position: absolute;\n        width: 50px;\n        height: 2px;\n        background: #f26c24;\n        left: 0;\n        bottom: 0;\n}\n@-webkit-keyframes yeardot {\n50% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n}\n100% {\n    -webkit-transform: scale(0.7);\n            transform: scale(0.7);\n}\n}\n@keyframes yeardot {\n50% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n}\n100% {\n    -webkit-transform: scale(0.7);\n            transform: scale(0.7);\n}\n}\n", ""]);
-=======
     pause: function pause() {
       __WEBPACK_IMPORTED_MODULE_1_jquery___default()(this.$el).slick('slickPause');
     },
->>>>>>> c41e0d8c1df8955ce36503b0d9e4c1c7ba5e2ed4
 
     play: function play() {
       __WEBPACK_IMPORTED_MODULE_1_jquery___default()(this.$el).slick('slickPlay');
@@ -3681,13 +3676,13 @@ if (false) {
 
 /***/ }),
 
-/***/ 464:
+/***/ 460:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(465);
+var content = __webpack_require__(461);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -3708,7 +3703,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 465:
+/***/ 461:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(48)(false);
@@ -3717,14 +3712,14 @@ exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slic
 exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css);", ""]);
 
 // module
-exports.push([module.i, "\n@charset \"UTF-8\";\n#block-family .slideshow:before, #block-family .slideshow:after {\n  content: \"\";\n  position: absolute;\n  border-radius: 100%;\n}\n#block-family .slideshow:before {\n  background: #f36f1b;\n  width: 120vw;\n  height: 65vw;\n  bottom: 0vw;\n  right: -20vw;\n  z-index: 1;\n}\n#block-family .slideshow:after {\n  width: 120vw;\n  height: 74vw;\n  background: #ffaa85;\n  left: -13vw;\n  top: -19vh;\n  z-index: 0;\n}\n#block-family .slideshow .slick-list {\n  overflow: visible;\n  overflow-x: hidden;\n  z-index: 2;\n}\n#block-family .slideshow .slick-next, #block-family .slideshow .slick-prev {\n  z-index: 2;\n  color: white;\n  font-size: 12px;\n  letter-spacing: 2px;\n  width: auto;\n  padding: 15px 20px;\n  -webkit-transition: all .3s;\n  transition: all .3s;\n  text-transform: uppercase;\n  font-family: \"PingFang SC\",微軟正黑體;\n  font-weight: 300;\n}\n#block-family .slideshow .slick-next:hover, #block-family .slideshow .slick-prev:hover {\n    background: white;\n    color: #f36e1b;\n    font-weight: 500;\n}\n#block-family .slideshow .slick-next:before, #block-family .slideshow .slick-prev:before {\n    content: none;\n}\n#block-family .slideshow .slick-prev {\n  left: 20px;\n}\n#block-family .slideshow .slick-next {\n  right: 20px;\n}\n#block-family .slideshow .slick-slide {\n  position: relative;\n  overflow: hidden;\n}\n#block-family .slideshow .slick-slide .slider {\n    height: 110vh;\n    -webkit-clip-path: circle(150vh at 54vw -42vh);\n            clip-path: circle(150vh at 54vw -42vh);\n}\n#block-family .slideshow .slick-slide .slider p {\n      z-index: 2;\n}\n#block-family .slideshow .slick-slide .slider .slide-title {\n      font-size: 110px;\n      font-weight: 600;\n}\n#block-family .slideshow .slick-slide .slider .slide-subtitle {\n      font-size: 42px;\n      font-weight: 500;\n}\n#block-family .slideshow .slick-slide .slider .slide-text {\n      font-size: 18px;\n      bottom: 18vh;\n}\n#block-family .slideshow .slick-slide .slider .slide-text:before, #block-family .slideshow .slick-slide .slider .slide-text:after {\n        content: \"\";\n        position: absolute;\n        width: 2px;\n        height: calc(20vh + 30px);\n        background: white;\n        left: 50%;\n        top: 50px;\n}\n#block-family .slideshow .slick-slide .slider .slide-text:before {\n        opacity: 0.6;\n}\n#block-family .slideshow .slick-slide .slider .slide-text:after {\n        height: 30px;\n        -webkit-animation: scrolling 1.5s infinite ease-in-out;\n                animation: scrolling 1.5s infinite ease-in-out;\n}\n#block-family .slideshow .slick-slide .slider:before {\n      content: \"\";\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      background: rgba(56, 26, 2, 0.16);\n}\n@-webkit-keyframes scrolling {\n100% {\n    top: calc(10vh + 30px);\n}\n}\n@keyframes scrolling {\n100% {\n    top: calc(10vh + 30px);\n}\n}\n#block-family #family-intro .family-title {\n  font-size: 45px;\n  padding-right: 10vw;\n  line-height: 67px;\n  position: relative;\n  margin-top: 80px;\n  padding-right: 80px;\n}\n#block-family #family-intro .family-title:before {\n    content: \"\";\n    position: absolute;\n    width: 1.6px;\n    height: 50px;\n    background: #f26e22;\n    top: 14px;\n    right: 65px;\n}\n#block-family #family-intro .family-step-list .family-step {\n  margin-bottom: 270px;\n}\n#block-family #family-intro .family-step-list .family-step .left {\n    -webkit-box-flex: 6;\n        -ms-flex: 6;\n            flex: 6;\n}\n#block-family #family-intro .family-step-list .family-step .left img {\n      -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);\n              box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);\n}\n#block-family #family-intro .family-step-list .family-step .right {\n    -webkit-box-flex: 3;\n        -ms-flex: 3;\n            flex: 3;\n}\n#block-family #family-intro .family-step-list .family-step:nth-child(2n) {\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: reverse;\n        -ms-flex-direction: row-reverse;\n            flex-direction: row-reverse;\n}\n#block-family #family-intro .family-step-list .family-step .big_title, #block-family #family-intro .family-step-list .family-step .step-title, #block-family #family-intro .family-step-list .family-step .subtitle, #block-family #family-intro .family-step-list .family-step .desc {\n    font-weight: 500;\n    width: 60%;\n}\n#block-family #family-intro .family-step-list .family-step .big_title {\n    opacity: 0.5;\n    font-size: 220px;\n    top: -180px;\n    left: 80px;\n}\n#block-family #family-intro .family-step-list .family-step .step-title {\n    font-size: 35px;\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    margin-bottom: 25px;\n    padding-right: 45px;\n    border-right: 1px solid;\n    line-height: 45px;\n}\n#block-family #family-intro .family-step-list .family-step .subtitle {\n    font-size: 23px;\n    margin-bottom: 40px;\n}\n#block-family #family-intro .family-step-list .family-step .desc {\n    color: gray;\n}\n#block-family #teams-say .teams-content {\n  padding: 200px 300px;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n#block-family #teams-say .teams-content .team-content-texts {\n    width: 60%;\n}\n#block-family #teams-say .teams-content:before {\n    content: \"\";\n    position: absolute;\n    background: rgba(0, 0, 0, 0.3);\n    width: 100%;\n    height: 100%;\n    left: 0;\n    top: 0;\n}\n#block-family #teams-say .teams-content:after {\n    content: \"Q\";\n    font-size: 430px;\n    position: absolute;\n    top: -10px;\n    left: 180px;\n    opacity: 0.4;\n}\n#block-family #teams-say .teams-content h3 {\n    margin-bottom: 50px;\n    font-size: 40px;\n}\n#block-family #teams-say .teams-content .team-desc {\n    line-height: 40px;\n    font-size: 18px;\n    margin-bottom: 30px;\n    padding-left: 100px;\n}\n#block-family #teams-say .teams-content .team-desc:before {\n      content: '\\201C';\n      font-size: 150px;\n      position: absolute;\n      left: auto;\n      top: 20px;\n      color: #f26d22;\n      -webkit-transform: rotate(180deg);\n              transform: rotate(180deg);\n      -webkit-transform-origin: 0 0;\n              transform-origin: 0 0;\n}\n#block-family #teams-say .teams-content .team-name {\n    font-size: 20px;\n}\n#block-family #teams-say .teams .team-item {\n  height: 25vw;\n  cursor: pointer;\n  -webkit-box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.15);\n          box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.15);\n}\n#block-family #teams-say .teams .team-item:nth-child(1) {\n    z-index: 3;\n}\n#block-family #teams-say .teams .team-item:nth-child(2) {\n    z-index: 2;\n}\n#block-family #teams-say .teams .team-item:nth-child(3) {\n    z-index: 1;\n}\n#block-family #teams-say .teams .team-item:nth-child(4) {\n    z-index: 0;\n}\n#block-family #teams-say .teams .team-item .team-title {\n    font-size: 35px;\n    color: #f26c24;\n    z-index: 1;\n}\n#block-family #teams-say .teams .team-item:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: white;\n}\n#block-family #teams-say .teams .team-item:hover .team-title {\n    color: white;\n}\n#block-family #teams-say .teams .team-item:hover:before {\n    background: rgba(242, 108, 36, 0.85);\n    -webkit-transition: all .5s;\n    transition: all .5s;\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\n#block-family .fadein {\n  top: 0 !important;\n  opacity: 1 !important;\n  -webkit-transition: all .5s ease-out;\n  transition: all .5s ease-out;\n}\n#block-family .slideshow:before, #block-family .slideshow:after {\n  content: \"\";\n  position: absolute;\n  border-radius: 100%;\n}\n#block-family .slideshow:before {\n  background: #f36f1b;\n  width: 120vw;\n  height: 65vw;\n  bottom: 0vw;\n  right: -20vw;\n  z-index: 1;\n}\n#block-family .slideshow:after {\n  width: 120vw;\n  height: 74vw;\n  background: #ffaa85;\n  left: -13vw;\n  top: -19vh;\n  z-index: 0;\n}\n#block-family .slideshow .slick-list {\n  overflow: visible;\n  overflow-x: hidden;\n  z-index: 2;\n}\n#block-family .slideshow .slick-next, #block-family .slideshow .slick-prev {\n  z-index: 3;\n  color: white;\n  font-size: 12px;\n  letter-spacing: 2px;\n  width: auto;\n  padding: 15px 20px;\n  -webkit-transition: all .3s;\n  transition: all .3s;\n  text-transform: uppercase;\n  font-family: \"PingFang SC\",微軟正黑體;\n  font-weight: 300;\n}\n#block-family .slideshow .slick-next:hover, #block-family .slideshow .slick-prev:hover {\n    background: white;\n    color: #f36e1b;\n    font-weight: 500;\n}\n#block-family .slideshow .slick-next:before, #block-family .slideshow .slick-prev:before {\n    content: none;\n}\n#block-family .slideshow .slick-prev {\n  left: 20px;\n}\n#block-family .slideshow .slick-next {\n  right: 20px;\n}\n#block-family .slideshow .slick-slide {\n  position: relative;\n  overflow: hidden;\n}\n#block-family .slideshow .slick-slide .slider {\n    height: 110vh;\n    -webkit-clip-path: circle(150vh at 54vw -42vh);\n            clip-path: circle(150vh at 54vw -42vh);\n}\n#block-family .slideshow .slick-slide .slider p {\n      z-index: 2;\n}\n#block-family .slideshow .slick-slide .slider .slide-title {\n      font-size: 110px;\n      font-weight: 600;\n}\n#block-family .slideshow .slick-slide .slider .slide-subtitle {\n      font-size: 42px;\n      font-weight: 500;\n}\n#block-family .slideshow .slick-slide .slider .slide-text {\n      font-size: 18px;\n      bottom: 18vh;\n}\n#block-family .slideshow .slick-slide .slider .slide-text:before, #block-family .slideshow .slick-slide .slider .slide-text:after {\n        content: \"\";\n        position: absolute;\n        width: 2px;\n        height: calc(20vh + 30px);\n        background: white;\n        left: 50%;\n        top: 50px;\n}\n#block-family .slideshow .slick-slide .slider .slide-text:before {\n        opacity: 0.6;\n}\n#block-family .slideshow .slick-slide .slider .slide-text:after {\n        height: 30px;\n        -webkit-animation: scrolling 1.5s infinite ease-in-out;\n                animation: scrolling 1.5s infinite ease-in-out;\n}\n#block-family .slideshow .slick-slide .slider:before {\n      content: \"\";\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      background: rgba(56, 26, 2, 0.16);\n}\n@-webkit-keyframes scrolling {\n100% {\n    top: calc(10vh + 30px);\n}\n}\n@keyframes scrolling {\n100% {\n    top: calc(10vh + 30px);\n}\n}\n#block-family #family-intro .family-title {\n  font-size: 45px;\n  padding-right: 10vw;\n  line-height: 67px;\n  position: relative;\n  margin-top: 80px;\n  padding-right: 80px;\n  top: 100px;\n  opacity: 0;\n  -webkit-transition: all .5s ease-out;\n  transition: all .5s ease-out;\n}\n#block-family #family-intro .family-title:before {\n    content: \"\";\n    position: absolute;\n    width: 1.6px;\n    height: 50px;\n    background: #f26e22;\n    top: 14px;\n    right: 65px;\n}\n#block-family #family-intro .family-step-list .family-step {\n  margin-bottom: 270px;\n}\n#block-family #family-intro .family-step-list .family-step .left {\n    top: 100px;\n    -webkit-box-flex: 6;\n        -ms-flex: 6;\n            flex: 6;\n    opacity: 0;\n    -webkit-transition: all .5s ease-out;\n    transition: all .5s ease-out;\n}\n#block-family #family-intro .family-step-list .family-step .left img {\n      -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);\n              box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);\n}\n#block-family #family-intro .family-step-list .family-step .right {\n    top: 150px;\n    -webkit-box-flex: 3;\n        -ms-flex: 3;\n            flex: 3;\n    opacity: 0;\n    -webkit-transition: all .5s ease-out;\n    transition: all .5s ease-out;\n}\n#block-family #family-intro .family-step-list .family-step:nth-child(2n) {\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: reverse;\n        -ms-flex-direction: row-reverse;\n            flex-direction: row-reverse;\n}\n#block-family #family-intro .family-step-list .family-step .big_title, #block-family #family-intro .family-step-list .family-step .step-title, #block-family #family-intro .family-step-list .family-step .subtitle, #block-family #family-intro .family-step-list .family-step .desc {\n    font-weight: 500;\n    width: 60%;\n}\n#block-family #family-intro .family-step-list .family-step .big_title {\n    opacity: 0.5;\n    font-size: 220px;\n    top: -180px;\n    left: 80px;\n}\n#block-family #family-intro .family-step-list .family-step .step-title {\n    font-size: 35px;\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    margin-bottom: 25px;\n    padding-right: 45px;\n    border-right: 1px solid;\n    line-height: 45px;\n}\n#block-family #family-intro .family-step-list .family-step .subtitle {\n    font-size: 23px;\n    margin-bottom: 40px;\n}\n#block-family #family-intro .family-step-list .family-step .desc {\n    color: gray;\n}\n#block-family #teams-say .teams-content {\n  padding: 200px 300px;\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n}\n#block-family #teams-say .teams-content .team-content-texts {\n    width: 60%;\n}\n#block-family #teams-say .teams-content:before {\n    content: \"\";\n    position: absolute;\n    background: rgba(0, 0, 0, 0.3);\n    width: 100%;\n    height: 100%;\n    left: 0;\n    top: 0;\n}\n#block-family #teams-say .teams-content:after {\n    content: \"Q\";\n    font-size: 430px;\n    position: absolute;\n    top: -10px;\n    left: 180px;\n    opacity: 0.4;\n}\n#block-family #teams-say .teams-content h3 {\n    margin-bottom: 50px;\n    font-size: 40px;\n}\n#block-family #teams-say .teams-content .team-desc {\n    line-height: 40px;\n    font-size: 18px;\n    margin-bottom: 30px;\n    padding-left: 100px;\n}\n#block-family #teams-say .teams-content .team-desc:before {\n      content: '\\201C';\n      font-size: 150px;\n      position: absolute;\n      left: auto;\n      top: 20px;\n      color: #f26d22;\n      -webkit-transform: rotate(180deg);\n              transform: rotate(180deg);\n      -webkit-transform-origin: 0 0;\n              transform-origin: 0 0;\n}\n#block-family #teams-say .teams-content .team-name {\n    font-size: 20px;\n}\n#block-family #teams-say .teams .team-item {\n  height: 25vw;\n  cursor: pointer;\n  -webkit-box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.15);\n          box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.15);\n}\n#block-family #teams-say .teams .team-item:nth-child(1) {\n    z-index: 3;\n}\n#block-family #teams-say .teams .team-item:nth-child(2) {\n    z-index: 2;\n}\n#block-family #teams-say .teams .team-item:nth-child(3) {\n    z-index: 1;\n}\n#block-family #teams-say .teams .team-item:nth-child(4) {\n    z-index: 0;\n}\n#block-family #teams-say .teams .team-item .team-title {\n    font-size: 35px;\n    color: #f26c24;\n    z-index: 1;\n}\n#block-family #teams-say .teams .team-item:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: white;\n}\n#block-family #teams-say .teams .team-item:hover .team-title {\n    color: white;\n}\n#block-family #teams-say .teams .team-item:hover:before {\n    background: rgba(242, 108, 36, 0.85);\n    -webkit-transition: all .5s;\n    transition: all .5s;\n}\n@-webkit-keyframes swichAnimate {\n100% {\n    opacity: 0;\n}\n}\n@keyframes swichAnimate {\n100% {\n    opacity: 0;\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 466:
+/***/ 462:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3735,6 +3730,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_components_block_footer__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_slick__ = __webpack_require__(268);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_slick___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue_slick__);
+//
+//
+//
+//
 //
 //
 //
@@ -3855,27 +3854,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 team: '橘色公關團隊2',
                 member: '某某某',
-                text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
-                img: '/images/family_s1.png',
-                img_big: '/images/family_b1.png'
+                text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
+                img: '/images/slideshow_1.jpg',
+                img_big: '/images/slideshow_1.jpg'
             }, {
                 team: '橘色公關團隊3',
                 member: '某某某',
                 text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
-                img: '/images/family_s1.png',
-                img_big: '/images/family_b1.png'
+                img: '/images/bg_food_1.png',
+                img_big: '/images/bg_food_1.png'
             }, {
                 team: '橘色公關團隊4',
                 member: '某某某',
                 text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
-                img: '/images/family_s1.png',
-                img_big: '/images/family_b1.png'
+                img: '/images/slideshow.png',
+                img_big: '/images/slideshow.png'
             }, {
                 team: '橘色公關團隊5',
                 member: '某某某',
                 text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
                 img: '/images/family_s1.png',
-                img_big: '/images/family_b1.png'
+                img_big: '/images/family_s1.png'
             }],
             teamIndex: 0
         };
@@ -3902,12 +3901,36 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         handleInit: function handleInit(event, slick) {
             console.log('handleInit', event, slick);
         }
+    },
+    mounted: function mounted() {
+        jQuery(document).ready(function () {
+            fadein();
+            jQuery(window).scroll(function () {
+                fadein();
+            });
+            function fadein() {
+                var nowp = jQuery(window).scrollTop();
+                if (nowp >= 200) {
+                    jQuery(".family-title").addClass("fadein");
+                } else {
+                    jQuery(".family-title").removeClass("fadein");
+                }
+                for (var i = 0; i <= 2; i++) {
+                    var nowb = jQuery("#step-" + i);
+                    if (nowp >= nowb.offset().top - 800) {
+                        nowb.find(".left , .right").addClass("fadein");
+                    } else if (nowp < nowb.offset().top + 500) {
+                        nowb.find(".left , .right").removeClass("fadein");
+                    }
+                }
+            }
+        });
     }
 });
 
 /***/ }),
 
-/***/ 467:
+/***/ 463:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -3963,7 +3986,11 @@ var render = function() {
           _vm._l(_vm.family_steps, function(item, $index) {
             return _c(
               "div",
-              { key: $index, staticClass: "family-step d-flex" },
+              {
+                key: $index,
+                staticClass: "family-step d-flex",
+                attrs: { id: "step-" + $index }
+              },
               [
                 _c("div", { staticClass: "left position-relative" }, [
                   _c(

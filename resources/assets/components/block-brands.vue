@@ -1,14 +1,38 @@
 <template>
     <div id="block-brands" class="section text-white position-relative text-center">
-        <div class="bg-transition -old bg-black-cover" :class="{'active' : addTransition}" :style="'background-image: url(' + brandBg[brandIndex_old].url + ')'"></div>
-        <div class="bg-transition -new bg-black-cover" :class="{'active' : addTransition}" :style="'background-image: url(' + brandBg[brandIndex].url + ')'"></div>
+        <div class="bg-transition -old bg-black-cover"
+             :class="{'active' : addTransition, select: brandIndex == 0}"
+             style="right: auto; left: 0"
+             :style="'background-image: url(' + brandBg[0].url + ')'">
+        </div>
+        <div class="bg-transition -new bg-black-cover"
+             :class="{'active' : addTransition, select: brandIndex == 1}"
+             style="right: 0; left: auto"
+             :style="'background-image: url(' + brandBg[1].url + ')'">
+        </div>
+        <!--<div class="bg-transition -old bg-black-cover"
+             :class="{'active' : addTransition}"
+             :style="'background-image: url(' + brandBg[brandIndex_old].url + ')'">
+
+        </div>
+        <div class="bg-transition -new bg-black-cover"
+             :class="{'active' : addTransition}"
+             :style="'background-image: url(' + brandBg[brandIndex].url + ')'">
+        </div>-->
+
         <div class="container position-relative m-auto h-100 ">
             <div class="row h-100 flex-column align-items-center justify-content-center">
-                <h3 class="main-title text-uppercase"><span class="fs-inherit text-orange">橘色</span>版圖<br><span class="sub-title">orange brands</span></h3>
+                <h3 class="main-title text-uppercase">
+                    <span class="fs-inherit text-orange">
+                        橘色</span>版圖<br>
+                    <span class="sub-title">orange brands</span>
+                </h3>
                 <div class="content-brands d-flex align-items-center justify-content-between w-100 mt-5 mb-5">
                     <span class="btn-orange"  @click="brandIndex = 0; startAnimate('500')">橘色涮涮屋</span>
                     <div class="info-brands border-radius-100 d-flex flex-column justify-content-center text-left">
-                        <p :class="{'fade' : addTransition}">{{brandBg[brandIndex].title}}</p>
+                        <p :class="{'fade' : addTransition}">
+                            {{brandBg[brandIndex].title}}
+                        </p>
                         <div class="d-flex text-size-3" :class="{'fade' : addTransition}">
                             <router-link :to="brandBg[brandIndex].contact" class="brands-link">聯絡我們</router-link>
                             <span>・</span>
@@ -25,16 +49,24 @@
 <style lang="sass">
     #app
         #block-brands
+            .bg-black-cover
+                width: 0
+                height: 100vh
+                transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1)
+                background-position: center
+                &.select
+                    transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1)
+                    width: 105vw
             .bg-transition
-                width: 100%
-                background-position-x: 0
-                transition: background-position-x .5s
+                //width: 100%
+                //background-position-x: 0
+                //transition: background-position-x .5s
                 &.-new
-                    background-position-x: -100vw
-                    opacity: 0
+                    //background-position-x: -100vw
+                    //opacity: 0
                     &.active
-                        background-position-x: 0
-                        opacity: 1
+                        //background-position-x: 0
+                        //opacity: 1
 
             .container
                 z-index: 2
@@ -70,7 +102,7 @@ export default {
                         text: '小鍋<span class="text-orange">新</span>時尚<br>不管多少人都能吃得精彩！',
                     },
                     {
-                        url: '/images/bg_food_1.png',
+                        url: '/images/slideshow_1.jpg',
                         title: 'M One Cafe',
                         contact: '/',
                         book: '/',
