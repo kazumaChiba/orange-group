@@ -133,18 +133,20 @@ html,body,#app,#block-main
         width: 100% 
         display: flex
         align-items: center
-        position: absolute
+        position: fixed
         transition: all .5s
         height: 70px
         justify-content: flex-end
         margin-top: 30px
         &.position-fixed
+            border-bottom: 2px solid #efefef
+            //box-shadow: 0 5px 10px 0 rgba(73,59,65,.15)
             background: white
             margin-top: 0
             .logo
                 position: relative
                 img
-                    height: 60px
+                    height: 50px
                     width: auto
             .menu-title 
                 color: gray

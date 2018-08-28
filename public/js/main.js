@@ -53979,7 +53979,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 }, 'mounted', function mounted() {
     jQuery(document).ready(function () {
         jQuery(window).scroll(function () {
-            if (jQuery(window).scrollTop() > 0) {
+            if (jQuery(window).scrollTop() > 150) {
                 jQuery("#header").addClass("position-fixed");
             } else {
                 jQuery("#header").removeClass("position-fixed");

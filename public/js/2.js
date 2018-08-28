@@ -1209,13 +1209,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             brandIndex_old: 0,
             brandBg: [{
                 url: '/images/bg_brand_1.png',
-                title: 'EXTENSION1 by 橘色',
+                title: 'EXTENSION by 橘色',
                 contact: '/',
                 book: '/',
                 text: '小鍋<span class="text-orange">新</span>時尚<br>不管多少人都能吃得精彩！'
             }, {
                 url: '/images/slideshow_1.jpg',
                 title: 'M One Cafe',
+                contact: '/',
+                book: '/',
+                text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！'
+            }, {
+                url: '/images/slideshow_1.jpg',
+                title: '橘色鍋物',
                 contact: '/',
                 book: '/',
                 text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！'
