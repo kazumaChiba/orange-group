@@ -160,5 +160,7 @@ export default {
                 .brand-title
                     font-size: 22px
                     font-weight: 500
-                    margin-bottom: 0                
+                    margin-bottom: 0         
+
+    
 </style>

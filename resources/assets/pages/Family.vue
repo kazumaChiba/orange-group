@@ -24,11 +24,11 @@
                     v-for="(item,$index) in family_steps"
                     :key="$index"
                 >
-                    <div class="w-50 position-relative">
+                    <div class="left position-relative">
                         <h1 class="big_title text-orange position-absolute">{{item.bigTitle}}</h1>
                         <img class="w-100" :src="item.img" />
                     </div>
-                    <div class="w-50 p-5 d-flex flex-column justify-content-center">
+                    <div class="right p-5 d-flex flex-column justify-content-center">
                         <p class="step-title text-orange">{{item.title}}</p>
                         <p class="subtitle">{{item.subtitle}}</p>
                         <p class="desc" v-html="item.desc"></p>
@@ -291,6 +291,12 @@ export default {
         .family-step-list
             .family-step
                 margin-bottom: 270px
+                .left
+                    flex: 6
+                    img
+                        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1)
+                .right
+                    flex: 3
                 &:nth-child(2n)
                     flex-direction: row-reverse
                 .big_title , .step-title , .subtitle , .desc

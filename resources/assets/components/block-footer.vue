@@ -14,15 +14,19 @@
         <div class="footer container">
             <div class="row d-flex flex-column justify-content-between">
                 <div class="footer-info position-relative d-flex justify-content-between align-items-center w-100">
-                    <div class="footer-text-left">
-                        <p class="text-orange footer-info-title mb-4">聯絡我們</p>
-                        <p>台北市大安區仁愛路四段37號3樓之B</p>
-                        <p>Email:  service@orange.co<br>Phone:  02-2711-4636<br>Fax:  02-2711-4638</p>
+                    <div class="footer-text-left text-left">
+                        <div class="d-inline-block text-center">
+                            <p class="text-orange footer-info-title mb-4">聯絡我們</p>
+                            <p>台北市大安區仁愛路四段37號3樓之B</p>
+                            <p>Email:  service@orange.co<br>Phone:  02-2711-4636<br>Fax:  02-2711-4638</p>
+                        </div>
                     </div>
                     <img class="logo" src="/images/index_logo.png">
-                    <div class="footer-text-right align-self-baseline">
-                        <p class="text-orange footer-info-title mb-4">橘色精神</p>
-                        <p class="footer-info-subtitle">用心 · 貼心 · 安心<br>信心 · 一心 · 同理心</p>
+                    <div class="footer-text-right text-right">
+                        <div class="d-inline-block text-center">
+                            <p class="text-orange footer-info-title mb-4">橘色精神</p>
+                            <p class="footer-info-subtitle">用心 · 貼心 · 安心<br>信心 · 一心 · 同理心</p>
+                        </div>
                     </div>
                 </div>
                 <div class="footer position-relative d-flex flex-column align-items-center justify-content-center w-100">
@@ -49,8 +53,8 @@ export default {
 
 <style lang="sass">
     #footer
+        height: 700px
         .container
-            padding: 60px 0 20px 0
             .join-us-slogan
                 font-size: 28px
                 font-weight: lighter
@@ -82,6 +86,8 @@ export default {
                 line-height: 25px
                 font-size: 14px
                 font-weight: 100
+                div
+                    flex: 1
                 p
                     margin-bottom: 30px
                 .footer-text-right
@@ -95,8 +101,7 @@ export default {
                     position: absolute
                     width: 100%
                     height: calc(100% + 150px)
-                    background: rgba(0, 0, 0, 0.4)
-                    z-index: -1
-                    top: -100px
+                    background: rgba(0, 0, 0, 0.8)
+                    top: 0px
 
 </style>

@@ -11,27 +11,27 @@
                         >
                             <div class="field-item field-user d-flex align-items-center position-relative">
                                 <input placeholder="您的姓名">
-                                <font-awesome-icon class="field-icon" :icon="['fal','user']" />
+                                <img src="/images/icon-user.png" class="field-icon" />
                             </div>
                             <div class="field-item field-envelop d-flex align-items-center position-relative">
                                 <input placeholder="您的電子信箱">
-                                <font-awesome-icon class="field-icon" :icon="['fal','envelope']" />
+                                <img src="/images/icon-mail.png" class="field-icon" />
                             </div>
                             <div class="field-item field-phone d-flex align-items-center position-relative">
                                 <input placeholder="您的電話">
-                                <font-awesome-icon class="field-icon" :icon="['fal','phone']" />
+                                <img src="/images/icon-phone.png" class="field-icon" />
                             </div>
                             <div class="field-item field-location d-flex align-items-center position-relative">
                                 <input placeholder="欲聯繫的橘色分館">
-                                <font-awesome-icon class="field-icon" :icon="['fal','map-marker']" />
+                                <img src="/images/icon-location.png" class="field-icon" />
                             </div>
                             <div class="field-item field-question d-flex align-items-center position-relative">
                                 <input placeholder="欲詢問的問題類型">
-                                <font-awesome-icon class="field-icon" :icon="['fal','question-circle']" />
+                                <img src="/images/icon-ask.png" class="field-icon" />
                             </div>
                             <div class="field-item field-content d-flex align-items-center position-relative h-100">
                                 <textarea placeholder="您的詢問內容"></textarea>
-                                <font-awesome-icon class="field-icon" :icon="['fal','paper-plane']" />
+                                <img src="/images/icon-plane.png" class="field-icon plane" />
                             </div>
                         </div>
                         <div class="mt-4 clearfix">
@@ -49,6 +49,12 @@
 </template>
 <style lang="sass">   
     #contact-form
+        .btn-orange
+            padding: 10px 55px
+            font-size: 14px
+            box-shadow: 5px 5px 10px rgba(242, 109, 35, 0.3)
+            &:hover
+                background: rgba(0, 0, 0, 0.85)
         #contact-form-body
             padding: 0 80px
             .field-item
@@ -56,7 +62,7 @@
                 .field-icon
                     position: absolute
                     top: 15px
-                    &.fa-paper-plane
+                    &.plane
                         font-size: 60px
                         color: #f26c23
                         right: 0
@@ -64,19 +70,20 @@
         .contact-form-title
             font-size: 28px
         .contact-form-field
-            height: 325px
+            height: 330px
             input , textarea
                 width: calc(100% - 15px)
                 border: none
                 border-bottom: 1px solid #ccc
-                padding: 10px 25px
+                padding: 10px 30px
                 margin-bottom: 20px
                 transition: all .3s
                 &::placeholder
-                    font-size: 12px
+                    font-size: 14px
                 &:focus
                     outline: none
                     border-bottom-color: #f26c23
+                    border-width: 2px
                     &::placeholder
                         color: transparent
                         transition: all .3s
@@ -88,7 +95,7 @@
                     box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3 )   
             textarea
                 margin-left: 30px
-                height: 100%
+                height: 305px
         form
             margin-bottom: 100px
                 
