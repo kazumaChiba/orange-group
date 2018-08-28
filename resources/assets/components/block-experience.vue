@@ -57,7 +57,7 @@ export default {
                         'title':'橘色咖啡'
                     },
                     {
-                        'url':'/images/bg_food_1.png',
+                        'url':'/images/bg_footer.png',
                         'title':'橘色舒體'
                     },  
                 ],
@@ -68,21 +68,21 @@ export default {
         components: {
             'ex': {
                 template: '<div>'+
-                          '<h2 class="mb-4"><span class="fs-inherit text-orange">橘色</span> 體驗</h2>'+
+                          '<h2 class="mb-4 text-center"><span class="fs-inherit text-orange">橘色</span> 體驗</h2>'+
                           '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色體驗</router-link>'+
                           '</div>'
             },
             'pot': {
                 template: '<div>'+
-                          '<h2 class="mb-4"><span class="fs-inherit text-orange">橘色</span> 鍋物</h2>'+
+                          '<h2 class="mb-4 text-center"><span class="fs-inherit text-orange">橘色</span> 鍋物</h2>'+
                           '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色鍋物</router-link>'+
                           '</div>'
             },
             'coffee': {
                 template: '<div>'+
-                          '<h3 class="mb-4"><span class="fs-inherit text-orange">橘色</span> 咖啡</h3>'+
+                          '<h2 class="mb-4 text-center"><span class="fs-inherit text-orange">橘色</span> 咖啡</h2>'+
                           '<h5 class="mb-4"><span class="fs-inheri">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色咖啡</router-link>'+
                           '</div>'
@@ -259,17 +259,17 @@ export default {
                             cursor: pointer
                             color: #f26d23
                         &.-top
-                            top: -50px
-                            left: 50%
+                            top: calc(-40px - 12px)
+                            left: calc(50% - 18px)
                         &.-bottom
-                            bottom: -50px
-                            left: 50%
+                            bottom: calc(-40px - 12px)
+                            left: calc(50% - 18px)
                         &.-right
-                            top: 50%
-                            right: -50px
+                            top: calc(50% - 18px)
+                            right: calc(-40px - 12px)
                         &.-left
-                            top: 50%
-                            left: -50px
+                            top: calc(50% - 18px)
+                            left: calc(-40px - 12px)
                         a
                             word-break: keep-all
                         &.active

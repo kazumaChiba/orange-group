@@ -257,7 +257,7 @@ export default {
                 jQuery(this).addClass("active");
                 jQuery("html,body").animate({
                     scrollTop: jQuery(target).offset().top - 100
-                },300);
+                }, 300);
 
             });
             
@@ -298,6 +298,10 @@ export default {
     @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css')
     @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css')
 
+    #app
+        #header
+            &.hidden
+                display: none
     .main-title 
         font-size: 50px
         margin-bottom: 0

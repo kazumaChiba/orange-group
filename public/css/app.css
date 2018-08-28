@@ -227,7 +227,7 @@ body,
 }
 
 #app #header.position-fixed .menu-title.router-link-active {
-  color: #f26e22;
+  color: gray;
 }
 
 #app #header.position-fixed .menu-title.router-link-exact-active {
@@ -283,8 +283,8 @@ body,
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 #app .bg-transition .bg-inner {

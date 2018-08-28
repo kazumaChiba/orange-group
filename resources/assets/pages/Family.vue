@@ -23,6 +23,7 @@
                     class="family-step d-flex"
                     v-for="(item,$index) in family_steps"
                     :key="$index"
+                    :id="'step-'+$index"
                 >
                     <div class="left position-relative">
                         <h1 class="big_title text-orange position-absolute">{{item.bigTitle}}</h1>
@@ -37,7 +38,10 @@
             </div>
         </div>
         <div id="teams-say">
-            <div class="teams-content text-white position-relative" :style="'background-image:url('+slick_teams[teamIndex].img_big+')'">
+            <div
+                class="teams-content text-white position-relative" 
+                :style="'background-image:url('+slick_teams[teamIndex].img_big+')'"
+            >
                 <div class="team-content-texts position-relative">
                     <h3 class="">看看我們的夥伴們怎麼說</h3>
                     <p class="team-desc position-relative" v-html="slick_teams[teamIndex].text"></p>
@@ -127,30 +131,30 @@ export default {
                 {
                     team: '橘色公關團隊2',
                     member: '某某某',
-                    text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
-                    img: '/images/family_s1.png',
-                    img_big: '/images/family_b1.png',
+                    text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
+                    img: '/images/slideshow_1.jpg',
+                    img_big: '/images/slideshow_1.jpg',
                 },
                 {
                     team: '橘色公關團隊3',
                     member: '某某某',
                     text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
-                    img: '/images/family_s1.png',
-                    img_big: '/images/family_b1.png',
+                    img: '/images/bg_food_1.png',
+                    img_big: '/images/bg_food_1.png',
                 },
                 {
                     team: '橘色公關團隊4',
                     member: '某某某',
                     text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
-                    img: '/images/family_s1.png',
-                    img_big: '/images/family_b1.png',
+                    img: '/images/slideshow.png',
+                    img_big: '/images/slideshow.png',
                 },
                 {
                     team: '橘色公關團隊5',
                     member: '某某某',
                     text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
                     img: '/images/family_s1.png',
-                    img_big: '/images/family_b1.png',
+                    img_big: '/images/family_s1.png',
                 },
             ],
             teamIndex: 0,
@@ -180,6 +184,32 @@ export default {
         },
         
     },
+    mounted: function() {
+        jQuery(document).ready(function(){
+            fadein();
+            jQuery(window).scroll(function(){
+                fadein();
+            });
+            function fadein(){
+                let nowp = jQuery(window).scrollTop();
+                if(nowp >= 200){
+                    jQuery(".family-title").addClass("fadein");
+                }
+                else{
+                    jQuery(".family-title").removeClass("fadein");
+                }
+                for(let i=0;i<=2;i++){
+                    let nowb = jQuery("#step-"+i);
+                    if(nowp >= nowb.offset().top - 800){
+                        nowb.find(".left , .right").addClass("fadein");
+                    }
+                    else if(nowp < nowb.offset().top + 500){
+                        nowb.find(".left , .right").removeClass("fadein");
+                    }
+                }
+            }
+        });
+    },
 }
 </script>
 
@@ -188,6 +218,11 @@ export default {
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css')
 
 #block-family
+    .fadein
+        top: 0 !important
+        opacity: 1 !important
+        transition: all .5s ease-out
+
     .slideshow
         &:before , &:after
             content: ""
@@ -212,7 +247,7 @@ export default {
             overflow-x: hidden
             z-index: 2
         .slick-next, .slick-prev
-            z-index: 2
+            z-index: 3
             color: white
             font-size: 12px
             letter-spacing: 2px
@@ -280,6 +315,9 @@ export default {
             position: relative
             margin-top: 80px
             padding-right: 80px
+            top: 100px
+            opacity: 0
+            transition: all .5s ease-out
             &:before
                 content: ""
                 position: absolute
@@ -292,11 +330,17 @@ export default {
             .family-step
                 margin-bottom: 270px
                 .left
+                    top: 100px
                     flex: 6
+                    opacity: 0
+                    transition: all .5s ease-out
                     img
                         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1)
                 .right
+                    top: 150px
                     flex: 3
+                    opacity: 0
+                    transition: all .5s ease-out
                 &:nth-child(2n)
                     flex-direction: row-reverse
                 .big_title , .step-title , .subtitle , .desc
@@ -325,6 +369,8 @@ export default {
             padding: 200px 300px
             background-repeat: no-repeat
             background-size: cover
+            background-position: center
+            transition: all .5s
             .team-content-texts
                 width: 60%
             &:before
@@ -386,7 +432,9 @@ export default {
                         background: rgba(242, 108, 36, 0.85)
                         transition: all .5s
         
-            
+    @keyframes swichAnimate
+        100%
+            opacity: 0        
                         
 
 </style>
