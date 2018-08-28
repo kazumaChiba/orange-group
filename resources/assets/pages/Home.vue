@@ -2,9 +2,9 @@
     <div id="block-main">
         <div id="header" :class="closeMenu ? 'active' : '' + sectionPosition">
             <div class="d-flex">
-                <div class="logo" :class=" sectionIndex != 0 ? 'fade' : '' ">
+                <router-link :to="'/'" exact class="logo" :class=" sectionIndex != 0 ? 'fade' : '' ">
                     <img src="/images/index_logo.png">
-                </div>
+                </router-link>
                 <div id="main-menu" class="d-flex justify-content-end align-items-center">
                     <menu-header :class="closeMenu ? 'menu-close' : '' || textShadow ? 'menu-shadow' : '' "></menu-header>
                 </div>
@@ -171,7 +171,7 @@
     }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
     #fullpage
         transition-duration: .8s !important
         transition-timing-function: cubic-bezier(.5,0,0,1) !important
@@ -195,6 +195,21 @@
             cursor: pointer
         &.menu-close
             width: 25px
+    #app
+        .logo
+            position: absolute
+            height: 220px 
+
+        //.main-title
+            //line-height: 35px
+        //.sub-title
+            letter-spacing: 10px
+            font-weight: 100
+            font-size: 16px
+            font-family: "PingFang SC",微軟正黑體
+        
+</style>
+<style lang="sass">
     #fp-nav.fp-right
         opacity: 0
         display: flex
@@ -206,14 +221,14 @@
         &.active
             visibility: visible
             opacity: 1
-        ul 
-            li 
+        ul
+            li
                 width: 100%
                 height: 25px
                 margin: 5px 0
                 &:last-child
                     display: none
-                
+
                 span
                     display: none
                 .fp-tooltip.fp-right
@@ -244,16 +259,4 @@
     #app
         .fp-scroller
             min-height: 100%
-        .logo
-            position: absolute
-            height: 220px 
-
-        .main-title
-            line-height: 35px
-            .sub-title
-                letter-spacing: 10px
-                font-weight: 200
-                font-size: 16px
-                font-family: "PingFang SC",微軟正黑體
-        
 </style>

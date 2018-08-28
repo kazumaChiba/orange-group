@@ -202,10 +202,10 @@ export default {
                 }
                 for(let i=0;i<=2;i++){
                     let nowb = jQuery("#step-"+i);
-                    if(nowp >= nowb.offset().top - 800){
+                    if(nowp >= nowb.offset().top - 700){
                         nowb.find(".left , .right").addClass("fadein");
                     }
-                    else if(nowp < nowb.offset().top + 500){
+                    else if(nowp < nowb.offset().top - 1200){
                         nowb.find(".left , .right").removeClass("fadein");
                     }
                 }
@@ -224,6 +224,12 @@ export default {
         top: 0 !important
         opacity: 1 !important
         transition: all .5s ease-out
+        .big_title
+            transform: translateY(0) !important
+            transition: all .6s ease-out
+        img
+            transform: translateY(0) !important
+            transition: all .6s ease-out
 
     .slideshow
         .slick-list
@@ -334,19 +340,25 @@ export default {
             .family-step
                 margin-bottom: 270px
                 .left
-                    top: 100px
                     flex: 6
                     opacity: 0
-                    transition: all .5s ease-out
+                    transition: all .6s ease-out
+                    .big_title
+                        z-index: 1
+                        transform: translateY(350px)
                     img
+                        transform: translateY(150px)
                         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1)
                 .right
                     top: 150px
                     flex: 3
                     opacity: 0
-                    transition: all .5s ease-out
-                    .family-content
-
+                    transition: all .6s ease-out
+                    .big_title
+                        z-index: 1
+                        transform: translateY(350px)
+                    img
+                        transform: translateY(150px)
                 &:nth-child(2n)
                     flex-direction: row-reverse
                     .big_title
