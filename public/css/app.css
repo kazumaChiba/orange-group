@@ -377,10 +377,15 @@ body,
   -webkit-transition: all .5s;
   transition: all .5s;
   height: 70px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 30px;
 }
 
 #app #header.position-fixed {
   background: white;
+  margin-top: 0;
 }
 
 #app #header.position-fixed .logo {
@@ -389,6 +394,7 @@ body,
 
 #app #header.position-fixed .logo img {
   height: 60px;
+  width: auto;
 }
 
 #app #header.position-fixed .menu-title {
@@ -420,6 +426,10 @@ body,
   position: absolute;
   left: 0;
   top: 0;
+}
+
+#app #header .logo img {
+  width: 140px;
 }
 
 #app #footer .container {

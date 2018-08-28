@@ -118,9 +118,6 @@ export default {
                     this.addTransition = false;
                     this.brandIndex_old = this.brandIndex;
                 },parseInt(time));
-                setTimeout(()=>{
-                    
-                },parseInt(time)-300);
             },
         },
 }
