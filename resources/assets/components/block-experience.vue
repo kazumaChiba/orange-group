@@ -250,6 +250,7 @@ export default {
                     //transform: rotate(12deg)
                     width: 500px
                     height: 500px
+                    opacity: 0.75
                     &.active
                         .circle-line
                             &.left
