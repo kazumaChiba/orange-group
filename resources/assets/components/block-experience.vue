@@ -44,10 +44,15 @@
     transform-origin: center;"></circle>
                 </svg>-->
                 <div class="circle-body position-relative" :class="{'active' : bgTransition}">
-                    <svg x="0px" y="0px" width="100%" height="100%" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+                    <svg id="loading-circle" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
                          <rect x="0" y="0" width="100%" height="100%" fill="#f26e22" style="clip-path: url(#circle)"/>
-              <circle transform="rotate(0)" stroke-dasharray="0,471" cx="75" cy="75" r="70.5" style="stroke: rgb(0, 172, 193);stroke-width: 9px;stroke-linecap: square;fill: none;/* transform: rotate(-126deg); */transform-origin: center center 0px;clip-path: url(&quot;#circle&quot;);opacity: 0.5;"></circle>
+              <circle class="loading-bar" :stroke-dasharray=" circle_dasharray +',471'" :class="{run: is_run, rotate: is_rotate}" cx="75" cy="75" r="70.5"></circle>
                         <clipPath id="circle">
+             <path fill="#f26e22" d="M75.1-0.1c-20.7,0-39.5,8.4-53.1,22l2.8,9.7C37,17.5,55,8.6,75,8.6c36.7,0,66.4,29.8,66.4,66.4
+		c0,36.7-29.8,66.4-66.4,66.4c-6.5,0-12.8-1-18.8-2.7l2.8,9.7c5.1,1.1,10.5,1.7,15.9,1.7c41.5,0,75.1-33.6,75.1-75.1
+		C150.2,33.5,116.6-0.1,75.1-0.1L75.1-0.1z"/>
+                        </clipPath>
+                         <clipPath id="circle2" style="transform: rotate(135deg);transform-origin: center;">
              <path fill="#f26e22" d="M75.1-0.1c-20.7,0-39.5,8.4-53.1,22l2.8,9.7C37,17.5,55,8.6,75,8.6c36.7,0,66.4,29.8,66.4,66.4
 		c0,36.7-29.8,66.4-66.4,66.4c-6.5,0-12.8-1-18.8-2.7l2.8,9.7c5.1,1.1,10.5,1.7,15.9,1.7c41.5,0,75.1-33.6,75.1-75.1
 		C150.2,33.5,116.6-0.1,75.1-0.1L75.1-0.1z"/>
@@ -57,10 +62,10 @@
                     <div class="circle-line right"></div>-->
                 </div>
                 <div class="circle-option position-absolute" :class="'e_index_'+experience_index">
-                    <a class="text-circle-option left" @click="experience_view='ex'; experience_index = 0; bgAnimated(800)" :class="experience_index == 0 ? 'active' : ''">體驗</a>
-                    <a class="text-circle-option top" @click="experience_view='pot'; experience_index = 1; bgAnimated(800)" :class="experience_index == 1 ? 'active' : ''">鍋物</a>
-                    <a class="text-circle-option right" @click="experience_view='coffee'; experience_index = 2; bgAnimated(800)" :class="experience_index == 2 ? 'active' : ''">咖啡</a>
-                    <a class="text-circle-option bottom" @click="experience_view='spa'; experience_index = 3; bgAnimated(800)" :class="experience_index == 3 ? 'active' : ''">舒體</a>
+                    <a class="text-circle-option left" @click="onClickCircleItem(0, 'ex')" :class="experience_index == 0 ? 'active' : ''">體驗</a>
+                    <a class="text-circle-option top" @click="onClickCircleItem(1, 'pot')" :class="experience_index == 1 ? 'active' : ''">鍋物{{circle_dasharray}}</a>
+                    <a class="text-circle-option right" @click="onClickCircleItem(2, 'coffee')" :class="experience_index == 2 ? 'active' : ''">咖啡</a>
+                    <a class="text-circle-option bottom" @click="onClickCircleItem(3, 'spa')" :class="experience_index == 3 ? 'active' : ''">舒體</a>
                 </div>
             </div>
             <div class="experience-inner position-relative">
@@ -97,6 +102,9 @@ export default {
                 ],
                 experience_index: 0,
                 experience_index_old: 0,
+	            is_run: false,
+                is_rotate: false,
+	            circle_dasharray: 0
             }
         },
         components: {
@@ -129,6 +137,13 @@ export default {
                           '</div>'
             },
         },
+        mounted(){
+	        this.is_run = true
+        	setTimeout(()=>{
+        		this.onPlusStep();
+		        //this.onRunCircle();
+            },1300)
+        },
         methods: {
             bgAnimated(time){
                 this.bgTransition = true;
@@ -139,11 +154,99 @@ export default {
                     this.experience_index_old = this.experience_index;
                 }, parseInt(time) + 800);
             },
+            onClickCircleItem(index, view){
+	            this.experience_view = view;
+	            this.experience_index = index;
+	            this.bgAnimated(800)
+	            //this.is_run = false;
+	            //this.is_rotate = true;
+            },
+            onRunCircle(){
+                setTimeout(()=>{
+	                if(!this.is_rotate) {
+		                if ( this.experience_index < 3 ) {
+			                this.experience_index++;
+		                } else {
+			                this.experience_index = 0;
+		                }
+		                this.is_run = false;
+		                this.is_rotate = true
+		                setTimeout( () => {
+                            this.is_rotate = false;
+                            setTimeout( () => {
+                                if ( !this.is_rotate ) {
+                                    this.is_run = true
+                                    this.onRunCircle();
+                                }else{
+                                    this.onResetRotate();
+                                }
+                            }, 300 )
+		                }, 1000 )
+	                }else {
+	                	this.onResetRotate();
+                    }
+                },6000);
+            },
+            onResetRotate(){
+	            this.is_rotate = false
+                setTimeout(()=>{
+		            this.onRunCircle()
+                },2000)
+            },
+	        onPlusStep(){
+		        this.circle_dasharray = this.circle_dasharray + 10 ;
+
+		        if(this.circle_dasharray > 350){
+		        	this.is_rotate = true;
+			        this.circle_dasharray = 0;
+
+			        if(this.experience_index == 0){
+				        this.onClickCircleItem(1, 'pot')
+                    }else if(this.experience_index == 1){
+				        this.onClickCircleItem(2, 'coffee')
+                    }else if(this.experience_index == 2){
+				        this.onClickCircleItem(3, 'spa')
+			        }else{
+			        	this.onClickCircleItem(0, 'ex')
+                    }
+
+                    setTimeout(()=>{
+	                    this.is_rotate = false;
+                    },300)
+                }
+
+            	setTimeout(()=>{
+                    this.onPlusStep()
+                },300)
+
+
+            }
         },
 }
 </script>
 
 <style lang="sass">
+    #loading-circle
+        .loading-bar
+            stroke: #f26d23
+            stroke-width: 9px
+            stroke-linecap: square
+            fill: none
+            transform-origin: center center 0px
+            clip-path: url(#circle2)
+            opacity: 0.5
+            transform: rotate(225deg)
+            transition: stroke-dasharray 2s linear, stroke 8s linear
+            //stroke-dasharray: 0,471
+            &.run
+                stroke: #732A0A
+                //stroke-dasharray: 295,471
+                //transition: stroke-dasharray 6s cubic-bezier(0.47, 0, 0.745, 0.715), stroke 6s cubic-bezier(0.215, 0.61, 0.355, 1)
+            &.rotate
+                stroke: #f26d23
+                transition: stroke-dasharray 0.3s, stroke 0.3s
+                //stroke-dasharray: 295,471
+                //transition: stroke 1s
     #block-experience
         background-size: cover  
         &.active
