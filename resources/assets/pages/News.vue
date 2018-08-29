@@ -102,11 +102,7 @@ export default {
         return {
             newsItems: [
                 {
-<<<<<<< HEAD
                     background: '/images/news_v1.png',
-=======
-                    background: '/images/news_v2.png',
->>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
@@ -122,11 +118,7 @@ export default {
                     link: '/#/news/detail'
                 },
                 {
-<<<<<<< HEAD
                     background: '/images/news_v3.png',
-=======
-                    background: '/images/news_v2.png',
->>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
@@ -134,11 +126,7 @@ export default {
                     link: '/#/news/detail'
                 },
                 {
-<<<<<<< HEAD
                     background: '/images/news_v4.png',
-=======
-                    background: '/images/news_v2.png',
->>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
@@ -146,11 +134,7 @@ export default {
                     link: '/#/news/detail'
                 },
                 {
-<<<<<<< HEAD
                     background: '/images/news_v5.png',
-=======
-                    background: '/images/news_v2.png',
->>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
@@ -158,11 +142,7 @@ export default {
                     link: '/#/news/detail'
                 },
                 {
-<<<<<<< HEAD
                     background: '/images/news_v1.png',
-=======
-                    background: '/images/news_v2.png',
->>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
@@ -178,11 +158,7 @@ export default {
                     link: '/#/news/detail'
                 },
                 {
-<<<<<<< HEAD
                     background: '/images/news_v3.png',
-=======
-                    background: '/images/news_v2.png',
->>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
@@ -190,11 +166,7 @@ export default {
                     link: '/#/news/detail'
                 },
                 {
-<<<<<<< HEAD
                     background: '/images/news_v4.png',
-=======
-                    background: '/images/news_v2.png',
->>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
@@ -202,11 +174,7 @@ export default {
                     link: '/#/news/detail'
                 },
                 {
-<<<<<<< HEAD
                     background: '/images/news_v5.png',
-=======
-                    background: '/images/news_v2.png',
->>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',

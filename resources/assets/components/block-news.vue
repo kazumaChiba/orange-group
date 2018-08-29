@@ -92,11 +92,7 @@ export default {
                     link: '/'
                 },
                 {
-<<<<<<< HEAD
                     background: '/images/news_v2.png',
-=======
-                    background: '/images/news_v3.png',
->>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
                     title: '橘色公告－員工旅遊<br>謝謝辛勤付出的每一位夥伴<br>2018/05/20(日)',
@@ -104,11 +100,7 @@ export default {
                     link: '/'
                 },
                 {
-<<<<<<< HEAD
                     background: '/images/news_v3.png',
-=======
-                    background: '/images/news_v5.png',
->>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
@@ -116,11 +108,7 @@ export default {
                     link: '/'
                 },
                 {
-<<<<<<< HEAD
                     background: '/images/news_v4.png',
-=======
-                    background: '/images/news_v2.png',
->>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
@@ -128,11 +116,7 @@ export default {
                     link: '/'
                 },
                 {
-<<<<<<< HEAD
                     background: '/images/news_v5.png',
-=======
-                    background: '/images/news_v4.png',
->>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',

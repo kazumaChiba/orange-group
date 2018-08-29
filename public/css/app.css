@@ -4185,6 +4185,7 @@ body,
   background-size: 25px 25px;
   background-image: radial-gradient(#0000000d 20%, transparent 15%), radial-gradient(#0000000d 20%, transparent 20%);
   background-position: 10px 25px;
+  background-attachment: fixed;
 }
 
 #block-news:after {
