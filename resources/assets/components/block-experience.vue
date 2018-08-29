@@ -18,6 +18,31 @@
         <div id="content-experience" class="position-relative">
             <h1 class="big_title">{{experience[experience_index].title}}</h1>
             <div class="experience-circle">
+                <svg x="0px" y="0px" width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+
+                                 <path fill="#EA5514" d="M0,0v150h150V0H0z M65.926,139.659c-4.896,0-9.664-0.536-14.263-1.531l-2.54-8.654
+                    c5.33,1.568,10.965,2.423,16.803,2.423c32.828,0,59.44-26.609,59.44-59.439c0-32.827-26.612-59.44-59.44-59.44
+                    c-17.96,0-34.049,7.978-44.948,20.571l-2.546-8.674c12.159-12.147,28.949-19.66,47.494-19.66c37.115,0,67.203,30.088,67.203,67.203
+                    C133.129,109.573,103.041,139.659,65.926,139.659z"/>
+
+
+                </svg>
+                <div style="width: 150px; height: 150px; clip-path: url(#circle);    background: red;"></div>
+                <svg x="0px" y="0px" width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+                     <rect x="0" y="0" width="150" height="150" style="fill: 336699;clip-path: url(#circle)"/>
+<clipPath id="circle">
+                <path fill="#EA5514" d="M63.984-0.125c-20.732,0-39.501,8.397-53.095,21.977l2.848,9.696C25.922,17.472,43.906,8.553,63.984,8.553
+                    c36.698,0,66.448,29.752,66.448,66.448c0,36.701-29.75,66.447-66.448,66.447c-6.525,0-12.825-0.955-18.784-2.709l2.841,9.676
+                    c5.141,1.111,10.47,1.711,15.943,1.711c41.49,0,75.125-33.633,75.125-75.125C139.109,33.51,105.475-0.125,63.984-0.125z"/>
+</clipPath>
+                    <circle  stroke-dasharray="85,100" cx="75" cy="75" r="75" style="    stroke: #00acc1;
+    stroke-width: 2;
+    stroke-linecap: square;
+    fill: none;
+    animation: circle-chart-fill 2s reverse;
+    transform: rotate(-90deg);
+    transform-origin: center;"></circle>
+                </svg>
                 <div class="circle-body position-relative" :class="{'active' : bgTransition}">
                     <div class="circle-line left"></div>
                     <div class="circle-line right"></div>
