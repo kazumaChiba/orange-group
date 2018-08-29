@@ -18,7 +18,7 @@
                 class="news-list d-flex justify-content-between w-100"
                 v-for="(n,$groupIndex) in viewIndex+1"
                 :key="$groupIndex">
-                    <div class="block-list beside d-flex flex-column justify-content-between">
+                    <div class="block-list beside flex-column justify-content-between">
                         <div
                                 class="news-item"
                                 v-for="(item,$index) in newsItems.slice(viewIndex,viewIndex+2)"
@@ -36,7 +36,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="block-list center d-flex flex-column justify-content-between">
+                    <div class="block-list center flex-column justify-content-between">
                         <div
                                 class="news-item d-flex flex-column h-100 w-100"
                         >
@@ -48,11 +48,15 @@
                                     <span class="text-black text-size-1">{{newsItems[viewIndex+2].date}}</span>
                                     <span class="text-orange text-size-1">{{newsItems[viewIndex+2].category}}</span>
                                 </div>
-                                <a class="news-title" :href="newsItems[viewIndex+2].link" v-html="newsItems[viewIndex+2].title"></a>
+
+                                    <a class="news-title" :href="newsItems[viewIndex+2].link" v-html="newsItems[viewIndex+2].title"></a>
+                                    <p class="mt-3">
+                                        {{newsItems[viewIndex+2].intro}}
+                                    </p>
                             </div>
                         </div>
                     </div>
-                    <div class="block-list beside d-flex flex-column justify-content-between">
+                    <div class="block-list beside flex-column justify-content-between">
                         <div class="news-item"
                              v-for="(item, $index) in newsItems.slice(viewIndex + 3, viewIndex + 5)"
                              :key="$index"
@@ -80,7 +84,7 @@ export default {
         return {
             newsItems: [
                 {
-                    background: '/images/bg_brand_1.png',
+                    background: '/images/news_v1.png',
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
@@ -88,23 +92,23 @@ export default {
                     link: '/'
                 },
                 {
-                    background: '/images/bg_brand_1.png',
+                    background: '/images/news_v3.png',
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
-                    title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
+                    title: '橘色公告－員工旅遊<br>謝謝辛勤付出的每一位夥伴<br>2018/05/20(日)',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                     link: '/'
                 },
                 {
-                    background: '/images/bg_brand_1.png',
+                    background: '/images/news_v5.png',
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
-                    title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
+                    title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                     link: '/'
                 },
                 {
-                    background: '/images/bg_brand_1.png',
+                    background: '/images/news_v2.png',
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
@@ -112,7 +116,7 @@ export default {
                     link: '/'
                 },
                 {
-                    background: '/images/bg_brand_1.png',
+                    background: '/images/news_v4.png',
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
@@ -131,7 +135,7 @@ export default {
                     background: '/images/bg_brand_1.png',
                     date: '2018/3/21',
                     category: 'Extension 1 by 橘色',
-                    title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+	                title: '橘色公告－員工旅遊<br>謝謝辛勤付出的每一位夥伴<br>2018/05/20(日)～2018/05/24(四)<br>員工旅遊 暫停營業',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                     link: '/'
                 },

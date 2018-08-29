@@ -1605,40 +1605,44 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
             newsItems: [{
-                background: '/images/bg_brand_1.png',
+                background: '/images/news_v1.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
                 title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/'
             }, {
-                background: '/images/bg_brand_1.png',
+                background: '/images/news_v3.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
-                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
+                title: '橘色公告－員工旅遊<br>謝謝辛勤付出的每一位夥伴<br>2018/05/20(日)',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/'
             }, {
-                background: '/images/bg_brand_1.png',
+                background: '/images/news_v5.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
-                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/'
             }, {
-                background: '/images/bg_brand_1.png',
+                background: '/images/news_v2.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
                 title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/'
             }, {
-                background: '/images/bg_brand_1.png',
+                background: '/images/news_v4.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
@@ -1655,7 +1659,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 background: '/images/bg_brand_1.png',
                 date: '2018/3/21',
                 category: 'Extension 1 by 橘色',
-                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                title: '橘色公告－員工旅遊<br>謝謝辛勤付出的每一位夥伴<br>2018/05/20(日)～2018/05/24(四)<br>員工旅遊 暫停營業',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/'
             }, {
@@ -1742,7 +1746,7 @@ var render = function() {
                   "div",
                   {
                     staticClass:
-                      "block-list beside d-flex flex-column justify-content-between"
+                      "block-list beside flex-column justify-content-between"
                   },
                   _vm._l(
                     _vm.newsItems.slice(_vm.viewIndex, _vm.viewIndex + 2),
@@ -1803,7 +1807,7 @@ var render = function() {
                   "div",
                   {
                     staticClass:
-                      "block-list center d-flex flex-column justify-content-between"
+                      "block-list center flex-column justify-content-between"
                   },
                   [
                     _c(
@@ -1870,7 +1874,15 @@ var render = function() {
                                 _vm.newsItems[_vm.viewIndex + 2].title
                               )
                             }
-                          })
+                          }),
+                          _vm._v(" "),
+                          _c("p", { staticClass: "mt-3" }, [
+                            _vm._v(
+                              "\n                                    " +
+                                _vm._s(_vm.newsItems[_vm.viewIndex + 2].intro) +
+                                "\n                                "
+                            )
+                          ])
                         ])
                       ]
                     )
@@ -1881,7 +1893,7 @@ var render = function() {
                   "div",
                   {
                     staticClass:
-                      "block-list beside d-flex flex-column justify-content-between"
+                      "block-list beside flex-column justify-content-between"
                   },
                   _vm._l(
                     _vm.newsItems.slice(_vm.viewIndex + 3, _vm.viewIndex + 5),

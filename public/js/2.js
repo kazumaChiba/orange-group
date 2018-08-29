@@ -6,14 +6,23 @@ webpackJsonp([2],{
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
+<<<<<<< HEAD
   __webpack_require__(484)
   __webpack_require__(486)
+=======
+  __webpack_require__(483)
+  __webpack_require__(485)
+>>>>>>> 32caaf9af8b0dd188f61a918207c8744fff1d381
 }
 var normalizeComponent = __webpack_require__(49)
 /* script */
 var __vue_script__ = __webpack_require__(309)
 /* template */
+<<<<<<< HEAD
 var __vue_template__ = __webpack_require__(488)
+=======
+var __vue_template__ = __webpack_require__(487)
+>>>>>>> 32caaf9af8b0dd188f61a918207c8744fff1d381
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -11634,13 +11643,13 @@ PerfectScrollbar.prototype.removePsClasses = function removePsClasses () {
 
 /***/ }),
 
-/***/ 484:
+/***/ 483:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(485);
+var content = __webpack_require__(484);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -11661,7 +11670,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 485:
+/***/ 484:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(48)(false);
@@ -11676,9 +11685,37 @@ exports.push([module.i, "\n#fullpage[data-v-e3a27224] {\n  -webkit-transition-du
 
 /***/ }),
 
+/***/ 485:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(486);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(80)("648b341c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3a27224\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./Home.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3a27224\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./Home.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
 /***/ 486:
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
@@ -11706,6 +11743,8 @@ if(false) {
 /***/ 487:
 /***/ (function(module, exports, __webpack_require__) {
 
+=======
+>>>>>>> 32caaf9af8b0dd188f61a918207c8744fff1d381
 exports = module.exports = __webpack_require__(48)(false);
 // imports
 
@@ -11718,7 +11757,11 @@ exports.push([module.i, "\n#fp-nav.fp-right {\n  opacity: 0;\n  display: -webkit
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 488:
+=======
+/***/ 487:
+>>>>>>> 32caaf9af8b0dd188f61a918207c8744fff1d381
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
