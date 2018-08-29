@@ -295,8 +295,30 @@ export default {
                 top: 14px
                 right: 65px
         .family-step-list
+            #step-0
+                &:before
+                    background-image: url(/images/family_bg1.png)
+                    left: 0
+                    top: -150%
+            #step-1
+                &:before
+                    background-image: url(/images/family_bg2.png)
+                    background-position: right
+                    top: -80%
+            #step-2
+                &:before
+                    background-image: url(/images/family_bg3.png)
+                    top: -50%
             .family-step
-                margin-bottom: 270px
+                margin-bottom: 350px
+                position: relative
+                &:before
+                    content: ""
+                    position: absolute
+                    width: 100%
+                    background-size: contain
+                    background-repeat: no-repeat
+                    padding-top: 95%
                 .left
                     flex: 6
                     opacity: 0
