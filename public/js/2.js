@@ -6,19 +6,20 @@ webpackJsonp([2],{
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(307)
+  __webpack_require__(483)
+  __webpack_require__(485)
 }
 var normalizeComponent = __webpack_require__(49)
 /* script */
 var __vue_script__ = __webpack_require__(309)
 /* template */
-var __vue_template__ = __webpack_require__(334)
+var __vue_template__ = __webpack_require__(487)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-e3a27224"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -402,48 +403,6 @@ if (false) {
 
 /***/ }),
 
-/***/ 307:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(308);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(80)("66f7d9da", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3a27224\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3a27224\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 308:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(48)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n@charset \"UTF-8\";\n#fullpage {\n  -webkit-transition-duration: .8s !important;\n          transition-duration: .8s !important;\n  -webkit-transition-timing-function: cubic-bezier(0.5, 0, 0, 1) !important;\n          transition-timing-function: cubic-bezier(0.5, 0, 0, 1) !important;\n}\n#burger-menu {\n  width: 0px;\n  height: 25px;\n  text-align: center;\n  overflow: hidden;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  position: absolute;\n  right: 30px;\n  top: 53px;\n  z-index: 9999999;\n}\n#burger-menu:before {\n    content: \"|||\";\n    color: #f26c23;\n    -webkit-transform: rotate(90deg);\n            transform: rotate(90deg);\n    display: inline-block;\n    font-weight: bold;\n}\n#burger-menu:hover {\n    cursor: pointer;\n}\n#burger-menu.menu-close {\n    width: 25px;\n}\n#fp-nav.fp-right {\n  opacity: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  visibility: hidden;\n  -webkit-transition: opacity .3s;\n  transition: opacity .3s;\n  right: 0;\n  width: unset;\n}\n#fp-nav.fp-right.active {\n    visibility: visible;\n    opacity: 1;\n}\n#fp-nav.fp-right ul li {\n    width: 100%;\n    height: 25px;\n    margin: 5px 0;\n}\n#fp-nav.fp-right ul li:last-child {\n      display: none;\n}\n#fp-nav.fp-right ul li span {\n      display: none;\n}\n#fp-nav.fp-right ul li .fp-tooltip.fp-right {\n      color: #ccc;\n      opacity: 1;\n      width: auto;\n      font-size: 14px;\n      letter-spacing: 0px;\n      font-style: italic;\n      right: 0;\n      overflow: visible;\n      position: relative;\n      height: 100%;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      padding: 0 50px;\n      font-weight: 300;\n}\n#fp-nav.fp-right ul li:hover div, #fp-nav.fp-right ul li a.active + div {\n      cursor: pointer;\n      background: #f26c23;\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      color: white !important;\n}\n#fp-nav.fp-right ul li a {\n      position: absolute;\n      top: 0;\n      left: 0;\n}\n#app .fp-scroller {\n  min-height: 100%;\n}\n#app .logo {\n  position: absolute;\n  height: 220px;\n}\n#app .main-title {\n  line-height: 35px;\n}\n#app .main-title .sub-title {\n    letter-spacing: 10px;\n    font-weight: 200;\n    font-size: 16px;\n    font-family: \"PingFang SC\",微軟正黑體;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
 /***/ 309:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -778,6 +737,31 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -891,6 +875,88 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "experience-circle" }, [
+            _c(
+              "svg",
+              {
+                attrs: {
+                  x: "0px",
+                  y: "0px",
+                  width: "150px",
+                  height: "150px",
+                  viewBox: "0 0 150 150",
+                  "enable-background": "new 0 0 150 150",
+                  "xml:space": "preserve"
+                }
+              },
+              [
+                _c("path", {
+                  attrs: {
+                    fill: "#EA5514",
+                    d:
+                      "M0,0v150h150V0H0z M65.926,139.659c-4.896,0-9.664-0.536-14.263-1.531l-2.54-8.654\n                    c5.33,1.568,10.965,2.423,16.803,2.423c32.828,0,59.44-26.609,59.44-59.439c0-32.827-26.612-59.44-59.44-59.44\n                    c-17.96,0-34.049,7.978-44.948,20.571l-2.546-8.674c12.159-12.147,28.949-19.66,47.494-19.66c37.115,0,67.203,30.088,67.203,67.203\n                    C133.129,109.573,103.041,139.659,65.926,139.659z"
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", {
+              staticStyle: {
+                width: "150px",
+                height: "150px",
+                "clip-path": "url(#circle)",
+                background: "red"
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "svg",
+              {
+                attrs: {
+                  x: "0px",
+                  y: "0px",
+                  width: "150px",
+                  height: "150px",
+                  viewBox: "0 0 150 150",
+                  "enable-background": "new 0 0 150 150",
+                  "xml:space": "preserve"
+                }
+              },
+              [
+                _c("rect", {
+                  staticStyle: { fill: "336699", "clip-path": "url(#circle)" },
+                  attrs: { x: "0", y: "0", width: "150", height: "150" }
+                }),
+                _vm._v(" "),
+                _c("clipPath", { attrs: { id: "circle" } }, [
+                  _c("path", {
+                    attrs: {
+                      fill: "#EA5514",
+                      d:
+                        "M63.984-0.125c-20.732,0-39.501,8.397-53.095,21.977l2.848,9.696C25.922,17.472,43.906,8.553,63.984,8.553\n                    c36.698,0,66.448,29.752,66.448,66.448c0,36.701-29.75,66.447-66.448,66.447c-6.525,0-12.825-0.955-18.784-2.709l2.841,9.676\n                    c5.141,1.111,10.47,1.711,15.943,1.711c41.49,0,75.125-33.633,75.125-75.125C139.109,33.51,105.475-0.125,63.984-0.125z"
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("circle", {
+                  staticStyle: {
+                    stroke: "#00acc1",
+                    "stroke-width": "2",
+                    "stroke-linecap": "square",
+                    fill: "none",
+                    animation: "circle-chart-fill 2s reverse",
+                    transform: "rotate(-90deg)",
+                    "transform-origin": "center"
+                  },
+                  attrs: {
+                    "stroke-dasharray": "85,100",
+                    cx: "75",
+                    cy: "75",
+                    r: "75"
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
             _c(
               "div",
               {
@@ -2067,6 +2133,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -2218,6 +2287,10 @@ var render = function() {
             _vm._v(" "),
             _vm._m(0),
             _vm._v(" "),
+            _c("span", { staticClass: "sub-title text-black" }, [
+              _vm._v("about value")
+            ]),
+            _vm._v(" "),
             _c("div", { staticClass: "food-info-circle" }),
             _vm._v(" "),
             _c(
@@ -2248,9 +2321,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("h3", { staticClass: "main-title text-black text-uppercase" }, [
       _c("span", { staticClass: "fs-inherit text-orange" }, [_vm._v("橘色 ")]),
-      _vm._v("價值"),
-      _c("br"),
-      _c("span", { staticClass: "sub-title" }, [_vm._v("about value")])
+      _vm._v("價值\n            ")
     ])
   }
 ]
@@ -11600,7 +11671,91 @@ PerfectScrollbar.prototype.removePsClasses = function removePsClasses () {
 
 /***/ }),
 
-/***/ 334:
+/***/ 483:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(484);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(80)("c420dc4c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3a27224\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3a27224\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 484:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(48)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#fullpage[data-v-e3a27224] {\n  -webkit-transition-duration: .8s !important;\n          transition-duration: .8s !important;\n  -webkit-transition-timing-function: cubic-bezier(0.5, 0, 0, 1) !important;\n          transition-timing-function: cubic-bezier(0.5, 0, 0, 1) !important;\n}\n#burger-menu[data-v-e3a27224] {\n  width: 0px;\n  height: 25px;\n  text-align: center;\n  overflow: hidden;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  position: absolute;\n  right: 30px;\n  top: 53px;\n  z-index: 9999999;\n}\n#burger-menu[data-v-e3a27224]:before {\n    content: \"|||\";\n    color: #f26c23;\n    -webkit-transform: rotate(90deg);\n            transform: rotate(90deg);\n    display: inline-block;\n    font-weight: bold;\n}\n#burger-menu[data-v-e3a27224]:hover {\n    cursor: pointer;\n}\n#burger-menu.menu-close[data-v-e3a27224] {\n    width: 25px;\n}\n#app .logo[data-v-e3a27224] {\n  position: absolute;\n  height: 220px;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 485:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(486);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(80)("648b341c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3a27224\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./Home.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3a27224\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./Home.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 486:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(48)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#fp-nav.fp-right {\n  opacity: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  visibility: hidden;\n  -webkit-transition: opacity .3s;\n  transition: opacity .3s;\n  right: 0;\n  width: unset;\n}\n#fp-nav.fp-right.active {\n    visibility: visible;\n    opacity: 1;\n}\n#fp-nav.fp-right ul li {\n    width: 100%;\n    height: 25px;\n    margin: 5px 0;\n}\n#fp-nav.fp-right ul li:last-child {\n      display: none;\n}\n#fp-nav.fp-right ul li span {\n      display: none;\n}\n#fp-nav.fp-right ul li .fp-tooltip.fp-right {\n      color: #ccc;\n      opacity: 1;\n      width: auto;\n      font-size: 14px;\n      letter-spacing: 0px;\n      font-style: italic;\n      right: 0;\n      overflow: visible;\n      position: relative;\n      height: 100%;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      padding: 0 50px;\n      font-weight: 300;\n}\n#fp-nav.fp-right ul li:hover div, #fp-nav.fp-right ul li a.active + div {\n      cursor: pointer;\n      background: #f26c23;\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      color: white !important;\n}\n#fp-nav.fp-right ul li a {\n      position: absolute;\n      top: 0;\n      left: 0;\n}\n#app .fp-scroller {\n  min-height: 100%;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 487:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -11615,31 +11770,40 @@ var render = function() {
         attrs: { id: "header" }
       },
       [
-        _c("div", { staticClass: "d-flex" }, [
-          _c(
-            "div",
-            { staticClass: "logo", class: _vm.sectionIndex != 0 ? "fade" : "" },
-            [_c("img", { attrs: { src: "/images/index_logo.png" } })]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "d-flex justify-content-end align-items-center",
-              attrs: { id: "main-menu" }
-            },
-            [
-              _c("menu-header", {
-                class: _vm.closeMenu
-                  ? "menu-close"
-                  : "" || _vm.textShadow
-                    ? "menu-shadow"
-                    : ""
-              })
-            ],
-            1
-          )
-        ])
+        _c(
+          "div",
+          { staticClass: "d-flex" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "logo",
+                class: _vm.sectionIndex != 0 ? "fade" : "",
+                attrs: { to: "/", exact: "" }
+              },
+              [_c("img", { attrs: { src: "/images/index_logo.png" } })]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "d-flex justify-content-end align-items-center",
+                attrs: { id: "main-menu" }
+              },
+              [
+                _c("menu-header", {
+                  class: _vm.closeMenu
+                    ? "menu-close"
+                    : "" || _vm.textShadow
+                      ? "menu-shadow"
+                      : ""
+                })
+              ],
+              1
+            )
+          ],
+          1
+        )
       ]
     ),
     _vm._v(" "),

@@ -9773,7 +9773,7 @@ exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slic
 exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css);", ""]);
 
 // module
-exports.push([module.i, "\n@charset \"UTF-8\";\n#app #header.hidden {\n  display: none;\n}\n.main-title {\n  font-size: 50px;\n  margin-bottom: 0;\n}\n.sub-title {\n  font-size: 20px;\n  letter-spacing: 10px;\n  font-family: \"PingFang SC\",微軟正黑體;\n}\n#about-tabs {\n  margin: 50px auto;\n}\n#about-tabs.position-fixed {\n    border-bottom: 2px solid #efefef;\n    position: fixed;\n    top: 70px;\n    z-index: 99999;\n    max-width: unset;\n    background: white;\n    margin-top: 0;\n}\n#about-tabs.position-fixed .about-tabs-body {\n      margin-bottom: -2px !important;\n}\n#about-tabs.position-fixed .tab {\n      padding: 12px 0;\n}\n#about-tabs .tab {\n    -webkit-transition: all 0.3s;\n    transition: all 0.3s;\n    color: gray;\n    font-size: 20px;\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    border-bottom: 2px solid #efefef;\n    padding: 15px 0;\n    cursor: pointer;\n}\n#about-tabs .tab.active, #about-tabs .tab:hover {\n      border-bottom: 3px solid #f26c24;\n      color: #f26c24;\n}\n#block-secret {\n  padding: 70px 0;\n  margin: 0 0 130px 0;\n}\n#block-secret .sub-title {\n    margin-bottom: 40px;\n}\n#block-secret .about-content {\n    width: 70%;\n    margin: 0 auto;\n    line-height: 30px;\n    font-weight: 500;\n}\n#block-about-service {\n  height: 1000px;\n}\n#block-about-service .service-body {\n    height: 500px;\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n}\n#block-about-service .service-body:before {\n      content: \"\";\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      background: black;\n      opacity: 0.7;\n}\n#block-about-service .service-body .service-item {\n      padding: 80px;\n      background-size: cover;\n      background-repeat: no-repeat;\n      background-position: center;\n}\n#block-about-service .service-body .service-item .service-content {\n        opacity: 0;\n}\n#block-about-service .service-body .service-item .service-content .service-title {\n          font-size: 35px;\n          margin-bottom: 5px;\n}\n#block-about-service .service-body .service-item .service-content .service-desc {\n          line-height: 35px;\n          font-size: 20px;\n}\n#block-about-service .service-body .service-item:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: #f26c23;\n        opacity: 0;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#block-about-service .service-body .service-item:hover:before {\n        opacity: 0.9;\n}\n#block-about-service .service-body .service-item:hover .service-content {\n        opacity: 1;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#block-about-service .service-body .service-left, #block-about-service .service-body .service-right {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#block-about-service .service-body .service-left {\n      top: -80px;\n}\n#block-about-service .service-body .service-left .service-item {\n        height: 750px;\n        position: relative;\n}\n#block-about-service .service-body .service-right {\n      top: -80px;\n}\n#block-about-service .service-body .service-right .service-item.top {\n        height: 350px;\n}\n#block-about-service .service-body .service-right .service-item.bottom {\n        height: 480px;\n        width: 90%;\n}\n#block-about-year {\n  padding-top: 70px;\n  margin-bottom: 150px;\n}\n#block-about-year .year .slick-list {\n    height: 350px;\n}\n#block-about-year .year .year-item {\n    top: 110px;\n    padding-bottom: 35px;\n}\n#block-about-year .year .year-item.active .text-year {\n      color: #f26d22;\n}\n#block-about-year .year .year-item.active .dot-year .dot-radar {\n      -webkit-transform: scale(1);\n              transform: scale(1);\n}\n#block-about-year .year .year-item:not(.active) .dot-year:hover .dot-radar {\n      -webkit-transition: all .5s;\n      transition: all .5s;\n      -webkit-animation: yeardot 1.2s infinite ease-in-out;\n              animation: yeardot 1.2s infinite ease-in-out;\n}\n#block-about-year .year .year-item:hover {\n      color: #e66820;\n}\n#block-about-year .year .year-item:before {\n      content: \"\";\n      background: #f26d22;\n      position: absolute;\n      width: 100%;\n      height: 2px;\n      bottom: 0;\n      left: 0;\n}\n#block-about-year .year .year-item .dot-year {\n      width: 10px;\n      height: 10px;\n      position: absolute;\n      background: #f26d22;\n      border-radius: 100%;\n      top: 58px;\n      left: calc(50% - 5px);\n      cursor: pointer;\n}\n#block-about-year .year .year-item .dot-year:before {\n        content: \"\";\n        position: absolute;\n        width: 24px;\n        height: 24px;\n        background: rgba(255, 205, 177, 0.45);\n        border-radius: 100%;\n        left: -7px;\n        top: -7px;\n}\n#block-about-year .year .year-item .dot-year .dot-radar {\n        content: \"\";\n        position: absolute;\n        border-radius: 100%;\n        width: 180px;\n        height: 180px;\n        -webkit-transform: scale(0);\n                transform: scale(0);\n        background: rgba(255, 205, 177, 0.1);\n        left: -85px;\n        top: -85px;\n}\n#block-about-year .year .slick-arrow {\n    color: transparent;\n    background: transparent;\n    border: none;\n}\n#block-about-year .year .slick-arrow:before {\n      line-height: 8px;\n      content: \"\\279D\";\n      display: inline-block;\n      color: gray;\n      font-size: 22px;\n}\n#block-about-year .year .slick-arrow.slick-prev:before {\n      -webkit-transform: scaleX(-1);\n              transform: scaleX(-1);\n}\n#block-about-year .year .slick-next:focus:before, #block-about-year .year .slick-next:hover:before, #block-about-year .year .slick-prev:focus:before, #block-about-year .year .slick-prev:hover:before {\n    color: #f26d22;\n}\n#block-about-year .year .text-year {\n    font-size: 20px;\n    font-weight: 500;\n}\n#block-about-year .year-body .year-left {\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    border-right: 1px solid #fbc1a2;\n    padding-right: 50px;\n}\n#block-about-year .year-body .year-left p {\n      font-size: 20px;\n}\n#block-about-year .year-body .year-left p span {\n        display: inline-block;\n        font-size: 35px;\n}\n#block-about-year .year-body .year-right {\n    -webkit-box-flex: 5;\n        -ms-flex: 5;\n            flex: 5;\n    padding-left: 100px;\n}\n#block-about-year .year-body .year-month-list .year-month-item .left {\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n}\n#block-about-year .year-body .year-month-list .year-month-item .left .month {\n      font-size: 22px;\n}\n#block-about-year .year-body .year-month-list .year-month-item .right {\n    -webkit-box-flex: 6;\n        -ms-flex: 6;\n            flex: 6;\n    border-bottom: 1px solid #ececec;\n    margin-bottom: 20px;\n    padding: 0 50px;\n}\n#block-about-year .year-body .year-month-list .year-month-item .right .title {\n      font-size: 25px;\n      margin-bottom: 5px;\n}\n#block-about-year .year-body .year-month-list .year-month-item:last-child .right {\n    border-bottom: none;\n}\n#block-about-video {\n  height: 550px;\n  background-image: url(\"/images/about_create.png\");\n}\n#block-about-video:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background-image: linear-gradient(120deg, transparent 60%, white);\n}\n#block-about-video .btn-play {\n    -webkit-box-flex: 3;\n        -ms-flex: 3;\n            flex: 3;\n}\n#block-about-video .btn-play:before {\n      width: 100px;\n      height: 100px;\n      content: \"\\25B6\\FE0E\";\n      color: white;\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      background: #f36f1b;\n      border-color: #f36f1b;\n}\n#block-about-video .btn-play:hover:before {\n      background: #f55701;\n      border-color: #f55701;\n}\n#block-about-video .video-content {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n    color: white;\n}\n#block-about-video .video-content .sub-title {\n      font-size: 18px;\n      margin-bottom: 20px;\n}\n#block-about-video .video-content h3 {\n      font-size: 50px;\n}\n#block-about-video .video-content .video-desc {\n      margin-bottom: 40px;\n      padding-bottom: 40px;\n}\n#block-about-video .video-content .video-desc:after {\n        content: \"\";\n        position: absolute;\n        width: 50px;\n        height: 2px;\n        background: #f26c24;\n        left: 0;\n        bottom: 0;\n}\n@-webkit-keyframes yeardot {\n0% {\n    -webkit-transform: scale(0.3);\n            transform: scale(0.3);\n}\n50% {\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n}\n100% {\n    -webkit-transform: scale(0.3);\n            transform: scale(0.3);\n}\n}\n@keyframes yeardot {\n0% {\n    -webkit-transform: scale(0.3);\n            transform: scale(0.3);\n}\n50% {\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n}\n100% {\n    -webkit-transform: scale(0.3);\n            transform: scale(0.3);\n}\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\n#app #header.hidden {\n  display: none;\n}\n.main-title {\n  font-size: 50px;\n  margin-bottom: 0;\n}\n.sub-title {\n  font-size: 20px;\n  letter-spacing: 10px;\n  font-family: \"PingFang SC\",微軟正黑體;\n}\n#about-tabs {\n  position: absolute;\n  margin: auto;\n  width: 100vw;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n  margin-top: 50px;\n}\n#about-tabs.position-fixed {\n    border-bottom: 2px solid #efefef;\n    position: fixed;\n    top: 0px;\n    z-index: 99999;\n    max-width: unset;\n    background: white;\n    margin-top: 0;\n}\n#about-tabs.position-fixed .about-tabs-body {\n      margin-bottom: -2px !important;\n}\n#about-tabs .tab {\n    -webkit-transition: all 0.3s;\n    transition: all 0.3s;\n    color: gray;\n    font-size: 20px;\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    border-bottom: 2px solid #efefef;\n    padding: 15px 0;\n    cursor: pointer;\n}\n#about-tabs .tab.active, #about-tabs .tab:hover {\n      border-bottom: 3px solid #f26c24;\n      color: #f26c24;\n}\n#block-secret {\n  padding: 70px 0;\n  margin: 130px 0;\n}\n#block-secret .sub-title {\n    margin-bottom: 40px;\n}\n#block-secret .about-content {\n    width: 70%;\n    margin: 0 auto;\n    line-height: 30px;\n    font-weight: 500;\n}\n#block-about-service {\n  margin-bottom: 270px;\n}\n#block-about-service .service-body {\n    height: 500px;\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n}\n#block-about-service .service-body:before {\n      content: \"\";\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      background: black;\n      opacity: 0.7;\n}\n#block-about-service .service-body .service-item {\n      padding: 80px;\n      background-size: cover;\n      background-repeat: no-repeat;\n      background-position: center;\n}\n#block-about-service .service-body .service-item .service-content {\n        opacity: 0;\n}\n#block-about-service .service-body .service-item .service-content .service-title {\n          font-size: 35px;\n          margin-bottom: 5px;\n}\n#block-about-service .service-body .service-item .service-content .service-desc {\n          line-height: 35px;\n          font-size: 20px;\n}\n#block-about-service .service-body .service-item:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: #f26c23;\n        opacity: 0;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#block-about-service .service-body .service-item:hover:before {\n        opacity: 0.9;\n}\n#block-about-service .service-body .service-item:hover .service-content {\n        opacity: 1;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#block-about-service .service-body .service-left, #block-about-service .service-body .service-right {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#block-about-service .service-body .service-left {\n      top: -80px;\n}\n#block-about-service .service-body .service-left .service-item {\n        height: 750px;\n        position: relative;\n}\n#block-about-service .service-body .service-right {\n      top: -80px;\n}\n#block-about-service .service-body .service-right .service-item.bottom350px {\n        height: 480px;\n        width: 90%;\n}\n#block-about-year {\n  padding-top: 70px;\n  margin-bottom: 150px;\n}\n#block-about-year .circle-wapper {\n    position: absolute;\n    width: 100vw;\n    height: 100vh;\n}\n#block-about-year .circle-wapper .circle-a {\n      background: #feefe8;\n      width: 800px;\n      height: 800px;\n      position: absolute;\n      top: -76%;\n      left: -12%;\n      border-radius: 100%;\n      z-index: -1;\n}\n#block-about-year .circle-wapper .circle-b {\n      background: #fdf8f4;\n      width: 1100px;\n      height: 1100px;\n      position: absolute;\n      bottom: -76%;\n      right: -30%;\n      border-radius: 100%;\n      z-index: -1;\n}\n#block-about-year .year .slick-list {\n    height: 230px;\n    margin: 3rem 0 0 0;\n}\n#block-about-year .year .year-item {\n    top: 49px;\n    padding-bottom: 35px;\n}\n#block-about-year .year .year-item.active .text-year {\n      color: #f26d22;\n}\n#block-about-year .year .year-item.active .dot-year .dot-radar {\n      -webkit-transform: scale(1);\n              transform: scale(1);\n}\n#block-about-year .year .year-item:not(.active) .dot-year:hover .dot-radar {\n      -webkit-transition: all .5s;\n      transition: all .5s;\n      -webkit-animation: yeardot 1.2s infinite ease-in-out;\n              animation: yeardot 1.2s infinite ease-in-out;\n}\n#block-about-year .year .year-item:hover {\n      color: #e66820;\n}\n#block-about-year .year .year-item:before {\n      content: \"\";\n      background: #f26d22;\n      position: absolute;\n      width: 100%;\n      height: 2px;\n      bottom: 0;\n      left: 0;\n}\n#block-about-year .year .year-item .dot-year {\n      width: 10px;\n      height: 10px;\n      position: absolute;\n      background: #f26d22;\n      border-radius: 100%;\n      top: 58px;\n      left: calc(50% - 5px);\n      cursor: pointer;\n}\n#block-about-year .year .year-item .dot-year:before {\n        content: \"\";\n        position: absolute;\n        width: 24px;\n        height: 24px;\n        background: rgba(255, 205, 177, 0.45);\n        border-radius: 100%;\n        left: -7px;\n        top: -7px;\n}\n#block-about-year .year .year-item .dot-year .dot-radar {\n        content: \"\";\n        -webkit-transition: -webkit-transform 0.3s;\n        transition: -webkit-transform 0.3s;\n        transition: transform 0.3s;\n        transition: transform 0.3s, -webkit-transform 0.3s;\n        position: absolute;\n        border-radius: 100%;\n        width: 180px;\n        height: 180px;\n        -webkit-transform: scale(0);\n                transform: scale(0);\n        background: rgba(255, 205, 177, 0.1);\n        left: -85px;\n        top: -85px;\n}\n#block-about-year .year .slick-arrow {\n    color: transparent;\n    background: transparent;\n    border: none;\n}\n#block-about-year .year .slick-arrow:before {\n      line-height: 8px;\n      content: \"\\279D\";\n      display: inline-block;\n      color: gray;\n      font-size: 22px;\n}\n#block-about-year .year .slick-arrow.slick-prev:before {\n      -webkit-transform: scaleX(-1);\n              transform: scaleX(-1);\n}\n#block-about-year .year .slick-next:focus:before, #block-about-year .year .slick-next:hover:before, #block-about-year .year .slick-prev:focus:before, #block-about-year .year .slick-prev:hover:before {\n    color: #f26d22;\n}\n#block-about-year .year .text-year {\n    font-size: 20px;\n    font-weight: 500;\n}\n#block-about-year .year-body .year-left {\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    border-right: 1px solid #fbc1a2;\n    padding: 40px 100px 40px 0;\n}\n#block-about-year .year-body .year-left p {\n      font-size: 20px;\n}\n#block-about-year .year-body .year-left p span {\n        display: inline-block;\n        font-size: 35px;\n}\n#block-about-year .year-body .year-right {\n    height: 470px;\n    overflow-y: scroll;\n    -webkit-box-flex: 5;\n        -ms-flex: 5;\n            flex: 5;\n    padding: 40px 0 40px 100px;\n}\n#block-about-year .year-body .year-month-list .year-month-item .left {\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n}\n#block-about-year .year-body .year-month-list .year-month-item .left .month {\n      font-size: 22px;\n}\n#block-about-year .year-body .year-month-list .year-month-item .right {\n    -webkit-box-flex: 6;\n        -ms-flex: 6;\n            flex: 6;\n    border-bottom: 1px solid #ececec;\n    margin-bottom: 20px;\n    padding: 0 50px;\n}\n#block-about-year .year-body .year-month-list .year-month-item .right .title {\n      font-size: 25px;\n      margin-bottom: 5px;\n}\n#block-about-year .year-body .year-month-list .year-month-item:last-child .right {\n    border-bottom: none;\n}\n#block-about-video {\n  height: 550px;\n  background-image: url(\"/images/about_create.png\");\n}\n#block-about-video:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background-image: linear-gradient(120deg, transparent 60%, white);\n}\n#block-about-video .btn-play {\n    -webkit-box-flex: 3;\n        -ms-flex: 3;\n            flex: 3;\n}\n#block-about-video .btn-play:before {\n      width: 100px;\n      height: 100px;\n      content: \"\\25B6\\FE0E\";\n      color: white;\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      background: #f36f1b;\n      border-color: #f36f1b;\n}\n#block-about-video .btn-play:hover:before {\n      background: #f55701;\n      border-color: #f55701;\n}\n#block-about-video .video-content {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n    color: white;\n}\n#block-about-video .video-content h3 {\n      font-size: 50px;\n}\n#block-about-video .video-content .video-desc {\n      margin-bottom: 40px;\n      padding-bottom: 40px;\n}\n#block-about-video .video-content .video-desc:after {\n        content: \"\";\n        position: absolute;\n        width: 50px;\n        height: 2px;\n        background: #f26c24;\n        left: 0;\n        bottom: 0;\n}\n@-webkit-keyframes yeardot {\n0% {\n    -webkit-transform: scale(0.3);\n            transform: scale(0.3);\n}\n50% {\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n}\n100% {\n    -webkit-transform: scale(0.3);\n            transform: scale(0.3);\n}\n}\n@keyframes yeardot {\n0% {\n    -webkit-transform: scale(0.3);\n            transform: scale(0.3);\n}\n50% {\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n}\n100% {\n    -webkit-transform: scale(0.3);\n            transform: scale(0.3);\n}\n}\n", ""]);
 
 // exports
 
@@ -9793,6 +9793,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_vue__ = __webpack_require__(338);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_slick__ = __webpack_require__(268);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_slick___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_vue_slick__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -9949,11 +9960,19 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_3_bootstrap_vue__["a" /* default */]);
             yearEvents: [{
                 year: 2018,
                 content: [{
+                    month: '5月',
+                    listTitle: '新光三越旗艦店開幕',
+                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
+                }, {
+                    month: '4月',
+                    listTitle: '新光三越旗艦店開幕',
+                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
+                }, {
                     month: '3月',
                     listTitle: '新光三越旗艦店開幕',
                     listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
                 }, {
-                    month: '1月',
+                    month: '2月',
                     listTitle: '新光三越旗艦店開幕',
                     listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
                 }]
@@ -9965,6 +9984,10 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_3_bootstrap_vue__["a" /* default */]);
                     listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
                 }, {
                     month: '4月',
+                    listTitle: '新光三越旗艦店開幕',
+                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
+                }, {
+                    month: '3月',
                     listTitle: '新光三越旗艦店開幕',
                     listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
                 }]
@@ -10033,6 +10056,9 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_3_bootstrap_vue__["a" /* default */]);
         yearend: function yearend(year) {
             return year.toString().substring(year.toString().length - 1, year.toString().length);
         },
+        yearthree: function yearthree(year) {
+            return year.toString().substring(year.toString().length - 2, year.toString().length - 1);
+        },
         onClickYear: function onClickYear(index) {
             if (this.yearIndex > index) {
                 this.yearTransition = 'to-big';
@@ -10059,23 +10085,47 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_3_bootstrap_vue__["a" /* default */]);
                 jQuery(".tab.active").removeClass("active");
                 jQuery(this).addClass("active");
                 jQuery("html,body").animate({
-                    scrollTop: jQuery(target).offset().top - 120
+                    scrollTop: jQuery(target).offset().top - 62
                 }, 300);
             });
 
             jQuery(window).scroll(function () {
-                //scrollTabs();
+                scrollTabs();
+                scrollCircles();
             });
+            jQuery("#block-about-year .circle-wapper").attr("style", 'top: ' + jQuery("#block-about-year").offset().top - 150 + 'px; height: ' + jQuery("#block-about-year").height());
 
             scrollTabs();
+            scrollCircles();
+
+            function scrollCircles() {
+                var dis = jQuery(window).scrollTop() - jQuery("#block-about-year .circle-a").offset().top;
+                if (dis > 600) {
+                    dis = 600;
+                }
+                if (dis < -300) {
+                    dis = -300;
+                }
+
+                jQuery("#block-about-year .circle-a").attr("style", 'transform: translateY(' + dis / 5 + 'px) translateX(' + dis / 10 + 'px)');
+
+                var disb = jQuery("#block-about-year .circle-b").offset().top - jQuery(window).scrollTop();
+                if (disb > 1200) {
+                    disb = 1200;
+                }
+                if (disb < -1200) {
+                    disb = -1200;
+                }
+                jQuery("#block-about-year .circle-b").attr("style", 'transform: translateY(' + (0 - disb / 5) + 'px) translateX(' + (0 - disb / 10) + 'px)');
+            }
 
             function scrollTabs() {
-                if (jQuery(window).scrollTop() >= jQuery("#block-secret").offset().top - 200) {
+                if (jQuery(window).scrollTop() >= jQuery("#block-secret").offset().top - 100) {
                     jQuery("#about-tabs").addClass("position-fixed");
-                    //jQuery("#header").addClass("hidden");
+                    jQuery("#header").addClass("hidden");
                 } else {
                     jQuery("#about-tabs").removeClass("position-fixed");
-                    //jQuery("#header").removeClass("hidden");
+                    jQuery("#header").removeClass("hidden");
                 }
 
                 var tab = [jQuery("#block-secret").offset().top - 200, jQuery("#block-about-year").offset().top - 200, jQuery("#block-about-video").offset().top - 200];
@@ -20947,6 +20997,8 @@ var render = function() {
         [
           _vm._m(3),
           _vm._v(" "),
+          _vm._m(4),
+          _vm._v(" "),
           _c(
             "span",
             { staticClass: "sub-title text-uppercase d-block text-center" },
@@ -20995,7 +21047,40 @@ var render = function() {
                       _c(
                         "span",
                         { staticStyle: { "margin-right": "-0.6rem" } },
-                        [_vm._v("201")]
+                        [_vm._v("20")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        {
+                          staticClass: "position-relative",
+                          staticStyle: { "margin-right": "-0.6rem" }
+                        },
+                        [
+                          _c(
+                            "transition-group",
+                            {
+                              attrs: {
+                                name: _vm.yearTransition,
+                                mode: "out-in"
+                              }
+                            },
+                            _vm._l(2, function(n, $index) {
+                              return _vm.yearthree(
+                                _vm.yearEvents[_vm.yearIndex].year
+                              ) == $index
+                                ? _c("span", { key: $index }, [
+                                    _vm._v(
+                                      "\n                                            " +
+                                        _vm._s($index) +
+                                        "\n                                         "
+                                    )
+                                  ])
+                                : _vm._e()
+                            })
+                          )
+                        ],
+                        1
                       ),
                       _vm._v(" "),
                       _c(
@@ -21112,7 +21197,7 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _vm._m(4),
+      _vm._m(5),
       _vm._v(" "),
       _c("block-footer")
     ],
@@ -21126,13 +21211,13 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "container pl-0 pr-0", attrs: { id: "about-tabs" } },
+      { staticClass: "container", attrs: { id: "about-tabs" } },
       [
         _c(
           "div",
           {
             staticClass:
-              "about-tabs-body row container justify-content-between m-auto"
+              "about-tabs-body row container pl-0 pr-0 justify-content-between m-auto"
           },
           [
             _c(
@@ -21332,6 +21417,16 @@ var staticRenderFns = [
         )
       ]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "circle-wapper" }, [
+      _c("div", { staticClass: "circle-a" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "circle-b" })
+    ])
   },
   function() {
     var _vm = this

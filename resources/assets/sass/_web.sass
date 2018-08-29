@@ -95,12 +95,14 @@ a
         color: $color-orange
         text-decoration: none
         transition: color .3s
+html
+    width: 100vw
+    overflow-x: hidden
 html,body,#app,#block-main
     height: 100%
-    
+
 .fs-inherit
     font-size: inherit
-
 
 .position-h-center
     transform: translateY(-50%) !important
@@ -127,6 +129,15 @@ html,body,#app,#block-main
         left: 0  
 
 #app
+    .main-title
+        font-size: 50px
+        margin-bottom: 0.5rem
+    .sub-title
+        letter-spacing: 10px
+        font-weight: 100
+        font-size: 16px
+        font-family: "PingFang SC",微軟正黑體
+        margin-bottom: 2rem
     #header
         top: 0
         z-index: 999999
@@ -205,7 +216,7 @@ html,body,#app,#block-main
         // &.active
         //     transform: translateY(0) 
         //     transition: all 1s   
-                 
+
 
     .fade-enter-active,
     .fade-leave-active

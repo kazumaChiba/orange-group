@@ -54255,11 +54255,7 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
         if (savedPosition) {
             return savedPosition;
         } else {
-            if (to.path == from.path) {
-                return savedPosition;
-            } else {
-                return { x: 0, y: 0 };
-            }
+            return { x: 0, y: 0 };
         }
     },
 

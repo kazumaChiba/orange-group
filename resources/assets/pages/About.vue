@@ -1,8 +1,8 @@
 <template>
     <div id="block-about">
         <banner title="關於<span class='text-orange'>橘色</span>" img="/images/slideshow_1.jpg"></banner>
-        <div id="about-tabs" class="container pl-0 pr-0">
-            <div class="about-tabs-body row container justify-content-between m-auto">
+        <div id="about-tabs" class="container">
+            <div class="about-tabs-body row container pl-0 pr-0 justify-content-between m-auto">
                 <a class="tab text-center active" data-target = '#block-secret'>橘色秘密</a>
                 <a class="tab text-center" data-target = '#block-about-year'>橘色歲月</a>
                 <a class="tab text-center" data-target = '#block-about-video'>用心創造美好的時刻</a>
@@ -48,6 +48,10 @@
             </div>
         </div>
         <div id="block-about-year">
+            <div class="circle-wapper">
+                <div class="circle-a"></div>
+                <div class="circle-b"></div>
+            </div>
             <h3 class="main-title text-center"><span class="fs-inherit text-orange mb-1">橘色</span>歲月</h3>
             <span class="sub-title text-uppercase d-block text-center">timeline</span>
             <slick
@@ -55,10 +59,10 @@
                 ref="slick"
                 :options="yearOptions"
             >
-                <div 
+                <div
                     v-for="(item,$index) in yearEvents"
                     :key="$index"
-                    class="year-item text-center position-relative" 
+                    class="year-item text-center position-relative"
                     :class="yearIndex == $index ? 'active' : ''"
                     @click="onClickYear($index);"
                 >
@@ -73,8 +77,15 @@
                     <div class="row">
                         <div class="year-left text-center">
                             <p>
-                                <span  class="text-orange">
-                                    <span style="margin-right: -0.6rem;">201</span>
+                               <span  class="text-orange">
+                                    <span style="margin-right: -0.6rem;">20</span>
+                                     <span class="position-relative" style="margin-right: -0.6rem;">
+                                         <transition-group :name="yearTransition" mode="out-in">
+                                             <span v-for="(n, $index) in 2" v-if="yearthree(yearEvents[yearIndex].year) == $index" :key="$index">
+                                                {{$index}}
+                                             </span>
+                                         </transition-group>
+                                    </span>
                                     <span class="position-relative">
                                          <transition-group :name="yearTransition" mode="out-in">
                                              <span v-for="(yearEvent, $index) in yearEvents" v-if="yearIndex == $index" :key="$index">
@@ -152,81 +163,96 @@ export default {
 	        yearTransition: 'to-small',
             yearIndex: 0,
             yearEvents: [
-	            {
-		            year: 2018,
-		            content: [
-			            {
-				            month: '3月',
-				            listTitle: '新光三越旗艦店開幕',
-				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-			            },
-			            {
-				            month: '1月',
-				            listTitle: '新光三越旗艦店開幕',
-				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-			            }
-		            ]
-	            },
-	            {
-		            year: 2015,
-		            content: [
-			            {
-				            month: '12月',
-				            listTitle: '新光三越旗艦店開幕',
-				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-			            },
-			            {
-				            month: '4月',
-				            listTitle: '新光三越旗艦店開幕',
-				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-			            }
-		            ]
-	            },
-	            {
-		            year: 2013,
-		            content: [
-			            {
-				            month: '7月',
-				            listTitle: '新光三越旗艦店開幕',
-				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-			            },
-			            {
-				            month: '6月',
-				            listTitle: '新光三越旗艦店開幕',
-				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-			            }
-		            ]
-	            },
-	            {
-		            year: 2012,
-		            content: [
-			            {
-				            month: '5月',
-				            listTitle: '新光三越旗艦店開幕',
-				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-			            },
-			            {
-				            month: '3月',
-				            listTitle: '新光三越旗艦店開幕',
-				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-			            }
-		            ]
-	            },
-	            {
-		            year: 2009,
-		            content: [
-			            {
-				            month: '3月',
-				            listTitle: '新光三越旗艦店開幕',
-				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-			            },
-			            {
-				            month: '1月',
-				            listTitle: '新光三越旗艦店開幕',
-				            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-			            }
-		            ]
-	            },
+                {
+                    year: 2018,
+                    content: [
+                        {
+                            month: '5月',
+                            listTitle: '新光三越旗艦店開幕',
+                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                        },
+                        {
+                            month: '4月',
+                            listTitle: '新光三越旗艦店開幕',
+                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                        },
+                        {
+                            month: '3月',
+                            listTitle: '新光三越旗艦店開幕',
+                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                        },
+                        {
+                            month: '2月',
+                            listTitle: '新光三越旗艦店開幕',
+                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                        }
+                    ]
+                },
+                {
+                    year: 2015,
+                    content: [
+                        {
+                            month: '12月',
+                            listTitle: '新光三越旗艦店開幕',
+                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                        },
+                        {
+                            month: '4月',
+                            listTitle: '新光三越旗艦店開幕',
+                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                        },
+                        {
+                            month: '3月',
+                            listTitle: '新光三越旗艦店開幕',
+                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                        }
+                    ]
+                },
+                {
+                    year: 2013,
+                    content: [
+                        {
+                            month: '7月',
+                            listTitle: '新光三越旗艦店開幕',
+                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                        },
+                        {
+                            month: '6月',
+                            listTitle: '新光三越旗艦店開幕',
+                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                        }
+                    ]
+                },
+                {
+                    year: 2012,
+                    content: [
+                        {
+                            month: '5月',
+                            listTitle: '新光三越旗艦店開幕',
+                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                        },
+                        {
+                            month: '3月',
+                            listTitle: '新光三越旗艦店開幕',
+                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                        }
+                    ]
+                },
+                {
+                    year: 2009,
+                    content: [
+                        {
+                            month: '3月',
+                            listTitle: '新光三越旗艦店開幕',
+                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                        },
+                        {
+                            month: '1月',
+                            listTitle: '新光三越旗艦店開幕',
+                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                        }
+                    ]
+                },
                 {
                     year: 2008,
                     content: [
@@ -257,19 +283,22 @@ export default {
         reInit() {
             this.$nextTick(() => {
                 this.$refs.slick.reSlick();
-            });
+        });
         },
-	    yearend(year){
-		    return year.toString().substring(year.toString().length-1, year.toString().length)
+        yearend(year){
+            return year.toString().substring(year.toString().length-1, year.toString().length)
         },
-	    onClickYear(index){
-        	if(this.yearIndex > index){
-		        this.yearTransition = 'to-big'
+        yearthree(year){
+            return year.toString().substring(year.toString().length-2, year.toString().length-1)
+        },
+        onClickYear(index){
+            if(this.yearIndex > index){
+                this.yearTransition = 'to-big'
             }else{
-		        this.yearTransition = 'to-small'
+                this.yearTransition = 'to-small'
             }
 
-		    this.yearIndex = index
+            this.yearIndex = index
         }
     },
     components: {
@@ -288,25 +317,49 @@ export default {
                 jQuery(".tab.active").removeClass("active");
                 jQuery(this).addClass("active");
                 jQuery("html,body").animate({
-                    scrollTop: jQuery(target).offset().top - 120
+                    scrollTop: jQuery(target).offset().top - 62
                 }, 300);
 
             });
-            
-            jQuery(window).scroll(function(){
-                //scrollTabs();
-            });
 
-	        scrollTabs();
+            jQuery(window).scroll(function(){
+                scrollTabs();
+                scrollCircles();
+            });
+            jQuery("#block-about-year .circle-wapper").attr("style", 'top: '+ jQuery("#block-about-year").offset().top-150 + 'px; height: ' + jQuery("#block-about-year").height());
+
+            scrollTabs();
+            scrollCircles();
+
+            function scrollCircles(){
+                let dis = (jQuery(window).scrollTop() - jQuery("#block-about-year .circle-a").offset().top)
+                if( dis > 600){
+                    dis = 600
+                }
+                if(dis < -300){
+                    dis = -300
+                }
+
+                jQuery("#block-about-year .circle-a").attr("style", 'transform: translateY('+ ((dis/5)) + 'px) translateX('+ ((dis/10)) + 'px)');
+
+                let disb = (jQuery("#block-about-year .circle-b").offset().top - jQuery(window).scrollTop())
+                if( disb > 1200){
+                    disb = 1200
+                }
+                if(disb < -1200){
+                    disb = -1200
+                }
+                jQuery("#block-about-year .circle-b").attr("style", 'transform: translateY('+ (0-(disb/5)) + 'px) translateX('+ (0-(disb/10)) + 'px)');
+            }
 
             function scrollTabs(){
-                if(jQuery(window).scrollTop() >= jQuery("#block-secret").offset().top - 200){
+                if(jQuery(window).scrollTop() >= jQuery("#block-secret").offset().top - 100){
                     jQuery("#about-tabs").addClass("position-fixed");
-                    //jQuery("#header").addClass("hidden");
+                    jQuery("#header").addClass("hidden");
                 }
                 else{
                     jQuery("#about-tabs").removeClass("position-fixed");
-                    //jQuery("#header").removeClass("hidden");
+                    jQuery("#header").removeClass("hidden");
                 }
 
                 let tab = [jQuery("#block-secret").offset().top - 200 , jQuery("#block-about-year").offset().top - 200 , jQuery("#block-about-video").offset().top - 200 ];
@@ -339,7 +392,7 @@ export default {
         #header
             &.hidden
                 display: none
-    .main-title 
+    .main-title
         font-size: 50px
         margin-bottom: 0
     .sub-title
@@ -347,19 +400,23 @@ export default {
         letter-spacing: 10px
         font-family: "PingFang SC",微軟正黑體
     #about-tabs
-        margin: 50px auto
+        position: absolute
+        margin: auto
+        width: 100vw
+        left: 50%
+        transform: translateX(-50%)
+        margin-top: 50px
+
         &.position-fixed
             border-bottom: 2px solid #efefef
             position: fixed
-            top: 70px
+            top: 0px
             z-index: 99999
             max-width: unset
             background: white
             margin-top: 0
             .about-tabs-body
                 margin-bottom: -2px !important
-            .tab
-                padding: 12px 0
         .tab
             transition: all 0.3s
             color: gray
@@ -373,7 +430,7 @@ export default {
                 color: #f26c24
     #block-secret
         padding: 70px 0
-        margin: 0 0 130px 0
+        margin: 130px 0
         .sub-title
             margin-bottom: 40px
         .about-content
@@ -382,7 +439,7 @@ export default {
             line-height: 30px
             font-weight: 500
     #block-about-service
-        height: 1000px
+        margin-bottom: 270px
         .service-body
             height: 500px
             background-size: cover
@@ -433,18 +490,43 @@ export default {
                 top: -80px
                 .service-item
                     &.top
-                        height: 350px
-                    &.bottom
+                        height:
+                    &.bottom350px
                         height: 480px
                         width: 90%
     #block-about-year
         padding-top: 70px
         margin-bottom: 150px
+        .circle-wapper
+            position: absolute
+            width: 100vw
+            height: 100vh
+            .circle-a
+                //transition: transform 1s
+                background: #feefe8
+                width: 800px
+                height: 800px
+                position: absolute
+                top: -76%
+                left: -12%
+                border-radius: 100%
+                z-index: -1
+            .circle-b
+                //transition: transform 1s
+                background: rgb(253, 248, 244)
+                width: 1100px
+                height: 1100px
+                position: absolute
+                bottom: -76%
+                right: -30%
+                border-radius: 100%
+                z-index: -1
         .year
             .slick-list
-                height: 350px
+                height: 230px
+                margin: 3rem 0 0 0
             .year-item
-                top: 110px
+                top: 49px
                 padding-bottom: 35px
                 &.active
                     .text-year
@@ -488,6 +570,7 @@ export default {
                         top: -7px
                     .dot-radar
                         content: ""
+                        transition: transform 0.3s
                         position: absolute
                         border-radius: 100%
                         width: 180px
@@ -513,20 +596,22 @@ export default {
                 color: #f26d22
             .text-year
                 font-size: 20px
-                font-weight: 500    
+                font-weight: 500
         .year-body
             .year-left
                 flex: 1
                 border-right: 1px solid #fbc1a2
-                padding-right: 50px
+                padding: 40px 100px 40px 0
                 p
                     font-size: 20px
                     span
                         display: inline-block
                         font-size: 35px
             .year-right
+                height: 470px
+                overflow-y: scroll
                 flex: 5
-                padding-left: 100px
+                padding: 40px 0 40px 100px
             .year-month-list
                 .year-month-item
                     .left
@@ -546,8 +631,8 @@ export default {
                             border-bottom: none
 
     #block-about-video
-        height: 550px      
-        background-image: url('/images/about_create.png') 
+        height: 550px
+        background-image: url('/images/about_create.png')
         &:before
             content: ""
             position: absolute
@@ -570,12 +655,9 @@ export default {
                     border-color: #f55701
         .video-content
             flex: 2
-            color: white  
-            .sub-title
-                font-size: 18px   
-                margin-bottom: 20px   
+            color: white
             h3
-                font-size: 50px          
+                font-size: 50px
             .video-desc
                 margin-bottom: 40px
                 padding-bottom: 40px
@@ -587,7 +669,7 @@ export default {
                     background: #f26c24
                     left: 0
                     bottom: 0
-                            
+
     @keyframes yeardot
         0%
             transform: scale(0.3)
