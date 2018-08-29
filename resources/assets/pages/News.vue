@@ -201,7 +201,11 @@ export default {
     }
 }
 </script>
-
+<style lang="sass" scope>
+#block-news
+    &:before
+        background-attachment: fixed
+</style>
 <style lang="sass">
     #header
         top: 0

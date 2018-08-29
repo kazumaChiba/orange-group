@@ -288,21 +288,25 @@ export default {
                         transition: opacity .3s
                     .text-circle-option
                         position: absolute
+                        width: 36px
+                        height: 36px
+                        display: flex
+                        align-items: center
                         &:hover
                             cursor: pointer
                             color: #f26d23
                         &.top
-                            top: calc(-40px - 12px)
+                            top: calc(-40px - 18px)
                             left: calc(50% - 18px)
                         &.bottom
-                            bottom: calc(-40px - 12px)
+                            bottom: calc(-40px - 18px)
                             left: calc(50% - 18px)
                         &.right
                             top: calc(50% - 18px)
-                            right: calc(-40px - 12px)
+                            right: calc(-40px - 18px)
                         &.left
                             top: calc(50% - 18px)
-                            left: calc(-40px - 12px)
+                            left: calc(-40px - 18px)
                         a
                             word-break: keep-all
                         &.active
