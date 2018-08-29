@@ -134,7 +134,7 @@ export default {
                     link: '/#/news/detail'
                 },
                 {
-                    background: '/images/news_v5.png',
+                    background: '/images/news_v4.png',
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
