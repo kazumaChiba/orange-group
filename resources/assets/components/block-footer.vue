@@ -12,8 +12,30 @@
             </div>
         </div>
         <div class="footer container">
-            <div class="row d-flex flex-column justify-content-end h-100">
-                <div class="footer-info position-relative d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex flex-column justify-content-end h-100">
+                <div class="row mb-5 pb-5">
+                    <div class="col">
+                        <div class="footer-text-left text-left pt-5">
+                            <div class="d-inline-block text-center">
+                                <p class="text-orange footer-info-title mb-4">聯絡我們</p>
+                                <p>台北市大安區仁愛路四段37號3樓之B</p>
+                                <p>Email:  service@orange.co<br>Phone:  02-2711-4636<br>Fax:  02-2711-4638</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img class="logo" src="/images/index_logo.png">
+                    </div>
+                    <div class="col">
+                        <div class="footer-text-right text-right pt-5">
+                            <div class="d-inline-block text-center">
+                                <p class="text-orange footer-info-title mb-4">橘色精神</p>
+                                <p class="footer-info-subtitle">用心 · 貼心 · 安心<br>信心 · 一心 · 同理心</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="footer-info position-relative d-flex justify-content-between align-items-center w-100">
                     <div class="footer-text-left text-left">
                         <div class="d-inline-block text-center">
                             <p class="text-orange footer-info-title mb-4">聯絡我們</p>
@@ -28,13 +50,13 @@
                             <p class="footer-info-subtitle">用心 · 貼心 · 安心<br>信心 · 一心 · 同理心</p>
                         </div>
                     </div>
-                </div>
-                <div class="position-relative d-flex flex-column align-items-center justify-content-center w-100">
+                </div>-->
+                <div class="position-relative d-flex flex-column align-items-center justify-content-center w-100 pt-4">
                     <div class="footer-social">
                         <a class="footer-icons mr-3 ml-3" href="#"><font-awesome-icon :icon="['fab','facebook-f']" /></a>
                         <a class="footer-icons mr-3 ml-3" href="#"><font-awesome-icon :icon="['fab','twitter']" /></a>
                     </div>
-                    <p id="copyright" class="footer position-relative w-100 text-size-1 d-flex align-items-end justify-content-center">2018 <a class="link-orange"> 橘色涮涮屋 </a> 版權所有. Designed by&ensp;<a class="link-orange" href="www.daydream-lab.com">Daydream Lab</a></p>
+                    <p id="copyright" class="footer mb-5 position-relative w-100 text-size-1 d-flex align-items-end justify-content-center">2018 <a class="link-orange"> 橘色涮涮屋 </a> 版權所有. Designed by&ensp;<a class="link-orange" href="www.daydream-lab.com">Daydream Lab</a></p>
                 </div>
             </div>
         </div>

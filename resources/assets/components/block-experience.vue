@@ -46,6 +46,7 @@
                 <div class="circle-body position-relative" :class="{'active' : bgTransition}">
                     <svg x="0px" y="0px" width="100%" height="100%" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
                          <rect x="0" y="0" width="100%" height="100%" fill="#f26e22" style="clip-path: url(#circle)"/>
+              <circle transform="rotate(0)" stroke-dasharray="0,471" cx="75" cy="75" r="70.5" style="stroke: rgb(0, 172, 193);stroke-width: 9px;stroke-linecap: square;fill: none;/* transform: rotate(-126deg); */transform-origin: center center 0px;clip-path: url(&quot;#circle&quot;);opacity: 0.5;"></circle>
                         <clipPath id="circle">
              <path fill="#f26e22" d="M75.1-0.1c-20.7,0-39.5,8.4-53.1,22l2.8,9.7C37,17.5,55,8.6,75,8.6c36.7,0,66.4,29.8,66.4,66.4
 		c0,36.7-29.8,66.4-66.4,66.4c-6.5,0-12.8-1-18.8-2.7l2.8,9.7c5.1,1.1,10.5,1.7,15.9,1.7c41.5,0,75.1-33.6,75.1-75.1
@@ -247,7 +248,6 @@ export default {
                     width: 500px
                     height: 500px
                 .circle-body
-                    //transform: rotate(12deg)
                     width: 500px
                     height: 500px
                     opacity: 0.75

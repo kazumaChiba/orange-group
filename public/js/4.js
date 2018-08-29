@@ -1,18 +1,19 @@
 webpackJsonp([4],{
 
-/***/ 225:
+/***/ 224:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(460)
+  __webpack_require__(456)
+  __webpack_require__(458)
 }
 var normalizeComponent = __webpack_require__(49)
 /* script */
-var __vue_script__ = __webpack_require__(462)
+var __vue_script__ = __webpack_require__(460)
 /* template */
-var __vue_template__ = __webpack_require__(463)
+var __vue_template__ = __webpack_require__(461)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -29,7 +30,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/pages/NewsInner.vue"
+Component.options.__file = "resources/assets/pages/News.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -38,9 +39,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-039313c4", Component.options)
+    hotAPI.createRecord("data-v-03657a3c", Component.options)
   } else {
-    hotAPI.reload("data-v-039313c4", Component.options)
+    hotAPI.reload("data-v-03657a3c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -52,19 +53,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 236:
+/***/ 234:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(237)
+  __webpack_require__(235)
 }
 var normalizeComponent = __webpack_require__(49)
 /* script */
-var __vue_script__ = __webpack_require__(239)
+var __vue_script__ = __webpack_require__(237)
 /* template */
-var __vue_template__ = __webpack_require__(240)
+var __vue_template__ = __webpack_require__(238)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -104,13 +105,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 237:
+/***/ 235:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(238);
+var content = __webpack_require__(236);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -131,7 +132,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 238:
+/***/ 236:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(48)(false);
@@ -146,11 +147,33 @@ exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .j
 
 /***/ }),
 
-/***/ 239:
+/***/ 237:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -202,7 +225,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 240:
+/***/ 238:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -250,7 +273,7 @@ var render = function() {
       _c("div", { staticClass: "footer container" }, [
         _c(
           "div",
-          { staticClass: "row d-flex flex-column justify-content-end h-100" },
+          { staticClass: "d-flex flex-column justify-content-end h-100" },
           [
             _vm._m(1),
             _vm._v(" "),
@@ -258,7 +281,7 @@ var render = function() {
               "div",
               {
                 staticClass:
-                  "position-relative d-flex flex-column align-items-center justify-content-center w-100"
+                  "position-relative d-flex flex-column align-items-center justify-content-center w-100 pt-4"
               },
               [
                 _c("div", { staticClass: "footer-social" }, [
@@ -318,14 +341,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "footer-info position-relative d-flex justify-content-between align-items-center w-100"
-      },
-      [
-        _c("div", { staticClass: "footer-text-left text-left" }, [
+    return _c("div", { staticClass: "row mb-5 pb-5" }, [
+      _c("div", { staticClass: "col" }, [
+        _c("div", { staticClass: "footer-text-left text-left pt-5" }, [
           _c("div", { staticClass: "d-inline-block text-center" }, [
             _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
               _vm._v("聯絡我們")
@@ -341,14 +359,18 @@ var staticRenderFns = [
               _vm._v("Fax:  02-2711-4638")
             ])
           ])
-        ]),
-        _vm._v(" "),
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
         _c("img", {
           staticClass: "logo",
           attrs: { src: "/images/index_logo.png" }
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "footer-text-right text-right" }, [
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c("div", { staticClass: "footer-text-right text-right pt-5" }, [
           _c("div", { staticClass: "d-inline-block text-center" }, [
             _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
               _vm._v("橘色精神")
@@ -361,8 +383,8 @@ var staticRenderFns = [
             ])
           ])
         ])
-      ]
-    )
+      ])
+    ])
   },
   function() {
     var _vm = this
@@ -372,7 +394,7 @@ var staticRenderFns = [
       "p",
       {
         staticClass:
-          "footer position-relative w-100 text-size-1 d-flex align-items-end justify-content-center",
+          "footer mb-5 position-relative w-100 text-size-1 d-flex align-items-end justify-content-center",
         attrs: { id: "copyright" }
       },
       [
@@ -402,19 +424,19 @@ if (false) {
 
 /***/ }),
 
-/***/ 246:
+/***/ 243:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(247)
+  __webpack_require__(244)
 }
 var normalizeComponent = __webpack_require__(49)
 /* script */
-var __vue_script__ = __webpack_require__(249)
+var __vue_script__ = __webpack_require__(246)
 /* template */
-var __vue_template__ = __webpack_require__(250)
+var __vue_template__ = __webpack_require__(247)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -454,13 +476,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 247:
+/***/ 244:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(248);
+var content = __webpack_require__(245);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -481,7 +503,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 248:
+/***/ 245:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(48)(false);
@@ -496,7 +518,7 @@ exports.push([module.i, "\n#block-breadcrumb {\n  background-repeat: no-repeat;\
 
 /***/ }),
 
-/***/ 249:
+/***/ 246:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -554,7 +576,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 250:
+/***/ 247:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -650,23 +672,23 @@ if (false) {
 
 /***/ }),
 
-/***/ 460:
+/***/ 456:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(461);
+var content = __webpack_require__(457);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(80)("3bcafb7a", content, false, {});
+var update = __webpack_require__(80)("42e1514a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-039313c4\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./NewsInner.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-039313c4\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./NewsInner.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03657a3c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./News.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03657a3c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./News.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -677,7 +699,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 461:
+/***/ 457:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(48)(false);
@@ -685,24 +707,70 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n@charset \"UTF-8\";\n#block-news-item {\n  height: 95vh;\n}\n#block-news-item .news-item-head {\n    margin-top: 25vh;\n}\n#block-news-item .news-item-head .news-item-title {\n      font-size: 60px;\n      margin-bottom: 70px;\n}\n#block-news-item .news-item-head .news-item-info {\n      margin-bottom: 50px;\n}\n#block-news-item .news-item-head .news-item-info .info-title {\n        font-size: 13px;\n        color: #b3b3b3;\n}\n#block-news-item .item-news-body {\n    background: white;\n    color: black;\n    margin-top: 30px;\n}\n#block-news-item .item-news-body .item-relatives {\n      margin: 45px 0;\n}\n#block-news-item .item-news-body .item-relatives .item-relative.-pre {\n        padding-left: 30px;\n}\n#block-news-item .item-news-body .item-relatives .item-relative.-pre a:before {\n          right: auto;\n          left: -25px;\n          -webkit-transform: rotate(180deg);\n                  transform: rotate(180deg);\n}\n#block-news-item .item-news-body .item-relatives .item-relative.-next {\n        padding-right: 30px;\n}\n#block-news-item .item-news-body .item-relatives .item-relative a:before {\n        content: \"\\2794\";\n        position: absolute;\n        top: 0;\n        right: -25px;\n}\n#block-news-item .item-news-body .item-relatives .title-relative {\n        font-size: 13px;\n        color: gray;\n}\n#block-news-item .item-news-body .item-relatives a {\n        display: block;\n        color: black;\n        margin-top: 5px;\n}\n#block-news-item .item-news-body .item-relatives a:hover {\n          color: #f36f1b;\n}\n#block-news-item .item-news-body .item-intro-text {\n      font-size: 22px;\n      line-height: 35px;\n}\n#block-news-item .item-news-body .item-news-content {\n      line-height: 28px;\n      padding: 100px 180px;\n}\n#block-news-item .item-news-body .item-news-content p, #block-news-item .item-news-body .item-news-content span, #block-news-item .item-news-body .item-news-content ul {\n        margin: 30px 0;\n        font-size: 15px;\n        font-weight: 500;\n}\n#block-news-item .item-news-body .item-news-content img {\n        width: 100%;\n        margin: 30px 0px 20px 0;\n}\n#block-news-item .item-news-body .item-news-content .text-img {\n        margin-top: 0;\n        font-size: 18px;\n}\n#block-news-item .item-news-body .item-news-content .text-big-orange {\n        font-size: 38px;\n        color: #f26e22;\n        text-align: center;\n        padding: 40px 0;\n        margin: 15px 0;\n        position: relative;\n}\n#block-news-item .item-news-body .item-news-content .text-big-orange:after {\n          content: \"\";\n          width: 30px;\n          height: 1px;\n          background: #f26e22;\n          position: absolute;\n          bottom: 0;\n          left: calc(50% - 15px);\n}\n#block-news-item .item-news-body .item-news-content .text-intro-small {\n        font-size: 14px;\n        font-weight: 600;\n}\n#block-news-item .item-news-body .item-news-content .text-intro-title {\n        font-size: 33px;\n        color: #f26e22;\n        padding: 20px 0;\n        margin: 15px 0;\n}\n#block-news-item .item-news-foot {\n    padding-bottom: 30px;\n    margin-bottom: 30px;\n    border-bottom: 1px solid #ccc;\n}\n#block-news-item .item-news-foot .item-social-list span {\n      font-size: 13px;\n      color: gray;\n}\n#block-news-item .item-news-foot .item-tags-list .item-tag {\n      border: 1px solid #ccc;\n      color: gray;\n      padding: 5px 15px;\n      font-size: 12px;\n      margin-right: 5px;\n}\n#block-news-item .item-news-foot .item-tags-list .item-tag:hover {\n        border-color: #f26d23;\n        color: #f26d23;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n        cursor: pointer;\n}\n#block-news-item .item-news-foot .item-social .social-icons {\n      width: 30px;\n      height: 30px;\n      border-radius: 100%;\n}\n#block-news-item .item-news-foot .item-social .social-icons:hover {\n        color: white;\n}\n#block-news-item .item-news-foot .item-social .social-icons.facebook {\n        background-color: #3b5999;\n}\n#block-news-item .item-news-foot .item-social .social-icons.twitter {\n        background-color: #53acee;\n}\n#block-news-item .item-news-foot .item-social .social-icons.google {\n        background-color: #dd4a3a;\n}\n#block-news-item .item-news-foot .item-social .social-icons.linkedin-in {\n        background-color: #0076b4;\n}\n#block-news-item .el-breadcrumb {\n    -webkit-box-pack: left;\n        -ms-flex-pack: left;\n            justify-content: left;\n}\n", ""]);
+exports.push([module.i, "\n#block-news:before {\n  background-attachment: fixed;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 462:
+/***/ 458:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(459);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(80)("4074ab8c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03657a3c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./News.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03657a3c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./News.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 459:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(48)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#header {\n  top: 0;\n}\n#block-news {\n  margin-bottom: 180px;\n}\n#block-news .filter-date.-year {\n    width: 90px;\n}\n#block-news .filter-date.-month {\n    width: 85px;\n}\n#block-news .filter-date .el-input__inner {\n    -webkit-appearance: none;\n    border-radius: 0;\n    border: unset;\n    background: transparent;\n    color: white;\n}\n#block-news .filter-date .el-select__caret {\n    color: #fff;\n}\n#block-news #block-news-lists {\n    z-index: 2;\n    margin-bottom: 80px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories {\n      padding: 55px 0;\n      font-size: 14px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories.-category {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date {\n        padding: 5px;\n        background: #f26d23;\n        cursor: pointer;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-month {\n          margin-right: 20px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-year {\n          position: relative;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-year:after {\n            content: \"\";\n            position: absolute;\n            height: 60%;\n            width: 1px;\n            background: #bfbfbf;\n            right: 0;\n            top: 20%;\n}\n#block-news #block-news-items .news-item {\n    width: 25%;\n    padding: 0 16px;\n}\n#block-breadcrumb .banner-title {\n  font-size: 90px;\n  font-weight: 300;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 460:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_banner__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_banner__ = __webpack_require__(243);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_banner___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_components_block_banner__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_components_block_menu_header__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_footer__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_footer__ = __webpack_require__(234);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_components_block_footer__);
+//
+//
+//
+//
 //
 //
 //
@@ -800,17 +868,100 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
-        return {};
+        return {
+            newsItems: [{
+                background: '/images/news_v1.png',
+                date: '2018/3/21',
+                category: '橘色涮涮屋',
+                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/#/news/detail'
+            }, {
+                background: '/images/news_v3.png',
+                date: '2018/3/21',
+                category: '橘色涮涮屋',
+                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/#/news/detail'
+            }, {
+                background: '/images/news_v5.png',
+                date: '2018/3/21',
+                category: '橘色涮涮屋',
+                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/#/news/detail'
+            }, {
+                background: '/images/news_v2.png',
+                date: '2018/3/21',
+                category: '橘色涮涮屋',
+                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/#/news/detail'
+            }, {
+                background: '/images/news_v4.png',
+                date: '2018/3/21',
+                category: '橘色涮涮屋',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/#/news/detail'
+            }, {
+                background: '/images/news_v1.png',
+                date: '2018/3/21',
+                category: 'Extension 1 by 橘色',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/#/news/detail'
+            }, {
+                background: '/images/news_v2.png',
+                date: '2018/3/21',
+                category: 'Extension 1 by 橘色',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/#/news/detail'
+            }, {
+                background: '/images/news_v3.png',
+                date: '2018/3/21',
+                category: 'Extension 1 by 橘色',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/#/news/detail'
+            }, {
+                background: '/images/news_v4.png',
+                date: '2018/3/21',
+                category: 'Extension 1 by 橘色',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/#/news/detail'
+            }, {
+                background: '/images/news_v5.png',
+                date: '2018/3/21',
+                category: 'Extension 1 by 橘色',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/#/news/detail'
+            }],
+            newsCategories: ['全部新訊', '橘色涮涮屋', 'Extension 1 by 橘色'],
+            newsIndex: 0,
+            viewIndex: 8,
+            year: 2018,
+            month: ''
+        };
     },
     components: {
+        Banner: __WEBPACK_IMPORTED_MODULE_0_components_block_banner___default.a,
         MenuHeader: __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header___default.a,
         BlockFooter: __WEBPACK_IMPORTED_MODULE_2_components_block_footer___default.a
+    },
+    methods: {
+        loadMore: function loadMore() {
+            this.viewIndex += 4;
+        }
     }
 });
 
 /***/ }),
 
-/***/ 463:
+/***/ 461:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -819,200 +970,240 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {
-      staticClass: "bg-black-cover position-relative",
-      style: "background-image:url(/images/bg_brand_1.png)",
-      attrs: { id: "block-news-item" }
-    },
+    { staticClass: "position-relative" },
     [
+      _c("banner", {
+        attrs: {
+          title: "<span class='text-orange'>橘色</span>新訊",
+          img: "/images/slideshow_1.jpg"
+        }
+      }),
+      _vm._v(" "),
       _c(
         "div",
-        { staticClass: "text-white align-items-end d-flex position-relative" },
+        {
+          staticClass: "news-body position-relative",
+          attrs: { id: "block-news" }
+        },
         [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "news-item-head flex-column position-relative w-100"
-                },
-                [
-                  _vm._m(0),
-                  _vm._v(" "),
-                  _vm._m(1),
-                  _vm._v(" "),
-                  _vm._m(2),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "news-item-breadcrumb" },
-                    [
+          _c(
+            "div",
+            {
+              staticClass: "position-relative",
+              attrs: { id: "block-news-lists" }
+            },
+            [
+              _c("div", { attrs: { id: "block-news-filter" } }, [
+                _c("div", { staticClass: "container" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      { staticClass: "news-categories -category d-flex" },
+                      _vm._l(_vm.newsCategories, function(item, $index) {
+                        return _c(
+                          "div",
+                          {
+                            key: $index,
+                            staticClass:
+                              "category-items mr-4 ml-4 d-flex align-items-center",
+                            class: _vm.newsIndex == $index ? "active" : "",
+                            attrs: { id: "category-items" },
+                            on: {
+                              click: function($event) {
+                                _vm.newsIndex = $index
+                              }
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                " +
+                                _vm._s(item) +
+                                "\n                            "
+                            )
+                          ]
+                        )
+                      })
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "news-categories -date" }, [
                       _c(
-                        "el-breadcrumb",
-                        { attrs: { "separator-class": "el-icon-arrow-right" } },
+                        "div",
+                        {
+                          staticClass: "d-flex",
+                          attrs: { id: "category-date" }
+                        },
                         [
                           _c(
-                            "el-breadcrumb-item",
-                            { staticClass: "text-white", attrs: { to: "/" } },
-                            [_vm._v("首頁")]
+                            "div",
+                            { staticClass: "filter-date -year" },
+                            [
+                              _c(
+                                "el-select",
+                                {
+                                  model: {
+                                    value: _vm.year,
+                                    callback: function($$v) {
+                                      _vm.year = $$v
+                                    },
+                                    expression: "year"
+                                  }
+                                },
+                                [
+                                  _c("el-option", {
+                                    attrs: { label: "2018", value: 2018 }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("el-option", {
+                                    attrs: { label: "2015", value: 2015 }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("el-option", {
+                                    attrs: { label: "2013", value: 2013 }
+                                  })
+                                ],
+                                1
+                              )
+                            ],
+                            1
                           ),
                           _vm._v(" "),
-                          _vm._l(_vm.$route.matched, function(item, index) {
-                            return item.name && item.path !== "/"
-                              ? _c(
-                                  "el-breadcrumb-item",
+                          _c(
+                            "div",
+                            { staticClass: "filter-date -month" },
+                            [
+                              _c(
+                                "el-select",
+                                {
+                                  model: {
+                                    value: _vm.month,
+                                    callback: function($$v) {
+                                      _vm.month = $$v
+                                    },
+                                    expression: "month"
+                                  }
+                                },
+                                [
+                                  _c("el-option", {
+                                    attrs: { label: "月份", value: "" }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("el-option", {
+                                    attrs: { label: "10月", value: 10 }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("el-option", {
+                                    attrs: { label: "9月", value: 9 }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("el-option", {
+                                    attrs: { label: "8月", value: 8 }
+                                  })
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ]
+                      )
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "news-list", attrs: { id: "block-news-items" } },
+                [
+                  _c("div", { staticClass: "container" }, [
+                    _c(
+                      "div",
+                      { staticClass: "row" },
+                      _vm._l(_vm.newsItems.slice(0, _vm.viewIndex), function(
+                        item,
+                        $index
+                      ) {
+                        return item.category ==
+                          _vm.newsCategories[_vm.newsIndex] ||
+                          _vm.newsIndex == 0
+                          ? _c(
+                              "div",
+                              { key: $index, staticClass: "news-item" },
+                              [
+                                _c(
+                                  "div",
                                   {
-                                    key: item.meta.id,
-                                    class: [
-                                      {
-                                        "no-redirect":
-                                          (index <
-                                            _vm.$route.matched.length - 1 &&
-                                            _vm.$route.matched[index + 1]
-                                              .path ==
-                                              _vm.$route.matched[index].path +
-                                                "/") ||
-                                          index ==
-                                            _vm.$route.matched.length - 1 ||
-                                          _vm.$route.matched[index].redirect !=
-                                            undefined
-                                      }
-                                    ]
+                                    staticClass:
+                                      "news-head d-flex align-items-center justify-content-center position-relative",
+                                    style:
+                                      "background-image: url(" +
+                                      item.background +
+                                      ")"
                                   },
                                   [
-                                    (index < _vm.$route.matched.length - 1 &&
-                                      _vm.$route.matched[index + 1].path ==
-                                        _vm.$route.matched[index].path + "/") ||
-                                    index == _vm.$route.matched.length - 1 ||
-                                    _vm.$route.matched[index].redirect !=
-                                      undefined
-                                      ? _c(
-                                          "span",
-                                          {
-                                            staticClass:
-                                              "no-redirect text-white"
-                                          },
-                                          [
-                                            _vm._v(
-                                              "\n                                    " +
-                                                _vm._s(item.name) +
-                                                "\n                                "
-                                            )
-                                          ]
-                                        )
-                                      : _c(
-                                          "router-link",
-                                          {
-                                            attrs: {
-                                              to: item.redirect || item.path
-                                            }
-                                          },
-                                          [_vm._v(_vm._s(item.name))]
-                                        )
+                                    _c(
+                                      "router-link",
+                                      {
+                                        staticClass: "btn-border",
+                                        attrs: { to: "/news/detail" }
+                                      },
+                                      [_vm._v("了解更多")]
+                                    )
                                   ],
                                   1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "news-content text-center" },
+                                  [
+                                    _c("div", [
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-black text-size-1"
+                                        },
+                                        [_vm._v(_vm._s(item.date))]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-orange text-size-1"
+                                        },
+                                        [_vm._v(_vm._s(item.category))]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("a", {
+                                      staticClass: "news-title",
+                                      attrs: { href: item.link },
+                                      domProps: {
+                                        innerHTML: _vm._s(item.title)
+                                      }
+                                    })
+                                  ]
                                 )
-                              : _vm._e()
-                          })
-                        ],
-                        2
-                      )
-                    ],
-                    1
-                  )
+                              ]
+                            )
+                          : _vm._e()
+                      })
+                    )
+                  ])
                 ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "item-news-body w-100" }, [
-                _vm._m(3),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "item-news-foot w-100 d-flex justify-content-between"
-                  },
-                  [
-                    _vm._m(4),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "item-social-list d-flex" }, [
-                      _c(
-                        "span",
-                        {
-                          staticClass: "d-inline-flex align-items-center mr-3"
-                        },
-                        [_vm._v("社群分享")]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "item-social" }, [
-                        _c(
-                          "a",
-                          {
-                            staticClass:
-                              "social-icons facebook d-inline-flex align-items-center justify-content-center",
-                            attrs: { href: "#" }
-                          },
-                          [
-                            _c("font-awesome-icon", {
-                              attrs: { icon: ["fab", "facebook-f"] }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass:
-                              "social-icons twitter d-inline-flex align-items-center justify-content-center",
-                            attrs: { href: "#" }
-                          },
-                          [
-                            _c("font-awesome-icon", {
-                              attrs: { icon: ["fab", "twitter"] }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass:
-                              "social-icons google d-inline-flex align-items-center justify-content-center",
-                            attrs: { href: "#" }
-                          },
-                          [
-                            _c("font-awesome-icon", {
-                              attrs: { icon: ["fab", "google"] }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass:
-                              "social-icons linkedin-in d-inline-flex align-items-center justify-content-center",
-                            attrs: { href: "#" }
-                          },
-                          [
-                            _c("font-awesome-icon", {
-                              attrs: { icon: ["fab", "linkedin-in"] }
-                            })
-                          ],
-                          1
-                        )
-                      ])
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _vm._m(5)
-              ])
-            ])
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "btn-load-more text-center" }, [
+            _c(
+              "a",
+              {
+                staticClass: "btn-load-more btn-orange fat",
+                on: { click: _vm.loadMore }
+              },
+              [_vm._v("\n                載入更多\n            ")]
+            )
           ])
         ]
       ),
@@ -1022,167 +1213,13 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h2", { staticClass: "news-item-title" }, [
-      _vm._v("新光三越旗艦店開幕"),
-      _c("br"),
-      _vm._v("全店享九折優惠")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "news-item-info d-flex" }, [
-      _c("div", { staticClass: "news-info -date d-flex flex-column mr-5" }, [
-        _c("span", { staticClass: "info-title" }, [_vm._v("發佈日期：")]),
-        _vm._v(" "),
-        _c("span", { staticClass: "info-text" }, [_vm._v("2018/3/21")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "news-info -group d-flex flex-column mr-5" }, [
-        _c("span", { staticClass: "info-title" }, [_vm._v("發佈單位：")]),
-        _vm._v(" "),
-        _c("span", { staticClass: "info-text text-orange" }, [
-          _vm._v("橘色涮涮屋")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "news-info -cate d-flex flex-column mr-5" }, [
-        _c("span", { staticClass: "info-title" }, [_vm._v("發佈類別：")]),
-        _vm._v(" "),
-        _c("span", { staticClass: "info-text" }, [_vm._v("最新消息")])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "news-play text-white" }, [
-      _c("span", { staticClass: "btn-play d-inline-flex align-items-center" }, [
-        _vm._v("播放媒體影音")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "item-news-content" }, [
-      _c("p", { staticClass: "item-intro-text" }, [
-        _vm._v(
-          "測試描述文字大綱測試描述文字大綱測試描述文字大綱測試描述文字大綱測試描述文字大綱測試描述文字大綱測試描述文字大綱測試描述文字大綱測試描述文字大綱測試描述文字大綱測試描述文字大綱測試描述文字大綱測試描述文字大綱測試描述文字大綱測試描述文字大綱"
-        )
-      ]),
-      _vm._v(" "),
-      _c("h3", { staticClass: "text-big-orange" }, [
-        _vm._v("”用心。貼心。安心，打造最美好的火鍋體驗“")
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "text-intro-small text-center" }, [
-        _vm._v("橘色創辦人 袁永定")
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字"
-        )
-      ]),
-      _vm._v(" "),
-      _c("h3", { staticClass: "text-intro-title" }, [
-        _vm._v("測試描述標題文字")
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字"
-        )
-      ]),
-      _vm._v(" "),
-      _c("img", {
-        staticClass: "img-fullwidth",
-        attrs: { src: "/images/slideshow_1.jpg" }
-      }),
-      _vm._v(" "),
-      _c("p", { staticClass: "text-center text-img" }, [
-        _vm._v("測試描述文字測試描述文字測試描述文字測試描述")
-      ]),
-      _vm._v(" "),
-      _c("h3", { staticClass: "text-intro-title" }, [
-        _vm._v("測試描述標題文字")
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字"
-        )
-      ]),
-      _vm._v(" "),
-      _c("img", { attrs: { src: "/images/bg_brand_1.png" } }),
-      _vm._v(" "),
-      _c("img", { attrs: { src: "/images/bg_food_1.png" } }),
-      _vm._v(" "),
-      _c("h3", { staticClass: "text-intro-title" }, [
-        _vm._v("測試描述標題文字")
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字"
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "item-tags-list" }, [
-      _c("span", { staticClass: "item-tag" }, [_vm._v("橘色涮涮屋")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "item-tag" }, [_vm._v("新店")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "item-tag" }, [_vm._v("新光三越")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "item-relatives w-100 d-flex justify-content-between" },
-      [
-        _c("div", { staticClass: "item-relative -pre text-left" }, [
-          _c("span", { staticClass: "title-relative" }, [_vm._v("上一則訊息")]),
-          _vm._v(" "),
-          _c("a", { staticClass: "position-relative", attrs: { href: "#" } }, [
-            _vm._v("消息標題文字")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "item-relative -next text-right" }, [
-          _c("span", { staticClass: "title-relative" }, [_vm._v("下一則訊息")]),
-          _vm._v(" "),
-          _c("a", { staticClass: "position-relative", attrs: { href: "#" } }, [
-            _vm._v("消息標題文字")
-          ])
-        ])
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-039313c4", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-03657a3c", module.exports)
   }
 }
 

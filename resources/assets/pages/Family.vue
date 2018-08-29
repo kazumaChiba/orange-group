@@ -162,7 +162,7 @@ export default {
         },
 	    onScolldown(){
 		    $('html, body').animate({
-			    scrollTop: 1000
+			    scrollTop: 900
 		    }, 600);
         },
         handleInit(event, slick) {
