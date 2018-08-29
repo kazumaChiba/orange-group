@@ -1,6 +1,2154 @@
 webpackJsonp([10],{
 
-/***/ 208:
+/***/ 222:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(483)
+  __webpack_require__(485)
+}
+var normalizeComponent = __webpack_require__(49)
+/* script */
+var __vue_script__ = __webpack_require__(309)
+/* template */
+var __vue_template__ = __webpack_require__(487)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-e3a27224"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/pages/Home.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-e3a27224", Component.options)
+  } else {
+    hotAPI.reload("data-v-e3a27224", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 234:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(235)
+}
+var normalizeComponent = __webpack_require__(49)
+/* script */
+var __vue_script__ = __webpack_require__(237)
+/* template */
+var __vue_template__ = __webpack_require__(238)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/components/block-footer.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-38157860", Component.options)
+  } else {
+    hotAPI.reload("data-v-38157860", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 235:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(236);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(80)("b8d6fad2", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-38157860\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-footer.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-38157860\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-footer.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 236:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(48)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n}\n#footer .footer .footer-info {\n      margin-bottom: 100px;\n      line-height: 25px;\n      font-size: 14px;\n      font-weight: 100;\n}\n#footer .footer .footer-info div {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#footer .footer .footer-info p {\n        margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n        font-size: 18px;\n        font-weight: 100;\n        line-height: 30px;\n}\n#footer .footer.footer-join {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer.footer-join:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: rgba(0, 0, 0, 0.8);\n        top: 0px;\n}\n#footer .footer .btn-orange:hover {\n      background: white;\n      color: #f26d23 !important;\n      font-weight: 500;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 237:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {};
+    }
+});
+
+/***/ }),
+
+/***/ 238:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass:
+        "section text-white text-center bg-black-cover position-relative d-flex flex-column justify-content-center",
+      staticStyle: { "background-image": "url('/images/footer.png')" },
+      attrs: { id: "footer" }
+    },
+    [
+      _c(
+        "div",
+        {
+          staticClass:
+            "footer footer-join position-relative d-flex align-items-center justify-content-between w-100"
+        },
+        [
+          _c("div", { staticClass: "container" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "row d-flex justify-content-between align-items-center"
+              },
+              [
+                _vm._m(0),
+                _vm._v(" "),
+                _c(
+                  "router-link",
+                  { staticClass: "btn-orange fat", attrs: { to: "/" } },
+                  [_vm._v("馬上加入我們")]
+                )
+              ],
+              1
+            )
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "footer container" }, [
+        _c(
+          "div",
+          { staticClass: "row d-flex flex-column justify-content-end h-100" },
+          [
+            _vm._m(1),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "position-relative d-flex flex-column align-items-center justify-content-center w-100"
+              },
+              [
+                _c("div", { staticClass: "footer-social" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "footer-icons mr-3 ml-3",
+                      attrs: { href: "#" }
+                    },
+                    [
+                      _c("font-awesome-icon", {
+                        attrs: { icon: ["fab", "facebook-f"] }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "footer-icons mr-3 ml-3",
+                      attrs: { href: "#" }
+                    },
+                    [
+                      _c("font-awesome-icon", {
+                        attrs: { icon: ["fab", "twitter"] }
+                      })
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
+                _vm._m(2)
+              ]
+            )
+          ]
+        )
+      ])
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "join-us-slogan text-left" }, [
+      _vm._v("\n                    不僅僅只是台灣最棒的餐飲集團"),
+      _c("br"),
+      _vm._v(" "),
+      _c("span", { staticClass: "text-orange" }, [
+        _vm._v("還是實現自我未來的大家庭")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "footer-info position-relative d-flex justify-content-between align-items-center w-100"
+      },
+      [
+        _c("div", { staticClass: "footer-text-left text-left" }, [
+          _c("div", { staticClass: "d-inline-block text-center" }, [
+            _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
+              _vm._v("聯絡我們")
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v("台北市大安區仁愛路四段37號3樓之B")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("Email:  service@orange.co"),
+              _c("br"),
+              _vm._v("Phone:  02-2711-4636"),
+              _c("br"),
+              _vm._v("Fax:  02-2711-4638")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("img", {
+          staticClass: "logo",
+          attrs: { src: "/images/index_logo.png" }
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "footer-text-right text-right" }, [
+          _c("div", { staticClass: "d-inline-block text-center" }, [
+            _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
+              _vm._v("橘色精神")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "footer-info-subtitle" }, [
+              _vm._v("用心 · 貼心 · 安心"),
+              _c("br"),
+              _vm._v("信心 · 一心 · 同理心")
+            ])
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "p",
+      {
+        staticClass:
+          "footer position-relative w-100 text-size-1 d-flex align-items-end justify-content-center",
+        attrs: { id: "copyright" }
+      },
+      [
+        _vm._v("2018 "),
+        _c("a", { staticClass: "link-orange" }, [_vm._v(" 橘色涮涮屋 ")]),
+        _vm._v(" 版權所有. Designed by＆ensp;"),
+        _c(
+          "a",
+          {
+            staticClass: "link-orange",
+            attrs: { href: "www.daydream-lab.com" }
+          },
+          [_vm._v("Daydream Lab")]
+        )
+      ]
+    )
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-38157860", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 309:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_experience__ = __webpack_require__(310);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_experience___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_components_block_experience__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_brands__ = __webpack_require__(315);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_brands___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_components_block_brands__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_components_block_news__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_components_block_news___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_components_block_news__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_components_block_foods__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_components_block_foods___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_components_block_foods__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_components_block_footer__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_components_block_footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_components_block_footer__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vue_fullpage_js__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vue_fullpage_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_vue_fullpage_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_fullpage_js_vendors_scrolloverflow_js__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_fullpage_js_vendors_scrolloverflow_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_fullpage_js_vendors_scrolloverflow_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue2_scrollbar__ = __webpack_require__(332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue2_scrollbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_vue2_scrollbar__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_perfect_scrollbar__ = __webpack_require__(333);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        // https://github.com/alvarotrigo/fullPage.js/
+        return {
+            options: {
+                licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                sectionSelector: '.section',
+                scrollOverflow: false,
+                navigation: true,
+                navigationTooltips: ['橘色體驗', '橘色價值', '橘色版圖', '橘色新訊'],
+                afterLoad: this.afterLoad,
+                slidesNavigation: true,
+                easing: 'easeInOutCubic',
+                easingcss3: 'ease',
+                lazyLoading: true,
+                resetSliders: true
+            },
+            sectionIndex: 0,
+            sectionPosition: 'section-1',
+            closeMenu: false,
+            textShadow: false,
+            display_fullpage: true,
+            api: undefined,
+            ps: undefined
+        };
+    },
+    mounted: function mounted() {
+        var _this = this;
+
+        jQuery(document).ready(function () {
+
+            var container = document.querySelector('#block-news-scroll');
+
+            _this.ps = new __WEBPACK_IMPORTED_MODULE_9_perfect_scrollbar__["a" /* default */](container, {
+                wheelSpeed: 2,
+                wheelPropagation: true,
+                minScrollbarLength: 20
+            });
+
+            container.addEventListener('ps-y-reach-start', function () {
+                setTimeout(function () {
+                    fullpage_api.setAllowScrolling(true);
+                }, 10);
+            });
+            container.addEventListener('ps-y-reach-end', function () {
+                setTimeout(function () {
+                    fullpage_api.setAllowScrolling(true);
+                }, 10);
+            });
+        });
+    },
+
+    methods: {
+        afterLoad: function afterLoad(originSection, activeSection) {
+            if (this.ps) {
+                this.ps.update();
+            }
+
+            if (activeSection.index == 3) {
+                fullpage_api.setAllowScrolling(false);
+            }
+
+            if (!activeSection.isFirst && !activeSection.isLast) {
+                //this.options.navigation = true
+                jQuery("#fp-nav").addClass("active");
+            } else {
+                //this.options.navigation = false
+                jQuery("#fp-nav").removeClass("active");
+            }
+            this.sectionIndex = activeSection.index;
+            this.sectionPosition = 'section-' + activeSection.index;
+
+            if (activeSection.isFirst) {
+                this.closeMenu = false;
+            } else {
+                this.closeMenu = true;
+            }
+
+            if (activeSection.index == 1 || activeSection.index == 3) {
+                this.textShadow = true;
+            } else {
+                this.textShadow = false;
+            }
+        },
+        handleMaxScroll: function handleMaxScroll(direction) {
+            console.log(direction);
+            //fullpage_api.setAllowScrolling(true)
+            //console.log(direction);
+        }
+    },
+    components: {
+        VueScrollbar: __WEBPACK_IMPORTED_MODULE_8_vue2_scrollbar___default.a,
+        VueFullPage: __WEBPACK_IMPORTED_MODULE_6_vue_fullpage_js___default.a,
+        MenuHeader: __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header___default.a,
+        BlockExperience: __WEBPACK_IMPORTED_MODULE_1_components_block_experience___default.a,
+        BlockBrands: __WEBPACK_IMPORTED_MODULE_2_components_block_brands___default.a,
+        BlockNews: __WEBPACK_IMPORTED_MODULE_3_components_block_news___default.a,
+        BlockFoods: __WEBPACK_IMPORTED_MODULE_4_components_block_foods___default.a,
+        BlockFooter: __WEBPACK_IMPORTED_MODULE_5_components_block_footer___default.a
+    }
+
+});
+
+/***/ }),
+
+/***/ 310:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(311)
+}
+var normalizeComponent = __webpack_require__(49)
+/* script */
+var __vue_script__ = __webpack_require__(313)
+/* template */
+var __vue_template__ = __webpack_require__(314)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/components/block-experience.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-51cbfe2f", Component.options)
+  } else {
+    hotAPI.reload("data-v-51cbfe2f", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 311:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(312);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(80)("b9557f26", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-51cbfe2f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-experience.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-51cbfe2f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-experience.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 312:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(48)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#block-experience {\n  background-size: cover;\n}\n#block-experience.active .bg-transition.bg-left .bg-inner, #block-experience.active .bg-transition.bg-right .bg-inner, #block-experience.active .bg-transition.active .bg-inner {\n    background-position-y: 0;\n}\n#block-experience .bg-transition.bg-left:before, #block-experience .bg-transition.bg-right:before {\n    position: absolute;\n    width: 50%;\n    height: 100vh;\n    background: black;\n    content: \"\";\n    left: 0;\n    opacity: 0.8;\n    top: calc(50% - 50vh);\n    z-index: 4;\n    content: \"\";\n    word-break: keep-all;\n}\n#block-experience .bg-transition.bg-right:before {\n    width: 100%;\n    opacity: 0.4;\n}\n#block-experience .bg-transition.bg-left .bg-inner, #block-experience .bg-transition.bg-right .bg-inner {\n    background-position-y: -100vh;\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n}\n#block-experience .bg-transition.bg-left .bg-inner.active, #block-experience .bg-transition.bg-right .bg-inner.active {\n      background-position-y: 0;\n      opacity: 1;\n}\n#block-experience .bg-transition.bg-right .bg-inner.active {\n    background-position-y: 100vh;\n    opacity: 0;\n}\n#block-experience .bg-transition.bg-left {\n    z-index: 3;\n}\n#block-experience .bg-transition.bg-left:before {\n      width: 100%;\n}\n#block-experience .bg-transition.bg-left .bg-inner {\n      left: 0;\n}\n#block-experience .bg-transition.bg-left .bg-inner.active {\n        background-position-y: -100vh;\n        opacity: 0;\n}\n#block-experience .bg-transition.bg-right {\n    z-index: 2;\n    right: 0;\n}\n#block-experience .bg-transition.bg-right .bg-inner {\n      right: 0;\n      background-position-y: 100vh;\n}\n#block-experience .fp-scroller {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n#block-experience #content-experience {\n    z-index: 4;\n}\n#block-experience #content-experience .big_title {\n      font-size: 200px;\n      letter-spacing: 30px;\n      color: rgba(255, 255, 255, 0.2);\n      position: absolute;\n      left: 0;\n      top: 50%;\n      -webkit-transform: translateY(-50%);\n              transform: translateY(-50%);\n      width: 50%;\n      word-break: keep-all;\n      overflow: hidden;\n}\n#block-experience #content-experience .experience-inner {\n      width: 350px;\n      margin: 0 auto;\n      text-align: left;\n      font-weight: 300;\n}\n#block-experience #content-experience .experience-inner .experience-item {\n        -webkit-transition: opacity .5s;\n        transition: opacity .5s;\n}\n#block-experience #content-experience .experience-inner h5 {\n        letter-spacing: 4px;\n        font-weight: 300;\n}\n#block-experience #content-experience .experience-inner h5 span {\n          letter-spacing: 7px;\n          line-height: 25px;\n          font-size: 22px;\n}\n#block-experience #content-experience .experience-inner .left-line:before {\n        content: \"\";\n        display: inline-block;\n        width: 20px;\n        height: 5px;\n        background: #f26d23;\n        margin-right: 10px;\n        vertical-align: middle;\n}\n#block-experience #content-experience .experience-circle {\n      position: absolute;\n      top: calc(50% - 250px);\n      left: calc(50% - 250px);\n}\n#block-experience #content-experience .experience-circle .circle-option {\n        position: absolute;\n        width: 500px;\n        height: 500px;\n}\n#block-experience #content-experience .experience-circle .circle-body {\n        width: 500px;\n        height: 500px;\n}\n#block-experience #content-experience .experience-circle .circle-body.active .circle-line.left:after {\n          -webkit-transform: rotate(320deg);\n                  transform: rotate(320deg);\n          -webkit-transition: all .8s;\n          transition: all .8s;\n          opacity: 1;\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line {\n          position: absolute;\n          width: 50%;\n          height: 100%;\n          overflow: hidden;\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line:before, #block-experience #content-experience .experience-circle .circle-body .circle-line.left:after {\n            content: \"\";\n            display: block;\n            width: 200%;\n            height: 100%;\n            border: 28px solid rgba(242, 109, 35, 0.8);\n            border-radius: 100%;\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line.left {\n            left: 0;\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line.left:before, #block-experience #content-experience .experience-circle .circle-body .circle-line.left:after {\n              border-bottom-color: transparent;\n              border-left-color: transparent;\n              -webkit-transform: rotate(-40deg);\n                      transform: rotate(-40deg);\n              -webkit-clip-path: polygon(50% -18%, 100% 20%, 50% 100%, 0% 60%);\n                      clip-path: polygon(50% -18%, 100% 20%, 50% 100%, 0% 60%);\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line.right {\n            right: 0;\n            -webkit-transform: rotate(180deg);\n                    transform: rotate(180deg);\n}\n#block-experience #content-experience .experience-circle .circle-option {\n        -webkit-transition: all 2s;\n        transition: all 2s;\n        -webkit-transform: rotate(0);\n                transform: rotate(0);\n        top: 0;\n}\n#block-experience #content-experience .experience-circle .circle-option.active {\n          opacity: 0;\n          -webkit-transition: opacity .3s;\n          transition: opacity .3s;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option {\n          position: absolute;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option:hover {\n            cursor: pointer;\n            color: #f26d23;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.top {\n            top: calc(-40px - 12px);\n            left: calc(50% - 18px);\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.bottom {\n            bottom: calc(-40px - 12px);\n            left: calc(50% - 18px);\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.right {\n            top: calc(50% - 18px);\n            right: calc(-40px - 12px);\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.left {\n            top: calc(50% - 18px);\n            left: calc(-40px - 12px);\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option a {\n            word-break: keep-all;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.active {\n            opacity: 0;\n            -webkit-transition: opacity 1s;\n            transition: opacity 1s;\n            -webkit-transition-delay: .5s;\n                    transition-delay: .5s;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_0 {\n          -webkit-transform: rotate(0deg);\n                  transform: rotate(0deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_0 a {\n            -webkit-transition: all .3s;\n            transition: all .3s;\n            -webkit-transform: rotate(0deg) !important;\n                    transform: rotate(0deg) !important;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_1 {\n          -webkit-transform: rotate(-90deg);\n                  transform: rotate(-90deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_1 a {\n            -webkit-transition: all .3s;\n            transition: all .3s;\n            -webkit-transform: rotate(90deg) !important;\n                    transform: rotate(90deg) !important;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_2 {\n          -webkit-transform: rotate(-180deg);\n                  transform: rotate(-180deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_2 a {\n            -webkit-transition: all .3s;\n            transition: all .3s;\n            -webkit-transform: rotate(180deg) !important;\n                    transform: rotate(180deg) !important;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_3 {\n          -webkit-transform: rotate(-270deg);\n                  transform: rotate(-270deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_3 a {\n            -webkit-transition: all .3s;\n            transition: all .3s;\n            -webkit-transform: rotate(270deg) !important;\n                    transform: rotate(270deg) !important;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 313:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            bgTransition: false,
+            experience_view: 'ex',
+            experience: [{
+                'url': '/images/home1_ex.png',
+                'title': '橘色體驗'
+            }, {
+                'url': '/images/home1_pot.png',
+                'title': '橘色鍋物'
+            }, {
+                'url': '/images/home1_coffee.png',
+                'title': '橘色咖啡'
+            }, {
+                'url': '/images/home1_spa.png',
+                'title': '橘色舒體'
+            }],
+            experience_index: 0,
+            experience_index_old: 0
+        };
+    },
+    components: {
+        'ex': {
+            template: '<div>' + '<h2 class="mb-4 text-center"><span class="fs-inherit text-orange">橘色</span> 體驗</h2>' + '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>' + '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色體驗</router-link>' + '</div>'
+        },
+        'pot': {
+            template: '<div>' + '<h2 class="mb-4 text-center"><span class="fs-inherit text-orange">橘色</span> 鍋物</h2>' + '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>' + '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色鍋物</router-link>' + '</div>'
+        },
+        'coffee': {
+            template: '<div>' + '<h2 class="mb-4 text-center"><span class="fs-inherit text-orange">橘色</span> 咖啡</h2>' + '<h5 class="mb-4"><span class="fs-inheri">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>' + '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色咖啡</router-link>' + '</div>'
+        },
+        'spa': {
+            template: '<div>' + '<h2 class="mb-4"><span class="fs-inherit text-orange">橘色</span> 舒體</h2>' + '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>' + '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色舒體</router-link>' + '</div>'
+        }
+    },
+    methods: {
+        bgAnimated: function bgAnimated(time) {
+            var _this = this;
+
+            this.bgTransition = true;
+            setTimeout(function () {
+                _this.bgTransition = false;
+            }, parseInt(time));
+            setTimeout(function () {
+                _this.experience_index_old = _this.experience_index;
+            }, parseInt(time) + 800);
+        }
+    }
+});
+
+/***/ }),
+
+/***/ 314:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "position-relative section text-white text-center h-100",
+      style:
+        "background-image:url(" +
+        _vm.experience[_vm.experience_index_old].url +
+        ")",
+      attrs: { id: "block-experience" }
+    },
+    [
+      _c(
+        "div",
+        {
+          staticClass: "bg-transition bg-left",
+          class: { active: _vm.bgTransition }
+        },
+        [
+          _c("div", {
+            staticClass: "bg-inner position-absolute",
+            class: { active: _vm.bgTransition },
+            style:
+              "background-image:url(" +
+              _vm.experience[_vm.experience_index].url +
+              ")"
+          })
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "bg-transition bg-right" }, [
+        _c("div", {
+          staticClass: "bg-inner position-absolute",
+          class: { active: _vm.bgTransition },
+          style:
+            "background-image:url(" +
+            _vm.experience[_vm.experience_index].url +
+            ")"
+        })
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "position-relative",
+          attrs: { id: "content-experience" }
+        },
+        [
+          _c("h1", { staticClass: "big_title" }, [
+            _vm._v(_vm._s(_vm.experience[_vm.experience_index].title))
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "experience-circle" }, [
+            _c(
+              "div",
+              {
+                staticClass: "circle-body position-relative",
+                class: { active: _vm.bgTransition }
+              },
+              [
+                _c(
+                  "svg",
+                  {
+                    attrs: {
+                      x: "0px",
+                      y: "0px",
+                      width: "100%",
+                      height: "100%",
+                      viewBox: "0 0 150 150",
+                      "enable-background": "new 0 0 150 150",
+                      "xml:space": "preserve"
+                    }
+                  },
+                  [
+                    _c("rect", {
+                      staticStyle: { "clip-path": "url(#circle)" },
+                      attrs: {
+                        x: "0",
+                        y: "0",
+                        width: "100%",
+                        height: "100%",
+                        fill: "#f26e22"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("clipPath", { attrs: { id: "circle" } }, [
+                      _c("path", {
+                        attrs: {
+                          fill: "#f26e22",
+                          d:
+                            "M75.1-0.1c-20.7,0-39.5,8.4-53.1,22l2.8,9.7C37,17.5,55,8.6,75,8.6c36.7,0,66.4,29.8,66.4,66.4\n\t\tc0,36.7-29.8,66.4-66.4,66.4c-6.5,0-12.8-1-18.8-2.7l2.8,9.7c5.1,1.1,10.5,1.7,15.9,1.7c41.5,0,75.1-33.6,75.1-75.1\n\t\tC150.2,33.5,116.6-0.1,75.1-0.1L75.1-0.1z"
+                        }
+                      })
+                    ])
+                  ]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "circle-option position-absolute",
+                class: "e_index_" + _vm.experience_index
+              },
+              [
+                _c(
+                  "a",
+                  {
+                    staticClass: "text-circle-option left",
+                    class: _vm.experience_index == 0 ? "active" : "",
+                    on: {
+                      click: function($event) {
+                        _vm.experience_view = "ex"
+                        _vm.experience_index = 0
+                        _vm.bgAnimated(800)
+                      }
+                    }
+                  },
+                  [_vm._v("體驗")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "text-circle-option top",
+                    class: _vm.experience_index == 1 ? "active" : "",
+                    on: {
+                      click: function($event) {
+                        _vm.experience_view = "pot"
+                        _vm.experience_index = 1
+                        _vm.bgAnimated(800)
+                      }
+                    }
+                  },
+                  [_vm._v("鍋物")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "text-circle-option right",
+                    class: _vm.experience_index == 2 ? "active" : "",
+                    on: {
+                      click: function($event) {
+                        _vm.experience_view = "coffee"
+                        _vm.experience_index = 2
+                        _vm.bgAnimated(800)
+                      }
+                    }
+                  },
+                  [_vm._v("咖啡")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "text-circle-option bottom",
+                    class: _vm.experience_index == 3 ? "active" : "",
+                    on: {
+                      click: function($event) {
+                        _vm.experience_view = "spa"
+                        _vm.experience_index = 3
+                        _vm.bgAnimated(800)
+                      }
+                    }
+                  },
+                  [_vm._v("舒體")]
+                )
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "experience-inner position-relative" },
+            [
+              _c(
+                "transition",
+                { attrs: { name: "fade", mode: "out-in" } },
+                [
+                  _c(_vm.experience_view, {
+                    tag: "component",
+                    staticClass: "experience-item"
+                  })
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ]
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-51cbfe2f", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 315:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(316)
+}
+var normalizeComponent = __webpack_require__(49)
+/* script */
+var __vue_script__ = __webpack_require__(318)
+/* template */
+var __vue_template__ = __webpack_require__(319)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/components/block-brands.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-36606811", Component.options)
+  } else {
+    hotAPI.reload("data-v-36606811", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 316:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(317);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(80)("7b45937c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-36606811\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-brands.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-36606811\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-brands.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 317:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(48)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#app #block-brands .bg-black-cover {\n  width: 0;\n  height: 100vh;\n  -webkit-transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n  transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n  background-position: center;\n}\n#app #block-brands .bg-black-cover.select {\n    -webkit-transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n    width: 105vw;\n}\n#app #block-brands .container {\n  z-index: 2;\n}\n#app #block-brands .container .content-brands .info-brands {\n    width: 300px;\n    height: 300px;\n    background: rgba(242, 108, 35, 0.4);\n    border: 1px solid white;\n    padding: 0 40px;\n    font-size: 30px;\n}\n#app #block-brands .container .text-brands {\n    font-size: 30px;\n    letter-spacing: 20px;\n    line-height: 45px;\n    font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n      letter-spacing: 20px;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 318:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            addTransition: false,
+            brandIndex: 0,
+            brandIndex_old: 0,
+            brandBg: [{
+                url: '/images/bg_brand_1.png',
+                title: 'EXTENSION by 橘色',
+                contact: '/',
+                book: '/',
+                text: '小鍋<span class="text-orange">新</span>時尚<br>不管多少人都能吃得精彩！'
+            }, {
+                url: '/images/slideshow_1.jpg',
+                title: 'M One Cafe',
+                contact: '/',
+                book: '/',
+                text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！'
+            }, {
+                url: '/images/slideshow_1.jpg',
+                title: '橘色鍋物',
+                contact: '/',
+                book: '/',
+                text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！'
+            }]
+        };
+    },
+    methods: {
+        startAnimate: function startAnimate(time) {
+            var _this = this;
+
+            this.addTransition = true;
+            setTimeout(function () {
+                _this.addTransition = false;
+                _this.brandIndex_old = _this.brandIndex;
+            }, parseInt(time));
+        }
+    }
+});
+
+/***/ }),
+
+/***/ 319:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "section text-white position-relative text-center",
+      attrs: { id: "block-brands" }
+    },
+    [
+      _c("div", {
+        staticClass: "bg-transition -old bg-black-cover",
+        class: { active: _vm.addTransition, select: _vm.brandIndex == 0 },
+        staticStyle: { right: "auto", left: "0" },
+        style: "background-image: url(" + _vm.brandBg[0].url + ")"
+      }),
+      _vm._v(" "),
+      _c("div", {
+        staticClass: "bg-transition -new bg-black-cover",
+        class: { active: _vm.addTransition, select: _vm.brandIndex == 1 },
+        staticStyle: { right: "0", left: "auto" },
+        style: "background-image: url(" + _vm.brandBg[1].url + ")"
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "container position-relative m-auto h-100 " }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "row h-100 flex-column align-items-center justify-content-center"
+          },
+          [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("span", { staticClass: "sub-title" }, [_vm._v("orange brands")]),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "content-brands d-flex align-items-center justify-content-between w-100 mt-5 mb-5"
+              },
+              [
+                _c(
+                  "span",
+                  {
+                    staticClass: "btn-orange",
+                    on: {
+                      click: function($event) {
+                        _vm.brandIndex = 0
+                        _vm.startAnimate("500")
+                      }
+                    }
+                  },
+                  [_vm._v("橘色涮涮屋")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "info-brands border-radius-100 d-flex flex-column justify-content-center text-left"
+                  },
+                  [
+                    _c("p", { class: { fade: _vm.addTransition } }, [
+                      _vm._v(
+                        "\n                        " +
+                          _vm._s(_vm.brandBg[_vm.brandIndex].title) +
+                          "\n                    "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "d-flex text-size-3 justify-content-center",
+                        class: { fade: _vm.addTransition }
+                      },
+                      [
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "brands-link",
+                            attrs: { to: _vm.brandBg[_vm.brandIndex].contact }
+                          },
+                          [_vm._v("聯絡我們")]
+                        ),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("・")]),
+                        _vm._v(" "),
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "brands-link",
+                            attrs: { to: _vm.brandBg[_vm.brandIndex].book }
+                          },
+                          [_vm._v("線上訂位")]
+                        )
+                      ],
+                      1
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  {
+                    staticClass: "btn-orange",
+                    on: {
+                      click: function($event) {
+                        _vm.brandIndex = 1
+                        _vm.startAnimate("500")
+                      }
+                    }
+                  },
+                  [_vm._v("M One Cafe")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c("p", {
+              staticClass: "text-brands",
+              class: { fade: _vm.addTransition },
+              domProps: { innerHTML: _vm._s(_vm.brandBg[_vm.brandIndex].text) }
+            })
+          ]
+        )
+      ])
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h3", { staticClass: "main-title text-uppercase" }, [
+      _c("span", { staticClass: "fs-inherit text-orange" }, [
+        _vm._v("\n                    橘色")
+      ]),
+      _vm._v("版圖"),
+      _c("br")
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-36606811", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 320:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(321)
+}
+var normalizeComponent = __webpack_require__(49)
+/* script */
+var __vue_script__ = __webpack_require__(323)
+/* template */
+var __vue_template__ = __webpack_require__(324)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/components/block-news.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1e9078d8", Component.options)
+  } else {
+    hotAPI.reload("data-v-1e9078d8", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 321:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(322);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(80)("125a11db", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e9078d8\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-news.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e9078d8\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-news.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 322:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(48)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#block-news .fp-tableCell {\n  height: auto !important;\n}\n#block-news > div {\n  z-index: 3;\n  position: relative;\n}\n#block-news .news-list {\n  -webkit-transition: all .5s;\n  transition: all .5s;\n}\n#block-news .news-list .block-list {\n    width: 20%;\n}\n#block-news .news-list .block-list.center {\n      width: 50%;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 323:
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed: SyntaxError: Unexpected token (95:0)\n\n\u001b[0m \u001b[90m 93 | \u001b[39m                }\u001b[33m,\u001b[39m\n \u001b[90m 94 | \u001b[39m                {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 95 | \u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<\u001b[39m \u001b[33mHEAD\u001b[39m\n \u001b[90m    | \u001b[39m\u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 96 | \u001b[39m                    background\u001b[33m:\u001b[39m \u001b[32m'/images/news_v2.png'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 97 | \u001b[39m\u001b[33m===\u001b[39m\u001b[33m===\u001b[39m\u001b[33m=\u001b[39m\n \u001b[90m 98 | \u001b[39m                    background\u001b[33m:\u001b[39m \u001b[32m'/images/news_v3.png'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n");
+
+/***/ }),
+
+/***/ 324:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "news-body w-100" },
+    [
+      _c(
+        "div",
+        {
+          staticClass:
+            "news-categories d-flex justify-content-center text-size-2 mt-5 mb-3"
+        },
+        _vm._l(_vm.newsCategories, function(item, $index) {
+          return _c("div", {
+            key: $index,
+            staticClass: "category-items mr-4 ml-4",
+            class: _vm.newsIndex == $index ? "active" : "",
+            on: {
+              click: function($event) {
+                _vm.newsIndex = $index
+              }
+            }
+          })
+        })
+      ),
+      _vm._v(" "),
+      _c(
+        "transition-group",
+        {
+          staticClass:
+            "news-list d-flex flex-column flex-wrap align-items-center",
+          attrs: { name: "fade", tag: "div" }
+        },
+        [
+          _vm._v("-->\n        "),
+          _vm._l(_vm.viewIndex + 1, function(n, $groupIndex) {
+            return _c(
+              "div",
+              {
+                key: $groupIndex,
+                staticClass: "news-list d-flex justify-content-between w-100"
+              },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "block-list beside flex-column justify-content-between"
+                  },
+                  _vm._l(
+                    _vm.newsItems.slice(_vm.viewIndex, _vm.viewIndex + 2),
+                    function(item, $index) {
+                      return _c(
+                        "div",
+                        { key: $index + "a", staticClass: "news-item" },
+                        [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "news-head d-flex align-items-center justify-content-center position-relative",
+                              style:
+                                "background-image: url(" + item.background + ")"
+                            },
+                            [
+                              _c(
+                                "router-link",
+                                {
+                                  staticClass: "btn-border",
+                                  attrs: { to: "/news/detail" }
+                                },
+                                [_vm._v("了解更多")]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "news-content" }, [
+                            _c("div", { staticClass: "news-info" }, [
+                              _c(
+                                "span",
+                                { staticClass: "text-black text-size-1" },
+                                [_vm._v(_vm._s(item.date))]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "span",
+                                { staticClass: "text-orange text-size-1" },
+                                [_vm._v(_vm._s(item.category))]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("a", {
+                              staticClass: "news-title",
+                              attrs: { href: item.link },
+                              domProps: { innerHTML: _vm._s(item.title) }
+                            })
+                          ])
+                        ]
+                      )
+                    }
+                  )
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "block-list center flex-column justify-content-between"
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "news-item d-flex flex-column h-100 w-100"
+                      },
+                      [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "news-head d-flex align-items-center justify-content-center position-relative",
+                            style:
+                              "background-image: url(" +
+                              _vm.newsItems[_vm.viewIndex + 2].background +
+                              ")"
+                          },
+                          [
+                            _c(
+                              "router-link",
+                              {
+                                staticClass: "btn-border",
+                                attrs: { to: "/news/detail" }
+                              },
+                              [_vm._v("了解更多")]
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "news-content" }, [
+                          _c("div", { staticClass: "news-info" }, [
+                            _c(
+                              "span",
+                              { staticClass: "text-black text-size-1" },
+                              [
+                                _vm._v(
+                                  _vm._s(_vm.newsItems[_vm.viewIndex + 2].date)
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              { staticClass: "text-orange text-size-1" },
+                              [
+                                _vm._v(
+                                  _vm._s(
+                                    _vm.newsItems[_vm.viewIndex + 2].category
+                                  )
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("a", {
+                            staticClass: "news-title",
+                            attrs: {
+                              href: _vm.newsItems[_vm.viewIndex + 2].link
+                            },
+                            domProps: {
+                              innerHTML: _vm._s(
+                                _vm.newsItems[_vm.viewIndex + 2].title
+                              )
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("p", { staticClass: "mt-3" }, [
+                            _vm._v(
+                              "\n                                    " +
+                                _vm._s(_vm.newsItems[_vm.viewIndex + 2].intro) +
+                                "\n                                "
+                            )
+                          ])
+                        ])
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "block-list beside flex-column justify-content-between"
+                  },
+                  _vm._l(
+                    _vm.newsItems.slice(_vm.viewIndex + 3, _vm.viewIndex + 5),
+                    function(item, $index) {
+                      return _c(
+                        "div",
+                        { key: $index, staticClass: "news-item" },
+                        [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "news-head d-flex align-items-center justify-content-center position-relative",
+                              style:
+                                "background-image: url(" + item.background + ")"
+                            },
+                            [
+                              _c(
+                                "router-link",
+                                {
+                                  staticClass: "btn-border",
+                                  attrs: { to: "/news/detail" }
+                                },
+                                [_vm._v("了解更多")]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "news-content" }, [
+                            _c("div", { staticClass: "news-info" }, [
+                              _c(
+                                "span",
+                                { staticClass: "text-black text-size-1" },
+                                [_vm._v(_vm._s(item.date))]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "span",
+                                { staticClass: "text-orange text-size-1" },
+                                [_vm._v(_vm._s(item.category))]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("a", {
+                              staticClass: "news-title",
+                              attrs: { href: item.link },
+                              domProps: { innerHTML: _vm._s(item.title) }
+                            })
+                          ])
+                        ]
+                      )
+                    }
+                  )
+                )
+              ]
+            )
+          })
+        ],
+        2
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-1e9078d8", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 325:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(326)
+}
+var normalizeComponent = __webpack_require__(49)
+/* script */
+var __vue_script__ = __webpack_require__(328)
+/* template */
+var __vue_template__ = __webpack_require__(329)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/components/block-foods.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-630800a0", Component.options)
+  } else {
+    hotAPI.reload("data-v-630800a0", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 326:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(327);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(80)("e8adc522", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-630800a0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-foods.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-630800a0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-foods.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 327:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(48)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#block-foods {\n  background-size: cover;\n  background-position: 0;\n}\n#block-foods.active .block-food-body .content-food.left-content, #block-foods.active .block-food-body .content-food.right-content {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n    opacity: 1;\n}\n#block-foods.active .block-food-body .bg-left .bg-inner {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    background-position-y: center;\n}\n#block-foods .line-top:before {\n    content: \"\";\n    background: #f46f1b;\n    width: 60px;\n    height: 1px;\n    display: block;\n    margin-bottom: 20px;\n}\n#block-foods .block-food-body {\n    background-repeat: no-repeat;\n    background-size: cover;\n    height: 100vh;\n}\n#block-foods .block-food-body:after {\n      content: \"\";\n      position: absolute;\n      left: 0;\n      width: 100%;\n      height: 100%;\n      background: rgba(0, 0, 0, 0.6);\n}\n#block-foods .block-food-body .bg-left .bg-inner {\n      background-position: center;\n      background-size: cover;\n      background-position-y: 100vh;\n      -webkit-transition: all .5s;\n      transition: all .5s;\n}\n#block-foods .block-food-body .bg-left .bg-inner.active {\n        background-position-y: 100vh;\n        -webkit-transition: initial;\n        transition: initial;\n}\n#block-foods .block-food-body .content-food {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      padding: 0 100px;\n      overflow: hidden;\n      z-index: 2;\n}\n#block-foods .block-food-body .content-food .big_title {\n        font-size: 140px;\n        font-weight: 300;\n}\n#block-foods .block-food-body .content-food .more-food-info {\n        width: 100px;\n        height: 100px;\n        display: inline-block;\n        border-radius: 100%;\n        background-position: center;\n        background-size: cover;\n        cursor: pointer;\n        margin-right: 25px;\n        -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);\n                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);\n}\n#block-foods .block-food-body .content-food .more-food-info.active, #block-foods .block-food-body .content-food .more-food-info:hover {\n          opacity: 0.8;\n          -webkit-box-shadow: 0px 0px 20px black;\n                  box-shadow: 0px 0px 20px black;\n          -webkit-transition: all .3s;\n          transition: all .3s;\n}\n#block-foods .block-food-body .content-food > div {\n        position: relative;\n        z-index: 2;\n}\n#block-foods .block-food-body .content-food.left-content, #block-foods .block-food-body .content-food.right-content {\n        -webkit-transition: opacity 1s, -webkit-transform 1s;\n        transition: opacity 1s, -webkit-transform 1s;\n        transition: transform 1s, opacity 1s;\n        transition: transform 1s, opacity 1s, -webkit-transform 1s;\n        opacity: 0;\n}\n#block-foods .block-food-body .content-food.left-content {\n        background: transparent;\n        padding: 100px;\n}\n#block-foods .block-food-body .content-food.left-content .line-top {\n          line-height: 25px;\n}\n#block-foods .block-food-body .content-food.right-content {\n        background: white;\n        z-index: 2;\n        -webkit-transform: translateY(-100%);\n                transform: translateY(-100%);\n}\n#block-foods .block-food-body .content-food.right-content:before, #block-foods .block-food-body .content-food.right-content:after {\n          content: \"\";\n          position: absolute;\n          border-radius: 100%;\n}\n#block-foods .block-food-body .content-food.right-content:before {\n          width: 850px;\n          height: 850px;\n          background: rgba(242, 108, 35, 0.1);\n          right: -540px;\n          bottom: -480px;\n}\n#block-foods .block-food-body .content-food.right-content:after {\n          width: 100px;\n          height: 100px;\n          background: rgba(0, 0, 0, 0.22);\n          right: -70px;\n          bottom: 300px;\n}\n#block-foods .block-food-body .content-food.right-content .food-info-inner {\n          height: 500px;\n          width: 500px;\n          background: #f26d23;\n          border-radius: 100%;\n          -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n                  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n          -webkit-transition: all .5s;\n          transition: all .5s;\n}\n#block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-info {\n            font-weight: 300;\n            letter-spacing: 2px;\n}\n#block-foods .block-food-body .content-food.right-content .loader {\n          position: absolute;\n          width: 50vw;\n          height: 100vh;\n          stroke-linecap: round;\n          stroke-width: 5;\n          fill: none;\n          left: 0;\n}\n#block-foods .block-food-body .content-food.right-content .loader .internal-circle {\n            stroke: #f26c23;\n            stroke-dasharray: 55%,10%,25%;\n            opacity: .4;\n            -webkit-transform-origin: 30% 55%;\n                    transform-origin: 30% 55%;\n}\n#block-foods .block-food-body .content-food.right-content .loader.active .internal-circle {\n            -webkit-transform: rotate(180deg);\n                    transform: rotate(180deg);\n            -webkit-transition: all .5s ease-in-out;\n            transition: all .5s ease-in-out;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 328:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            bgTransition: false,
+            addTransition: false,
+            foodItems: [{
+                subTitle: '頂級食材源自產地與挑選<br>只願意提供最美好的食材給每位客戶',
+                title: '頂級食材',
+                url: '/images/bg_food_1.png',
+                content: '<p class="text-size-2 mb-2">橘色美食背後的秘密</p><h4 class="text-food-title mb-4">食材的<span class="text-black">秘密</span></h4><p class="text-food-info">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>'
+            }, {
+                subTitle: '頂級食材源自產地與挑選<br>只願意提供最美好的食材給每位客戶',
+                title: '頂級食材',
+                url: '/images/bg_brand_1.png',
+                content: '<p class="text-size-2 mb-2">橘色美食背後的秘密</p><h4 class="text-food-title mb-4">食材的<span class="text-black">秘密</span></h4><p class="text-food-info">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>'
+            }, {
+                subTitle: '頂級食材源自產地與挑選<br>只願意提供最美好的食材給每位客戶',
+                title: '頂級食材',
+                url: '/images/slideshow_1.jpg',
+                content: '<p class="text-size-2 mb-2">橘色美食背後的秘密</p><h4 class="text-food-title mb-4">食材的<span class="text-black">秘密</span></h4><p class="text-food-info">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>'
+            }],
+            food_index: 0,
+            food_index_old: 0
+
+        };
+    },
+    methods: {
+        bgAnimated: function bgAnimated(time) {
+            var _this = this;
+
+            this.bgTransition = true;
+            setTimeout(function () {
+                _this.bgTransition = false;
+            }, parseInt(time));
+            setTimeout(function () {
+                _this.food_index_old = _this.food_index;
+            }, parseInt(time) + 800);
+        },
+        startAnimate: function startAnimate(time) {
+            var _this2 = this;
+
+            this.addTransition = true;
+            setTimeout(function () {
+                _this2.addTransition = false;
+            }, parseInt(time));
+        }
+    }
+});
+
+/***/ }),
+
+/***/ 329:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "section text-white position-relative",
+      style:
+        "background-image:url(" + _vm.foodItems[_vm.food_index_old].url + ")",
+      attrs: { id: "block-foods" }
+    },
+    [
+      _c("div", { staticClass: "block-food-body d-flex bg-black-filter" }, [
+        _c("div", { staticClass: "bg-transition bg-left" }, [
+          _c("div", {
+            staticClass: "bg-inner",
+            class: { active: _vm.bgTransition },
+            style:
+              "background-image:url(" + _vm.foodItems[_vm.food_index].url + ")"
+          })
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "content-food left-content d-flex flex-column justify-content-between position-relative m-auto"
+          },
+          [
+            _c(
+              "div",
+              { staticClass: "mb-5", class: { fade: _vm.addTransition } },
+              [
+                _c("p", {
+                  staticClass: "line-top text-size-2",
+                  domProps: {
+                    innerHTML: _vm._s(_vm.foodItems[_vm.food_index].subTitle)
+                  }
+                }),
+                _vm._v(" "),
+                _c("h1", { staticClass: "big_title" }, [
+                  _vm._v(_vm._s(_vm.foodItems[_vm.food_index].title))
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "align-self-end mt-5" },
+              [
+                _c("p", { staticClass: "text-size-2" }, [
+                  _vm._v("探索更多橘色價值")
+                ]),
+                _vm._v(" "),
+                _vm._l(_vm.foodItems, function(item, $index) {
+                  return _c("div", {
+                    key: $index,
+                    staticClass: "more-food-info",
+                    class: _vm.food_index == $index ? "active" : "",
+                    style: "background-image:url(" + item.url + ")",
+                    on: {
+                      click: function($event) {
+                        _vm.food_index = $index
+                        _vm.bgAnimated(100)
+                        _vm.startAnimate(500)
+                      }
+                    }
+                  })
+                })
+              ],
+              2
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "content-food right-content d-flex flex-column justify-content-center position-relative"
+          },
+          [
+            _c(
+              "svg",
+              { staticClass: "loader", class: { active: _vm.addTransition } },
+              [
+                _c("circle", {
+                  staticClass: "internal-circle",
+                  attrs: { cx: "30%", cy: "55%", r: "450" }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _vm._m(0),
+            _vm._v(" "),
+            _c("span", { staticClass: "sub-title text-black" }, [
+              _vm._v("about value")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "food-info-circle" }),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "food-info-inner d-flex flex-column justify-content-center p-5"
+              },
+              [
+                _c("div", {
+                  class: { fade: _vm.addTransition },
+                  domProps: {
+                    innerHTML: _vm._s(_vm.foodItems[_vm.food_index].content)
+                  }
+                })
+              ]
+            )
+          ]
+        )
+      ])
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h3", { staticClass: "main-title text-black text-uppercase" }, [
+      _c("span", { staticClass: "fs-inherit text-orange" }, [_vm._v("橘色")]),
+      _vm._v("價值\n            ")
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-630800a0", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 330:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -4300,2398 +6448,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 224:
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(245)
-}
-var normalizeComponent = __webpack_require__(48)
-/* script */
-var __vue_script__ = __webpack_require__(247)
-/* template */
-var __vue_template__ = __webpack_require__(268)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/pages/Home.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-e3a27224", Component.options)
-  } else {
-    hotAPI.reload("data-v-e3a27224", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 230:
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(231)
-}
-var normalizeComponent = __webpack_require__(48)
-/* script */
-var __vue_script__ = __webpack_require__(233)
-/* template */
-var __vue_template__ = __webpack_require__(234)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/components/block-footer.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-38157860", Component.options)
-  } else {
-    hotAPI.reload("data-v-38157860", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 231:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(232);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(80)("b8d6fad2", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-38157860\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-footer.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-38157860\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-footer.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 232:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(49)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n#footer {\n  height: 700px;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer .footer-info {\n    margin-bottom: 100px;\n    line-height: 25px;\n    font-size: 14px;\n    font-weight: 100;\n}\n#footer .footer .footer-info div {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer .footer-info p {\n      margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n      font-size: 18px;\n      font-weight: 100;\n      line-height: 30px;\n}\n#footer .footer.footer-join:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: calc(100% + 150px);\n    background: rgba(0, 0, 0, 0.8);\n    top: 0px;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 233:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {};
-    }
-});
-
-/***/ }),
-
-/***/ 234:
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      staticClass:
-        "section text-white text-center bg-black-cover position-relative",
-      staticStyle: { "background-image": "url('/images/bg_footer.png')" },
-      attrs: { id: "footer" }
-    },
-    [
-      _c(
-        "div",
-        {
-          staticClass:
-            "footer footer-join position-relative d-flex align-items-center justify-content-between w-100"
-        },
-        [
-          _c("div", { staticClass: "container" }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "row d-flex justify-content-between align-items-center"
-              },
-              [
-                _vm._m(0),
-                _vm._v(" "),
-                _c(
-                  "router-link",
-                  { staticClass: "btn-orange fat", attrs: { to: "/" } },
-                  [_vm._v("馬上加入我們")]
-                )
-              ],
-              1
-            )
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "footer container" }, [
-        _c(
-          "div",
-          { staticClass: "row d-flex flex-column justify-content-between" },
-          [
-            _vm._m(1),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "footer position-relative d-flex flex-column align-items-center justify-content-center w-100"
-              },
-              [
-                _c("div", { staticClass: "footer-social" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "footer-icons mr-3 ml-3",
-                      attrs: { href: "#" }
-                    },
-                    [
-                      _c("font-awesome-icon", {
-                        attrs: { icon: ["fab", "facebook-f"] }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "footer-icons mr-3 ml-3",
-                      attrs: { href: "#" }
-                    },
-                    [
-                      _c("font-awesome-icon", {
-                        attrs: { icon: ["fab", "twitter"] }
-                      })
-                    ],
-                    1
-                  )
-                ]),
-                _vm._v(" "),
-                _vm._m(2)
-              ]
-            )
-          ]
-        )
-      ])
-    ]
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "join-us-slogan text-left" }, [
-      _vm._v("\n                    不僅僅只是台灣最棒的餐飲集團"),
-      _c("br"),
-      _vm._v(" "),
-      _c("span", { staticClass: "text-orange" }, [
-        _vm._v("還是實現自我未來的大家庭")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "footer-info position-relative d-flex justify-content-between align-items-center w-100"
-      },
-      [
-        _c("div", { staticClass: "footer-text-left text-left" }, [
-          _c("div", { staticClass: "d-inline-block text-center" }, [
-            _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
-              _vm._v("聯絡我們")
-            ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("台北市大安區仁愛路四段37號3樓之B")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v("Email:  service@orange.co"),
-              _c("br"),
-              _vm._v("Phone:  02-2711-4636"),
-              _c("br"),
-              _vm._v("Fax:  02-2711-4638")
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("img", {
-          staticClass: "logo",
-          attrs: { src: "/images/index_logo.png" }
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "footer-text-right text-right" }, [
-          _c("div", { staticClass: "d-inline-block text-center" }, [
-            _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
-              _vm._v("橘色精神")
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "footer-info-subtitle" }, [
-              _vm._v("用心 · 貼心 · 安心"),
-              _c("br"),
-              _vm._v("信心 · 一心 · 同理心")
-            ])
-          ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "p",
-      {
-        staticClass:
-          "footer position-relative w-100 text-size-1 d-flex align-items-end justify-content-center",
-        attrs: { id: "copyright" }
-      },
-      [
-        _vm._v("2018 "),
-        _c("a", { staticClass: "link-orange" }, [_vm._v(" 橘色涮涮屋 ")]),
-        _vm._v(" 版權所有. Designed by "),
-        _c(
-          "a",
-          {
-            staticClass: "link-orange",
-            attrs: { href: "www.daydream-lab.com" }
-          },
-          [_vm._v(" Daydream Lab")]
-        )
-      ]
-    )
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-38157860", module.exports)
-  }
-}
-
-/***/ }),
-
-/***/ 245:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(246);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(80)("66f7d9da", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3a27224\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3a27224\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 246:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(49)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n@charset \"UTF-8\";\n#fullpage {\n  -webkit-transition-duration: .8s !important;\n          transition-duration: .8s !important;\n  -webkit-transition-timing-function: cubic-bezier(0.5, 0, 0, 1) !important;\n          transition-timing-function: cubic-bezier(0.5, 0, 0, 1) !important;\n}\n#burger-menu {\n  width: 0px;\n  height: 25px;\n  text-align: center;\n  overflow: hidden;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  position: absolute;\n  right: 30px;\n  top: 48px;\n  z-index: 9999999;\n}\n#burger-menu:before {\n    content: \"|||\";\n    color: #f26c23;\n    -webkit-transform: rotate(90deg);\n            transform: rotate(90deg);\n    display: inline-block;\n    font-weight: bold;\n}\n#burger-menu:hover {\n    cursor: pointer;\n}\n#burger-menu.menu-close {\n    width: 25px;\n}\n#fp-nav.fp-right {\n  opacity: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  visibility: hidden;\n  -webkit-transition: opacity .3s;\n  transition: opacity .3s;\n  right: 0;\n  width: unset;\n}\n#fp-nav.fp-right.active {\n    visibility: visible;\n    opacity: 1;\n}\n#fp-nav.fp-right ul li {\n    width: 100%;\n    height: 25px;\n    margin: 5px 0;\n}\n#fp-nav.fp-right ul li:last-child {\n      display: none;\n}\n#fp-nav.fp-right ul li span {\n      display: none;\n}\n#fp-nav.fp-right ul li .fp-tooltip.fp-right {\n      color: #ccc;\n      opacity: 1;\n      width: auto;\n      font-size: 14px;\n      letter-spacing: 0px;\n      font-style: italic;\n      right: 0;\n      overflow: visible;\n      position: relative;\n      height: 100%;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      padding: 0 50px;\n      font-weight: 300;\n}\n#fp-nav.fp-right ul li:hover div, #fp-nav.fp-right ul li a.active + div {\n      cursor: pointer;\n      background: #f26c23;\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      color: white !important;\n}\n#fp-nav.fp-right ul li a {\n      position: absolute;\n      top: 0;\n      left: 0;\n}\n#app .fp-scroller {\n  min-height: 100%;\n}\n#app .logo {\n  position: absolute;\n  height: 220px;\n}\n#app .main-title {\n  line-height: 35px;\n}\n#app .main-title .sub-title {\n    letter-spacing: 10px;\n    font-weight: 200;\n    font-size: 16px;\n    font-family: \"PingFang SC\",微軟正黑體;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 247:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_experience__ = __webpack_require__(248);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_experience___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_components_block_experience__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_brands__ = __webpack_require__(253);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_brands___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_components_block_brands__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_components_block_news__ = __webpack_require__(258);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_components_block_news___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_components_block_news__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_components_block_foods__ = __webpack_require__(263);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_components_block_foods___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_components_block_foods__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_components_block_footer__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_components_block_footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_components_block_footer__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vue_fullpage_js__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vue_fullpage_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_vue_fullpage_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_fullpage_js_vendors_scrolloverflow_js__ = __webpack_require__(481);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_fullpage_js_vendors_scrolloverflow_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_fullpage_js_vendors_scrolloverflow_js__);
-throw new Error("Cannot find module \"vue2-scrollbar\"");
-throw new Error("Cannot find module \"perfect-scrollbar\"");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        // https://github.com/alvarotrigo/fullPage.js/
-        return {
-            options: {
-                licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-                sectionSelector: '.section',
-                scrollOverflow: false,
-                navigation: true,
-                navigationTooltips: ['橘色體驗', '橘色價值', '橘色版圖', '橘色新訊'],
-                afterLoad: this.afterLoad,
-                slidesNavigation: true,
-                easing: 'easeInOutCubic',
-                easingcss3: 'ease',
-                lazyLoading: true,
-                resetSliders: true
-            },
-            sectionIndex: 0,
-            sectionPosition: 'section-1',
-            closeMenu: false,
-            textShadow: false,
-            display_fullpage: true,
-            api: undefined,
-            ps: undefined
-        };
-    },
-    mounted: function mounted() {
-        var _this = this;
-
-        jQuery(document).ready(function () {
-
-            var container = document.querySelector('#block-news-scroll');
-
-            _this.ps = new __WEBPACK_IMPORTED_MODULE_9_perfect_scrollbar___default.a(container, {
-                wheelSpeed: 2,
-                wheelPropagation: true,
-                minScrollbarLength: 20
-            });
-
-            container.addEventListener('ps-y-reach-start', function () {
-                fullpage_api.setAllowScrolling(true);
-            });
-            container.addEventListener('ps-y-reach-end', function () {
-                fullpage_api.setAllowScrolling(true);
-            });
-
-            container.addEventListener('ps-scroll-up', function (e) {
-                if (e.target.scrollTop == 0) {
-                    fullpage_api.setAllowScrolling(true);
-                }
-            });
-
-            /*jQuery('#fullpage').fullpage({
-             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-             sectionSelector: '.section',
-             scrollOverflow: true,
-             navigation: true,
-             navigationTooltips: ['橘色體驗','橘色價值','橘色版圖','橘色新訊'],
-             slidesNavigation: true,
-             easing: 'easeInOutCubic',
-             easingcss3: 'ease'
-            });*/
-
-            //methods
-            //jQuery.fn.fullpage.setAllowScrolling(false);
-        });
-    },
-
-    methods: {
-        afterLoad: function afterLoad(originSection, activeSection) {
-            //fullpage_api.setAllowScrolling(false)
-            if (this.ps) {
-                this.ps.update();
-            }
-
-            //console.log(activeSection)
-
-            if (activeSection.index == 3) {
-                fullpage_api.setAllowScrolling(false);
-            }
-
-            if (!activeSection.isFirst && !activeSection.isLast) {
-                //this.options.navigation = true
-                jQuery("#fp-nav").addClass("active");
-            } else {
-                //this.options.navigation = false
-                jQuery("#fp-nav").removeClass("active");
-            }
-            this.sectionIndex = activeSection.index;
-            this.sectionPosition = 'section-' + activeSection.index;
-
-            if (activeSection.isFirst) {
-                this.closeMenu = false;
-            } else {
-                this.closeMenu = true;
-            }
-
-            if (activeSection.index == 1 || activeSection.index == 3) {
-                this.textShadow = true;
-            } else {
-                this.textShadow = false;
-            }
-        },
-        handleMaxScroll: function handleMaxScroll(direction) {
-            console.log(direction);
-            //fullpage_api.setAllowScrolling(true)
-            //console.log(direction);
-        }
-    },
-    components: {
-        VueScrollbar: __WEBPACK_IMPORTED_MODULE_8_vue2_scrollbar___default.a,
-        VueFullPage: __WEBPACK_IMPORTED_MODULE_6_vue_fullpage_js___default.a,
-        MenuHeader: __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header___default.a,
-        BlockExperience: __WEBPACK_IMPORTED_MODULE_1_components_block_experience___default.a,
-        BlockBrands: __WEBPACK_IMPORTED_MODULE_2_components_block_brands___default.a,
-        BlockNews: __WEBPACK_IMPORTED_MODULE_3_components_block_news___default.a,
-        BlockFoods: __WEBPACK_IMPORTED_MODULE_4_components_block_foods___default.a,
-        BlockFooter: __WEBPACK_IMPORTED_MODULE_5_components_block_footer___default.a
-    }
-
-});
-
-/***/ }),
-
-/***/ 248:
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(249)
-}
-var normalizeComponent = __webpack_require__(48)
-/* script */
-var __vue_script__ = __webpack_require__(251)
-/* template */
-var __vue_template__ = __webpack_require__(252)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/components/block-experience.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-51cbfe2f", Component.options)
-  } else {
-    hotAPI.reload("data-v-51cbfe2f", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 249:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(250);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(80)("b9557f26", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-51cbfe2f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-experience.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-51cbfe2f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-experience.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 250:
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: \n<template>\n^\n      Invalid CSS after \" \": expected 1 selector or at-rule, was \"{\"\n      in /Users/daydreamlab/Desktop/orangeshabu/resources/assets/components/block-experience.vue (line 1, column 1)");
-
-/***/ }),
-
-/***/ 251:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            bgTransition: false,
-            experience_view: 'ex',
-            experience: [{
-                'url': '/images/slideshow_1.jpg',
-                'title': '橘色體驗'
-            }, {
-                'url': '/images/bg_food_1.png',
-                'title': '橘色鍋物'
-            }, {
-                'url': '/images/bg_brand_1.png',
-                'title': '橘色咖啡'
-            }, {
-                'url': '/images/bg_footer.png',
-                'title': '橘色舒體'
-            }],
-            experience_index: 0,
-            experience_index_old: 0
-        };
-    },
-    components: {
-        'ex': {
-            template: '<div>' + '<h2 class="mb-4 text-center"><span class="fs-inherit text-orange">橘色</span> 體驗</h2>' + '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>' + '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色體驗</router-link>' + '</div>'
-        },
-        'pot': {
-            template: '<div>' + '<h2 class="mb-4 text-center"><span class="fs-inherit text-orange">橘色</span> 鍋物</h2>' + '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>' + '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色鍋物</router-link>' + '</div>'
-        },
-        'coffee': {
-            template: '<div>' + '<h2 class="mb-4 text-center"><span class="fs-inherit text-orange">橘色</span> 咖啡</h2>' + '<h5 class="mb-4"><span class="fs-inheri">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>' + '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色咖啡</router-link>' + '</div>'
-        },
-        'spa': {
-            template: '<div>' + '<h2 class="mb-4"><span class="fs-inherit text-orange">橘色</span> 舒體</h2>' + '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>' + '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色舒體</router-link>' + '</div>'
-        }
-    },
-    methods: {
-        bgAnimated: function bgAnimated(time) {
-            var _this = this;
-
-            this.bgTransition = true;
-            setTimeout(function () {
-                _this.bgTransition = false;
-            }, parseInt(time));
-            setTimeout(function () {
-                _this.experience_index_old = _this.experience_index;
-            }, parseInt(time) + 800);
-        }
-    }
-});
-
-/***/ }),
-
-/***/ 252:
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      staticClass: "position-relative section text-white text-center h-100",
-      style:
-        "background-image:url(" +
-        _vm.experience[_vm.experience_index_old].url +
-        ")",
-      attrs: { id: "block-experience" }
-    },
-    [
-      _c(
-        "div",
-        {
-          staticClass: "bg-transition bg-left",
-          class: { active: _vm.bgTransition }
-        },
-        [
-          _c("div", {
-            staticClass: "bg-inner position-absolute",
-            class: { active: _vm.bgTransition },
-            style:
-              "background-image:url(" +
-              _vm.experience[_vm.experience_index].url +
-              ")"
-          })
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "bg-transition bg-right" }, [
-        _c("div", {
-          staticClass: "bg-inner position-absolute",
-          class: { active: _vm.bgTransition },
-          style:
-            "background-image:url(" +
-            _vm.experience[_vm.experience_index].url +
-            ")"
-        })
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "position-relative",
-          attrs: { id: "content-experience" }
-        },
-        [
-          _c("h1", { staticClass: "big_title" }, [
-            _vm._v(_vm._s(_vm.experience[_vm.experience_index].title))
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "experience-circle" }, [
-            _c(
-              "div",
-              {
-                staticClass: "circle-body position-relative",
-                class: { active: _vm.bgTransition }
-              },
-              [
-                _c("div", { staticClass: "circle-line left" }),
-                _vm._v(" "),
-                _c("div", { staticClass: "circle-line right" })
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "circle-option position-absolute",
-                class: "e_index_" + _vm.experience_index
-              },
-              [
-                _c(
-                  "a",
-                  {
-                    staticClass: "text-circle-option left",
-                    class: _vm.experience_index == 0 ? "active" : "",
-                    on: {
-                      click: function($event) {
-                        _vm.experience_view = "ex"
-                        _vm.experience_index = 0
-                        _vm.bgAnimated(800)
-                      }
-                    }
-                  },
-                  [_vm._v("體驗")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "text-circle-option top",
-                    class: _vm.experience_index == 1 ? "active" : "",
-                    on: {
-                      click: function($event) {
-                        _vm.experience_view = "pot"
-                        _vm.experience_index = 1
-                        _vm.bgAnimated(800)
-                      }
-                    }
-                  },
-                  [_vm._v("鍋物")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "text-circle-option right",
-                    class: _vm.experience_index == 2 ? "active" : "",
-                    on: {
-                      click: function($event) {
-                        _vm.experience_view = "coffee"
-                        _vm.experience_index = 2
-                        _vm.bgAnimated(800)
-                      }
-                    }
-                  },
-                  [_vm._v("咖啡")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "text-circle-option bottom",
-                    class: _vm.experience_index == 3 ? "active" : "",
-                    on: {
-                      click: function($event) {
-                        _vm.experience_view = "spa"
-                        _vm.experience_index = 3
-                        _vm.bgAnimated(800)
-                      }
-                    }
-                  },
-                  [_vm._v("舒體")]
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "experience-inner position-relative" },
-            [
-              _c(
-                "transition",
-                { attrs: { name: "fade", mode: "out-in" } },
-                [
-                  _c(_vm.experience_view, {
-                    tag: "component",
-                    staticClass: "experience-item"
-                  })
-                ],
-                1
-              )
-            ],
-            1
-          )
-        ]
-      )
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-51cbfe2f", module.exports)
-  }
-}
-
-/***/ }),
-
-/***/ 253:
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(254)
-}
-var normalizeComponent = __webpack_require__(48)
-/* script */
-var __vue_script__ = __webpack_require__(256)
-/* template */
-var __vue_template__ = __webpack_require__(257)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/components/block-brands.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-36606811", Component.options)
-  } else {
-    hotAPI.reload("data-v-36606811", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 254:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(255);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(80)("7b45937c", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-36606811\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-brands.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-36606811\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-brands.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 255:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(49)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n#app #block-brands .bg-transition {\n  width: 100%;\n  background-position-x: 0;\n  -webkit-transition: background-position-x .5s;\n  transition: background-position-x .5s;\n}\n#app #block-brands .bg-transition.-new {\n    background-position-x: -100vw;\n    opacity: 0;\n}\n#app #block-brands .bg-transition.-new.active {\n      background-position-x: 0;\n      opacity: 1;\n}\n#app #block-brands .container {\n  z-index: 2;\n}\n#app #block-brands .container .content-brands .info-brands {\n    width: 300px;\n    height: 300px;\n    background: rgba(242, 108, 35, 0.4);\n    border: 1px solid white;\n    padding: 0 40px;\n    font-size: 30px;\n}\n#app #block-brands .container .text-brands {\n    font-size: 30px;\n    letter-spacing: 20px;\n    line-height: 45px;\n    font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n      letter-spacing: 20px;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 256:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            addTransition: false,
-            brandIndex: 0,
-            brandIndex_old: 0,
-            brandBg: [{
-                url: '/images/bg_brand_1.png',
-                title: 'EXTENSION1 by 橘色',
-                contact: '/',
-                book: '/',
-                text: '小鍋<span class="text-orange">新</span>時尚<br>不管多少人都能吃得精彩！'
-            }, {
-                url: '/images/bg_food_1.png',
-                title: 'M One Cafe',
-                contact: '/',
-                book: '/',
-                text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！'
-            }]
-        };
-    },
-    methods: {
-        startAnimate: function startAnimate(time) {
-            var _this = this;
-
-            this.addTransition = true;
-            setTimeout(function () {
-                _this.addTransition = false;
-                _this.brandIndex_old = _this.brandIndex;
-            }, parseInt(time));
-            setTimeout(function () {}, parseInt(time) - 300);
-        }
-    }
-});
-
-/***/ }),
-
-/***/ 257:
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      staticClass: "section text-white position-relative text-center",
-      attrs: { id: "block-brands" }
-    },
-    [
-      _c("div", {
-        staticClass: "bg-transition -old bg-black-cover",
-        class: { active: _vm.addTransition },
-        style:
-          "background-image: url(" + _vm.brandBg[_vm.brandIndex_old].url + ")"
-      }),
-      _vm._v(" "),
-      _c("div", {
-        staticClass: "bg-transition -new bg-black-cover",
-        class: { active: _vm.addTransition },
-        style: "background-image: url(" + _vm.brandBg[_vm.brandIndex].url + ")"
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "container position-relative m-auto h-100 " }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "row h-100 flex-column align-items-center justify-content-center"
-          },
-          [
-            _vm._m(0),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "content-brands d-flex align-items-center justify-content-between w-100 mt-5 mb-5"
-              },
-              [
-                _c(
-                  "span",
-                  {
-                    staticClass: "btn-orange",
-                    on: {
-                      click: function($event) {
-                        _vm.brandIndex = 0
-                        _vm.startAnimate("500")
-                      }
-                    }
-                  },
-                  [_vm._v("橘色涮涮屋")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "info-brands border-radius-100 d-flex flex-column justify-content-center text-left"
-                  },
-                  [
-                    _c("p", { class: { fade: _vm.addTransition } }, [
-                      _vm._v(_vm._s(_vm.brandBg[_vm.brandIndex].title))
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "d-flex text-size-3",
-                        class: { fade: _vm.addTransition }
-                      },
-                      [
-                        _c(
-                          "router-link",
-                          {
-                            staticClass: "brands-link",
-                            attrs: { to: _vm.brandBg[_vm.brandIndex].contact }
-                          },
-                          [_vm._v("聯絡我們")]
-                        ),
-                        _vm._v(" "),
-                        _c("span", [_vm._v("・")]),
-                        _vm._v(" "),
-                        _c(
-                          "router-link",
-                          {
-                            staticClass: "brands-link",
-                            attrs: { to: _vm.brandBg[_vm.brandIndex].book }
-                          },
-                          [_vm._v("線上訂位")]
-                        )
-                      ],
-                      1
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "span",
-                  {
-                    staticClass: "btn-orange",
-                    on: {
-                      click: function($event) {
-                        _vm.brandIndex = 1
-                        _vm.startAnimate("500")
-                      }
-                    }
-                  },
-                  [_vm._v("M One Cafe")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c("p", {
-              staticClass: "text-brands",
-              class: { fade: _vm.addTransition },
-              domProps: { innerHTML: _vm._s(_vm.brandBg[_vm.brandIndex].text) }
-            })
-          ]
-        )
-      ])
-    ]
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h3", { staticClass: "main-title text-uppercase" }, [
-      _c("span", { staticClass: "fs-inherit text-orange" }, [_vm._v("橘色")]),
-      _vm._v("版圖"),
-      _c("br"),
-      _c("span", { staticClass: "sub-title" }, [_vm._v("orange brands")])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-36606811", module.exports)
-  }
-}
-
-/***/ }),
-
-/***/ 258:
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(259)
-}
-var normalizeComponent = __webpack_require__(48)
-/* script */
-var __vue_script__ = __webpack_require__(261)
-/* template */
-var __vue_template__ = __webpack_require__(262)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/components/block-news.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1e9078d8", Component.options)
-  } else {
-    hotAPI.reload("data-v-1e9078d8", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 259:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(260);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(80)("125a11db", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e9078d8\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-news.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e9078d8\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-news.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 260:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(49)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n#block-news {\n  height: 100vh;\n}\n#block-news .fp-tableCell {\n    height: auto !important;\n}\n#block-news > div {\n    z-index: 3;\n    position: relative;\n}\n#block-news .news-list {\n    -webkit-transition: all .5s;\n    transition: all .5s;\n}\n#block-news .news-list .block-list {\n      width: 20%;\n}\n#block-news .news-list .block-list.center {\n        width: 50%;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 261:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            newsItems: [{
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: '橘色涮涮屋',
-                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/'
-            }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: '橘色涮涮屋',
-                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/'
-            }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: '橘色涮涮屋',
-                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/'
-            }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: '橘色涮涮屋',
-                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/'
-            }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: '橘色涮涮屋',
-                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/'
-            }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: 'Extension 1 by 橘色',
-                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/'
-            }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: 'Extension 1 by 橘色',
-                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/'
-            }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: 'Extension 1 by 橘色',
-                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/'
-            }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: 'Extension 1 by 橘色',
-                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/'
-            }, {
-                background: '/images/bg_brand_1.png',
-                date: '2018/3/21',
-                category: 'Extension 1 by 橘色',
-                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
-                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/'
-            }],
-            newsCategories: ['全部新訊', '橘色涮涮屋', 'Extension 1 by 橘色', 'M One Cafe', 'M One Spa', 'Sakura Spa'],
-            newsIndex: 0,
-            viewIndex: 0
-        };
-    },
-    methods: {}
-});
-
-/***/ }),
-
-/***/ 262:
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "news-body w-100" },
-    [
-      _c(
-        "div",
-        {
-          staticClass:
-            "news-categories d-flex justify-content-center text-size-2 mt-5 mb-3"
-        },
-        _vm._l(_vm.newsCategories, function(item, $index) {
-          return _c("div", {
-            key: $index,
-            staticClass: "category-items mr-4 ml-4",
-            class: _vm.newsIndex == $index ? "active" : "",
-            on: {
-              click: function($event) {
-                _vm.newsIndex = $index
-              }
-            }
-          })
-        })
-      ),
-      _vm._v(" "),
-      _c(
-        "transition-group",
-        {
-          staticClass:
-            "news-list d-flex flex-column flex-wrap align-items-center",
-          attrs: { name: "fade", tag: "div" }
-        },
-        [
-          _vm._v("-->\n        "),
-          _vm._l(_vm.viewIndex + 1, function(n, $groupIndex) {
-            return _c(
-              "div",
-              {
-                key: $groupIndex,
-                staticClass: "news-list d-flex justify-content-between w-100"
-              },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "block-list beside d-flex flex-column justify-content-between"
-                  },
-                  _vm._l(
-                    _vm.newsItems.slice(_vm.viewIndex, _vm.viewIndex + 2),
-                    function(item, $index) {
-                      return _c(
-                        "div",
-                        { key: $index + "a", staticClass: "news-item" },
-                        [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "news-head d-flex align-items-center justify-content-center position-relative",
-                              style:
-                                "background-image: url(" + item.background + ")"
-                            },
-                            [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: "btn-border",
-                                  attrs: { to: "/" }
-                                },
-                                [_vm._v("了解更多")]
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "news-content" }, [
-                            _c("div", { staticClass: "news-info" }, [
-                              _c(
-                                "span",
-                                { staticClass: "text-black text-size-1" },
-                                [_vm._v(_vm._s(item.date))]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "span",
-                                { staticClass: "text-orange text-size-1" },
-                                [_vm._v(_vm._s(item.category))]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("a", {
-                              staticClass: "news-title",
-                              attrs: { href: item.link },
-                              domProps: { innerHTML: _vm._s(item.title) }
-                            })
-                          ])
-                        ]
-                      )
-                    }
-                  )
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "block-list center d-flex flex-column justify-content-between"
-                  },
-                  [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "news-item d-flex flex-column h-100 w-100"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "news-head d-flex align-items-center justify-content-center position-relative",
-                            style:
-                              "background-image: url(" +
-                              _vm.newsItems[_vm.viewIndex + 2].background +
-                              ")"
-                          },
-                          [
-                            _c(
-                              "router-link",
-                              { staticClass: "btn-border", attrs: { to: "/" } },
-                              [_vm._v("了解更多")]
-                            )
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "news-content" }, [
-                          _c("div", { staticClass: "news-info" }, [
-                            _c(
-                              "span",
-                              { staticClass: "text-black text-size-1" },
-                              [
-                                _vm._v(
-                                  _vm._s(_vm.newsItems[_vm.viewIndex + 2].date)
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "span",
-                              { staticClass: "text-orange text-size-1" },
-                              [
-                                _vm._v(
-                                  _vm._s(
-                                    _vm.newsItems[_vm.viewIndex + 2].category
-                                  )
-                                )
-                              ]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("a", {
-                            staticClass: "news-title",
-                            attrs: {
-                              href: _vm.newsItems[_vm.viewIndex + 2].link
-                            },
-                            domProps: {
-                              innerHTML: _vm._s(
-                                _vm.newsItems[_vm.viewIndex + 2].title
-                              )
-                            }
-                          })
-                        ])
-                      ]
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "block-list beside d-flex flex-column justify-content-between"
-                  },
-                  _vm._l(
-                    _vm.newsItems.slice(_vm.viewIndex + 3, _vm.viewIndex + 5),
-                    function(item, $index) {
-                      return _c(
-                        "div",
-                        { key: $index, staticClass: "news-item" },
-                        [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "news-head d-flex align-items-center justify-content-center position-relative",
-                              style:
-                                "background-image: url(" + item.background + ")"
-                            },
-                            [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: "btn-border",
-                                  attrs: { to: "/" }
-                                },
-                                [_vm._v("了解更多")]
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "news-content" }, [
-                            _c("div", { staticClass: "news-info" }, [
-                              _c(
-                                "span",
-                                { staticClass: "text-black text-size-1" },
-                                [_vm._v(_vm._s(item.date))]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "span",
-                                { staticClass: "text-orange text-size-1" },
-                                [_vm._v(_vm._s(item.category))]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("a", {
-                              staticClass: "news-title",
-                              attrs: { href: item.link },
-                              domProps: { innerHTML: _vm._s(item.title) }
-                            })
-                          ])
-                        ]
-                      )
-                    }
-                  )
-                )
-              ]
-            )
-          })
-        ],
-        2
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-1e9078d8", module.exports)
-  }
-}
-
-/***/ }),
-
-/***/ 263:
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(264)
-}
-var normalizeComponent = __webpack_require__(48)
-/* script */
-var __vue_script__ = __webpack_require__(266)
-/* template */
-var __vue_template__ = __webpack_require__(267)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/components/block-foods.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-630800a0", Component.options)
-  } else {
-    hotAPI.reload("data-v-630800a0", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 264:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(265);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(80)("e8adc522", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-630800a0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-foods.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-630800a0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-foods.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 265:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(49)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n#block-foods {\n  background-size: cover;\n  background-position: 0;\n}\n#block-foods.active .block-food-body .content-food.left-content, #block-foods.active .block-food-body .content-food.right-content {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n    opacity: 1;\n}\n#block-foods.active .block-food-body .bg-left .bg-inner {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    background-position-y: center;\n}\n#block-foods .line-top:before {\n    content: \"\";\n    background: #f46f1b;\n    width: 60px;\n    height: 1px;\n    display: block;\n    margin-bottom: 20px;\n}\n#block-foods .block-food-body {\n    background-repeat: no-repeat;\n    background-size: cover;\n    height: 100vh;\n}\n#block-foods .block-food-body:after {\n      content: \"\";\n      position: absolute;\n      left: 0;\n      width: 100%;\n      height: 100%;\n      background: rgba(0, 0, 0, 0.6);\n}\n#block-foods .block-food-body .bg-left .bg-inner {\n      background-position: center;\n      background-size: cover;\n      background-position-y: 100vh;\n      -webkit-transition: all .5s;\n      transition: all .5s;\n}\n#block-foods .block-food-body .bg-left .bg-inner.active {\n        background-position-y: 100vh;\n        -webkit-transition: initial;\n        transition: initial;\n}\n#block-foods .block-food-body .content-food {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      padding: 0 100px;\n      overflow: hidden;\n      z-index: 2;\n}\n#block-foods .block-food-body .content-food .big_title {\n        font-size: 140px;\n        font-weight: 300;\n}\n#block-foods .block-food-body .content-food .more-food-info {\n        width: 100px;\n        height: 100px;\n        display: inline-block;\n        border-radius: 100%;\n        background-position: center;\n        background-size: cover;\n        cursor: pointer;\n        margin-right: 25px;\n}\n#block-foods .block-food-body .content-food .more-food-info.active {\n          opacity: 0.8;\n          -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.21);\n                  box-shadow: 0 0 15px rgba(255, 255, 255, 0.21);\n          -webkit-transition: all .3s;\n          transition: all .3s;\n}\n#block-foods .block-food-body .content-food > div {\n        position: relative;\n        z-index: 2;\n}\n#block-foods .block-food-body .content-food.left-content, #block-foods .block-food-body .content-food.right-content {\n        -webkit-transition: opacity 1s, -webkit-transform 1s;\n        transition: opacity 1s, -webkit-transform 1s;\n        transition: transform 1s, opacity 1s;\n        transition: transform 1s, opacity 1s, -webkit-transform 1s;\n        opacity: 0;\n}\n#block-foods .block-food-body .content-food.left-content {\n        background: transparent;\n        padding: 100px;\n}\n#block-foods .block-food-body .content-food.left-content .line-top {\n          line-height: 25px;\n}\n#block-foods .block-food-body .content-food.right-content {\n        background: white;\n        z-index: 2;\n        -webkit-transform: translateY(-100%);\n                transform: translateY(-100%);\n}\n#block-foods .block-food-body .content-food.right-content:before, #block-foods .block-food-body .content-food.right-content:after {\n          content: \"\";\n          position: absolute;\n          border-radius: 100%;\n}\n#block-foods .block-food-body .content-food.right-content:before {\n          width: 850px;\n          height: 850px;\n          background: rgba(242, 108, 35, 0.1);\n          right: -540px;\n          bottom: -480px;\n}\n#block-foods .block-food-body .content-food.right-content:after {\n          width: 100px;\n          height: 100px;\n          background: rgba(0, 0, 0, 0.22);\n          right: -70px;\n          bottom: 300px;\n}\n#block-foods .block-food-body .content-food.right-content .food-info-inner {\n          height: 500px;\n          width: 500px;\n          background: #f26d23;\n          border-radius: 100%;\n          -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n                  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n          -webkit-transition: all .5s;\n          transition: all .5s;\n}\n#block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-info {\n            font-weight: 300;\n            letter-spacing: 2px;\n}\n#block-foods .block-food-body .content-food.right-content .loader {\n          position: absolute;\n          width: 50vw;\n          height: 100vh;\n          stroke-linecap: round;\n          stroke-width: 5;\n          fill: none;\n          left: 0;\n}\n#block-foods .block-food-body .content-food.right-content .loader .internal-circle {\n            stroke: #f26c23;\n            stroke-dasharray: 55%,10%,25%;\n            opacity: .4;\n            -webkit-transform-origin: 30% 55%;\n                    transform-origin: 30% 55%;\n}\n#block-foods .block-food-body .content-food.right-content .loader.active .internal-circle {\n            -webkit-transform: rotate(180deg);\n                    transform: rotate(180deg);\n            -webkit-transition: all .5s ease-in-out;\n            transition: all .5s ease-in-out;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 266:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            bgTransition: false,
-            addTransition: false,
-            foodItems: [{
-                subTitle: '頂級食材源自產地與挑選<br>只願意提供最美好的食材給每位客戶',
-                title: '頂級食材',
-                url: '/images/bg_food_1.png',
-                content: '<p class="text-size-2 mb-2">橘色美食背後的秘密</p><h4 class="text-food-title mb-4">食材的<span class="text-black">秘密</span></h4><p class="text-food-info">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>'
-            }, {
-                subTitle: '頂級食材源自產地與挑選<br>只願意提供最美好的食材給每位客戶',
-                title: '頂級食材',
-                url: '/images/bg_brand_1.png',
-                content: '<p class="text-size-2 mb-2">橘色美食背後的秘密</p><h4 class="text-food-title mb-4">食材的<span class="text-black">秘密</span></h4><p class="text-food-info">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>'
-            }, {
-                subTitle: '頂級食材源自產地與挑選<br>只願意提供最美好的食材給每位客戶',
-                title: '頂級食材',
-                url: '/images/slideshow_1.jpg',
-                content: '<p class="text-size-2 mb-2">橘色美食背後的秘密</p><h4 class="text-food-title mb-4">食材的<span class="text-black">秘密</span></h4><p class="text-food-info">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>'
-            }],
-            food_index: 0,
-            food_index_old: 0
-
-        };
-    },
-    methods: {
-        bgAnimated: function bgAnimated(time) {
-            var _this = this;
-
-            this.bgTransition = true;
-            setTimeout(function () {
-                _this.bgTransition = false;
-            }, parseInt(time));
-            setTimeout(function () {
-                _this.food_index_old = _this.food_index;
-            }, parseInt(time) + 800);
-        },
-        startAnimate: function startAnimate(time) {
-            var _this2 = this;
-
-            this.addTransition = true;
-            setTimeout(function () {
-                _this2.addTransition = false;
-            }, parseInt(time));
-        }
-    }
-});
-
-/***/ }),
-
-/***/ 267:
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      staticClass: "section text-white position-relative",
-      style:
-        "background-image:url(" + _vm.foodItems[_vm.food_index_old].url + ")",
-      attrs: { id: "block-foods" }
-    },
-    [
-      _c("div", { staticClass: "block-food-body d-flex bg-black-filter" }, [
-        _c("div", { staticClass: "bg-transition bg-left" }, [
-          _c("div", {
-            staticClass: "bg-inner",
-            class: { active: _vm.bgTransition },
-            style:
-              "background-image:url(" + _vm.foodItems[_vm.food_index].url + ")"
-          })
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "content-food left-content d-flex flex-column justify-content-between position-relative m-auto"
-          },
-          [
-            _c(
-              "div",
-              { staticClass: "mb-5", class: { fade: _vm.addTransition } },
-              [
-                _c("p", {
-                  staticClass: "line-top text-size-2",
-                  domProps: {
-                    innerHTML: _vm._s(_vm.foodItems[_vm.food_index].subTitle)
-                  }
-                }),
-                _vm._v(" "),
-                _c("h1", { staticClass: "big_title" }, [
-                  _vm._v(_vm._s(_vm.foodItems[_vm.food_index].title))
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "align-self-end mt-5" },
-              [
-                _c("p", { staticClass: "text-size-2" }, [
-                  _vm._v("探索更多橘色價值")
-                ]),
-                _vm._v(" "),
-                _vm._l(_vm.foodItems, function(item, $index) {
-                  return _c("div", {
-                    key: $index,
-                    staticClass: "more-food-info",
-                    class: _vm.food_index == $index ? "active" : "",
-                    style: "background-image:url(" + item.url + ")",
-                    on: {
-                      click: function($event) {
-                        _vm.food_index = $index
-                        _vm.bgAnimated(100)
-                        _vm.startAnimate(500)
-                      }
-                    }
-                  })
-                })
-              ],
-              2
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "content-food right-content d-flex flex-column justify-content-center position-relative"
-          },
-          [
-            _c(
-              "svg",
-              { staticClass: "loader", class: { active: _vm.addTransition } },
-              [
-                _c("circle", {
-                  staticClass: "internal-circle",
-                  attrs: { cx: "30%", cy: "55%", r: "450" }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _vm._m(0),
-            _vm._v(" "),
-            _c("div", { staticClass: "food-info-circle" }),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "food-info-inner d-flex flex-column justify-content-center p-5"
-              },
-              [
-                _c("div", {
-                  class: { fade: _vm.addTransition },
-                  domProps: {
-                    innerHTML: _vm._s(_vm.foodItems[_vm.food_index].content)
-                  }
-                })
-              ]
-            )
-          ]
-        )
-      ])
-    ]
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h3", { staticClass: "main-title text-black text-uppercase" }, [
-      _c("span", { staticClass: "fs-inherit text-orange" }, [_vm._v("橘色 ")]),
-      _vm._v("價值"),
-      _c("br"),
-      _c("span", { staticClass: "sub-title" }, [_vm._v("about value")])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-630800a0", module.exports)
-  }
-}
-
-/***/ }),
-
-/***/ 268:
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "block-main" } }, [
-    _c(
-      "div",
-      {
-        class: _vm.closeMenu ? "active" : "" + _vm.sectionPosition,
-        attrs: { id: "header" }
-      },
-      [
-        _c("div", { staticClass: "d-flex" }, [
-          _c(
-            "div",
-            { staticClass: "logo", class: _vm.sectionIndex != 0 ? "fade" : "" },
-            [_c("img", { attrs: { src: "/images/index_logo.png" } })]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "d-flex justify-content-end align-items-center",
-              attrs: { id: "main-menu" }
-            },
-            [
-              _c("menu-header", {
-                class: _vm.closeMenu
-                  ? "menu-close"
-                  : "" || _vm.textShadow
-                    ? "menu-shadow"
-                    : ""
-              })
-            ],
-            1
-          )
-        ])
-      ]
-    ),
-    _vm._v(" "),
-    _c("span", {
-      class: _vm.sectionIndex != 0 ? "menu-close" : "",
-      attrs: { id: "burger-menu" },
-      on: {
-        click: function($event) {
-          _vm.closeMenu = !_vm.closeMenu
-        }
-      }
-    }),
-    _vm._v(" "),
-    _c(
-      "div",
-      [
-        _vm.display_fullpage
-          ? _c(
-              "full-page",
-              {
-                ref: "fullpage",
-                attrs: { id: "fullpage", options: _vm.options }
-              },
-              [
-                _c("block-experience"),
-                _vm._v(" "),
-                _c("block-foods"),
-                _vm._v(" "),
-                _c("block-brands"),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "section text-black position-relative text-center",
-                    attrs: { id: "block-news" }
-                  },
-                  [
-                    _c(
-                      "div",
-                      {
-                        staticStyle: { height: "100vh", position: "relative" },
-                        attrs: { id: "block-news-scroll" }
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "container position-relative m-auto section-pd"
-                          },
-                          [
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "row flex-column align-items-center justify-content-center flex-nowrap"
-                              },
-                              [
-                                _c(
-                                  "h3",
-                                  { staticClass: "main-title text-uppercase" },
-                                  [
-                                    _c(
-                                      "span",
-                                      { staticClass: "fs-inherit text-orange" },
-                                      [_vm._v("橘色")]
-                                    ),
-                                    _vm._v("新訊"),
-                                    _c("br"),
-                                    _c("span", { staticClass: "sub-title" }, [
-                                      _vm._v("events & news")
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c("block-news"),
-                                _vm._v(" "),
-                                _c(
-                                  "router-link",
-                                  {
-                                    staticClass: "btn-load-more btn-orange fat",
-                                    attrs: { to: "/news" }
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                                更多橘色新訊\n                            "
-                                    )
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ]
-                        )
-                      ]
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("block-footer")
-              ],
-              1
-            )
-          : _vm._e()
-      ],
-      1
-    )
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-e3a27224", module.exports)
-  }
-}
-
-/***/ }),
-
-/***/ 481:
+/***/ 331:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -9251,6 +9008,2733 @@ if ( typeof module != 'undefined' && module.exports ) {
         };
     })();
 })(window, document);
+
+/***/ }),
+
+/***/ 332:
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * Copyright (c) 2016 Naufal Rabbani (http://github.com/BosNaufal),
+ * ,Licensed Under MIT (http://opensource.org/licenses/MIT),
+ * ,
+ * ,Vue 2 Scrollbar @ Version 0.0.2,
+ * 
+ */
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(true)
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["Vue2Scrollbar"] = factory();
+	else
+		root["Vue2Scrollbar"] = factory();
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// identity function for calling harmony imports with the correct context
+/******/ 	__webpack_require__.i = function(value) { return value; };
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "../dist/";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports) {
+
+/* globals __VUE_SSR_CONTEXT__ */
+
+// this module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle
+
+module.exports = function normalizeComponent (
+  rawScriptExports,
+  compiledTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier /* server only */
+) {
+  var esModule
+  var scriptExports = rawScriptExports = rawScriptExports || {}
+
+  // ES6 modules interop
+  var type = typeof rawScriptExports.default
+  if (type === 'object' || type === 'function') {
+    esModule = rawScriptExports
+    scriptExports = rawScriptExports.default
+  }
+
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (compiledTemplate) {
+    options.render = compiledTemplate.render
+    options.staticRenderFns = compiledTemplate.staticRenderFns
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = scopeId
+  }
+
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = injectStyles
+  }
+
+  if (hook) {
+    var functional = options.functional
+    var existing = functional
+      ? options.render
+      : options.beforeCreate
+    if (!functional) {
+      // inject component registration as beforeCreate hook
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    } else {
+      // register for functioal component in vue file
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return existing(h, context)
+      }
+    }
+  }
+
+  return {
+    esModule: esModule,
+    exports: scriptExports,
+    options: options
+  }
+}
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7ec59f76_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vue_scrollbar_vue__ = __webpack_require__(9);
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+
+/* template */
+
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue___default.a,
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7ec59f76_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vue_scrollbar_vue__["a" /* default */],
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "src/js/components/vue-scrollbar.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] vue-scrollbar.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7ec59f76", Component.options)
+  } else {
+    hotAPI.reload("data-v-7ec59f76", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+exports.default = {
+
+  props: {
+    draggingFromParent: Boolean,
+    scrolling: Number,
+    wrapper: Object,
+    area: Object,
+    onChangePosition: Function,
+    onDragging: Function,
+    onStopDrag: Function
+  },
+
+  data: function data() {
+    return {
+      width: 0,
+      dragging: false,
+      start: 0
+    };
+  },
+
+
+  watch: {
+    'wrapper.width': function wrapperWidth(val, old) {
+      this.calculateSize(this);
+    },
+    'area.width': function areaWidth(val, old) {
+      this.calculateSize(this);
+    }
+  },
+
+  methods: {
+    startDrag: function startDrag(e) {
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      e = e.changedTouches ? e.changedTouches[0] : e;
+
+      // Prepare To Drag
+      this.dragging = true;
+      this.start = e.clientX;
+    },
+    onDrag: function onDrag(e) {
+
+      if (this.dragging) {
+
+        // Make The Parent being in the Dragging State
+        this.onDragging();
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        e = e.changedTouches ? e.changedTouches[0] : e;
+
+        var xMovement = e.clientX - this.start;
+        var xMovementPercentage = xMovement / this.wrapper.width * 100;
+
+        // Update the last e.clientX
+        this.start = e.clientX;
+
+        // The next Horizontal Value will be
+        var next = this.scrolling + xMovementPercentage;
+
+        // Tell the parent to change the position
+        this.onChangePosition(next, 'horizontal');
+      }
+    },
+    stopDrag: function stopDrag(e) {
+      if (this.dragging) {
+        // Parent Should Change the Dragging State
+        this.onStopDrag();
+        this.dragging = false;
+      }
+    },
+    jump: function jump(e) {
+
+      var isContainer = e.target === this.$refs.container;
+
+      if (isContainer) {
+
+        // Get the Element Position
+        var position = this.$refs.scrollbar.getBoundingClientRect();
+
+        // Calculate the horizontal Movement
+        var xMovement = e.clientX - position.left;
+        var centerize = this.width / 2;
+        var xMovementPercentage = xMovement / this.wrapper.width * 100 - centerize;
+
+        // Update the last e.clientX
+        this.start = e.clientX;
+
+        // The next Horizontal Value will be
+        var next = this.scrolling + xMovementPercentage;
+
+        // Tell the parent to change the position
+        this.onChangePosition(next, 'horizontal');
+      }
+    },
+    calculateSize: function calculateSize(source) {
+      // Scrollbar Width
+      this.width = source.wrapper.width / source.area.width * 100;
+    }
+  },
+
+  mounted: function mounted() {
+    this.calculateSize(this);
+
+    // Put the Listener
+    document.addEventListener("mousemove", this.onDrag);
+    document.addEventListener("touchmove", this.onDrag);
+    document.addEventListener("mouseup", this.stopDrag);
+    document.addEventListener("touchend", this.stopDrag);
+  },
+  beforeDestroy: function beforeDestroy() {
+    // Remove the Listener
+    document.removeEventListener("mousemove", this.onDrag);
+    document.removeEventListener("touchmove", this.onDrag);
+    document.removeEventListener("mouseup", this.stopDrag);
+    document.removeEventListener("touchend", this.stopDrag);
+  }
+};
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+exports.default = {
+
+  props: {
+    draggingFromParent: Boolean,
+    scrolling: Number,
+    wrapper: Object,
+    area: Object,
+    onChangePosition: Function,
+    onDragging: Function,
+    onStopDrag: Function
+  },
+
+  data: function data() {
+    return {
+      height: 0,
+      dragging: false,
+      start: 0
+    };
+  },
+
+
+  watch: {
+    'wrapper.height': function wrapperHeight(val, old) {
+      this.calculateSize(this);
+    },
+    'area.height': function areaHeight(val, old) {
+      this.calculateSize(this);
+    }
+  },
+
+  methods: {
+    startDrag: function startDrag(e) {
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      e = e.changedTouches ? e.changedTouches[0] : e;
+
+      // Prepare to drag
+      this.dragging = true, this.start = e.clientY;
+    },
+    onDrag: function onDrag(e) {
+
+      if (this.dragging) {
+
+        // Make The Parent being in the Dragging State
+        this.onDragging();
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        e = e.changedTouches ? e.changedTouches[0] : e;
+
+        var yMovement = e.clientY - this.start;
+        var yMovementPercentage = yMovement / this.wrapper.height * 100;
+
+        // Update the last e.clientY
+        this.start = e.clientY;
+
+        // The next Vertical Value will be
+        var next = this.scrolling + yMovementPercentage;
+
+        // Tell the parent to change the position
+        this.onChangePosition(next, 'vertical');
+      }
+    },
+    stopDrag: function stopDrag(e) {
+      if (this.dragging) {
+        // Parent Should Change the Dragging State
+        this.onStopDrag();
+        this.dragging = false;
+      }
+    },
+    jump: function jump(e) {
+
+      var isContainer = e.target === this.$refs.container;
+
+      if (isContainer) {
+
+        // Get the Element Position
+        var position = this.$refs.scrollbar.getBoundingClientRect();
+
+        // Calculate the vertical Movement
+        var yMovement = e.clientY - position.top;
+        var centerize = this.height / 2;
+        var yMovementPercentage = yMovement / this.wrapper.height * 100 - centerize;
+
+        // Update the last e.clientY
+        this.start = e.clientY;
+
+        // The next Vertical Value will be
+        var next = this.scrolling + yMovementPercentage;
+
+        // Tell the parent to change the position
+        this.onChangePosition(next, 'vertical');
+      }
+    },
+    calculateSize: function calculateSize(source) {
+      // Scrollbar Height
+      this.height = source.wrapper.height / source.area.height * 100;
+    },
+    getSize: function getSize() {
+      // The Elements
+      var $scrollArea = this.$refs.container.parentElement;
+      var $scrollWrapper = $scrollArea.parentElement;
+
+      // Get new Elements Size
+      var elementSize = {
+        // Scroll Area Height and Width
+        scrollAreaHeight: $scrollArea.children[0].clientHeight,
+        scrollAreaWidth: $scrollArea.children[0].clientWidth,
+
+        // Scroll Wrapper Height and Width
+        scrollWrapperHeight: $scrollWrapper.clientHeight,
+        scrollWrapperWidth: $scrollWrapper.clientWidth
+      };
+      return elementSize;
+    }
+  },
+
+  mounted: function mounted() {
+    this.calculateSize(this);
+
+    // Put the Listener
+    document.addEventListener("mousemove", this.onDrag);
+    document.addEventListener("touchmove", this.onDrag);
+    document.addEventListener("mouseup", this.stopDrag);
+    document.addEventListener("touchend", this.stopDrag);
+  },
+  beforeDestroy: function beforeDestroy() {
+    // Remove the Listener
+    document.removeEventListener("mousemove", this.onDrag);
+    document.removeEventListener("touchmove", this.onDrag);
+    document.removeEventListener("mouseup", this.stopDrag);
+    document.removeEventListener("touchend", this.stopDrag);
+  }
+};
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _verticalScrollbar = __webpack_require__(7);
+
+var _verticalScrollbar2 = _interopRequireDefault(_verticalScrollbar);
+
+var _horizontalScrollbar = __webpack_require__(6);
+
+var _horizontalScrollbar2 = _interopRequireDefault(_horizontalScrollbar);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+exports.default = {
+
+  props: {
+    classes: String,
+    styles: Object,
+    speed: {
+      type: Number,
+      default: 53
+    },
+    onMaxScroll: Function
+  },
+
+  components: {
+    VerticalScrollbar: _verticalScrollbar2.default,
+    HorizontalScrollbar: _horizontalScrollbar2.default
+  },
+
+  data: function data() {
+    return {
+      ready: false,
+      top: 0,
+      left: 0,
+      scrollAreaHeight: null,
+      scrollAreaWidth: null,
+      scrollWrapperHeight: null,
+      scrollWrapperWidth: null,
+      vMovement: 0,
+      hMovement: 0,
+      dragging: false,
+      start: { y: 0, x: 0 },
+      allowBodyScroll: false
+    };
+  },
+
+
+  methods: {
+    scroll: function scroll(e) {
+      var _this = this;
+
+      // Make sure the content height is not changed
+      this.calculateSize(function () {
+        // Set the wheel step
+        var num = _this.speed;
+
+        // DOM events
+        var shifted = e.shiftKey;
+        var scrollY = e.deltaY > 0 ? num : -num;
+        var scrollX = e.deltaX > 0 ? num : -num;
+
+        // Fix Mozilla Shifted Wheel~
+        if (shifted && e.deltaX == 0) scrollX = e.deltaY > 0 ? num : -num;
+
+        // Next Value
+        var nextY = _this.top + scrollY;
+        var nextX = _this.left + scrollX;
+
+        // Is it Scrollable?
+        var canScrollY = _this.scrollAreaHeight > _this.scrollWrapperHeight;
+        var canScrollX = _this.scrollAreaWidth > _this.scrollWrapperWidth;
+
+        // Vertical Scrolling
+        if (canScrollY && !shifted) _this.normalizeVertical(nextY);
+
+        // Horizontal Scrolling
+        if (shifted && canScrollX) _this.normalizeHorizontal(nextX);
+      });
+
+      // prevent Default only if scrolled content is not at the top/bottom
+      if (!this.allowBodyScroll) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    },
+
+
+    // DRAG EVENT JUST FOR TOUCH DEVICE~
+    startDrag: function startDrag(e) {
+      var _this2 = this;
+
+      this.touchEvent = e;
+
+      var evt = e.changedTouches ? e.changedTouches[0] : e;
+
+      // Make sure the content height is not changed
+      this.calculateSize(function () {
+        // Prepare to drag
+        _this2.dragging = true, _this2.start = { y: evt.pageY, x: evt.pageX };
+      });
+    },
+    onDrag: function onDrag(e) {
+      if (this.dragging) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        // Prevent Click Event When it dragging
+        if (this.touchEvent) {
+          this.touchEvent.preventDefault();
+          this.touchEvent.stopPropagation();
+        }
+
+        var evt = e.changedTouches ? e.changedTouches[0] : e;
+
+        // Invers the Movement
+        var yMovement = this.start.y - evt.clientY;
+        var xMovement = this.start.x - evt.clientX;
+
+        // Update the last e.client
+        this.start = { y: evt.clientY, x: evt.clientX
+
+          // The next Vertical Value will be
+        };var nextY = this.top + yMovement;
+        var nextX = this.left + xMovement;
+
+        this.normalizeVertical(nextY);
+        this.normalizeHorizontal(nextX);
+      }
+    },
+    stopDrag: function stopDrag(e) {
+      this.dragging = false;
+      this.touchEvent = false;
+    },
+    scrollToY: function scrollToY(y) {
+      this.normalizeVertical(y);
+    },
+    scrollToX: function scrollToX(x) {
+      this.normalizeHorizontal(x);
+    },
+    normalizeVertical: function normalizeVertical(next) {
+      var elementSize = this.getSize();
+
+      // Vertical Scrolling
+      var lowerEnd = elementSize.scrollAreaHeight - elementSize.scrollWrapperHeight;
+
+      // Max Scroll Down
+      var maxBottom = next > lowerEnd;
+      if (maxBottom) next = lowerEnd;
+
+      // Max Scroll Up
+      var maxTop = next < 0;
+      if (maxTop) next = 0;
+
+      // Update the Vertical Value if it's needed
+      var shouldScroll = this.top !== next;
+      this.allowBodyScroll = !shouldScroll;
+      if (shouldScroll) {
+        this.top = next, this.vMovement = next / elementSize.scrollAreaHeight * 100;
+
+        if (this.onMaxScroll && (maxTop || maxBottom)) {
+          this.onMaxScroll({ top: maxTop, bottom: maxBottom, right: false, left: false });
+        }
+      }
+    },
+    normalizeHorizontal: function normalizeHorizontal(next) {
+      var elementSize = this.getSize();
+
+      // Horizontal Scrolling
+      var rightEnd = elementSize.scrollAreaWidth - this.scrollWrapperWidth;
+
+      // Max Scroll Right
+      var maxRight = next > rightEnd;
+      if (maxRight) next = rightEnd;
+
+      // Max Scroll Left
+      var maxLeft = next < 0;
+      if (next < 0) next = 0;
+
+      // Update the Horizontal Value
+      var shouldScroll = this.left !== next;
+      this.allowBodyScroll = !shouldScroll;
+      if (shouldScroll) {
+        this.left = next, this.hMovement = next / elementSize.scrollAreaWidth * 100;
+
+        if (this.onMaxScroll && (maxRight || maxLeft)) {
+          this.onMaxScroll({ right: maxRight, left: maxLeft, top: false, bottom: false });
+        }
+      }
+    },
+    handleChangePosition: function handleChangePosition(movement, orientation) {
+      var _this3 = this;
+
+      // Make sure the content height is not changed
+      this.calculateSize(function () {
+        // Convert Percentage to Pixel
+        var next = movement / 100;
+        if (orientation == 'vertical') _this3.normalizeVertical(next * _this3.scrollAreaHeight);
+        if (orientation == 'horizontal') _this3.normalizeHorizontal(next * _this3.scrollAreaWidth);
+      });
+    },
+    handleScrollbarDragging: function handleScrollbarDragging() {
+      this.dragging = true;
+    },
+    handleScrollbarStopDrag: function handleScrollbarStopDrag() {
+      this.dragging = false;
+    },
+    getSize: function getSize() {
+      // The Elements
+      var $scrollArea = this.$refs.scrollArea;
+      var $scrollWrapper = this.$refs.scrollWrapper;
+
+      // Get new Elements Size
+      var elementSize = {
+        // Scroll Area Height and Width
+        scrollAreaHeight: $scrollArea.children[0].clientHeight,
+        scrollAreaWidth: $scrollArea.children[0].clientWidth,
+
+        // Scroll Wrapper Height and Width
+        scrollWrapperHeight: $scrollWrapper.clientHeight,
+        scrollWrapperWidth: $scrollWrapper.clientWidth
+      };
+      return elementSize;
+    },
+    calculateSize: function calculateSize(cb) {
+      if (typeof cb !== 'function') cb = null;
+
+      var elementSize = this.getSize();
+
+      if (elementSize.scrollWrapperHeight !== this.scrollWrapperHeight || elementSize.scrollWrapperWidth !== this.scrollWrapperWidth || elementSize.scrollAreaHeight !== this.scrollAreaHeight || elementSize.scrollAreaWidth !== this.scrollAreaWidth) {
+
+        // Scroll Area Height and Width
+        this.scrollAreaHeight = elementSize.scrollAreaHeight, this.scrollAreaWidth = elementSize.scrollAreaWidth,
+
+        // Scroll Wrapper Height and Width
+        this.scrollWrapperHeight = elementSize.scrollWrapperHeight, this.scrollWrapperWidth = elementSize.scrollWrapperWidth,
+
+        // Make sure The wrapper is Ready, then render the scrollbar
+        this.ready = true;
+
+        return cb ? cb() : false;
+      } else return cb ? cb() : false;
+    }
+  },
+
+  mounted: function mounted() {
+    this.calculateSize();
+
+    // Attach The Event for Responsive View~
+    window.addEventListener('resize', this.calculateSize);
+  },
+  beforeDestroy: function beforeDestroy() {
+    // Remove Event
+    window.removeEventListener('resize', this.calculateSize);
+  }
+};
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _vueScrollbar = __webpack_require__(1);
+
+var _vueScrollbar2 = _interopRequireDefault(_vueScrollbar);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = _vueScrollbar2.default;
+
+/***/ }),
+/* 6 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_03d7e587_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_horizontal_scrollbar_vue__ = __webpack_require__(8);
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+
+/* template */
+
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue___default.a,
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_03d7e587_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_horizontal_scrollbar_vue__["a" /* default */],
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "src/js/components/horizontal-scrollbar.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] horizontal-scrollbar.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-03d7e587", Component.options)
+  } else {
+    hotAPI.reload("data-v-03d7e587", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd7644e_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vertical_scrollbar_vue__ = __webpack_require__(10);
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+
+/* template */
+
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue___default.a,
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd7644e_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vertical_scrollbar_vue__["a" /* default */],
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "src/js/components/vertical-scrollbar.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] vertical-scrollbar.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-9fd7644e", Component.options)
+  } else {
+    hotAPI.reload("data-v-9fd7644e", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [(_vm.width < 100) ? _c('div', {
+    ref: "container",
+    staticClass: "vue-scrollbar__scrollbar-horizontal",
+    on: {
+      "click": _vm.jump
+    }
+  }, [_c('div', {
+    ref: "scrollbar",
+    class: 'scrollbar' + (_vm.dragging || _vm.draggingFromParent ? '' : ' vue-scrollbar-transition'),
+    style: ({
+      width: this.width + '%',
+      left: this.scrolling + '%'
+    }),
+    on: {
+      "touchstart": _vm.startDrag,
+      "mousedown": _vm.startDrag
+    }
+  })]) : _vm._e()])
+}
+var staticRenderFns = []
+render._withStripped = true
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-03d7e587", esExports)
+  }
+}
+
+/***/ }),
+/* 9 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    ref: "scrollWrapper",
+    class: 'vue-scrollbar__wrapper' + (this.classes ? ' ' + this.classes : ''),
+    style: (this.styles),
+    on: {
+      "click": _vm.calculateSize
+    }
+  }, [_c('div', {
+    ref: "scrollArea",
+    class: 'vue-scrollbar__area' + (this.dragging ? ' ' : ' vue-scrollbar-transition'),
+    style: ({
+      marginTop: this.top * -1 + 'px',
+      marginLeft: this.left * -1 + 'px'
+    }),
+    on: {
+      "wheel": _vm.scroll,
+      "touchstart": _vm.startDrag,
+      "touchmove": _vm.onDrag,
+      "touchend": _vm.stopDrag
+    }
+  }, [_vm._t("default"), _vm._v(" "), (_vm.ready) ? _c('vertical-scrollbar', {
+    attrs: {
+      "area": {
+        height: _vm.scrollAreaHeight
+      },
+      "wrapper": {
+        height: _vm.scrollWrapperHeight
+      },
+      "scrolling": _vm.vMovement,
+      "dragging-from-parent": _vm.dragging,
+      "on-change-position": _vm.handleChangePosition,
+      "on-dragging": _vm.handleScrollbarDragging,
+      "on-stop-drag": _vm.handleScrollbarStopDrag
+    }
+  }) : _vm._e(), _vm._v(" "), (_vm.ready) ? _c('horizontal-scrollbar', {
+    attrs: {
+      "area": {
+        width: _vm.scrollAreaWidth
+      },
+      "wrapper": {
+        width: _vm.scrollWrapperWidth
+      },
+      "scrolling": _vm.hMovement,
+      "dragging-from-parent": _vm.dragging,
+      "on-change-position": _vm.handleChangePosition,
+      "on-dragging": _vm.handleScrollbarDragging,
+      "on-stop-drag": _vm.handleScrollbarStopDrag
+    }
+  }) : _vm._e()], 2)])
+}
+var staticRenderFns = []
+render._withStripped = true
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-7ec59f76", esExports)
+  }
+}
+
+/***/ }),
+/* 10 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [(_vm.height < 100) ? _c('div', {
+    ref: "container",
+    staticClass: "vue-scrollbar__scrollbar-vertical",
+    on: {
+      "click": _vm.jump
+    }
+  }, [_c('div', {
+    ref: "scrollbar",
+    class: 'scrollbar' + (_vm.dragging || _vm.draggingFromParent ? '' : ' vue-scrollbar-transition'),
+    style: ({
+      height: _vm.height + '%',
+      top: _vm.scrolling + '%'
+    }),
+    on: {
+      "touchstart": _vm.startDrag,
+      "mousedown": _vm.startDrag
+    }
+  })]) : _vm._e()])
+}
+var staticRenderFns = []
+render._withStripped = true
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-9fd7644e", esExports)
+  }
+}
+
+/***/ })
+/******/ ]);
+});
+
+/***/ }),
+
+/***/ 333:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/*!
+ * perfect-scrollbar v1.4.0
+ * (c) 2018 Hyunje Jun
+ * @license MIT
+ */
+function get(element) {
+  return getComputedStyle(element);
+}
+
+function set(element, obj) {
+  for (var key in obj) {
+    var val = obj[key];
+    if (typeof val === 'number') {
+      val = val + "px";
+    }
+    element.style[key] = val;
+  }
+  return element;
+}
+
+function div(className) {
+  var div = document.createElement('div');
+  div.className = className;
+  return div;
+}
+
+var elMatches =
+  typeof Element !== 'undefined' &&
+  (Element.prototype.matches ||
+    Element.prototype.webkitMatchesSelector ||
+    Element.prototype.mozMatchesSelector ||
+    Element.prototype.msMatchesSelector);
+
+function matches(element, query) {
+  if (!elMatches) {
+    throw new Error('No element matching method supported');
+  }
+
+  return elMatches.call(element, query);
+}
+
+function remove(element) {
+  if (element.remove) {
+    element.remove();
+  } else {
+    if (element.parentNode) {
+      element.parentNode.removeChild(element);
+    }
+  }
+}
+
+function queryChildren(element, selector) {
+  return Array.prototype.filter.call(element.children, function (child) { return matches(child, selector); }
+  );
+}
+
+var cls = {
+  main: 'ps',
+  element: {
+    thumb: function (x) { return ("ps__thumb-" + x); },
+    rail: function (x) { return ("ps__rail-" + x); },
+    consuming: 'ps__child--consume',
+  },
+  state: {
+    focus: 'ps--focus',
+    clicking: 'ps--clicking',
+    active: function (x) { return ("ps--active-" + x); },
+    scrolling: function (x) { return ("ps--scrolling-" + x); },
+  },
+};
+
+/*
+ * Helper methods
+ */
+var scrollingClassTimeout = { x: null, y: null };
+
+function addScrollingClass(i, x) {
+  var classList = i.element.classList;
+  var className = cls.state.scrolling(x);
+
+  if (classList.contains(className)) {
+    clearTimeout(scrollingClassTimeout[x]);
+  } else {
+    classList.add(className);
+  }
+}
+
+function removeScrollingClass(i, x) {
+  scrollingClassTimeout[x] = setTimeout(
+    function () { return i.isAlive && i.element.classList.remove(cls.state.scrolling(x)); },
+    i.settings.scrollingThreshold
+  );
+}
+
+function setScrollingClassInstantly(i, x) {
+  addScrollingClass(i, x);
+  removeScrollingClass(i, x);
+}
+
+var EventElement = function EventElement(element) {
+  this.element = element;
+  this.handlers = {};
+};
+
+var prototypeAccessors = { isEmpty: { configurable: true } };
+
+EventElement.prototype.bind = function bind (eventName, handler) {
+  if (typeof this.handlers[eventName] === 'undefined') {
+    this.handlers[eventName] = [];
+  }
+  this.handlers[eventName].push(handler);
+  this.element.addEventListener(eventName, handler, false);
+};
+
+EventElement.prototype.unbind = function unbind (eventName, target) {
+    var this$1 = this;
+
+  this.handlers[eventName] = this.handlers[eventName].filter(function (handler) {
+    if (target && handler !== target) {
+      return true;
+    }
+    this$1.element.removeEventListener(eventName, handler, false);
+    return false;
+  });
+};
+
+EventElement.prototype.unbindAll = function unbindAll () {
+    var this$1 = this;
+
+  for (var name in this$1.handlers) {
+    this$1.unbind(name);
+  }
+};
+
+prototypeAccessors.isEmpty.get = function () {
+    var this$1 = this;
+
+  return Object.keys(this.handlers).every(
+    function (key) { return this$1.handlers[key].length === 0; }
+  );
+};
+
+Object.defineProperties( EventElement.prototype, prototypeAccessors );
+
+var EventManager = function EventManager() {
+  this.eventElements = [];
+};
+
+EventManager.prototype.eventElement = function eventElement (element) {
+  var ee = this.eventElements.filter(function (ee) { return ee.element === element; })[0];
+  if (!ee) {
+    ee = new EventElement(element);
+    this.eventElements.push(ee);
+  }
+  return ee;
+};
+
+EventManager.prototype.bind = function bind (element, eventName, handler) {
+  this.eventElement(element).bind(eventName, handler);
+};
+
+EventManager.prototype.unbind = function unbind (element, eventName, handler) {
+  var ee = this.eventElement(element);
+  ee.unbind(eventName, handler);
+
+  if (ee.isEmpty) {
+    // remove
+    this.eventElements.splice(this.eventElements.indexOf(ee), 1);
+  }
+};
+
+EventManager.prototype.unbindAll = function unbindAll () {
+  this.eventElements.forEach(function (e) { return e.unbindAll(); });
+  this.eventElements = [];
+};
+
+EventManager.prototype.once = function once (element, eventName, handler) {
+  var ee = this.eventElement(element);
+  var onceHandler = function (evt) {
+    ee.unbind(eventName, onceHandler);
+    handler(evt);
+  };
+  ee.bind(eventName, onceHandler);
+};
+
+function createEvent(name) {
+  if (typeof window.CustomEvent === 'function') {
+    return new CustomEvent(name);
+  } else {
+    var evt = document.createEvent('CustomEvent');
+    evt.initCustomEvent(name, false, false, undefined);
+    return evt;
+  }
+}
+
+var processScrollDiff = function(
+  i,
+  axis,
+  diff,
+  useScrollingClass,
+  forceFireReachEvent
+) {
+  if ( useScrollingClass === void 0 ) useScrollingClass = true;
+  if ( forceFireReachEvent === void 0 ) forceFireReachEvent = false;
+
+  var fields;
+  if (axis === 'top') {
+    fields = [
+      'contentHeight',
+      'containerHeight',
+      'scrollTop',
+      'y',
+      'up',
+      'down' ];
+  } else if (axis === 'left') {
+    fields = [
+      'contentWidth',
+      'containerWidth',
+      'scrollLeft',
+      'x',
+      'left',
+      'right' ];
+  } else {
+    throw new Error('A proper axis should be provided');
+  }
+
+  processScrollDiff$1(i, diff, fields, useScrollingClass, forceFireReachEvent);
+};
+
+function processScrollDiff$1(
+  i,
+  diff,
+  ref,
+  useScrollingClass,
+  forceFireReachEvent
+) {
+  var contentHeight = ref[0];
+  var containerHeight = ref[1];
+  var scrollTop = ref[2];
+  var y = ref[3];
+  var up = ref[4];
+  var down = ref[5];
+  if ( useScrollingClass === void 0 ) useScrollingClass = true;
+  if ( forceFireReachEvent === void 0 ) forceFireReachEvent = false;
+
+  var element = i.element;
+
+  // reset reach
+  i.reach[y] = null;
+
+  // 1 for subpixel rounding
+  if (element[scrollTop] < 1) {
+    i.reach[y] = 'start';
+  }
+
+  // 1 for subpixel rounding
+  if (element[scrollTop] > i[contentHeight] - i[containerHeight] - 1) {
+    i.reach[y] = 'end';
+  }
+
+  if (diff) {
+    element.dispatchEvent(createEvent(("ps-scroll-" + y)));
+
+    if (diff < 0) {
+      element.dispatchEvent(createEvent(("ps-scroll-" + up)));
+    } else if (diff > 0) {
+      element.dispatchEvent(createEvent(("ps-scroll-" + down)));
+    }
+
+    if (useScrollingClass) {
+      setScrollingClassInstantly(i, y);
+    }
+  }
+
+  if (i.reach[y] && (diff || forceFireReachEvent)) {
+    element.dispatchEvent(createEvent(("ps-" + y + "-reach-" + (i.reach[y]))));
+  }
+}
+
+function toInt(x) {
+  return parseInt(x, 10) || 0;
+}
+
+function isEditable(el) {
+  return (
+    matches(el, 'input,[contenteditable]') ||
+    matches(el, 'select,[contenteditable]') ||
+    matches(el, 'textarea,[contenteditable]') ||
+    matches(el, 'button,[contenteditable]')
+  );
+}
+
+function outerWidth(element) {
+  var styles = get(element);
+  return (
+    toInt(styles.width) +
+    toInt(styles.paddingLeft) +
+    toInt(styles.paddingRight) +
+    toInt(styles.borderLeftWidth) +
+    toInt(styles.borderRightWidth)
+  );
+}
+
+var env = {
+  isWebKit:
+    typeof document !== 'undefined' &&
+    'WebkitAppearance' in document.documentElement.style,
+  supportsTouch:
+    typeof window !== 'undefined' &&
+    ('ontouchstart' in window ||
+      (window.DocumentTouch && document instanceof window.DocumentTouch)),
+  supportsIePointer:
+    typeof navigator !== 'undefined' && navigator.msMaxTouchPoints,
+  isChrome:
+    typeof navigator !== 'undefined' &&
+    /Chrome/i.test(navigator && navigator.userAgent),
+};
+
+var updateGeometry = function(i) {
+  var element = i.element;
+  var roundedScrollTop = Math.floor(element.scrollTop);
+
+  i.containerWidth = element.clientWidth;
+  i.containerHeight = element.clientHeight;
+  i.contentWidth = element.scrollWidth;
+  i.contentHeight = element.scrollHeight;
+
+  if (!element.contains(i.scrollbarXRail)) {
+    // clean up and append
+    queryChildren(element, cls.element.rail('x')).forEach(function (el) { return remove(el); }
+    );
+    element.appendChild(i.scrollbarXRail);
+  }
+  if (!element.contains(i.scrollbarYRail)) {
+    // clean up and append
+    queryChildren(element, cls.element.rail('y')).forEach(function (el) { return remove(el); }
+    );
+    element.appendChild(i.scrollbarYRail);
+  }
+
+  if (
+    !i.settings.suppressScrollX &&
+    i.containerWidth + i.settings.scrollXMarginOffset < i.contentWidth
+  ) {
+    i.scrollbarXActive = true;
+    i.railXWidth = i.containerWidth - i.railXMarginWidth;
+    i.railXRatio = i.containerWidth / i.railXWidth;
+    i.scrollbarXWidth = getThumbSize(
+      i,
+      toInt(i.railXWidth * i.containerWidth / i.contentWidth)
+    );
+    i.scrollbarXLeft = toInt(
+      (i.negativeScrollAdjustment + element.scrollLeft) *
+        (i.railXWidth - i.scrollbarXWidth) /
+        (i.contentWidth - i.containerWidth)
+    );
+  } else {
+    i.scrollbarXActive = false;
+  }
+
+  if (
+    !i.settings.suppressScrollY &&
+    i.containerHeight + i.settings.scrollYMarginOffset < i.contentHeight
+  ) {
+    i.scrollbarYActive = true;
+    i.railYHeight = i.containerHeight - i.railYMarginHeight;
+    i.railYRatio = i.containerHeight / i.railYHeight;
+    i.scrollbarYHeight = getThumbSize(
+      i,
+      toInt(i.railYHeight * i.containerHeight / i.contentHeight)
+    );
+    i.scrollbarYTop = toInt(
+      roundedScrollTop *
+        (i.railYHeight - i.scrollbarYHeight) /
+        (i.contentHeight - i.containerHeight)
+    );
+  } else {
+    i.scrollbarYActive = false;
+  }
+
+  if (i.scrollbarXLeft >= i.railXWidth - i.scrollbarXWidth) {
+    i.scrollbarXLeft = i.railXWidth - i.scrollbarXWidth;
+  }
+  if (i.scrollbarYTop >= i.railYHeight - i.scrollbarYHeight) {
+    i.scrollbarYTop = i.railYHeight - i.scrollbarYHeight;
+  }
+
+  updateCss(element, i);
+
+  if (i.scrollbarXActive) {
+    element.classList.add(cls.state.active('x'));
+  } else {
+    element.classList.remove(cls.state.active('x'));
+    i.scrollbarXWidth = 0;
+    i.scrollbarXLeft = 0;
+    element.scrollLeft = 0;
+  }
+  if (i.scrollbarYActive) {
+    element.classList.add(cls.state.active('y'));
+  } else {
+    element.classList.remove(cls.state.active('y'));
+    i.scrollbarYHeight = 0;
+    i.scrollbarYTop = 0;
+    element.scrollTop = 0;
+  }
+};
+
+function getThumbSize(i, thumbSize) {
+  if (i.settings.minScrollbarLength) {
+    thumbSize = Math.max(thumbSize, i.settings.minScrollbarLength);
+  }
+  if (i.settings.maxScrollbarLength) {
+    thumbSize = Math.min(thumbSize, i.settings.maxScrollbarLength);
+  }
+  return thumbSize;
+}
+
+function updateCss(element, i) {
+  var xRailOffset = { width: i.railXWidth };
+  var roundedScrollTop = Math.floor(element.scrollTop);
+
+  if (i.isRtl) {
+    xRailOffset.left =
+      i.negativeScrollAdjustment +
+      element.scrollLeft +
+      i.containerWidth -
+      i.contentWidth;
+  } else {
+    xRailOffset.left = element.scrollLeft;
+  }
+  if (i.isScrollbarXUsingBottom) {
+    xRailOffset.bottom = i.scrollbarXBottom - roundedScrollTop;
+  } else {
+    xRailOffset.top = i.scrollbarXTop + roundedScrollTop;
+  }
+  set(i.scrollbarXRail, xRailOffset);
+
+  var yRailOffset = { top: roundedScrollTop, height: i.railYHeight };
+  if (i.isScrollbarYUsingRight) {
+    if (i.isRtl) {
+      yRailOffset.right =
+        i.contentWidth -
+        (i.negativeScrollAdjustment + element.scrollLeft) -
+        i.scrollbarYRight -
+        i.scrollbarYOuterWidth;
+    } else {
+      yRailOffset.right = i.scrollbarYRight - element.scrollLeft;
+    }
+  } else {
+    if (i.isRtl) {
+      yRailOffset.left =
+        i.negativeScrollAdjustment +
+        element.scrollLeft +
+        i.containerWidth * 2 -
+        i.contentWidth -
+        i.scrollbarYLeft -
+        i.scrollbarYOuterWidth;
+    } else {
+      yRailOffset.left = i.scrollbarYLeft + element.scrollLeft;
+    }
+  }
+  set(i.scrollbarYRail, yRailOffset);
+
+  set(i.scrollbarX, {
+    left: i.scrollbarXLeft,
+    width: i.scrollbarXWidth - i.railBorderXWidth,
+  });
+  set(i.scrollbarY, {
+    top: i.scrollbarYTop,
+    height: i.scrollbarYHeight - i.railBorderYWidth,
+  });
+}
+
+var clickRail = function(i) {
+  i.event.bind(i.scrollbarY, 'mousedown', function (e) { return e.stopPropagation(); });
+  i.event.bind(i.scrollbarYRail, 'mousedown', function (e) {
+    var positionTop =
+      e.pageY -
+      window.pageYOffset -
+      i.scrollbarYRail.getBoundingClientRect().top;
+    var direction = positionTop > i.scrollbarYTop ? 1 : -1;
+
+    i.element.scrollTop += direction * i.containerHeight;
+    updateGeometry(i);
+
+    e.stopPropagation();
+  });
+
+  i.event.bind(i.scrollbarX, 'mousedown', function (e) { return e.stopPropagation(); });
+  i.event.bind(i.scrollbarXRail, 'mousedown', function (e) {
+    var positionLeft =
+      e.pageX -
+      window.pageXOffset -
+      i.scrollbarXRail.getBoundingClientRect().left;
+    var direction = positionLeft > i.scrollbarXLeft ? 1 : -1;
+
+    i.element.scrollLeft += direction * i.containerWidth;
+    updateGeometry(i);
+
+    e.stopPropagation();
+  });
+};
+
+var dragThumb = function(i) {
+  bindMouseScrollHandler(i, [
+    'containerWidth',
+    'contentWidth',
+    'pageX',
+    'railXWidth',
+    'scrollbarX',
+    'scrollbarXWidth',
+    'scrollLeft',
+    'x',
+    'scrollbarXRail' ]);
+  bindMouseScrollHandler(i, [
+    'containerHeight',
+    'contentHeight',
+    'pageY',
+    'railYHeight',
+    'scrollbarY',
+    'scrollbarYHeight',
+    'scrollTop',
+    'y',
+    'scrollbarYRail' ]);
+};
+
+function bindMouseScrollHandler(
+  i,
+  ref
+) {
+  var containerHeight = ref[0];
+  var contentHeight = ref[1];
+  var pageY = ref[2];
+  var railYHeight = ref[3];
+  var scrollbarY = ref[4];
+  var scrollbarYHeight = ref[5];
+  var scrollTop = ref[6];
+  var y = ref[7];
+  var scrollbarYRail = ref[8];
+
+  var element = i.element;
+
+  var startingScrollTop = null;
+  var startingMousePageY = null;
+  var scrollBy = null;
+
+  function mouseMoveHandler(e) {
+    element[scrollTop] =
+      startingScrollTop + scrollBy * (e[pageY] - startingMousePageY);
+    addScrollingClass(i, y);
+    updateGeometry(i);
+
+    e.stopPropagation();
+    e.preventDefault();
+  }
+
+  function mouseUpHandler() {
+    removeScrollingClass(i, y);
+    i[scrollbarYRail].classList.remove(cls.state.clicking);
+    i.event.unbind(i.ownerDocument, 'mousemove', mouseMoveHandler);
+  }
+
+  i.event.bind(i[scrollbarY], 'mousedown', function (e) {
+    startingScrollTop = element[scrollTop];
+    startingMousePageY = e[pageY];
+    scrollBy =
+      (i[contentHeight] - i[containerHeight]) /
+      (i[railYHeight] - i[scrollbarYHeight]);
+
+    i.event.bind(i.ownerDocument, 'mousemove', mouseMoveHandler);
+    i.event.once(i.ownerDocument, 'mouseup', mouseUpHandler);
+
+    i[scrollbarYRail].classList.add(cls.state.clicking);
+
+    e.stopPropagation();
+    e.preventDefault();
+  });
+}
+
+var keyboard = function(i) {
+  var element = i.element;
+
+  var elementHovered = function () { return matches(element, ':hover'); };
+  var scrollbarFocused = function () { return matches(i.scrollbarX, ':focus') || matches(i.scrollbarY, ':focus'); };
+
+  function shouldPreventDefault(deltaX, deltaY) {
+    var scrollTop = Math.floor(element.scrollTop);
+    if (deltaX === 0) {
+      if (!i.scrollbarYActive) {
+        return false;
+      }
+      if (
+        (scrollTop === 0 && deltaY > 0) ||
+        (scrollTop >= i.contentHeight - i.containerHeight && deltaY < 0)
+      ) {
+        return !i.settings.wheelPropagation;
+      }
+    }
+
+    var scrollLeft = element.scrollLeft;
+    if (deltaY === 0) {
+      if (!i.scrollbarXActive) {
+        return false;
+      }
+      if (
+        (scrollLeft === 0 && deltaX < 0) ||
+        (scrollLeft >= i.contentWidth - i.containerWidth && deltaX > 0)
+      ) {
+        return !i.settings.wheelPropagation;
+      }
+    }
+    return true;
+  }
+
+  i.event.bind(i.ownerDocument, 'keydown', function (e) {
+    if (
+      (e.isDefaultPrevented && e.isDefaultPrevented()) ||
+      e.defaultPrevented
+    ) {
+      return;
+    }
+
+    if (!elementHovered() && !scrollbarFocused()) {
+      return;
+    }
+
+    var activeElement = document.activeElement
+      ? document.activeElement
+      : i.ownerDocument.activeElement;
+    if (activeElement) {
+      if (activeElement.tagName === 'IFRAME') {
+        activeElement = activeElement.contentDocument.activeElement;
+      } else {
+        // go deeper if element is a webcomponent
+        while (activeElement.shadowRoot) {
+          activeElement = activeElement.shadowRoot.activeElement;
+        }
+      }
+      if (isEditable(activeElement)) {
+        return;
+      }
+    }
+
+    var deltaX = 0;
+    var deltaY = 0;
+
+    switch (e.which) {
+      case 37: // left
+        if (e.metaKey) {
+          deltaX = -i.contentWidth;
+        } else if (e.altKey) {
+          deltaX = -i.containerWidth;
+        } else {
+          deltaX = -30;
+        }
+        break;
+      case 38: // up
+        if (e.metaKey) {
+          deltaY = i.contentHeight;
+        } else if (e.altKey) {
+          deltaY = i.containerHeight;
+        } else {
+          deltaY = 30;
+        }
+        break;
+      case 39: // right
+        if (e.metaKey) {
+          deltaX = i.contentWidth;
+        } else if (e.altKey) {
+          deltaX = i.containerWidth;
+        } else {
+          deltaX = 30;
+        }
+        break;
+      case 40: // down
+        if (e.metaKey) {
+          deltaY = -i.contentHeight;
+        } else if (e.altKey) {
+          deltaY = -i.containerHeight;
+        } else {
+          deltaY = -30;
+        }
+        break;
+      case 32: // space bar
+        if (e.shiftKey) {
+          deltaY = i.containerHeight;
+        } else {
+          deltaY = -i.containerHeight;
+        }
+        break;
+      case 33: // page up
+        deltaY = i.containerHeight;
+        break;
+      case 34: // page down
+        deltaY = -i.containerHeight;
+        break;
+      case 36: // home
+        deltaY = i.contentHeight;
+        break;
+      case 35: // end
+        deltaY = -i.contentHeight;
+        break;
+      default:
+        return;
+    }
+
+    if (i.settings.suppressScrollX && deltaX !== 0) {
+      return;
+    }
+    if (i.settings.suppressScrollY && deltaY !== 0) {
+      return;
+    }
+
+    element.scrollTop -= deltaY;
+    element.scrollLeft += deltaX;
+    updateGeometry(i);
+
+    if (shouldPreventDefault(deltaX, deltaY)) {
+      e.preventDefault();
+    }
+  });
+};
+
+var wheel = function(i) {
+  var element = i.element;
+
+  function shouldPreventDefault(deltaX, deltaY) {
+    var roundedScrollTop = Math.floor(element.scrollTop);
+    var isTop = element.scrollTop === 0;
+    var isBottom =
+      roundedScrollTop + element.offsetHeight === element.scrollHeight;
+    var isLeft = element.scrollLeft === 0;
+    var isRight =
+      element.scrollLeft + element.offsetWidth === element.scrollWidth;
+
+    var hitsBound;
+
+    // pick axis with primary direction
+    if (Math.abs(deltaY) > Math.abs(deltaX)) {
+      hitsBound = isTop || isBottom;
+    } else {
+      hitsBound = isLeft || isRight;
+    }
+
+    return hitsBound ? !i.settings.wheelPropagation : true;
+  }
+
+  function getDeltaFromEvent(e) {
+    var deltaX = e.deltaX;
+    var deltaY = -1 * e.deltaY;
+
+    if (typeof deltaX === 'undefined' || typeof deltaY === 'undefined') {
+      // OS X Safari
+      deltaX = -1 * e.wheelDeltaX / 6;
+      deltaY = e.wheelDeltaY / 6;
+    }
+
+    if (e.deltaMode && e.deltaMode === 1) {
+      // Firefox in deltaMode 1: Line scrolling
+      deltaX *= 10;
+      deltaY *= 10;
+    }
+
+    if (deltaX !== deltaX && deltaY !== deltaY /* NaN checks */) {
+      // IE in some mouse drivers
+      deltaX = 0;
+      deltaY = e.wheelDelta;
+    }
+
+    if (e.shiftKey) {
+      // reverse axis with shift key
+      return [-deltaY, -deltaX];
+    }
+    return [deltaX, deltaY];
+  }
+
+  function shouldBeConsumedByChild(target, deltaX, deltaY) {
+    // FIXME: this is a workaround for <select> issue in FF and IE #571
+    if (!env.isWebKit && element.querySelector('select:focus')) {
+      return true;
+    }
+
+    if (!element.contains(target)) {
+      return false;
+    }
+
+    var cursor = target;
+
+    while (cursor && cursor !== element) {
+      if (cursor.classList.contains(cls.element.consuming)) {
+        return true;
+      }
+
+      var style = get(cursor);
+      var overflow = [style.overflow, style.overflowX, style.overflowY].join(
+        ''
+      );
+
+      // if scrollable
+      if (overflow.match(/(scroll|auto)/)) {
+        var maxScrollTop = cursor.scrollHeight - cursor.clientHeight;
+        if (maxScrollTop > 0) {
+          if (
+            !(cursor.scrollTop === 0 && deltaY > 0) &&
+            !(cursor.scrollTop === maxScrollTop && deltaY < 0)
+          ) {
+            return true;
+          }
+        }
+        var maxScrollLeft = cursor.scrollWidth - cursor.clientWidth;
+        if (maxScrollLeft > 0) {
+          if (
+            !(cursor.scrollLeft === 0 && deltaX < 0) &&
+            !(cursor.scrollLeft === maxScrollLeft && deltaX > 0)
+          ) {
+            return true;
+          }
+        }
+      }
+
+      cursor = cursor.parentNode;
+    }
+
+    return false;
+  }
+
+  function mousewheelHandler(e) {
+    var ref = getDeltaFromEvent(e);
+    var deltaX = ref[0];
+    var deltaY = ref[1];
+
+    if (shouldBeConsumedByChild(e.target, deltaX, deltaY)) {
+      return;
+    }
+
+    var shouldPrevent = false;
+    if (!i.settings.useBothWheelAxes) {
+      // deltaX will only be used for horizontal scrolling and deltaY will
+      // only be used for vertical scrolling - this is the default
+      element.scrollTop -= deltaY * i.settings.wheelSpeed;
+      element.scrollLeft += deltaX * i.settings.wheelSpeed;
+    } else if (i.scrollbarYActive && !i.scrollbarXActive) {
+      // only vertical scrollbar is active and useBothWheelAxes option is
+      // active, so let's scroll vertical bar using both mouse wheel axes
+      if (deltaY) {
+        element.scrollTop -= deltaY * i.settings.wheelSpeed;
+      } else {
+        element.scrollTop += deltaX * i.settings.wheelSpeed;
+      }
+      shouldPrevent = true;
+    } else if (i.scrollbarXActive && !i.scrollbarYActive) {
+      // useBothWheelAxes and only horizontal bar is active, so use both
+      // wheel axes for horizontal bar
+      if (deltaX) {
+        element.scrollLeft += deltaX * i.settings.wheelSpeed;
+      } else {
+        element.scrollLeft -= deltaY * i.settings.wheelSpeed;
+      }
+      shouldPrevent = true;
+    }
+
+    updateGeometry(i);
+
+    shouldPrevent = shouldPrevent || shouldPreventDefault(deltaX, deltaY);
+    if (shouldPrevent && !e.ctrlKey) {
+      e.stopPropagation();
+      e.preventDefault();
+    }
+  }
+
+  if (typeof window.onwheel !== 'undefined') {
+    i.event.bind(element, 'wheel', mousewheelHandler);
+  } else if (typeof window.onmousewheel !== 'undefined') {
+    i.event.bind(element, 'mousewheel', mousewheelHandler);
+  }
+};
+
+var touch = function(i) {
+  if (!env.supportsTouch && !env.supportsIePointer) {
+    return;
+  }
+
+  var element = i.element;
+
+  function shouldPrevent(deltaX, deltaY) {
+    var scrollTop = Math.floor(element.scrollTop);
+    var scrollLeft = element.scrollLeft;
+    var magnitudeX = Math.abs(deltaX);
+    var magnitudeY = Math.abs(deltaY);
+
+    if (magnitudeY > magnitudeX) {
+      // user is perhaps trying to swipe up/down the page
+
+      if (
+        (deltaY < 0 && scrollTop === i.contentHeight - i.containerHeight) ||
+        (deltaY > 0 && scrollTop === 0)
+      ) {
+        // set prevent for mobile Chrome refresh
+        return window.scrollY === 0 && deltaY > 0 && env.isChrome;
+      }
+    } else if (magnitudeX > magnitudeY) {
+      // user is perhaps trying to swipe left/right across the page
+
+      if (
+        (deltaX < 0 && scrollLeft === i.contentWidth - i.containerWidth) ||
+        (deltaX > 0 && scrollLeft === 0)
+      ) {
+        return true;
+      }
+    }
+
+    return true;
+  }
+
+  function applyTouchMove(differenceX, differenceY) {
+    element.scrollTop -= differenceY;
+    element.scrollLeft -= differenceX;
+
+    updateGeometry(i);
+  }
+
+  var startOffset = {};
+  var startTime = 0;
+  var speed = {};
+  var easingLoop = null;
+
+  function getTouch(e) {
+    if (e.targetTouches) {
+      return e.targetTouches[0];
+    } else {
+      // Maybe IE pointer
+      return e;
+    }
+  }
+
+  function shouldHandle(e) {
+    if (e.pointerType && e.pointerType === 'pen' && e.buttons === 0) {
+      return false;
+    }
+    if (e.targetTouches && e.targetTouches.length === 1) {
+      return true;
+    }
+    if (
+      e.pointerType &&
+      e.pointerType !== 'mouse' &&
+      e.pointerType !== e.MSPOINTER_TYPE_MOUSE
+    ) {
+      return true;
+    }
+    return false;
+  }
+
+  function touchStart(e) {
+    if (!shouldHandle(e)) {
+      return;
+    }
+
+    var touch = getTouch(e);
+
+    startOffset.pageX = touch.pageX;
+    startOffset.pageY = touch.pageY;
+
+    startTime = new Date().getTime();
+
+    if (easingLoop !== null) {
+      clearInterval(easingLoop);
+    }
+  }
+
+  function shouldBeConsumedByChild(target, deltaX, deltaY) {
+    if (!element.contains(target)) {
+      return false;
+    }
+
+    var cursor = target;
+
+    while (cursor && cursor !== element) {
+      if (cursor.classList.contains(cls.element.consuming)) {
+        return true;
+      }
+
+      var style = get(cursor);
+      var overflow = [style.overflow, style.overflowX, style.overflowY].join(
+        ''
+      );
+
+      // if scrollable
+      if (overflow.match(/(scroll|auto)/)) {
+        var maxScrollTop = cursor.scrollHeight - cursor.clientHeight;
+        if (maxScrollTop > 0) {
+          if (
+            !(cursor.scrollTop === 0 && deltaY > 0) &&
+            !(cursor.scrollTop === maxScrollTop && deltaY < 0)
+          ) {
+            return true;
+          }
+        }
+        var maxScrollLeft = cursor.scrollLeft - cursor.clientWidth;
+        if (maxScrollLeft > 0) {
+          if (
+            !(cursor.scrollLeft === 0 && deltaX < 0) &&
+            !(cursor.scrollLeft === maxScrollLeft && deltaX > 0)
+          ) {
+            return true;
+          }
+        }
+      }
+
+      cursor = cursor.parentNode;
+    }
+
+    return false;
+  }
+
+  function touchMove(e) {
+    if (shouldHandle(e)) {
+      var touch = getTouch(e);
+
+      var currentOffset = { pageX: touch.pageX, pageY: touch.pageY };
+
+      var differenceX = currentOffset.pageX - startOffset.pageX;
+      var differenceY = currentOffset.pageY - startOffset.pageY;
+
+      if (shouldBeConsumedByChild(e.target, differenceX, differenceY)) {
+        return;
+      }
+
+      applyTouchMove(differenceX, differenceY);
+      startOffset = currentOffset;
+
+      var currentTime = new Date().getTime();
+
+      var timeGap = currentTime - startTime;
+      if (timeGap > 0) {
+        speed.x = differenceX / timeGap;
+        speed.y = differenceY / timeGap;
+        startTime = currentTime;
+      }
+
+      if (shouldPrevent(differenceX, differenceY)) {
+        e.preventDefault();
+      }
+    }
+  }
+  function touchEnd() {
+    if (i.settings.swipeEasing) {
+      clearInterval(easingLoop);
+      easingLoop = setInterval(function() {
+        if (i.isInitialized) {
+          clearInterval(easingLoop);
+          return;
+        }
+
+        if (!speed.x && !speed.y) {
+          clearInterval(easingLoop);
+          return;
+        }
+
+        if (Math.abs(speed.x) < 0.01 && Math.abs(speed.y) < 0.01) {
+          clearInterval(easingLoop);
+          return;
+        }
+
+        applyTouchMove(speed.x * 30, speed.y * 30);
+
+        speed.x *= 0.8;
+        speed.y *= 0.8;
+      }, 10);
+    }
+  }
+
+  if (env.supportsTouch) {
+    i.event.bind(element, 'touchstart', touchStart);
+    i.event.bind(element, 'touchmove', touchMove);
+    i.event.bind(element, 'touchend', touchEnd);
+  } else if (env.supportsIePointer) {
+    if (window.PointerEvent) {
+      i.event.bind(element, 'pointerdown', touchStart);
+      i.event.bind(element, 'pointermove', touchMove);
+      i.event.bind(element, 'pointerup', touchEnd);
+    } else if (window.MSPointerEvent) {
+      i.event.bind(element, 'MSPointerDown', touchStart);
+      i.event.bind(element, 'MSPointerMove', touchMove);
+      i.event.bind(element, 'MSPointerUp', touchEnd);
+    }
+  }
+};
+
+var defaultSettings = function () { return ({
+  handlers: ['click-rail', 'drag-thumb', 'keyboard', 'wheel', 'touch'],
+  maxScrollbarLength: null,
+  minScrollbarLength: null,
+  scrollingThreshold: 1000,
+  scrollXMarginOffset: 0,
+  scrollYMarginOffset: 0,
+  suppressScrollX: false,
+  suppressScrollY: false,
+  swipeEasing: true,
+  useBothWheelAxes: false,
+  wheelPropagation: true,
+  wheelSpeed: 1,
+}); };
+
+var handlers = {
+  'click-rail': clickRail,
+  'drag-thumb': dragThumb,
+  keyboard: keyboard,
+  wheel: wheel,
+  touch: touch,
+};
+
+var PerfectScrollbar = function PerfectScrollbar(element, userSettings) {
+  var this$1 = this;
+  if ( userSettings === void 0 ) userSettings = {};
+
+  if (typeof element === 'string') {
+    element = document.querySelector(element);
+  }
+
+  if (!element || !element.nodeName) {
+    throw new Error('no element is specified to initialize PerfectScrollbar');
+  }
+
+  this.element = element;
+
+  element.classList.add(cls.main);
+
+  this.settings = defaultSettings();
+  for (var key in userSettings) {
+    this$1.settings[key] = userSettings[key];
+  }
+
+  this.containerWidth = null;
+  this.containerHeight = null;
+  this.contentWidth = null;
+  this.contentHeight = null;
+
+  var focus = function () { return element.classList.add(cls.state.focus); };
+  var blur = function () { return element.classList.remove(cls.state.focus); };
+
+  this.isRtl = get(element).direction === 'rtl';
+  this.isNegativeScroll = (function () {
+    var originalScrollLeft = element.scrollLeft;
+    var result = null;
+    element.scrollLeft = -1;
+    result = element.scrollLeft < 0;
+    element.scrollLeft = originalScrollLeft;
+    return result;
+  })();
+  this.negativeScrollAdjustment = this.isNegativeScroll
+    ? element.scrollWidth - element.clientWidth
+    : 0;
+  this.event = new EventManager();
+  this.ownerDocument = element.ownerDocument || document;
+
+  this.scrollbarXRail = div(cls.element.rail('x'));
+  element.appendChild(this.scrollbarXRail);
+  this.scrollbarX = div(cls.element.thumb('x'));
+  this.scrollbarXRail.appendChild(this.scrollbarX);
+  this.scrollbarX.setAttribute('tabindex', 0);
+  this.event.bind(this.scrollbarX, 'focus', focus);
+  this.event.bind(this.scrollbarX, 'blur', blur);
+  this.scrollbarXActive = null;
+  this.scrollbarXWidth = null;
+  this.scrollbarXLeft = null;
+  var railXStyle = get(this.scrollbarXRail);
+  this.scrollbarXBottom = parseInt(railXStyle.bottom, 10);
+  if (isNaN(this.scrollbarXBottom)) {
+    this.isScrollbarXUsingBottom = false;
+    this.scrollbarXTop = toInt(railXStyle.top);
+  } else {
+    this.isScrollbarXUsingBottom = true;
+  }
+  this.railBorderXWidth =
+    toInt(railXStyle.borderLeftWidth) + toInt(railXStyle.borderRightWidth);
+  // Set rail to display:block to calculate margins
+  set(this.scrollbarXRail, { display: 'block' });
+  this.railXMarginWidth =
+    toInt(railXStyle.marginLeft) + toInt(railXStyle.marginRight);
+  set(this.scrollbarXRail, { display: '' });
+  this.railXWidth = null;
+  this.railXRatio = null;
+
+  this.scrollbarYRail = div(cls.element.rail('y'));
+  element.appendChild(this.scrollbarYRail);
+  this.scrollbarY = div(cls.element.thumb('y'));
+  this.scrollbarYRail.appendChild(this.scrollbarY);
+  this.scrollbarY.setAttribute('tabindex', 0);
+  this.event.bind(this.scrollbarY, 'focus', focus);
+  this.event.bind(this.scrollbarY, 'blur', blur);
+  this.scrollbarYActive = null;
+  this.scrollbarYHeight = null;
+  this.scrollbarYTop = null;
+  var railYStyle = get(this.scrollbarYRail);
+  this.scrollbarYRight = parseInt(railYStyle.right, 10);
+  if (isNaN(this.scrollbarYRight)) {
+    this.isScrollbarYUsingRight = false;
+    this.scrollbarYLeft = toInt(railYStyle.left);
+  } else {
+    this.isScrollbarYUsingRight = true;
+  }
+  this.scrollbarYOuterWidth = this.isRtl ? outerWidth(this.scrollbarY) : null;
+  this.railBorderYWidth =
+    toInt(railYStyle.borderTopWidth) + toInt(railYStyle.borderBottomWidth);
+  set(this.scrollbarYRail, { display: 'block' });
+  this.railYMarginHeight =
+    toInt(railYStyle.marginTop) + toInt(railYStyle.marginBottom);
+  set(this.scrollbarYRail, { display: '' });
+  this.railYHeight = null;
+  this.railYRatio = null;
+
+  this.reach = {
+    x:
+      element.scrollLeft <= 0
+        ? 'start'
+        : element.scrollLeft >= this.contentWidth - this.containerWidth
+          ? 'end'
+          : null,
+    y:
+      element.scrollTop <= 0
+        ? 'start'
+        : element.scrollTop >= this.contentHeight - this.containerHeight
+          ? 'end'
+          : null,
+  };
+
+  this.isAlive = true;
+
+  this.settings.handlers.forEach(function (handlerName) { return handlers[handlerName](this$1); });
+
+  this.lastScrollTop = Math.floor(element.scrollTop); // for onScroll only
+  this.lastScrollLeft = element.scrollLeft; // for onScroll only
+  this.event.bind(this.element, 'scroll', function (e) { return this$1.onScroll(e); });
+  updateGeometry(this);
+};
+
+PerfectScrollbar.prototype.update = function update () {
+  if (!this.isAlive) {
+    return;
+  }
+
+  // Recalcuate negative scrollLeft adjustment
+  this.negativeScrollAdjustment = this.isNegativeScroll
+    ? this.element.scrollWidth - this.element.clientWidth
+    : 0;
+
+  // Recalculate rail margins
+  set(this.scrollbarXRail, { display: 'block' });
+  set(this.scrollbarYRail, { display: 'block' });
+  this.railXMarginWidth =
+    toInt(get(this.scrollbarXRail).marginLeft) +
+    toInt(get(this.scrollbarXRail).marginRight);
+  this.railYMarginHeight =
+    toInt(get(this.scrollbarYRail).marginTop) +
+    toInt(get(this.scrollbarYRail).marginBottom);
+
+  // Hide scrollbars not to affect scrollWidth and scrollHeight
+  set(this.scrollbarXRail, { display: 'none' });
+  set(this.scrollbarYRail, { display: 'none' });
+
+  updateGeometry(this);
+
+  processScrollDiff(this, 'top', 0, false, true);
+  processScrollDiff(this, 'left', 0, false, true);
+
+  set(this.scrollbarXRail, { display: '' });
+  set(this.scrollbarYRail, { display: '' });
+};
+
+PerfectScrollbar.prototype.onScroll = function onScroll (e) {
+  if (!this.isAlive) {
+    return;
+  }
+
+  updateGeometry(this);
+  processScrollDiff(this, 'top', this.element.scrollTop - this.lastScrollTop);
+  processScrollDiff(
+    this,
+    'left',
+    this.element.scrollLeft - this.lastScrollLeft
+  );
+
+  this.lastScrollTop = Math.floor(this.element.scrollTop);
+  this.lastScrollLeft = this.element.scrollLeft;
+};
+
+PerfectScrollbar.prototype.destroy = function destroy () {
+  if (!this.isAlive) {
+    return;
+  }
+
+  this.event.unbindAll();
+  remove(this.scrollbarX);
+  remove(this.scrollbarY);
+  remove(this.scrollbarXRail);
+  remove(this.scrollbarYRail);
+  this.removePsClasses();
+
+  // unset elements
+  this.element = null;
+  this.scrollbarX = null;
+  this.scrollbarY = null;
+  this.scrollbarXRail = null;
+  this.scrollbarYRail = null;
+
+  this.isAlive = false;
+};
+
+PerfectScrollbar.prototype.removePsClasses = function removePsClasses () {
+  this.element.className = this.element.className
+    .split(' ')
+    .filter(function (name) { return !name.match(/^ps([-_].+|)$/); })
+    .join(' ');
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (PerfectScrollbar);
+
+
+/***/ }),
+
+/***/ 483:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(484);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(80)("c420dc4c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3a27224\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3a27224\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 484:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(48)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#fullpage[data-v-e3a27224] {\n  -webkit-transition-duration: .8s !important;\n          transition-duration: .8s !important;\n  -webkit-transition-timing-function: cubic-bezier(0.5, 0, 0, 1) !important;\n          transition-timing-function: cubic-bezier(0.5, 0, 0, 1) !important;\n}\n#burger-menu[data-v-e3a27224] {\n  width: 0px;\n  height: 25px;\n  text-align: center;\n  overflow: hidden;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  position: absolute;\n  right: 30px;\n  top: 53px;\n  z-index: 9999999;\n}\n#burger-menu[data-v-e3a27224]:before {\n    content: \"|||\";\n    color: #f26c23;\n    -webkit-transform: rotate(90deg);\n            transform: rotate(90deg);\n    display: inline-block;\n    font-weight: bold;\n}\n#burger-menu[data-v-e3a27224]:hover {\n    cursor: pointer;\n}\n#burger-menu.menu-close[data-v-e3a27224] {\n    width: 25px;\n}\n#app .logo[data-v-e3a27224] {\n  position: absolute;\n  height: 220px;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 485:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(486);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(80)("648b341c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3a27224\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./Home.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3a27224\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./Home.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 486:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(48)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#fp-nav.fp-right {\n  opacity: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  visibility: hidden;\n  -webkit-transition: opacity .3s;\n  transition: opacity .3s;\n  right: 0;\n  width: unset;\n}\n#fp-nav.fp-right.active {\n    visibility: visible;\n    opacity: 1;\n}\n#fp-nav.fp-right ul li {\n    width: 100%;\n    height: 25px;\n    margin: 5px 0;\n}\n#fp-nav.fp-right ul li:last-child {\n      display: none;\n}\n#fp-nav.fp-right ul li span {\n      display: none;\n}\n#fp-nav.fp-right ul li .fp-tooltip.fp-right {\n      color: #ccc;\n      opacity: 1;\n      width: auto;\n      font-size: 14px;\n      letter-spacing: 0px;\n      font-style: italic;\n      right: 0;\n      overflow: visible;\n      position: relative;\n      height: 100%;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      padding: 0 50px;\n      font-weight: 300;\n}\n#fp-nav.fp-right ul li:hover div, #fp-nav.fp-right ul li a.active + div {\n      cursor: pointer;\n      background: #f26c23;\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      color: white !important;\n}\n#fp-nav.fp-right ul li a {\n      position: absolute;\n      top: 0;\n      left: 0;\n}\n#app .fp-scroller {\n  min-height: 100%;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 487:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "block-main" } }, [
+    _c(
+      "div",
+      {
+        class: _vm.closeMenu ? "active" : "" + _vm.sectionPosition,
+        attrs: { id: "header" }
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "d-flex" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "logo",
+                class: _vm.sectionIndex != 0 ? "fade" : "",
+                attrs: { to: "/", exact: "" }
+              },
+              [_c("img", { attrs: { src: "/images/index_logo.png" } })]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "d-flex justify-content-end align-items-center",
+                attrs: { id: "main-menu" }
+              },
+              [
+                _c("menu-header", {
+                  class: _vm.closeMenu
+                    ? "menu-close"
+                    : "" || _vm.textShadow
+                      ? "menu-shadow"
+                      : ""
+                })
+              ],
+              1
+            )
+          ],
+          1
+        )
+      ]
+    ),
+    _vm._v(" "),
+    _c("span", {
+      class: _vm.sectionIndex != 0 ? "menu-close" : "",
+      attrs: { id: "burger-menu" },
+      on: {
+        click: function($event) {
+          _vm.closeMenu = !_vm.closeMenu
+        }
+      }
+    }),
+    _vm._v(" "),
+    _c(
+      "div",
+      [
+        _vm.display_fullpage
+          ? _c(
+              "full-page",
+              {
+                ref: "fullpage",
+                attrs: { id: "fullpage", options: _vm.options }
+              },
+              [
+                _c("block-experience"),
+                _vm._v(" "),
+                _c("block-foods"),
+                _vm._v(" "),
+                _c("block-brands"),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "section text-black position-relative text-center",
+                    attrs: { id: "block-news" }
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { height: "100vh", position: "relative" },
+                        attrs: { id: "block-news-scroll" }
+                      },
+                      [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "container position-relative m-auto section-pd"
+                          },
+                          [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "row flex-column align-items-center justify-content-center flex-nowrap"
+                              },
+                              [
+                                _c(
+                                  "h3",
+                                  { staticClass: "main-title text-uppercase" },
+                                  [
+                                    _c(
+                                      "span",
+                                      { staticClass: "fs-inherit text-orange" },
+                                      [_vm._v("橘色")]
+                                    ),
+                                    _vm._v("新訊\n                            ")
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "sub-title" }, [
+                                  _vm._v("events & news")
+                                ]),
+                                _vm._v(" "),
+                                _c("block-news"),
+                                _vm._v(" "),
+                                _c(
+                                  "router-link",
+                                  {
+                                    staticClass: "btn-load-more btn-orange fat",
+                                    attrs: { to: "/news" }
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                                更多橘色新訊\n                            "
+                                    )
+                                  ]
+                                )
+                              ],
+                              1
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("block-footer")
+              ],
+              1
+            )
+          : _vm._e()
+      ],
+      1
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-e3a27224", module.exports)
+  }
+}
 
 /***/ })
 

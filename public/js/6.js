@@ -378,14 +378,14 @@ var staticRenderFns = [
       [
         _vm._v("2018 "),
         _c("a", { staticClass: "link-orange" }, [_vm._v(" 橘色涮涮屋 ")]),
-        _vm._v(" 版權所有. Designed by "),
+        _vm._v(" 版權所有. Designed by＆ensp;"),
         _c(
           "a",
           {
             staticClass: "link-orange",
             attrs: { href: "www.daydream-lab.com" }
           },
-          [_vm._v(" Daydream Lab")]
+          [_vm._v("Daydream Lab")]
         )
       ]
     )
@@ -3807,6 +3807,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
+<<<<<<< HEAD
+            slickOptions: {
+                slidesToShow: 1,
+                arrows: true,
+                draggable: false
+            },
+            slick_items: [{
+                bg: '/images/slideshow_1.jpg',
+                title: '實現你未來的夢想',
+                subtitle: '踏足餐飲業的堅實第一步<br>橘色大家庭為你實現',
+                scrollText: '讓我們帶你實現夢想!'
+            }, {
+                bg: '/images/bg_brand_1.png',
+                title: '實現你未來的夢想',
+                subtitle: '踏足餐飲業的堅實第一步<br>橘色大家庭為你實現',
+                scrollText: '讓我們帶你實現夢想!'
+            }],
+=======
+>>>>>>> 32caaf9af8b0dd188f61a918207c8744fff1d381
             family_steps: [{
                 img: '/images/family_1.png',
                 bigTitle: '培育',
@@ -3900,11 +3919,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     jQuery(".family-title").removeClass("fadein");
                 }
                 for (var i = 0; i <= 2; i++) {
-                    var nowb = jQuery("#step-" + i);
-                    if (nowp >= nowb.offset().top - 700) {
-                        nowb.find(".left , .right").addClass("fadein");
-                    } else if (nowp < nowb.offset().top - 1200) {
-                        nowb.find(".left , .right").removeClass("fadein");
+                    if (jQuery("#step-" + i).length > 0) {
+                        var nowb = jQuery("#step-" + i);
+                        if (nowp >= nowb.offset().top - 700) {
+                            nowb.find(".left , .right").addClass("fadein");
+                        } else if (nowp < nowb.offset().top - 1200) {
+                            nowb.find(".left , .right").removeClass("fadein");
+                        }
                     }
                 }
             }

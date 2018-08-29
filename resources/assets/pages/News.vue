@@ -21,24 +21,37 @@
                             <div class="news-categories -date">
                                 <div id="category-date" class="d-flex">
                                     <div class="filter-date -year">
-                                        <el-dropdown trigger="click" class="text-white">
+                                        <el-select v-model="year">
+                                            <el-option :label="'2018'" :value="2018"></el-option>
+                                            <el-option :label="'2015'" :value="2015"></el-option>
+                                            <el-option :label="'2013'" :value="2013"></el-option>
+                                        </el-select>
+                                        <!--<el-dropdown trigger="click" class="text-white">
                                             <span class="el-dropdown-link">
                                                 2018<i class="el-icon-arrow-down el-icon--right"></i>
                                             </span>
                                             <el-dropdown-menu slot="dropdown">
-                                                <el-dropdown-item>年</el-dropdown-item>
+                                                <el-dropdown-item>2018</el-dropdown-item>
+                                                <el-dropdown-item>2015</el-dropdown-item>
                                             </el-dropdown-menu>
-                                        </el-dropdown>
+                                        </el-dropdown>-->
                                     </div>
                                     <div class="filter-date -month">
-                                        <el-dropdown trigger="click" class="text-white">
+                                        <el-select v-model="month">
+                                            <el-option :label="'月份'" :value="''"></el-option>
+                                            <el-option :label="'10月'" :value="10"></el-option>
+                                            <el-option :label="'9月'" :value="9"></el-option>
+                                            <el-option :label="'8月'" :value="8"></el-option>
+                                        </el-select>
+                                        <!--<el-dropdown trigger="click" class="text-white">
                                             <span class="el-dropdown-link">
                                                 9月<i class="el-icon-arrow-down el-icon--right"></i>
                                             </span>
                                             <el-dropdown-menu slot="dropdown">
-                                                <el-dropdown-item>月</el-dropdown-item>
+                                                <el-dropdown-item>10月</el-dropdown-item>
+                                                <el-dropdown-item>11月</el-dropdown-item>
                                             </el-dropdown-menu>
-                                        </el-dropdown>
+                                        </el-dropdown>-->
                                     </div>
                                 </div>
                             </div>
@@ -89,7 +102,11 @@ export default {
         return {
             newsItems: [
                 {
+<<<<<<< HEAD
                     background: '/images/news_v1.png',
+=======
+                    background: '/images/news_v2.png',
+>>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
@@ -105,7 +122,11 @@ export default {
                     link: '/#/news/detail'
                 },
                 {
+<<<<<<< HEAD
                     background: '/images/news_v3.png',
+=======
+                    background: '/images/news_v2.png',
+>>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
@@ -113,7 +134,11 @@ export default {
                     link: '/#/news/detail'
                 },
                 {
+<<<<<<< HEAD
                     background: '/images/news_v4.png',
+=======
+                    background: '/images/news_v2.png',
+>>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
@@ -121,7 +146,11 @@ export default {
                     link: '/#/news/detail'
                 },
                 {
+<<<<<<< HEAD
                     background: '/images/news_v5.png',
+=======
+                    background: '/images/news_v2.png',
+>>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
@@ -129,7 +158,11 @@ export default {
                     link: '/#/news/detail'
                 },
                 {
+<<<<<<< HEAD
                     background: '/images/news_v1.png',
+=======
+                    background: '/images/news_v2.png',
+>>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
@@ -145,7 +178,11 @@ export default {
                     link: '/#/news/detail'
                 },
                 {
+<<<<<<< HEAD
                     background: '/images/news_v3.png',
+=======
+                    background: '/images/news_v2.png',
+>>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
@@ -153,7 +190,11 @@ export default {
                     link: '/#/news/detail'
                 },
                 {
+<<<<<<< HEAD
                     background: '/images/news_v4.png',
+=======
+                    background: '/images/news_v2.png',
+>>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
@@ -161,7 +202,11 @@ export default {
                     link: '/#/news/detail'
                 },
                 {
+<<<<<<< HEAD
                     background: '/images/news_v5.png',
+=======
+                    background: '/images/news_v2.png',
+>>>>>>> b4f1bbdc9458d465dc3183edc8dc1b23d516158e
                     date: '2018/3/21',
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
@@ -172,6 +217,8 @@ export default {
             newsCategories: ['全部新訊','橘色涮涮屋','Extension 1 by 橘色'],
             newsIndex: 0,
             viewIndex: 8,
+	        year: 2018,
+	        month: ''
         }
     },
     components: {
@@ -192,6 +239,19 @@ export default {
         top: 0
     #block-news
         margin-bottom: 180px
+        .filter-date
+            &.-year
+                width: 90px
+            &.-month
+                width: 85px
+            .el-input__inner
+                -webkit-appearance: none
+                border-radius: 0
+                border: unset
+                background: transparent
+                color: white
+            .el-select__caret
+                color: #fff
         #block-news-lists
             z-index: 2
             margin-bottom: 80px
@@ -202,7 +262,7 @@ export default {
                     &.-category
                         flex: 1
                     .filter-date
-                        padding: 15px 20px
+                        padding: 5px
                         background: #f26d23
                         cursor: pointer
                         &.-month

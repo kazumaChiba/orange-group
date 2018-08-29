@@ -30,8 +30,9 @@
                             <!--<vue-scrollbar classes="my-scrollbar" ref="Scrollbar" :onMaxScroll="handleMaxScroll" :style="{height: '100vh'}">-->
                             <div class="row flex-column align-items-center justify-content-center flex-nowrap">
                                 <h3 class="main-title text-uppercase">
-                                    <span class="fs-inherit text-orange">橘色</span>新訊<br><span class="sub-title">events & news</span>
+                                    <span class="fs-inherit text-orange">橘色</span>新訊
                                 </h3>
+                                <span class="sub-title">events & news</span>
 
                                 <block-news></block-news>
                                 <router-link :to="'/news'" class="btn-load-more btn-orange fat">

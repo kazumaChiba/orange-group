@@ -378,14 +378,14 @@ var staticRenderFns = [
       [
         _vm._v("2018 "),
         _c("a", { staticClass: "link-orange" }, [_vm._v(" 橘色涮涮屋 ")]),
-        _vm._v(" 版權所有. Designed by "),
+        _vm._v(" 版權所有. Designed by＆ensp;"),
         _c(
           "a",
           {
             staticClass: "link-orange",
             attrs: { href: "www.daydream-lab.com" }
           },
-          [_vm._v(" Daydream Lab")]
+          [_vm._v("Daydream Lab")]
         )
       ]
     )
@@ -880,7 +880,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#contact-form .btn-orange {\n  padding: 10px 55px;\n  font-size: 14px;\n  -webkit-box-shadow: 5px 5px 10px rgba(242, 109, 35, 0.3);\n          box-shadow: 5px 5px 10px rgba(242, 109, 35, 0.3);\n}\n#contact-form .btn-orange:hover {\n    background: rgba(0, 0, 0, 0.85);\n}\n#contact-form #contact-form-body {\n  padding: 0 80px;\n}\n#contact-form #contact-form-body .field-item {\n    width: 50%;\n}\n#contact-form #contact-form-body .field-item .field-icon {\n      position: absolute;\n      top: 15px;\n}\n#contact-form #contact-form-body .field-item .field-icon.plane {\n        font-size: 60px;\n        color: #f26c23;\n        right: 0;\n        top: -70px;\n}\n#contact-form .contact-form-title {\n  font-size: 28px;\n}\n#contact-form .contact-form-field {\n  height: 330px;\n}\n#contact-form .contact-form-field input, #contact-form .contact-form-field textarea {\n    width: calc(100% - 15px);\n    border: none;\n    border-bottom: 1px solid #ccc;\n    padding: 10px 30px;\n    margin-bottom: 20px;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n}\n#contact-form .contact-form-field input::-webkit-input-placeholder, #contact-form .contact-form-field textarea::-webkit-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input:-ms-input-placeholder, #contact-form .contact-form-field textarea:-ms-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input::-ms-input-placeholder, #contact-form .contact-form-field textarea::-ms-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input::placeholder, #contact-form .contact-form-field textarea::placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input:focus, #contact-form .contact-form-field textarea:focus {\n      outline: none;\n      border-bottom-color: #f26c23;\n      border-width: 2px;\n}\n#contact-form .contact-form-field input:focus::-webkit-input-placeholder, #contact-form .contact-form-field textarea:focus::-webkit-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus:-ms-input-placeholder, #contact-form .contact-form-field textarea:focus:-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::-ms-input-placeholder, #contact-form .contact-form-field textarea:focus::-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::placeholder, #contact-form .contact-form-field textarea:focus::placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus + .field-icon, #contact-form .contact-form-field textarea:focus + .field-icon {\n        color: #f26c23;\n}\n#contact-form .contact-form-field input.btn-orange, #contact-form .contact-form-field textarea.btn-orange {\n      font-size: 14px;\n      padding: 10px 60px;\n      -webkit-box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n              box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n}\n#contact-form .contact-form-field textarea {\n    margin-left: 30px;\n    height: 305px;\n}\n#contact-form form {\n  margin-bottom: 100px;\n}\n", ""]);
+exports.push([module.i, "\n#contact-form .btn-orange {\n  padding: 10px 55px;\n  font-size: 14px;\n  -webkit-box-shadow: 5px 5px 10px rgba(242, 109, 35, 0.3);\n          box-shadow: 5px 5px 10px rgba(242, 109, 35, 0.3);\n}\n#contact-form .btn-orange:hover {\n    background: rgba(0, 0, 0, 0.85);\n}\n#contact-form #contact-form-body {\n  padding: 0 80px;\n}\n#contact-form #contact-form-body .field-item {\n    width: 50%;\n}\n#contact-form #contact-form-body .field-item .field-icon {\n      position: absolute;\n      top: 15px;\n}\n#contact-form #contact-form-body .field-item .field-icon.plane {\n        font-size: 60px;\n        color: #f26c23;\n        right: 0;\n        top: -70px;\n}\n#contact-form .contact-form-title {\n  font-size: 28px;\n}\n#contact-form .contact-form-field {\n  height: 330px;\n}\n#contact-form .contact-form-field .field-item {\n    margin-bottom: 20px;\n}\n#contact-form .contact-form-field .el-select {\n    width: 100%;\n    font-size: 14px;\n    color: #858585;\n}\n#contact-form .contact-form-field .el-select .el-input__suffix {\n      height: 39px;\n      line-height: 39px;\n}\n#contact-form .contact-form-field input, #contact-form .contact-form-field textarea {\n    background: white;\n    border-radius: 0;\n    -moz-appearance: none;\n         appearance: none;\n    -webkit-appearance: none;\n    width: 100%;\n    border: none;\n    border-bottom: 1px solid #ccc;\n    padding: 10px 30px;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n}\n#contact-form .contact-form-field input::-webkit-input-placeholder, #contact-form .contact-form-field textarea::-webkit-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input:-ms-input-placeholder, #contact-form .contact-form-field textarea:-ms-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input::-ms-input-placeholder, #contact-form .contact-form-field textarea::-ms-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input::placeholder, #contact-form .contact-form-field textarea::placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input:focus, #contact-form .contact-form-field textarea:focus {\n      outline: none;\n      border-bottom-color: #f26c23;\n      border-width: 2px;\n}\n#contact-form .contact-form-field input:focus::-webkit-input-placeholder, #contact-form .contact-form-field textarea:focus::-webkit-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus:-ms-input-placeholder, #contact-form .contact-form-field textarea:focus:-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::-ms-input-placeholder, #contact-form .contact-form-field textarea:focus::-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::placeholder, #contact-form .contact-form-field textarea:focus::placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus + .field-icon, #contact-form .contact-form-field textarea:focus + .field-icon {\n        color: #f26c23;\n}\n#contact-form .contact-form-field input.btn-orange, #contact-form .contact-form-field textarea.btn-orange {\n      font-size: 14px;\n      padding: 10px 60px;\n      -webkit-box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n              box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n}\n#contact-form .contact-form-field textarea {\n    margin-left: 30px;\n    height: 305px;\n}\n#contact-form form {\n  margin-bottom: 100px;\n}\n", ""]);
 
 // exports
 
@@ -998,6 +998,25 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -1012,7 +1031,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             }), _defineProperty(_fields, 'extension_1', {
                 title: '聯絡<span class="text-orange">Extension 1 By橘色</span>',
                 subtitle: '隨時歡迎您與我們聯繫，無論是訂位餐飲或是任何其他相關問題，都可以提出詢問！'
-            }), _fields)
+            }), _fields),
+            question: ''
         };
     },
     components: {
@@ -1293,7 +1313,71 @@ var render = function() {
                   _vm._v(_vm._s(_vm.fields[_vm.brand].subtitle))
                 ]),
                 _vm._v(" "),
-                _vm._m(0)
+                _c("form", [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "contact-form-field d-flex flex-column flex-wrap"
+                    },
+                    [
+                      _vm._m(0),
+                      _vm._v(" "),
+                      _vm._m(1),
+                      _vm._v(" "),
+                      _vm._m(2),
+                      _vm._v(" "),
+                      _vm._m(3),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "field-item field-question d-flex align-items-center position-relative"
+                        },
+                        [
+                          _c(
+                            "el-select",
+                            {
+                              attrs: { placeholder: "欲詢問的問題類型" },
+                              model: {
+                                value: _vm.question,
+                                callback: function($$v) {
+                                  _vm.question = $$v
+                                },
+                                expression: "question"
+                              }
+                            },
+                            [
+                              _c("el-option", {
+                                attrs: { label: "問題一", value: 1 }
+                              }),
+                              _vm._v(" "),
+                              _c("el-option", {
+                                attrs: { label: "問題二", value: 2 }
+                              }),
+                              _vm._v(" "),
+                              _c("el-option", {
+                                attrs: { label: "問題三", value: 3 }
+                              })
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c("img", {
+                            staticClass: "field-icon",
+                            attrs: { src: "/images/icon-ask.png" }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _vm._m(4)
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _vm._m(5)
+                ])
               ]
             )
           ])
@@ -1313,125 +1397,121 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("form", [
+    return _c(
+      "div",
+      {
+        staticClass:
+          "field-item field-user d-flex align-items-center position-relative"
+      },
+      [
+        _c("input", { attrs: { placeholder: "您的姓名" } }),
+        _vm._v(" "),
+        _c("img", {
+          staticClass: "field-icon",
+          attrs: { src: "/images/icon-user.png" }
+        })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "field-item field-envelop d-flex align-items-center position-relative"
+      },
+      [
+        _c("input", { attrs: { placeholder: "您的電子信箱" } }),
+        _vm._v(" "),
+        _c("img", {
+          staticClass: "field-icon",
+          attrs: { src: "/images/icon-mail.png" }
+        })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "field-item field-phone d-flex align-items-center position-relative"
+      },
+      [
+        _c("input", { attrs: { placeholder: "您的電話" } }),
+        _vm._v(" "),
+        _c("img", {
+          staticClass: "field-icon",
+          attrs: { src: "/images/icon-phone.png" }
+        })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "field-item field-location d-flex align-items-center position-relative"
+      },
+      [
+        _c("input", { attrs: { placeholder: "欲聯繫的橘色分館" } }),
+        _vm._v(" "),
+        _c("img", {
+          staticClass: "field-icon",
+          attrs: { src: "/images/icon-location.png" }
+        })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "field-item field-content d-flex align-items-center position-relative h-100"
+      },
+      [
+        _c("textarea", { attrs: { placeholder: "您的詢問內容" } }),
+        _vm._v(" "),
+        _c("img", {
+          staticClass: "field-icon plane",
+          attrs: { src: "/images/icon-plane.png" }
+        })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mt-4 clearfix" }, [
       _c(
-        "div",
-        { staticClass: "contact-form-field d-flex flex-column flex-wrap" },
+        "span",
+        { staticClass: "text-size-1 float-left text-gray w-50 pr-4" },
         [
-          _c(
-            "div",
-            {
-              staticClass:
-                "field-item field-user d-flex align-items-center position-relative"
-            },
-            [
-              _c("input", { attrs: { placeholder: "您的姓名" } }),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "field-icon",
-                attrs: { src: "/images/icon-user.png" }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "field-item field-envelop d-flex align-items-center position-relative"
-            },
-            [
-              _c("input", { attrs: { placeholder: "您的電子信箱" } }),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "field-icon",
-                attrs: { src: "/images/icon-mail.png" }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "field-item field-phone d-flex align-items-center position-relative"
-            },
-            [
-              _c("input", { attrs: { placeholder: "您的電話" } }),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "field-icon",
-                attrs: { src: "/images/icon-phone.png" }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "field-item field-location d-flex align-items-center position-relative"
-            },
-            [
-              _c("input", { attrs: { placeholder: "欲聯繫的橘色分館" } }),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "field-icon",
-                attrs: { src: "/images/icon-location.png" }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "field-item field-question d-flex align-items-center position-relative"
-            },
-            [
-              _c("input", { attrs: { placeholder: "欲詢問的問題類型" } }),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "field-icon",
-                attrs: { src: "/images/icon-ask.png" }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "field-item field-content d-flex align-items-center position-relative h-100"
-            },
-            [
-              _c("textarea", { attrs: { placeholder: "您的詢問內容" } }),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "field-icon plane",
-                attrs: { src: "/images/icon-plane.png" }
-              })
-            ]
+          _vm._v(
+            "您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝"
           )
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "mt-4 clearfix" }, [
-        _c(
-          "span",
-          { staticClass: "text-size-1 float-left text-gray w-50 pr-4" },
-          [
-            _vm._v(
-              "您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝"
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c("input", {
-          staticClass: "btn-orange d-inline-block float-right",
-          attrs: { type: "submit", value: "發送訊息" }
-        })
-      ])
+      _c("input", {
+        staticClass: "btn-orange d-inline-block float-right",
+        attrs: { type: "submit", value: "發送訊息" }
+      })
     ])
   }
 ]

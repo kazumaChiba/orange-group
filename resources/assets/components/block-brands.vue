@@ -25,8 +25,8 @@
                 <h3 class="main-title text-uppercase">
                     <span class="fs-inherit text-orange">
                         橘色</span>版圖<br>
-                    <span class="sub-title">orange brands</span>
                 </h3>
+                <span class="sub-title">orange brands</span>
                 <div class="content-brands d-flex align-items-center justify-content-between w-100 mt-5 mb-5">
                     <span class="btn-orange"  @click="brandIndex = 0; startAnimate('500')">橘色涮涮屋</span>
                     <div class="info-brands border-radius-100 d-flex flex-column justify-content-center text-left">

@@ -10,7 +10,7 @@
                     踏足餐飲業的堅實第一步<br>
                     橘色大家庭為你實現
                 </p>
-                <p class="slide-text text-white position-absolute">讓我們帶你實現夢想！</p>
+                <p @click="onScolldown" class="slide-text text-white position-absolute">讓我們帶你實現夢想！</p>
             </div>
         </div>
         <div id="family-intro">
@@ -160,6 +160,11 @@ export default {
                 this.$refs.slick.reSlick();
             });
         },
+	    onScolldown(){
+		    $('html, body').animate({
+			    scrollTop: 1000
+		    }, 600);
+        },
         handleInit(event, slick) {
             console.log('handleInit', event, slick);
         },
@@ -180,12 +185,14 @@ export default {
                     jQuery(".family-title").removeClass("fadein");
                 }
                 for(let i=0;i<=2;i++){
-                    let nowb = jQuery("#step-"+i);
-                    if(nowp >= nowb.offset().top - 700){
-                        nowb.find(".left , .right").addClass("fadein");
-                    }
-                    else if(nowp < nowb.offset().top - 1200){
-                        nowb.find(".left , .right").removeClass("fadein");
+                	if(jQuery("#step-"+i).length > 0){
+		                let nowb = jQuery("#step-"+i);
+		                if(nowp >= nowb.offset().top - 700){
+			                nowb.find(".left , .right").addClass("fadein");
+		                }
+		                else if(nowp < nowb.offset().top - 1200){
+			                nowb.find(".left , .right").removeClass("fadein");
+		                }
                     }
                 }
             }
@@ -205,10 +212,10 @@ export default {
         transition: all .5s ease-out
         .big_title
             transform: translateY(0) !important
-            transition: all .6s ease-out
+            transition: all .5s ease-out
         img
             transform: translateY(0) !important
-            transition: all .6s ease-out
+            transition: all .5s ease-out
 
     .slideshow
         &:after

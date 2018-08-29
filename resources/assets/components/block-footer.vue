@@ -34,7 +34,7 @@
                         <a class="footer-icons mr-3 ml-3" href="#"><font-awesome-icon :icon="['fab','facebook-f']" /></a>
                         <a class="footer-icons mr-3 ml-3" href="#"><font-awesome-icon :icon="['fab','twitter']" /></a>
                     </div>
-                    <p id="copyright" class="footer position-relative w-100 text-size-1 d-flex align-items-end justify-content-center">2018 <a class="link-orange"> 橘色涮涮屋 </a> 版權所有. Designed by <a class="link-orange" href="www.daydream-lab.com"> Daydream Lab</a></p>
+                    <p id="copyright" class="footer position-relative w-100 text-size-1 d-flex align-items-end justify-content-center">2018 <a class="link-orange"> 橘色涮涮屋 </a> 版權所有. Designed by＆ensp;<a class="link-orange" href="www.daydream-lab.com">Daydream Lab</a></p>
                 </div>
             </div>
         </div>

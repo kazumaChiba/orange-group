@@ -28,7 +28,7 @@
                     <circle class="internal-circle" cx="30%" cy="55%" r="450"></circle>
                 </svg>
                 <h3 class="main-title text-black text-uppercase">
-                    <span class="fs-inherit text-orange">橘色 </span>價值
+                    <span class="fs-inherit text-orange">橘色</span>價值
                 </h3>
                 <span class="sub-title text-black">about value</span>
                 <div class="food-info-circle"></div>

@@ -332,52 +332,64 @@ export default {
             scrollCircles();
 
             function scrollCircles(){
-                let dis = (jQuery(window).scrollTop() - jQuery("#block-about-year .circle-a").offset().top)
-                if( dis > 600){
-                    dis = 600
-                }
-                if(dis < -300){
-                    dis = -300
+            	if(jQuery("#block-about-year .circle-a").length > 0){
+		            let dis = (jQuery(window).scrollTop() - jQuery("#block-about-year .circle-a").offset().top)
+		            if( dis > 600){
+			            dis = 600
+		            }
+		            if(dis < -300){
+			            dis = -300
+		            }
+
+		            jQuery("#block-about-year .circle-a").attr("style", 'transform: translateY('+ ((dis/5)) + 'px) translateX('+ ((dis/10)) + 'px)');
+
+	            }
+
+	            if(jQuery("#block-about-year .circle-b").length > 0){
+		            let disb = (jQuery("#block-about-year .circle-b").offset().top - jQuery(window).scrollTop())
+		            if( disb > 1200){
+			            disb = 1200
+		            }
+		            if(disb < -1200){
+			            disb = -1200
+		            }
+		            jQuery("#block-about-year .circle-b").attr("style", 'transform: translateY('+ (0-(disb/5)) + 'px) translateX('+ (0-(disb/10)) + 'px)');
                 }
 
-                jQuery("#block-about-year .circle-a").attr("style", 'transform: translateY('+ ((dis/5)) + 'px) translateX('+ ((dis/10)) + 'px)');
 
-                let disb = (jQuery("#block-about-year .circle-b").offset().top - jQuery(window).scrollTop())
-                if( disb > 1200){
-                    disb = 1200
-                }
-                if(disb < -1200){
-                    disb = -1200
-                }
-                jQuery("#block-about-year .circle-b").attr("style", 'transform: translateY('+ (0-(disb/5)) + 'px) translateX('+ (0-(disb/10)) + 'px)');
             }
 
             function scrollTabs(){
-                if(jQuery(window).scrollTop() >= jQuery("#block-secret").offset().top - 100){
-                    jQuery("#about-tabs").addClass("position-fixed");
-                    jQuery("#header").addClass("hidden");
-                }
-                else{
-                    jQuery("#about-tabs").removeClass("position-fixed");
-                    jQuery("#header").removeClass("hidden");
-                }
-
-                let tab = [jQuery("#block-secret").offset().top - 200 , jQuery("#block-about-year").offset().top - 200 , jQuery("#block-about-video").offset().top - 200 ];
-
-                if(jQuery(window).scrollTop() >= tab[0] && jQuery(window).scrollTop() < tab[1]){
-                    jQuery(".tab.active").removeClass("active");
-                    jQuery(".tab").eq(0).addClass("active");
+	            if(jQuery("#block-about-year .circle-b").length > 0){
+		            if(jQuery(window).scrollTop() >= jQuery("#block-secret").offset().top - 100){
+			            jQuery("#about-tabs").addClass("position-fixed");
+			            jQuery("#header").addClass("hidden");
+		            }
+		            else{
+			            jQuery("#about-tabs").removeClass("position-fixed");
+			            jQuery("#header").removeClass("hidden");
+		            }
                 }
 
-                else if(jQuery(window).scrollTop() >= tab[1] && jQuery(window).scrollTop() < tab[2]){
-                    jQuery(".tab.active").removeClass("active");
-                    jQuery(".tab").eq(1).addClass("active");
+                if(jQuery("#block-about-year").length > 0){
+	                let tab = [jQuery("#block-secret").offset().top - 200 , jQuery("#block-about-year").offset().top - 200 , jQuery("#block-about-video").offset().top - 200 ];
+
+	                if(jQuery(window).scrollTop() >= tab[0] && jQuery(window).scrollTop() < tab[1]){
+		                jQuery(".tab.active").removeClass("active");
+		                jQuery(".tab").eq(0).addClass("active");
+	                }
+
+	                else if(jQuery(window).scrollTop() >= tab[1] && jQuery(window).scrollTop() < tab[2]){
+		                jQuery(".tab.active").removeClass("active");
+		                jQuery(".tab").eq(1).addClass("active");
+	                }
+
+	                else if(jQuery(window).scrollTop() >= tab[2]){
+		                jQuery(".tab.active").removeClass("active");
+		                jQuery(".tab").eq(2).addClass("active");
+	                }
                 }
 
-                else if(jQuery(window).scrollTop() >= tab[2]){
-                    jQuery(".tab.active").removeClass("active");
-                    jQuery(".tab").eq(2).addClass("active");
-                }
             }
         }) // END jquery ready
     },
@@ -425,9 +437,13 @@ export default {
             border-bottom: 2px solid #efefef
             padding: 15px 0
             cursor: pointer
-            &.active , &:hover
+            &:hover
+                border-bottom: 3px solid rgba(#f26c24, 0.5)
+                color: rgba(#f26c24, 0.85)
+            &.active
                 border-bottom: 3px solid #f26c24
                 color: #f26c24
+
     #block-secret
         padding: 70px 0
         margin: 130px 0
@@ -498,6 +514,7 @@ export default {
         padding-top: 70px
         margin-bottom: 150px
         .circle-wapper
+            pointer-events: none
             position: absolute
             width: 100vw
             height: 100vh
