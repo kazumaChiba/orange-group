@@ -17,24 +17,18 @@ const routes = [
     },
     {
         path: '/news',
+	    name: '橘色新訊',
         component: resolve => require(['pages/layout/Landing.vue'], resolve),
         children: [
             {
                 path: '',
-                name: '橘色新訊',
                 component: resolve => require(['pages/News.vue'], resolve),
-            }
-        ]
-    },
-    {
-        path: '/news/detail',
-        component: resolve => require(['pages/layout/Landing.vue'], resolve),
-        children: [
-            {
-                path: '',
-                name: '',
-                component: resolve => require(['pages/NewsInner.vue'], resolve),
-            }
+            },
+	        {
+		        path: 'detail',
+		        name: '新光三越旗艦店開幕全店享九折優惠',
+		        component: resolve => require(['pages/NewsInner.vue'], resolve)
+	        }
         ]
     },
     {

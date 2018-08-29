@@ -6,9 +6,9 @@
             class="w-100"
         >
             <div class="d-flex w-100">
-                <div class="logo">
+                <router-link :to="'/'" class="logo">
                     <img class="position-relative" src="/images/index_logo.png">
-                </div>
+                </router-link>
                 <div id="main-menu" class="d-flex justify-content-end align-items-center">
                     <menu-header></menu-header>
                 </div>

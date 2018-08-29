@@ -26,7 +26,12 @@
                                 <img src="/images/icon-location.png" class="field-icon" />
                             </div>
                             <div class="field-item field-question d-flex align-items-center position-relative">
-                                <input placeholder="欲詢問的問題類型">
+                                <el-select v-model="question" placeholder="欲詢問的問題類型">
+                                    <el-option :label="'問題一'" :value="1"></el-option>
+                                    <el-option :label="'問題二'" :value="2"></el-option>
+                                    <el-option :label="'問題三'" :value="3"></el-option>
+                                </el-select>
+                                <!--<input placeholder="欲詢問的問題類型">-->
                                 <img src="/images/icon-ask.png" class="field-icon" />
                             </div>
                             <div class="field-item field-content d-flex align-items-center position-relative h-100">
@@ -71,12 +76,26 @@
             font-size: 28px
         .contact-form-field
             height: 330px
+            .field-item
+                margin-bottom: 20px
+            .el-select
+                width: 100%
+                font-size: 14px
+                color: #858585
+                .el-input__suffix
+                    height: 39px
+                    line-height: 39px
             input , textarea
-                width: calc(100% - 15px)
+                background: white
+                border-radius: 0
+                appearance: none
+                -webkit-appearance: none
+                //width: calc(100% - 15px)
+                width: 100%
                 border: none
                 border-bottom: 1px solid #ccc
                 padding: 10px 30px
-                margin-bottom: 20px
+                //margin-bottom: 20px
                 transition: all .3s
                 &::placeholder
                     font-size: 14px
@@ -115,7 +134,8 @@
                         title: '聯絡<span class="text-orange">Extension 1 By橘色</span>',
                         subtitle: '隨時歡迎您與我們聯繫，無論是訂位餐飲或是任何其他相關問題，都可以提出詢問！',                       
                     },     
-                }
+                },
+	            question: ''
             }
         },
         components: {

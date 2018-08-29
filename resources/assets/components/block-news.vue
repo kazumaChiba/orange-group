@@ -25,7 +25,7 @@
                                 :key="$index + 'a'"
                         >
                             <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + item.background + ')'">
-                                <router-link :to="'/'" class="btn-border">了解更多</router-link>
+                                <router-link :to="'/news/detail'" class="btn-border">了解更多</router-link>
                             </div>
                             <div class="news-content">
                                 <div class="news-info">
@@ -41,7 +41,7 @@
                                 class="news-item d-flex flex-column h-100 w-100"
                         >
                             <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + newsItems[viewIndex+2].background + ')'">
-                                <router-link :to="'/'" class="btn-border">了解更多</router-link>
+                                <router-link :to="'/news/detail'" class="btn-border">了解更多</router-link>
                             </div>
                             <div class="news-content">
                                 <div class="news-info">
@@ -58,7 +58,7 @@
                              :key="$index"
                         >
                             <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + item.background + ')'">
-                                <router-link :to="'/'" class="btn-border">了解更多</router-link>
+                                <router-link :to="'/news/detail'" class="btn-border">了解更多</router-link>
                             </div>
                             <div class="news-content">
                                 <div class="news-info">

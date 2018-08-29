@@ -13,7 +13,7 @@
             >
                 <p class="slide-title text-white">{{item.title}}</p>
                 <p class="slide-subtitle text-white" v-html="item.subtitle"></p>
-                <p class="slide-text text-white position-absolute">{{item.scrollText}}</p>
+                <p class="slide-text text-white position-absolute" @click="onScolldown">{{item.scrollText}}</p>
             </div>
         </slick>
         <div id="family-intro">
@@ -81,6 +81,7 @@ export default {
             slickOptions: {
                 slidesToShow: 1,
                 arrows: true,
+	            draggable: false
             },
             slick_items: [
                 {
@@ -181,6 +182,11 @@ export default {
                 this.$refs.slick.reSlick();
             });
         },
+	    onScolldown(){
+		    $('html, body').animate({
+			    scrollTop: 1000
+		    }, 600);
+        },
         handleInit(event, slick) {
             console.log('handleInit', event, slick);
         },
@@ -201,12 +207,14 @@ export default {
                     jQuery(".family-title").removeClass("fadein");
                 }
                 for(let i=0;i<=2;i++){
-                    let nowb = jQuery("#step-"+i);
-                    if(nowp >= nowb.offset().top - 700){
-                        nowb.find(".left , .right").addClass("fadein");
-                    }
-                    else if(nowp < nowb.offset().top - 1200){
-                        nowb.find(".left , .right").removeClass("fadein");
+                	if(jQuery("#step-"+i).length > 0){
+		                let nowb = jQuery("#step-"+i);
+		                if(nowp >= nowb.offset().top - 700){
+			                nowb.find(".left , .right").addClass("fadein");
+		                }
+		                else if(nowp < nowb.offset().top - 1200){
+			                nowb.find(".left , .right").removeClass("fadein");
+		                }
                     }
                 }
             }

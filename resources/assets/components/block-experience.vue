@@ -18,7 +18,7 @@
         <div id="content-experience" class="position-relative">
             <h1 class="big_title">{{experience[experience_index].title}}</h1>
             <div class="experience-circle">
-                <svg x="0px" y="0px" width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+                <!--<svg x="0px" y="0px" width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
 
                                  <path fill="#EA5514" d="M0,0v150h150V0H0z M65.926,139.659c-4.896,0-9.664-0.536-14.263-1.531l-2.54-8.654
                     c5.33,1.568,10.965,2.423,16.803,2.423c32.828,0,59.44-26.609,59.44-59.439c0-32.827-26.612-59.44-59.44-59.44
@@ -35,17 +35,25 @@
                     c36.698,0,66.448,29.752,66.448,66.448c0,36.701-29.75,66.447-66.448,66.447c-6.525,0-12.825-0.955-18.784-2.709l2.841,9.676
                     c5.141,1.111,10.47,1.711,15.943,1.711c41.49,0,75.125-33.633,75.125-75.125C139.109,33.51,105.475-0.125,63.984-0.125z"/>
 </clipPath>
-                    <circle  stroke-dasharray="85,100" cx="75" cy="75" r="75" style="    stroke: #00acc1;
+                    <circle  stroke-dasharray="85,471" cx="75" cy="75" r="75" style="    stroke: #00acc1;
     stroke-width: 2;
     stroke-linecap: square;
     fill: none;
     animation: circle-chart-fill 2s reverse;
     transform: rotate(-90deg);
     transform-origin: center;"></circle>
-                </svg>
+                </svg>-->
                 <div class="circle-body position-relative" :class="{'active' : bgTransition}">
-                    <div class="circle-line left"></div>
-                    <div class="circle-line right"></div>
+                    <svg x="0px" y="0px" width="100%" height="100%" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+                         <rect x="0" y="0" width="100%" height="100%" fill="#f26e22" style="clip-path: url(#circle)"/>
+                        <clipPath id="circle">
+             <path fill="#f26e22" d="M75.1-0.1c-20.7,0-39.5,8.4-53.1,22l2.8,9.7C37,17.5,55,8.6,75,8.6c36.7,0,66.4,29.8,66.4,66.4
+		c0,36.7-29.8,66.4-66.4,66.4c-6.5,0-12.8-1-18.8-2.7l2.8,9.7c5.1,1.1,10.5,1.7,15.9,1.7c41.5,0,75.1-33.6,75.1-75.1
+		C150.2,33.5,116.6-0.1,75.1-0.1L75.1-0.1z"/>
+                        </clipPath>
+                    </svg>
+                    <!--<div class="circle-line left"></div>
+                    <div class="circle-line right"></div>-->
                 </div>
                 <div class="circle-option position-absolute" :class="'e_index_'+experience_index">
                     <a class="text-circle-option left" @click="experience_view='ex'; experience_index = 0; bgAnimated(800)" :class="experience_index == 0 ? 'active' : ''">體驗</a>
@@ -239,7 +247,7 @@ export default {
                     width: 500px
                     height: 500px
                 .circle-body
-                    transform: rotate(12deg)
+                    //transform: rotate(12deg)
                     width: 500px
                     height: 500px
                     &.active
