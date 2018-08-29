@@ -4075,8 +4075,8 @@ body,
 }
 
 #app #footer .container {
-  padding: 60px 0 20px 0;
-  position: relativez;
+  padding: 20px 0;
+  position: relative;
   z-index: 2;
 }
 

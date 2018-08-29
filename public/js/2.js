@@ -140,7 +140,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#footer {\n  height: 700px;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer .footer-info {\n    margin-bottom: 100px;\n    line-height: 25px;\n    font-size: 14px;\n    font-weight: 100;\n}\n#footer .footer .footer-info div {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer .footer-info p {\n      margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n      font-size: 18px;\n      font-weight: 100;\n      line-height: 30px;\n}\n#footer .footer.footer-join:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: calc(100% + 150px);\n    background: rgba(0, 0, 0, 0.8);\n    top: 0px;\n}\n#footer .footer .btn-orange:hover {\n    background: white;\n    color: #f26d23 !important;\n    font-weight: 500;\n}\n", ""]);
+exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n}\n#footer .footer .footer-info {\n      margin-bottom: 100px;\n      line-height: 25px;\n      font-size: 14px;\n      font-weight: 100;\n}\n#footer .footer .footer-info div {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#footer .footer .footer-info p {\n        margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n        font-size: 18px;\n        font-weight: 100;\n        line-height: 30px;\n}\n#footer .footer.footer-join {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer.footer-join:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: rgba(0, 0, 0, 0.8);\n        top: 0px;\n}\n#footer .footer .btn-orange:hover {\n      background: white;\n      color: #f26d23 !important;\n      font-weight: 500;\n}\n", ""]);
 
 // exports
 
@@ -214,7 +214,7 @@ var render = function() {
     "div",
     {
       staticClass:
-        "section text-white text-center bg-black-cover position-relative",
+        "section text-white text-center bg-black-cover position-relative d-flex flex-column justify-content-center",
       staticStyle: { "background-image": "url('/images/footer.png')" },
       attrs: { id: "footer" }
     },
@@ -251,7 +251,7 @@ var render = function() {
       _c("div", { staticClass: "footer container" }, [
         _c(
           "div",
-          { staticClass: "row d-flex flex-column justify-content-between" },
+          { staticClass: "row d-flex flex-column justify-content-end h-100" },
           [
             _vm._m(1),
             _vm._v(" "),
@@ -259,7 +259,7 @@ var render = function() {
               "div",
               {
                 staticClass:
-                  "footer position-relative d-flex flex-column align-items-center justify-content-center w-100"
+                  "position-relative d-flex flex-column align-items-center justify-content-center w-100"
               },
               [
                 _c("div", { staticClass: "footer-social" }, [
@@ -1650,70 +1650,70 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             newsItems: [{
-                background: '/images/bg_brand_1.png',
+                background: '/images/news_v1.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
                 title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/'
             }, {
-                background: '/images/bg_brand_1.png',
+                background: '/images/news_v2.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
                 title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/'
             }, {
-                background: '/images/bg_brand_1.png',
+                background: '/images/news_v3.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
                 title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/'
             }, {
-                background: '/images/bg_brand_1.png',
+                background: '/images/news_v4.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
                 title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/'
             }, {
-                background: '/images/bg_brand_1.png',
+                background: '/images/news_v5.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/'
             }, {
-                background: '/images/bg_brand_1.png',
+                background: '/images/news_v1.png',
                 date: '2018/3/21',
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/'
             }, {
-                background: '/images/bg_brand_1.png',
+                background: '/images/news_v2.png',
                 date: '2018/3/21',
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/'
             }, {
-                background: '/images/bg_brand_1.png',
+                background: '/images/news_v3.png',
                 date: '2018/3/21',
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/'
             }, {
-                background: '/images/bg_brand_1.png',
+                background: '/images/news_v4.png',
                 date: '2018/3/21',
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/'
             }, {
-                background: '/images/bg_brand_1.png',
+                background: '/images/news_v5.png',
                 date: '2018/3/21',
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
