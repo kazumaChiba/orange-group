@@ -6,7 +6,7 @@ var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
   __webpack_require__(335)
-  __webpack_require__(481)
+  __webpack_require__(482)
 }
 var normalizeComponent = __webpack_require__(49)
 /* script */
@@ -997,7 +997,7 @@ var staticRenderFns = [
       [
         _vm._v("2018 "),
         _c("a", { staticClass: "link-orange" }, [_vm._v(" 橘色涮涮屋 ")]),
-        _vm._v(" 版權所有. Designed by＆ensp;"),
+        _vm._v(" 版權所有. Designed by "),
         _c(
           "a",
           {
@@ -21527,13 +21527,14 @@ if (false) {
 /* 478 */,
 /* 479 */,
 /* 480 */,
-/* 481 */
+/* 481 */,
+/* 482 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(482);
+var content = __webpack_require__(483);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -21553,7 +21554,7 @@ if(false) {
 }
 
 /***/ }),
-/* 482 */
+/* 483 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(48)(false);
