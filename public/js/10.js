@@ -6,14 +6,14 @@ webpackJsonp([10],{
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(483)
-  __webpack_require__(485)
+  __webpack_require__(484)
+  __webpack_require__(486)
 }
 var normalizeComponent = __webpack_require__(49)
 /* script */
 var __vue_script__ = __webpack_require__(309)
 /* template */
-var __vue_template__ = __webpack_require__(487)
+var __vue_template__ = __webpack_require__(488)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -379,7 +379,7 @@ var staticRenderFns = [
       [
         _vm._v("2018 "),
         _c("a", { staticClass: "link-orange" }, [_vm._v(" 橘色涮涮屋 ")]),
-        _vm._v(" 版權所有. Designed by＆ensp;"),
+        _vm._v(" 版權所有. Designed by "),
         _c(
           "a",
           {
@@ -1525,9 +1525,172 @@ exports.push([module.i, "\n#block-news .fp-tableCell {\n  height: auto !importan
 /***/ }),
 
 /***/ 323:
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed: SyntaxError: Unexpected token (95:0)\n\n\u001b[0m \u001b[90m 93 | \u001b[39m                }\u001b[33m,\u001b[39m\n \u001b[90m 94 | \u001b[39m                {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 95 | \u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<\u001b[39m \u001b[33mHEAD\u001b[39m\n \u001b[90m    | \u001b[39m\u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 96 | \u001b[39m                    background\u001b[33m:\u001b[39m \u001b[32m'/images/news_v2.png'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 97 | \u001b[39m\u001b[33m===\u001b[39m\u001b[33m===\u001b[39m\u001b[33m=\u001b[39m\n \u001b[90m 98 | \u001b[39m                    background\u001b[33m:\u001b[39m \u001b[32m'/images/news_v3.png'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n");
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            newsItems: [{
+                background: '/images/news_v1.png',
+                date: '2018/3/21',
+                category: '橘色涮涮屋',
+                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/'
+            }, {
+                background: '/images/news_v2.png',
+                date: '2018/3/21',
+                category: '橘色涮涮屋',
+                title: '橘色公告－員工旅遊<br>謝謝辛勤付出的每一位夥伴<br>2018/05/20(日)',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/'
+            }, {
+                background: '/images/news_v3.png',
+                date: '2018/3/21',
+                category: '橘色涮涮屋',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/'
+            }, {
+                background: '/images/news_v4.png',
+                date: '2018/3/21',
+                category: '橘色涮涮屋',
+                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/'
+            }, {
+                background: '/images/news_v5.png',
+                date: '2018/3/21',
+                category: '橘色涮涮屋',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/'
+            }, {
+                background: '/images/news_v1.png',
+                date: '2018/3/21',
+                category: 'Extension 1 by 橘色',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/'
+            }, {
+                background: '/images/news_v2.png',
+                date: '2018/3/21',
+                category: 'Extension 1 by 橘色',
+                title: '橘色公告－員工旅遊<br>謝謝辛勤付出的每一位夥伴<br>2018/05/20(日)～2018/05/24(四)<br>員工旅遊 暫停營業',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/'
+            }, {
+                background: '/images/news_v3.png',
+                date: '2018/3/21',
+                category: 'Extension 1 by 橘色',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/'
+            }, {
+                background: '/images/news_v4.png',
+                date: '2018/3/21',
+                category: 'Extension 1 by 橘色',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/'
+            }, {
+                background: '/images/news_v5.png',
+                date: '2018/3/21',
+                category: 'Extension 1 by 橘色',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/'
+            }],
+            newsCategories: ['全部新訊', '橘色涮涮屋', 'Extension 1 by 橘色', 'M One Cafe', 'M One Spa', 'Sakura Spa'],
+            newsIndex: 0,
+            viewIndex: 0
+        };
+    },
+    methods: {}
+});
 
 /***/ }),
 
@@ -11483,13 +11646,13 @@ PerfectScrollbar.prototype.removePsClasses = function removePsClasses () {
 
 /***/ }),
 
-/***/ 483:
+/***/ 484:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(484);
+var content = __webpack_require__(485);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -11510,7 +11673,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 484:
+/***/ 485:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(48)(false);
@@ -11525,13 +11688,13 @@ exports.push([module.i, "\n#fullpage[data-v-e3a27224] {\n  -webkit-transition-du
 
 /***/ }),
 
-/***/ 485:
+/***/ 486:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(486);
+var content = __webpack_require__(487);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -11552,7 +11715,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 486:
+/***/ 487:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(48)(false);
@@ -11567,7 +11730,7 @@ exports.push([module.i, "\n#fp-nav.fp-right {\n  opacity: 0;\n  display: -webkit
 
 /***/ }),
 
-/***/ 487:
+/***/ 488:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
