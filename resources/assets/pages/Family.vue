@@ -1,21 +1,18 @@
 <template>
     <div id="block-family">
-        <slick
-            class="slideshow"
-            ref="slick"
-            :options="slickOptions"
-        >
+        <div class="slideshow position-relative">
             <div 
-                v-for="(item,$index) in slick_items"
-                :key="$index"
                 class="slider position-relative d-flex flex-column align-items-center justify-content-center" 
-                :style="'background-image:url('+item.bg+')'"
+                style="background-image:url('/images/family_bg.png')"
             >
-                <p class="slide-title text-white">{{item.title}}</p>
-                <p class="slide-subtitle text-white" v-html="item.subtitle"></p>
-                <p class="slide-text text-white position-absolute">{{item.scrollText}}</p>
+                <p class="slide-title text-white">實現你未來的夢想</p>
+                <p class="slide-subtitle text-white">
+                    踏足餐飲業的堅實第一步<br>
+                    橘色大家庭為你實現
+                </p>
+                <p class="slide-text text-white position-absolute">讓我們帶你實現夢想！</p>
             </div>
-        </slick>
+        </div>
         <div id="family-intro">
             <h2 class="family-title text-orange text-right">橘色<br>引領你築夢踏實<br>一步一步達成夢想</h2>
             <div class="family-step-list">
@@ -29,7 +26,7 @@
                         <h1 class="big_title text-orange position-absolute">{{item.bigTitle}}</h1>
                         <img class="w-100" :src="item.img" />
                     </div>
-                    <div class="right p-5 d-flex flex-column justify-content-center">
+                    <div class="right position-relative p-5 d-flex flex-column justify-content-center">
                         <div class="family-content">
                             <p class="step-title text-orange">{{item.title}}</p>
                             <p class="subtitle">{{item.subtitle}}</p>
@@ -78,24 +75,6 @@ import Slick from 'vue-slick'
 export default {
     data: function () {
         return {
-            slickOptions: {
-                slidesToShow: 1,
-                arrows: true,
-            },
-            slick_items: [
-                {
-                    bg: '/images/slideshow_1.jpg',
-                    title: '實現你未來的夢想',
-                    subtitle: '踏足餐飲業的堅實第一步<br>橘色大家庭為你實現',
-                    scrollText: '讓我們帶你實現夢想!',
-                },
-                {
-                    bg: '/images/bg_brand_1.png',
-                    title: '實現你未來的夢想',
-                    subtitle: '踏足餐飲業的堅實第一步<br>橘色大家庭為你實現',
-                    scrollText: '讓我們帶你實現夢想!',
-                },
-            ],
             family_steps: [
                 {
                     img: '/images/family_1.png',
@@ -127,7 +106,7 @@ export default {
                     team: '橘色公關團隊1',
                     member: '某某某',
                     text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
-                    img: '/images/family_s1.png',
+                    img: '/images/family_bg.png',
                     img_big: '/images/family_b1.png',
                 },
                 {
@@ -223,90 +202,62 @@ export default {
     .fadein
         top: 0 !important
         opacity: 1 !important
-        transition: all .5s ease-out
+        transition: all .3s ease-out
 
     .slideshow
-        .slick-list
-            overflow: visible
-            overflow-x: hidden
-            z-index: 2
-        .slick-next, .slick-prev
-            opacity: 0 //隱藏
-            z-index: 3
-            color: white
-            font-size: 12px
-            letter-spacing: 2px
-            width: auto
-            padding: 15px 20px
-            transition: all .3s
-            text-transform: uppercase
-            font-family: "PingFang SC",微軟正黑體
-            font-weight: 300
-            &:hover
-                background: white
-                color: #f36e1b
-                font-weight: 500
-            &:before
-                content: none
-        .slick-prev
-            left: 20px
-        .slick-next
-            right: 20px
-        .slick-slide
+        &:after
+            content: ""
+            position: absolute
+            width: 100%
+            height: 100%
+            background: url(/images/family_bg_back.png)
+            top: 0
+            left: 0
+            background-repeat: no-repeat
+            background-position: bottom
+        .slider
             position: relative
             overflow: hidden
-            &:before , &:after
-                content: ""
-                position: absolute
-                border-radius: 100%
+            height: 90vh
+            clip-path: ellipse(80vw 55vh at 50vw 30vh)
+            z-index: 2
             &:before
-                background: rgba(255, 107, 12, 0.9)
-                width: 120vw
-                height: 65vw
-                bottom: 0vw
-                right: -20vw
+                background: rgba(74, 31, 12, 0.4)
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
                 z-index: 1
-            &:after
-                width: 120vw
-                height: 130vh
-                background: #ffaa85
-                left: -13vw
-                top: -19vh
-                z-index: 0
-            .slider
-                height: 111vh
-                clip-path: ellipse(80vw 75vh at 50vw 27vh)
+            p
                 z-index: 2
-                p
-                    z-index: 2
-                .slide-title
-                    font-size: 110px
-                    font-weight: 600
-                .slide-subtitle
-                    font-size: 42px
-                    font-weight: 500
-                .slide-text
-                    font-size: 18px
-                    bottom: 18vh
-                    &:before , &:after
-                        content: ""
-                        position: absolute
-                        width: 2px
-                        height: calc(11vh + 60px)
-                        background: white
-                        left: 50%
-                        top: 50px
-                    &:before
-                        opacity: 0.6
-                    &:after
-                        height: 30px 
-                        animation: scrolling 1.5s infinite ease-in-out
-                &:before
+            .slide-title
+                font-size: 110px
+                font-weight: 600
+            .slide-subtitle
+                font-size: 42px
+                font-weight: 500
+            .slide-text
+                font-size: 18px
+                bottom: 18vh
+                &:before , &:after
                     content: ""
                     position: absolute
-                    width: 100%
-                    height: 100%
-                    background: rgba(56, 26, 2, 0.16)
+                    width: 2px
+                    height: calc(11vh + 60px)
+                    background: white
+                    left: 50%
+                    top: 50px
+                &:before
+                    opacity: 0.6
+                &:after
+                    height: 30px 
+                    animation: scrolling 1.5s infinite ease-in-out
+            &:before
+                content: ""
+                position: absolute
+                width: 100%
+                height: 100%
+                background: rgba(56, 26, 2, 0.16)
     @keyframes scrolling
         100%
             top: calc(10vh + 30px)
@@ -321,7 +272,7 @@ export default {
             padding-right: 80px
             top: 100px
             opacity: 0
-            transition: all .5s ease-out
+            transition: all .3s ease-out
             &:before
                 content: ""
                 position: absolute
@@ -334,19 +285,17 @@ export default {
             .family-step
                 margin-bottom: 270px
                 .left
-                    top: 100px
+                    top: 300px
                     flex: 6
                     opacity: 0
-                    transition: all .5s ease-out
+                    transition: all .3s ease-out
                     img
                         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1)
                 .right
-                    top: 150px
+                    top: 300px
                     flex: 3
                     opacity: 0
-                    transition: all .5s ease-out
-                    .family-content
-
+                    transition: all .3s ease-out
                 &:nth-child(2n)
                     flex-direction: row-reverse
                     .big_title
