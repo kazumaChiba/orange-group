@@ -110,14 +110,6 @@ export default {
                     link: '/#/news/detail'
                 },
                 {
-                    background: '/images/news_v2.png',
-                    date: '2018/3/21',
-                    category: '橘色涮涮屋',
-                    title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
-                    intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                    link: '/#/news/detail'
-                },
-                {
                     background: '/images/news_v3.png',
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
@@ -126,7 +118,15 @@ export default {
                     link: '/#/news/detail'
                 },
                 {
-                    background: '/images/news_v4.png',
+                    background: '/images/news_v5.png',
+                    date: '2018/3/21',
+                    category: '橘色涮涮屋',
+                    title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
+                    intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                    link: '/#/news/detail'
+                },
+                {
+                    background: '/images/news_v2.png',
                     date: '2018/3/21',
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',

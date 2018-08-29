@@ -1256,7 +1256,7 @@ var staticRenderFns = [
       [
         _vm._v("2018 "),
         _c("a", { staticClass: "link-orange" }, [_vm._v(" 橘色涮涮屋 ")]),
-        _vm._v(" 版權所有. Designed by＆ensp;"),
+        _vm._v(" 版權所有. Designed by "),
         _c(
           "a",
           {
