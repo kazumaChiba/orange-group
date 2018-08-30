@@ -15,9 +15,14 @@
             ></div>
         </div> 
 
-        <div id="content-experience" class="position-relative">
+        <div id="content-experience" class="position-relative" >
             <h1 class="big_title">{{experience[experience_index].title}}</h1>
-            <div class="experience-circle">
+            <div class="experience-inner position-relative">
+                <transition name="fade" mode="out-in">
+                    <component class="experience-item" v-bind:is="experience_view"></component>
+                </transition>
+            </div>
+            <div class="experience-circle" @mouseenter="onStopStep()"  @mouseleave="onContinueStep()">
                 <!--<svg x="0px" y="0px" width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
 
                                  <path fill="#EA5514" d="M0,0v150h150V0H0z M65.926,139.659c-4.896,0-9.664-0.536-14.263-1.531l-2.54-8.654
@@ -46,7 +51,7 @@
                 <div class="circle-body position-relative" :class="{'active' : bgTransition}">
                     <svg id="loading-circle" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
                          <rect x="0" y="0" width="100%" height="100%" fill="#f26e22" style="clip-path: url(#circle)"/>
-              <circle class="loading-bar" :stroke-dasharray=" circle_dasharray +',471'" :class="{run: is_run, rotate: is_rotate}" cx="75" cy="75" r="70.5"></circle>
+              <circle class="loading-bar" :stroke-dasharray=" circle_dasharray +',471'" :stroke-opacity="(circle_dasharray/300)" :class="{run: is_run, rotate: is_rotate}" cx="75" cy="75" r="70.5"></circle>
                         <clipPath id="circle">
              <path fill="#f26e22" d="M75.1-0.1c-20.7,0-39.5,8.4-53.1,22l2.8,9.7C37,17.5,55,8.6,75,8.6c36.7,0,66.4,29.8,66.4,66.4
 		c0,36.7-29.8,66.4-66.4,66.4c-6.5,0-12.8-1-18.8-2.7l2.8,9.7c5.1,1.1,10.5,1.7,15.9,1.7c41.5,0,75.1-33.6,75.1-75.1
@@ -62,17 +67,13 @@
                     <div class="circle-line right"></div>-->
                 </div>
                 <div class="circle-option position-absolute" :class="'e_index_'+experience_index">
-                    <a class="text-circle-option left" @click="onClickCircleItem(0, 'ex')" :class="experience_index == 0 ? 'active' : ''">體驗</a>
-                    <a class="text-circle-option top" @click="onClickCircleItem(1, 'pot')" :class="experience_index == 1 ? 'active' : ''">鍋物{{circle_dasharray}}</a>
-                    <a class="text-circle-option right" @click="onClickCircleItem(2, 'coffee')" :class="experience_index == 2 ? 'active' : ''">咖啡</a>
-                    <a class="text-circle-option bottom" @click="onClickCircleItem(3, 'spa')" :class="experience_index == 3 ? 'active' : ''">舒體</a>
+                    <a class="text-circle-option left" @mouseenter="onStopStep()"  @mouseleave="onContinueStep()" @click="onClickCircleItem(0, 'ex')" :class="experience_index == 0 ? 'active' : ''">體驗</a>
+                    <a class="text-circle-option top" @mouseenter="onStopStep()"  @mouseleave="onContinueStep()" @click="onClickCircleItem(1, 'pot')" :class="experience_index == 1 ? 'active' : ''">鍋物</a>
+                    <a class="text-circle-option right" @mouseenter="onStopStep()"  @mouseleave="onContinueStep()" @click="onClickCircleItem(2, 'coffee')" :class="experience_index == 2 ? 'active' : ''">咖啡</a>
+                    <a class="text-circle-option bottom" @mouseenter="onStopStep()"  @mouseleave="onContinueStep()" @click="onClickCircleItem(3, 'spa')" :class="experience_index == 3 ? 'active' : ''">舒體</a>
                 </div>
             </div>
-            <div class="experience-inner position-relative">
-                <transition name="fade" mode="out-in">
-                    <component class="experience-item" v-bind:is="experience_view"></component>
-                </transition>
-            </div>
+
         </div>
     </div>
 </template>
@@ -104,6 +105,7 @@ export default {
                 experience_index_old: 0,
 	            is_run: false,
                 is_rotate: false,
+	            circle_stop: false,
 	            circle_dasharray: 0
             }
         },
@@ -138,10 +140,11 @@ export default {
             },
         },
         mounted(){
-	        this.is_run = true
         	setTimeout(()=>{
-        		this.onPlusStep();
-		        //this.onRunCircle();
+		        setInterval(()=>{
+			        this.is_run = true;
+			        this.onPlusStep()
+                },300)
             },1300)
         },
         methods: {
@@ -158,47 +161,17 @@ export default {
 	            this.experience_view = view;
 	            this.experience_index = index;
 	            this.bgAnimated(800)
-	            //this.is_run = false;
-	            //this.is_rotate = true;
-            },
-            onRunCircle(){
-                setTimeout(()=>{
-	                if(!this.is_rotate) {
-		                if ( this.experience_index < 3 ) {
-			                this.experience_index++;
-		                } else {
-			                this.experience_index = 0;
-		                }
-		                this.is_run = false;
-		                this.is_rotate = true
-		                setTimeout( () => {
-                            this.is_rotate = false;
-                            setTimeout( () => {
-                                if ( !this.is_rotate ) {
-                                    this.is_run = true
-                                    this.onRunCircle();
-                                }else{
-                                    this.onResetRotate();
-                                }
-                            }, 300 )
-		                }, 1000 )
-	                }else {
-	                	this.onResetRotate();
-                    }
-                },6000);
-            },
-            onResetRotate(){
-	            this.is_rotate = false
-                setTimeout(()=>{
-		            this.onRunCircle()
-                },2000)
+
+	            this.onStartRotate();
             },
 	        onPlusStep(){
-		        this.circle_dasharray = this.circle_dasharray + 10 ;
+            	if(!this.is_rotate && !this.circle_stop){
+		            this.circle_dasharray = this.circle_dasharray + 19;
+                }
 
-		        if(this.circle_dasharray > 350){
-		        	this.is_rotate = true;
-			        this.circle_dasharray = 0;
+		        if(this.circle_dasharray > 320 && !this.is_rotate && !this.circle_stop){
+
+                    this.onStartRotate();
 
 			        if(this.experience_index == 0){
 				        this.onClickCircleItem(1, 'pot')
@@ -209,17 +182,24 @@ export default {
 			        }else{
 			        	this.onClickCircleItem(0, 'ex')
                     }
-
-                    setTimeout(()=>{
-	                    this.is_rotate = false;
-                    },300)
                 }
+            },
+	        onStopStep(){
+            	this.circle_stop = true
+            },
+	        onContinueStep(){
+		        this.circle_stop = false
+	        },
+            onStartRotate(){
+	            this.is_rotate = true;
 
-            	setTimeout(()=>{
-                    this.onPlusStep()
-                },300)
+	            setTimeout(()=>{
+		            this.circle_dasharray = 0;
+	            },600);
 
-
+	            setTimeout(()=>{
+		            this.is_rotate = false;
+	            },1200)
             }
         },
 }
@@ -228,7 +208,7 @@ export default {
 <style lang="sass">
     #loading-circle
         .loading-bar
-            stroke: #f26d23
+            stroke: #732A0A
             stroke-width: 9px
             stroke-linecap: square
             fill: none
@@ -236,7 +216,7 @@ export default {
             clip-path: url(#circle2)
             opacity: 0.5
             transform: rotate(225deg)
-            transition: stroke-dasharray 2s linear, stroke 8s linear
+            transition: stroke-dasharray 0.3s linear, stroke 5s linear
             //stroke-dasharray: 0,471
             &.run
                 stroke: #732A0A
@@ -244,7 +224,7 @@ export default {
                 //transition: stroke-dasharray 6s cubic-bezier(0.47, 0, 0.745, 0.715), stroke 6s cubic-bezier(0.215, 0.61, 0.355, 1)
             &.rotate
                 stroke: #f26d23
-                transition: stroke-dasharray 0.3s, stroke 0.3s
+                transition: stroke-dasharray 0.3s, stroke 0.3s, stroke-opacity 1.2s
                 //stroke-dasharray: 295,471
                 //transition: stroke 1s
     #block-experience
