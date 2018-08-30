@@ -139,7 +139,7 @@
                 z-index: 2
                 .big_title
                     font-size: 140px
-                    font-weight: 300
+                    font-weight: 600
                 .more-food-info
                     width: 100px
                     height: 100px

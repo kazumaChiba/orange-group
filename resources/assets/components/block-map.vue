@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="map-iframe">
-            <iframe class="w-100" height="450" :src="'https://www.google.com/maps/embed/v1/search?&key=AIzaSyD-Yjh575xmaPu3O-gBx_kk4AZ1Nyx_GjI&q='+mapItems[brand][mapIndex].address"></iframe>
+            <iframe class="w-100" height="560" :src="'https://www.google.com/maps/embed/v1/search?&key=AIzaSyD-Yjh575xmaPu3O-gBx_kk4AZ1Nyx_GjI&q='+mapItems[brand][mapIndex].address"></iframe>
         </div>
     </div>
 </template>
@@ -85,4 +85,7 @@
                     cursor: pointer
         .map-iframe
             border: none
+            iframe
+                display: block
+                border: none
 </style>

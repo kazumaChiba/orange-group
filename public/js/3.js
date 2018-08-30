@@ -269,56 +269,7 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "footer container" }, [
-        _c(
-          "div",
-          { staticClass: "d-flex flex-column justify-content-end h-100" },
-          [
-            _vm._m(1),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "position-relative d-flex flex-column align-items-center justify-content-center w-100 pt-4"
-              },
-              [
-                _c("div", { staticClass: "footer-social" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "footer-icons mr-3 ml-3",
-                      attrs: { href: "#" }
-                    },
-                    [
-                      _c("font-awesome-icon", {
-                        attrs: { icon: ["fab", "facebook-f"] }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "footer-icons mr-3 ml-3",
-                      attrs: { href: "#" }
-                    },
-                    [
-                      _c("font-awesome-icon", {
-                        attrs: { icon: ["fab", "twitter"] }
-                      })
-                    ],
-                    1
-                  )
-                ]),
-                _vm._v(" "),
-                _vm._m(2)
-              ]
-            )
-          ]
-        )
-      ])
+      _vm._m(1)
     ]
   )
 }
@@ -340,76 +291,95 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row mb-5 pb-5" }, [
-      _c("div", { staticClass: "col" }, [
-        _c("div", { staticClass: "footer-text-left text-left pt-5" }, [
-          _c("div", { staticClass: "d-inline-block text-center" }, [
-            _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
-              _vm._v("聯絡我們")
+    return _c("div", { staticClass: "footer container" }, [
+      _c(
+        "div",
+        { staticClass: "d-flex flex-column justify-content-end h-100" },
+        [
+          _c("div", { staticClass: "row mb-5 pb-5" }, [
+            _c("div", { staticClass: "col" }, [
+              _c("div", { staticClass: "footer-text-left text-left pt-5" }, [
+                _c("div", { staticClass: "d-inline-block text-center" }, [
+                  _c(
+                    "p",
+                    { staticClass: "text-orange footer-info-title mb-4" },
+                    [_vm._v("聯絡我們")]
+                  ),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("台北市大安區仁愛路四段37號3樓之B")]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v("Email:  service@orange.co"),
+                    _c("br"),
+                    _vm._v("Phone:  02-2711-4636"),
+                    _c("br"),
+                    _vm._v("Fax:  02-2711-4638")
+                  ])
+                ])
+              ])
             ]),
             _vm._v(" "),
-            _c("p", [_vm._v("台北市大安區仁愛路四段37號3樓之B")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v("Email:  service@orange.co"),
-              _c("br"),
-              _vm._v("Phone:  02-2711-4636"),
-              _c("br"),
-              _vm._v("Fax:  02-2711-4638")
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c("img", {
-          staticClass: "logo",
-          attrs: { src: "/images/index_logo.png" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c("div", { staticClass: "footer-text-right text-right pt-5" }, [
-          _c("div", { staticClass: "d-inline-block text-center" }, [
-            _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
-              _vm._v("橘色精神")
+            _c("div", { staticClass: "col" }, [
+              _c("img", {
+                staticClass: "logo",
+                attrs: { src: "/images/index_logo.png" }
+              })
             ]),
             _vm._v(" "),
-            _c("p", { staticClass: "footer-info-subtitle" }, [
-              _vm._v("用心 · 貼心 · 安心"),
-              _c("br"),
-              _vm._v("信心 · 一心 · 同理心")
+            _c("div", { staticClass: "col" }, [
+              _c("div", { staticClass: "footer-text-right text-right pt-5" }, [
+                _c("div", { staticClass: "d-inline-block text-center" }, [
+                  _c(
+                    "p",
+                    { staticClass: "text-orange footer-info-title mb-4" },
+                    [_vm._v("橘色精神")]
+                  ),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "footer-info-subtitle" }, [
+                    _vm._v("用心 · 貼心 · 安心"),
+                    _c("br"),
+                    _vm._v("信心 · 一心 · 同理心")
+                  ])
+                ])
+              ])
             ])
-          ])
-        ])
-      ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "position-relative d-flex flex-column align-items-center justify-content-center w-100 pt-4"
+            },
+            [
+              _c(
+                "p",
+                {
+                  staticClass:
+                    "footer mb-5 position-relative w-100 text-size-1 d-flex align-items-end justify-content-center",
+                  attrs: { id: "copyright" }
+                },
+                [
+                  _vm._v("2018 "),
+                  _c("a", { staticClass: "link-orange" }, [
+                    _vm._v(" 橘色涮涮屋 ")
+                  ]),
+                  _vm._v(" 版權所有. Designed by "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "link-orange",
+                      attrs: { href: "www.daydream-lab.com" }
+                    },
+                    [_vm._v("Daydream Lab")]
+                  )
+                ]
+              )
+            ]
+          )
+        ]
+      )
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "p",
-      {
-        staticClass:
-          "footer mb-5 position-relative w-100 text-size-1 d-flex align-items-end justify-content-center",
-        attrs: { id: "copyright" }
-      },
-      [
-        _vm._v("2018 "),
-        _c("a", { staticClass: "link-orange" }, [_vm._v(" 橘色涮涮屋 ")]),
-        _vm._v(" 版權所有. Designed by "),
-        _c(
-          "a",
-          {
-            staticClass: "link-orange",
-            attrs: { href: "www.daydream-lab.com" }
-          },
-          [_vm._v("Daydream Lab")]
-        )
-      ]
-    )
   }
 ]
 render._withStripped = true
@@ -1156,7 +1126,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#block-map .map-list {\n  margin-bottom: 80px;\n  padding: 0 80px;\n}\n#block-map .map-list .map-item {\n    max-width: calc(100%/3);\n    padding: 20px;\n}\n#block-map .map-list .map-item .map-title {\n      font-size: 20px;\n}\n#block-map .map-list .map-item .map-address:after {\n      content: \"\";\n      display: block;\n      width: 50px;\n      height: 1px;\n      background: #f26c23;\n      margin-top: 16px;\n}\n#block-map .map-list .map-item:hover, #block-map .map-list .map-item.active {\n      -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.1);\n              box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.1);\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      cursor: pointer;\n}\n#block-map .map-iframe {\n  border: none;\n}\n", ""]);
+exports.push([module.i, "\n#block-map .map-list {\n  margin-bottom: 80px;\n  padding: 0 80px;\n}\n#block-map .map-list .map-item {\n    max-width: calc(100%/3);\n    padding: 20px;\n}\n#block-map .map-list .map-item .map-title {\n      font-size: 20px;\n}\n#block-map .map-list .map-item .map-address:after {\n      content: \"\";\n      display: block;\n      width: 50px;\n      height: 1px;\n      background: #f26c23;\n      margin-top: 16px;\n}\n#block-map .map-list .map-item:hover, #block-map .map-list .map-item.active {\n      -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.1);\n              box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.1);\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      cursor: pointer;\n}\n#block-map .map-iframe {\n  border: none;\n}\n#block-map .map-iframe iframe {\n    display: block;\n    border: none;\n}\n", ""]);
 
 // exports
 
@@ -1288,7 +1258,7 @@ var render = function() {
           _c("iframe", {
             staticClass: "w-100",
             attrs: {
-              height: "450",
+              height: "560",
               src:
                 "https://www.google.com/maps/embed/v1/search?&key=AIzaSyD-Yjh575xmaPu3O-gBx_kk4AZ1Nyx_GjI&q=" +
                 _vm.mapItems[_vm.brand][_vm.mapIndex].address
