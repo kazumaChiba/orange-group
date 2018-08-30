@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-//Route::view('/{vue?}', 'index')->where('vue', '.*');
+// Route::view('/{vue?}', 'index')->where('vue', '.*');
 
 Route::get('/', function () {
     return view('index');
