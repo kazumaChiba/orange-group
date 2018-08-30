@@ -236,7 +236,7 @@ export default {
             clip-path: url(#circle2)
             opacity: 0.5
             transform: rotate(225deg)
-            transition: stroke-dasharray 2s linear, stroke 8s linear
+            transition: stroke-dasharray 1s linear, stroke 8s linear
             //stroke-dasharray: 0,471
             &.run
                 stroke: #732A0A
