@@ -297,8 +297,8 @@ export default {
                 top: 50%
                 transform: translateY(-50%)
                 width: 50%
-                word-break: keep-all
-                overflow: hidden
+                white-space: nowrap
+                pointer-events: none
             .experience-inner
                 width: 350px
                 margin: 0 auto
