@@ -762,7 +762,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#loading-circle .loading-bar {\n  stroke: #f26d23;\n  stroke-width: 9px;\n  stroke-linecap: square;\n  fill: none;\n  -webkit-transform-origin: center center 0px;\n          transform-origin: center center 0px;\n  -webkit-clip-path: url(#circle2);\n          clip-path: url(#circle2);\n  opacity: 0.5;\n  -webkit-transform: rotate(225deg);\n          transform: rotate(225deg);\n  -webkit-transition: stroke-dasharray 1s linear, stroke 8s linear;\n  transition: stroke-dasharray 1s linear, stroke 8s linear;\n}\n#loading-circle .loading-bar.run {\n    stroke: #732A0A;\n}\n#loading-circle .loading-bar.rotate {\n    stroke: #f26d23;\n    -webkit-transition: stroke-dasharray 0.3s, stroke 0.3s;\n    transition: stroke-dasharray 0.3s, stroke 0.3s;\n}\n#block-experience {\n  background-size: cover;\n}\n#block-experience.active .bg-transition.bg-left .bg-inner, #block-experience.active .bg-transition.bg-right .bg-inner, #block-experience.active .bg-transition.active .bg-inner {\n    background-position-y: 0;\n}\n#block-experience .bg-transition.bg-left:before, #block-experience .bg-transition.bg-right:before {\n    position: absolute;\n    width: 50%;\n    height: 100vh;\n    background: black;\n    content: \"\";\n    left: 0;\n    opacity: 0.8;\n    top: calc(50% - 50vh);\n    z-index: 4;\n    content: \"\";\n    word-break: keep-all;\n}\n#block-experience .bg-transition.bg-right:before {\n    width: 100%;\n    opacity: 0.4;\n}\n#block-experience .bg-transition.bg-left .bg-inner, #block-experience .bg-transition.bg-right .bg-inner {\n    background-position-y: -100vh;\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n}\n#block-experience .bg-transition.bg-left .bg-inner.active, #block-experience .bg-transition.bg-right .bg-inner.active {\n      background-position-y: 0;\n      opacity: 1;\n}\n#block-experience .bg-transition.bg-right .bg-inner.active {\n    background-position-y: 100vh;\n    opacity: 0;\n}\n#block-experience .bg-transition.bg-left {\n    z-index: 3;\n}\n#block-experience .bg-transition.bg-left:before {\n      width: 100%;\n}\n#block-experience .bg-transition.bg-left .bg-inner {\n      left: 0;\n}\n#block-experience .bg-transition.bg-left .bg-inner.active {\n        background-position-y: -100vh;\n        opacity: 0;\n}\n#block-experience .bg-transition.bg-right {\n    z-index: 2;\n    right: 0;\n}\n#block-experience .bg-transition.bg-right .bg-inner {\n      right: 0;\n      background-position-y: 100vh;\n}\n#block-experience .fp-scroller {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n#block-experience #content-experience {\n    z-index: 4;\n}\n#block-experience #content-experience .big_title {\n      font-size: 200px;\n      letter-spacing: 30px;\n      color: rgba(255, 255, 255, 0.2);\n      position: absolute;\n      left: 0;\n      top: 50%;\n      -webkit-transform: translateY(-50%);\n              transform: translateY(-50%);\n      width: 50%;\n      white-space: nowrap;\n      pointer-events: none;\n}\n#block-experience #content-experience .experience-inner {\n      width: 350px;\n      margin: 0 auto;\n      text-align: left;\n      font-weight: 300;\n}\n#block-experience #content-experience .experience-inner .experience-item {\n        -webkit-transition: opacity .5s;\n        transition: opacity .5s;\n}\n#block-experience #content-experience .experience-inner h5 {\n        letter-spacing: 4px;\n        font-weight: 300;\n}\n#block-experience #content-experience .experience-inner h5 span {\n          letter-spacing: 7px;\n          line-height: 25px;\n          font-size: 22px;\n}\n#block-experience #content-experience .experience-inner .left-line:before {\n        content: \"\";\n        display: inline-block;\n        width: 20px;\n        height: 5px;\n        background: #f26d23;\n        margin-right: 10px;\n        vertical-align: middle;\n}\n#block-experience #content-experience .experience-circle {\n      position: absolute;\n      top: calc(50% - 250px);\n      left: calc(50% - 250px);\n}\n#block-experience #content-experience .experience-circle .circle-option {\n        position: absolute;\n        width: 500px;\n        height: 500px;\n}\n#block-experience #content-experience .experience-circle .circle-body {\n        width: 500px;\n        height: 500px;\n        opacity: 0.75;\n}\n#block-experience #content-experience .experience-circle .circle-body.active .circle-line.left:after {\n          -webkit-transform: rotate(320deg);\n                  transform: rotate(320deg);\n          -webkit-transition: all .8s;\n          transition: all .8s;\n          opacity: 1;\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line {\n          position: absolute;\n          width: 50%;\n          height: 100%;\n          overflow: hidden;\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line:before, #block-experience #content-experience .experience-circle .circle-body .circle-line.left:after {\n            content: \"\";\n            display: block;\n            width: 200%;\n            height: 100%;\n            border: 28px solid rgba(242, 109, 35, 0.8);\n            border-radius: 100%;\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line.left {\n            left: 0;\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line.left:before, #block-experience #content-experience .experience-circle .circle-body .circle-line.left:after {\n              border-bottom-color: transparent;\n              border-left-color: transparent;\n              -webkit-transform: rotate(-40deg);\n                      transform: rotate(-40deg);\n              -webkit-clip-path: polygon(50% -18%, 100% 20%, 50% 100%, 0% 60%);\n                      clip-path: polygon(50% -18%, 100% 20%, 50% 100%, 0% 60%);\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line.right {\n            right: 0;\n            -webkit-transform: rotate(180deg);\n                    transform: rotate(180deg);\n}\n#block-experience #content-experience .experience-circle .circle-option {\n        -webkit-transition: all 2s;\n        transition: all 2s;\n        -webkit-transform: rotate(0);\n                transform: rotate(0);\n        top: 0;\n}\n#block-experience #content-experience .experience-circle .circle-option.active {\n          opacity: 0;\n          -webkit-transition: opacity .3s;\n          transition: opacity .3s;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option {\n          position: absolute;\n          width: 36px;\n          height: 36px;\n          display: -webkit-box;\n          display: -ms-flexbox;\n          display: flex;\n          -webkit-box-align: center;\n              -ms-flex-align: center;\n                  align-items: center;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option:hover {\n            cursor: pointer;\n            color: #f26d23;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.top {\n            top: calc(-40px - 18px);\n            left: calc(50% - 18px);\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.bottom {\n            bottom: calc(-40px - 18px);\n            left: calc(50% - 18px);\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.right {\n            top: calc(50% - 18px);\n            right: calc(-40px - 18px);\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.left {\n            top: calc(50% - 18px);\n            left: calc(-40px - 18px);\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option a {\n            word-break: keep-all;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.active {\n            opacity: 0;\n            -webkit-transition: opacity 1s;\n            transition: opacity 1s;\n            -webkit-transition-delay: .5s;\n                    transition-delay: .5s;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_0 {\n          -webkit-transform: rotate(0deg);\n                  transform: rotate(0deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_0 a {\n            -webkit-transition: all .3s;\n            transition: all .3s;\n            -webkit-transform: rotate(0deg) !important;\n                    transform: rotate(0deg) !important;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_1 {\n          -webkit-transform: rotate(-90deg);\n                  transform: rotate(-90deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_1 a {\n            -webkit-transition: all .3s;\n            transition: all .3s;\n            -webkit-transform: rotate(90deg) !important;\n                    transform: rotate(90deg) !important;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_2 {\n          -webkit-transform: rotate(-180deg);\n                  transform: rotate(-180deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_2 a {\n            -webkit-transition: all .3s;\n            transition: all .3s;\n            -webkit-transform: rotate(180deg) !important;\n                    transform: rotate(180deg) !important;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_3 {\n          -webkit-transform: rotate(-270deg);\n                  transform: rotate(-270deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_3 a {\n            -webkit-transition: all .3s;\n            transition: all .3s;\n            -webkit-transform: rotate(270deg) !important;\n                    transform: rotate(270deg) !important;\n}\n", ""]);
+exports.push([module.i, "\n#loading-circle .loading-bar {\n  stroke: #732A0A;\n  stroke-width: 9px;\n  stroke-linecap: square;\n  fill: none;\n  -webkit-transform-origin: center center 0px;\n          transform-origin: center center 0px;\n  -webkit-clip-path: url(#circle2);\n          clip-path: url(#circle2);\n  opacity: 0.5;\n  -webkit-transform: rotate(225deg);\n          transform: rotate(225deg);\n  -webkit-transition: stroke-dasharray 0.3s linear, stroke 5s linear;\n  transition: stroke-dasharray 0.3s linear, stroke 5s linear;\n}\n#loading-circle .loading-bar.run {\n    stroke: #732A0A;\n}\n#loading-circle .loading-bar.rotate {\n    stroke: #f26d23;\n    -webkit-transition: stroke-dasharray 0.3s, stroke 0.3s, stroke-opacity 1.2s;\n    transition: stroke-dasharray 0.3s, stroke 0.3s, stroke-opacity 1.2s;\n}\n#block-experience {\n  background-size: cover;\n}\n#block-experience.active .bg-transition.bg-left .bg-inner, #block-experience.active .bg-transition.bg-right .bg-inner, #block-experience.active .bg-transition.active .bg-inner {\n    background-position-y: 0;\n}\n#block-experience .bg-transition.bg-left:before, #block-experience .bg-transition.bg-right:before {\n    position: absolute;\n    width: 50%;\n    height: 100vh;\n    background: black;\n    content: \"\";\n    left: 0;\n    opacity: 0.8;\n    top: calc(50% - 50vh);\n    z-index: 4;\n    content: \"\";\n    word-break: keep-all;\n}\n#block-experience .bg-transition.bg-right:before {\n    width: 100%;\n    opacity: 0.4;\n}\n#block-experience .bg-transition.bg-left .bg-inner, #block-experience .bg-transition.bg-right .bg-inner {\n    background-position-y: -100vh;\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n}\n#block-experience .bg-transition.bg-left .bg-inner.active, #block-experience .bg-transition.bg-right .bg-inner.active {\n      background-position-y: 0;\n      opacity: 1;\n}\n#block-experience .bg-transition.bg-right .bg-inner.active {\n    background-position-y: 100vh;\n    opacity: 0;\n}\n#block-experience .bg-transition.bg-left {\n    z-index: 3;\n}\n#block-experience .bg-transition.bg-left:before {\n      width: 100%;\n}\n#block-experience .bg-transition.bg-left .bg-inner {\n      left: 0;\n}\n#block-experience .bg-transition.bg-left .bg-inner.active {\n        background-position-y: -100vh;\n        opacity: 0;\n}\n#block-experience .bg-transition.bg-right {\n    z-index: 2;\n    right: 0;\n}\n#block-experience .bg-transition.bg-right .bg-inner {\n      right: 0;\n      background-position-y: 100vh;\n}\n#block-experience .fp-scroller {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n#block-experience #content-experience {\n    z-index: 4;\n}\n#block-experience #content-experience .big_title {\n      font-size: 200px;\n      letter-spacing: 30px;\n      color: rgba(255, 255, 255, 0.2);\n      position: absolute;\n      left: 0;\n      top: 50%;\n      -webkit-transform: translateY(-50%);\n              transform: translateY(-50%);\n      width: 50%;\n      white-space: nowrap;\n      pointer-events: none;\n}\n#block-experience #content-experience .experience-inner {\n      width: 350px;\n      margin: 0 auto;\n      text-align: left;\n      font-weight: 300;\n}\n#block-experience #content-experience .experience-inner .experience-item {\n        -webkit-transition: opacity .5s;\n        transition: opacity .5s;\n}\n#block-experience #content-experience .experience-inner h5 {\n        letter-spacing: 4px;\n        font-weight: 300;\n}\n#block-experience #content-experience .experience-inner h5 span {\n          letter-spacing: 7px;\n          line-height: 25px;\n          font-size: 22px;\n}\n#block-experience #content-experience .experience-inner .left-line:before {\n        content: \"\";\n        display: inline-block;\n        width: 20px;\n        height: 5px;\n        background: #f26d23;\n        margin-right: 10px;\n        vertical-align: middle;\n}\n#block-experience #content-experience .experience-circle {\n      position: absolute;\n      top: calc(50% - 250px);\n      left: calc(50% - 250px);\n}\n#block-experience #content-experience .experience-circle .circle-option {\n        position: absolute;\n        width: 500px;\n        height: 500px;\n}\n#block-experience #content-experience .experience-circle .circle-body {\n        width: 500px;\n        height: 500px;\n        opacity: 0.75;\n}\n#block-experience #content-experience .experience-circle .circle-body.active .circle-line.left:after {\n          -webkit-transform: rotate(320deg);\n                  transform: rotate(320deg);\n          -webkit-transition: all .8s;\n          transition: all .8s;\n          opacity: 1;\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line {\n          position: absolute;\n          width: 50%;\n          height: 100%;\n          overflow: hidden;\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line:before, #block-experience #content-experience .experience-circle .circle-body .circle-line.left:after {\n            content: \"\";\n            display: block;\n            width: 200%;\n            height: 100%;\n            border: 28px solid rgba(242, 109, 35, 0.8);\n            border-radius: 100%;\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line.left {\n            left: 0;\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line.left:before, #block-experience #content-experience .experience-circle .circle-body .circle-line.left:after {\n              border-bottom-color: transparent;\n              border-left-color: transparent;\n              -webkit-transform: rotate(-40deg);\n                      transform: rotate(-40deg);\n              -webkit-clip-path: polygon(50% -18%, 100% 20%, 50% 100%, 0% 60%);\n                      clip-path: polygon(50% -18%, 100% 20%, 50% 100%, 0% 60%);\n}\n#block-experience #content-experience .experience-circle .circle-body .circle-line.right {\n            right: 0;\n            -webkit-transform: rotate(180deg);\n                    transform: rotate(180deg);\n}\n#block-experience #content-experience .experience-circle .circle-option {\n        -webkit-transition: all 2s;\n        transition: all 2s;\n        -webkit-transform: rotate(0);\n                transform: rotate(0);\n        top: 0;\n}\n#block-experience #content-experience .experience-circle .circle-option.active {\n          opacity: 0;\n          -webkit-transition: opacity .3s;\n          transition: opacity .3s;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option {\n          position: absolute;\n          width: 36px;\n          height: 36px;\n          display: -webkit-box;\n          display: -ms-flexbox;\n          display: flex;\n          -webkit-box-align: center;\n              -ms-flex-align: center;\n                  align-items: center;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option:hover {\n            cursor: pointer;\n            color: #f26d23;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.top {\n            top: calc(-40px - 18px);\n            left: calc(50% - 18px);\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.bottom {\n            bottom: calc(-40px - 18px);\n            left: calc(50% - 18px);\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.right {\n            top: calc(50% - 18px);\n            right: calc(-40px - 18px);\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.left {\n            top: calc(50% - 18px);\n            left: calc(-40px - 18px);\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option a {\n            word-break: keep-all;\n}\n#block-experience #content-experience .experience-circle .circle-option .text-circle-option.active {\n            opacity: 0;\n            -webkit-transition: opacity 1s;\n            transition: opacity 1s;\n            -webkit-transition-delay: .5s;\n                    transition-delay: .5s;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_0 {\n          -webkit-transform: rotate(0deg);\n                  transform: rotate(0deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_0 a {\n            -webkit-transition: all .3s;\n            transition: all .3s;\n            -webkit-transform: rotate(0deg) !important;\n                    transform: rotate(0deg) !important;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_1 {\n          -webkit-transform: rotate(-90deg);\n                  transform: rotate(-90deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_1 a {\n            -webkit-transition: all .3s;\n            transition: all .3s;\n            -webkit-transform: rotate(90deg) !important;\n                    transform: rotate(90deg) !important;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_2 {\n          -webkit-transform: rotate(-180deg);\n                  transform: rotate(-180deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_2 a {\n            -webkit-transition: all .3s;\n            transition: all .3s;\n            -webkit-transform: rotate(180deg) !important;\n                    transform: rotate(180deg) !important;\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_3 {\n          -webkit-transform: rotate(-270deg);\n                  transform: rotate(-270deg);\n}\n#block-experience #content-experience .experience-circle .circle-option.e_index_3 a {\n            -webkit-transition: all .3s;\n            transition: all .3s;\n            -webkit-transform: rotate(270deg) !important;\n                    transform: rotate(270deg) !important;\n}\n", ""]);
 
 // exports
 
@@ -774,6 +774,7 @@ exports.push([module.i, "\n#loading-circle .loading-bar {\n  stroke: #f26d23;\n 
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -875,6 +876,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             experience_index_old: 0,
             is_run: false,
             is_rotate: false,
+            circle_stop: false,
             circle_dasharray: 0
         };
     },
@@ -895,10 +897,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     mounted: function mounted() {
         var _this = this;
 
-        this.is_run = true;
         setTimeout(function () {
-            _this.onPlusStep();
-            //this.onRunCircle();
+            setInterval(function () {
+                _this.is_run = true;
+                _this.onPlusStep();
+            }, 300);
         }, 1300);
     },
 
@@ -918,53 +921,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.experience_view = view;
             this.experience_index = index;
             this.bgAnimated(800);
-            //this.is_run = false;
-            //this.is_rotate = true;
-        },
-        onRunCircle: function onRunCircle() {
-            var _this3 = this;
 
-            setTimeout(function () {
-                if (!_this3.is_rotate) {
-                    if (_this3.experience_index < 3) {
-                        _this3.experience_index++;
-                    } else {
-                        _this3.experience_index = 0;
-                    }
-                    _this3.is_run = false;
-                    _this3.is_rotate = true;
-                    setTimeout(function () {
-                        _this3.is_rotate = false;
-                        setTimeout(function () {
-                            if (!_this3.is_rotate) {
-                                _this3.is_run = true;
-                                _this3.onRunCircle();
-                            } else {
-                                _this3.onResetRotate();
-                            }
-                        }, 300);
-                    }, 1000);
-                } else {
-                    _this3.onResetRotate();
-                }
-            }, 6000);
-        },
-        onResetRotate: function onResetRotate() {
-            var _this4 = this;
-
-            this.is_rotate = false;
-            setTimeout(function () {
-                _this4.onRunCircle();
-            }, 2000);
+            this.onStartRotate();
         },
         onPlusStep: function onPlusStep() {
-            var _this5 = this;
+            if (!this.is_rotate && !this.circle_stop) {
+                this.circle_dasharray = this.circle_dasharray + 19;
+            }
 
-            this.circle_dasharray = this.circle_dasharray + 10;
+            if (this.circle_dasharray > 320 && !this.is_rotate && !this.circle_stop) {
 
-            if (this.circle_dasharray > 350) {
-                this.is_rotate = true;
-                this.circle_dasharray = 0;
+                this.onStartRotate();
 
                 if (this.experience_index == 0) {
                     this.onClickCircleItem(1, 'pot');
@@ -975,15 +942,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 } else {
                     this.onClickCircleItem(0, 'ex');
                 }
-
-                setTimeout(function () {
-                    _this5.is_rotate = false;
-                }, 300);
             }
+        },
+        onStopStep: function onStopStep() {
+            this.circle_stop = true;
+        },
+        onContinueStep: function onContinueStep() {
+            this.circle_stop = false;
+        },
+        onStartRotate: function onStartRotate() {
+            var _this3 = this;
+
+            this.is_rotate = true;
 
             setTimeout(function () {
-                _this5.onPlusStep();
-            }, 300);
+                _this3.circle_dasharray = 0;
+            }, 600);
+
+            setTimeout(function () {
+                _this3.is_rotate = false;
+            }, 1200);
         }
     }
 });
@@ -1048,151 +1026,6 @@ var render = function() {
             _vm._v(_vm._s(_vm.experience[_vm.experience_index].title))
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "experience-circle" }, [
-            _c(
-              "div",
-              {
-                staticClass: "circle-body position-relative",
-                class: { active: _vm.bgTransition }
-              },
-              [
-                _c(
-                  "svg",
-                  {
-                    attrs: {
-                      id: "loading-circle",
-                      x: "0px",
-                      y: "0px",
-                      width: "100%",
-                      height: "100%",
-                      viewBox: "0 0 150 150",
-                      "enable-background": "new 0 0 150 150",
-                      "xml:space": "preserve"
-                    }
-                  },
-                  [
-                    _c("rect", {
-                      staticStyle: { "clip-path": "url(#circle)" },
-                      attrs: {
-                        x: "0",
-                        y: "0",
-                        width: "100%",
-                        height: "100%",
-                        fill: "#f26e22"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("circle", {
-                      staticClass: "loading-bar",
-                      class: { run: _vm.is_run, rotate: _vm.is_rotate },
-                      attrs: {
-                        "stroke-dasharray": _vm.circle_dasharray + ",471",
-                        cx: "75",
-                        cy: "75",
-                        r: "70.5"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("clipPath", { attrs: { id: "circle" } }, [
-                      _c("path", {
-                        attrs: {
-                          fill: "#f26e22",
-                          d:
-                            "M75.1-0.1c-20.7,0-39.5,8.4-53.1,22l2.8,9.7C37,17.5,55,8.6,75,8.6c36.7,0,66.4,29.8,66.4,66.4\n\t\tc0,36.7-29.8,66.4-66.4,66.4c-6.5,0-12.8-1-18.8-2.7l2.8,9.7c5.1,1.1,10.5,1.7,15.9,1.7c41.5,0,75.1-33.6,75.1-75.1\n\t\tC150.2,33.5,116.6-0.1,75.1-0.1L75.1-0.1z"
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "clipPath",
-                      {
-                        staticStyle: {
-                          transform: "rotate(135deg)",
-                          "transform-origin": "center"
-                        },
-                        attrs: { id: "circle2" }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            fill: "#f26e22",
-                            d:
-                              "M75.1-0.1c-20.7,0-39.5,8.4-53.1,22l2.8,9.7C37,17.5,55,8.6,75,8.6c36.7,0,66.4,29.8,66.4,66.4\n\t\tc0,36.7-29.8,66.4-66.4,66.4c-6.5,0-12.8-1-18.8-2.7l2.8,9.7c5.1,1.1,10.5,1.7,15.9,1.7c41.5,0,75.1-33.6,75.1-75.1\n\t\tC150.2,33.5,116.6-0.1,75.1-0.1L75.1-0.1z"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "circle-option position-absolute",
-                class: "e_index_" + _vm.experience_index
-              },
-              [
-                _c(
-                  "a",
-                  {
-                    staticClass: "text-circle-option left",
-                    class: _vm.experience_index == 0 ? "active" : "",
-                    on: {
-                      click: function($event) {
-                        _vm.onClickCircleItem(0, "ex")
-                      }
-                    }
-                  },
-                  [_vm._v("體驗")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "text-circle-option top",
-                    class: _vm.experience_index == 1 ? "active" : "",
-                    on: {
-                      click: function($event) {
-                        _vm.onClickCircleItem(1, "pot")
-                      }
-                    }
-                  },
-                  [_vm._v("鍋物" + _vm._s(_vm.circle_dasharray))]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "text-circle-option right",
-                    class: _vm.experience_index == 2 ? "active" : "",
-                    on: {
-                      click: function($event) {
-                        _vm.onClickCircleItem(2, "coffee")
-                      }
-                    }
-                  },
-                  [_vm._v("咖啡")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "text-circle-option bottom",
-                    class: _vm.experience_index == 3 ? "active" : "",
-                    on: {
-                      click: function($event) {
-                        _vm.onClickCircleItem(3, "spa")
-                      }
-                    }
-                  },
-                  [_vm._v("舒體")]
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
           _c(
             "div",
             { staticClass: "experience-inner position-relative" },
@@ -1210,6 +1043,190 @@ var render = function() {
               )
             ],
             1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "experience-circle",
+              on: {
+                mouseenter: function($event) {
+                  _vm.onStopStep()
+                },
+                mouseleave: function($event) {
+                  _vm.onContinueStep()
+                }
+              }
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: "circle-body position-relative",
+                  class: { active: _vm.bgTransition }
+                },
+                [
+                  _c(
+                    "svg",
+                    {
+                      attrs: {
+                        id: "loading-circle",
+                        x: "0px",
+                        y: "0px",
+                        width: "100%",
+                        height: "100%",
+                        viewBox: "0 0 150 150",
+                        "enable-background": "new 0 0 150 150",
+                        "xml:space": "preserve"
+                      }
+                    },
+                    [
+                      _c("rect", {
+                        staticStyle: { "clip-path": "url(#circle)" },
+                        attrs: {
+                          x: "0",
+                          y: "0",
+                          width: "100%",
+                          height: "100%",
+                          fill: "#f26e22"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("circle", {
+                        staticClass: "loading-bar",
+                        class: { run: _vm.is_run, rotate: _vm.is_rotate },
+                        attrs: {
+                          "stroke-dasharray": _vm.circle_dasharray + ",471",
+                          "stroke-opacity": _vm.circle_dasharray / 300,
+                          cx: "75",
+                          cy: "75",
+                          r: "70.5"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("clipPath", { attrs: { id: "circle" } }, [
+                        _c("path", {
+                          attrs: {
+                            fill: "#f26e22",
+                            d:
+                              "M75.1-0.1c-20.7,0-39.5,8.4-53.1,22l2.8,9.7C37,17.5,55,8.6,75,8.6c36.7,0,66.4,29.8,66.4,66.4\n\t\tc0,36.7-29.8,66.4-66.4,66.4c-6.5,0-12.8-1-18.8-2.7l2.8,9.7c5.1,1.1,10.5,1.7,15.9,1.7c41.5,0,75.1-33.6,75.1-75.1\n\t\tC150.2,33.5,116.6-0.1,75.1-0.1L75.1-0.1z"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "clipPath",
+                        {
+                          staticStyle: {
+                            transform: "rotate(135deg)",
+                            "transform-origin": "center"
+                          },
+                          attrs: { id: "circle2" }
+                        },
+                        [
+                          _c("path", {
+                            attrs: {
+                              fill: "#f26e22",
+                              d:
+                                "M75.1-0.1c-20.7,0-39.5,8.4-53.1,22l2.8,9.7C37,17.5,55,8.6,75,8.6c36.7,0,66.4,29.8,66.4,66.4\n\t\tc0,36.7-29.8,66.4-66.4,66.4c-6.5,0-12.8-1-18.8-2.7l2.8,9.7c5.1,1.1,10.5,1.7,15.9,1.7c41.5,0,75.1-33.6,75.1-75.1\n\t\tC150.2,33.5,116.6-0.1,75.1-0.1L75.1-0.1z"
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "circle-option position-absolute",
+                  class: "e_index_" + _vm.experience_index
+                },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "text-circle-option left",
+                      class: _vm.experience_index == 0 ? "active" : "",
+                      on: {
+                        mouseenter: function($event) {
+                          _vm.onStopStep()
+                        },
+                        mouseleave: function($event) {
+                          _vm.onContinueStep()
+                        },
+                        click: function($event) {
+                          _vm.onClickCircleItem(0, "ex")
+                        }
+                      }
+                    },
+                    [_vm._v("體驗")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "text-circle-option top",
+                      class: _vm.experience_index == 1 ? "active" : "",
+                      on: {
+                        mouseenter: function($event) {
+                          _vm.onStopStep()
+                        },
+                        mouseleave: function($event) {
+                          _vm.onContinueStep()
+                        },
+                        click: function($event) {
+                          _vm.onClickCircleItem(1, "pot")
+                        }
+                      }
+                    },
+                    [_vm._v("鍋物")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "text-circle-option right",
+                      class: _vm.experience_index == 2 ? "active" : "",
+                      on: {
+                        mouseenter: function($event) {
+                          _vm.onStopStep()
+                        },
+                        mouseleave: function($event) {
+                          _vm.onContinueStep()
+                        },
+                        click: function($event) {
+                          _vm.onClickCircleItem(2, "coffee")
+                        }
+                      }
+                    },
+                    [_vm._v("咖啡")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "text-circle-option bottom",
+                      class: _vm.experience_index == 3 ? "active" : "",
+                      on: {
+                        mouseenter: function($event) {
+                          _vm.onStopStep()
+                        },
+                        mouseleave: function($event) {
+                          _vm.onContinueStep()
+                        },
+                        click: function($event) {
+                          _vm.onClickCircleItem(3, "spa")
+                        }
+                      }
+                    },
+                    [_vm._v("舒體")]
+                  )
+                ]
+              )
+            ]
           )
         ]
       )
