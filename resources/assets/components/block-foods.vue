@@ -228,63 +228,63 @@
                     .more-food-info
                         display: none
 
-    @media only screen and (max-width: 767px)
+    @media only screen and (max-width: 991px)
+        
+        // #fp-nav.fp-right
+        //     right: unset
+        //     left: 20px
+        //     ul 
+        //         li 
+        //             .fp-tooltip.fp-right
+        //                 color: transparent !important
+        //                 padding: 0
+        //                 width: 10px
+        //                 height: 10px
+        //                 border-radius: 100%
+        //                 border: 1px solid white
+        //                 background: transparent
+        //             .active
+        //                 &+.fp-tooltip.fp-right
+        //                     background: #f26b23
+        //                     border-color: #f26b23 
         #app 
-            .bg-transition
-                width: 100vw
-        #fp-nav.fp-right
-            right: unset
-            left: 20px
-            ul 
-                li 
-                    .fp-tooltip.fp-right
-                        color: transparent !important
-                        padding: 0
-                        width: 10px
-                        height: 10px
-                        border-radius: 100%
-                        border: 1px solid white
-                        background: transparent
-                    .active
-                        &+.fp-tooltip.fp-right
-                            background: #f26b23
-                            border-color: #f26b23 
-
-        #block-foods 
-            .block-food-body 
-                .content-food 
-                    h3 , span
-                        color: white !important
-                        letter-spacing: 5px
-                    h3
-                        font-size: 28px
-                        
-                    .sub-title
-                        font-size: 12px
-
-                    &.left-content
-                        display: none !important
-                    &.right-content
-                        background: transparent
-                        padding: 90px 20px 23px 20px
-                        .more-food-info
-                            display: block
-                        .food-info-inner
-                            height: 300px
-                            width: 300px
-                            background: rgba(242, 109, 35, 0.8)
-                            .text-food-title
-                                font-size: 21px
-                            .text-food-info
-                                font-size: 12px
-                    .more-food-info
-                        margin-right: 0
-                        width: 68px
-                        height: 68px
-                        border: 1px solid #f26b23
-                        span
-                            left: 0
-                            bottom: -25px
+            #block-foods 
+                .bg-transition
+                        width: 100vw
+                .block-food-body 
+                    .content-food 
+                        h3 , span
+                            color: white !important
+                            letter-spacing: 5px
+                        h3
+                            font-size: 28px
+                            
+                        .sub-title
                             font-size: 12px
-                            letter-spacing: 2px
+
+                        &.left-content
+                            display: none !important
+                        &.right-content
+                            background: transparent
+                            padding: 90px 20px 23px 20px
+                            .more-food-info
+                                display: block
+                            .food-info-inner
+                                height: 300px
+                                width: 300px
+                                background: rgba(242, 109, 35, 0.8)
+                                .text-food-title
+                                    font-size: 21px
+                                .text-food-info
+                                    font-size: 12px
+                        .more-food-info
+                            margin-right: 0
+                            width: 68px
+                            height: 68px
+                            border: 1px solid #f26b23
+                            span
+                                left: 0
+                                bottom: -25px
+                                font-size: 12px
+                                letter-spacing: 2px
 </style>

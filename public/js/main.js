@@ -54023,7 +54023,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#header .logo {\n  padding-left: 35px;\n}\n#header #main-menu {\n  width: 50%;\n  margin-left: auto;\n  overflow: hidden;\n  position: relative;\n  padding-right: 35px;\n  margin-right: 35px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n#header #main-menu .menu-outer {\n    overflow: hidden;\n}\n#header #main-menu .menu-outer.menu-close .menu-list {\n      -webkit-transform: translateX(100%);\n              transform: translateX(100%);\n}\n#header #main-menu .menu-outer .menu-list {\n      -webkit-transition: all .3s ease-in-out;\n      transition: all .3s ease-in-out;\n}\n#header #main-menu .menu-outer #mobile-menu {\n      width: 100vw;\n      height: 100vh;\n      position: fixed;\n      top: 0;\n      left: 0;\n      -webkit-transition: all .3s;\n      transition: all .3s;\n}\n#header #main-menu .menu-outer #mobile-menu.menu-close {\n        height: 0;\n}\n#header #main-menu .menu-outer #mobile-menu .menu-list {\n        background-color: white;\n        overflow: hidden;\n}\n#header #main-menu .menu-outer #mobile-menu .menu-title {\n        color: black;\n        padding: 20px;\n        font-size: 22px;\n}\n#header #main-menu .menu-outer #mobile-menu .menu-title.router-link-active {\n          color: #f26e22;\n}\n#header #main-menu .menu-outer #mobile-menu .buger-icon {\n        position: absolute;\n        width: 50px;\n        height: 40px;\n        background: rgba(235, 94, 0, 0.8);\n        right: 23px;\n        top: 28px;\n        z-index: 2;\n}\n#header #main-menu .menu-outer #mobile-menu .buger-icon span {\n          width: 60%;\n          height: 2px;\n          background: white;\n          display: block;\n          margin: 3px 0;\n}\n#header #main-menu .menu-outer .menu-title {\n      display: inline-block;\n      font-size: 15px;\n      font-weight: 500;\n      padding: 0 20px;\n}\n#header #main-menu .menu-outer.menu-shadow .menu-list {\n      background: rgba(0, 0, 0, 0.3);\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\n#header .logo {\n  padding-left: 35px;\n}\n#header #main-menu {\n  width: 50%;\n  margin-left: auto;\n  overflow: hidden;\n  position: relative;\n  padding-right: 35px;\n  margin-right: 35px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n#header #main-menu .menu-outer {\n    overflow: hidden;\n    /* 手機版選單 */\n}\n#header #main-menu .menu-outer.menu-close .menu-list {\n      -webkit-transform: translateX(100%);\n              transform: translateX(100%);\n      -webkit-transition: all .3s ease-in-out;\n      transition: all .3s ease-in-out;\n}\n#header #main-menu .menu-outer .menu-list {\n      -webkit-transform: translateX(0%);\n              transform: translateX(0%);\n      -webkit-transition: all .3s ease-in-out;\n      transition: all .3s ease-in-out;\n}\n#header #main-menu .menu-outer .menu-title {\n      display: inline-block;\n      font-size: 15px;\n      font-weight: 500;\n      padding: 0 20px;\n}\n#header #main-menu .menu-outer.menu-shadow .menu-list {\n      background: rgba(0, 0, 0, 0.3);\n}\n#header #main-menu .menu-outer #mobile-menu {\n      width: 100vw;\n      height: 0;\n      position: fixed;\n      top: 0;\n      left: 0;\n      -webkit-transition: all .3s;\n      transition: all .3s;\n}\n#header #main-menu .menu-outer #mobile-menu.menu-open {\n        height: 100vh;\n}\n#header #main-menu .menu-outer #mobile-menu.menu-open .buger-icon span {\n          -webkit-transform: rotate(0);\n                  transform: rotate(0);\n          opacity: 1;\n}\n#header #main-menu .menu-outer #mobile-menu.menu-open .buger-icon span:first-child, #header #main-menu .menu-outer #mobile-menu.menu-open .buger-icon span:last-child {\n            opacity: 0;\n}\n#header #main-menu .menu-outer #mobile-menu.menu-open .buger-icon span:nth-child(2) {\n            -webkit-transform: rotate(45deg);\n                    transform: rotate(45deg);\n}\n#header #main-menu .menu-outer #mobile-menu.menu-open .buger-icon span:nth-child(3) {\n            -webkit-transform: rotate(-45deg);\n                    transform: rotate(-45deg);\n}\n#header #main-menu .menu-outer #mobile-menu.menu-open .menu-list {\n          -webkit-transform: translateX(0);\n                  transform: translateX(0);\n}\n#header #main-menu .menu-outer #mobile-menu .buger-icon {\n        position: absolute;\n        width: 50px;\n        height: 40px;\n        background: rgba(235, 94, 0, 0.8);\n        right: 23px;\n        top: 28px;\n        z-index: 2;\n}\n#header #main-menu .menu-outer #mobile-menu .buger-icon span {\n          position: absolute;\n          top: 50%;\n          margin: 0;\n          width: 60%;\n          height: 2px;\n          background: white;\n          display: block;\n          -webkit-transition: all .3s;\n          transition: all .3s;\n}\n#header #main-menu .menu-outer #mobile-menu .buger-icon span:first-child {\n            top: calc(50% - 8px);\n}\n#header #main-menu .menu-outer #mobile-menu .buger-icon span:last-child {\n            top: calc(50% + 8px);\n}\n#header #main-menu .menu-outer #mobile-menu .menu-list {\n        background-color: white;\n        -webkit-transform: translateY(-100%);\n                transform: translateY(-100%);\n        overflow: hidden;\n}\n#header #main-menu .menu-outer #mobile-menu .menu-title {\n        color: black;\n        padding: 20px;\n        font-size: 22px;\n}\n#header #main-menu .menu-outer #mobile-menu .menu-title.router-link-active {\n          color: #f26e22;\n}\n@media only screen and (max-width: 768px) {\n#app #header .logo img {\n    width: 70px;\n}\n#app #header #main-menu .menu-outer .menu-list {\n    display: none;\n}\n#app #header #mobile-menu {\n    display: block;\n}\n#app #header #mobile-menu .logo {\n      height: 75px;\n      top: 28px;\n      left: 23px;\n      padding: 0;\n}\n#app #burger-menu {\n    display: none !important;\n}\n}\n", ""]);
 
 // exports
 
@@ -54156,6 +54156,52 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -54178,7 +54224,7 @@ var render = function() {
   return _c("div", { staticClass: "menu-outer d-flex justify-content-end" }, [
     _c(
       "div",
-      { staticClass: "menu-list d-none d-lg-block" },
+      { staticClass: "menu-list d-lg-block" },
       [
         _c(
           "router-link",
@@ -54215,7 +54261,7 @@ var render = function() {
     _vm._v(" "),
     _c(
       "div",
-      { class: _vm.open ? "" : "menu-close", attrs: { id: "mobile-menu" } },
+      { class: _vm.open ? "menu-open" : "", attrs: { id: "mobile-menu" } },
       [
         _c(
           "span",
@@ -54228,7 +54274,15 @@ var render = function() {
               }
             }
           },
-          [_c("span"), _vm._v(" "), _c("span"), _vm._v(" "), _c("span")]
+          [
+            _c("span"),
+            _vm._v(" "),
+            _c("span"),
+            _vm._v(" "),
+            _c("span"),
+            _vm._v(" "),
+            _c("span")
+          ]
         ),
         _vm._v(" "),
         _c(
@@ -54239,6 +54293,11 @@ var render = function() {
             class: _vm.open ? "" : "fade"
           },
           [
+            _c("img", {
+              staticClass: "logo",
+              attrs: { src: "/images/index_logo.png" }
+            }),
+            _vm._v(" "),
             _c(
               "router-link",
               { staticClass: "menu-title", attrs: { to: "/", exact: "" } },

@@ -437,4 +437,9 @@ export default {
                             &.e_index_#{$i}
                                 a
                                     transform: rotate($i*90deg) scale(1.7) !important
+    
+    @media only screen and (max-width: 420px)
+        #block-experience 
+            #content-experience 
+                transform: scale(0.45)
 </style>
