@@ -7,7 +7,7 @@
             <router-link :to="'/family'" class="menu-title">橘色家庭</router-link>
             <router-link :to="'/contact'" class="menu-title">聯絡我們</router-link>
         </div>
-        <div id="mobile-menu">
+        <div id="mobile-menu"  :class="open ? '' : 'menu-close'">
             <span class="buger-icon d-flex flex-column align-items-center justify-content-center" @click="open = !open">
                 <span></span>
                 <span></span>
@@ -44,15 +44,19 @@
                     .menu-list
                         transform: translateX(100%)
                 .menu-list
-                    transition: all .5s ease-in-out
+                    transition: all .3s ease-in-out
                 #mobile-menu
                     width: 100vw
                     height: 100vh
                     position: fixed
                     top: 0
                     left: 0
+                    transition: all .3s
+                    &.menu-close
+                        height: 0
                     .menu-list
                         background-color: white
+                        overflow: hidden
                     .menu-title
                         color: black
                         padding: 20px

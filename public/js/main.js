@@ -54023,7 +54023,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#header .logo {\n  padding-left: 35px;\n}\n#header #main-menu {\n  width: 50%;\n  margin-left: auto;\n  overflow: hidden;\n  position: relative;\n  padding-right: 35px;\n  margin-right: 35px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n#header #main-menu .menu-outer {\n    overflow: hidden;\n}\n#header #main-menu .menu-outer.menu-close .menu-list {\n      -webkit-transform: translateX(100%);\n              transform: translateX(100%);\n}\n#header #main-menu .menu-outer .menu-list {\n      -webkit-transition: all .5s ease-in-out;\n      transition: all .5s ease-in-out;\n}\n#header #main-menu .menu-outer #mobile-menu {\n      width: 100vw;\n      height: 100vh;\n      position: fixed;\n      top: 0;\n      left: 0;\n}\n#header #main-menu .menu-outer #mobile-menu .menu-list {\n        background-color: white;\n}\n#header #main-menu .menu-outer #mobile-menu .menu-title {\n        color: black;\n        padding: 20px;\n        font-size: 22px;\n}\n#header #main-menu .menu-outer #mobile-menu .menu-title.router-link-active {\n          color: #f26e22;\n}\n#header #main-menu .menu-outer #mobile-menu .buger-icon {\n        position: absolute;\n        width: 50px;\n        height: 40px;\n        background: rgba(235, 94, 0, 0.8);\n        right: 23px;\n        top: 28px;\n        z-index: 2;\n}\n#header #main-menu .menu-outer #mobile-menu .buger-icon span {\n          width: 60%;\n          height: 2px;\n          background: white;\n          display: block;\n          margin: 3px 0;\n}\n#header #main-menu .menu-outer .menu-title {\n      display: inline-block;\n      font-size: 15px;\n      font-weight: 500;\n      padding: 0 20px;\n}\n#header #main-menu .menu-outer.menu-shadow .menu-list {\n      background: rgba(0, 0, 0, 0.3);\n}\n", ""]);
+exports.push([module.i, "\n#header .logo {\n  padding-left: 35px;\n}\n#header #main-menu {\n  width: 50%;\n  margin-left: auto;\n  overflow: hidden;\n  position: relative;\n  padding-right: 35px;\n  margin-right: 35px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n#header #main-menu .menu-outer {\n    overflow: hidden;\n}\n#header #main-menu .menu-outer.menu-close .menu-list {\n      -webkit-transform: translateX(100%);\n              transform: translateX(100%);\n}\n#header #main-menu .menu-outer .menu-list {\n      -webkit-transition: all .3s ease-in-out;\n      transition: all .3s ease-in-out;\n}\n#header #main-menu .menu-outer #mobile-menu {\n      width: 100vw;\n      height: 100vh;\n      position: fixed;\n      top: 0;\n      left: 0;\n      -webkit-transition: all .3s;\n      transition: all .3s;\n}\n#header #main-menu .menu-outer #mobile-menu.menu-close {\n        height: 0;\n}\n#header #main-menu .menu-outer #mobile-menu .menu-list {\n        background-color: white;\n        overflow: hidden;\n}\n#header #main-menu .menu-outer #mobile-menu .menu-title {\n        color: black;\n        padding: 20px;\n        font-size: 22px;\n}\n#header #main-menu .menu-outer #mobile-menu .menu-title.router-link-active {\n          color: #f26e22;\n}\n#header #main-menu .menu-outer #mobile-menu .buger-icon {\n        position: absolute;\n        width: 50px;\n        height: 40px;\n        background: rgba(235, 94, 0, 0.8);\n        right: 23px;\n        top: 28px;\n        z-index: 2;\n}\n#header #main-menu .menu-outer #mobile-menu .buger-icon span {\n          width: 60%;\n          height: 2px;\n          background: white;\n          display: block;\n          margin: 3px 0;\n}\n#header #main-menu .menu-outer .menu-title {\n      display: inline-block;\n      font-size: 15px;\n      font-weight: 500;\n      padding: 0 20px;\n}\n#header #main-menu .menu-outer.menu-shadow .menu-list {\n      background: rgba(0, 0, 0, 0.3);\n}\n", ""]);
 
 // exports
 
@@ -54067,6 +54067,10 @@ module.exports = function listToStyles (parentId, list) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
 //
 //
 //
@@ -54209,62 +54213,66 @@ var render = function() {
       1
     ),
     _vm._v(" "),
-    _c("div", { attrs: { id: "mobile-menu" } }, [
-      _c(
-        "span",
-        {
-          staticClass:
-            "buger-icon d-flex flex-column align-items-center justify-content-center",
-          on: {
-            click: function($event) {
-              _vm.open = !_vm.open
+    _c(
+      "div",
+      { class: _vm.open ? "" : "menu-close", attrs: { id: "mobile-menu" } },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "buger-icon d-flex flex-column align-items-center justify-content-center",
+            on: {
+              click: function($event) {
+                _vm.open = !_vm.open
+              }
             }
-          }
-        },
-        [_c("span"), _vm._v(" "), _c("span"), _vm._v(" "), _c("span")]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass:
-            "menu-list d-lg-none d-flex flex-column align-items-center justify-content-center h-100",
-          class: _vm.open ? "" : "fade"
-        },
-        [
-          _c(
-            "router-link",
-            { staticClass: "menu-title", attrs: { to: "/", exact: "" } },
-            [_vm._v("橘色體驗")]
-          ),
-          _vm._v(" "),
-          _c(
-            "router-link",
-            { staticClass: "menu-title", attrs: { to: "/about" } },
-            [_vm._v("關於橘色")]
-          ),
-          _vm._v(" "),
-          _c(
-            "router-link",
-            { staticClass: "menu-title", attrs: { to: "/news" } },
-            [_vm._v("橘色新訊")]
-          ),
-          _vm._v(" "),
-          _c(
-            "router-link",
-            { staticClass: "menu-title", attrs: { to: "/family" } },
-            [_vm._v("橘色家庭")]
-          ),
-          _vm._v(" "),
-          _c(
-            "router-link",
-            { staticClass: "menu-title", attrs: { to: "/contact" } },
-            [_vm._v("聯絡我們")]
-          )
-        ],
-        1
-      )
-    ])
+          },
+          [_c("span"), _vm._v(" "), _c("span"), _vm._v(" "), _c("span")]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "menu-list d-lg-none d-flex flex-column align-items-center justify-content-center h-100",
+            class: _vm.open ? "" : "fade"
+          },
+          [
+            _c(
+              "router-link",
+              { staticClass: "menu-title", attrs: { to: "/", exact: "" } },
+              [_vm._v("橘色體驗")]
+            ),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              { staticClass: "menu-title", attrs: { to: "/about" } },
+              [_vm._v("關於橘色")]
+            ),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              { staticClass: "menu-title", attrs: { to: "/news" } },
+              [_vm._v("橘色新訊")]
+            ),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              { staticClass: "menu-title", attrs: { to: "/family" } },
+              [_vm._v("橘色家庭")]
+            ),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              { staticClass: "menu-title", attrs: { to: "/contact" } },
+              [_vm._v("聯絡我們")]
+            )
+          ],
+          1
+        )
+      ]
+    )
   ])
 }
 var staticRenderFns = []

@@ -112,28 +112,28 @@ export default {
         components: {
             'ex': {
                 template: '<div>'+
-                          '<h2 class="mb-4 text-center"><span class="fs-inherit text-orange">橘色</span> 體驗</h2>'+
+                          '<h2 class="mb-2 mb-md-4 text-center"><span class="fs-inherit text-orange">橘色</span> 體驗</h2>'+
                           '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色體驗</router-link>'+
                           '</div>'
             },
             'pot': {
                 template: '<div>'+
-                          '<h2 class="mb-4 text-center"><span class="fs-inherit text-orange">橘色</span> 鍋物</h2>'+
+                          '<h2 class="mb-2 mb-md-4  text-center"><span class="fs-inherit text-orange">橘色</span> 鍋物</h2>'+
                           '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色鍋物</router-link>'+
                           '</div>'
             },
             'coffee': {
                 template: '<div>'+
-                          '<h2 class="mb-4 text-center"><span class="fs-inherit text-orange">橘色</span> 咖啡</h2>'+
+                          '<h2 class="mb-2 mb-md-4 text-center"><span class="fs-inherit text-orange">橘色</span> 咖啡</h2>'+
                           '<h5 class="mb-4"><span class="fs-inheri">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色咖啡</router-link>'+
                           '</div>'
             },
             'spa': {
                 template: '<div>'+
-                          '<h2 class="mb-4"><span class="fs-inherit text-orange">橘色</span> 舒體</h2>'+
+                          '<h2 class="mb-2 mb-md-4 "><span class="fs-inherit text-orange">橘色</span> 舒體</h2>'+
                           '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色舒體</router-link>'+
                           '</div>'
@@ -364,7 +364,7 @@ export default {
                             transform: rotate(180deg)
                 .circle-option
                     transition: all 2s
-                    transform: rotate(0)
+                    transform: rotate(0) scale(1.2)
                     top: 0
                     &.active
                         opacity: 0
@@ -390,6 +390,7 @@ export default {
                         &.left
                             top: calc(50% - 18px)
                             left: calc(-40px - 18px)
+
                         a
                             word-break: keep-all
                         &.active
@@ -398,8 +399,42 @@ export default {
                             transition-delay: .5s
                     @for $i from 0 through 3
                         &.e_index_#{$i}
-                            transform: rotate($i*(-90deg))
+                            transform: rotate($i*(-90deg)) scale(1.05)
                             a
                                 transition: all .3s 
                                 transform: rotate($i*90deg) !important
+
+    @media only screen and (max-width: 767px)
+        #block-experience 
+            #content-experience 
+                transform: scale(0.55)
+                .experience-inner
+                    h5
+                        span
+                            font-size: 28px
+                            line-height: 45px
+                    a
+                        font-size: 23px !important
+                        letter-spacing: 3px
+                .experience-circle 
+                    .circle-option 
+                        .text-circle-option
+                            a
+                                font-size: 22px
+                            &.top
+                                top: calc(-10px - 18px - 20px)
+                                left: calc(50% - 18px)
+                            &.bottom
+                                bottom: calc(-10px - 18px - 20px)
+                                left: calc(50% - 18px)
+                            &.right
+                                top: calc(50% - 18px)
+                                right: calc(-10px - 18px - 20px)
+                            &.left
+                                top: calc(50% - 18px)
+                                left: calc(-10px - 18px - 20px)
+                        @for $i from 0 through 3
+                            &.e_index_#{$i}
+                                a
+                                    transform: rotate($i*90deg) scale(1.7) !important
 </style>
