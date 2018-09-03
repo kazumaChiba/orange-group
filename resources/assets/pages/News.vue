@@ -259,4 +259,5 @@ export default {
         .banner-title
             font-size: 90px
             font-weight: 300
+
 </style>

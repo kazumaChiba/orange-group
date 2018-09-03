@@ -95,7 +95,6 @@
 
             .container
                 z-index: 2
-                padding: 100px 15px
                 .content-brands
                     .info-brands
                         width: 300px

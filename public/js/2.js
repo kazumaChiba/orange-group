@@ -140,7 +140,7 @@ exports = module.exports = __webpack_require__(47)(false);
 
 
 // module
-exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n}\n#footer .footer .footer-info {\n      margin-bottom: 100px;\n      line-height: 25px;\n      font-size: 14px;\n      font-weight: 100;\n}\n#footer .footer .footer-info div {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#footer .footer .footer-info p {\n        margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n        font-size: 18px;\n        font-weight: 100;\n        line-height: 30px;\n}\n#footer .footer.footer-join {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer.footer-join:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: rgba(0, 0, 0, 0.8);\n        top: 0px;\n}\n#footer .footer .btn-orange:hover {\n      background: white;\n      color: #f26d23 !important;\n      font-weight: 500;\n}\n", ""]);
+exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n}\n#footer .footer .col-contact-us {\n      -webkit-box-flex: 100%;\n          -ms-flex: 100%;\n              flex: 100%;\n}\n#footer .footer .footer-info {\n      margin-bottom: 100px;\n      line-height: 25px;\n      font-size: 14px;\n      font-weight: 100;\n}\n#footer .footer .footer-info div {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#footer .footer .footer-info p {\n        margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n        font-size: 18px;\n        font-weight: 100;\n        line-height: 30px;\n}\n#footer .footer.footer-join {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer.footer-join:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: rgba(0, 0, 0, 0.8);\n        top: 0px;\n}\n#footer .footer .btn-orange:hover {\n      background: white;\n      color: #f26d23 !important;\n      font-weight: 500;\n}\n@media only screen and (max-width: 991px) {\n#app #footer .container .join-us-slogan {\n    line-height: 45px;\n    margin-bottom: 50px;\n}\n#app #footer .container .join-us-slogan span {\n      font-size: 28px;\n}\n#app #footer .logo {\n    height: 100px;\n}\n#app .btn-orange.fat {\n    padding: 20px 45px;\n}\n}\n@media only screen and (max-width: 420px) {\n#app #footer {\n    height: auto;\n}\n#app #footer .logo {\n      height: 70px;\n}\n#app #footer .container {\n      padding: 50px 0;\n}\n#app #footer .container .join-us-slogan {\n        font-size: 18px;\n        line-height: 30px;\n        margin-bottom: 30px;\n}\n#app #footer .container .join-us-slogan span {\n          font-size: 18px;\n}\n#app #footer .footer {\n      margin-bottom: 0 !important;\n}\n#app #footer .footer p {\n        font-size: 14px;\n}\n#app #footer .btn-orange.fat {\n      padding: 12px 30px;\n      font-size: 15px;\n}\n}\n", ""]);
 
 // exports
 
@@ -253,7 +253,7 @@ var render = function() {
               "div",
               {
                 staticClass:
-                  "row d-flex justify-content-between align-items-center"
+                  "row d-flex justify-content-between align-items-center flex-column flex-lg-row"
               },
               [
                 _vm._m(0),
@@ -297,54 +297,72 @@ var staticRenderFns = [
         "div",
         { staticClass: "d-flex flex-column justify-content-end h-100" },
         [
-          _c("div", { staticClass: "row mb-5 pb-5" }, [
-            _c("div", { staticClass: "col" }, [
-              _c("div", { staticClass: "footer-text-left text-left pt-5" }, [
-                _c("div", { staticClass: "d-inline-block text-center" }, [
-                  _c(
-                    "p",
-                    { staticClass: "text-orange footer-info-title mb-4" },
-                    [_vm._v("聯絡我們")]
-                  ),
-                  _vm._v(" "),
-                  _c("p", [_vm._v("台北市大安區仁愛路四段37號3樓之B")]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v("Email:  service@orange.co"),
-                    _c("br"),
-                    _vm._v("Phone:  02-2711-4636"),
-                    _c("br"),
-                    _vm._v("Fax:  02-2711-4638")
-                  ])
-                ])
+          _c(
+            "div",
+            { staticClass: "row mb-5 pb-5 flex-wrap-reverse flex-lg-row" },
+            [
+              _c("div", { staticClass: "col col-contact-us" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "footer-text-left text-center text-lg-left pt-5"
+                  },
+                  [
+                    _c("div", { staticClass: "d-inline-block text-center" }, [
+                      _c(
+                        "p",
+                        { staticClass: "text-orange footer-info-title mb-4" },
+                        [_vm._v("聯絡我們")]
+                      ),
+                      _vm._v(" "),
+                      _c("p", [_vm._v("台北市大安區仁愛路四段37號3樓之B")]),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v("Email:  service@orange.co"),
+                        _c("br"),
+                        _vm._v("Phone:  02-2711-4636"),
+                        _c("br"),
+                        _vm._v("Fax:  02-2711-4638")
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col" }, [
+                _c("img", {
+                  staticClass: "logo",
+                  attrs: { src: "/images/index_logo.png" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "footer-text-right text-center text-lg-right pt-0 pt-lg-5"
+                  },
+                  [
+                    _c("div", { staticClass: "d-inline-block text-center" }, [
+                      _c(
+                        "p",
+                        { staticClass: "text-orange footer-info-title mb-4" },
+                        [_vm._v("橘色精神")]
+                      ),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "footer-info-subtitle" }, [
+                        _vm._v("用心 · 貼心 · 安心"),
+                        _c("br"),
+                        _vm._v("信心 · 一心 · 同理心")
+                      ])
+                    ])
+                  ]
+                )
               ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col" }, [
-              _c("img", {
-                staticClass: "logo",
-                attrs: { src: "/images/index_logo.png" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col" }, [
-              _c("div", { staticClass: "footer-text-right text-right pt-5" }, [
-                _c("div", { staticClass: "d-inline-block text-center" }, [
-                  _c(
-                    "p",
-                    { staticClass: "text-orange footer-info-title mb-4" },
-                    [_vm._v("橘色精神")]
-                  ),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "footer-info-subtitle" }, [
-                    _vm._v("用心 · 貼心 · 安心"),
-                    _c("br"),
-                    _vm._v("信心 · 一心 · 同理心")
-                  ])
-                ])
-              ])
-            ])
-          ]),
+            ]
+          ),
           _vm._v(" "),
           _c(
             "div",
@@ -4616,7 +4634,7 @@ exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slic
 exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css);", ""]);
 
 // module
-exports.push([module.i, "\n#app #block-brands .bg-black-cover {\n  width: 0;\n  height: 100vh;\n  -webkit-transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n  transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n  background-position: center;\n}\n#app #block-brands .bg-black-cover.select {\n    -webkit-transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n    width: 105vw;\n}\n#app #block-brands .container {\n  z-index: 2;\n  padding: 100px 15px;\n}\n#app #block-brands .container .content-brands .info-brands {\n    width: 300px;\n    height: 300px;\n    border: 1px solid white;\n    padding: 0 40px;\n    font-size: 30px;\n    background-size: contain;\n}\n#app #block-brands .container .content-brands .info-brands:before {\n      content: \"\";\n      position: absolute;\n      background: rgba(242, 108, 35, 0.4);\n      width: 100%;\n      height: 100%;\n      background: rgba(242, 108, 35, 0.4);\n      border-radius: 100%;\n      left: 0;\n}\n#app #block-brands .container .text-brands {\n    font-size: 30px;\n    letter-spacing: 20px;\n    line-height: 45px;\n    font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n      letter-spacing: 20px;\n}\n@media only screen and (max-width: 991px) {\n#app .slick-brands {\n    margin: 50px 0;\n}\n}\n@media only screen and (max-width: 768px) {\n#app #block-brands .container .content-brands .info-brands {\n    width: 250px;\n    height: 250px;\n    margin-bottom: 50px;\n}\n}\n", ""]);
+exports.push([module.i, "\n#app #block-brands .bg-black-cover {\n  width: 0;\n  height: 100vh;\n  -webkit-transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n  transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n  background-position: center;\n}\n#app #block-brands .bg-black-cover.select {\n    -webkit-transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n    width: 105vw;\n}\n#app #block-brands .container {\n  z-index: 2;\n}\n#app #block-brands .container .content-brands .info-brands {\n    width: 300px;\n    height: 300px;\n    border: 1px solid white;\n    padding: 0 40px;\n    font-size: 30px;\n    background-size: contain;\n}\n#app #block-brands .container .content-brands .info-brands:before {\n      content: \"\";\n      position: absolute;\n      background: rgba(242, 108, 35, 0.4);\n      width: 100%;\n      height: 100%;\n      background: rgba(242, 108, 35, 0.4);\n      border-radius: 100%;\n      left: 0;\n}\n#app #block-brands .container .text-brands {\n    font-size: 30px;\n    letter-spacing: 20px;\n    line-height: 45px;\n    font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n      letter-spacing: 20px;\n}\n@media only screen and (max-width: 991px) {\n#app .slick-brands {\n    margin: 50px 0;\n}\n}\n@media only screen and (max-width: 768px) {\n#app #block-brands .container .content-brands .info-brands {\n    width: 250px;\n    height: 250px;\n    margin-bottom: 50px;\n}\n}\n", ""]);
 
 // exports
 
@@ -4630,7 +4648,6 @@ exports.push([module.i, "\n#app #block-brands .bg-black-cover {\n  width: 0;\n  
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_slick__ = __webpack_require__(251);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_slick___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_slick__);
-//
 //
 //
 //
@@ -5199,7 +5216,7 @@ exports = module.exports = __webpack_require__(47)(false);
 
 
 // module
-exports.push([module.i, "\n#block-news .fp-tableCell {\n  height: auto !important;\n}\n#block-news > div {\n  z-index: 3;\n  position: relative;\n}\n#block-news .news-list {\n  -webkit-transition: all .5s;\n  transition: all .5s;\n}\n#block-news .news-list .block-list {\n    width: 20%;\n}\n#block-news .news-list .block-list.center {\n      width: 50%;\n}\n@media only screen and (max-width: 991px) {\n#app #block-news .main-title .text-orange {\n    color: #f26e22 !important;\n}\n#app #block-news .news-categories {\n    margin-top: 0 !important;\n}\n}\n", ""]);
+exports.push([module.i, "\n#block-news .fp-tableCell {\n  height: auto !important;\n}\n#block-news > div {\n  z-index: 3;\n  position: relative;\n}\n#block-news .news-list {\n  -webkit-transition: all .5s;\n  transition: all .5s;\n}\n#block-news .news-list .block-list {\n    width: 20%;\n}\n#block-news .news-list .block-list.center {\n      width: 50%;\n}\n@media only screen and (max-width: 991px) {\n.section-pd {\n    padding: 0;\n}\n#app #block-news {\n    padding: 80px 0px;\n}\n#app #block-news .main-title .text-orange {\n      color: #f26e22 !important;\n}\n#app #block-news .news-categories {\n      margin-top: 0 !important;\n      display: none !important;\n}\n#app #block-news .news-list {\n      padding: 0 38px;\n}\n#app #block-news .news-list .block-list {\n        width: auto;\n}\n#app #block-news .news-list .block-list:last-child {\n          display: none;\n}\n#app #block-news .news-list .block-list.beside .news-item {\n          -webkit-box-flex: 1;\n              -ms-flex: 1;\n                  flex: 1;\n}\n#app #block-news .news-list .block-list.beside .news-item:first-child {\n            margin-right: 5px;\n}\n#app #block-news .news-list .block-list.beside .news-item:last-child {\n            margin-left: 5px;\n}\n}\n", ""]);
 
 // exports
 
@@ -5416,7 +5433,7 @@ var render = function() {
         "transition-group",
         {
           staticClass:
-            "news-list d-flex flex-column flex-wrap align-items-center",
+            "news-list-outer d-flex flex-column flex-wrap align-items-center",
           attrs: { name: "fade", tag: "div" }
         },
         _vm._l(_vm.viewIndex + 1, function(n, $groupIndex) {
@@ -5424,14 +5441,15 @@ var render = function() {
             "div",
             {
               key: $groupIndex,
-              staticClass: "news-list d-flex justify-content-between w-100"
+              staticClass:
+                "news-list d-flex flex-lg-row flex-column-reverse flex-lg-column justify-content-between w-100 "
             },
             [
               _c(
                 "div",
                 {
                   staticClass:
-                    "block-list beside flex-column justify-content-between"
+                    "block-list beside flex-row d-flex justify-content-between"
                 },
                 _vm._l(
                   _vm.newsItems.slice(_vm.viewIndex, _vm.viewIndex + 2),

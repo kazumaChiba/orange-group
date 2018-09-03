@@ -2,7 +2,7 @@
     <div id="footer" class="section text-white text-center bg-black-cover position-relative d-flex flex-column justify-content-center" style="background-image:url('/images/footer.png')">
         <div class="footer footer-join position-relative d-flex align-items-center justify-content-between w-100">
             <div class="container">
-                <div class="row d-flex justify-content-between align-items-center">
+                <div class="row d-flex justify-content-between align-items-center flex-column flex-lg-row">
                     <div class="join-us-slogan text-left">
                         不僅僅只是台灣最棒的餐飲集團<br>
                         <span class="text-orange">還是實現自我未來的大家庭</span>
@@ -13,9 +13,9 @@
         </div>
         <div class="footer container">
             <div class="d-flex flex-column justify-content-end h-100">
-                <div class="row mb-5 pb-5">
-                    <div class="col">
-                        <div class="footer-text-left text-left pt-5">
+                <div class="row mb-5 pb-5 flex-wrap-reverse flex-lg-row">
+                    <div class="col col-contact-us">
+                        <div class="footer-text-left text-center text-lg-left pt-5">
                             <div class="d-inline-block text-center">
                                 <p class="text-orange footer-info-title mb-4">聯絡我們</p>
                                 <p>台北市大安區仁愛路四段37號3樓之B</p>
@@ -27,7 +27,7 @@
                         <img class="logo" src="/images/index_logo.png">
                     </div>
                     <div class="col">
-                        <div class="footer-text-right text-right pt-5">
+                        <div class="footer-text-right text-center text-lg-right pt-0 pt-lg-5">
                             <div class="d-inline-block text-center">
                                 <p class="text-orange footer-info-title mb-4">橘色精神</p>
                                 <p class="footer-info-subtitle">用心 · 貼心 · 安心<br>信心 · 一心 · 同理心</p>
@@ -104,6 +104,8 @@ export default {
                 font-size: 20px
         .footer
             flex: 2
+            .col-contact-us
+                flex: 100%
             .footer-info
                 margin-bottom: 100px
                 line-height: 25px
@@ -133,4 +135,43 @@ export default {
                     color: #f26d23 !important
                     font-weight: 500
 
+    @media only screen and (max-width: 991px)
+        #app 
+            #footer 
+                .container 
+                    .join-us-slogan 
+                        line-height: 45px
+                        margin-bottom: 50px
+                        span
+                            font-size: 28px
+                .logo
+                    height: 100px
+            
+            .btn-orange
+                &.fat
+                    padding: 20px 45px
+
+    @media only screen and (max-width: 420px)
+        #app 
+            #footer 
+                height: auto
+                .logo
+                    height: 70px
+                .container 
+                    padding: 50px 0
+                    .join-us-slogan 
+                        font-size: 18px
+                        line-height: 30px
+                        margin-bottom: 30px
+                        span
+                            font-size: 18px
+                        
+                .footer
+                    margin-bottom: 0 !important
+                    p
+                        font-size: 14px
+                .btn-orange
+                    &.fat
+                        padding: 12px 30px
+                        font-size: 15px
 </style>

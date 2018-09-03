@@ -14,12 +14,12 @@
         <transition-group
             name="fade"
             tag="div"
-            class="news-list d-flex flex-column flex-wrap align-items-center">
+            class="news-list-outer d-flex flex-column flex-wrap align-items-center">
             <div
-                class="news-list d-flex justify-content-between w-100"
+                class="news-list d-flex flex-lg-row flex-column-reverse flex-lg-column justify-content-between w-100 "
                 v-for="(n,$groupIndex) in viewIndex+1"
                 :key="$groupIndex">
-                    <div class="block-list beside flex-column justify-content-between">
+                    <div class="block-list beside flex-row d-flex justify-content-between">
                         <div
                                 class="news-item"
                                 v-for="(item,$index) in newsItems.slice(viewIndex,viewIndex+2)"
@@ -192,13 +192,29 @@ export default {
                 width: 50%
 
 @media only screen and (max-width: 991px)
+    .section-pd
+        padding: 0
     #app 
         #block-news
+            padding: 80px 0px
             .main-title 
                 .text-orange
                     color: #f26e22 !important
             .news-categories
                 margin-top: 0 !important
+                display: none !important
             .news-list 
+                padding: 0 38px
                 .block-list
+                    width: auto
+                    &:last-child
+                        display: none
+                    &.beside
+                        .news-item
+                            flex: 1
+                            &:first-child
+                                margin-right: 5px
+                            &:last-child
+                                margin-left: 5px
+
 </style>
