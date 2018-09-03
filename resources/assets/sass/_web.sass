@@ -179,9 +179,9 @@ html,body,#app,#block-main
                     text-decoration: none
                     transition: color .3s
 
-        &.active
-            z-index: 0
-            transition-delay: 1s
+        // &.active
+        //     z-index: 0
+        //     transition-delay: 1s
         .logo
             position: absolute
             left: 0
@@ -374,13 +374,22 @@ html,body,#app,#block-main
     transition: all .5s
     opacity: 0 !important
 
-.d-none
-    display: none !important
-
 /* Responsive */
+
 @media only screen and (max-width: 1200px)
     #fp-nav
         display: none !important
+
+@media only screen and (max-width: 991px)
+    #app
+        .main-title
+            font-size: 28px
+            span
+                color: white !important
+                letter-spacing: 5px
+        .sub-title
+            font-size: 12px
+
 
 
 

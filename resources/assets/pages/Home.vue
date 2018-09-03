@@ -156,7 +156,11 @@
             	console.log(direction)
 		        //fullpage_api.setAllowScrolling(true)
 		        //console.log(direction);
-	        }
+            },
+            handleResize(){
+                fullpage_api.reBuild();
+            }
+            
         },
         components: {
 	        VueScrollbar,
@@ -168,6 +172,12 @@
             BlockFoods,
             BlockFooter,
         },
+        ready: function () {
+            window.addEventListener('resize', this.handleResize)
+        },
+        beforeDestroy: function () {
+            window.removeEventListener('resize', this.handleResize)
+        }
         
     }
 </script>

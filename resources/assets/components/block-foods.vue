@@ -7,7 +7,7 @@
                     :class="{active : bgTransition}"
                 ></div>
              </div>
-            <div class="content-food left-content d-md-flex flex-column justify-content-between position-relative m-auto">
+            <div class="content-food left-content d-md-flex flex-column justify-content-between justify-content-md-center position-relative m-auto">
                 <div class="mb-5" :class="{fade: addTransition}">
                     <p class="line-top text-size-2" v-html="foodItems[food_index].subTitle"></p>
                     <h1 class="big_title">{{foodItems[food_index].title}}</h1>
@@ -23,19 +23,19 @@
                     ></div>
                  </div>
             </div>
-            <div class="content-food right-content d-flex flex-column align-items-center justify-content-center position-relative text-md-left text-center">
+            <div class="content-food right-content d-flex flex-column justify-content-center position-relative text-md-left text-center">
                 <svg class="loader" :class="{active : addTransition}">
                     <circle class="internal-circle" cx="30%" cy="55%" r="450"></circle>
                 </svg>
-                <h3 class="main-title text-black text-uppercase">
+                <h3 class="main-title text-black text-uppercase w-100">
                     <span class="fs-inherit text-orange">橘色</span>價值
                 </h3>
-                <span class="sub-title text-black">about value</span>
+                <span class="sub-title text-black w-100">about value</span>
                 <div class="food-info-circle"></div>
                 <div class="food-info-inner d-flex flex-column justify-content-center p-5">
                     <div :class="{fade : addTransition}" v-html="foodItems[food_index].content"></div>
                 </div>
-                <div class="d-flex mt-5 w-100 justify-content-between">
+                <div class="d-flex mt-5 w-100 justify-content-between justify-content-md-center">
                     <div
                         v-for="(item , $index) in foodItems"
                         :key="$index" 
@@ -229,24 +229,6 @@
                         display: none
 
     @media only screen and (max-width: 991px)
-        
-        // #fp-nav.fp-right
-        //     right: unset
-        //     left: 20px
-        //     ul 
-        //         li 
-        //             .fp-tooltip.fp-right
-        //                 color: transparent !important
-        //                 padding: 0
-        //                 width: 10px
-        //                 height: 10px
-        //                 border-radius: 100%
-        //                 border: 1px solid white
-        //                 background: transparent
-        //             .active
-        //                 &+.fp-tooltip.fp-right
-        //                     background: #f26b23
-        //                     border-color: #f26b23 
         #app 
             #block-foods 
                 .bg-transition
@@ -256,6 +238,7 @@
                         h3 , span
                             color: white !important
                             letter-spacing: 5px
+                            text-align: center
                         h3
                             font-size: 28px
                             
@@ -267,6 +250,7 @@
                         &.right-content
                             background: transparent
                             padding: 90px 20px 23px 20px
+                            align-items: center
                             .more-food-info
                                 display: block
                             .food-info-inner
@@ -278,13 +262,24 @@
                                 .text-food-info
                                     font-size: 12px
                         .more-food-info
-                            margin-right: 0
+                            margin: 0 20px
                             width: 68px
                             height: 68px
                             border: 1px solid #f26b23
+                            &:last-child
+                                margin-right: 0
                             span
                                 left: 0
                                 bottom: -25px
                                 font-size: 12px
                                 letter-spacing: 2px
+    
+    @media only screen and (max-width: 420px)
+        #app 
+            #block-foods 
+                .block-food-body 
+                    .content-food 
+                        &.right-content
+                            padding: 25px 20px
+
 </style>

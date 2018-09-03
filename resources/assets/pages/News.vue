@@ -1,6 +1,6 @@
 <template>
     <div class="position-relative">
-        <banner title="<span class='text-orange'>橘色</span>新訊" img="/images/slideshow_1.jpg"></banner>
+        <banner title="<span class='text-orange'>橘色</span>新訊" img="/images/banner_news.png"></banner>
         <div id="block-news" class="news-body position-relative">
             <div id="block-news-lists" class="position-relative">
                 <div id="block-news-filter">
@@ -68,7 +68,7 @@
                                 v-if="item.category == newsCategories[newsIndex] || newsIndex == 0"
                             >
                                 <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + item.background + ')'">
-                                    <router-link :to="'/news/detail'" class="btn-border">了解更多</router-link>
+                                    <router-link :to="'/news/detail/'+$index" class="btn-border">了解更多</router-link>
                                 </div>
                                 <div class="news-content text-center">
                                     <div>

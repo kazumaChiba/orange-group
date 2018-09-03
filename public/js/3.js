@@ -8,7 +8,7 @@ function injectStyle (ssrContext) {
   if (disposed) return
   __webpack_require__(470)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(48)
 /* script */
 var __vue_script__ = __webpack_require__(472)
 /* template */
@@ -60,7 +60,7 @@ function injectStyle (ssrContext) {
   if (disposed) return
   __webpack_require__(235)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(48)
 /* script */
 var __vue_script__ = __webpack_require__(237)
 /* template */
@@ -114,7 +114,7 @@ var content = __webpack_require__(236);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(80)("b8d6fad2", content, false, {});
+var update = __webpack_require__(79)("b8d6fad2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -134,7 +134,7 @@ if(false) {
 /***/ 236:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(47)(false);
 // imports
 
 
@@ -401,7 +401,7 @@ function injectStyle (ssrContext) {
   if (disposed) return
   __webpack_require__(244)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(48)
 /* script */
 var __vue_script__ = __webpack_require__(246)
 /* template */
@@ -455,7 +455,7 @@ var content = __webpack_require__(245);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(80)("822c5f64", content, false, {});
+var update = __webpack_require__(79)("822c5f64", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -475,7 +475,7 @@ if(false) {
 /***/ 245:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(47)(false);
 // imports
 
 
@@ -651,7 +651,7 @@ var content = __webpack_require__(471);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(80)("7ed73c01", content, false, {});
+var update = __webpack_require__(79)("7ed73c01", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -671,7 +671,7 @@ if(false) {
 /***/ 471:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(47)(false);
 // imports
 
 
@@ -688,7 +688,7 @@ exports.push([module.i, "\n#header {\n  top: 0;\n}\n#block-contact #block-contac
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_banner__ = __webpack_require__(243);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_banner___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_components_block_banner__);
@@ -751,17 +751,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 intro: '',
                 name: 'extension_1'
             }, {
-                img: '/images/index_logo.png',
+                img: '/images/icon_m1cafe.png',
                 title: 'M ONE CAFE',
                 intro: '',
                 name: 'm_one_cafe'
             }, {
-                img: '/images/index_logo.png',
+                img: '/images/icon_m1spa.png',
                 title: 'M ONE SPA',
                 intro: '',
                 name: 'm_one_spa'
             }, {
-                img: '/images/index_logo.png',
+                img: '/images/icon_sakura.png',
                 title: 'SAKURA SPA',
                 intro: '',
                 name: 'sakura_spa'
@@ -792,7 +792,7 @@ function injectStyle (ssrContext) {
   if (disposed) return
   __webpack_require__(474)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(48)
 /* script */
 var __vue_script__ = __webpack_require__(476)
 /* template */
@@ -846,7 +846,7 @@ var content = __webpack_require__(475);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(80)("3c4d6a73", content, false, {});
+var update = __webpack_require__(79)("3c4d6a73", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -866,7 +866,7 @@ if(false) {
 /***/ 475:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(47)(false);
 // imports
 
 
@@ -1047,7 +1047,7 @@ function injectStyle (ssrContext) {
   if (disposed) return
   __webpack_require__(478)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(48)
 /* script */
 var __vue_script__ = __webpack_require__(480)
 /* template */
@@ -1101,7 +1101,7 @@ var content = __webpack_require__(479);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(80)("682b8be5", content, false, {});
+var update = __webpack_require__(79)("682b8be5", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -1121,7 +1121,7 @@ if(false) {
 /***/ 479:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(47)(false);
 // imports
 
 
@@ -1531,7 +1531,7 @@ var render = function() {
       _c("banner", {
         attrs: {
           title: "聯絡<span class='text-orange'>我們</span>",
-          img: "/images/slideshow_1.jpg"
+          img: "/images/banner_contact.png"
         }
       }),
       _vm._v(" "),

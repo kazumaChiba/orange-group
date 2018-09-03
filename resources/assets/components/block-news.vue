@@ -8,12 +8,13 @@
                 :class="(newsIndex == $index) ? 'active' : ''"
                 @click="newsIndex = $index"
             >
+                {{item}}
             </div>
         </div>
         <transition-group
             name="fade"
             tag="div"
-            class="news-list d-flex flex-column flex-wrap align-items-center">-->
+            class="news-list d-flex flex-column flex-wrap align-items-center">
             <div
                 class="news-list d-flex justify-content-between w-100"
                 v-for="(n,$groupIndex) in viewIndex+1"
@@ -164,7 +165,7 @@ export default {
                     link: '/'
                 },
             ],
-            newsCategories: ['全部新訊','橘色涮涮屋','Extension 1 by 橘色','M One Cafe','M One Spa','Sakura Spa'],
+            newsCategories: ['全部新訊','橘色涮涮屋','Extension 1 by 橘色'],
             newsIndex: 0,
             viewIndex: 0,
         }
@@ -189,4 +190,15 @@ export default {
             width: 20%
             &.center
                 width: 50%
+
+@media only screen and (max-width: 991px)
+    #app 
+        #block-news
+            .main-title 
+                .text-orange
+                    color: #f26e22 !important
+            .news-categories
+                margin-top: 0 !important
+            .news-list 
+                .block-list
 </style>

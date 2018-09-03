@@ -117,7 +117,7 @@
             #header 
                 .logo 
                     img
-                        width: 70px
+                        width: 50px
                 #main-menu
                     .menu-outer 
                         .menu-list

@@ -6,13 +6,13 @@ webpackJsonp([12],{
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(456)
+  __webpack_require__(462)
 }
 var normalizeComponent = __webpack_require__(49)
 /* script */
-var __vue_script__ = __webpack_require__(458)
+var __vue_script__ = __webpack_require__(464)
 /* template */
-var __vue_template__ = __webpack_require__(459)
+var __vue_template__ = __webpack_require__(465)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -193,6 +193,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -247,56 +269,7 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "footer container" }, [
-        _c(
-          "div",
-          { staticClass: "row d-flex flex-column justify-content-end h-100" },
-          [
-            _vm._m(1),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "position-relative d-flex flex-column align-items-center justify-content-center w-100"
-              },
-              [
-                _c("div", { staticClass: "footer-social" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "footer-icons mr-3 ml-3",
-                      attrs: { href: "#" }
-                    },
-                    [
-                      _c("font-awesome-icon", {
-                        attrs: { icon: ["fab", "facebook-f"] }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "footer-icons mr-3 ml-3",
-                      attrs: { href: "#" }
-                    },
-                    [
-                      _c("font-awesome-icon", {
-                        attrs: { icon: ["fab", "twitter"] }
-                      })
-                    ],
-                    1
-                  )
-                ]),
-                _vm._v(" "),
-                _vm._m(2)
-              ]
-            )
-          ]
-        )
-      ])
+      _vm._m(1)
     ]
   )
 }
@@ -318,77 +291,95 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "footer-info position-relative d-flex justify-content-between align-items-center w-100"
-      },
-      [
-        _c("div", { staticClass: "footer-text-left text-left" }, [
-          _c("div", { staticClass: "d-inline-block text-center" }, [
-            _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
-              _vm._v("聯絡我們")
+    return _c("div", { staticClass: "footer container" }, [
+      _c(
+        "div",
+        { staticClass: "d-flex flex-column justify-content-end h-100" },
+        [
+          _c("div", { staticClass: "row mb-5 pb-5" }, [
+            _c("div", { staticClass: "col" }, [
+              _c("div", { staticClass: "footer-text-left text-left pt-5" }, [
+                _c("div", { staticClass: "d-inline-block text-center" }, [
+                  _c(
+                    "p",
+                    { staticClass: "text-orange footer-info-title mb-4" },
+                    [_vm._v("聯絡我們")]
+                  ),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("台北市大安區仁愛路四段37號3樓之B")]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v("Email:  service@orange.co"),
+                    _c("br"),
+                    _vm._v("Phone:  02-2711-4636"),
+                    _c("br"),
+                    _vm._v("Fax:  02-2711-4638")
+                  ])
+                ])
+              ])
             ]),
             _vm._v(" "),
-            _c("p", [_vm._v("台北市大安區仁愛路四段37號3樓之B")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v("Email:  service@orange.co"),
-              _c("br"),
-              _vm._v("Phone:  02-2711-4636"),
-              _c("br"),
-              _vm._v("Fax:  02-2711-4638")
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("img", {
-          staticClass: "logo",
-          attrs: { src: "/images/index_logo.png" }
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "footer-text-right text-right" }, [
-          _c("div", { staticClass: "d-inline-block text-center" }, [
-            _c("p", { staticClass: "text-orange footer-info-title mb-4" }, [
-              _vm._v("橘色精神")
+            _c("div", { staticClass: "col" }, [
+              _c("img", {
+                staticClass: "logo",
+                attrs: { src: "/images/index_logo.png" }
+              })
             ]),
             _vm._v(" "),
-            _c("p", { staticClass: "footer-info-subtitle" }, [
-              _vm._v("用心 · 貼心 · 安心"),
-              _c("br"),
-              _vm._v("信心 · 一心 · 同理心")
+            _c("div", { staticClass: "col" }, [
+              _c("div", { staticClass: "footer-text-right text-right pt-5" }, [
+                _c("div", { staticClass: "d-inline-block text-center" }, [
+                  _c(
+                    "p",
+                    { staticClass: "text-orange footer-info-title mb-4" },
+                    [_vm._v("橘色精神")]
+                  ),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "footer-info-subtitle" }, [
+                    _vm._v("用心 · 貼心 · 安心"),
+                    _c("br"),
+                    _vm._v("信心 · 一心 · 同理心")
+                  ])
+                ])
+              ])
             ])
-          ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "p",
-      {
-        staticClass:
-          "footer position-relative w-100 text-size-1 d-flex align-items-end justify-content-center",
-        attrs: { id: "copyright" }
-      },
-      [
-        _vm._v("2018 "),
-        _c("a", { staticClass: "link-orange" }, [_vm._v(" 橘色涮涮屋 ")]),
-        _vm._v(" 版權所有. Designed by "),
-        _c(
-          "a",
-          {
-            staticClass: "link-orange",
-            attrs: { href: "www.daydream-lab.com" }
-          },
-          [_vm._v("Daydream Lab")]
-        )
-      ]
-    )
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "position-relative d-flex flex-column align-items-center justify-content-center w-100 pt-4"
+            },
+            [
+              _c(
+                "p",
+                {
+                  staticClass:
+                    "footer mb-5 position-relative w-100 text-size-1 d-flex align-items-end justify-content-center",
+                  attrs: { id: "copyright" }
+                },
+                [
+                  _vm._v("2018 "),
+                  _c("a", { staticClass: "link-orange" }, [
+                    _vm._v(" 橘色涮涮屋 ")
+                  ]),
+                  _vm._v(" 版權所有. Designed by "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "link-orange",
+                      attrs: { href: "www.daydream-lab.com" }
+                    },
+                    [_vm._v("Daydream Lab")]
+                  )
+                ]
+              )
+            ]
+          )
+        ]
+      )
+    ])
   }
 ]
 render._withStripped = true
@@ -650,13 +641,13 @@ if (false) {
 
 /***/ }),
 
-/***/ 456:
+/***/ 462:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(457);
+var content = __webpack_require__(463);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -677,7 +668,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 457:
+/***/ 463:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(48)(false);
@@ -692,7 +683,7 @@ exports.push([module.i, "\n@charset \"UTF-8\";\n#block-news-item {\n  height: 95
 
 /***/ }),
 
-/***/ 458:
+/***/ 464:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -805,12 +796,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     components: {
         MenuHeader: __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header___default.a,
         BlockFooter: __WEBPACK_IMPORTED_MODULE_2_components_block_footer___default.a
+    },
+    watch: {
+        $route: function $route(to, from) {
+            this.init();
+        }
     }
 });
 
 /***/ }),
 
-/***/ 459:
+/***/ 465:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {

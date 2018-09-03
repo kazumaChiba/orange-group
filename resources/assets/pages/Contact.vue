@@ -1,6 +1,6 @@
 <template>
     <div id="block-contact">
-        <banner title="聯絡<span class='text-orange'>我們</span>" img="/images/slideshow_1.jpg"></banner>
+        <banner title="聯絡<span class='text-orange'>我們</span>" img="/images/banner_contact.png"></banner>
         <div id="block-contact-brands" class="position-relative">
             <div class="container">
                 <div class="row">
@@ -56,19 +56,19 @@ export default {
                     name: 'extension_1',
                 },
                 {
-                    img: '/images/index_logo.png',
+                    img: '/images/icon_m1cafe.png',
                     title: 'M ONE CAFE',
                     intro: '',
                     name: 'm_one_cafe',
                 },
                 {
-                    img: '/images/index_logo.png',
+                    img: '/images/icon_m1spa.png',
                     title: 'M ONE SPA',
                     intro: '',
                     name: 'm_one_spa',
                 },
                 {
-                    img: '/images/index_logo.png',
+                    img: '/images/icon_sakura.png',
                     title: 'SAKURA SPA',
                     intro: '',
                     name: 'sakura_spa',

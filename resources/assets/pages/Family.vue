@@ -252,6 +252,7 @@ export default {
             .slide-text
                 font-size: 18px
                 bottom: 18vh
+                cursor: pointer
                 &:before , &:after
                     content: ""
                     position: absolute

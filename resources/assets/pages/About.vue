@@ -1,6 +1,6 @@
 <template>
     <div id="block-about">
-        <banner title="關於<span class='text-orange'>橘色</span>" img="/images/slideshow_1.jpg"></banner>
+        <banner title="關於<span class='text-orange'>橘色</span>" img="/images/banner_about.png"></banner>
         <div id="about-tabs" class="container">
             <div class="about-tabs-body row container pl-0 pr-0 justify-content-between m-auto">
                 <a class="tab text-center active" data-target = '#block-secret'>橘色秘密</a>
