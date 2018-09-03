@@ -23,24 +23,14 @@
                     <span class="btn-orange"  @click="brandIndex = 0; startAnimate('500')">橘色涮涮屋</span>
                     <div 
                         class="info-brands border-radius-100 d-flex flex-column justify-content-center text-left position-relative"
-                        :style="'background-image: url(' + brandItems[brandIndex].logo + ')'">    
-                    >
-                        <p
-                            class="position-relative"
-                            :class="{'fade' : addTransition}">
-                            {{brandItems[brandIndex].title}}
-                        </p>
-                        <div class="position-relative d-flex text-size-3 justify-content-center" :class="{'fade' : addTransition}">
-                            <router-link :to="brandItems[brandIndex].contact" class="brands-link">聯絡我們</router-link>
-                            <span>・</span>
-                            <router-link :to="brandItems[brandIndex].book" class="brands-link">線上訂位</router-link>
-                        </div>
+                        :style="'background-image: url(' + brandItems[brandIndex].logo + ')'"
+                    >    
                     </div>
                     <span class="btn-orange" @click="brandIndex = 1; startAnimate('500')">M One Cafe</span>
                 </div>
                 <p class="text-brands" v-html="brandItems[brandIndex].text" :class="{'fade' : addTransition}"></p>
             </div>
-            <div class="d-block d-md-none">
+            <!-- <div class="d-block d-md-none">
                 <h3 class="main-title text-uppercase">
                     <span class="fs-inherit text-orange">
                         橘色</span>版圖<br>
@@ -60,12 +50,6 @@
                             class="info-brands position-relative border-radius-100 d-flex flex-column justify-content-center text-left"
                             :style="'background-image: url(' + item.logo + ')'"
                         >
-                            <p class="position-relative">{{brandItems[brandIndex].title}}</p>
-                            <div class="d-flex text-size-3 justify-content-center position-relative">
-                                <router-link :to="brandItems[brandIndex].contact" class="brands-link">聯絡我們</router-link>
-                                <span>・</span>
-                                <router-link :to="brandItems[brandIndex].book" class="brands-link">線上訂位</router-link>
-                            </div>
                         </div>
                         <div class="slick-brand-text">
                             <p class="text-title">{{item.title}}</p>
@@ -73,7 +57,7 @@
                         </div>
                     </div>
                 </slick>
-            </div>
+            </div> -->
         </div>
     </div> 
 </template>
@@ -84,6 +68,7 @@
 
     #app
         #block-brands
+            padding: 100px 0
             .bg-black-cover
                 width: 0
                 height: 100vh
@@ -148,24 +133,18 @@ export default {
                     {
                         url: '/images/bg_brand_1.png',
                         title: 'EXTENSION by 橘色',
-                        contact: '/',
-                        book: '/',
                         text: '小鍋<span class="text-orange">新</span>時尚<br>不管多少人都能吃得精彩！',
                         logo: '/images/home3_icon1.png',
                     },
                     {
                         url: '/images/slideshow_1.jpg',
                         title: 'M One Cafe',
-                        contact: '/',
-                        book: '/',
                         text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！',
                         logo: '/images/home3_icon2.png',
                     },
 	                {
 		                url: '/images/slideshow_1.jpg',
 		                title: '橘色鍋物',
-		                contact: '/',
-		                book: '/',
                         text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！',
                         logo: '/images/home3_icon3.png',
 	                },

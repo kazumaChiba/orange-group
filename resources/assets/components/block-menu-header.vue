@@ -32,6 +32,8 @@
     #header
         .logo
             padding-left: 35px
+            img
+                width: 140px
         #main-menu
             width: 50%
             margin-left: auto

@@ -16,10 +16,10 @@
             tag="div"
             class="news-list-outer d-flex flex-column flex-wrap align-items-center">
             <div
-                class="news-list d-flex flex-lg-row flex-column-reverse flex-lg-column justify-content-between w-100 "
+                class="news-list d-flex flex-lg-row flex-column-reverse justify-content-between w-100 "
                 v-for="(n,$groupIndex) in viewIndex+1"
                 :key="$groupIndex">
-                    <div class="block-list beside flex-row d-flex justify-content-between">
+                    <div class="block-list beside flex-row flex-lg-column d-flex justify-content-between">
                         <div
                                 class="news-item"
                                 v-for="(item,$index) in newsItems.slice(viewIndex,viewIndex+2)"

@@ -140,7 +140,7 @@ exports = module.exports = __webpack_require__(47)(false);
 
 
 // module
-exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n}\n#footer .footer .col-contact-us {\n      -webkit-box-flex: 100%;\n          -ms-flex: 100%;\n              flex: 100%;\n}\n#footer .footer .footer-info {\n      margin-bottom: 100px;\n      line-height: 25px;\n      font-size: 14px;\n      font-weight: 100;\n}\n#footer .footer .footer-info div {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#footer .footer .footer-info p {\n        margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n        font-size: 18px;\n        font-weight: 100;\n        line-height: 30px;\n}\n#footer .footer.footer-join {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer.footer-join:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: rgba(0, 0, 0, 0.8);\n        top: 0px;\n}\n#footer .footer .btn-orange:hover {\n      background: white;\n      color: #f26d23 !important;\n      font-weight: 500;\n}\n@media only screen and (max-width: 991px) {\n#app #footer .container .join-us-slogan {\n    line-height: 45px;\n    margin-bottom: 50px;\n}\n#app #footer .container .join-us-slogan span {\n      font-size: 28px;\n}\n#app #footer .logo {\n    height: 100px;\n}\n#app .btn-orange.fat {\n    padding: 20px 45px;\n}\n}\n@media only screen and (max-width: 420px) {\n#app #footer {\n    height: auto;\n}\n#app #footer .logo {\n      height: 70px;\n}\n#app #footer .container {\n      padding: 50px 0;\n}\n#app #footer .container .join-us-slogan {\n        font-size: 18px;\n        line-height: 30px;\n        margin-bottom: 30px;\n}\n#app #footer .container .join-us-slogan span {\n          font-size: 18px;\n}\n#app #footer .footer {\n      margin-bottom: 0 !important;\n}\n#app #footer .footer p {\n        font-size: 14px;\n}\n#app #footer .btn-orange.fat {\n      padding: 12px 30px;\n      font-size: 15px;\n}\n}\n", ""]);
+exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n}\n#footer .footer .footer-info {\n      margin-bottom: 100px;\n      line-height: 25px;\n      font-size: 14px;\n      font-weight: 100;\n}\n#footer .footer .footer-info div {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#footer .footer .footer-info p {\n        margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n        font-size: 18px;\n        font-weight: 100;\n        line-height: 30px;\n}\n#footer .footer.footer-join {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer.footer-join:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: rgba(0, 0, 0, 0.8);\n        top: 0px;\n}\n#footer .footer .btn-orange:hover {\n      background: white;\n      color: #f26d23 !important;\n      font-weight: 500;\n}\n@media only screen and (max-width: 991px) {\n#app #footer .footer .col-contact-us {\n    -webkit-box-flex: 100%;\n        -ms-flex: 100%;\n            flex: 100%;\n}\n#app #footer .container .join-us-slogan {\n    line-height: 45px;\n    margin-bottom: 50px;\n}\n#app #footer .container .join-us-slogan span {\n      font-size: 28px;\n}\n#app #footer .logo {\n    height: 100px;\n}\n#app .btn-orange.fat {\n    padding: 20px 45px;\n}\n}\n@media only screen and (max-width: 420px) {\n#app #footer {\n    height: auto;\n}\n#app #footer .container {\n      padding: 50px 40px;\n}\n#app #footer .container .join-us-slogan {\n        font-size: 18px;\n        line-height: 30px;\n        margin-bottom: 30px;\n}\n#app #footer .container .join-us-slogan span {\n          font-size: 18px;\n}\n#app #footer #copyright, #app #footer #copyright a {\n      white-space: normal;\n}\n#app #footer .footer {\n      margin-bottom: 0 !important;\n}\n#app #footer .footer .col p {\n        font-size: 13px !important;\n}\n#app #footer .btn-orange.fat {\n      padding: 12px 30px;\n      font-size: 13px;\n}\n}\n", ""]);
 
 // exports
 
@@ -152,6 +152,10 @@ exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .j
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
 //
 //
 //
@@ -299,7 +303,9 @@ var staticRenderFns = [
         [
           _c(
             "div",
-            { staticClass: "row mb-5 pb-5 flex-wrap-reverse flex-lg-row" },
+            {
+              staticClass: "row mb-lg-5 pb-lg-5 flex-wrap-reverse flex-lg-row"
+            },
             [
               _c("div", { staticClass: "col col-contact-us" }, [
                 _c(
@@ -379,19 +385,21 @@ var staticRenderFns = [
                   attrs: { id: "copyright" }
                 },
                 [
-                  _vm._v("2018 "),
-                  _c("a", { staticClass: "link-orange" }, [
-                    _vm._v(" 橘色涮涮屋 ")
-                  ]),
-                  _vm._v(" 版權所有. Designed by "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "link-orange",
-                      attrs: { href: "www.daydream-lab.com" }
-                    },
-                    [_vm._v("Daydream Lab")]
-                  )
+                  _c("span", [
+                    _vm._v("\n                        2018 "),
+                    _c("a", { staticClass: "link-orange" }, [
+                      _vm._v(" 橘色涮涮屋 ")
+                    ]),
+                    _vm._v(" 版權所有. Designed by "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "link-orange",
+                        attrs: { href: "www.daydream-lab.com" }
+                      },
+                      [_vm._v("Daydream Lab")]
+                    )
+                  ])
                 ]
               )
             ]
@@ -3876,8 +3884,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 slidesNavigation: true,
                 easing: 'easeInOutCubic',
                 easingcss3: 'ease',
-                lazyLoading: true,
-                resetSliders: true
+                lazyLoading: true
             },
             sectionIndex: 0,
             sectionPosition: 'section-1',
@@ -3911,6 +3918,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     fullpage_api.setAllowScrolling(true);
                 }, 10);
             });
+
+            window.addEventListener('resize', _this.handleResize());
         });
     },
 
@@ -3952,6 +3961,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             //console.log(direction);
         },
         handleResize: function handleResize() {
+            console.log("resize");
             fullpage_api.reBuild();
         }
     },
@@ -3964,12 +3974,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         BlockNews: __WEBPACK_IMPORTED_MODULE_3_components_block_news___default.a,
         BlockFoods: __WEBPACK_IMPORTED_MODULE_4_components_block_foods___default.a,
         BlockFooter: __WEBPACK_IMPORTED_MODULE_5_components_block_footer___default.a
-    },
-    ready: function ready() {
-        window.addEventListener('resize', this.handleResize);
-    },
-    beforeDestroy: function beforeDestroy() {
-        window.removeEventListener('resize', this.handleResize);
     }
 
 });
@@ -4634,7 +4638,7 @@ exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slic
 exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css);", ""]);
 
 // module
-exports.push([module.i, "\n#app #block-brands .bg-black-cover {\n  width: 0;\n  height: 100vh;\n  -webkit-transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n  transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n  background-position: center;\n}\n#app #block-brands .bg-black-cover.select {\n    -webkit-transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n    width: 105vw;\n}\n#app #block-brands .container {\n  z-index: 2;\n}\n#app #block-brands .container .content-brands .info-brands {\n    width: 300px;\n    height: 300px;\n    border: 1px solid white;\n    padding: 0 40px;\n    font-size: 30px;\n    background-size: contain;\n}\n#app #block-brands .container .content-brands .info-brands:before {\n      content: \"\";\n      position: absolute;\n      background: rgba(242, 108, 35, 0.4);\n      width: 100%;\n      height: 100%;\n      background: rgba(242, 108, 35, 0.4);\n      border-radius: 100%;\n      left: 0;\n}\n#app #block-brands .container .text-brands {\n    font-size: 30px;\n    letter-spacing: 20px;\n    line-height: 45px;\n    font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n      letter-spacing: 20px;\n}\n@media only screen and (max-width: 991px) {\n#app .slick-brands {\n    margin: 50px 0;\n}\n}\n@media only screen and (max-width: 768px) {\n#app #block-brands .container .content-brands .info-brands {\n    width: 250px;\n    height: 250px;\n    margin-bottom: 50px;\n}\n}\n", ""]);
+exports.push([module.i, "\n#app #block-brands {\n  padding: 100px 0;\n}\n#app #block-brands .bg-black-cover {\n    width: 0;\n    height: 100vh;\n    -webkit-transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    background-position: center;\n}\n#app #block-brands .bg-black-cover.select {\n      -webkit-transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n      transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n      width: 105vw;\n}\n#app #block-brands .container {\n    z-index: 2;\n}\n#app #block-brands .container .content-brands .info-brands {\n      width: 300px;\n      height: 300px;\n      border: 1px solid white;\n      padding: 0 40px;\n      font-size: 30px;\n      background-size: contain;\n}\n#app #block-brands .container .content-brands .info-brands:before {\n        content: \"\";\n        position: absolute;\n        background: rgba(242, 108, 35, 0.4);\n        width: 100%;\n        height: 100%;\n        background: rgba(242, 108, 35, 0.4);\n        border-radius: 100%;\n        left: 0;\n}\n#app #block-brands .container .text-brands {\n      font-size: 30px;\n      letter-spacing: 20px;\n      line-height: 45px;\n      font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n        letter-spacing: 20px;\n}\n@media only screen and (max-width: 991px) {\n#app .slick-brands {\n    margin: 50px 0;\n}\n}\n@media only screen and (max-width: 768px) {\n#app #block-brands .container .content-brands .info-brands {\n    width: 250px;\n    height: 250px;\n    margin-bottom: 50px;\n}\n}\n", ""]);
 
 // exports
 
@@ -4770,21 +4774,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -4797,22 +4786,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             brandItems: [{
                 url: '/images/bg_brand_1.png',
                 title: 'EXTENSION by 橘色',
-                contact: '/',
-                book: '/',
                 text: '小鍋<span class="text-orange">新</span>時尚<br>不管多少人都能吃得精彩！',
                 logo: '/images/home3_icon1.png'
             }, {
                 url: '/images/slideshow_1.jpg',
                 title: 'M One Cafe',
-                contact: '/',
-                book: '/',
                 text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！',
                 logo: '/images/home3_icon2.png'
             }, {
                 url: '/images/slideshow_1.jpg',
                 title: '橘色鍋物',
-                contact: '/',
-                book: '/',
                 text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！',
                 logo: '/images/home3_icon3.png'
             }],
@@ -4904,67 +4887,14 @@ var render = function() {
                     [_vm._v("橘色涮涮屋")]
                   ),
                   _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "info-brands border-radius-100 d-flex flex-column justify-content-center text-left position-relative",
-                      style:
-                        "background-image: url(" +
-                        _vm.brandItems[_vm.brandIndex].logo +
-                        ")"
-                    },
-                    [
-                      _vm._v("    \n                >\n                    "),
-                      _c(
-                        "p",
-                        {
-                          staticClass: "position-relative",
-                          class: { fade: _vm.addTransition }
-                        },
-                        [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(_vm.brandItems[_vm.brandIndex].title) +
-                              "\n                    "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "position-relative d-flex text-size-3 justify-content-center",
-                          class: { fade: _vm.addTransition }
-                        },
-                        [
-                          _c(
-                            "router-link",
-                            {
-                              staticClass: "brands-link",
-                              attrs: {
-                                to: _vm.brandItems[_vm.brandIndex].contact
-                              }
-                            },
-                            [_vm._v("聯絡我們")]
-                          ),
-                          _vm._v(" "),
-                          _c("span", [_vm._v("・")]),
-                          _vm._v(" "),
-                          _c(
-                            "router-link",
-                            {
-                              staticClass: "brands-link",
-                              attrs: { to: _vm.brandItems[_vm.brandIndex].book }
-                            },
-                            [_vm._v("線上訂位")]
-                          )
-                        ],
-                        1
-                      )
-                    ]
-                  ),
+                  _c("div", {
+                    staticClass:
+                      "info-brands border-radius-100 d-flex flex-column justify-content-center text-left position-relative",
+                    style:
+                      "background-image: url(" +
+                      _vm.brandItems[_vm.brandIndex].logo +
+                      ")"
+                  }),
                   _vm._v(" "),
                   _c(
                     "span",
@@ -4990,98 +4920,6 @@ var render = function() {
                 }
               })
             ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "d-block d-md-none" },
-            [
-              _vm._m(1),
-              _vm._v(" "),
-              _c("span", { staticClass: "sub-title" }, [
-                _vm._v("orange brands")
-              ]),
-              _vm._v(" "),
-              _c(
-                "slick",
-                {
-                  ref: "slick",
-                  staticClass: "slick-brands",
-                  attrs: { options: _vm.slickOptions }
-                },
-                _vm._l(_vm.brandItems, function(item, $index) {
-                  return _c(
-                    "div",
-                    {
-                      key: $index,
-                      staticClass:
-                        "content-brands position-relative d-flex flex-column align-items-center justify-content-center"
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "info-brands position-relative border-radius-100 d-flex flex-column justify-content-center text-left",
-                          style: "background-image: url(" + item.logo + ")"
-                        },
-                        [
-                          _c("p", { staticClass: "position-relative" }, [
-                            _vm._v(_vm._s(_vm.brandItems[_vm.brandIndex].title))
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "d-flex text-size-3 justify-content-center position-relative"
-                            },
-                            [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: "brands-link",
-                                  attrs: {
-                                    to: _vm.brandItems[_vm.brandIndex].contact
-                                  }
-                                },
-                                [_vm._v("聯絡我們")]
-                              ),
-                              _vm._v(" "),
-                              _c("span", [_vm._v("・")]),
-                              _vm._v(" "),
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: "brands-link",
-                                  attrs: {
-                                    to: _vm.brandItems[_vm.brandIndex].book
-                                  }
-                                },
-                                [_vm._v("線上訂位")]
-                              )
-                            ],
-                            1
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "slick-brand-text" }, [
-                        _c("p", { staticClass: "text-title" }, [
-                          _vm._v(_vm._s(item.title))
-                        ]),
-                        _vm._v(" "),
-                        _c("p", {
-                          staticClass: "text-brand-info",
-                          domProps: { innerHTML: _vm._s(item.text) }
-                        })
-                      ])
-                    ]
-                  )
-                })
-              )
-            ],
-            1
           )
         ]
       )
@@ -5103,18 +4941,6 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("span", { staticClass: "sub-title" }, [_vm._v("orange brands")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h3", { staticClass: "main-title text-uppercase" }, [
-      _c("span", { staticClass: "fs-inherit text-orange" }, [
-        _vm._v("\n                    橘色")
-      ]),
-      _vm._v("版圖"),
-      _c("br")
     ])
   }
 ]
@@ -5442,14 +5268,14 @@ var render = function() {
             {
               key: $groupIndex,
               staticClass:
-                "news-list d-flex flex-lg-row flex-column-reverse flex-lg-column justify-content-between w-100 "
+                "news-list d-flex flex-lg-row flex-column-reverse justify-content-between w-100 "
             },
             [
               _c(
                 "div",
                 {
                   staticClass:
-                    "block-list beside flex-row d-flex justify-content-between"
+                    "block-list beside flex-row flex-lg-column d-flex justify-content-between"
                 },
                 _vm._l(
                   _vm.newsItems.slice(_vm.viewIndex, _vm.viewIndex + 2),

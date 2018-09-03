@@ -13,7 +13,7 @@
         </div>
         <div class="footer container">
             <div class="d-flex flex-column justify-content-end h-100">
-                <div class="row mb-5 pb-5 flex-wrap-reverse flex-lg-row">
+                <div class="row mb-lg-5 pb-lg-5 flex-wrap-reverse flex-lg-row">
                     <div class="col col-contact-us">
                         <div class="footer-text-left text-center text-lg-left pt-5">
                             <div class="d-inline-block text-center">
@@ -56,7 +56,11 @@
                         <a class="footer-icons mr-3 ml-3" href="#"><font-awesome-icon :icon="['fab','facebook-f']" /></a>
                         <a class="footer-icons mr-3 ml-3" href="#"><font-awesome-icon :icon="['fab','twitter']" /></a>
                     </div> -->
-                    <p id="copyright" class="footer mb-5 position-relative w-100 text-size-1 d-flex align-items-end justify-content-center">2018 <a class="link-orange"> 橘色涮涮屋 </a> 版權所有. Designed by&ensp;<a class="link-orange" href="www.daydream-lab.com">Daydream Lab</a></p>
+                    <p id="copyright" class="footer mb-5 position-relative w-100 text-size-1 d-flex align-items-end justify-content-center">
+                        <span>
+                            2018 <a class="link-orange"> 橘色涮涮屋 </a> 版權所有. Designed by&ensp;<a class="link-orange" href="www.daydream-lab.com">Daydream Lab</a>
+                        </span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -104,8 +108,6 @@ export default {
                 font-size: 20px
         .footer
             flex: 2
-            .col-contact-us
-                flex: 100%
             .footer-info
                 margin-bottom: 100px
                 line-height: 25px
@@ -138,6 +140,9 @@ export default {
     @media only screen and (max-width: 991px)
         #app 
             #footer 
+                .footer
+                    .col-contact-us
+                        flex: 100%
                 .container 
                     .join-us-slogan 
                         line-height: 45px
@@ -155,23 +160,24 @@ export default {
         #app 
             #footer 
                 height: auto
-                .logo
-                    height: 70px
                 .container 
-                    padding: 50px 0
+                    padding: 50px 40px
                     .join-us-slogan 
                         font-size: 18px
                         line-height: 30px
                         margin-bottom: 30px
                         span
                             font-size: 18px
+                #copyright , #copyright a
+                    white-space: normal
                         
                 .footer
                     margin-bottom: 0 !important
-                    p
-                        font-size: 14px
+                    .col
+                        p
+                            font-size: 13px !important
                 .btn-orange
                     &.fat
                         padding: 12px 30px
-                        font-size: 15px
+                        font-size: 13px
 </style>

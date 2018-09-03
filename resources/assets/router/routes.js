@@ -15,7 +15,7 @@ const routes = [
             },
 	        {
 		        path: 'news',
-		        name: '橘色新訊',
+		        //name: '橘色新訊',
                 component: resolve => require(['pages/News.vue'], resolve),
                 children: [
                     {

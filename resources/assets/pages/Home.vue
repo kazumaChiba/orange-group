@@ -82,7 +82,6 @@
                     easing: 'easeInOutCubic',
 	                easingcss3: 'ease',
 	                lazyLoading: true,
-	                resetSliders: true
                 }, 
                 sectionIndex: 0,
                 sectionPosition: 'section-1',
@@ -113,7 +112,9 @@
 			        setTimeout(()=>{
 			            fullpage_api.setAllowScrolling(true)
 			        },10);
-			    });
+                });
+                
+                window.addEventListener('resize', this.handleResize());
 
 		    });
         },
@@ -158,6 +159,7 @@
 		        //console.log(direction);
             },
             handleResize(){
+                console.log("resize");
                 fullpage_api.reBuild();
             }
             
@@ -172,12 +174,6 @@
             BlockFoods,
             BlockFooter,
         },
-        ready: function () {
-            window.addEventListener('resize', this.handleResize)
-        },
-        beforeDestroy: function () {
-            window.removeEventListener('resize', this.handleResize)
-        }
         
     }
 </script>
