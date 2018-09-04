@@ -241,6 +241,7 @@
                             text-align: center
                         h3
                             font-size: 28px
+                            z-index: 2
                             
                         .sub-title
                             font-size: 12px
@@ -273,6 +274,9 @@
                                 bottom: -25px
                                 font-size: 12px
                                 letter-spacing: 2px
+                        .loader
+                            width: 100vw
+                            left: 15%
     
     @media only screen and (max-width: 420px)
         #app 
@@ -281,5 +285,12 @@
                     .content-food 
                         &.right-content
                             padding: 25px 20px
+                        .loader
+                            circle
+                                transform: scale(0.6)
+                            &.active
+                                circle
+                                    transform: rotate(180deg) scale(0.6)
+
 
 </style>

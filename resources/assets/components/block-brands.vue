@@ -68,7 +68,6 @@
 
     #app
         #block-brands
-            padding: 100px 0
             .bg-black-cover
                 width: 0
                 height: 100vh
@@ -80,6 +79,7 @@
 
             .container
                 z-index: 2
+                padding: 100px 15px    
                 .content-brands
                     .info-brands
                         width: 300px
@@ -87,7 +87,9 @@
                         border: 1px solid white
                         padding: 0 40px
                         font-size: 30px
-                        background-size: contain
+                        background-size: 80%
+                        background-repeat: no-repeat
+                        background-position: center
                         &:before
                             content: ""
                             position: absolute

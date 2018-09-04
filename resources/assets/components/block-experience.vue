@@ -143,7 +143,7 @@ export default {
         	setTimeout(()=>{
 		        setInterval(()=>{
 			        this.is_run = true;
-			        this.onPlusStep()
+			        //this.onPlusStep()
                 },300)
             },1300)
         },
@@ -234,9 +234,16 @@ export default {
                 &.bg-left , &.bg-right , &.active
                     .bg-inner
                         background-position-y: 0
+                        transition: all .8s
 
         .bg-transition
             &.bg-left , &.bg-right
+                .bg-inner
+                    background-position-y: -100vh
+                    transition-delay: .3s
+                    &.active
+                        background-position-y: 0
+                        opacity: 1
                 &:before
                     position: absolute
                     width: 50%
@@ -250,19 +257,14 @@ export default {
                     content: ""
                     word-break: keep-all  
             &.bg-right
+                z-index: 2
+                right: 0
+                .bg-inner
+                    right: 0
+                    background-position-y: 100vh
                 &:before
                     width: 100%
                     opacity: 0.4
-        .bg-transition
-            &.bg-left , &.bg-right
-                .bg-inner
-                    background-position-y: -100vh
-                    transition-delay: .3s
-                    &.active
-                        background-position-y: 0
-                        opacity: 1
-                        //transition: initial
-            &.bg-right
                 .bg-inner
                     &.active
                         background-position-y: 100vh
@@ -276,12 +278,6 @@ export default {
                     &.active
                         background-position-y: -100vh
                         opacity: 0
-            &.bg-right
-                z-index: 2
-                right: 0
-                .bg-inner
-                    right: 0
-                    background-position-y: 100vh
         .fp-scroller
             display: flex     
             flex-direction: column

@@ -818,6 +818,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -952,7 +954,7 @@ var render = function() {
             },
             [
               _c("div", { attrs: { id: "block-news-filter" } }, [
-                _c("div", { staticClass: "container" }, [
+                _c("div", { staticClass: "container d-flex" }, [
                   _c(
                     "div",
                     {
@@ -970,6 +972,7 @@ var render = function() {
                           on: {
                             click: function($event) {
                               _vm.newsIndex = $index
+                              _vm.category = _vm.newsCategories[_vm.newsIndex]
                             }
                           }
                         },
@@ -987,12 +990,16 @@ var render = function() {
                   _c("div", { staticClass: "news-categories -date" }, [
                     _c(
                       "div",
-                      { staticClass: "d-flex", attrs: { id: "category-date" } },
+                      {
+                        staticClass: "d-flex justify-content-end",
+                        attrs: { id: "category-date" }
+                      },
                       [
                         _c(
                           "div",
                           {
-                            staticClass: "filter-date -cate position-relative"
+                            staticClass:
+                              "filter-date -cate position-relative d-block d-lg-none"
                           },
                           [
                             _c(
@@ -1012,7 +1019,12 @@ var render = function() {
                               ) {
                                 return _c("el-option", {
                                   key: $index,
-                                  attrs: { label: item, value: item }
+                                  attrs: { label: item, value: item },
+                                  on: {
+                                    click: function($event) {
+                                      _vm.newsIndex = $index
+                                    }
+                                  }
                                 })
                               })
                             )

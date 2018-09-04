@@ -4,7 +4,7 @@
         <div id="block-news" class="news-body position-relative">
             <div id="block-news-lists" class="position-relative">
                 <div id="block-news-filter">
-                    <div class="container">
+                    <div class="container d-flex">
                         <div id="category-items" class="news-categories -category d-flex">
                             <div 
                                 
@@ -12,20 +12,22 @@
                                 :key="$index" 
                                 class="category-items mr-4 ml-4 d-flex align-items-center" 
                                 :class="(newsIndex == $index) ? 'active' : ''"
-                                @click="newsIndex = $index"
+                                @click="newsIndex = $index; category = newsCategories[newsIndex]"
                             >
                                 {{item}}
                             </div>
                         </div>
                         <div class="news-categories -date">
-                            <div id="category-date" class="d-flex">
-                                <div class="filter-date -cate position-relative">
+                            <div id="category-date" class="d-flex justify-content-end">
+                                <div class="filter-date -cate position-relative d-block d-lg-none">
                                     <el-select v-model="category">
                                         <el-option 
                                             v-for="(item,$index) in newsCategories"
                                             :key="$index" 
                                             :label="item" 
-                                            :value="item"></el-option>
+                                            :value="item"
+                                            @click="newsIndex = $index"
+                                            ></el-option>
                                     </el-select>
                                 </div>
                                 <div class="filter-date -year position-relative">
