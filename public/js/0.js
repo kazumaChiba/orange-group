@@ -454,7 +454,7 @@ exports = module.exports = __webpack_require__(47)(false);
 
 
 // module
-exports.push([module.i, "\n#block-breadcrumb {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  height: 50vh;\n}\n#block-breadcrumb:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    top: 0;\n}\n", ""]);
+exports.push([module.i, "\n#block-breadcrumb {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  height: 50vh;\n}\n#block-breadcrumb:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    top: 0;\n}\n@media only screen and (max-width: 991px) {\n#block-breadcrumb {\n      height: 200px;\n}\n#block-breadcrumb .banner-title {\n        font-size: 28px;\n}\n#block-breadcrumb .banner-title span {\n          color: white !important;\n}\n}\n", ""]);
 
 // exports
 
@@ -466,6 +466,13 @@ exports.push([module.i, "\n#block-breadcrumb {\n  background-repeat: no-repeat;\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -537,10 +544,10 @@ var render = function() {
     [
       _c(
         "div",
-        { staticClass: "position-relative text-white" },
+        { staticClass: "position-relative text-white pt-4 pt-lg-0" },
         [
           _c("h2", {
-            staticClass: "mb-4 banner-title",
+            staticClass: "mb-2 mb-lg-4 banner-title",
             domProps: { innerHTML: _vm._s(_vm.title) }
           }),
           _vm._v(" "),
@@ -615,13 +622,13 @@ if (false) {
 
 /***/ }),
 
-/***/ 456:
+/***/ 455:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(457);
+var content = __webpack_require__(456);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -642,7 +649,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 457:
+/***/ 456:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(47)(false);
@@ -657,13 +664,13 @@ exports.push([module.i, "\n#block-news:before {\n  background-attachment: fixed;
 
 /***/ }),
 
-/***/ 458:
+/***/ 457:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(459);
+var content = __webpack_require__(458);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -684,7 +691,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 459:
+/***/ 458:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(47)(false);
@@ -692,14 +699,14 @@ exports = module.exports = __webpack_require__(47)(false);
 
 
 // module
-exports.push([module.i, "\n#header {\n  top: 0;\n}\n#block-news {\n  margin-bottom: 180px;\n}\n#block-news .filter-date.-year {\n    width: 90px;\n}\n#block-news .filter-date.-month {\n    width: 85px;\n}\n#block-news .filter-date .el-input__inner {\n    -webkit-appearance: none;\n    border-radius: 0;\n    border: unset;\n    background: transparent;\n    color: white;\n}\n#block-news .filter-date .el-select__caret {\n    color: #fff;\n}\n#block-news #block-news-lists {\n    z-index: 2;\n    margin-bottom: 80px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories {\n      padding: 55px 0;\n      font-size: 14px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories.-category {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date {\n        padding: 5px;\n        background: #f26d23;\n        cursor: pointer;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-month {\n          margin-right: 20px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-year {\n          position: relative;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-year:after {\n            content: \"\";\n            position: absolute;\n            height: 60%;\n            width: 1px;\n            background: #bfbfbf;\n            right: 0;\n            top: 20%;\n}\n#block-news #block-news-items .news-item {\n    width: 25%;\n    padding: 0 16px;\n}\n#block-breadcrumb .banner-title {\n  font-size: 90px;\n  font-weight: 300;\n}\n", ""]);
+exports.push([module.i, "\n.el-input__inner {\n  -webkit-appearance: none;\n  border-radius: 0;\n  border: unset;\n  background: transparent;\n  color: white;\n}\n.el-select__caret {\n  color: #fff;\n}\n#header {\n  top: 0;\n}\n#block-news {\n  margin-bottom: 180px;\n}\n#block-news .filter-date.-year {\n    width: 90px;\n}\n#block-news .filter-date.-month {\n    width: 85px;\n}\n#block-news #block-news-lists {\n    z-index: 2;\n    margin-bottom: 80px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories {\n      padding: 55px 0;\n      font-size: 14px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories.-category {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date {\n        padding: 5px;\n        background: #f26d23;\n        cursor: pointer;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-month {\n          margin-right: 20px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-year:after, #block-news #block-news-lists #block-news-filter .news-categories .filter-date.-cate:after {\n          content: \"\";\n          position: absolute;\n          height: 60%;\n          width: 1px;\n          background: rgba(255, 255, 255, 0.6);\n          right: 0;\n          top: 20%;\n}\n#block-news #block-news-items .news-item {\n    width: 25%;\n    padding: 0 16px;\n}\n#block-breadcrumb .banner-title {\n  font-size: 90px;\n  font-weight: 300;\n}\n@media only screen and (max-width: 991px) {\n#block-news {\n    margin-bottom: 55px;\n}\n#block-news #block-news-lists {\n      margin-bottom: 0;\n}\n#block-news #block-news-filter .news-categories {\n      padding: 30px 0;\n}\n#block-news #block-news-filter .news-categories.-category {\n        display: none !important;\n}\n#block-news #block-news-filter .news-categories.-date .filter-date {\n        width: auto;\n        -webkit-box-flex: 2;\n            -ms-flex: 2;\n                flex: 2;\n}\n#block-news #block-news-filter .news-categories.-date .filter-date.-cate {\n          -webkit-box-flex: 3;\n              -ms-flex: 3;\n                  flex: 3;\n}\n#block-news #block-news-filter .news-categories.-date .filter-date.-month {\n          margin-right: 0 !important;\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 460:
+/***/ 459:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -710,6 +717,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_components_block_menu_header__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_footer__ = __webpack_require__(234);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_components_block_footer__);
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -887,7 +901,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             newsIndex: 0,
             viewIndex: 8,
             year: 2018,
-            month: ''
+            month: '',
+            category: '全部新訊'
         };
     },
     components: {
@@ -904,7 +919,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 461:
+/***/ 460:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -938,118 +953,148 @@ var render = function() {
             [
               _c("div", { attrs: { id: "block-news-filter" } }, [
                 _c("div", { staticClass: "container" }, [
-                  _c("div", { staticClass: "row" }, [
-                    _c(
-                      "div",
-                      { staticClass: "news-categories -category d-flex" },
-                      _vm._l(_vm.newsCategories, function(item, $index) {
-                        return _c(
-                          "div",
-                          {
-                            key: $index,
-                            staticClass:
-                              "category-items mr-4 ml-4 d-flex align-items-center",
-                            class: _vm.newsIndex == $index ? "active" : "",
-                            attrs: { id: "category-items" },
-                            on: {
-                              click: function($event) {
-                                _vm.newsIndex = $index
-                              }
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "\n                                " +
-                                _vm._s(item) +
-                                "\n                            "
-                            )
-                          ]
-                        )
-                      })
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "news-categories -date" }, [
-                      _c(
+                  _c(
+                    "div",
+                    {
+                      staticClass: "news-categories -category d-flex",
+                      attrs: { id: "category-items" }
+                    },
+                    _vm._l(_vm.newsCategories, function(item, $index) {
+                      return _c(
                         "div",
                         {
-                          staticClass: "d-flex",
-                          attrs: { id: "category-date" }
+                          key: $index,
+                          staticClass:
+                            "category-items mr-4 ml-4 d-flex align-items-center",
+                          class: _vm.newsIndex == $index ? "active" : "",
+                          on: {
+                            click: function($event) {
+                              _vm.newsIndex = $index
+                            }
+                          }
                         },
                         [
-                          _c(
-                            "div",
-                            { staticClass: "filter-date -year" },
-                            [
-                              _c(
-                                "el-select",
-                                {
-                                  model: {
-                                    value: _vm.year,
-                                    callback: function($$v) {
-                                      _vm.year = $$v
-                                    },
-                                    expression: "year"
-                                  }
-                                },
-                                [
-                                  _c("el-option", {
-                                    attrs: { label: "2018", value: 2018 }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("el-option", {
-                                    attrs: { label: "2015", value: 2015 }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("el-option", {
-                                    attrs: { label: "2013", value: 2013 }
-                                  })
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "filter-date -month" },
-                            [
-                              _c(
-                                "el-select",
-                                {
-                                  model: {
-                                    value: _vm.month,
-                                    callback: function($$v) {
-                                      _vm.month = $$v
-                                    },
-                                    expression: "month"
-                                  }
-                                },
-                                [
-                                  _c("el-option", {
-                                    attrs: { label: "月份", value: "" }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("el-option", {
-                                    attrs: { label: "10月", value: 10 }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("el-option", {
-                                    attrs: { label: "9月", value: 9 }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("el-option", {
-                                    attrs: { label: "8月", value: 8 }
-                                  })
-                                ],
-                                1
-                              )
-                            ],
-                            1
+                          _vm._v(
+                            "\n                            " +
+                              _vm._s(item) +
+                              "\n                        "
                           )
                         ]
                       )
-                    ])
+                    })
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "news-categories -date" }, [
+                    _c(
+                      "div",
+                      { staticClass: "d-flex", attrs: { id: "category-date" } },
+                      [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "filter-date -cate position-relative"
+                          },
+                          [
+                            _c(
+                              "el-select",
+                              {
+                                model: {
+                                  value: _vm.category,
+                                  callback: function($$v) {
+                                    _vm.category = $$v
+                                  },
+                                  expression: "category"
+                                }
+                              },
+                              _vm._l(_vm.newsCategories, function(
+                                item,
+                                $index
+                              ) {
+                                return _c("el-option", {
+                                  key: $index,
+                                  attrs: { label: item, value: item }
+                                })
+                              })
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "filter-date -year position-relative"
+                          },
+                          [
+                            _c(
+                              "el-select",
+                              {
+                                model: {
+                                  value: _vm.year,
+                                  callback: function($$v) {
+                                    _vm.year = $$v
+                                  },
+                                  expression: "year"
+                                }
+                              },
+                              [
+                                _c("el-option", {
+                                  attrs: { label: "2018", value: 2018 }
+                                }),
+                                _vm._v(" "),
+                                _c("el-option", {
+                                  attrs: { label: "2015", value: 2015 }
+                                }),
+                                _vm._v(" "),
+                                _c("el-option", {
+                                  attrs: { label: "2013", value: 2013 }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "filter-date -month" },
+                          [
+                            _c(
+                              "el-select",
+                              {
+                                model: {
+                                  value: _vm.month,
+                                  callback: function($$v) {
+                                    _vm.month = $$v
+                                  },
+                                  expression: "month"
+                                }
+                              },
+                              [
+                                _c("el-option", {
+                                  attrs: { label: "月份", value: "" }
+                                }),
+                                _vm._v(" "),
+                                _c("el-option", {
+                                  attrs: { label: "10月", value: 10 }
+                                }),
+                                _vm._v(" "),
+                                _c("el-option", {
+                                  attrs: { label: "9月", value: 9 }
+                                }),
+                                _vm._v(" "),
+                                _c("el-option", {
+                                  attrs: { label: "8月", value: 8 }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ]
+                    )
                   ])
                 ])
               ]),
@@ -1071,7 +1116,10 @@ var render = function() {
                           _vm.newsIndex == 0
                           ? _c(
                               "div",
-                              { key: $index, staticClass: "news-item" },
+                              {
+                                key: $index,
+                                staticClass: "news-item col-6 col-md-3"
+                              },
                               [
                                 _c(
                                   "div",
@@ -1174,14 +1222,14 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(456)
-  __webpack_require__(458)
+  __webpack_require__(455)
+  __webpack_require__(457)
 }
 var normalizeComponent = __webpack_require__(48)
 /* script */
-var __vue_script__ = __webpack_require__(460)
+var __vue_script__ = __webpack_require__(459)
 /* template */
-var __vue_template__ = __webpack_require__(461)
+var __vue_template__ = __webpack_require__(460)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */

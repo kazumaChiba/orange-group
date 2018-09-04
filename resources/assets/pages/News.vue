@@ -5,54 +5,61 @@
             <div id="block-news-lists" class="position-relative">
                 <div id="block-news-filter">
                     <div class="container">
-                        <div class="row">
-                            <div class="news-categories -category d-flex">
-                                <div 
-                                    id="category-items"
-                                    v-for="(item,$index) in newsCategories" 
-                                    :key="$index" 
-                                    class="category-items mr-4 ml-4 d-flex align-items-center" 
-                                    :class="(newsIndex == $index) ? 'active' : ''"
-                                    @click="newsIndex = $index"
-                                >
-                                    {{item}}
-                                </div>
+                        <div id="category-items" class="news-categories -category d-flex">
+                            <div 
+                                
+                                v-for="(item,$index) in newsCategories" 
+                                :key="$index" 
+                                class="category-items mr-4 ml-4 d-flex align-items-center" 
+                                :class="(newsIndex == $index) ? 'active' : ''"
+                                @click="newsIndex = $index"
+                            >
+                                {{item}}
                             </div>
-                            <div class="news-categories -date">
-                                <div id="category-date" class="d-flex">
-                                    <div class="filter-date -year">
-                                        <el-select v-model="year">
-                                            <el-option :label="'2018'" :value="2018"></el-option>
-                                            <el-option :label="'2015'" :value="2015"></el-option>
-                                            <el-option :label="'2013'" :value="2013"></el-option>
-                                        </el-select>
-                                        <!--<el-dropdown trigger="click" class="text-white">
-                                            <span class="el-dropdown-link">
-                                                2018<i class="el-icon-arrow-down el-icon--right"></i>
-                                            </span>
-                                            <el-dropdown-menu slot="dropdown">
-                                                <el-dropdown-item>2018</el-dropdown-item>
-                                                <el-dropdown-item>2015</el-dropdown-item>
-                                            </el-dropdown-menu>
-                                        </el-dropdown>-->
-                                    </div>
-                                    <div class="filter-date -month">
-                                        <el-select v-model="month">
-                                            <el-option :label="'月份'" :value="''"></el-option>
-                                            <el-option :label="'10月'" :value="10"></el-option>
-                                            <el-option :label="'9月'" :value="9"></el-option>
-                                            <el-option :label="'8月'" :value="8"></el-option>
-                                        </el-select>
-                                        <!--<el-dropdown trigger="click" class="text-white">
-                                            <span class="el-dropdown-link">
-                                                9月<i class="el-icon-arrow-down el-icon--right"></i>
-                                            </span>
-                                            <el-dropdown-menu slot="dropdown">
-                                                <el-dropdown-item>10月</el-dropdown-item>
-                                                <el-dropdown-item>11月</el-dropdown-item>
-                                            </el-dropdown-menu>
-                                        </el-dropdown>-->
-                                    </div>
+                        </div>
+                        <div class="news-categories -date">
+                            <div id="category-date" class="d-flex">
+                                <div class="filter-date -cate position-relative">
+                                    <el-select v-model="category">
+                                        <el-option 
+                                            v-for="(item,$index) in newsCategories"
+                                            :key="$index" 
+                                            :label="item" 
+                                            :value="item"></el-option>
+                                    </el-select>
+                                </div>
+                                <div class="filter-date -year position-relative">
+                                    <el-select v-model="year">
+                                        <el-option :label="'2018'" :value="2018"></el-option>
+                                        <el-option :label="'2015'" :value="2015"></el-option>
+                                        <el-option :label="'2013'" :value="2013"></el-option>
+                                    </el-select>
+                                    <!--<el-dropdown trigger="click" class="text-white">
+                                        <span class="el-dropdown-link">
+                                            2018<i class="el-icon-arrow-down el-icon--right"></i>
+                                        </span>
+                                        <el-dropdown-menu slot="dropdown">
+                                            <el-dropdown-item>2018</el-dropdown-item>
+                                            <el-dropdown-item>2015</el-dropdown-item>
+                                        </el-dropdown-menu>
+                                    </el-dropdown>-->
+                                </div>
+                                <div class="filter-date -month">
+                                    <el-select v-model="month">
+                                        <el-option :label="'月份'" :value="''"></el-option>
+                                        <el-option :label="'10月'" :value="10"></el-option>
+                                        <el-option :label="'9月'" :value="9"></el-option>
+                                        <el-option :label="'8月'" :value="8"></el-option>
+                                    </el-select>
+                                    <!--<el-dropdown trigger="click" class="text-white">
+                                        <span class="el-dropdown-link">
+                                            9月<i class="el-icon-arrow-down el-icon--right"></i>
+                                        </span>
+                                        <el-dropdown-menu slot="dropdown">
+                                            <el-dropdown-item>10月</el-dropdown-item>
+                                            <el-dropdown-item>11月</el-dropdown-item>
+                                        </el-dropdown-menu>
+                                    </el-dropdown>-->
                                 </div>
                             </div>
                         </div>
@@ -62,7 +69,7 @@
                     <div class="container">
                         <div class="row">
                             <div 
-                                class="news-item"
+                                class="news-item col-6 col-md-3"
                                 v-for="(item,$index) in newsItems.slice(0,viewIndex)"
                                 :key="$index"    
                                 v-if="item.category == newsCategories[newsIndex] || newsIndex == 0"
@@ -186,7 +193,8 @@ export default {
             newsIndex: 0,
             viewIndex: 8,
 	        year: 2018,
-	        month: ''
+            month: '',
+            category: '全部新訊',
         }
     },
     components: {
@@ -207,6 +215,14 @@ export default {
         background-attachment: fixed
 </style>
 <style lang="sass">
+    .el-input__inner
+        -webkit-appearance: none
+        border-radius: 0
+        border: unset
+        background: transparent
+        color: white
+    .el-select__caret
+        color: #fff
     #header
         top: 0
     #block-news
@@ -216,14 +232,6 @@ export default {
                 width: 90px
             &.-month
                 width: 85px
-            .el-input__inner
-                -webkit-appearance: none
-                border-radius: 0
-                border: unset
-                background: transparent
-                color: white
-            .el-select__caret
-                color: #fff
         #block-news-lists
             z-index: 2
             margin-bottom: 80px
@@ -239,14 +247,13 @@ export default {
                         cursor: pointer
                         &.-month
                             margin-right: 20px
-                        &.-year
-                            position: relative
+                        &.-year , &.-cate
                             &:after
                                 content: ""
                                 position: absolute
                                 height: 60%
                                 width: 1px
-                                background: #bfbfbf
+                                background: rgba(255, 255, 255, 0.6)
                                 right: 0
                                 top: 20%
 
@@ -260,4 +267,22 @@ export default {
             font-size: 90px
             font-weight: 300
 
+    @media only screen and (max-width: 991px)
+        #block-news
+            margin-bottom: 55px
+            #block-news-lists
+                margin-bottom: 0
+            #block-news-filter
+                .news-categories
+                    padding: 30px 0
+                    &.-category
+                        display: none !important
+                    &.-date
+                        .filter-date
+                            width: auto
+                            flex: 2
+                            &.-cate
+                                flex: 3
+                            &.-month
+                                margin-right: 0 !important
 </style>

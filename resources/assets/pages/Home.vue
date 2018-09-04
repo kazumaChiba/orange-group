@@ -60,7 +60,6 @@
     import BlockFooter from 'components/block-footer'
 
     import VueFullPage from 'vue-fullpage.js'
-    import 'fullpage.js/vendors/scrolloverflow.js'
 
     import VueScrollbar from 'vue2-scrollbar';
 

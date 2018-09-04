@@ -1,7 +1,7 @@
 <template>
     <div id="block-breadcrumb" class="position-relative w-100 d-flex align-items-center justify-content-center" :style="'background-image:url('+img+')'">
-        <div class="position-relative text-white">
-            <h2 class="mb-4 banner-title" v-html="title"></h2>
+        <div class="position-relative text-white pt-4 pt-lg-0">
+            <h2 class="mb-2 mb-lg-4 banner-title" v-html="title"></h2>
             <el-breadcrumb  separator-class="el-icon-arrow-right">
                 <el-breadcrumb-item class="text-white" :to="'/'">首頁</el-breadcrumb-item>
                 <el-breadcrumb-item v-if="item.name && item.path !== '/'"
@@ -30,6 +30,13 @@
             height: 100%
             background: rgba(0, 0, 0, 0.5)
             top: 0
+
+        @media only screen and (max-width: 991px)
+            height: 200px
+            .banner-title
+                font-size: 28px
+                span
+                    color: white !important
 </style>
 <script>
     export default {

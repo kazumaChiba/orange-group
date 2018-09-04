@@ -19,11 +19,21 @@
                 :class="open ? '' : 'fade'"
             >
                 <img class="logo" src="/images/index_logo.png">
-                <router-link :to="'/'" exact class="menu-title">橘色體驗</router-link>
-                <router-link :to="'/about'" class="menu-title">關於橘色</router-link>
-                <router-link :to="'/news'" class="menu-title">橘色新訊</router-link>
-                <router-link :to="'/family'" class="menu-title">橘色家庭</router-link>
-                <router-link :to="'/contact'" class="menu-title">聯絡我們</router-link>
+                <span @click="open = false">
+                    <router-link :to="'/'" exact class="menu-title">橘色體驗</router-link>
+                </span>
+                <span @click="open = false">
+                    <router-link :to="'/about'" class="menu-title">關於橘色</router-link>
+                </span>
+                <span @click="open = false">
+                    <router-link :to="'/news'" class="menu-title">橘色新訊</router-link>
+                </span>
+                <span @click="open = false">
+                    <router-link :to="'/family'" class="menu-title">橘色家庭</router-link>
+                </span>
+                <span @click="open = false">
+                    <router-link :to="'/contact'" class="menu-title">聯絡我們</router-link>
+                </span>
             </div>
         </div>
     </div>
@@ -68,6 +78,7 @@
                     top: 0
                     left: 0
                     transition: all .3s
+                    display: none
                     &.menu-open
                         height: 100vh
                         .buger-icon
@@ -124,13 +135,14 @@
                     .menu-outer 
                         .menu-list
                             display: none
-                #mobile-menu
-                    display: block
-                    .logo
-                        height: 75px
-                        top: 28px
-                        left: 23px
-                        padding: 0
+                        #mobile-menu
+                            display: block
+                            .logo
+                                height: 75px
+                                top: 28px
+                                left: 23px
+                                padding: 0
+                
             #burger-menu
                 display: none !important
 

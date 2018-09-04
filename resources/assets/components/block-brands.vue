@@ -30,7 +30,7 @@
                 </div>
                 <p class="text-brands" v-html="brandItems[brandIndex].text" :class="{'fade' : addTransition}"></p>
             </div>
-            <!-- <div class="d-block d-md-none">
+            <div class="d-block d-md-none">
                 <h3 class="main-title text-uppercase">
                     <span class="fs-inherit text-orange">
                         橘色</span>版圖<br>
@@ -57,14 +57,14 @@
                         </div>
                     </div>
                 </slick>
-            </div> -->
+            </div>
         </div>
     </div> 
 </template>
 <style lang="sass">
 
-    @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css')
-    @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css')
+    // @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css')
+    // @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css')
 
     #app
         #block-brands

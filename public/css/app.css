@@ -3796,7 +3796,6 @@ body,
 html {
   font-family: "source-han-serif-tc",標楷體,"PingFang TC",Arial,新細明體,serif , sans-serif;
   letter-spacing: 2px;
-  background-color: white;
 }
 
 h1,
@@ -4061,6 +4060,10 @@ body,
   margin-top: 0;
 }
 
+#app #header.position-fixed #main-menu .menu-outer #mobile-menu .buger-icon {
+  top: 13px;
+}
+
 #app #header.position-fixed .logo {
   position: relative;
 }
@@ -4093,10 +4096,6 @@ body,
   position: absolute;
   left: 0;
   top: 0;
-}
-
-#app #header #mobile-menu {
-  display: none;
 }
 
 #app #footer .container {
@@ -4361,6 +4360,11 @@ body,
 }
 
 @media only screen and (max-width: 991px) {
+  .container {
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+
   #app .main-title {
     font-size: 28px;
   }

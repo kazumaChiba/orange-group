@@ -1,5 +1,5 @@
 <template>
-    <div id="block-about">
+    <div id="block-about" class="position-relative">
         <banner title="關於<span class='text-orange'>橘色</span>" img="/images/banner_about.png"></banner>
         <div id="about-tabs" class="container">
             <div class="about-tabs-body row container pl-0 pr-0 justify-content-between m-auto">
@@ -22,24 +22,27 @@
                 <div class="container">
                     <div class="row d-flex justify-content-center align-items-center">
                         <div class="service-left position-relative">
-                            <div class="service-item d-flex position-relative justify-content-center align-items-center text-center" style="background-image:url('/images/about_year_1.png');">
-                                <div class="service-content position-relative text-white">
+                            <div class="service-item d-flex position-relative justify-content-center align-items-center text-center">
+                                <div class="service-img mr-3 mr-lg-0" style="background-image:url('/images/about_year_1.png');"></div>
+                                <div class="service-content text-white">
                                     <p class="service-title">用心服務</p>
-                                    <p class="service-desc">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>
+                                    <p class="service-desc">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文測</p>
                                 </div>
                             </div>
                         </div>
                         <div class="service-right position-relative">
-                            <div class="service-item -top d-flex position-relative justify-content-center align-items-center text-center" style="background-image:url('/images/about_year_2.png');">
-                                <div class="service-content position-relative text-white">
+                            <div class="service-item top d-flex flex-row-reverse flex-lg-row position-relative justify-content-center align-items-center text-center">
+                                <div class="service-img ml-3 ml-lg-0" style="background-image:url('/images/about_year_2.png');"></div>
+                                <div class="service-content text-white">
                                     <p class="service-title">用心服務</p>
-                                    <p class="service-desc mb-0">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>
+                                    <p class="service-desc mb-0">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文測</p>
                                 </div>
                             </div>
-                            <div class="service-item -bottom d-flex position-relative justify-content-center align-items-center text-center" style="background-image:url('/images/about_year_3.png');">
-                                <div class="service-content text-white position-relative">
+                            <div class="service-item bottom d-flex position-relative justify-content-center align-items-center text-center">
+                                <div class="service-img mr-3 mr-lg-0" style="background-image:url('/images/about_year_3.png');"></div>
+                                <div class="service-content text-white">
                                     <p class="service-title">用心服務</p>
-                                    <p class="service-desc">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>
+                                    <p class="service-desc">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文測</p>
                                 </div>
                             </div>
                         </div>
@@ -155,10 +158,19 @@ export default {
         return {
             tab: '#block-secret',
             yearOptions: {
-                slidesToShow: 4,
+                slidesToShow: 3,
                 slidesToScroll: 1,
                 arrows: true,
-	            infinite: false
+                infinite: false,
+                mobileFirst: true,
+                responsive: [
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 4,
+                        }
+                    },
+                ],
             },
 	        yearTransition: 'to-small',
             yearIndex: 0,
@@ -326,7 +338,7 @@ export default {
                 scrollTabs();
                 scrollCircles();
             });
-            jQuery("#block-about-year .circle-wapper").attr("style", 'top: '+ jQuery("#block-about-year").offset().top-150 + 'px; height: ' + jQuery("#block-about-year").height());
+            jQuery("#block-about-year .circle-wapper").attr("style", 'top: '+ (jQuery("#block-about-year").offset().top - 150) + 'px; height: ' + jQuery("#block-about-year").height() + 'px');
 
             scrollTabs();
             scrollCircles();
@@ -443,7 +455,8 @@ export default {
             &.active
                 border-bottom: 3px solid #f26c24
                 color: #f26c24
-
+    #block-about
+        overflow: hidden
     #block-secret
         padding: 70px 0
         margin: 130px 0
@@ -468,48 +481,54 @@ export default {
                 height: 100%
                 background: black
                 opacity: 0.7
-            .service-item
-                padding: 80px
-                background-size: cover
-                background-repeat: no-repeat
-                background-position: center
-                .service-content
-                    opacity: 0
-                    .service-title
-                        font-size: 35px
-                        margin-bottom: 5px
-                    .service-desc
-                        line-height: 35px
-                        font-size: 20px
-                &:before
-                    content: ""
-                    position: absolute
-                    width: 100%
-                    height: 100%
-                    background: #f26c23
-                    opacity: 0
-                    transition: all .3s
-                &:hover
-                    &:before
-                        opacity: 0.9
-                    .service-content
-                        opacity: 1
-                        transition: all .3s
+            
             .service-left , .service-right
                 flex: 1
+                .service-item
+                    .service-img
+                        width: 100%
+                        background-size: cover
+                        background-repeat: no-repeat
+                        background-position: center
+                    .service-content
+                        padding: 80px
+                        opacity: 0
+                        position: absolute
+                        .service-title
+                            font-size: 35px
+                            margin-bottom: 5px
+                        .service-desc
+                            line-height: 35px
+                            font-size: 20px
+                    &:before
+                        content: ""
+                        position: absolute
+                        width: 100%
+                        height: 100%
+                        background: #f26c23
+                        opacity: 0
+                        transition: all .3s
+                    &:hover
+                        &:before
+                            opacity: 0.9
+                        .service-content
+                            opacity: 1
+                            transition: all .3s
             .service-left
                 top: -80px
                 .service-item
-                    height: 750px
-                    position: relative
+                    .service-img
+                        height: 750px
             .service-right
                 top: -80px
                 .service-item
                     &.top
-                        height:
-                    &.bottom350px
-                        height: 480px
-                        width: 90%
+                        .service-img
+                            height: 350px
+                    &.bottom
+                        .service-img
+                            height: 480px
+                            width: 90%
     #block-about-year
         padding-top: 70px
         margin-bottom: 150px
@@ -694,6 +713,114 @@ export default {
             transform: scale(0.5)
         100%
             transform: scale(0.3)
+
+    @media only screen and (max-width: 991px)
+        #app
+            .main-title 
+                margin-bottom: 5px
+                .text-orange
+                    color: #f26e22 !important
+            .sub-title
+                    margin-bottom: 15px
+            #about-tabs
+                display: none
+            #block-secret 
+                margin-bottom: 0
+                margin-top: 0
+                padding: 50px 0
+                .about-content
+                    width: 100%
+                    text-align: left !important
+                    font-size: 14px
+                    line-height: 25px
+                
+            #block-about-service 
+                margin-bottom: 0
+                .service-body 
+                    height: auto
+                    background: none !important
+                    &:before
+                        background: none
+                    .service-left , .service-right
+                        flex: 100%
+                        top: 0
+                        .service-item 
+                            align-items: end !important
+                            margin-bottom: 20px
+                            .service-img
+                                width: 50%
+                                padding-top: 40%
+                                height: auto
+                            .service-content
+                                color: black !important
+                                position: relative
+                                opacity: 1
+                                width: 50%
+                                padding: 0px
+                                .service-title
+                                    color: #f26c24
+                                    font-size: 14px
+                                .service-desc
+                                    font-size: 14px
+                                    line-height: 25px
+                                    text-align: left
+                    .service-left
+                        top: 0
+            
+            #block-about-year
+                padding-top: 50px
+                .year 
+                    .slick-list
+                        height: 110px
+                        margin: 0 0 20px 0
+                    .slick-next
+                        right: 10px
+                        top: calc(50% + 10px)
+                    .slick-prev
+                        left: 10px
+                        top: calc(50% + 10px)
+                    .year-item
+                        top: 0
+                        &.active 
+                            .dot-year 
+                                .dot-radar
+                                    transform: scale(0.5)
+                .year-body 
+                    .year-left
+                        padding: 40px 0
+                        flex: 2
+                        span
+                            font-size: 20px
+                    .year-right
+                        padding: 0 0 0 15px
+                        .year-month-list 
+                            .year-month-item 
+                                .left 
+                                    flex: 2
+                                    text-align: center !important
+                                    .month
+                                        font-size: 18px
+                                .right
+                                    padding: 0 10px
+                                    .title
+                                        font-size: 16px
+
+            #block-about-video 
+                .video-content 
+                    h3
+                        font-size: 28px
+                    .video-desc
+                        font-size: 14px
+                        margin-bottom: 20px
+                        padding-bottom: 20px
+                    .btn-orange.fat
+                        padding: 15px 0 !important
+                        font-size: 13px
+                        width: 100%
+                        text-align: center
+
+
+
 </style>
 <style lang="sass">
     .to-small-enter-active

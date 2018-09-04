@@ -4,8 +4,6 @@ $color-white: #ffffff
 body,html
     font-family: "source-han-serif-tc",標楷體,"PingFang TC",Arial,新細明體,serif , sans-serif
     letter-spacing: 2px
-    background-color: white
-
 h1,h2,h3,h4,h5
     font-weight: 400
 h1
@@ -163,6 +161,11 @@ html,body,#app,#block-main
             //box-shadow: 0 5px 10px 0 rgba(73,59,65,.15)
             background: white
             margin-top: 0
+            #main-menu 
+                .menu-outer 
+                    #mobile-menu 
+                        .buger-icon
+                            top: 13px
             .logo
                 position: relative
                 img
@@ -186,8 +189,6 @@ html,body,#app,#block-main
             position: absolute
             left: 0
             top: 0
-        #mobile-menu
-            display: none
     #footer
         .container
             padding: 20px 0
@@ -379,6 +380,9 @@ html,body,#app,#block-main
         display: none !important
 
 @media only screen and (max-width: 991px)
+    .container
+        padding-right: 38px
+        padding-left: 38px
     #app
         .main-title
             font-size: 28px
