@@ -32,7 +32,7 @@
             top: 0
 
         @media only screen and (max-width: 991px)
-            height: 200px
+            height: 220px
             .banner-title
                 font-size: 28px
                 span

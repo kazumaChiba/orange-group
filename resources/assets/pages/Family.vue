@@ -2,7 +2,7 @@
     <div id="block-family">
         <div class="slideshow position-relative">
             <div 
-                class="slider position-relative d-flex flex-column align-items-center justify-content-center" 
+                class="slider position-relative d-flex flex-column align-items-center justify-content-end justify-content-lg-center" 
                 style="background-image:url('/images/family_bg.png')"
             >
                 <p class="slide-title text-white">實現你未來的夢想</p>
@@ -10,11 +10,11 @@
                     踏足餐飲業的堅實第一步<br>
                     橘色大家庭為你實現
                 </p>
-                <p @click="onScolldown" class="slide-text text-white position-absolute">讓我們帶你實現夢想！</p>
+                <p @click="onScolldown" class="slide-text text-white position-absolute d-none d-lg-block">讓我們帶你實現夢想！</p>
             </div>
         </div>
         <div id="family-intro">
-            <h2 class="family-title text-orange text-right">橘色<br>引領你築夢踏實<br>一步一步達成夢想</h2>
+            <h2 class="family-title text-orange text-right d-none d-lg-block">橘色<br>引領你築夢踏實<br>一步一步達成夢想</h2>
             <div class="family-step-list">
                 <div 
                     class="family-step d-flex"
@@ -234,8 +234,9 @@ export default {
             height: 90vh
             clip-path: ellipse(80vw 55vh at 50vw 30vh)
             z-index: 2
+            background-size: cover
             &:before
-                background: rgba(74, 31, 12, 0.4)
+                background: rgba(74, 31, 12, 0.5)
                 width: 100%
                 height: 100%
                 top: 0
@@ -445,5 +446,26 @@ export default {
         100%
             opacity: 0        
                         
-
+    @media only screen and (max-width: 991px)
+        .slideshow 
+            .slider 
+                height: 250px
+                padding-bottom: 10px
+                .slide-title
+                    font-size: 32px
+                    letter-spacing: 5px
+                    font-weight: 500
+                    margin-bottom: 5px
+                .slide-subtitle
+                    font-size: 16px
+                    text-align: center !important
+        #family-intro 
+            .family-step-list 
+                .family-step 
+                    .left 
+                        .big_title
+                            font-size: 32px
+                            top: 0
+                            white-space: nowrap
+                            padding: 0
 </style>

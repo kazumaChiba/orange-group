@@ -20,13 +20,12 @@
                         <div class="news-categories -date">
                             <div id="category-date" class="d-flex justify-content-end">
                                 <div class="filter-date -cate position-relative d-block d-lg-none">
-                                    <el-select v-model="category">
+                                    <el-select v-model="category"  @change="filterCate">
                                         <el-option 
                                             v-for="(item,$index) in newsCategories"
                                             :key="$index" 
                                             :label="item" 
-                                            :value="item"
-                                            @click="newsIndex = $index"
+                                            :value="$index"
                                             ></el-option>
                                     </el-select>
                                 </div>
@@ -204,9 +203,16 @@ export default {
         MenuHeader,
         BlockFooter,
     },
+    mounted() {
+        // this.$store.dispatch("update_news_items",this.newsItems);
+        // console.log(this.$store.state.user.news_items[0].title);
+    },
     methods: {
         loadMore(){
             this.viewIndex += 4;
+        },
+        filterCate(index){
+            this.newsIndex = index;
         }
     }
 }

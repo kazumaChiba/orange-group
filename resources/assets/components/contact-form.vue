@@ -1,50 +1,48 @@
 <template>
     <div>
         <div class="container" v-if="fields[brand]">
-            <div class="row">
-                <div id="contact-form-body" class="w-100">
-                    <p class="contact-form-title mb-1" v-html="fields[brand].title"></p>
-                    <p class="text-size-1 font-weight-bold">{{fields[brand].subtitle}}</p>
-                    <form>
-                        <div 
-                            class="contact-form-field d-flex flex-column flex-wrap"
-                        >
-                            <div class="field-item field-user d-flex align-items-center position-relative">
-                                <input placeholder="您的姓名">
-                                <img src="/images/icon-user.png" class="field-icon" />
-                            </div>
-                            <div class="field-item field-envelop d-flex align-items-center position-relative">
-                                <input placeholder="您的電子信箱">
-                                <img src="/images/icon-mail.png" class="field-icon" />
-                            </div>
-                            <div class="field-item field-phone d-flex align-items-center position-relative">
-                                <input placeholder="您的電話">
-                                <img src="/images/icon-phone.png" class="field-icon" />
-                            </div>
-                            <div class="field-item field-location d-flex align-items-center position-relative">
-                                <input placeholder="欲聯繫的橘色分館">
-                                <img src="/images/icon-location.png" class="field-icon" />
-                            </div>
-                            <div class="field-item field-question d-flex align-items-center position-relative">
-                                <el-select v-model="question" placeholder="欲詢問的問題類型">
-                                    <el-option :label="'問題一'" :value="1"></el-option>
-                                    <el-option :label="'問題二'" :value="2"></el-option>
-                                    <el-option :label="'問題三'" :value="3"></el-option>
-                                </el-select>
-                                <!--<input placeholder="欲詢問的問題類型">-->
-                                <img src="/images/icon-ask.png" class="field-icon" />
-                            </div>
-                            <div class="field-item field-content d-flex align-items-center position-relative h-100">
-                                <textarea placeholder="您的詢問內容"></textarea>
-                                <img src="/images/icon-plane.png" class="field-icon plane" />
-                            </div>
+            <div id="contact-form-body" class="w-100">
+                <p class="contact-form-title mb-1" v-html="fields[brand].title"></p>
+                <p class="text-size-1 font-weight-bold">{{fields[brand].subtitle}}</p>
+                <form>
+                    <div 
+                        class="contact-form-field d-flex flex-column flex-wrap"
+                    >
+                        <div class="field-item field-user d-flex align-items-center position-relative">
+                            <input placeholder="您的姓名">
+                            <img src="/images/icon-user.png" class="field-icon" />
                         </div>
-                        <div class="mt-4 clearfix">
-                            <span class="text-size-1 float-left text-gray w-50 pr-4">您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝</span>
-                            <input type="submit" value="發送訊息" class="btn-orange d-inline-block float-right">
+                        <div class="field-item field-envelop d-flex align-items-center position-relative">
+                            <input placeholder="您的電子信箱">
+                            <img src="/images/icon-mail.png" class="field-icon" />
                         </div>
-                    </form>
-                </div>
+                        <div class="field-item field-phone d-flex align-items-center position-relative">
+                            <input placeholder="您的電話">
+                            <img src="/images/icon-phone.png" class="field-icon" />
+                        </div>
+                        <div class="field-item field-location d-flex align-items-center position-relative">
+                            <input placeholder="欲聯繫的橘色分館">
+                            <img src="/images/icon-location.png" class="field-icon" />
+                        </div>
+                        <div class="field-item field-question d-flex align-items-center position-relative">
+                            <el-select v-model="question" placeholder="欲詢問的問題類型">
+                                <el-option :label="'問題一'" :value="1"></el-option>
+                                <el-option :label="'問題二'" :value="2"></el-option>
+                                <el-option :label="'問題三'" :value="3"></el-option>
+                            </el-select>
+                            <!--<input placeholder="欲詢問的問題類型">-->
+                            <img src="/images/icon-ask.png" class="field-icon" />
+                        </div>
+                        <div class="field-item field-content d-flex align-items-center position-relative h-100">
+                            <textarea placeholder="您的詢問內容"></textarea>
+                            <img src="/images/icon-plane.png" class="field-icon plane" />
+                        </div>
+                    </div>
+                    <div class="mt-4 clearfix">
+                        <span class="text-size-1 float-left text-gray w-50 pr-4">您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝</span>
+                        <input type="submit" value="發送訊息" class="btn-orange d-inline-block float-right">
+                    </div>
+                </form>
             </div>
         </div>
         <div id="block-map">
@@ -117,7 +115,11 @@
                 height: 305px
         form
             margin-bottom: 100px
-                
+
+        @media only screen and (max-width: 991px)         
+            #contact-form-body
+                padding: 0
+            
 </style>
 <script>
     import BlockMap from 'components/block-map'

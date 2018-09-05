@@ -1,18 +1,18 @@
 webpackJsonp([3],{
 
-/***/ 227:
+/***/ 361:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(469)
+  __webpack_require__(603)
 }
-var normalizeComponent = __webpack_require__(48)
+var normalizeComponent = __webpack_require__(51)
 /* script */
-var __vue_script__ = __webpack_require__(471)
+var __vue_script__ = __webpack_require__(605)
 /* template */
-var __vue_template__ = __webpack_require__(482)
+var __vue_template__ = __webpack_require__(616)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -52,19 +52,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 234:
+/***/ 368:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(235)
+  __webpack_require__(369)
 }
-var normalizeComponent = __webpack_require__(48)
+var normalizeComponent = __webpack_require__(51)
 /* script */
-var __vue_script__ = __webpack_require__(237)
+var __vue_script__ = __webpack_require__(371)
 /* template */
-var __vue_template__ = __webpack_require__(238)
+var __vue_template__ = __webpack_require__(372)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -104,17 +104,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 235:
+/***/ 369:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(236);
+var content = __webpack_require__(370);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(79)("b8d6fad2", content, false, {});
+var update = __webpack_require__(206)("b8d6fad2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -131,10 +131,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 236:
+/***/ 370:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(47)(false);
+exports = module.exports = __webpack_require__(50)(false);
 // imports
 
 
@@ -146,7 +146,7 @@ exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .j
 
 /***/ }),
 
-/***/ 237:
+/***/ 371:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -228,7 +228,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 238:
+/***/ 372:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -419,19 +419,19 @@ if (false) {
 
 /***/ }),
 
-/***/ 243:
+/***/ 377:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(244)
+  __webpack_require__(378)
 }
-var normalizeComponent = __webpack_require__(48)
+var normalizeComponent = __webpack_require__(51)
 /* script */
-var __vue_script__ = __webpack_require__(246)
+var __vue_script__ = __webpack_require__(380)
 /* template */
-var __vue_template__ = __webpack_require__(247)
+var __vue_template__ = __webpack_require__(381)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -471,17 +471,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 244:
+/***/ 378:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(245);
+var content = __webpack_require__(379);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(79)("822c5f64", content, false, {});
+var update = __webpack_require__(206)("822c5f64", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -498,22 +498,22 @@ if(false) {
 
 /***/ }),
 
-/***/ 245:
+/***/ 379:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(47)(false);
+exports = module.exports = __webpack_require__(50)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n#block-breadcrumb {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  height: 50vh;\n}\n#block-breadcrumb:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    top: 0;\n}\n@media only screen and (max-width: 991px) {\n#block-breadcrumb {\n      height: 200px;\n}\n#block-breadcrumb .banner-title {\n        font-size: 28px;\n}\n#block-breadcrumb .banner-title span {\n          color: white !important;\n}\n}\n", ""]);
+exports.push([module.i, "\n#block-breadcrumb {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  height: 50vh;\n}\n#block-breadcrumb:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    top: 0;\n}\n@media only screen and (max-width: 991px) {\n#block-breadcrumb {\n      height: 220px;\n}\n#block-breadcrumb .banner-title {\n        font-size: 28px;\n}\n#block-breadcrumb .banner-title span {\n          color: white !important;\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 246:
+/***/ 380:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -578,7 +578,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 247:
+/***/ 381:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -674,17 +674,17 @@ if (false) {
 
 /***/ }),
 
-/***/ 469:
+/***/ 603:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(470);
+var content = __webpack_require__(604);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(79)("7ed73c01", content, false, {});
+var update = __webpack_require__(206)("7ed73c01", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -701,34 +701,38 @@ if(false) {
 
 /***/ }),
 
-/***/ 470:
+/***/ 604:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(47)(false);
+exports = module.exports = __webpack_require__(50)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n#header {\n  top: 0;\n}\n#block-contact #block-contact-brands {\n  -webkit-transform: translateY(-150px);\n          transform: translateY(-150px);\n  margin-bottom: -50px;\n}\n#block-contact #block-contact-brands .row {\n    height: 500px;\n    position: relative;\n    background: white;\n}\n#block-contact #block-contact-brands .row .contact-brands-item {\n      width: 25%;\n      -webkit-box-shadow: -10px -10px 60px rgba(0, 0, 0, 0.1);\n              box-shadow: -10px -10px 60px rgba(0, 0, 0, 0.1);\n      overflow: hidden;\n      padding: 40px;\n      position: relative;\n}\n#block-contact #block-contact-brands .row .contact-brands-item:before, #block-contact #block-contact-brands .row .contact-brands-item:after {\n        content: \"\";\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        opacity: 0;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#block-contact #block-contact-brands .row .contact-brands-item:before {\n        background-image: url(/images/bg_brand_1.png);\n        background-repeat: no-repeat;\n        background-position: center;\n        background-size: cover;\n}\n#block-contact #block-contact-brands .row .contact-brands-item:after {\n        background: #f26d23;\n}\n#block-contact #block-contact-brands .row .contact-brands-item.-intro-text {\n        width: 50%;\n}\n#block-contact #block-contact-brands .row .contact-brands-item img {\n        width: 80px;\n}\n#block-contact #block-contact-brands .row .contact-brands-item > * {\n        z-index: 2;\n}\n#block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text):hover, #block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text).active {\n        cursor: pointer;\n}\n#block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text):hover .brand-title, #block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text):hover p, #block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text).active .brand-title, #block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text).active p {\n          color: white !important;\n}\n#block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text):hover:before, #block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text).active:before {\n          opacity: 1;\n}\n#block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text):hover:after, #block-contact #block-contact-brands .row .contact-brands-item:not(.-intro-text).active:after {\n          opacity: 0.5;\n}\n#block-contact #block-contact-brands .row .brand-intro-title {\n      font-size: 38px;\n      font-weight: 500;\n      margin-bottom: 10px;\n}\n#block-contact #block-contact-brands .row .brand-intro-subtitle {\n      font-size: 22px;\n      color: gray;\n      font-weight: 500;\n}\n#block-contact #block-contact-brands .row .text-line-left {\n      margin-bottom: 20px;\n      font-weight: 500;\n}\n#block-contact #block-contact-brands .row .text-line-left:before {\n        content: \"\";\n        position: absolute;\n        width: 50%;\n        height: 1px;\n        background: #f26d23;\n        top: 50%;\n        left: calc(-50% - 20px);\n}\n#block-contact #block-contact-brands .row .brand-title {\n      font-size: 22px;\n      font-weight: 500;\n      margin-bottom: 0;\n}\n", ""]);
+exports.push([module.i, "\n#header {\n  top: 0;\n}\n#block-contact #block-contact-brands {\n  -webkit-transform: translateY(-150px);\n          transform: translateY(-150px);\n  margin-bottom: -50px;\n}\n#block-contact #block-contact-brands .contact-brands-list {\n    position: relative;\n    background: white;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item {\n      -webkit-box-flex: 25%;\n          -ms-flex: 25%;\n              flex: 25%;\n      -webkit-box-shadow: -10px -10px 60px rgba(0, 0, 0, 0.1);\n              box-shadow: -10px -10px 60px rgba(0, 0, 0, 0.1);\n      overflow: hidden;\n      padding: 40px;\n      position: relative;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:before, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:after {\n        content: \"\";\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        opacity: 0;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:before {\n        background-image: url(/images/bg_brand_1.png);\n        background-repeat: no-repeat;\n        background-position: center;\n        background-size: cover;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:after {\n        background: #f26d23;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item.-intro-text {\n        -webkit-box-flex: 50%;\n            -ms-flex: 50%;\n                flex: 50%;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item img {\n        width: 80px;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item > * {\n        z-index: 2;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text):hover, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text).active {\n        cursor: pointer;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text):hover .brand-title, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text):hover p, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text).active .brand-title, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text).active p {\n          color: white !important;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text):hover:before, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text).active:before {\n          opacity: 1;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text):hover:after, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text).active:after {\n          opacity: 0.5;\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-intro-title {\n      font-size: 38px;\n      font-weight: 500;\n      margin-bottom: 10px;\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-intro-subtitle {\n      font-size: 22px;\n      color: gray;\n      font-weight: 500;\n}\n#block-contact #block-contact-brands .contact-brands-list .text-line-left {\n      margin-bottom: 20px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#block-contact #block-contact-brands .contact-brands-list .text-line-left:before {\n        content: \"\";\n        position: absolute;\n        width: 50%;\n        height: 1px;\n        background: #f26d23;\n        top: 50%;\n        left: calc(-50% - 20px);\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-title {\n      font-size: 22px;\n      font-weight: 500;\n      margin-bottom: 0;\n}\n@media only screen and (max-width: 991px) {\n#block-contact #block-contact-brands {\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n    margin: 50px 0;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item {\n      -webkit-box-flex: 50%;\n          -ms-flex: 50%;\n              flex: 50%;\n      -webkit-box-shadow: none;\n              box-shadow: none;\n      border: 1px solid #ccc;\n      padding: 20px 0;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item.-intro-text {\n        -webkit-box-flex: 100%;\n            -ms-flex: 100%;\n                flex: 100%;\n        border: none;\n        padding: 0px;\n        margin-bottom: 15px;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:nth-child(2n-1) {\n        border-left: none;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(:last-child):not(:nth-last-child(2)) {\n        border-bottom: none;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item img {\n        width: 50px;\n}\n#block-contact #block-contact-brands .contact-brands-list .text-line-left {\n      text-align: center;\n      margin-bottom: 10px;\n      font-size: 12px;\n}\n#block-contact #block-contact-brands .contact-brands-list .text-line-left:before {\n        display: none;\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-intro-title {\n      font-size: 23px;\n      text-align: center;\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-intro-subtitle {\n      font-size: 14px;\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-title {\n      font-size: 16px;\n}\n#block-contact #block-contact-brands .contact-brands-list .text-size-2 {\n      font-size: 12px !important;\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 471:
+/***/ 605:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_banner__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_banner__ = __webpack_require__(377);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_banner___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_components_block_banner__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_contact_form__ = __webpack_require__(472);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_contact_form__ = __webpack_require__(606);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_contact_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_components_contact_form__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_components_block_footer__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_components_block_footer__ = __webpack_require__(368);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_components_block_footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_components_block_footer__);
+//
+//
+//
+//
 //
 //
 //
@@ -798,11 +802,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 title: 'SAKURA SPA',
                 intro: '',
                 name: 'sakura_spa'
-            }, {
-                img: '/images/index_logo.png',
-                title: '人力招募',
-                intro: '<p class="text-size-2 font-weight-bold">即刻加入橘色大家庭</p>',
-                name: 'join'
             }],
             brandName: ''
         };
@@ -817,19 +816,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 472:
+/***/ 606:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(473)
+  __webpack_require__(607)
 }
-var normalizeComponent = __webpack_require__(48)
+var normalizeComponent = __webpack_require__(51)
 /* script */
-var __vue_script__ = __webpack_require__(475)
+var __vue_script__ = __webpack_require__(609)
 /* template */
-var __vue_template__ = __webpack_require__(481)
+var __vue_template__ = __webpack_require__(615)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -869,17 +868,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 473:
+/***/ 607:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(474);
+var content = __webpack_require__(608);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(79)("3c4d6a73", content, false, {});
+var update = __webpack_require__(206)("3c4d6a73", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -896,30 +895,32 @@ if(false) {
 
 /***/ }),
 
-/***/ 474:
+/***/ 608:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(47)(false);
+exports = module.exports = __webpack_require__(50)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n#contact-form .btn-orange {\n  padding: 10px 55px;\n  font-size: 14px;\n  -webkit-box-shadow: 5px 5px 10px rgba(242, 109, 35, 0.3);\n          box-shadow: 5px 5px 10px rgba(242, 109, 35, 0.3);\n}\n#contact-form .btn-orange:hover {\n    background: rgba(0, 0, 0, 0.85);\n}\n#contact-form #contact-form-body {\n  padding: 0 80px;\n}\n#contact-form #contact-form-body .field-item {\n    width: 50%;\n}\n#contact-form #contact-form-body .field-item .field-icon {\n      position: absolute;\n      top: 15px;\n}\n#contact-form #contact-form-body .field-item .field-icon.plane {\n        font-size: 60px;\n        color: #f26c23;\n        right: 0;\n        top: -70px;\n}\n#contact-form .contact-form-title {\n  font-size: 28px;\n}\n#contact-form .contact-form-field {\n  height: 330px;\n}\n#contact-form .contact-form-field .field-item {\n    margin-bottom: 20px;\n}\n#contact-form .contact-form-field .el-select {\n    width: 100%;\n    font-size: 14px;\n    color: #858585;\n}\n#contact-form .contact-form-field .el-select .el-input__suffix {\n      height: 39px;\n      line-height: 39px;\n}\n#contact-form .contact-form-field input, #contact-form .contact-form-field textarea {\n    background: white;\n    border-radius: 0;\n    -moz-appearance: none;\n         appearance: none;\n    -webkit-appearance: none;\n    width: 100%;\n    border: none;\n    border-bottom: 1px solid #ccc;\n    padding: 10px 30px;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n}\n#contact-form .contact-form-field input::-webkit-input-placeholder, #contact-form .contact-form-field textarea::-webkit-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input:-ms-input-placeholder, #contact-form .contact-form-field textarea:-ms-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input::-ms-input-placeholder, #contact-form .contact-form-field textarea::-ms-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input::placeholder, #contact-form .contact-form-field textarea::placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input:focus, #contact-form .contact-form-field textarea:focus {\n      outline: none;\n      border-bottom-color: #f26c23;\n      border-width: 2px;\n}\n#contact-form .contact-form-field input:focus::-webkit-input-placeholder, #contact-form .contact-form-field textarea:focus::-webkit-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus:-ms-input-placeholder, #contact-form .contact-form-field textarea:focus:-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::-ms-input-placeholder, #contact-form .contact-form-field textarea:focus::-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::placeholder, #contact-form .contact-form-field textarea:focus::placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus + .field-icon, #contact-form .contact-form-field textarea:focus + .field-icon {\n        color: #f26c23;\n}\n#contact-form .contact-form-field input.btn-orange, #contact-form .contact-form-field textarea.btn-orange {\n      font-size: 14px;\n      padding: 10px 60px;\n      -webkit-box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n              box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n}\n#contact-form .contact-form-field textarea {\n    margin-left: 30px;\n    height: 305px;\n}\n#contact-form form {\n  margin-bottom: 100px;\n}\n", ""]);
+exports.push([module.i, "\n#contact-form .btn-orange {\n  padding: 10px 55px;\n  font-size: 14px;\n  -webkit-box-shadow: 5px 5px 10px rgba(242, 109, 35, 0.3);\n          box-shadow: 5px 5px 10px rgba(242, 109, 35, 0.3);\n}\n#contact-form .btn-orange:hover {\n    background: rgba(0, 0, 0, 0.85);\n}\n#contact-form #contact-form-body {\n  padding: 0 80px;\n}\n#contact-form #contact-form-body .field-item {\n    width: 50%;\n}\n#contact-form #contact-form-body .field-item .field-icon {\n      position: absolute;\n      top: 15px;\n}\n#contact-form #contact-form-body .field-item .field-icon.plane {\n        font-size: 60px;\n        color: #f26c23;\n        right: 0;\n        top: -70px;\n}\n#contact-form .contact-form-title {\n  font-size: 28px;\n}\n#contact-form .contact-form-field {\n  height: 330px;\n}\n#contact-form .contact-form-field .field-item {\n    margin-bottom: 20px;\n}\n#contact-form .contact-form-field .el-select {\n    width: 100%;\n    font-size: 14px;\n    color: #858585;\n}\n#contact-form .contact-form-field .el-select .el-input__suffix {\n      height: 39px;\n      line-height: 39px;\n}\n#contact-form .contact-form-field input, #contact-form .contact-form-field textarea {\n    background: white;\n    border-radius: 0;\n    -moz-appearance: none;\n         appearance: none;\n    -webkit-appearance: none;\n    width: 100%;\n    border: none;\n    border-bottom: 1px solid #ccc;\n    padding: 10px 30px;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n}\n#contact-form .contact-form-field input::-webkit-input-placeholder, #contact-form .contact-form-field textarea::-webkit-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input:-ms-input-placeholder, #contact-form .contact-form-field textarea:-ms-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input::-ms-input-placeholder, #contact-form .contact-form-field textarea::-ms-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input::placeholder, #contact-form .contact-form-field textarea::placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input:focus, #contact-form .contact-form-field textarea:focus {\n      outline: none;\n      border-bottom-color: #f26c23;\n      border-width: 2px;\n}\n#contact-form .contact-form-field input:focus::-webkit-input-placeholder, #contact-form .contact-form-field textarea:focus::-webkit-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus:-ms-input-placeholder, #contact-form .contact-form-field textarea:focus:-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::-ms-input-placeholder, #contact-form .contact-form-field textarea:focus::-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::placeholder, #contact-form .contact-form-field textarea:focus::placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus + .field-icon, #contact-form .contact-form-field textarea:focus + .field-icon {\n        color: #f26c23;\n}\n#contact-form .contact-form-field input.btn-orange, #contact-form .contact-form-field textarea.btn-orange {\n      font-size: 14px;\n      padding: 10px 60px;\n      -webkit-box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n              box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n}\n#contact-form .contact-form-field textarea {\n    margin-left: 30px;\n    height: 305px;\n}\n#contact-form form {\n  margin-bottom: 100px;\n}\n@media only screen and (max-width: 991px) {\n#contact-form #contact-form-body {\n    padding: 0;\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 475:
+/***/ 609:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_map__ = __webpack_require__(476);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_map__ = __webpack_require__(610);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_components_block_map__);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
 //
 //
 //
@@ -1072,19 +1073,19 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ 476:
+/***/ 610:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(477)
+  __webpack_require__(611)
 }
-var normalizeComponent = __webpack_require__(48)
+var normalizeComponent = __webpack_require__(51)
 /* script */
-var __vue_script__ = __webpack_require__(479)
+var __vue_script__ = __webpack_require__(613)
 /* template */
-var __vue_template__ = __webpack_require__(480)
+var __vue_template__ = __webpack_require__(614)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -1124,17 +1125,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 477:
+/***/ 611:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(478);
+var content = __webpack_require__(612);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(79)("682b8be5", content, false, {});
+var update = __webpack_require__(206)("682b8be5", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -1151,10 +1152,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 478:
+/***/ 612:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(47)(false);
+exports = module.exports = __webpack_require__(50)(false);
 // imports
 
 
@@ -1166,7 +1167,7 @@ exports.push([module.i, "\n#block-map .map-list {\n  margin-bottom: 80px;\n  pad
 
 /***/ }),
 
-/***/ 479:
+/***/ 613:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1229,7 +1230,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ 480:
+/***/ 614:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -1313,7 +1314,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 481:
+/***/ 615:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -1323,88 +1324,86 @@ var render = function() {
   return _c("div", [
     _vm.fields[_vm.brand]
       ? _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c(
-              "div",
-              { staticClass: "w-100", attrs: { id: "contact-form-body" } },
-              [
-                _c("p", {
-                  staticClass: "contact-form-title mb-1",
-                  domProps: { innerHTML: _vm._s(_vm.fields[_vm.brand].title) }
-                }),
+          _c(
+            "div",
+            { staticClass: "w-100", attrs: { id: "contact-form-body" } },
+            [
+              _c("p", {
+                staticClass: "contact-form-title mb-1",
+                domProps: { innerHTML: _vm._s(_vm.fields[_vm.brand].title) }
+              }),
+              _vm._v(" "),
+              _c("p", { staticClass: "text-size-1 font-weight-bold" }, [
+                _vm._v(_vm._s(_vm.fields[_vm.brand].subtitle))
+              ]),
+              _vm._v(" "),
+              _c("form", [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "contact-form-field d-flex flex-column flex-wrap"
+                  },
+                  [
+                    _vm._m(0),
+                    _vm._v(" "),
+                    _vm._m(1),
+                    _vm._v(" "),
+                    _vm._m(2),
+                    _vm._v(" "),
+                    _vm._m(3),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "field-item field-question d-flex align-items-center position-relative"
+                      },
+                      [
+                        _c(
+                          "el-select",
+                          {
+                            attrs: { placeholder: "欲詢問的問題類型" },
+                            model: {
+                              value: _vm.question,
+                              callback: function($$v) {
+                                _vm.question = $$v
+                              },
+                              expression: "question"
+                            }
+                          },
+                          [
+                            _c("el-option", {
+                              attrs: { label: "問題一", value: 1 }
+                            }),
+                            _vm._v(" "),
+                            _c("el-option", {
+                              attrs: { label: "問題二", value: 2 }
+                            }),
+                            _vm._v(" "),
+                            _c("el-option", {
+                              attrs: { label: "問題三", value: 3 }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c("img", {
+                          staticClass: "field-icon",
+                          attrs: { src: "/images/icon-ask.png" }
+                        })
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _vm._m(4)
+                  ]
+                ),
                 _vm._v(" "),
-                _c("p", { staticClass: "text-size-1 font-weight-bold" }, [
-                  _vm._v(_vm._s(_vm.fields[_vm.brand].subtitle))
-                ]),
-                _vm._v(" "),
-                _c("form", [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "contact-form-field d-flex flex-column flex-wrap"
-                    },
-                    [
-                      _vm._m(0),
-                      _vm._v(" "),
-                      _vm._m(1),
-                      _vm._v(" "),
-                      _vm._m(2),
-                      _vm._v(" "),
-                      _vm._m(3),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "field-item field-question d-flex align-items-center position-relative"
-                        },
-                        [
-                          _c(
-                            "el-select",
-                            {
-                              attrs: { placeholder: "欲詢問的問題類型" },
-                              model: {
-                                value: _vm.question,
-                                callback: function($$v) {
-                                  _vm.question = $$v
-                                },
-                                expression: "question"
-                              }
-                            },
-                            [
-                              _c("el-option", {
-                                attrs: { label: "問題一", value: 1 }
-                              }),
-                              _vm._v(" "),
-                              _c("el-option", {
-                                attrs: { label: "問題二", value: 2 }
-                              }),
-                              _vm._v(" "),
-                              _c("el-option", {
-                                attrs: { label: "問題三", value: 3 }
-                              })
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c("img", {
-                            staticClass: "field-icon",
-                            attrs: { src: "/images/icon-ask.png" }
-                          })
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _vm._m(4)
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _vm._m(5)
-                ])
-              ]
-            )
-          ])
+                _vm._m(5)
+              ])
+            ]
+          )
         ])
       : _vm._e(),
     _vm._v(" "),
@@ -1550,7 +1549,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 482:
+/***/ 616:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -1578,7 +1577,7 @@ var render = function() {
           _c("div", { staticClass: "container" }, [
             _c(
               "div",
-              { staticClass: "row" },
+              { staticClass: "contact-brands-list d-flex flex-wrap" },
               [
                 _vm._m(0),
                 _vm._v(" "),
@@ -1606,7 +1605,7 @@ var render = function() {
                         "p",
                         {
                           staticClass:
-                            "text-orange brand-title position-relative text-center"
+                            "text-orange brand-title position-relative text-center d-none d-md-block"
                         },
                         [_vm._v(_vm._s(item.title))]
                       ),
@@ -1614,7 +1613,9 @@ var render = function() {
                       _c("div", { domProps: { innerHTML: _vm._s(item.intro) } })
                     ]
                   )
-                })
+                }),
+                _vm._v(" "),
+                _vm._m(1)
               ],
               2
             )
@@ -1646,12 +1647,12 @@ var staticRenderFns = [
           "contact-brands-item -intro-text d-flex justify-content-center align-items-center"
       },
       [
-        _c("div", [
+        _c("div", { staticClass: "overflow-hidden" }, [
           _c(
             "span",
             {
               staticClass:
-                "text-orange text-size-2 text-line-left d-block position-relative"
+                "text-orange text-line-left d-block position-relative"
             },
             [_vm._v("竭誠歡迎與我們聯繫")]
           ),
@@ -1665,6 +1666,31 @@ var staticRenderFns = [
             _c("br"),
             _vm._v("我們會儘速與您聯絡，謝謝。")
           ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "contact-brands-item d-flex flex-column align-items-center justify-content-center"
+      },
+      [
+        _c(
+          "p",
+          {
+            staticClass: "text-orange brand-title position-relative text-center"
+          },
+          [_vm._v("人力招募")]
+        ),
+        _vm._v(" "),
+        _c("p", { staticClass: "text-size-2 font-weight-bold mb-0" }, [
+          _vm._v("即刻加入橘色大家庭")
         ])
       ]
     )
