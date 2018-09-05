@@ -4070,11 +4070,16 @@ body,
 
 #app #header.position-fixed .logo {
   position: relative;
-}
-
-#app #header.position-fixed .logo img {
   height: 50px;
   width: auto;
+}
+
+#app #header.position-fixed .logo#footer-logo {
+  display: none;
+}
+
+#app #header.position-fixed .logo#footer-logo-black {
+  display: block;
 }
 
 #app #header.position-fixed .menu-title {

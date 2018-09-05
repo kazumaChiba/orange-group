@@ -20,9 +20,9 @@
         <div id="block-about-service" class="position-relative">
             <div class="service-body position-relative"  style="background-image:url('/images/banner_about.png');">
                 <div class="container">
-                    <div class="row d-flex justify-content-center align-items-center">
+                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
                         <div class="service-left position-relative">
-                            <div class="service-item d-flex position-relative justify-content-center align-items-center text-center">
+                            <div class="service-item d-flex flex-column position-relative justify-content-center align-items-center text-center">
                                 <div class="service-img mr-3 mr-lg-0" style="background-image:url('/images/about_year_1.png');"></div>
                                 <div class="service-content text-white">
                                     <p class="service-title">用心服務</p>
@@ -31,14 +31,14 @@
                             </div>
                         </div>
                         <div class="service-right position-relative">
-                            <div class="service-item top d-flex flex-row-reverse flex-lg-row position-relative justify-content-center align-items-center text-center">
-                                <div class="service-img ml-3 ml-lg-0" style="background-image:url('/images/about_year_2.png');"></div>
+                            <div class="service-item top d-flex flex-column position-relative justify-content-center align-items-center text-center">
+                                <div class="service-img" style="background-image:url('/images/about_year_2.png');"></div>
                                 <div class="service-content text-white">
                                     <p class="service-title">用心服務</p>
                                     <p class="service-desc mb-0">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文測</p>
                                 </div>
                             </div>
-                            <div class="service-item bottom d-flex position-relative justify-content-center align-items-center text-center">
+                            <div class="service-item bottom flex-column d-flex position-relative justify-content-center align-items-center text-center">
                                 <div class="service-img mr-3 mr-lg-0" style="background-image:url('/images/about_year_3.png');"></div>
                                 <div class="service-content text-white">
                                     <p class="service-title">用心服務</p>
@@ -528,7 +528,6 @@ export default {
                     &.bottom
                         .service-img
                             height: 480px
-                            width: 90%
     #block-about-year
         padding-top: 70px
         margin-bottom: 150px
@@ -748,15 +747,14 @@ export default {
                             align-items: end !important
                             margin-bottom: 20px
                             .service-img
-                                width: 50%
                                 padding-top: 40%
                                 height: auto
                             .service-content
                                 color: black !important
                                 position: relative
                                 opacity: 1
-                                width: 50%
                                 padding: 0px
+                                margin-top: 10px
                                 .service-title
                                     color: #f26c24
                                     font-size: 14px

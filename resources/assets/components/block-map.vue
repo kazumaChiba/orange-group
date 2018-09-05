@@ -67,7 +67,7 @@
             margin-bottom: 80px
             padding: 0 80px
             .map-item
-                max-width: calc(100%/3)
+                width: calc(100%/3)
                 padding: 20px
                 .map-title
                     font-size: 20px

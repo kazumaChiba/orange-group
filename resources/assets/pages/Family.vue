@@ -17,10 +17,11 @@
             <h2 class="family-title text-orange text-right d-none d-lg-block">橘色<br>引領你築夢踏實<br>一步一步達成夢想</h2>
             <div class="family-step-list">
                 <div 
-                    class="family-step d-flex"
+                    class="family-step d-flex flex-column flex-lg-row"
                     v-for="(item,$index) in family_steps"
                     :key="$index"
                     :id="'step-'+$index"
+                    :class="{'flex-lg-row-reverse' : $index == 1}"
                 >
                     <div class="left position-relative">
                         <h1 class="big_title text-orange position-absolute">{{item.bigTitle}}</h1>
@@ -36,9 +37,9 @@
                 </div>
             </div>
         </div>
-        <div id="teams-say">
+        <div id="teams-say" class="d-none d-lg-block">
             <div
-                class="teams-content text-white position-relative" 
+                class="d-flex teams-content text-white position-relative align-items-center" 
                 :style="'background-image:url('+slick_teams[teamIndex].img_big+')'"
             >
                 <div class="team-content-texts position-relative">
@@ -56,10 +57,32 @@
                     v-for="(item,$index) in slick_teams"
                     :key="$index"
                     class="team-item position-relative d-flex flex-column align-items-center justify-content-center" 
+                    :class="{'active' : $index == 0}"
                     :style="'background-image:url('+item.img+')'"
                     @click="teamIndex = $index"
                 >
                     <p class="team-title text-center">{{item.team}}<br>{{item.member}}</p>
+                </div>
+            </slick>
+        </div>
+        <div id="teams-say" class="d-block d-lg-none">
+            <h3>看看我們的夥伴們怎麼說</h3>
+            <slick
+                class="teams"
+                ref="slick"
+                :options="teamsOption"
+            >
+                <div
+                    class="d-flex teams-content text-white position-relative align-items-center" 
+                    v-for="(item,$index) in slick_teams"
+                    :key="$index"
+                >
+                    <div 
+                        class="team-content-texts position-relative" 
+                        :style="'background-image:url('+slick_teams[teamIndex].img_big+')'"
+                    >
+                        <p class="team-desc position-relative" v-html="item.text"></p>
+                    </div>
                 </div>
             </slick>
         </div>
@@ -100,6 +123,16 @@ export default {
             ],
             teamsOption: {
                 slidesToShow: 4,
+                slidesToScroll: 4,
+                responsive: [
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    }
+                ],
             },
             slick_teams: [
                 {
@@ -176,6 +209,12 @@ export default {
             jQuery(window).scroll(function(){
                 fadein();
             });
+
+            jQuery(".team-item").click(function(){
+                jQuery(".team-item.active").removeClass("active");
+                jQuery(this).addClass("active");
+            });
+
             function fadein(){
                 let nowp = jQuery(window).scrollTop();
                 if(nowp >= 200){
@@ -373,7 +412,8 @@ export default {
     
     #teams-say
         .teams-content
-            padding: 200px 300px
+            min-height: 700px
+            padding: 0 20vw
             background-repeat: no-repeat
             background-size: cover
             background-position: center
@@ -422,6 +462,8 @@ export default {
                 height: 25vw
                 cursor: pointer
                 box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.15)
+                background-size: cover
+                background-position: center
                 @for $i from 0 through 3
                     &:nth-child(#{$i+1})
                         z-index: 3 - $i
@@ -435,7 +477,7 @@ export default {
                     width: 100%
                     height: 100%
                     background: white
-                &:hover
+                &:hover , &.active
                     .team-title
                         color: white
                     &:before
@@ -462,10 +504,56 @@ export default {
         #family-intro 
             .family-step-list 
                 .family-step 
+                    margin: 50px 0 0 0
                     .left 
                         .big_title
-                            font-size: 32px
+                            font-size: 23px
                             top: 0
                             white-space: nowrap
                             padding: 0
+                            font-weight: 400
+                            opacity: 1
+                            position: relative !important
+                            text-align: center
+                            margin-bottom: 25px
+                        img
+                            padding: 0 20px
+                    .right
+                        padding: 20px !important
+                    .step-title , .subtitle , .desc
+                        font-size: 16px
+                        width: 100%
+                    .step-title
+                        padding: 0
+                        margin: 0
+                        border: none
+                    .subtitle
+                        margin-bottom: 15px
+                    .desc
+                        font-size: 14px
+        
+        #teams-say 
+            h3
+                font-size: 23px
+                color: #f26e22
+                text-align: center
+                margin-bottom: 22px
+            .teams-content
+                padding: 0
+                min-height: unset
+                .team-content-texts
+                    width: 100%
+                    padding: 40px 20px
+                    background-size: cover
+                    background-position: center
+                .team-desc
+                    padding: 0  
+                    width: 60%
+                    line-height: 20px
+                    font-size: 14px
+                    letter-spacing: 1px
+                    &:before
+                        display: none
+
+
 </style>

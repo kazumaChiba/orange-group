@@ -106,6 +106,7 @@ export default {
                     overflow: hidden
                     padding: 40px
                     position: relative
+                    height: 250px
                     &:before , &:after
                         content: ""
                         width: 100%
