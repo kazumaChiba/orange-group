@@ -130,6 +130,7 @@ export default {
                         settings: {
                             slidesToShow: 1,
                             slidesToScroll: 1,
+                            dots: true,
                         }
                     }
                 ],
@@ -428,6 +429,7 @@ export default {
                 height: 100%
                 left: 0
                 top: 0
+                z-index: 1
             &:after
                 content: ""
                 position: absolute
@@ -446,6 +448,7 @@ export default {
                 font-size: 18px
                 margin-bottom: 30px
                 padding-left: 100px
+                z-index: 2
                 &:before
                     content: '“'
                     font-size: 150px
@@ -534,7 +537,7 @@ export default {
         
         #teams-say 
             h3
-                font-size: 23px
+                font-size: 21px
                 color: #f26e22
                 text-align: center
                 margin-bottom: 22px
@@ -554,6 +557,23 @@ export default {
                     letter-spacing: 1px
                     &:before
                         display: none
+                &:after
+                    display: none
+            .slick-dotted
+                &.slick-slider
+                    margin-bottom: 0
+            .slick-dots
+                bottom: 8px
+                li
+                    button
+                        &:before
+                            opacity: 1
+                            color: white
+                    &.slick-active 
+                        button
+                            &:before
+                                opacity: 1
+                                color: #eb5e00
 
 
 </style>

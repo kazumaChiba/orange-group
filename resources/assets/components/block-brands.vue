@@ -22,41 +22,45 @@
                 <div class="content-brands w-100 d-flex align-items-center justify-content-between mt-5 mb-5">
                     <span class="btn-orange"  @click="brandIndex = 0; startAnimate('500')">橘色涮涮屋</span>
                     <div 
-                        class="info-brands border-radius-100 d-flex flex-column justify-content-center text-left position-relative"
+                        class="info-brands align-items-end border-radius-100 d-flex justify-content-center text-left position-relative"
                         :style="'background-image: url(' + brandItems[brandIndex].logo + ')'"
                     >    
+                        <a :href="brandItems[brandIndex].contact">聯絡我們</a>
+                        <span>・</span>
+                        <a :href="brandItems[brandIndex].book">線上訂位</a>
                     </div>
                     <span class="btn-orange" @click="brandIndex = 1; startAnimate('500')">M One Cafe</span>
                 </div>
                 <p class="text-brands" v-html="brandItems[brandIndex].text" :class="{'fade' : addTransition}"></p>
             </div>
-            <div class="d-block d-md-none">
-                <h3 class="main-title text-uppercase">
-                    <span class="fs-inherit text-orange">
-                        橘色</span>版圖<br>
-                </h3>
-                <span class="sub-title">orange brands</span>
-                <slick
-                    class="slick-brands"
-                    ref="slick"
-                    :options="slickOptions"
+            <div class="d-block d-md-none position-relative">
+                <div>
+                    <h3 class="main-title text-uppercase">
+                        <span class="fs-inherit text-orange">
+                            橘色</span>版圖<br>
+                    </h3>
+                    <span class="sub-title">orange brands</span>
+                </div>
+                <div
+                    class="slide slick-brands"
+                    v-for="(item,$index) in brandItems"
+                    :key="$index"
                 >
-                    <div 
-                        v-for="(item,$index) in brandItems"
-                        :key="$index"
-                        class="content-brands position-relative d-flex flex-column align-items-center justify-content-center" 
-                    >
+                    <div class="content-brands position-relative d-flex flex-column align-items-center justify-content-center" >
                         <div 
-                            class="info-brands position-relative border-radius-100 d-flex flex-column justify-content-center text-left"
+                            class="info-brands align-items-end position-relative border-radius-100 d-flex justify-content-center text-left"
                             :style="'background-image: url(' + item.logo + ')'"
                         >
+                            <a :href="brandItems[brandIndex].contact">聯絡我們</a>
+                            <span>・</span>
+                            <a :href="brandItems[brandIndex].book">線上訂位</a>
                         </div>
                         <div class="slick-brand-text">
                             <p class="text-title">{{item.title}}</p>
                             <p class="text-brand-info" v-html="item.text"></p>
                         </div>
                     </div>
-                </slick>
+                </div>
             </div>
         </div>
     </div> 
@@ -68,6 +72,20 @@
 
     #app
         #block-brands
+            .fp-controlArrow
+                &.fp-next , &.fp-prev
+                    border: 3px solid white
+                    width: 20px
+                    height: 20px
+                    border-radius: 5px 0 5px 0px
+                    border-top-color: transparent
+                    border-right-color: transparent
+                    transform: rotate(225deg)
+                    position: absolute
+                    bottom: 90px
+                    top: unset
+                &.fp-prev
+                    transform: rotate(45deg)
             .bg-black-cover
                 width: 0
                 height: 100vh
@@ -79,17 +97,19 @@
 
             .container
                 z-index: 2
-                padding: 100px 15px    
+                padding: 0 15px   
+                .row
+                    padding: 100px 0 
                 .content-brands
                     .info-brands
                         width: 300px
                         height: 300px
                         border: 1px solid white
-                        padding: 0 40px
+                        padding: 60px 40px
                         font-size: 30px
-                        background-size: 80%
+                        background-size: 50%
                         background-repeat: no-repeat
-                        background-position: center
+                        background-position: center 50px
                         &:before
                             content: ""
                             position: absolute
@@ -99,6 +119,11 @@
                             background: rgba(242, 108, 35, 0.4)
                             border-radius: 100%
                             left: 0
+                            z-index: -1
+                            bottom: 0
+                        a , span
+                            font-size: 16px
+                            
                 .text-brands
                     font-size: 30px
                     letter-spacing: 20px
@@ -109,16 +134,24 @@
 
         @media only screen and (max-width: 991px)
             .slick-brands
-                margin: 50px 0
+                // margin: 50px 0
         
         @media only screen and (max-width: 768px)
             #block-brands 
+                .fp-slides
+                    height: calc(100vh - 200px)
+                .fp-tableCell
+                    height: 100% !important
                 .container 
                     .content-brands 
                         .info-brands
                             width: 250px
                             height: 250px
                             margin-bottom: 50px
+                        .slick-brand-text
+                            padding: 0 20px
+                            .text-brand-info
+                                line-height: 30px
 
 
 </style>
@@ -137,18 +170,24 @@ export default {
                         title: 'EXTENSION by 橘色',
                         text: '小鍋<span class="text-orange">新</span>時尚<br>不管多少人都能吃得精彩！',
                         logo: '/images/home3_icon1.png',
+                        contact: '#',
+                        book: '#',
                     },
                     {
                         url: '/images/slideshow_1.jpg',
                         title: 'M One Cafe',
                         text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！',
                         logo: '/images/home3_icon2.png',
+                        contact: '#',
+                        book: '#',
                     },
 	                {
 		                url: '/images/slideshow_1.jpg',
 		                title: '橘色鍋物',
                         text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！',
                         logo: '/images/home3_icon3.png',
+                        contact: '#',
+                        book: '#',
 	                },
                 ],
                 slickOptions: {
