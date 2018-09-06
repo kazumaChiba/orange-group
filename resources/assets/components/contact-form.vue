@@ -75,12 +75,36 @@
             textarea
                 margin-left: 30px
                 height: 305px
+        .field-footer
+            span
+                width: 50% 
         form
             margin-bottom: 100px
 
         @media only screen and (max-width: 991px)         
             #contact-form-body
                 padding: 0
+                .contact-form-field
+                    height: auto
+                    .field-item
+                        width: 100%
+                        textarea
+                            margin-left: 0
+                            height: 180px
+                            &::placeholder
+                                top: 50%
+                                position: relative
+                                transform: translateY(-50%)
+                        .field-icon
+                            &.plane
+                                width: 16px
+                                top: 50%
+                                left: 0
+                                transform: translateY(-50%)
+                .field-footer
+                    span
+                        width: 100%    
+                
             
 </style>
 <script>
@@ -126,9 +150,9 @@
                                             '<img src="/images/icon-plane.png" class="field-icon plane" />'+
                                         '</div>'+
                                     '</div>'+
-                                    '<div class="mt-4 clearfix">'+
-                                        '<span class="text-size-1 float-left text-gray w-50 pr-4">您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝</span>'+
-                                        '<input type="submit" value="發送訊息" class="btn-orange d-inline-block float-right">'+
+                                    '<div class="field-footer mt-4 clearfix d-flex d-lg-block flex-column">'+
+                                        '<span class="text-size-1 float-left text-gray mb-3 mb-lg-0 pr-0 pr-lg-4">您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝</span>'+
+                                        '<input type="submit" value="發送訊息" class="btn-orange d-inline-block float-right col-md-3 col-12">'+
                                     '</div>'+
                                 '</form>'
                         }
@@ -165,9 +189,9 @@
                                             '<img src="/images/icon-plane.png" class="field-icon plane" />'+
                                         '</div>'+
                                     '</div>'+
-                                    '<div class="mt-4 clearfix">'+
-                                        '<span class="text-size-1 float-left text-gray w-50 pr-4">您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝</span>'+
-                                        '<input type="submit" value="發送訊息" class="btn-orange d-inline-block float-right">'+
+                                    '<div class="field-footer mt-4 clearfix d-flex d-lg-block flex-column">'+
+                                        '<span class="text-size-1 float-left text-gray mb-3 mb-lg-0 pr-0 pr-lg-4">您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝</span>'+
+                                        '<input type="submit" value="發送訊息" class="btn-orange d-inline-block float-right col-md-3 col-12">'+
                                     '</div>'+
                                 '</form>'
                         }      

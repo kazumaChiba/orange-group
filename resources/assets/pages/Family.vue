@@ -43,9 +43,9 @@
                 :style="'background-image:url('+slick_teams[teamIndex].img_big+')'"
             >
                 <div class="team-content-texts position-relative">
-                    <h3 class="">看看我們的夥伴們怎麼說</h3>
+                    <h3 class=" position-relative">看看我們的夥伴們怎麼說</h3>
                     <p class="team-desc position-relative" v-html="slick_teams[teamIndex].text"></p>
-                    <span class="team-name d-block text-right">- {{slick_teams[teamIndex].team}} {{slick_teams[teamIndex].member}}</span>
+                    <span class="team-name d-block text-right  position-relative">- {{slick_teams[teamIndex].team}} {{slick_teams[teamIndex].member}}</span>
                 </div>
             </div>
             <slick
@@ -79,7 +79,7 @@
                 >
                     <div 
                         class="team-content-texts position-relative" 
-                        :style="'background-image:url('+slick_teams[teamIndex].img_big+')'"
+                        :style="'background-image:url('+item.img_big+')'"
                     >
                         <p class="team-desc position-relative" v-html="item.text"></p>
                     </div>
@@ -140,36 +140,29 @@ export default {
                     team: '橘色公關團隊1',
                     member: '某某某',
                     text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
-                    img: '/images/family_bg.png',
-                    img_big: '/images/family_b1.png',
+                    img: '/images/family_s1.png',
+                    img_big: '/images/family_s1.png',
                 },
                 {
                     team: '橘色公關團隊2',
                     member: '某某某',
-                    text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
-                    img: '/images/slideshow_1.jpg',
-                    img_big: '/images/slideshow_1.jpg',
+                    text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
+                    img: '/images/family_s2.png',
+                    img_big: '/images/family_s2.png',
                 },
                 {
                     team: '橘色公關團隊3',
                     member: '某某某',
                     text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
-                    img: '/images/bg_food_1.png',
-                    img_big: '/images/bg_food_1.png',
+                    img: '/images/family_s3.png',
+                    img_big: '/images/family_s3.png',
                 },
                 {
                     team: '橘色公關團隊4',
                     member: '某某某',
                     text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
-                    img: '/images/slideshow.png',
-                    img_big: '/images/slideshow.png',
-                },
-                {
-                    team: '橘色公關團隊5',
-                    member: '某某某',
-                    text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
-                    img: '/images/family_s1.png',
-                    img_big: '/images/family_s1.png',
+                    img: '/images/family_s4.png',
+                    img_big: '/images/family_s4.png',
                 },
             ],
             teamIndex: 0,
@@ -443,6 +436,7 @@ export default {
             h3
                 margin-bottom: 50px
                 font-size: 40px
+                z-index: 2
             .team-desc
                 line-height: 40px
                 font-size: 18px
@@ -460,6 +454,7 @@ export default {
                     transform-origin: 0 0
             .team-name
                 font-size: 20px
+                z-index: 2
         .teams
             .team-item
                 height: 25vw
@@ -493,8 +488,11 @@ export default {
                         
     @media only screen and (max-width: 991px)
         .slideshow 
+            &:after
+                display: none
             .slider 
-                height: 250px
+                clip-path: none
+                height: 220px
                 padding-bottom: 10px
                 .slide-title
                     font-size: 32px
@@ -536,6 +534,7 @@ export default {
                         font-size: 14px
         
         #teams-say 
+            margin-top: 50px
             h3
                 font-size: 21px
                 color: #f26e22
@@ -546,6 +545,7 @@ export default {
                 min-height: unset
                 .team-content-texts
                     width: 100%
+                    height: 300px
                     padding: 40px 20px
                     background-size: cover
                     background-position: center

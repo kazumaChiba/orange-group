@@ -759,7 +759,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n}\n#footer .footer .footer-info {\n      margin-bottom: 100px;\n      line-height: 25px;\n      font-size: 14px;\n      font-weight: 100;\n}\n#footer .footer .footer-info div {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#footer .footer .footer-info p {\n        margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n        font-size: 18px;\n        font-weight: 100;\n        line-height: 30px;\n}\n#footer .footer.footer-join {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer.footer-join:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: rgba(0, 0, 0, 0.8);\n        top: 0px;\n}\n#footer .footer .btn-orange:hover {\n      background: white;\n      color: #f26d23 !important;\n      font-weight: 500;\n}\n@media only screen and (max-width: 991px) {\n#app #footer .footer .col-contact-us {\n    -webkit-box-flex: 100%;\n        -ms-flex: 100%;\n            flex: 100%;\n}\n#app #footer .container .join-us-slogan {\n    line-height: 45px;\n    margin-bottom: 50px;\n}\n#app #footer .container .join-us-slogan span {\n      font-size: 28px;\n}\n#app #footer .logo {\n    height: 100px;\n}\n#app .btn-orange.fat {\n    padding: 20px 45px;\n}\n}\n@media only screen and (max-width: 420px) {\n#app #footer {\n    height: auto;\n}\n#app #footer .container {\n      padding: 50px 40px;\n}\n#app #footer .container .join-us-slogan {\n        font-size: 18px;\n        line-height: 30px;\n        margin-bottom: 30px;\n}\n#app #footer .container .join-us-slogan span {\n          font-size: 18px;\n}\n#app #footer #copyright, #app #footer #copyright a {\n      white-space: normal;\n}\n#app #footer .footer {\n      margin-bottom: 0 !important;\n}\n#app #footer .footer .col p {\n        font-size: 13px !important;\n}\n#app #footer .btn-orange.fat {\n      padding: 12px 30px;\n      font-size: 13px;\n}\n}\n", ""]);
+exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n}\n#footer .footer .footer-info {\n      margin-bottom: 100px;\n      line-height: 25px;\n      font-size: 14px;\n      font-weight: 100;\n}\n#footer .footer .footer-info div {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#footer .footer .footer-info p {\n        margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n        font-size: 18px;\n        font-weight: 100;\n        line-height: 30px;\n}\n#footer .footer.footer-join {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer.footer-join:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: rgba(0, 0, 0, 0.8);\n        top: 0px;\n}\n#footer .footer .btn-orange:hover {\n      background: white;\n      color: #f26d23 !important;\n      font-weight: 500;\n}\n@media only screen and (max-width: 991px) {\n#app #footer .footer .col-contact-us {\n    -webkit-box-flex: 100%;\n        -ms-flex: 100%;\n            flex: 100%;\n}\n#app #footer .container .join-us-slogan {\n    line-height: 45px;\n    margin-bottom: 50px;\n}\n#app #footer .container .join-us-slogan span {\n      font-size: 28px;\n}\n#app #footer .logo {\n    height: 100px;\n}\n#app .btn-orange.fat {\n    padding: 20px 45px;\n}\n}\n@media only screen and (max-width: 420px) {\n#app #footer {\n    height: auto;\n}\n#app #footer .container .join-us-slogan {\n      font-size: 16px;\n      line-height: 20px;\n      margin-bottom: 30px;\n      text-align: center !important;\n}\n#app #footer .container .join-us-slogan span {\n        font-size: 16px;\n}\n#app #footer #copyright, #app #footer #copyright a {\n      white-space: normal;\n}\n#app #footer .footer {\n      margin-bottom: 0 !important;\n}\n#app #footer .footer .col p {\n        font-size: 13px !important;\n}\n#app #footer .btn-orange.fat {\n      padding: 12px 30px;\n      font-size: 13px;\n}\n}\n", ""]);
 
 // exports
 
@@ -1032,11 +1032,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "join-us-slogan text-left" }, [
-      _vm._v("\n                    不僅僅只是台灣最棒的餐飲集團"),
+      _vm._v("\n                    持續創造價值並帶領團隊實現目標和理想"),
       _c("br"),
       _vm._v(" "),
       _c("span", { staticClass: "text-orange" }, [
-        _vm._v("還是實現自我未來的大家庭")
+        _vm._v("以前瞻眼光、宏觀策略成為產業先驅")
       ])
     ])
   },
@@ -1117,7 +1117,9 @@ var staticRenderFns = [
             _c("span", [
               _vm._v("\n                        2018 "),
               _c("a", { staticClass: "link-orange" }, [_vm._v(" 橘色涮涮屋 ")]),
-              _vm._v(" 版權所有. Designed by "),
+              _vm._v(" 版權所有."),
+              _c("br", { staticClass: "d-md-none" }),
+              _vm._v(" Designed by "),
               _c(
                 "a",
                 {
@@ -9904,7 +9906,7 @@ exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slic
 exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css);", ""]);
 
 // module
-exports.push([module.i, "\n@charset \"UTF-8\";\n#app #header.hidden {\n  display: none;\n}\n.main-title {\n  font-size: 50px;\n  margin-bottom: 0;\n}\n.sub-title {\n  font-size: 20px;\n  letter-spacing: 10px;\n  font-family: \"PingFang SC\",微軟正黑體;\n}\n#about-tabs {\n  position: absolute;\n  margin: auto;\n  width: 100vw;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n  margin-top: 50px;\n}\n#about-tabs.position-fixed {\n    border-bottom: 2px solid #efefef;\n    position: fixed;\n    top: 0px;\n    z-index: 99999;\n    max-width: unset;\n    background: white;\n    margin-top: 0;\n}\n#about-tabs.position-fixed .about-tabs-body {\n      margin-bottom: -2px !important;\n}\n#about-tabs .tab {\n    -webkit-transition: all 0.3s;\n    transition: all 0.3s;\n    color: gray;\n    font-size: 20px;\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    border-bottom: 2px solid #efefef;\n    padding: 15px 0;\n    cursor: pointer;\n}\n#about-tabs .tab:hover {\n      border-bottom: 3px solid rgba(242, 108, 36, 0.5);\n      color: rgba(242, 108, 36, 0.85);\n}\n#about-tabs .tab.active {\n      border-bottom: 3px solid #f26c24;\n      color: #f26c24;\n}\n#block-about {\n  overflow: hidden;\n}\n#block-secret {\n  padding: 70px 0;\n  margin: 130px 0;\n}\n#block-secret .sub-title {\n    margin-bottom: 40px;\n}\n#block-secret .about-content {\n    width: 70%;\n    margin: 0 auto;\n    line-height: 30px;\n    font-weight: 500;\n}\n#block-about-service {\n  margin-bottom: 270px;\n}\n#block-about-service .service-body {\n    height: 500px;\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n}\n#block-about-service .service-body:before {\n      content: \"\";\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      background: black;\n      opacity: 0.7;\n}\n#block-about-service .service-body .service-left, #block-about-service .service-body .service-right {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#block-about-service .service-body .service-left .service-item .service-img, #block-about-service .service-body .service-right .service-item .service-img {\n        width: 100%;\n        background-size: cover;\n        background-repeat: no-repeat;\n        background-position: center;\n}\n#block-about-service .service-body .service-left .service-item .service-content, #block-about-service .service-body .service-right .service-item .service-content {\n        padding: 80px;\n        opacity: 0;\n        position: absolute;\n}\n#block-about-service .service-body .service-left .service-item .service-content .service-title, #block-about-service .service-body .service-right .service-item .service-content .service-title {\n          font-size: 35px;\n          margin-bottom: 5px;\n}\n#block-about-service .service-body .service-left .service-item .service-content .service-desc, #block-about-service .service-body .service-right .service-item .service-content .service-desc {\n          line-height: 35px;\n          font-size: 20px;\n}\n#block-about-service .service-body .service-left .service-item:before, #block-about-service .service-body .service-right .service-item:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: #f26c23;\n        opacity: 0;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#block-about-service .service-body .service-left .service-item:hover:before, #block-about-service .service-body .service-right .service-item:hover:before {\n        opacity: 0.9;\n}\n#block-about-service .service-body .service-left .service-item:hover .service-content, #block-about-service .service-body .service-right .service-item:hover .service-content {\n        opacity: 1;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#block-about-service .service-body .service-left {\n      top: -80px;\n}\n#block-about-service .service-body .service-left .service-item .service-img {\n        height: 750px;\n}\n#block-about-service .service-body .service-right {\n      top: -80px;\n}\n#block-about-service .service-body .service-right .service-item.top .service-img {\n        height: 350px;\n}\n#block-about-service .service-body .service-right .service-item.bottom .service-img {\n        height: 480px;\n}\n#block-about-year {\n  padding-top: 70px;\n  margin-bottom: 150px;\n}\n#block-about-year .circle-wapper {\n    pointer-events: none;\n    position: absolute;\n    width: 100vw;\n    height: 100vh;\n}\n#block-about-year .circle-wapper .circle-a {\n      background: #feefe8;\n      width: 800px;\n      height: 800px;\n      position: absolute;\n      top: -76%;\n      left: -12%;\n      border-radius: 100%;\n      z-index: -1;\n}\n#block-about-year .circle-wapper .circle-b {\n      background: #fdf8f4;\n      width: 1100px;\n      height: 1100px;\n      position: absolute;\n      bottom: -76%;\n      right: -30%;\n      border-radius: 100%;\n      z-index: -1;\n}\n#block-about-year .year .slick-list {\n    height: 230px;\n    margin: 3rem 0 0 0;\n}\n#block-about-year .year .year-item {\n    top: 49px;\n    padding-bottom: 35px;\n}\n#block-about-year .year .year-item.active .text-year {\n      color: #f26d22;\n}\n#block-about-year .year .year-item.active .dot-year .dot-radar {\n      -webkit-transform: scale(1);\n              transform: scale(1);\n}\n#block-about-year .year .year-item:not(.active) .dot-year:hover .dot-radar {\n      -webkit-transition: all .5s;\n      transition: all .5s;\n      -webkit-animation: yeardot 1.2s infinite ease-in-out;\n              animation: yeardot 1.2s infinite ease-in-out;\n}\n#block-about-year .year .year-item:hover {\n      color: #e66820;\n}\n#block-about-year .year .year-item:before {\n      content: \"\";\n      background: #f26d22;\n      position: absolute;\n      width: 100%;\n      height: 2px;\n      bottom: 0;\n      left: 0;\n}\n#block-about-year .year .year-item .dot-year {\n      width: 10px;\n      height: 10px;\n      position: absolute;\n      background: #f26d22;\n      border-radius: 100%;\n      top: 58px;\n      left: calc(50% - 5px);\n      cursor: pointer;\n}\n#block-about-year .year .year-item .dot-year:before {\n        content: \"\";\n        position: absolute;\n        width: 24px;\n        height: 24px;\n        background: rgba(255, 205, 177, 0.45);\n        border-radius: 100%;\n        left: -7px;\n        top: -7px;\n}\n#block-about-year .year .year-item .dot-year .dot-radar {\n        content: \"\";\n        -webkit-transition: -webkit-transform 0.3s;\n        transition: -webkit-transform 0.3s;\n        transition: transform 0.3s;\n        transition: transform 0.3s, -webkit-transform 0.3s;\n        position: absolute;\n        border-radius: 100%;\n        width: 180px;\n        height: 180px;\n        -webkit-transform: scale(0);\n                transform: scale(0);\n        background: rgba(255, 205, 177, 0.1);\n        left: -85px;\n        top: -85px;\n}\n#block-about-year .year .slick-arrow {\n    color: transparent;\n    background: transparent;\n    border: none;\n}\n#block-about-year .year .slick-arrow:before {\n      line-height: 8px;\n      content: \"\\279D\";\n      display: inline-block;\n      color: gray;\n      font-size: 22px;\n}\n#block-about-year .year .slick-arrow.slick-prev:before {\n      -webkit-transform: scaleX(-1);\n              transform: scaleX(-1);\n}\n#block-about-year .year .slick-next:focus:before, #block-about-year .year .slick-next:hover:before, #block-about-year .year .slick-prev:focus:before, #block-about-year .year .slick-prev:hover:before {\n    color: #f26d22;\n}\n#block-about-year .year .text-year {\n    font-size: 20px;\n    font-weight: 500;\n}\n#block-about-year .year-body .year-left {\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    border-right: 1px solid #fbc1a2;\n    padding: 40px 100px 40px 0;\n}\n#block-about-year .year-body .year-left p {\n      font-size: 20px;\n}\n#block-about-year .year-body .year-left p span {\n        display: inline-block;\n        font-size: 35px;\n}\n#block-about-year .year-body .year-right {\n    height: 470px;\n    overflow-y: scroll;\n    -webkit-box-flex: 5;\n        -ms-flex: 5;\n            flex: 5;\n    padding: 40px 0 40px 100px;\n}\n#block-about-year .year-body .year-month-list .year-month-item .left {\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n}\n#block-about-year .year-body .year-month-list .year-month-item .left .month {\n      font-size: 22px;\n}\n#block-about-year .year-body .year-month-list .year-month-item .right {\n    -webkit-box-flex: 6;\n        -ms-flex: 6;\n            flex: 6;\n    border-bottom: 1px solid #ececec;\n    margin-bottom: 20px;\n    padding: 0 50px;\n}\n#block-about-year .year-body .year-month-list .year-month-item .right .title {\n      font-size: 25px;\n      margin-bottom: 5px;\n}\n#block-about-year .year-body .year-month-list .year-month-item:last-child .right {\n    border-bottom: none;\n}\n#block-about-video {\n  height: 550px;\n  background-image: url(\"/images/about_create.png\");\n}\n#block-about-video:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background-image: linear-gradient(120deg, transparent 60%, white);\n}\n#block-about-video .btn-play {\n    -webkit-box-flex: 3;\n        -ms-flex: 3;\n            flex: 3;\n}\n#block-about-video .btn-play:before {\n      width: 100px;\n      height: 100px;\n      content: \"\\25B6\\FE0E\";\n      color: white;\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      background: #f36f1b;\n      border-color: #f36f1b;\n}\n#block-about-video .btn-play:hover:before {\n      background: #f55701;\n      border-color: #f55701;\n}\n#block-about-video .video-content {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n    color: white;\n}\n#block-about-video .video-content h3 {\n      font-size: 50px;\n}\n#block-about-video .video-content .video-desc {\n      margin-bottom: 40px;\n      padding-bottom: 40px;\n}\n#block-about-video .video-content .video-desc:after {\n        content: \"\";\n        position: absolute;\n        width: 50px;\n        height: 2px;\n        background: #f26c24;\n        left: 0;\n        bottom: 0;\n}\n@-webkit-keyframes yeardot {\n0% {\n    -webkit-transform: scale(0.3);\n            transform: scale(0.3);\n}\n50% {\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n}\n100% {\n    -webkit-transform: scale(0.3);\n            transform: scale(0.3);\n}\n}\n@keyframes yeardot {\n0% {\n    -webkit-transform: scale(0.3);\n            transform: scale(0.3);\n}\n50% {\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n}\n100% {\n    -webkit-transform: scale(0.3);\n            transform: scale(0.3);\n}\n}\n@media only screen and (max-width: 991px) {\n#app .main-title {\n    margin-bottom: 5px;\n}\n#app .main-title .text-orange {\n      color: #f26e22 !important;\n}\n#app .sub-title {\n    margin-bottom: 15px;\n}\n#app #about-tabs {\n    display: none;\n}\n#app #block-secret {\n    margin-bottom: 0;\n    margin-top: 0;\n    padding: 50px 0;\n}\n#app #block-secret .about-content {\n      width: 100%;\n      text-align: left !important;\n      font-size: 14px;\n      line-height: 25px;\n}\n#app #block-about-service {\n    margin-bottom: 0;\n}\n#app #block-about-service .service-body {\n      height: auto;\n      background: none !important;\n}\n#app #block-about-service .service-body:before {\n        background: none;\n}\n#app #block-about-service .service-body .service-left, #app #block-about-service .service-body .service-right {\n        -webkit-box-flex: 100%;\n            -ms-flex: 100%;\n                flex: 100%;\n        top: 0;\n}\n#app #block-about-service .service-body .service-left .service-item, #app #block-about-service .service-body .service-right .service-item {\n          -webkit-box-align: end !important;\n              -ms-flex-align: end !important;\n                  align-items: end !important;\n          margin-bottom: 20px;\n}\n#app #block-about-service .service-body .service-left .service-item .service-img, #app #block-about-service .service-body .service-right .service-item .service-img {\n            padding-top: 40%;\n            height: auto;\n}\n#app #block-about-service .service-body .service-left .service-item .service-content, #app #block-about-service .service-body .service-right .service-item .service-content {\n            color: black !important;\n            position: relative;\n            opacity: 1;\n            padding: 0px;\n            margin-top: 10px;\n}\n#app #block-about-service .service-body .service-left .service-item .service-content .service-title, #app #block-about-service .service-body .service-right .service-item .service-content .service-title {\n              color: #f26c24;\n              font-size: 14px;\n}\n#app #block-about-service .service-body .service-left .service-item .service-content .service-desc, #app #block-about-service .service-body .service-right .service-item .service-content .service-desc {\n              font-size: 14px;\n              line-height: 25px;\n              text-align: left;\n}\n#app #block-about-service .service-body .service-left {\n        top: 0;\n}\n#app #block-about-year {\n    padding-top: 50px;\n}\n#app #block-about-year .year .slick-list {\n      height: 110px;\n      margin: 0 0 20px 0;\n}\n#app #block-about-year .year .slick-next {\n      right: 10px;\n      top: calc(50% + 10px);\n}\n#app #block-about-year .year .slick-prev {\n      left: 10px;\n      top: calc(50% + 10px);\n}\n#app #block-about-year .year .year-item {\n      top: 0;\n}\n#app #block-about-year .year .year-item.active .dot-year .dot-radar {\n        -webkit-transform: scale(0.5);\n                transform: scale(0.5);\n}\n#app #block-about-year .year-body .year-left {\n      padding: 40px 0;\n      -webkit-box-flex: 2;\n          -ms-flex: 2;\n              flex: 2;\n}\n#app #block-about-year .year-body .year-left span {\n        font-size: 20px;\n}\n#app #block-about-year .year-body .year-right {\n      padding: 0 0 0 15px;\n}\n#app #block-about-year .year-body .year-right .year-month-list .year-month-item .left {\n        -webkit-box-flex: 2;\n            -ms-flex: 2;\n                flex: 2;\n        text-align: center !important;\n}\n#app #block-about-year .year-body .year-right .year-month-list .year-month-item .left .month {\n          font-size: 18px;\n}\n#app #block-about-year .year-body .year-right .year-month-list .year-month-item .right {\n        padding: 0 10px;\n}\n#app #block-about-year .year-body .year-right .year-month-list .year-month-item .right .title {\n          font-size: 16px;\n}\n#app #block-about-video .video-content h3 {\n    font-size: 28px;\n}\n#app #block-about-video .video-content .video-desc {\n    font-size: 14px;\n    margin-bottom: 20px;\n    padding-bottom: 20px;\n}\n#app #block-about-video .video-content .btn-orange.fat {\n    padding: 15px 0 !important;\n    font-size: 13px;\n    width: 100%;\n    text-align: center;\n}\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\n.main-title {\n  font-size: 50px;\n  margin-bottom: 0;\n}\n.sub-title {\n  font-size: 20px;\n  letter-spacing: 10px;\n  font-family: \"PingFang SC\",微軟正黑體;\n}\n#about-tabs {\n  position: absolute;\n  margin: auto;\n  width: 100vw;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n  margin-top: 50px;\n}\n#about-tabs.position-fixed {\n    border-bottom: 2px solid #efefef;\n    position: fixed;\n    top: 0px;\n    z-index: 99999;\n    max-width: unset;\n    background: white;\n    margin-top: 0;\n}\n#about-tabs.position-fixed .about-tabs-body {\n      margin-bottom: -2px !important;\n}\n#about-tabs .tab {\n    -webkit-transition: all 0.3s;\n    transition: all 0.3s;\n    color: gray;\n    font-size: 20px;\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    border-bottom: 2px solid #efefef;\n    padding: 15px 0;\n    cursor: pointer;\n}\n#about-tabs .tab:hover {\n      border-bottom: 3px solid rgba(242, 108, 36, 0.5);\n      color: rgba(242, 108, 36, 0.85);\n}\n#about-tabs .tab.active {\n      border-bottom: 3px solid #f26c24;\n      color: #f26c24;\n}\n#block-about {\n  overflow: hidden;\n}\n#block-secret {\n  padding: 70px 0;\n  margin: 130px 0;\n}\n#block-secret .sub-title {\n    margin-bottom: 40px;\n}\n#block-secret .about-content {\n    width: 70%;\n    margin: 0 auto;\n    line-height: 30px;\n    font-weight: 500;\n}\n#block-about-service {\n  margin-bottom: 270px;\n}\n#block-about-service .service-body {\n    height: 500px;\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n}\n#block-about-service .service-body:before {\n      content: \"\";\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      background: black;\n      opacity: 0.7;\n}\n#block-about-service .service-body .service-left, #block-about-service .service-body .service-right {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#block-about-service .service-body .service-left .service-item .service-img, #block-about-service .service-body .service-right .service-item .service-img {\n        width: 100%;\n        background-size: cover;\n        background-repeat: no-repeat;\n        background-position: center;\n}\n#block-about-service .service-body .service-left .service-item .service-content, #block-about-service .service-body .service-right .service-item .service-content {\n        padding: 80px;\n        opacity: 0;\n        position: absolute;\n}\n#block-about-service .service-body .service-left .service-item .service-content .service-title, #block-about-service .service-body .service-right .service-item .service-content .service-title {\n          font-size: 35px;\n          margin-bottom: 5px;\n}\n#block-about-service .service-body .service-left .service-item .service-content .service-desc, #block-about-service .service-body .service-right .service-item .service-content .service-desc {\n          line-height: 35px;\n          font-size: 20px;\n}\n#block-about-service .service-body .service-left .service-item:before, #block-about-service .service-body .service-right .service-item:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: #f26c23;\n        opacity: 0;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#block-about-service .service-body .service-left .service-item:hover:before, #block-about-service .service-body .service-right .service-item:hover:before {\n        opacity: 0.9;\n}\n#block-about-service .service-body .service-left .service-item:hover .service-content, #block-about-service .service-body .service-right .service-item:hover .service-content {\n        opacity: 1;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#block-about-service .service-body .service-left {\n      top: -80px;\n}\n#block-about-service .service-body .service-left .service-item .service-img {\n        height: 750px;\n}\n#block-about-service .service-body .service-right {\n      top: -80px;\n}\n#block-about-service .service-body .service-right .service-item.top .service-img {\n        height: 350px;\n}\n#block-about-service .service-body .service-right .service-item.bottom .service-img {\n        height: 480px;\n}\n#block-about-year {\n  padding-top: 70px;\n  margin-bottom: 150px;\n}\n#block-about-year .circle-wapper {\n    pointer-events: none;\n    position: absolute;\n    width: 100vw;\n    height: 100vh;\n}\n#block-about-year .circle-wapper .circle-a {\n      background: #feefe8;\n      width: 800px;\n      height: 800px;\n      position: absolute;\n      top: -76%;\n      left: -12%;\n      border-radius: 100%;\n      z-index: -1;\n}\n#block-about-year .circle-wapper .circle-b {\n      background: #fdf8f4;\n      width: 1100px;\n      height: 1100px;\n      position: absolute;\n      bottom: -76%;\n      right: -30%;\n      border-radius: 100%;\n      z-index: -1;\n}\n#block-about-year .year .slick-list {\n    height: 230px;\n    margin: 3rem 0 0 0;\n}\n#block-about-year .year .year-item {\n    top: 49px;\n    padding-bottom: 35px;\n}\n#block-about-year .year .year-item.active .text-year {\n      color: #f26d22;\n}\n#block-about-year .year .year-item.active .dot-year .dot-radar {\n      -webkit-transform: scale(1);\n              transform: scale(1);\n}\n#block-about-year .year .year-item:not(.active) .dot-year:hover .dot-radar {\n      -webkit-transition: all .5s;\n      transition: all .5s;\n      -webkit-animation: yeardot 1.2s infinite ease-in-out;\n              animation: yeardot 1.2s infinite ease-in-out;\n}\n#block-about-year .year .year-item:hover {\n      color: #e66820;\n}\n#block-about-year .year .year-item:before {\n      content: \"\";\n      background: #f26d22;\n      position: absolute;\n      width: 100%;\n      height: 2px;\n      bottom: 0;\n      left: 0;\n}\n#block-about-year .year .year-item .dot-year {\n      width: 10px;\n      height: 10px;\n      position: absolute;\n      background: #f26d22;\n      border-radius: 100%;\n      top: 58px;\n      left: calc(50% - 5px);\n      cursor: pointer;\n}\n#block-about-year .year .year-item .dot-year:before {\n        content: \"\";\n        position: absolute;\n        width: 24px;\n        height: 24px;\n        background: rgba(255, 205, 177, 0.45);\n        border-radius: 100%;\n        left: -7px;\n        top: -7px;\n}\n#block-about-year .year .year-item .dot-year .dot-radar {\n        content: \"\";\n        -webkit-transition: -webkit-transform 0.3s;\n        transition: -webkit-transform 0.3s;\n        transition: transform 0.3s;\n        transition: transform 0.3s, -webkit-transform 0.3s;\n        position: absolute;\n        border-radius: 100%;\n        width: 180px;\n        height: 180px;\n        -webkit-transform: scale(0);\n                transform: scale(0);\n        background: rgba(255, 205, 177, 0.1);\n        left: -85px;\n        top: -85px;\n}\n#block-about-year .year .slick-arrow {\n    color: transparent;\n    background: transparent;\n    border: none;\n}\n#block-about-year .year .slick-arrow:before {\n      line-height: 8px;\n      content: \"\\279D\";\n      display: inline-block;\n      color: gray;\n      font-size: 22px;\n}\n#block-about-year .year .slick-arrow.slick-prev:before {\n      -webkit-transform: scaleX(-1);\n              transform: scaleX(-1);\n}\n#block-about-year .year .slick-next:focus:before, #block-about-year .year .slick-next:hover:before, #block-about-year .year .slick-prev:focus:before, #block-about-year .year .slick-prev:hover:before {\n    color: #f26d22;\n}\n#block-about-year .year .text-year {\n    font-size: 20px;\n    font-weight: 500;\n}\n#block-about-year .year-body .year-left {\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    border-right: 1px solid #fbc1a2;\n    padding: 40px 100px 40px 0;\n}\n#block-about-year .year-body .year-left p {\n      font-size: 20px;\n}\n#block-about-year .year-body .year-left p span {\n        display: inline-block;\n        font-size: 35px;\n}\n#block-about-year .year-body .year-right {\n    height: 470px;\n    overflow-y: scroll;\n    -webkit-box-flex: 5;\n        -ms-flex: 5;\n            flex: 5;\n    padding: 40px 0 40px 100px;\n}\n#block-about-year .year-body .year-month-list .year-month-item .left {\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n}\n#block-about-year .year-body .year-month-list .year-month-item .left .month {\n      font-size: 22px;\n}\n#block-about-year .year-body .year-month-list .year-month-item .right {\n    -webkit-box-flex: 6;\n        -ms-flex: 6;\n            flex: 6;\n    border-bottom: 1px solid #ececec;\n    margin-bottom: 20px;\n    padding: 0 50px;\n}\n#block-about-year .year-body .year-month-list .year-month-item .right .title {\n      font-size: 25px;\n      margin-bottom: 5px;\n}\n#block-about-year .year-body .year-month-list .year-month-item .right div {\n      border-bottom: 1px solid #ececec;\n      padding: 10px 0;\n}\n#block-about-year .year-body .year-month-list .year-month-item .right div:first-child {\n        padding-top: 0;\n}\n#block-about-year .year-body .year-month-list .year-month-item:last-child .right {\n    border-bottom: none;\n}\n#block-about-video {\n  height: 550px;\n  background-image: url(\"/images/about_create.png\");\n}\n#block-about-video:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background-image: linear-gradient(120deg, transparent 60%, white);\n}\n#block-about-video .btn-play {\n    -webkit-box-flex: 3;\n        -ms-flex: 3;\n            flex: 3;\n}\n#block-about-video .btn-play:before {\n      width: 100px;\n      height: 100px;\n      content: \"\\25B6\\FE0E\";\n      color: white;\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      background: #f36f1b;\n      border-color: #f36f1b;\n}\n#block-about-video .btn-play:hover:before {\n      background: #f55701;\n      border-color: #f55701;\n}\n#block-about-video .video-content {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n    color: white;\n}\n#block-about-video .video-content h3 {\n      font-size: 50px;\n}\n#block-about-video .video-content .video-desc {\n      margin-bottom: 40px;\n      padding-bottom: 40px;\n}\n#block-about-video .video-content .video-desc:after {\n        content: \"\";\n        position: absolute;\n        width: 50px;\n        height: 2px;\n        background: #f26c24;\n        left: 0;\n        bottom: 0;\n}\n@-webkit-keyframes yeardot {\n0% {\n    -webkit-transform: scale(0.3);\n            transform: scale(0.3);\n}\n50% {\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n}\n100% {\n    -webkit-transform: scale(0.3);\n            transform: scale(0.3);\n}\n}\n@keyframes yeardot {\n0% {\n    -webkit-transform: scale(0.3);\n            transform: scale(0.3);\n}\n50% {\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n}\n100% {\n    -webkit-transform: scale(0.3);\n            transform: scale(0.3);\n}\n}\n@media only screen and (max-width: 991px) {\n#app .main-title {\n    margin-bottom: 5px;\n}\n#app .main-title .text-orange {\n      color: #f26e22 !important;\n}\n#app .sub-title {\n    margin-bottom: 15px;\n}\n#app #about-tabs {\n    display: none;\n}\n#app #block-secret {\n    margin-bottom: 0;\n    margin-top: 0;\n    padding: 50px 0;\n}\n#app #block-secret .about-content {\n      width: 100%;\n      text-align: left !important;\n      font-size: 14px;\n      line-height: 25px;\n}\n#app #block-about-service {\n    margin-bottom: 0;\n}\n#app #block-about-service .service-body {\n      height: auto;\n      background: none !important;\n}\n#app #block-about-service .service-body:before {\n        background: none;\n}\n#app #block-about-service .service-body .service-left, #app #block-about-service .service-body .service-right {\n        -webkit-box-flex: 100%;\n            -ms-flex: 100%;\n                flex: 100%;\n        top: 0;\n}\n#app #block-about-service .service-body .service-left .service-item, #app #block-about-service .service-body .service-right .service-item {\n          -webkit-box-align: end !important;\n              -ms-flex-align: end !important;\n                  align-items: end !important;\n          margin-bottom: 20px;\n}\n#app #block-about-service .service-body .service-left .service-item .service-img, #app #block-about-service .service-body .service-right .service-item .service-img {\n            padding-top: 40%;\n            height: auto;\n}\n#app #block-about-service .service-body .service-left .service-item .service-content, #app #block-about-service .service-body .service-right .service-item .service-content {\n            color: black !important;\n            position: relative;\n            opacity: 1;\n            padding: 0px;\n            margin-top: 10px;\n}\n#app #block-about-service .service-body .service-left .service-item .service-content .service-title, #app #block-about-service .service-body .service-right .service-item .service-content .service-title {\n              color: #f26c24;\n              font-size: 14px;\n}\n#app #block-about-service .service-body .service-left .service-item .service-content .service-desc, #app #block-about-service .service-body .service-right .service-item .service-content .service-desc {\n              font-size: 14px;\n              line-height: 25px;\n              text-align: left;\n}\n#app #block-about-service .service-body .service-left {\n        top: 0;\n}\n#app #block-about-year {\n    padding-top: 50px;\n}\n#app #block-about-year .year .slick-list {\n      height: 110px;\n      margin: 0 0 20px 0;\n}\n#app #block-about-year .year .slick-next {\n      right: 10px;\n      top: calc(50% + 10px);\n}\n#app #block-about-year .year .slick-prev {\n      left: 10px;\n      top: calc(50% + 10px);\n}\n#app #block-about-year .year .year-item {\n      top: 0;\n}\n#app #block-about-year .year .year-item.active .dot-year .dot-radar {\n        -webkit-transform: scale(0.5);\n                transform: scale(0.5);\n}\n#app #block-about-year .year-body .year-left {\n      padding: 40px 0;\n      -webkit-box-flex: 2;\n          -ms-flex: 2;\n              flex: 2;\n}\n#app #block-about-year .year-body .year-left span {\n        font-size: 20px;\n}\n#app #block-about-year .year-body .year-right {\n      padding: 0 0 0 15px;\n}\n#app #block-about-year .year-body .year-right .year-month-list .year-month-item .left {\n        -webkit-box-flex: 2;\n            -ms-flex: 2;\n                flex: 2;\n        text-align: center !important;\n}\n#app #block-about-year .year-body .year-right .year-month-list .year-month-item .left .month {\n          font-size: 18px;\n}\n#app #block-about-year .year-body .year-right .year-month-list .year-month-item .right {\n        padding: 0 10px;\n}\n#app #block-about-year .year-body .year-right .year-month-list .year-month-item .right .title {\n          font-size: 16px;\n}\n#app #block-about-video .video-content h3 {\n    font-size: 28px;\n}\n#app #block-about-video .video-content .video-desc {\n    font-size: 14px;\n    margin-bottom: 20px;\n    padding-bottom: 20px;\n}\n#app #block-about-video .video-content .btn-orange.fat {\n    padding: 15px 0 !important;\n    font-size: 13px;\n    width: 100%;\n    text-align: center;\n}\n}\n", ""]);
 
 // exports
 
@@ -10108,6 +10110,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -10141,80 +10148,68 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_3_bootstrap_vue__["a" /* default */]);
             yearEvents: [{
                 year: 2018,
                 content: [{
-                    month: '5月',
-                    listTitle: '新光三越旗艦店開幕',
-                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
-                }, {
-                    month: '4月',
-                    listTitle: '新光三越旗艦店開幕',
-                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
-                }, {
-                    month: '3月',
-                    listTitle: '新光三越旗艦店開幕',
-                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
-                }, {
-                    month: '2月',
-                    listTitle: '新光三越旗艦店開幕',
-                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
+                    month: '9月',
+                    list: [{
+                        title: '橘色涮涮屋 A9店開幕',
+                        desc: '新光三越 A9店<br>首間結合信義百貨商圈分店，更誇界與時尚調酒 Abrazo Bistro跨界合作。'
+                    }]
                 }]
             }, {
-                year: 2015,
-                content: [{
-                    month: '12月',
-                    listTitle: '新光三越旗艦店開幕',
-                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
-                }, {
-                    month: '4月',
-                    listTitle: '新光三越旗艦店開幕',
-                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
-                }, {
-                    month: '3月',
-                    listTitle: '新光三越旗艦店開幕',
-                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
-                }]
-            }, {
-                year: 2013,
+                year: 2017,
                 content: [{
                     month: '7月',
-                    listTitle: '新光三越旗艦店開幕',
-                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
-                }, {
-                    month: '6月',
-                    listTitle: '新光三越旗艦店開幕',
-                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
-                }]
-            }, {
-                year: 2012,
-                content: [{
-                    month: '5月',
-                    listTitle: '新光三越旗艦店開幕',
-                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
-                }, {
-                    month: '3月',
-                    listTitle: '新光三越旗艦店開幕',
-                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
+                    list: [{
+                        title: 'Extension 1 by 橘色 開幕',
+                        desc: '由國際建築師丹下憲孝操刀，以極具存在感的大吧台為核心，同時以宏觀的角度來詮釋現代和風設計維持高品質，創造出不一樣的新風貌－譽有內湖最美頂級單人鍋之稱。'
+                    }]
                 }]
             }, {
                 year: 2009,
                 content: [{
-                    month: '3月',
-                    listTitle: '新光三越旗艦店開幕',
-                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
-                }, {
-                    month: '1月',
-                    listTitle: '新光三越旗艦店開幕',
-                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
+                    month: '11月',
+                    list: [{
+                        title: 'M One Café 開幕',
+                        desc: '嚴選新鮮食材、搭配獨家配方，特聘駐美主廚精心設計私藏菜色，提供全日早午餐服務，享有『明星熱愛東區時尚早午餐咖啡館』。'
+                    }, {
+                        title: 'M One SPA 開幕',
+                        desc: '日本旅客首選的幸福空間，以低調奢華的空間感，提供高規格的優質服務。'
+                    }]
                 }]
             }, {
-                year: 2008,
+                year: 2006,
+                content: [{
+                    month: '6月',
+                    list: [{
+                        title: '橘色涮涮屋仁愛店開幕',
+                        desc: '鄰近大安店，延續以客為尊、使其賓至如歸的精神，打造全包廂形式隔間及溫暖的宵夜服務。'
+                    }]
+                }]
+            }, {
+                year: 2004,
+                content: [{
+                    month: '7月',
+                    list: [{
+                        title: 'SAKURA 男女健康生活館開幕',
+                        desc: '位於仁愛圓環，台灣首創提供個人包廂、衛浴設備、新鮮果汁暨全身舒壓及足部推拿的優質環境。'
+                    }]
+                }]
+            }, {
+                year: 2001,
+                content: [{
+                    month: '11月',
+                    list: [{
+                        title: '橘色涮涮屋大安店開幕',
+                        desc: '座落大安區以頂級食材、貼心服務、與舒適氛圍為精緻火鍋創先例，同時為餐飲業傳遞新文化。'
+                    }]
+                }]
+            }, {
+                year: 2000,
                 content: [{
                     month: '12月',
-                    listTitle: '新光三越旗艦店開幕',
-                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
-                }, {
-                    month: '11月',
-                    listTitle: '新光三越旗艦店開幕',
-                    listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字'
+                    list: [{
+                        title: '橘色涮涮屋 大安店',
+                        desc: '袁永定先生創立橘色涮涮屋，大安店開幕'
+                    }]
                 }]
             }]
 
@@ -10308,10 +10303,10 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_3_bootstrap_vue__["a" /* default */]);
                 if (jQuery("#block-about-year .circle-b").length > 0) {
                     if (jQuery(window).scrollTop() >= jQuery("#block-secret").offset().top - 100) {
                         jQuery("#about-tabs").addClass("position-fixed");
-                        jQuery("#header").addClass("hidden");
+                        // jQuery("#header").addClass("hidden");
                     } else {
                         jQuery("#about-tabs").removeClass("position-fixed");
-                        jQuery("#header").removeClass("hidden");
+                        // jQuery("#header").removeClass("hidden");
                     }
                 }
 
@@ -21354,19 +21349,38 @@ var render = function() {
                                       _c(
                                         "div",
                                         { staticClass: "right text-left" },
-                                        [
-                                          _c(
-                                            "p",
-                                            {
-                                              staticClass: "title text-orange"
-                                            },
-                                            [_vm._v(_vm._s(item.listTitle))]
-                                          ),
-                                          _vm._v(" "),
-                                          _c("p", { staticClass: "content" }, [
-                                            _vm._v(_vm._s(item.listContent))
-                                          ])
-                                        ]
+                                        _vm._l(item.list, function(
+                                          monthEvent,
+                                          $monthIndex
+                                        ) {
+                                          return _c(
+                                            "div",
+                                            { key: $monthIndex },
+                                            [
+                                              _c(
+                                                "p",
+                                                {
+                                                  staticClass:
+                                                    "title text-orange"
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    _vm._s(monthEvent.title)
+                                                  )
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("p", {
+                                                staticClass: "content",
+                                                domProps: {
+                                                  innerHTML: _vm._s(
+                                                    monthEvent.desc
+                                                  )
+                                                }
+                                              })
+                                            ]
+                                          )
+                                        })
                                       )
                                     ]
                                   )

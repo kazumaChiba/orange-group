@@ -140,7 +140,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n}\n#footer .footer .footer-info {\n      margin-bottom: 100px;\n      line-height: 25px;\n      font-size: 14px;\n      font-weight: 100;\n}\n#footer .footer .footer-info div {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#footer .footer .footer-info p {\n        margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n        font-size: 18px;\n        font-weight: 100;\n        line-height: 30px;\n}\n#footer .footer.footer-join {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer.footer-join:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: rgba(0, 0, 0, 0.8);\n        top: 0px;\n}\n#footer .footer .btn-orange:hover {\n      background: white;\n      color: #f26d23 !important;\n      font-weight: 500;\n}\n@media only screen and (max-width: 991px) {\n#app #footer .footer .col-contact-us {\n    -webkit-box-flex: 100%;\n        -ms-flex: 100%;\n            flex: 100%;\n}\n#app #footer .container .join-us-slogan {\n    line-height: 45px;\n    margin-bottom: 50px;\n}\n#app #footer .container .join-us-slogan span {\n      font-size: 28px;\n}\n#app #footer .logo {\n    height: 100px;\n}\n#app .btn-orange.fat {\n    padding: 20px 45px;\n}\n}\n@media only screen and (max-width: 420px) {\n#app #footer {\n    height: auto;\n}\n#app #footer .container {\n      padding: 50px 40px;\n}\n#app #footer .container .join-us-slogan {\n        font-size: 18px;\n        line-height: 30px;\n        margin-bottom: 30px;\n}\n#app #footer .container .join-us-slogan span {\n          font-size: 18px;\n}\n#app #footer #copyright, #app #footer #copyright a {\n      white-space: normal;\n}\n#app #footer .footer {\n      margin-bottom: 0 !important;\n}\n#app #footer .footer .col p {\n        font-size: 13px !important;\n}\n#app #footer .btn-orange.fat {\n      padding: 12px 30px;\n      font-size: 13px;\n}\n}\n", ""]);
+exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n}\n#footer .footer .footer-info {\n      margin-bottom: 100px;\n      line-height: 25px;\n      font-size: 14px;\n      font-weight: 100;\n}\n#footer .footer .footer-info div {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#footer .footer .footer-info p {\n        margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n        font-size: 18px;\n        font-weight: 100;\n        line-height: 30px;\n}\n#footer .footer.footer-join {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer.footer-join:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: rgba(0, 0, 0, 0.8);\n        top: 0px;\n}\n#footer .footer .btn-orange:hover {\n      background: white;\n      color: #f26d23 !important;\n      font-weight: 500;\n}\n@media only screen and (max-width: 991px) {\n#app #footer .footer .col-contact-us {\n    -webkit-box-flex: 100%;\n        -ms-flex: 100%;\n            flex: 100%;\n}\n#app #footer .container .join-us-slogan {\n    line-height: 45px;\n    margin-bottom: 50px;\n}\n#app #footer .container .join-us-slogan span {\n      font-size: 28px;\n}\n#app #footer .logo {\n    height: 100px;\n}\n#app .btn-orange.fat {\n    padding: 20px 45px;\n}\n}\n@media only screen and (max-width: 420px) {\n#app #footer {\n    height: auto;\n}\n#app #footer .container .join-us-slogan {\n      font-size: 16px;\n      line-height: 20px;\n      margin-bottom: 30px;\n      text-align: center !important;\n}\n#app #footer .container .join-us-slogan span {\n        font-size: 16px;\n}\n#app #footer #copyright, #app #footer #copyright a {\n      white-space: normal;\n}\n#app #footer .footer {\n      margin-bottom: 0 !important;\n}\n#app #footer .footer .col p {\n        font-size: 13px !important;\n}\n#app #footer .btn-orange.fat {\n      padding: 12px 30px;\n      font-size: 13px;\n}\n}\n", ""]);
 
 // exports
 
@@ -415,11 +415,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "join-us-slogan text-left" }, [
-      _vm._v("\n                    不僅僅只是台灣最棒的餐飲集團"),
+      _vm._v("\n                    持續創造價值並帶領團隊實現目標和理想"),
       _c("br"),
       _vm._v(" "),
       _c("span", { staticClass: "text-orange" }, [
-        _vm._v("還是實現自我未來的大家庭")
+        _vm._v("以前瞻眼光、宏觀策略成為產業先驅")
       ])
     ])
   },
@@ -500,7 +500,9 @@ var staticRenderFns = [
             _c("span", [
               _vm._v("\n                        2018 "),
               _c("a", { staticClass: "link-orange" }, [_vm._v(" 橘色涮涮屋 ")]),
-              _vm._v(" 版權所有. Designed by "),
+              _vm._v(" 版權所有."),
+              _c("br", { staticClass: "d-md-none" }),
+              _vm._v(" Designed by "),
               _c(
                 "a",
                 {
@@ -859,7 +861,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n.el-input__inner {\n  -webkit-appearance: none;\n  border-radius: 0;\n  border: unset;\n  background: transparent;\n  color: white;\n}\n.el-select__caret {\n  color: #fff;\n}\n#header {\n  top: 0;\n}\n#block-news {\n  margin-bottom: 180px;\n}\n#block-news .filter-date.-year {\n    width: 90px;\n}\n#block-news .filter-date.-month {\n    width: 85px;\n}\n#block-news #block-news-lists {\n    z-index: 2;\n    margin-bottom: 80px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories {\n      padding: 55px 0;\n      font-size: 14px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories.-category {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date {\n        padding: 5px;\n        background: #f26d23;\n        cursor: pointer;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-month {\n          margin-right: 20px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-year:after, #block-news #block-news-lists #block-news-filter .news-categories .filter-date.-cate:after {\n          content: \"\";\n          position: absolute;\n          height: 60%;\n          width: 1px;\n          background: rgba(255, 255, 255, 0.6);\n          right: 0;\n          top: 20%;\n}\n#block-news #block-news-items .news-item {\n    width: 25%;\n    padding: 0 16px;\n}\n#block-breadcrumb .banner-title {\n  font-size: 90px;\n  font-weight: 300;\n}\n@media only screen and (max-width: 991px) {\n#block-news {\n    margin-bottom: 55px;\n}\n#block-news #block-news-lists {\n      margin-bottom: 0;\n}\n#block-news #block-news-filter .news-categories {\n      padding: 30px 0;\n}\n#block-news #block-news-filter .news-categories.-category {\n        display: none !important;\n}\n#block-news #block-news-filter .news-categories.-date .filter-date {\n        width: auto;\n        -webkit-box-flex: 2;\n            -ms-flex: 2;\n                flex: 2;\n}\n#block-news #block-news-filter .news-categories.-date .filter-date.-cate {\n          -webkit-box-flex: 3;\n              -ms-flex: 3;\n                  flex: 3;\n}\n#block-news #block-news-filter .news-categories.-date .filter-date.-month {\n          margin-right: 0 !important;\n}\n}\n", ""]);
+exports.push([module.i, "\n.el-input__inner {\n  -webkit-appearance: none;\n  border-radius: 0;\n  border: unset;\n  background: transparent;\n  color: white;\n}\n.el-select__caret {\n  color: #fff;\n}\n#block-news {\n  margin-bottom: 180px;\n}\n#block-news .filter-date.-year {\n    width: 90px;\n}\n#block-news .filter-date.-month {\n    width: 85px;\n}\n#block-news .btn-load-more.no-more {\n    background: rgba(0, 0, 0, 0.6);\n}\n#block-news #block-news-lists {\n    z-index: 2;\n    margin-bottom: 80px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories {\n      padding: 55px 0;\n      font-size: 14px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories.-category {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date {\n        padding: 5px;\n        background: #f26d23;\n        cursor: pointer;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-month {\n          margin-right: 20px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-year:after, #block-news #block-news-lists #block-news-filter .news-categories .filter-date.-cate:after {\n          content: \"\";\n          position: absolute;\n          height: 60%;\n          width: 1px;\n          background: rgba(255, 255, 255, 0.6);\n          right: 0;\n          top: 20%;\n}\n#block-news #block-news-items .news-item {\n    width: 25%;\n    padding: 0 16px;\n}\n#block-breadcrumb .banner-title {\n  font-size: 90px;\n  font-weight: 300;\n}\n@media only screen and (max-width: 991px) {\n#block-news {\n    margin-bottom: 55px;\n}\n#block-news #block-news-lists {\n      margin-bottom: 0;\n}\n#block-news #block-news-filter .news-categories {\n      padding: 30px 0;\n}\n#block-news #block-news-filter .news-categories.-category {\n        display: none !important;\n}\n#block-news #block-news-filter .news-categories.-date .filter-date {\n        width: auto;\n        -webkit-box-flex: 2;\n            -ms-flex: 2;\n                flex: 2;\n}\n#block-news #block-news-filter .news-categories.-date .filter-date.-cate {\n          -webkit-box-flex: 3;\n              -ms-flex: 3;\n                  flex: 3;\n}\n#block-news #block-news-filter .news-categories.-date .filter-date.-month {\n          margin-right: 0 !important;\n}\n}\n", ""]);
 
 // exports
 
@@ -877,6 +879,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_components_block_menu_header__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_footer__ = __webpack_require__(365);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_components_block_footer__);
+//
+//
+//
+//
 //
 //
 //
@@ -1025,6 +1031,41 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 background: '/images/news_v1.png',
                 date: '2018/3/21',
+                category: '橘色涮涮屋',
+                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/#/news/detail'
+            }, {
+                background: '/images/news_v3.png',
+                date: '2018/3/21',
+                category: '橘色涮涮屋',
+                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/#/news/detail'
+            }, {
+                background: '/images/news_v5.png',
+                date: '2018/3/21',
+                category: '橘色涮涮屋',
+                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/#/news/detail'
+            }, {
+                background: '/images/news_v2.png',
+                date: '2018/3/21',
+                category: '橘色涮涮屋',
+                title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/#/news/detail'
+            }, {
+                background: '/images/news_v4.png',
+                date: '2018/3/21',
+                category: '橘色涮涮屋',
+                title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                link: '/#/news/detail'
+            }, {
+                background: '/images/news_v1.png',
+                date: '2018/3/21',
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
@@ -1063,7 +1104,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             viewIndex: 8,
             year: 2018,
             month: '',
-            category: '全部新訊'
+            category: '全部新訊',
+            loadEnd: false
         };
     },
     components: {
@@ -1079,6 +1121,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     methods: {
         loadMore: function loadMore() {
             this.viewIndex += 4;
+            if (this.viewIndex >= this.newsItems.length) {
+                this.loadEnd = true;
+            }
         },
         filterCate: function filterCate(index) {
             this.newsIndex = index;
@@ -1293,7 +1338,7 @@ var render = function() {
                               "div",
                               {
                                 key: $index,
-                                staticClass: "news-item col-6 col-md-3"
+                                staticClass: "news-item col-12 col-md-3"
                               },
                               [
                                 _c(
@@ -1366,9 +1411,16 @@ var render = function() {
               "a",
               {
                 staticClass: "btn-load-more btn-orange fat",
+                class: { "no-more": _vm.loadEnd },
                 on: { click: _vm.loadMore }
               },
-              [_vm._v("\n                載入更多\n            ")]
+              [
+                _vm._v(
+                  "\n                " +
+                    _vm._s(_vm.loadEnd ? "無更多新訊" : "載入更多") +
+                    "\n            "
+                )
+              ]
             )
           ])
         ]

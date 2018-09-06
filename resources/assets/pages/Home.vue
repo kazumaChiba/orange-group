@@ -204,7 +204,6 @@
     #app
         .logo
             position: absolute
-            height: 160px 
 
         //.main-title
             //line-height: 35px

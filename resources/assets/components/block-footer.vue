@@ -4,8 +4,8 @@
             <div class="container">
                 <div class="row d-flex justify-content-between align-items-center flex-column flex-lg-row">
                     <div class="join-us-slogan text-left">
-                        不僅僅只是台灣最棒的餐飲集團<br>
-                        <span class="text-orange">還是實現自我未來的大家庭</span>
+                        持續創造價值並帶領團隊實現目標和理想<br>
+                        <span class="text-orange">以前瞻眼光、宏觀策略成為產業先驅</span>
                     </div>
                     <router-link :to="'/'" class="btn-orange fat">馬上加入我們</router-link>
                 </div>
@@ -58,7 +58,7 @@
                     </div> -->
                     <p id="copyright" class="footer mb-5 position-relative w-100 text-size-1 d-flex align-items-end justify-content-center">
                         <span>
-                            2018 <a class="link-orange"> 橘色涮涮屋 </a> 版權所有. Designed by&ensp;<a class="link-orange" href="www.daydream-lab.com">Daydream Lab</a>
+                            2018 <a class="link-orange"> 橘色涮涮屋 </a> 版權所有.<br class="d-md-none"> Designed by&ensp;<a class="link-orange" href="www.daydream-lab.com">Daydream Lab</a>
                         </span>
                     </p>
                 </div>
@@ -161,13 +161,13 @@ export default {
             #footer 
                 height: auto
                 .container 
-                    padding: 50px 40px
                     .join-us-slogan 
-                        font-size: 18px
-                        line-height: 30px
+                        font-size: 16px
+                        line-height: 20px
                         margin-bottom: 30px
+                        text-align: center !important
                         span
-                            font-size: 18px
+                            font-size: 16px
                 #copyright , #copyright a
                     white-space: normal
                         

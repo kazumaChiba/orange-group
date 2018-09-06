@@ -70,7 +70,7 @@
                     <div class="container">
                         <div class="row">
                             <div 
-                                class="news-item col-6 col-md-3"
+                                class="news-item col-12 col-md-3"
                                 v-for="(item,$index) in newsItems.slice(0,viewIndex)"
                                 :key="$index"    
                                 v-if="item.category == newsCategories[newsIndex] || newsIndex == 0"
@@ -91,8 +91,12 @@
                 </div>
             </div>
             <div class="btn-load-more text-center">
-                <a class="btn-load-more btn-orange fat" @click="loadMore">
-                    載入更多
+                <a 
+                    class="btn-load-more btn-orange fat" 
+                    :class="{'no-more' : loadEnd}"
+                    @click="loadMore"
+                >
+                    {{loadEnd ? '無更多新訊' : '載入更多'}}
                 </a>
             </div>
         </div>
@@ -109,6 +113,46 @@ export default {
     data: function () {
         return {
             newsItems: [
+                {
+                    background: '/images/news_v1.png',
+                    date: '2018/3/21',
+                    category: '橘色涮涮屋',
+                    title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
+                    intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                    link: '/#/news/detail'
+                },
+                {
+                    background: '/images/news_v3.png',
+                    date: '2018/3/21',
+                    category: '橘色涮涮屋',
+                    title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
+                    intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                    link: '/#/news/detail'
+                },
+                {
+                    background: '/images/news_v5.png',
+                    date: '2018/3/21',
+                    category: '橘色涮涮屋',
+                    title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
+                    intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                    link: '/#/news/detail'
+                },
+                {
+                    background: '/images/news_v2.png',
+                    date: '2018/3/21',
+                    category: '橘色涮涮屋',
+                    title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
+                    intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                    link: '/#/news/detail'
+                },
+                {
+                    background: '/images/news_v4.png',
+                    date: '2018/3/21',
+                    category: '橘色涮涮屋',
+                    title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
+                    intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                    link: '/#/news/detail'
+                },
                 {
                     background: '/images/news_v1.png',
                     date: '2018/3/21',
@@ -196,6 +240,7 @@ export default {
 	        year: 2018,
             month: '',
             category: '全部新訊',
+            loadEnd: false,
         }
     },
     components: {
@@ -210,6 +255,9 @@ export default {
     methods: {
         loadMore(){
             this.viewIndex += 4;
+            if(this.viewIndex >= this.newsItems.length){
+                this.loadEnd = true;
+            }
         },
         filterCate(index){
             this.newsIndex = index;
@@ -231,8 +279,6 @@ export default {
         color: white
     .el-select__caret
         color: #fff
-    #header
-        top: 0
     #block-news
         margin-bottom: 180px
         .filter-date
@@ -240,6 +286,9 @@ export default {
                 width: 90px
             &.-month
                 width: 85px
+        .btn-load-more
+            &.no-more
+                background: rgba(0, 0, 0, 0.6)
         #block-news-lists
             z-index: 2
             margin-bottom: 80px

@@ -149,7 +149,7 @@
                             height: 250px
                             margin-bottom: 50px
                         .slick-brand-text
-                            padding: 0 20px
+                            width: 250px
                             .text-brand-info
                                 line-height: 30px
 
@@ -168,7 +168,7 @@ export default {
                     {
                         url: '/images/bg_brand_1.png',
                         title: 'EXTENSION by 橘色',
-                        text: '小鍋<span class="text-orange">新</span>時尚<br>不管多少人都能吃得精彩！',
+                        text: '美食不孤單，小鍋新<span class="text-orange">新</span>食尚！<br>享受一個人的自在、兩個人的美好、一群人的熱鬧！',
                         logo: '/images/home3_icon1.png',
                         contact: '#',
                         book: '#',
@@ -185,7 +185,7 @@ export default {
 		                url: '/images/slideshow_1.jpg',
 		                title: '橘色鍋物',
                         text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！',
-                        logo: '/images/home3_icon3.png',
+                        logo: '/images/icon_cafe.png',
                         contact: '#',
                         book: '#',
 	                },

@@ -114,8 +114,13 @@
                                             <p class="month">{{item.month}}</p>
                                         </div>
                                         <div class="right text-left">
-                                            <p class="title text-orange">{{item.listTitle}}</p>
-                                            <p class="content">{{item.listContent}}</p>
+                                            <div 
+                                                v-for="(monthEvent , $monthIndex) in item.list"
+                                                :key="$monthIndex"    
+                                            >
+                                                <p class="title text-orange">{{monthEvent.title}}</p>
+                                                <p class="content" v-html="monthEvent.desc"></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -179,105 +184,102 @@ export default {
                     year: 2018,
                     content: [
                         {
-                            month: '5月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                            month: '9月',
+                            list: [
+                                {
+                                    title: '橘色涮涮屋 A9店開幕',
+                                    desc: '新光三越 A9店<br>首間結合信義百貨商圈分店，更誇界與時尚調酒 Abrazo Bistro跨界合作。',
+                                },
+                            ] 
                         },
-                        {
-                            month: '4月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        },
-                        {
-                            month: '3月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        },
-                        {
-                            month: '2月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        }
                     ]
                 },
                 {
-                    year: 2015,
-                    content: [
-                        {
-                            month: '12月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        },
-                        {
-                            month: '4月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        },
-                        {
-                            month: '3月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        }
-                    ]
-                },
-                {
-                    year: 2013,
+                    year: 2017,
                     content: [
                         {
                             month: '7月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                            list: [
+                                {
+                                    title: 'Extension 1 by 橘色 開幕',
+                                    desc: '由國際建築師丹下憲孝操刀，以極具存在感的大吧台為核心，同時以宏觀的角度來詮釋現代和風設計維持高品質，創造出不一樣的新風貌－譽有內湖最美頂級單人鍋之稱。',
+                                },
+                            ] 
                         },
-                        {
-                            month: '6月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        }
-                    ]
-                },
-                {
-                    year: 2012,
-                    content: [
-                        {
-                            month: '5月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        },
-                        {
-                            month: '3月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        }
                     ]
                 },
                 {
                     year: 2009,
                     content: [
                         {
-                            month: '3月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                            month: '11月',
+                            list: [
+                                {
+                                    title: 'M One Café 開幕',
+                                    desc: '嚴選新鮮食材、搭配獨家配方，特聘駐美主廚精心設計私藏菜色，提供全日早午餐服務，享有『明星熱愛東區時尚早午餐咖啡館』。',
+                                },
+                                {
+                                    title: 'M One SPA 開幕',
+                                    desc: '日本旅客首選的幸福空間，以低調奢華的空間感，提供高規格的優質服務。',
+                                },
+                            ] 
                         },
-                        {
-                            month: '1月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        }
                     ]
                 },
                 {
-                    year: 2008,
+                    year: 2006,
+                    content: [
+                        {
+                            month: '6月',
+                            list: [
+                                {
+                                    title: '橘色涮涮屋仁愛店開幕',
+                                    desc: '鄰近大安店，延續以客為尊、使其賓至如歸的精神，打造全包廂形式隔間及溫暖的宵夜服務。',
+                                },
+                            ] 
+                        },
+                    ]
+                },
+                {
+                    year: 2004,
+                    content: [
+                        {
+                            month: '7月',
+                            list: [
+                                {
+                                    title: 'SAKURA 男女健康生活館開幕',
+                                    desc: '位於仁愛圓環，台灣首創提供個人包廂、衛浴設備、新鮮果汁暨全身舒壓及足部推拿的優質環境。',
+                                },
+                            ] 
+                        },
+                    ]
+                },
+                {
+                    year: 2001,
+                    content: [
+                        {
+                            month: '11月',
+                            list: [
+                                {
+                                    title: '橘色涮涮屋大安店開幕',
+                                    desc: '座落大安區以頂級食材、貼心服務、與舒適氛圍為精緻火鍋創先例，同時為餐飲業傳遞新文化。',
+                                },
+                            ] 
+                        },
+                    ]
+                },
+                {
+                    year: 2000,
                     content: [
                         {
                             month: '12月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                            list: [
+                                {
+                                    title: '橘色涮涮屋 大安店',
+                                    desc: '袁永定先生創立橘色涮涮屋，大安店開幕',
+                                },
+                            ] 
                         },
-                        {
-                            month: '11月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        }
                     ]
                 },
             ],
@@ -375,11 +377,11 @@ export default {
 	            if(jQuery("#block-about-year .circle-b").length > 0){
 		            if(jQuery(window).scrollTop() >= jQuery("#block-secret").offset().top - 100){
 			            jQuery("#about-tabs").addClass("position-fixed");
-			            jQuery("#header").addClass("hidden");
+			            // jQuery("#header").addClass("hidden");
 		            }
 		            else{
 			            jQuery("#about-tabs").removeClass("position-fixed");
-			            jQuery("#header").removeClass("hidden");
+			            // jQuery("#header").removeClass("hidden");
 		            }
                 }
 
@@ -412,10 +414,6 @@ export default {
     @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css')
     @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css')
 
-    #app
-        #header
-            &.hidden
-                display: none
     .main-title
         font-size: 50px
         margin-bottom: 0
@@ -661,6 +659,11 @@ export default {
                         .title
                             font-size: 25px
                             margin-bottom: 5px
+                        div
+                            border-bottom: 1px solid #ececec
+                            padding: 10px 0
+                            &:first-child
+                                padding-top: 0
                     &:last-child
                         .right
                             border-bottom: none

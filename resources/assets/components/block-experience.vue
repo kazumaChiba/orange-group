@@ -16,7 +16,7 @@
         </div> 
 
         <div id="content-experience" class="position-relative" >
-            <h1 class="big_title">{{experience[experience_index].title}}</h1>
+            <h1 class="big_title d-none d-lg-block">{{experience[experience_index].title}}</h1>
             <div class="experience-inner position-relative">
                 <transition name="fade" mode="out-in">
                     <component class="experience-item" v-bind:is="experience_view"></component>
@@ -229,6 +229,18 @@ export default {
                 //transition: stroke 1s
     #block-experience
         background-size: cover  
+        &:before
+            position: absolute
+            width: 100%
+            height: 100vh
+            background: black
+            content: ""
+            left: 0
+            opacity: 0.5
+            top: calc(50% - 50vh)
+            z-index: 4
+            content: ""
+            word-break: keep-all  
         &.active
             .bg-transition 
                 &.bg-left , &.bg-right , &.active
@@ -244,18 +256,6 @@ export default {
                     &.active
                         background-position-y: 0
                         opacity: 1
-                &:before
-                    position: absolute
-                    width: 50%
-                    height: 100vh
-                    background: black
-                    content: ""
-                    left: 0
-                    opacity: 0.8
-                    top: calc(50% - 50vh)
-                    z-index: 4
-                    content: ""
-                    word-break: keep-all  
             &.bg-right
                 z-index: 2
                 right: 0

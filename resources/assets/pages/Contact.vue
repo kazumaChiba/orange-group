@@ -91,8 +91,6 @@ export default {
 </script>
 
 <style lang="sass">
-    #header
-        top: 0
     #block-contact
         #block-contact-brands
             transform: translateY(-150px)
@@ -171,6 +169,7 @@ export default {
                         box-shadow: none
                         border: 1px solid #ccc
                         padding: 20px 0
+                        height: auto
                         &.-intro-text
                             flex: 100%
                             border: none
@@ -197,4 +196,5 @@ export default {
                         font-size: 16px
                     .text-size-2
                         font-size: 12px !important
+            
 </style>

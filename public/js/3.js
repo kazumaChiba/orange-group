@@ -139,7 +139,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n}\n#footer .footer .footer-info {\n      margin-bottom: 100px;\n      line-height: 25px;\n      font-size: 14px;\n      font-weight: 100;\n}\n#footer .footer .footer-info div {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#footer .footer .footer-info p {\n        margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n        font-size: 18px;\n        font-weight: 100;\n        line-height: 30px;\n}\n#footer .footer.footer-join {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer.footer-join:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: rgba(0, 0, 0, 0.8);\n        top: 0px;\n}\n#footer .footer .btn-orange:hover {\n      background: white;\n      color: #f26d23 !important;\n      font-weight: 500;\n}\n@media only screen and (max-width: 991px) {\n#app #footer .footer .col-contact-us {\n    -webkit-box-flex: 100%;\n        -ms-flex: 100%;\n            flex: 100%;\n}\n#app #footer .container .join-us-slogan {\n    line-height: 45px;\n    margin-bottom: 50px;\n}\n#app #footer .container .join-us-slogan span {\n      font-size: 28px;\n}\n#app #footer .logo {\n    height: 100px;\n}\n#app .btn-orange.fat {\n    padding: 20px 45px;\n}\n}\n@media only screen and (max-width: 420px) {\n#app #footer {\n    height: auto;\n}\n#app #footer .container {\n      padding: 50px 40px;\n}\n#app #footer .container .join-us-slogan {\n        font-size: 18px;\n        line-height: 30px;\n        margin-bottom: 30px;\n}\n#app #footer .container .join-us-slogan span {\n          font-size: 18px;\n}\n#app #footer #copyright, #app #footer #copyright a {\n      white-space: normal;\n}\n#app #footer .footer {\n      margin-bottom: 0 !important;\n}\n#app #footer .footer .col p {\n        font-size: 13px !important;\n}\n#app #footer .btn-orange.fat {\n      padding: 12px 30px;\n      font-size: 13px;\n}\n}\n", ""]);
+exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n}\n#footer .footer .footer-info {\n      margin-bottom: 100px;\n      line-height: 25px;\n      font-size: 14px;\n      font-weight: 100;\n}\n#footer .footer .footer-info div {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#footer .footer .footer-info p {\n        margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n        font-size: 18px;\n        font-weight: 100;\n        line-height: 30px;\n}\n#footer .footer.footer-join {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer.footer-join:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: rgba(0, 0, 0, 0.8);\n        top: 0px;\n}\n#footer .footer .btn-orange:hover {\n      background: white;\n      color: #f26d23 !important;\n      font-weight: 500;\n}\n@media only screen and (max-width: 991px) {\n#app #footer .footer .col-contact-us {\n    -webkit-box-flex: 100%;\n        -ms-flex: 100%;\n            flex: 100%;\n}\n#app #footer .container .join-us-slogan {\n    line-height: 45px;\n    margin-bottom: 50px;\n}\n#app #footer .container .join-us-slogan span {\n      font-size: 28px;\n}\n#app #footer .logo {\n    height: 100px;\n}\n#app .btn-orange.fat {\n    padding: 20px 45px;\n}\n}\n@media only screen and (max-width: 420px) {\n#app #footer {\n    height: auto;\n}\n#app #footer .container .join-us-slogan {\n      font-size: 16px;\n      line-height: 20px;\n      margin-bottom: 30px;\n      text-align: center !important;\n}\n#app #footer .container .join-us-slogan span {\n        font-size: 16px;\n}\n#app #footer #copyright, #app #footer #copyright a {\n      white-space: normal;\n}\n#app #footer .footer {\n      margin-bottom: 0 !important;\n}\n#app #footer .footer .col p {\n        font-size: 13px !important;\n}\n#app #footer .btn-orange.fat {\n      padding: 12px 30px;\n      font-size: 13px;\n}\n}\n", ""]);
 
 // exports
 
@@ -414,11 +414,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "join-us-slogan text-left" }, [
-      _vm._v("\n                    不僅僅只是台灣最棒的餐飲集團"),
+      _vm._v("\n                    持續創造價值並帶領團隊實現目標和理想"),
       _c("br"),
       _vm._v(" "),
       _c("span", { staticClass: "text-orange" }, [
-        _vm._v("還是實現自我未來的大家庭")
+        _vm._v("以前瞻眼光、宏觀策略成為產業先驅")
       ])
     ])
   },
@@ -499,7 +499,9 @@ var staticRenderFns = [
             _c("span", [
               _vm._v("\n                        2018 "),
               _c("a", { staticClass: "link-orange" }, [_vm._v(" 橘色涮涮屋 ")]),
-              _vm._v(" 版權所有. Designed by "),
+              _vm._v(" 版權所有."),
+              _c("br", { staticClass: "d-md-none" }),
+              _vm._v(" Designed by "),
               _c(
                 "a",
                 {
@@ -816,7 +818,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#header {\n  top: 0;\n}\n#block-contact #block-contact-brands {\n  -webkit-transform: translateY(-150px);\n          transform: translateY(-150px);\n  margin-bottom: -50px;\n}\n#block-contact #block-contact-brands .contact-brands-list {\n    position: relative;\n    background: white;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item {\n      -webkit-box-flex: 25%;\n          -ms-flex: 25%;\n              flex: 25%;\n      -webkit-box-shadow: -10px -10px 60px rgba(0, 0, 0, 0.1);\n              box-shadow: -10px -10px 60px rgba(0, 0, 0, 0.1);\n      overflow: hidden;\n      padding: 40px;\n      position: relative;\n      height: 250px;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:before, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:after {\n        content: \"\";\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        opacity: 0;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:before {\n        background-image: url(/images/bg_brand_1.png);\n        background-repeat: no-repeat;\n        background-position: center;\n        background-size: cover;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:after {\n        background: #f26d23;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item.-intro-text {\n        -webkit-box-flex: 50%;\n            -ms-flex: 50%;\n                flex: 50%;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item img {\n        width: 80px;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item > * {\n        z-index: 2;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text):hover, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text).active {\n        cursor: pointer;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text):hover .brand-title, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text):hover p, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text).active .brand-title, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text).active p {\n          color: white !important;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text):hover:before, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text).active:before {\n          opacity: 1;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text):hover:after, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text).active:after {\n          opacity: 0.5;\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-intro-title {\n      font-size: 38px;\n      font-weight: 500;\n      margin-bottom: 10px;\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-intro-subtitle {\n      font-size: 22px;\n      color: gray;\n      font-weight: 500;\n}\n#block-contact #block-contact-brands .contact-brands-list .text-line-left {\n      margin-bottom: 20px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#block-contact #block-contact-brands .contact-brands-list .text-line-left:before {\n        content: \"\";\n        position: absolute;\n        width: 50%;\n        height: 1px;\n        background: #f26d23;\n        top: 50%;\n        left: calc(-50% - 20px);\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-title {\n      font-size: 22px;\n      font-weight: 500;\n      margin-bottom: 0;\n}\n@media only screen and (max-width: 991px) {\n#block-contact #block-contact-brands {\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n    margin: 50px 0;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item {\n      -webkit-box-flex: 50%;\n          -ms-flex: 50%;\n              flex: 50%;\n      -webkit-box-shadow: none;\n              box-shadow: none;\n      border: 1px solid #ccc;\n      padding: 20px 0;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item.-intro-text {\n        -webkit-box-flex: 100%;\n            -ms-flex: 100%;\n                flex: 100%;\n        border: none;\n        padding: 0px;\n        margin-bottom: 15px;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:nth-child(2n-1) {\n        border-left: none;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(:last-child):not(:nth-last-child(2)) {\n        border-bottom: none;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item img {\n        width: 50px;\n}\n#block-contact #block-contact-brands .contact-brands-list .text-line-left {\n      text-align: center;\n      margin-bottom: 10px;\n      font-size: 12px;\n}\n#block-contact #block-contact-brands .contact-brands-list .text-line-left:before {\n        display: none;\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-intro-title {\n      font-size: 23px;\n      text-align: center;\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-intro-subtitle {\n      font-size: 14px;\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-title {\n      font-size: 16px;\n}\n#block-contact #block-contact-brands .contact-brands-list .text-size-2 {\n      font-size: 12px !important;\n}\n}\n", ""]);
+exports.push([module.i, "\n#block-contact #block-contact-brands {\n  -webkit-transform: translateY(-150px);\n          transform: translateY(-150px);\n  margin-bottom: -50px;\n}\n#block-contact #block-contact-brands .contact-brands-list {\n    position: relative;\n    background: white;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item {\n      -webkit-box-flex: 25%;\n          -ms-flex: 25%;\n              flex: 25%;\n      -webkit-box-shadow: -10px -10px 60px rgba(0, 0, 0, 0.1);\n              box-shadow: -10px -10px 60px rgba(0, 0, 0, 0.1);\n      overflow: hidden;\n      padding: 40px;\n      position: relative;\n      height: 250px;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:before, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:after {\n        content: \"\";\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        opacity: 0;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:before {\n        background-image: url(/images/bg_brand_1.png);\n        background-repeat: no-repeat;\n        background-position: center;\n        background-size: cover;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:after {\n        background: #f26d23;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item.-intro-text {\n        -webkit-box-flex: 50%;\n            -ms-flex: 50%;\n                flex: 50%;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item img {\n        width: 80px;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item > * {\n        z-index: 2;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text):hover, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text).active {\n        cursor: pointer;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text):hover .brand-title, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text):hover p, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text).active .brand-title, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text).active p {\n          color: white !important;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text):hover:before, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text).active:before {\n          opacity: 1;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text):hover:after, #block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(.-intro-text).active:after {\n          opacity: 0.5;\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-intro-title {\n      font-size: 38px;\n      font-weight: 500;\n      margin-bottom: 10px;\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-intro-subtitle {\n      font-size: 22px;\n      color: gray;\n      font-weight: 500;\n}\n#block-contact #block-contact-brands .contact-brands-list .text-line-left {\n      margin-bottom: 20px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#block-contact #block-contact-brands .contact-brands-list .text-line-left:before {\n        content: \"\";\n        position: absolute;\n        width: 50%;\n        height: 1px;\n        background: #f26d23;\n        top: 50%;\n        left: calc(-50% - 20px);\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-title {\n      font-size: 22px;\n      font-weight: 500;\n      margin-bottom: 0;\n}\n@media only screen and (max-width: 991px) {\n#block-contact #block-contact-brands {\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n    margin: 50px 0;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item {\n      -webkit-box-flex: 50%;\n          -ms-flex: 50%;\n              flex: 50%;\n      -webkit-box-shadow: none;\n              box-shadow: none;\n      border: 1px solid #ccc;\n      padding: 20px 0;\n      height: auto;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item.-intro-text {\n        -webkit-box-flex: 100%;\n            -ms-flex: 100%;\n                flex: 100%;\n        border: none;\n        padding: 0px;\n        margin-bottom: 15px;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:nth-child(2n-1) {\n        border-left: none;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item:not(:last-child):not(:nth-last-child(2)) {\n        border-bottom: none;\n}\n#block-contact #block-contact-brands .contact-brands-list .contact-brands-item img {\n        width: 50px;\n}\n#block-contact #block-contact-brands .contact-brands-list .text-line-left {\n      text-align: center;\n      margin-bottom: 10px;\n      font-size: 12px;\n}\n#block-contact #block-contact-brands .contact-brands-list .text-line-left:before {\n        display: none;\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-intro-title {\n      font-size: 23px;\n      text-align: center;\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-intro-subtitle {\n      font-size: 14px;\n}\n#block-contact #block-contact-brands .contact-brands-list .brand-title {\n      font-size: 16px;\n}\n#block-contact #block-contact-brands .contact-brands-list .text-size-2 {\n      font-size: 12px !important;\n}\n}\n", ""]);
 
 // exports
 
@@ -1010,7 +1012,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#contact-form .btn-orange {\n  padding: 10px 55px;\n  font-size: 14px;\n  -webkit-box-shadow: 5px 5px 10px rgba(242, 109, 35, 0.3);\n          box-shadow: 5px 5px 10px rgba(242, 109, 35, 0.3);\n}\n#contact-form .btn-orange:hover {\n    background: rgba(0, 0, 0, 0.85);\n}\n#contact-form #contact-form-body {\n  padding: 0 80px;\n}\n#contact-form #contact-form-body .field-item {\n    width: 50%;\n}\n#contact-form #contact-form-body .field-item .field-icon {\n      position: absolute;\n      top: 15px;\n}\n#contact-form #contact-form-body .field-item .field-icon.plane {\n        font-size: 60px;\n        color: #f26c23;\n        right: 0;\n        top: -70px;\n}\n#contact-form .contact-form-title {\n  font-size: 28px;\n}\n#contact-form .contact-form-field {\n  height: 330px;\n}\n#contact-form .contact-form-field .field-item {\n    margin-bottom: 20px;\n}\n#contact-form .contact-form-field .el-select {\n    width: 100%;\n    font-size: 14px;\n    color: #858585;\n}\n#contact-form .contact-form-field .el-select .el-input__suffix {\n      height: 39px;\n      line-height: 39px;\n}\n#contact-form .contact-form-field input, #contact-form .contact-form-field textarea {\n    background: white;\n    border-radius: 0;\n    -moz-appearance: none;\n         appearance: none;\n    -webkit-appearance: none;\n    width: 100%;\n    border: none;\n    border-bottom: 1px solid #ccc;\n    padding: 10px 30px;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n}\n#contact-form .contact-form-field input::-webkit-input-placeholder, #contact-form .contact-form-field textarea::-webkit-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input:-ms-input-placeholder, #contact-form .contact-form-field textarea:-ms-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input::-ms-input-placeholder, #contact-form .contact-form-field textarea::-ms-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input::placeholder, #contact-form .contact-form-field textarea::placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input:focus, #contact-form .contact-form-field textarea:focus {\n      outline: none;\n      border-bottom-color: #f26c23;\n      border-width: 2px;\n}\n#contact-form .contact-form-field input:focus::-webkit-input-placeholder, #contact-form .contact-form-field textarea:focus::-webkit-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus:-ms-input-placeholder, #contact-form .contact-form-field textarea:focus:-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::-ms-input-placeholder, #contact-form .contact-form-field textarea:focus::-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::placeholder, #contact-form .contact-form-field textarea:focus::placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus + .field-icon, #contact-form .contact-form-field textarea:focus + .field-icon {\n        color: #f26c23;\n}\n#contact-form .contact-form-field input.btn-orange, #contact-form .contact-form-field textarea.btn-orange {\n      font-size: 14px;\n      padding: 10px 60px;\n      -webkit-box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n              box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n}\n#contact-form .contact-form-field textarea {\n    margin-left: 30px;\n    height: 305px;\n}\n#contact-form form {\n  margin-bottom: 100px;\n}\n@media only screen and (max-width: 991px) {\n#contact-form #contact-form-body {\n    padding: 0;\n}\n}\n", ""]);
+exports.push([module.i, "\n#contact-form .btn-orange {\n  padding: 10px 55px;\n  font-size: 14px;\n  -webkit-box-shadow: 5px 5px 10px rgba(242, 109, 35, 0.3);\n          box-shadow: 5px 5px 10px rgba(242, 109, 35, 0.3);\n}\n#contact-form .btn-orange:hover {\n    background: rgba(0, 0, 0, 0.85);\n}\n#contact-form #contact-form-body {\n  padding: 0 80px;\n}\n#contact-form #contact-form-body .field-item {\n    width: 50%;\n}\n#contact-form #contact-form-body .field-item .field-icon {\n      position: absolute;\n      top: 15px;\n}\n#contact-form #contact-form-body .field-item .field-icon.plane {\n        font-size: 60px;\n        color: #f26c23;\n        right: 0;\n        top: -70px;\n}\n#contact-form .contact-form-title {\n  font-size: 28px;\n}\n#contact-form .contact-form-field {\n  height: 330px;\n}\n#contact-form .contact-form-field .field-item {\n    margin-bottom: 20px;\n}\n#contact-form .contact-form-field .el-select {\n    width: 100%;\n    font-size: 14px;\n    color: #858585;\n}\n#contact-form .contact-form-field .el-select .el-input__suffix {\n      height: 39px;\n      line-height: 39px;\n}\n#contact-form .contact-form-field input, #contact-form .contact-form-field textarea {\n    background: white;\n    border-radius: 0;\n    -moz-appearance: none;\n         appearance: none;\n    -webkit-appearance: none;\n    width: 100%;\n    border: none;\n    border-bottom: 1px solid #ccc;\n    padding: 10px 30px;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n}\n#contact-form .contact-form-field input::-webkit-input-placeholder, #contact-form .contact-form-field textarea::-webkit-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input:-ms-input-placeholder, #contact-form .contact-form-field textarea:-ms-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input::-ms-input-placeholder, #contact-form .contact-form-field textarea::-ms-input-placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input::placeholder, #contact-form .contact-form-field textarea::placeholder {\n      font-size: 14px;\n}\n#contact-form .contact-form-field input:focus, #contact-form .contact-form-field textarea:focus {\n      outline: none;\n      border-bottom-color: #f26c23;\n      border-width: 2px;\n}\n#contact-form .contact-form-field input:focus::-webkit-input-placeholder, #contact-form .contact-form-field textarea:focus::-webkit-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus:-ms-input-placeholder, #contact-form .contact-form-field textarea:focus:-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::-ms-input-placeholder, #contact-form .contact-form-field textarea:focus::-ms-input-placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus::placeholder, #contact-form .contact-form-field textarea:focus::placeholder {\n        color: transparent;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n}\n#contact-form .contact-form-field input:focus + .field-icon, #contact-form .contact-form-field textarea:focus + .field-icon {\n        color: #f26c23;\n}\n#contact-form .contact-form-field input.btn-orange, #contact-form .contact-form-field textarea.btn-orange {\n      font-size: 14px;\n      padding: 10px 60px;\n      -webkit-box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n              box-shadow: 5px 5px 10px rgba(242, 108, 35, 0.3);\n}\n#contact-form .contact-form-field textarea {\n    margin-left: 30px;\n    height: 305px;\n}\n#contact-form .field-footer span {\n  width: 50%;\n}\n#contact-form form {\n  margin-bottom: 100px;\n}\n@media only screen and (max-width: 991px) {\n#contact-form #contact-form-body {\n    padding: 0;\n}\n#contact-form #contact-form-body .contact-form-field {\n      height: auto;\n}\n#contact-form #contact-form-body .contact-form-field .field-item {\n        width: 100%;\n}\n#contact-form #contact-form-body .contact-form-field .field-item textarea {\n          margin-left: 0;\n          height: 180px;\n}\n#contact-form #contact-form-body .contact-form-field .field-item textarea::-webkit-input-placeholder {\n            top: 50%;\n            position: relative;\n            -webkit-transform: translateY(-50%);\n                    transform: translateY(-50%);\n}\n#contact-form #contact-form-body .contact-form-field .field-item textarea:-ms-input-placeholder {\n            top: 50%;\n            position: relative;\n            transform: translateY(-50%);\n}\n#contact-form #contact-form-body .contact-form-field .field-item textarea::-ms-input-placeholder {\n            top: 50%;\n            position: relative;\n            transform: translateY(-50%);\n}\n#contact-form #contact-form-body .contact-form-field .field-item textarea::placeholder {\n            top: 50%;\n            position: relative;\n            -webkit-transform: translateY(-50%);\n                    transform: translateY(-50%);\n}\n#contact-form #contact-form-body .contact-form-field .field-item .field-icon.plane {\n          width: 16px;\n          top: 50%;\n          left: 0;\n          -webkit-transform: translateY(-50%);\n                  transform: translateY(-50%);\n}\n#contact-form #contact-form-body .field-footer span {\n      width: 100%;\n}\n}\n", ""]);
 
 // exports
 
@@ -1111,6 +1113,30 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -1123,13 +1149,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 title: '聯絡<span class="text-orange">橘色涮涮屋</span>',
                 subtitle: '隨時歡迎您與我們聯繫，無論是訂位餐飲或是任何其他相關問題，都可以提出詢問！',
                 form: {
-                    template: '<form>' + '<div class="contact-form-field d-flex flex-column flex-wrap">' + '<div class="field-item field-user d-flex align-items-center position-relative">' + '<input placeholder="您的姓名">' + '<img src="/images/icon-user.png" class="field-icon" />' + '</div>' + '<div class="field-item field-envelop d-flex align-items-center position-relative">' + '<input placeholder="您的電子信箱">' + '<img src="/images/icon-mail.png" class="field-icon" />' + '</div>' + '<div class="field-item field-phone d-flex align-items-center position-relative">' + '<input placeholder="您的電話">' + '<img src="/images/icon-phone.png" class="field-icon" />' + '</div>' + '<div class="field-item field-location d-flex align-items-center position-relative">' + '<input placeholder="欲聯繫的橘色分館">' + '<img src="/images/icon-location.png" class="field-icon" />' + '</div>' + '<div class="field-item field-question d-flex align-items-center position-relative">' + '<el-select v-model="' + this.question + '" placeholder="欲詢問的問題類型">' + '<el-option :label="' + "'" + '問題一' + "'" + '" :value="1"></el-option>' + '<el-option :label="' + "'" + '問題二' + "'" + '" :value="2"></el-option>' + '<el-option :label="' + "'" + '問題三' + "'" + '" :value="3"></el-option>' + '</el-select>' + '<img src="/images/icon-ask.png" class="field-icon" />' + '</div>' + '<div class="field-item field-content d-flex align-items-center position-relative h-100">' + '<textarea placeholder="您的詢問內容"></textarea>' + '<img src="/images/icon-plane.png" class="field-icon plane" />' + '</div>' + '</div>' + '<div class="mt-4 clearfix">' + '<span class="text-size-1 float-left text-gray w-50 pr-4">您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝</span>' + '<input type="submit" value="發送訊息" class="btn-orange d-inline-block float-right">' + '</div>' + '</form>'
+                    template: '<form>' + '<div class="contact-form-field d-flex flex-column flex-wrap">' + '<div class="field-item field-user d-flex align-items-center position-relative">' + '<input placeholder="您的姓名">' + '<img src="/images/icon-user.png" class="field-icon" />' + '</div>' + '<div class="field-item field-envelop d-flex align-items-center position-relative">' + '<input placeholder="您的電子信箱">' + '<img src="/images/icon-mail.png" class="field-icon" />' + '</div>' + '<div class="field-item field-phone d-flex align-items-center position-relative">' + '<input placeholder="您的電話">' + '<img src="/images/icon-phone.png" class="field-icon" />' + '</div>' + '<div class="field-item field-location d-flex align-items-center position-relative">' + '<input placeholder="欲聯繫的橘色分館">' + '<img src="/images/icon-location.png" class="field-icon" />' + '</div>' + '<div class="field-item field-question d-flex align-items-center position-relative">' + '<el-select v-model="' + this.question + '" placeholder="欲詢問的問題類型">' + '<el-option :label="' + "'" + '問題一' + "'" + '" :value="1"></el-option>' + '<el-option :label="' + "'" + '問題二' + "'" + '" :value="2"></el-option>' + '<el-option :label="' + "'" + '問題三' + "'" + '" :value="3"></el-option>' + '</el-select>' + '<img src="/images/icon-ask.png" class="field-icon" />' + '</div>' + '<div class="field-item field-content d-flex align-items-center position-relative h-100">' + '<textarea placeholder="您的詢問內容"></textarea>' + '<img src="/images/icon-plane.png" class="field-icon plane" />' + '</div>' + '</div>' + '<div class="field-footer mt-4 clearfix d-flex d-lg-block flex-column">' + '<span class="text-size-1 float-left text-gray mb-3 mb-lg-0 pr-0 pr-lg-4">您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝</span>' + '<input type="submit" value="發送訊息" class="btn-orange d-inline-block float-right col-md-3 col-12">' + '</div>' + '</form>'
                 }
             }), _defineProperty(_fields, 'extension_1', {
                 title: '聯絡<span class="text-orange">Extension 1 By橘色</span>',
                 subtitle: '隨時歡迎您與我們聯繫，無論是訂位餐飲或是任何其他相關問題，都可以提出詢問！',
                 form: {
-                    template: '<form>' + '<div class="contact-form-field d-flex flex-column flex-wrap">' + '<div class="field-item field-user d-flex align-items-center position-relative">' + '<input placeholder="您的姓名">' + '<img src="/images/icon-user.png" class="field-icon" />' + '</div>' + '<div class="field-item field-envelop d-flex align-items-center position-relative">' + '<input placeholder="您的電子信箱">' + '<img src="/images/icon-mail.png" class="field-icon" />' + '</div>' + '<div class="field-item field-phone d-flex align-items-center position-relative">' + '<input placeholder="您的電話">' + '<img src="/images/icon-phone.png" class="field-icon" />' + '</div>' + '<div class="field-item field-question d-flex align-items-center position-relative">' + '<el-select v-model="' + this.question + '" placeholder="欲詢問的問題類型">' + '<el-option :label="' + "'" + '問題一' + "'" + '" :value="1"></el-option>' + '<el-option :label="' + "'" + '問題二' + "'" + '" :value="2"></el-option>' + '<el-option :label="' + "'" + '問題三' + "'" + '" :value="3"></el-option>' + '</el-select>' + '<img src="/images/icon-ask.png" class="field-icon" />' + '</div>' + '<div class="field-item field-content d-flex align-items-center position-relative h-100">' + '<textarea placeholder="您的詢問內容"></textarea>' + '<img src="/images/icon-plane.png" class="field-icon plane" />' + '</div>' + '</div>' + '<div class="mt-4 clearfix">' + '<span class="text-size-1 float-left text-gray w-50 pr-4">您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝</span>' + '<input type="submit" value="發送訊息" class="btn-orange d-inline-block float-right">' + '</div>' + '</form>'
+                    template: '<form>' + '<div class="contact-form-field d-flex flex-column flex-wrap">' + '<div class="field-item field-user d-flex align-items-center position-relative">' + '<input placeholder="您的姓名">' + '<img src="/images/icon-user.png" class="field-icon" />' + '</div>' + '<div class="field-item field-envelop d-flex align-items-center position-relative">' + '<input placeholder="您的電子信箱">' + '<img src="/images/icon-mail.png" class="field-icon" />' + '</div>' + '<div class="field-item field-phone d-flex align-items-center position-relative">' + '<input placeholder="您的電話">' + '<img src="/images/icon-phone.png" class="field-icon" />' + '</div>' + '<div class="field-item field-question d-flex align-items-center position-relative">' + '<el-select v-model="' + this.question + '" placeholder="欲詢問的問題類型">' + '<el-option :label="' + "'" + '問題一' + "'" + '" :value="1"></el-option>' + '<el-option :label="' + "'" + '問題二' + "'" + '" :value="2"></el-option>' + '<el-option :label="' + "'" + '問題三' + "'" + '" :value="3"></el-option>' + '</el-select>' + '<img src="/images/icon-ask.png" class="field-icon" />' + '</div>' + '<div class="field-item field-content d-flex align-items-center position-relative h-100">' + '<textarea placeholder="您的詢問內容"></textarea>' + '<img src="/images/icon-plane.png" class="field-icon plane" />' + '</div>' + '</div>' + '<div class="field-footer mt-4 clearfix d-flex d-lg-block flex-column">' + '<span class="text-size-1 float-left text-gray mb-3 mb-lg-0 pr-0 pr-lg-4">您所填寫的任何資料，我們都將遵循台灣隱私權相關法律規範，不提供與任何其他單位，請擔心提出您的問題，謝謝</span>' + '<input type="submit" value="發送訊息" class="btn-orange d-inline-block float-right col-md-3 col-12">' + '</div>' + '</form>'
                 }
             }), _fields),
             question: ''
@@ -1235,7 +1261,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#block-map .map-list {\n  margin-bottom: 80px;\n  padding: 0 80px;\n}\n#block-map .map-list .map-item {\n    width: calc(100%/3);\n    padding: 20px;\n}\n#block-map .map-list .map-item .map-title {\n      font-size: 20px;\n}\n#block-map .map-list .map-item .map-address:after {\n      content: \"\";\n      display: block;\n      width: 50px;\n      height: 1px;\n      background: #f26c23;\n      margin-top: 16px;\n}\n#block-map .map-list .map-item:hover, #block-map .map-list .map-item.active {\n      -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.1);\n              box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.1);\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      cursor: pointer;\n}\n#block-map .map-iframe {\n  border: none;\n}\n#block-map .map-iframe iframe {\n    display: block;\n    border: none;\n}\n", ""]);
+exports.push([module.i, "\n#block-map .map-list {\n  margin-bottom: 80px;\n  padding: 0 80px;\n}\n#block-map .map-list .map-item {\n    width: calc(100%/3);\n    padding: 20px;\n}\n#block-map .map-list .map-item .map-title {\n      font-size: 20px;\n}\n#block-map .map-list .map-item .map-address:after {\n      content: \"\";\n      display: block;\n      width: 50px;\n      height: 1px;\n      background: #f26c23;\n      margin-top: 16px;\n}\n#block-map .map-list .map-item:hover, #block-map .map-list .map-item.active {\n      -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.1);\n              box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.1);\n      -webkit-transition: all .3s;\n      transition: all .3s;\n      cursor: pointer;\n}\n#block-map .map-iframe {\n  border: none;\n}\n#block-map .map-iframe iframe {\n    display: block;\n    border: none;\n}\n@media only screen and (max-width: 991px) {\n.map-list {\n    padding: 0 38px !important;\n    margin-bottom: 20px !important;\n}\n.map-list .el-tabs__nav-wrap:after {\n      display: none;\n}\n.map-list .el-tabs__nav-wrap .el-tabs__item.is-active {\n      color: #f26c23;\n}\n.map-list .el-tabs__nav-wrap .el-tabs__active-bar {\n      background-color: #f26c23;\n      height: 1px;\n      bottom: 5px;\n}\n.map-list .el-tabs__nav-wrap .el-tabs__active-bar:before, .map-list .el-tabs__nav-wrap .el-tabs__active-bar:after {\n        content: \"\";\n        position: absolute;\n        top: 0;\n        background: #ef803a;\n        left: 50%;\n}\n.map-list .el-tabs__nav-wrap .el-tabs__active-bar:before {\n        width: 1px;\n        height: 20px;\n}\n.map-list .el-tabs__nav-wrap .el-tabs__active-bar:after {\n        border-radius: 100%;\n        top: 20px;\n        left: 50%;\n        -webkit-transform: translate(-50%, -50%);\n                transform: translate(-50%, -50%);\n}\n.map-list .el-tabs__content {\n      text-align: center;\n}\n.map-list .el-tabs__content p {\n        margin: 0;\n        font-size: 12px !important;\n        font-weight: 400 !important;\n        line-height: 20px;\n        color: #ef803a !important;\n}\n.map-list .el-tabs__header {\n      margin: 0 0 35px;\n}\n.map-iframe {\n    margin-bottom: 50px;\n}\n.map-iframe iframe {\n      height: 180px;\n      padding: 0 38px;\n}\n}\n", ""]);
 
 // exports
 
@@ -1274,27 +1300,44 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
             mapItems: _defineProperty({}, 'shabu', [{
-                title: '橘色涮涮屋一館',
+                title: '橘色一館',
                 address: '106台北市大安區大安路一段135號',
                 infos: '+886 2 8780 59559<br>service@group.com'
             }, {
-                title: '橘色涮涮屋二館',
+                title: '橘色二館',
                 address: '106台北市大安區仁愛路四段29-2號',
                 infos: '+886 2 8780 59559<br>service@group.com'
             }, {
-                title: '橘色涮涮屋新光A9旗艦',
+                title: '新光A9旗艦',
                 address: '110台北市信義區松壽路9號5樓',
                 infos: '+886 2 8780 59559<br>service@group.com'
             }]),
             mapIndex: 0
         };
     },
-    methods: {},
+    methods: {
+        tabMap: function tabMap(e) {
+            this.mapIndex = e.index;
+        }
+    },
     props: {
         brand: {
             type: String,
@@ -1314,54 +1357,89 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _vm.mapItems[_vm.brand]
     ? _c("div", { attrs: { id: "block-map-body" } }, [
-        _c("div", { staticClass: "map-list container" }, [
-          _c(
-            "div",
-            { staticClass: "row d-flex justify-content-between " },
-            _vm._l(_vm.mapItems[_vm.brand], function(item, $index) {
-              return _c(
-                "div",
-                {
-                  key: $index,
-                  staticClass: "map-item",
-                  class: _vm.mapIndex == $index ? "active" : "",
-                  on: {
-                    click: function($event) {
-                      _vm.mapIndex = $index
+        _c(
+          "div",
+          { staticClass: "map-list container" },
+          [
+            _c(
+              "div",
+              { staticClass: "row d-flex justify-content-between " },
+              _vm._l(_vm.mapItems[_vm.brand], function(item, $index) {
+                return _c(
+                  "div",
+                  {
+                    key: $index,
+                    staticClass: "map-item d-none d-md-block",
+                    class: _vm.mapIndex == $index ? "active" : "",
+                    on: {
+                      click: function($event) {
+                        _vm.mapIndex = $index
+                      }
                     }
-                  }
-                },
-                [
-                  _c(
-                    "p",
-                    { staticClass: "map-title" },
-                    [
-                      _c("font-awesome-icon", {
-                        attrs: { icon: ["fal", "map-marker-alt"] }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "text-orange" }, [
-                        _vm._v(_vm._s(item.title))
-                      ])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "p",
-                    { staticClass: "map-address font-weight-bold text-size-1" },
-                    [_vm._v(_vm._s(item.address))]
-                  ),
-                  _vm._v(" "),
-                  _c("p", {
-                    staticClass: "map-infos text-gray text-size-1",
-                    domProps: { innerHTML: _vm._s(item.infos) }
-                  })
-                ]
-              )
-            })
-          )
-        ]),
+                  },
+                  [
+                    _c(
+                      "p",
+                      { staticClass: "map-title" },
+                      [
+                        _c("font-awesome-icon", {
+                          attrs: { icon: ["fal", "map-marker-alt"] }
+                        }),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "text-orange" }, [
+                          _vm._v(_vm._s(item.title))
+                        ])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "p",
+                      {
+                        staticClass: "map-address font-weight-bold text-size-1"
+                      },
+                      [_vm._v(_vm._s(item.address))]
+                    ),
+                    _vm._v(" "),
+                    _c("p", {
+                      staticClass: "map-infos text-gray text-size-1",
+                      domProps: { innerHTML: _vm._s(item.infos) }
+                    })
+                  ]
+                )
+              })
+            ),
+            _vm._v(" "),
+            _c(
+              "el-tabs",
+              {
+                staticClass: "d-block d-md-none",
+                on: { "tab-click": _vm.tabMap }
+              },
+              _vm._l(_vm.mapItems[_vm.brand], function(item, $index) {
+                return _c(
+                  "el-tab-pane",
+                  { key: $index, attrs: { label: item.title } },
+                  [
+                    _c(
+                      "p",
+                      {
+                        staticClass: "map-address font-weight-bold text-size-1"
+                      },
+                      [_vm._v(_vm._s(item.address))]
+                    ),
+                    _vm._v(" "),
+                    _c("p", {
+                      staticClass: "map-infos text-gray text-size-1",
+                      domProps: { innerHTML: _vm._s(item.infos) }
+                    })
+                  ]
+                )
+              })
+            )
+          ],
+          1
+        ),
         _vm._v(" "),
         _c("div", { staticClass: "map-iframe" }, [
           _c("iframe", {
