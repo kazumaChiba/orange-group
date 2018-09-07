@@ -2,7 +2,7 @@
     <div id="block-experience" class="position-relative section text-white text-center h-100" :style="'background-image:url('+experience[experience_index_old].url+')'">
         <div class="bg-transition bg-left" :class="{'active' : bgTransition}">
             <div 
-                class="bg-inner position-absolute" 
+                class="bg-inner position-absolute bg-black-cover" 
                 :class="{'active' : bgTransition}"
                 :style="'background-image:url('+experience[experience_index].url+')'"
             ></div>
@@ -405,6 +405,9 @@ export default {
         #block-experience 
             #content-experience 
                 transform: scale(0.55)
+                .bg-inner
+                    &.bg-black-cover
+                            display: none
                 .experience-inner
                     h5
                         span
