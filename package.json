@@ -77,6 +77,7 @@
     "svgo-loader": "^2.1.0",
     "vue-autosize": "git+https://github.com/mage3k/vue-autosize.git",
     "vue-axios": "^2.1.1",
+    "vue-carousel": "^0.13.1",
     "vue-fullpage": "^2.0.5",
     "vue-fullpage.js": "0.0.4",
     "vue-hotel-datepicker": "git+https://github.com/northwalker/vue-hotel-datepicker.git",

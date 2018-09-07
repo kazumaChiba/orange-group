@@ -1,5 +1,7 @@
 <template>
     <div id="block-brands" class="section text-white position-relative text-center">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
         <div class="bg-transition -old bg-black-cover"
              :class="{'active' : addTransition, select: brandIndex == 0}"
              style="right: auto; left: 0"
@@ -19,21 +21,23 @@
                     </h3>
                     <span class="sub-title">orange brands</span>
                 </div>
-                <div class="content-brands w-100 d-flex align-items-center justify-content-between mt-5 mb-5">
-                    <span class="btn-orange"  @click="brandIndex = 0; startAnimate('500')">橘色涮涮屋</span>
-                    <div 
+                <div id="slide-brands" class="content-brands w-100 d-flex align-items-center justify-content-between mt-5 mb-5">
+                    <!-- <span class="btn-orange"  @click="brandIndex = 0; startAnimate('500')">橘色涮涮屋</span> -->
+                    <!-- <div 
                         class="info-brands align-items-end border-radius-100 d-flex justify-content-center text-left position-relative"
                         :style="'background-image: url(' + brandItems[brandIndex].logo + ')'"
                     >    
                         <a :href="brandItems[brandIndex].contact">聯絡我們</a>
                         <span>・</span>
                         <a :href="brandItems[brandIndex].book">線上訂位</a>
-                    </div>
-                    <span class="btn-orange" @click="brandIndex = 1; startAnimate('500')">M One Cafe</span>
+                    </div> -->
+                    <!-- <span class="btn-orange" @click="brandIndex = 1; startAnimate('500')">M One Cafe</span> -->
+                    <span>zzz</span>
+                    <span>zzz</span>
                 </div>
                 <p class="text-brands" v-html="brandItems[brandIndex].text" :class="{'fade' : addTransition}"></p>
             </div>
-            <div class="d-block d-md-none position-relative">
+            <div class="d-md-none d-block　position-relative">
                 <div>
                     <h3 class="main-title text-uppercase">
                         <span class="fs-inherit text-orange">
@@ -65,8 +69,9 @@
         </div>
     </div> 
 </template>
-<style lang="sass">
 
+<style lang="sass">
+    
     // @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css')
     // @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css')
 
@@ -107,7 +112,7 @@
                         border: 1px solid white
                         padding: 60px 40px
                         font-size: 30px
-                        background-size: 50%
+                        background-size: 100px
                         background-repeat: no-repeat
                         background-position: center 50px
                         &:before
@@ -184,15 +189,20 @@ export default {
 	                {
 		                url: '/images/slideshow_1.jpg',
 		                title: '橘色鍋物',
-                        text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！',
+                        text: '<span class="text-orange">橘色</span>鍋物<br>不管多少人都能吃得精彩！',
                         logo: '/images/icon_cafe.png',
+                        contact: '#',
+                        book: '#',
+                    },
+                    {
+		                url: '/images/slideshow_1.jpg',
+		                title: '橘色舒體',
+                        text: '<span class="text-orange">橘色</span>舒體',
+                        logo: '/images/icon_m1spa.png',
                         contact: '#',
                         book: '#',
 	                },
                 ],
-                slickOptions: {
-                    slidesToShow: 1,
-                },
             }
         },
         methods: {
@@ -203,6 +213,14 @@ export default {
                     this.brandIndex_old = this.brandIndex;
                 },parseInt(time));
             },
+        },
+        mounted: function() {
+            jQuery(document).ready(function(){
+                jQuery("#slide-brands").slick({
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                });
+            });
         },
         components: {
             Slick,

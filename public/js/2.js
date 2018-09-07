@@ -4743,7 +4743,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#app #block-brands .fp-controlArrow.fp-next, #app #block-brands .fp-controlArrow.fp-prev {\n  border: 3px solid white;\n  width: 20px;\n  height: 20px;\n  border-radius: 5px 0 5px 0px;\n  border-top-color: transparent;\n  border-right-color: transparent;\n  -webkit-transform: rotate(225deg);\n          transform: rotate(225deg);\n  position: absolute;\n  bottom: 90px;\n  top: unset;\n}\n#app #block-brands .fp-controlArrow.fp-prev {\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n}\n#app #block-brands .bg-black-cover {\n  width: 0;\n  height: 100vh;\n  -webkit-transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n  transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n  background-position: center;\n}\n#app #block-brands .bg-black-cover.select {\n    -webkit-transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n    width: 105vw;\n}\n#app #block-brands .container {\n  z-index: 2;\n  padding: 0 15px;\n}\n#app #block-brands .container .row {\n    padding: 100px 0;\n}\n#app #block-brands .container .content-brands .info-brands {\n    width: 300px;\n    height: 300px;\n    border: 1px solid white;\n    padding: 60px 40px;\n    font-size: 30px;\n    background-size: 50%;\n    background-repeat: no-repeat;\n    background-position: center 50px;\n}\n#app #block-brands .container .content-brands .info-brands:before {\n      content: \"\";\n      position: absolute;\n      background: rgba(242, 108, 35, 0.4);\n      width: 100%;\n      height: 100%;\n      background: rgba(242, 108, 35, 0.4);\n      border-radius: 100%;\n      left: 0;\n      z-index: -1;\n      bottom: 0;\n}\n#app #block-brands .container .content-brands .info-brands a, #app #block-brands .container .content-brands .info-brands span {\n      font-size: 16px;\n}\n#app #block-brands .container .text-brands {\n    font-size: 30px;\n    letter-spacing: 20px;\n    line-height: 45px;\n    font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n      letter-spacing: 20px;\n}\n@media only screen and (max-width: 768px) {\n#app #block-brands .fp-slides {\n    height: calc(100vh - 200px);\n}\n#app #block-brands .fp-tableCell {\n    height: 100% !important;\n}\n#app #block-brands .container .content-brands .info-brands {\n    width: 250px;\n    height: 250px;\n    margin-bottom: 50px;\n}\n#app #block-brands .container .content-brands .slick-brand-text {\n    width: 250px;\n}\n#app #block-brands .container .content-brands .slick-brand-text .text-brand-info {\n      line-height: 30px;\n}\n}\n", ""]);
+exports.push([module.i, "\n#app #block-brands .fp-controlArrow.fp-next, #app #block-brands .fp-controlArrow.fp-prev {\n  border: 3px solid white;\n  width: 20px;\n  height: 20px;\n  border-radius: 5px 0 5px 0px;\n  border-top-color: transparent;\n  border-right-color: transparent;\n  -webkit-transform: rotate(225deg);\n          transform: rotate(225deg);\n  position: absolute;\n  bottom: 90px;\n  top: unset;\n}\n#app #block-brands .fp-controlArrow.fp-prev {\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n}\n#app #block-brands .bg-black-cover {\n  width: 0;\n  height: 100vh;\n  -webkit-transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n  transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n  background-position: center;\n}\n#app #block-brands .bg-black-cover.select {\n    -webkit-transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n    width: 105vw;\n}\n#app #block-brands .container {\n  z-index: 2;\n  padding: 0 15px;\n}\n#app #block-brands .container .row {\n    padding: 100px 0;\n}\n#app #block-brands .container .content-brands .info-brands {\n    width: 300px;\n    height: 300px;\n    border: 1px solid white;\n    padding: 60px 40px;\n    font-size: 30px;\n    background-size: 100px;\n    background-repeat: no-repeat;\n    background-position: center 50px;\n}\n#app #block-brands .container .content-brands .info-brands:before {\n      content: \"\";\n      position: absolute;\n      background: rgba(242, 108, 35, 0.4);\n      width: 100%;\n      height: 100%;\n      background: rgba(242, 108, 35, 0.4);\n      border-radius: 100%;\n      left: 0;\n      z-index: -1;\n      bottom: 0;\n}\n#app #block-brands .container .content-brands .info-brands a, #app #block-brands .container .content-brands .info-brands span {\n      font-size: 16px;\n}\n#app #block-brands .container .text-brands {\n    font-size: 30px;\n    letter-spacing: 20px;\n    line-height: 45px;\n    font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n      letter-spacing: 20px;\n}\n@media only screen and (max-width: 768px) {\n#app #block-brands .fp-slides {\n    height: calc(100vh - 200px);\n}\n#app #block-brands .fp-tableCell {\n    height: 100% !important;\n}\n#app #block-brands .container .content-brands .info-brands {\n    width: 250px;\n    height: 250px;\n    margin-bottom: 50px;\n}\n#app #block-brands .container .content-brands .slick-brand-text {\n    width: 250px;\n}\n#app #block-brands .container .content-brands .slick-brand-text .text-brand-info {\n      line-height: 30px;\n}\n}\n", ""]);
 
 // exports
 
@@ -4757,6 +4757,11 @@ exports.push([module.i, "\n#app #block-brands .fp-controlArrow.fp-next, #app #bl
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_slick__ = __webpack_require__(382);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_slick___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_slick__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4940,14 +4945,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 url: '/images/slideshow_1.jpg',
                 title: '橘色鍋物',
-                text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！',
+                text: '<span class="text-orange">橘色</span>鍋物<br>不管多少人都能吃得精彩！',
                 logo: '/images/icon_cafe.png',
                 contact: '#',
                 book: '#'
-            }],
-            slickOptions: {
-                slidesToShow: 1
-            }
+            }, {
+                url: '/images/slideshow_1.jpg',
+                title: '橘色舒體',
+                text: '<span class="text-orange">橘色</span>舒體',
+                logo: '/images/icon_m1spa.png',
+                contact: '#',
+                book: '#'
+            }]
         };
     },
     methods: {
@@ -4960,6 +4969,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 _this.brandIndex_old = _this.brandIndex;
             }, parseInt(time));
         }
+    },
+    mounted: function mounted() {
+        jQuery(document).ready(function () {
+            jQuery("#slide-brands").slick({
+                slidesToScroll: 1,
+                slidesToShow: 1
+            });
+        });
     },
     components: {
         Slick: __WEBPACK_IMPORTED_MODULE_0_vue_slick___default.a
@@ -4982,6 +4999,20 @@ var render = function() {
       attrs: { id: "block-brands" }
     },
     [
+      _c("link", {
+        attrs: {
+          href:
+            "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        }
+      }),
+      _vm._v(" "),
+      _c("link", {
+        attrs: {
+          href:
+            "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        }
+      }),
+      _vm._v(" "),
       _c("div", {
         staticClass: "bg-transition -old bg-black-cover",
         class: { active: _vm.addTransition, select: _vm.brandIndex == 0 },
@@ -5012,75 +5043,7 @@ var render = function() {
             [
               _vm._m(0),
               _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "content-brands w-100 d-flex align-items-center justify-content-between mt-5 mb-5"
-                },
-                [
-                  _c(
-                    "span",
-                    {
-                      staticClass: "btn-orange",
-                      on: {
-                        click: function($event) {
-                          _vm.brandIndex = 0
-                          _vm.startAnimate("500")
-                        }
-                      }
-                    },
-                    [_vm._v("橘色涮涮屋")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "info-brands align-items-end border-radius-100 d-flex justify-content-center text-left position-relative",
-                      style:
-                        "background-image: url(" +
-                        _vm.brandItems[_vm.brandIndex].logo +
-                        ")"
-                    },
-                    [
-                      _c(
-                        "a",
-                        {
-                          attrs: {
-                            href: _vm.brandItems[_vm.brandIndex].contact
-                          }
-                        },
-                        [_vm._v("聯絡我們")]
-                      ),
-                      _vm._v(" "),
-                      _c("span", [_vm._v("・")]),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        {
-                          attrs: { href: _vm.brandItems[_vm.brandIndex].book }
-                        },
-                        [_vm._v("線上訂位")]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "span",
-                    {
-                      staticClass: "btn-orange",
-                      on: {
-                        click: function($event) {
-                          _vm.brandIndex = 1
-                          _vm.startAnimate("500")
-                        }
-                      }
-                    },
-                    [_vm._v("M One Cafe")]
-                  )
-                ]
-              ),
+              _vm._m(1),
               _vm._v(" "),
               _c("p", {
                 staticClass: "text-brands",
@@ -5094,9 +5057,9 @@ var render = function() {
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "d-block d-md-none position-relative" },
+            { staticClass: "d-md-none d-block　position-relative" },
             [
-              _vm._m(1),
+              _vm._m(2),
               _vm._v(" "),
               _vm._l(_vm.brandItems, function(item, $index) {
                 return _c(
@@ -5181,6 +5144,20 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("span", { staticClass: "sub-title" }, [_vm._v("orange brands")])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "content-brands w-100 d-flex align-items-center justify-content-between mt-5 mb-5",
+        attrs: { id: "slide-brands" }
+      },
+      [_c("span", [_vm._v("zzz")]), _vm._v(" "), _c("span", [_vm._v("zzz")])]
+    )
   },
   function() {
     var _vm = this
