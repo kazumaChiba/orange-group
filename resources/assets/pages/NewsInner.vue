@@ -103,6 +103,11 @@ export default {
         MenuHeader,
         BlockFooter,
     },
+    watch: {
+        $route(to, from) {
+            this.init();
+        }
+    }
 }
 </script>
 

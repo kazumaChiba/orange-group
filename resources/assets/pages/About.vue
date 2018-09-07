@@ -1,6 +1,6 @@
 <template>
-    <div id="block-about">
-        <banner title="關於<span class='text-orange'>橘色</span>" img="/images/slideshow_1.jpg"></banner>
+    <div id="block-about" class="position-relative">
+        <banner title="關於<span class='text-orange'>橘色</span>" img="/images/banner_about.png"></banner>
         <div id="about-tabs" class="container">
             <div class="about-tabs-body row container pl-0 pr-0 justify-content-between m-auto">
                 <a class="tab text-center active" data-target = '#block-secret'>橘色秘密</a>
@@ -20,26 +20,29 @@
         <div id="block-about-service" class="position-relative">
             <div class="service-body position-relative"  style="background-image:url('/images/banner_about.png');">
                 <div class="container">
-                    <div class="row d-flex justify-content-center align-items-center">
+                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
                         <div class="service-left position-relative">
-                            <div class="service-item d-flex position-relative justify-content-center align-items-center text-center" style="background-image:url('/images/about_year_1.png');">
-                                <div class="service-content position-relative text-white">
+                            <div class="service-item d-flex flex-column position-relative justify-content-center align-items-center text-center">
+                                <div class="service-img mr-3 mr-lg-0" style="background-image:url('/images/about_year_1.png');"></div>
+                                <div class="service-content text-white">
                                     <p class="service-title">用心服務</p>
-                                    <p class="service-desc">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>
+                                    <p class="service-desc">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文測</p>
                                 </div>
                             </div>
                         </div>
                         <div class="service-right position-relative">
-                            <div class="service-item -top d-flex position-relative justify-content-center align-items-center text-center" style="background-image:url('/images/about_year_2.png');">
-                                <div class="service-content position-relative text-white">
+                            <div class="service-item top d-flex flex-column position-relative justify-content-center align-items-center text-center">
+                                <div class="service-img" style="background-image:url('/images/about_year_2.png');"></div>
+                                <div class="service-content text-white">
                                     <p class="service-title">用心服務</p>
-                                    <p class="service-desc mb-0">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>
+                                    <p class="service-desc mb-0">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文測</p>
                                 </div>
                             </div>
-                            <div class="service-item -bottom d-flex position-relative justify-content-center align-items-center text-center" style="background-image:url('/images/about_year_3.png');">
-                                <div class="service-content text-white position-relative">
+                            <div class="service-item bottom flex-column d-flex position-relative justify-content-center align-items-center text-center">
+                                <div class="service-img mr-3 mr-lg-0" style="background-image:url('/images/about_year_3.png');"></div>
+                                <div class="service-content text-white">
                                     <p class="service-title">用心服務</p>
-                                    <p class="service-desc">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>
+                                    <p class="service-desc">測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文測</p>
                                 </div>
                             </div>
                         </div>
@@ -111,8 +114,13 @@
                                             <p class="month">{{item.month}}</p>
                                         </div>
                                         <div class="right text-left">
-                                            <p class="title text-orange">{{item.listTitle}}</p>
-                                            <p class="content">{{item.listContent}}</p>
+                                            <div 
+                                                v-for="(monthEvent , $monthIndex) in item.list"
+                                                :key="$monthIndex"    
+                                            >
+                                                <p class="title text-orange">{{monthEvent.title}}</p>
+                                                <p class="content" v-html="monthEvent.desc"></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -155,10 +163,19 @@ export default {
         return {
             tab: '#block-secret',
             yearOptions: {
-                slidesToShow: 4,
+                slidesToShow: 3,
                 slidesToScroll: 1,
                 arrows: true,
-	            infinite: false
+                infinite: false,
+                mobileFirst: true,
+                responsive: [
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 4,
+                        }
+                    },
+                ],
             },
 	        yearTransition: 'to-small',
             yearIndex: 0,
@@ -167,105 +184,102 @@ export default {
                     year: 2018,
                     content: [
                         {
-                            month: '5月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                            month: '9月',
+                            list: [
+                                {
+                                    title: '橘色涮涮屋 A9店開幕',
+                                    desc: '新光三越 A9店<br>首間結合信義百貨商圈分店，更誇界與時尚調酒 Abrazo Bistro跨界合作。',
+                                },
+                            ] 
                         },
-                        {
-                            month: '4月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        },
-                        {
-                            month: '3月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        },
-                        {
-                            month: '2月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        }
                     ]
                 },
                 {
-                    year: 2015,
-                    content: [
-                        {
-                            month: '12月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        },
-                        {
-                            month: '4月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        },
-                        {
-                            month: '3月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        }
-                    ]
-                },
-                {
-                    year: 2013,
+                    year: 2017,
                     content: [
                         {
                             month: '7月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                            list: [
+                                {
+                                    title: 'Extension 1 by 橘色 開幕',
+                                    desc: '由國際建築師丹下憲孝操刀，以極具存在感的大吧台為核心，同時以宏觀的角度來詮釋現代和風設計維持高品質，創造出不一樣的新風貌－譽有內湖最美頂級單人鍋之稱。',
+                                },
+                            ] 
                         },
-                        {
-                            month: '6月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        }
-                    ]
-                },
-                {
-                    year: 2012,
-                    content: [
-                        {
-                            month: '5月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        },
-                        {
-                            month: '3月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        }
                     ]
                 },
                 {
                     year: 2009,
                     content: [
                         {
-                            month: '3月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                            month: '11月',
+                            list: [
+                                {
+                                    title: 'M One Café 開幕',
+                                    desc: '嚴選新鮮食材、搭配獨家配方，特聘駐美主廚精心設計私藏菜色，提供全日早午餐服務，享有『明星熱愛東區時尚早午餐咖啡館』。',
+                                },
+                                {
+                                    title: 'M One SPA 開幕',
+                                    desc: '日本旅客首選的幸福空間，以低調奢華的空間感，提供高規格的優質服務。',
+                                },
+                            ] 
                         },
-                        {
-                            month: '1月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        }
                     ]
                 },
                 {
-                    year: 2008,
+                    year: 2006,
+                    content: [
+                        {
+                            month: '6月',
+                            list: [
+                                {
+                                    title: '橘色涮涮屋仁愛店開幕',
+                                    desc: '鄰近大安店，延續以客為尊、使其賓至如歸的精神，打造全包廂形式隔間及溫暖的宵夜服務。',
+                                },
+                            ] 
+                        },
+                    ]
+                },
+                {
+                    year: 2004,
+                    content: [
+                        {
+                            month: '7月',
+                            list: [
+                                {
+                                    title: 'SAKURA 男女健康生活館開幕',
+                                    desc: '位於仁愛圓環，台灣首創提供個人包廂、衛浴設備、新鮮果汁暨全身舒壓及足部推拿的優質環境。',
+                                },
+                            ] 
+                        },
+                    ]
+                },
+                {
+                    year: 2001,
+                    content: [
+                        {
+                            month: '11月',
+                            list: [
+                                {
+                                    title: '橘色涮涮屋大安店開幕',
+                                    desc: '座落大安區以頂級食材、貼心服務、與舒適氛圍為精緻火鍋創先例，同時為餐飲業傳遞新文化。',
+                                },
+                            ] 
+                        },
+                    ]
+                },
+                {
+                    year: 2000,
                     content: [
                         {
                             month: '12月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
+                            list: [
+                                {
+                                    title: '橘色涮涮屋 大安店',
+                                    desc: '袁永定先生創立橘色涮涮屋，大安店開幕',
+                                },
+                            ] 
                         },
-                        {
-                            month: '11月',
-                            listTitle: '新光三越旗艦店開幕',
-                            listContent: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                        }
                     ]
                 },
             ],
@@ -326,7 +340,7 @@ export default {
                 scrollTabs();
                 scrollCircles();
             });
-            jQuery("#block-about-year .circle-wapper").attr("style", 'top: '+ jQuery("#block-about-year").offset().top-150 + 'px; height: ' + jQuery("#block-about-year").height());
+            jQuery("#block-about-year .circle-wapper").attr("style", 'top: '+ (jQuery("#block-about-year").offset().top - 150) + 'px; height: ' + jQuery("#block-about-year").height() + 'px');
 
             scrollTabs();
             scrollCircles();
@@ -363,11 +377,11 @@ export default {
 	            if(jQuery("#block-about-year .circle-b").length > 0){
 		            if(jQuery(window).scrollTop() >= jQuery("#block-secret").offset().top - 100){
 			            jQuery("#about-tabs").addClass("position-fixed");
-			            jQuery("#header").addClass("hidden");
+			            // jQuery("#header").addClass("hidden");
 		            }
 		            else{
 			            jQuery("#about-tabs").removeClass("position-fixed");
-			            jQuery("#header").removeClass("hidden");
+			            // jQuery("#header").removeClass("hidden");
 		            }
                 }
 
@@ -400,10 +414,6 @@ export default {
     @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css')
     @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css')
 
-    #app
-        #header
-            &.hidden
-                display: none
     .main-title
         font-size: 50px
         margin-bottom: 0
@@ -443,7 +453,8 @@ export default {
             &.active
                 border-bottom: 3px solid #f26c24
                 color: #f26c24
-
+    #block-about
+        overflow: hidden
     #block-secret
         padding: 70px 0
         margin: 130px 0
@@ -468,48 +479,53 @@ export default {
                 height: 100%
                 background: black
                 opacity: 0.7
-            .service-item
-                padding: 80px
-                background-size: cover
-                background-repeat: no-repeat
-                background-position: center
-                .service-content
-                    opacity: 0
-                    .service-title
-                        font-size: 35px
-                        margin-bottom: 5px
-                    .service-desc
-                        line-height: 35px
-                        font-size: 20px
-                &:before
-                    content: ""
-                    position: absolute
-                    width: 100%
-                    height: 100%
-                    background: #f26c23
-                    opacity: 0
-                    transition: all .3s
-                &:hover
-                    &:before
-                        opacity: 0.9
-                    .service-content
-                        opacity: 1
-                        transition: all .3s
+            
             .service-left , .service-right
                 flex: 1
+                .service-item
+                    .service-img
+                        width: 100%
+                        background-size: cover
+                        background-repeat: no-repeat
+                        background-position: center
+                    .service-content
+                        padding: 80px
+                        opacity: 0
+                        position: absolute
+                        .service-title
+                            font-size: 35px
+                            margin-bottom: 5px
+                        .service-desc
+                            line-height: 35px
+                            font-size: 20px
+                    &:before
+                        content: ""
+                        position: absolute
+                        width: 100%
+                        height: 100%
+                        background: #f26c23
+                        opacity: 0
+                        transition: all .3s
+                    &:hover
+                        &:before
+                            opacity: 0.9
+                        .service-content
+                            opacity: 1
+                            transition: all .3s
             .service-left
                 top: -80px
                 .service-item
-                    height: 750px
-                    position: relative
+                    .service-img
+                        height: 750px
             .service-right
                 top: -80px
                 .service-item
                     &.top
-                        height:
-                    &.bottom350px
-                        height: 480px
-                        width: 90%
+                        .service-img
+                            height: 350px
+                    &.bottom
+                        .service-img
+                            height: 480px
     #block-about-year
         padding-top: 70px
         margin-bottom: 150px
@@ -643,6 +659,11 @@ export default {
                         .title
                             font-size: 25px
                             margin-bottom: 5px
+                        div
+                            border-bottom: 1px solid #ececec
+                            padding: 10px 0
+                            &:first-child
+                                padding-top: 0
                     &:last-child
                         .right
                             border-bottom: none
@@ -694,6 +715,113 @@ export default {
             transform: scale(0.5)
         100%
             transform: scale(0.3)
+
+    @media only screen and (max-width: 991px)
+        #app
+            .main-title 
+                margin-bottom: 5px
+                .text-orange
+                    color: #f26e22 !important
+            .sub-title
+                    margin-bottom: 15px
+            #about-tabs
+                display: none
+            #block-secret 
+                margin-bottom: 0
+                margin-top: 0
+                padding: 50px 0
+                .about-content
+                    width: 100%
+                    text-align: left !important
+                    font-size: 14px
+                    line-height: 25px
+                
+            #block-about-service 
+                margin-bottom: 0
+                .service-body 
+                    height: auto
+                    background: none !important
+                    &:before
+                        background: none
+                    .service-left , .service-right
+                        flex: 100%
+                        top: 0
+                        .service-item 
+                            align-items: end !important
+                            margin-bottom: 20px
+                            .service-img
+                                padding-top: 40%
+                                height: auto
+                            .service-content
+                                color: black !important
+                                position: relative
+                                opacity: 1
+                                padding: 0px
+                                margin-top: 10px
+                                .service-title
+                                    color: #f26c24
+                                    font-size: 14px
+                                .service-desc
+                                    font-size: 14px
+                                    line-height: 25px
+                                    text-align: left
+                    .service-left
+                        top: 0
+            
+            #block-about-year
+                padding-top: 50px
+                .year 
+                    .slick-list
+                        height: 110px
+                        margin: 0 0 20px 0
+                    .slick-next
+                        right: 10px
+                        top: calc(50% + 10px)
+                    .slick-prev
+                        left: 10px
+                        top: calc(50% + 10px)
+                    .year-item
+                        top: 0
+                        &.active 
+                            .dot-year 
+                                .dot-radar
+                                    transform: scale(0.5)
+                .year-body 
+                    .year-left
+                        padding: 40px 0
+                        flex: 2
+                        span
+                            font-size: 20px
+                    .year-right
+                        padding: 0 0 0 15px
+                        .year-month-list 
+                            .year-month-item 
+                                .left 
+                                    flex: 2
+                                    text-align: center !important
+                                    .month
+                                        font-size: 18px
+                                .right
+                                    padding: 0 10px
+                                    .title
+                                        font-size: 16px
+
+            #block-about-video 
+                .video-content 
+                    h3
+                        font-size: 28px
+                    .video-desc
+                        font-size: 14px
+                        margin-bottom: 20px
+                        padding-bottom: 20px
+                    .btn-orange.fat
+                        padding: 15px 0 !important
+                        font-size: 13px
+                        width: 100%
+                        text-align: center
+
+
+
 </style>
 <style lang="sass">
     .to-small-enter-active

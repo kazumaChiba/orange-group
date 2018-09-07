@@ -12,49 +12,35 @@ const routes = [
 		        path: 'about',
 		        name: '關於橘色',
 		        component: resolve => require(['pages/About.vue'], resolve),
-	        }
-        ]
-    },
-    {
-        path: '/news',
-	    name: '橘色新訊',
-        component: resolve => require(['pages/layout/Landing.vue'], resolve),
-        children: [
-            {
-                path: '',
-                component: resolve => require(['pages/News.vue'], resolve),
             },
 	        {
-		        path: 'detail',
-		        name: '新光三越旗艦店開幕全店享九折優惠',
-		        component: resolve => require(['pages/NewsInner.vue'], resolve)
+		        path: 'news',
+		        //name: '橘色新訊',
+                component: resolve => require(['pages/News.vue'], resolve),
+                children: [
+                    {
+                        path: '',
+                        name: '橘色新訊',
+                        component: resolve => require(['pages/News.vue'], resolve),
+                    },
+                    {
+                        path: 'detail/:id',
+                        //name: '新光三越旗艦店開幕全店享九折優惠',
+                        component: resolve => require(['pages/NewsInner.vue'], resolve)
+                    }
+                ]
+	        },
+	        {
+		        path: 'family',
+		        name: '橘色家庭',
+                component: resolve => require(['pages/Family.vue'], resolve),
+	        },
+	        {
+		        path: 'contact',
+		        name: '聯絡我們',
+                component: resolve => require(['pages/Contact.vue'], resolve),
 	        }
         ]
     },
-    {
-        path: '/family',
-        component: resolve => require(['pages/layout/Landing.vue'], resolve),
-        children: [
-            {
-                path: '',
-                name: '橘色家庭',
-                component: resolve => require(['pages/Family.vue'], resolve),
-            }
-        ]
-    },
-    {
-        path: '/contact',
-        component: resolve => require(['pages/layout/Landing.vue'], resolve),
-        children: [
-            {
-                path: '',
-                name: '聯絡我們',
-                component: resolve => require(['pages/Contact.vue'], resolve),
-            }
-        ]
-    }
-
-
-
 ]
 export default routes

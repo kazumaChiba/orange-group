@@ -2,7 +2,7 @@
     <div id="block-family">
         <div class="slideshow position-relative">
             <div 
-                class="slider position-relative d-flex flex-column align-items-center justify-content-center" 
+                class="slider position-relative d-flex flex-column align-items-center justify-content-end justify-content-lg-center" 
                 style="background-image:url('/images/family_bg.png')"
             >
                 <p class="slide-title text-white">實現你未來的夢想</p>
@@ -10,17 +10,18 @@
                     踏足餐飲業的堅實第一步<br>
                     橘色大家庭為你實現
                 </p>
-                <p @click="onScolldown" class="slide-text text-white position-absolute">讓我們帶你實現夢想！</p>
+                <p @click="onScolldown" class="slide-text text-white position-absolute d-none d-lg-block">讓我們帶你實現夢想！</p>
             </div>
         </div>
         <div id="family-intro">
-            <h2 class="family-title text-orange text-right">橘色<br>引領你築夢踏實<br>一步一步達成夢想</h2>
+            <h2 class="family-title text-orange text-right d-none d-lg-block">橘色<br>引領你築夢踏實<br>一步一步達成夢想</h2>
             <div class="family-step-list">
                 <div 
-                    class="family-step d-flex"
+                    class="family-step d-flex flex-column flex-lg-row"
                     v-for="(item,$index) in family_steps"
                     :key="$index"
                     :id="'step-'+$index"
+                    :class="{'flex-lg-row-reverse' : $index == 1}"
                 >
                     <div class="left position-relative">
                         <h1 class="big_title text-orange position-absolute">{{item.bigTitle}}</h1>
@@ -36,15 +37,15 @@
                 </div>
             </div>
         </div>
-        <div id="teams-say">
+        <div id="teams-say" class="d-none d-lg-block">
             <div
-                class="teams-content text-white position-relative" 
+                class="d-flex teams-content text-white position-relative align-items-center" 
                 :style="'background-image:url('+slick_teams[teamIndex].img_big+')'"
             >
                 <div class="team-content-texts position-relative">
-                    <h3 class="">看看我們的夥伴們怎麼說</h3>
+                    <h3 class=" position-relative">看看我們的夥伴們怎麼說</h3>
                     <p class="team-desc position-relative" v-html="slick_teams[teamIndex].text"></p>
-                    <span class="team-name d-block text-right">- {{slick_teams[teamIndex].team}} {{slick_teams[teamIndex].member}}</span>
+                    <span class="team-name d-block text-right  position-relative">- {{slick_teams[teamIndex].team}} {{slick_teams[teamIndex].member}}</span>
                 </div>
             </div>
             <slick
@@ -56,10 +57,32 @@
                     v-for="(item,$index) in slick_teams"
                     :key="$index"
                     class="team-item position-relative d-flex flex-column align-items-center justify-content-center" 
+                    :class="{'active' : $index == 0}"
                     :style="'background-image:url('+item.img+')'"
                     @click="teamIndex = $index"
                 >
                     <p class="team-title text-center">{{item.team}}<br>{{item.member}}</p>
+                </div>
+            </slick>
+        </div>
+        <div id="teams-say" class="d-block d-lg-none">
+            <h3>看看我們的夥伴們怎麼說</h3>
+            <slick
+                class="teams"
+                ref="slick"
+                :options="teamsOption"
+            >
+                <div
+                    class="d-flex teams-content text-white position-relative align-items-center" 
+                    v-for="(item,$index) in slick_teams"
+                    :key="$index"
+                >
+                    <div 
+                        class="team-content-texts position-relative" 
+                        :style="'background-image:url('+item.img_big+')'"
+                    >
+                        <p class="team-desc position-relative" v-html="item.text"></p>
+                    </div>
                 </div>
             </slick>
         </div>
@@ -100,42 +123,46 @@ export default {
             ],
             teamsOption: {
                 slidesToShow: 4,
+                slidesToScroll: 4,
+                responsive: [
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: true,
+                        }
+                    }
+                ],
             },
             slick_teams: [
                 {
                     team: '橘色公關團隊1',
                     member: '某某某',
                     text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
-                    img: '/images/family_bg.png',
-                    img_big: '/images/family_b1.png',
+                    img: '/images/family_s1.png',
+                    img_big: '/images/family_s1.png',
                 },
                 {
                     team: '橘色公關團隊2',
                     member: '某某某',
-                    text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
-                    img: '/images/slideshow_1.jpg',
-                    img_big: '/images/slideshow_1.jpg',
+                    text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
+                    img: '/images/family_s2.png',
+                    img_big: '/images/family_s2.png',
                 },
                 {
                     team: '橘色公關團隊3',
                     member: '某某某',
                     text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
-                    img: '/images/bg_food_1.png',
-                    img_big: '/images/bg_food_1.png',
+                    img: '/images/family_s3.png',
+                    img_big: '/images/family_s3.png',
                 },
                 {
                     team: '橘色公關團隊4',
                     member: '某某某',
                     text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
-                    img: '/images/slideshow.png',
-                    img_big: '/images/slideshow.png',
-                },
-                {
-                    team: '橘色公關團隊5',
-                    member: '某某某',
-                    text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
-                    img: '/images/family_s1.png',
-                    img_big: '/images/family_s1.png',
+                    img: '/images/family_s4.png',
+                    img_big: '/images/family_s4.png',
                 },
             ],
             teamIndex: 0,
@@ -176,6 +203,12 @@ export default {
             jQuery(window).scroll(function(){
                 fadein();
             });
+
+            jQuery(".team-item").click(function(){
+                jQuery(".team-item.active").removeClass("active");
+                jQuery(this).addClass("active");
+            });
+
             function fadein(){
                 let nowp = jQuery(window).scrollTop();
                 if(nowp >= 200){
@@ -234,8 +267,9 @@ export default {
             height: 90vh
             clip-path: ellipse(80vw 55vh at 50vw 30vh)
             z-index: 2
+            background-size: cover
             &:before
-                background: rgba(74, 31, 12, 0.4)
+                background: rgba(74, 31, 12, 0.5)
                 width: 100%
                 height: 100%
                 top: 0
@@ -252,6 +286,7 @@ export default {
             .slide-text
                 font-size: 18px
                 bottom: 18vh
+                cursor: pointer
                 &:before , &:after
                     content: ""
                     position: absolute
@@ -371,7 +406,8 @@ export default {
     
     #teams-say
         .teams-content
-            padding: 200px 300px
+            min-height: 700px
+            padding: 0 20vw
             background-repeat: no-repeat
             background-size: cover
             background-position: center
@@ -386,6 +422,7 @@ export default {
                 height: 100%
                 left: 0
                 top: 0
+                z-index: 1
             &:after
                 content: ""
                 position: absolute
@@ -399,11 +436,13 @@ export default {
             h3
                 margin-bottom: 50px
                 font-size: 40px
+                z-index: 2
             .team-desc
                 line-height: 40px
                 font-size: 18px
                 margin-bottom: 30px
                 padding-left: 100px
+                z-index: 2
                 &:before
                     content: '“'
                     font-size: 150px
@@ -415,11 +454,14 @@ export default {
                     transform-origin: 0 0
             .team-name
                 font-size: 20px
+                z-index: 2
         .teams
             .team-item
                 height: 25vw
                 cursor: pointer
                 box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.15)
+                background-size: cover
+                background-position: center
                 @for $i from 0 through 3
                     &:nth-child(#{$i+1})
                         z-index: 3 - $i
@@ -433,7 +475,7 @@ export default {
                     width: 100%
                     height: 100%
                     background: white
-                &:hover
+                &:hover , &.active
                     .team-title
                         color: white
                     &:before
@@ -444,5 +486,94 @@ export default {
         100%
             opacity: 0        
                         
+    @media only screen and (max-width: 991px)
+        .slideshow 
+            &:after
+                display: none
+            .slider 
+                clip-path: none
+                height: 220px
+                padding-bottom: 10px
+                .slide-title
+                    font-size: 32px
+                    letter-spacing: 5px
+                    font-weight: 500
+                    margin-bottom: 5px
+                .slide-subtitle
+                    font-size: 16px
+                    text-align: center !important
+        #family-intro 
+            .family-step-list 
+                .family-step 
+                    margin: 50px 0 0 0
+                    .left 
+                        .big_title
+                            font-size: 23px
+                            top: 0
+                            white-space: nowrap
+                            padding: 0
+                            font-weight: 400
+                            opacity: 1
+                            position: relative !important
+                            text-align: center
+                            margin-bottom: 25px
+                        img
+                            padding: 0 20px
+                    .right
+                        padding: 20px !important
+                    .step-title , .subtitle , .desc
+                        font-size: 16px
+                        width: 100%
+                    .step-title
+                        padding: 0
+                        margin: 0
+                        border: none
+                    .subtitle
+                        margin-bottom: 15px
+                    .desc
+                        font-size: 14px
+        
+        #teams-say 
+            margin-top: 50px
+            h3
+                font-size: 21px
+                color: #f26e22
+                text-align: center
+                margin-bottom: 22px
+            .teams-content
+                padding: 0
+                min-height: unset
+                .team-content-texts
+                    width: 100%
+                    height: 300px
+                    padding: 40px 20px
+                    background-size: cover
+                    background-position: center
+                .team-desc
+                    padding: 0  
+                    width: 60%
+                    line-height: 20px
+                    font-size: 14px
+                    letter-spacing: 1px
+                    &:before
+                        display: none
+                &:after
+                    display: none
+            .slick-dotted
+                &.slick-slider
+                    margin-bottom: 0
+            .slick-dots
+                bottom: 8px
+                li
+                    button
+                        &:before
+                            opacity: 1
+                            color: white
+                    &.slick-active 
+                        button
+                            &:before
+                                opacity: 1
+                                color: #eb5e00
+
 
 </style>

@@ -16,7 +16,7 @@
         </div> 
 
         <div id="content-experience" class="position-relative" >
-            <h1 class="big_title">{{experience[experience_index].title}}</h1>
+            <h1 class="big_title d-none d-lg-block">{{experience[experience_index].title}}</h1>
             <div class="experience-inner position-relative">
                 <transition name="fade" mode="out-in">
                     <component class="experience-item" v-bind:is="experience_view"></component>
@@ -112,28 +112,28 @@ export default {
         components: {
             'ex': {
                 template: '<div>'+
-                          '<h2 class="mb-4 text-center"><span class="fs-inherit text-orange">橘色</span> 體驗</h2>'+
+                          '<h2 class="mb-2 mb-md-4 text-center"><span class="fs-inherit text-orange">橘色</span> 體驗</h2>'+
                           '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色體驗</router-link>'+
                           '</div>'
             },
             'pot': {
                 template: '<div>'+
-                          '<h2 class="mb-4 text-center"><span class="fs-inherit text-orange">橘色</span> 鍋物</h2>'+
+                          '<h2 class="mb-2 mb-md-4  text-center"><span class="fs-inherit text-orange">橘色</span> 鍋物</h2>'+
                           '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色鍋物</router-link>'+
                           '</div>'
             },
             'coffee': {
                 template: '<div>'+
-                          '<h2 class="mb-4 text-center"><span class="fs-inherit text-orange">橘色</span> 咖啡</h2>'+
+                          '<h2 class="mb-2 mb-md-4 text-center"><span class="fs-inherit text-orange">橘色</span> 咖啡</h2>'+
                           '<h5 class="mb-4"><span class="fs-inheri">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色咖啡</router-link>'+
                           '</div>'
             },
             'spa': {
                 template: '<div>'+
-                          '<h2 class="mb-4"><span class="fs-inherit text-orange">橘色</span> 舒體</h2>'+
+                          '<h2 class="mb-2 mb-md-4 "><span class="fs-inherit text-orange">橘色</span> 舒體</h2>'+
                           '<h5 class="mb-4"><span class="fs-inherit">獨一無二的橘色價值<br>創造獨一無二的體驗</span></h5>'+
                           '<router-link :to="\'\/\'\" class="left-line text-size-2">探索橘色舒體</router-link>'+
                           '</div>'
@@ -143,7 +143,7 @@ export default {
         	setTimeout(()=>{
 		        setInterval(()=>{
 			        this.is_run = true;
-			        this.onPlusStep()
+			        //this.onPlusStep()
                 },300)
             },1300)
         },
@@ -229,30 +229,25 @@ export default {
                 //transition: stroke 1s
     #block-experience
         background-size: cover  
+        &:before
+            position: absolute
+            width: 100%
+            height: 100vh
+            background: black
+            content: ""
+            left: 0
+            opacity: 0.5
+            top: calc(50% - 50vh)
+            z-index: 4
+            content: ""
+            word-break: keep-all  
         &.active
             .bg-transition 
                 &.bg-left , &.bg-right , &.active
                     .bg-inner
                         background-position-y: 0
+                        transition: all .8s
 
-        .bg-transition
-            &.bg-left , &.bg-right
-                &:before
-                    position: absolute
-                    width: 50%
-                    height: 100vh
-                    background: black
-                    content: ""
-                    left: 0
-                    opacity: 0.8
-                    top: calc(50% - 50vh)
-                    z-index: 4
-                    content: ""
-                    word-break: keep-all  
-            &.bg-right
-                &:before
-                    width: 100%
-                    opacity: 0.4
         .bg-transition
             &.bg-left , &.bg-right
                 .bg-inner
@@ -261,8 +256,15 @@ export default {
                     &.active
                         background-position-y: 0
                         opacity: 1
-                        //transition: initial
             &.bg-right
+                z-index: 2
+                right: 0
+                .bg-inner
+                    right: 0
+                    background-position-y: 100vh
+                &:before
+                    width: 100%
+                    opacity: 0.4
                 .bg-inner
                     &.active
                         background-position-y: 100vh
@@ -276,12 +278,6 @@ export default {
                     &.active
                         background-position-y: -100vh
                         opacity: 0
-            &.bg-right
-                z-index: 2
-                right: 0
-                .bg-inner
-                    right: 0
-                    background-position-y: 100vh
         .fp-scroller
             display: flex     
             flex-direction: column
@@ -332,7 +328,6 @@ export default {
                     height: 500px
                 .circle-body
                     width: 500px
-                    height: 500px
                     opacity: 0.75
                     &.active
                         .circle-line
@@ -365,7 +360,7 @@ export default {
                             transform: rotate(180deg)
                 .circle-option
                     transition: all 2s
-                    transform: rotate(0)
+                    transform: rotate(0) scale(1.2)
                     top: 0
                     &.active
                         opacity: 0
@@ -391,6 +386,7 @@ export default {
                         &.left
                             top: calc(50% - 18px)
                             left: calc(-40px - 18px)
+
                         a
                             word-break: keep-all
                         &.active
@@ -399,8 +395,47 @@ export default {
                             transition-delay: .5s
                     @for $i from 0 through 3
                         &.e_index_#{$i}
-                            transform: rotate($i*(-90deg))
+                            transform: rotate($i*(-90deg)) scale(1.05)
                             a
                                 transition: all .3s 
                                 transform: rotate($i*90deg) !important
+
+    @media only screen and (max-width: 767px)
+        #block-experience 
+            #content-experience 
+                transform: scale(0.55)
+                .experience-inner
+                    h5
+                        span
+                            font-size: 28px
+                            line-height: 45px
+                    a
+                        font-size: 23px !important
+                        letter-spacing: 3px
+                .experience-circle 
+                    .circle-option 
+                        .text-circle-option
+                            a
+                                font-size: 22px
+                            &.top
+                                top: calc(-10px - 18px - 20px)
+                                left: calc(50% - 18px)
+                            &.bottom
+                                bottom: calc(-10px - 18px - 20px)
+                                left: calc(50% - 18px)
+                            &.right
+                                top: calc(50% - 18px)
+                                right: calc(-10px - 18px - 20px)
+                            &.left
+                                top: calc(50% - 18px)
+                                left: calc(-10px - 18px - 20px)
+                        @for $i from 0 through 3
+                            &.e_index_#{$i}
+                                a
+                                    transform: rotate($i*90deg) scale(1.7) !important
+    
+    @media only screen and (max-width: 420px)
+        #block-experience 
+            #content-experience 
+                transform: scale(0.45)
 </style>

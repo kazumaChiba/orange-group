@@ -3,7 +3,7 @@
         <div class="map-list container">
             <div class="row d-flex justify-content-between ">
                 <div 
-                    class="map-item"
+                    class="map-item d-none d-md-block"
                     :class="mapIndex == $index ? 'active' : ''"
                     v-for="(item,$index) in mapItems[brand]"
                     :key="$index"
@@ -17,6 +17,19 @@
                     <p class="map-infos text-gray text-size-1" v-html="item.infos"></p>
                 </div>
             </div>
+            <el-tabs 
+                class="d-block d-md-none"
+                @tab-click="tabMap"
+            >
+                <el-tab-pane 
+                    v-for="(item,$index) in mapItems[brand]"
+                    :key="$index"
+                    :label="item.title" 
+                >
+                    <p class="map-address font-weight-bold text-size-1">{{item.address}}</p>
+                    <p class="map-infos text-gray text-size-1" v-html="item.infos"></p>
+                </el-tab-pane>
+            </el-tabs>
         </div>
         <div class="map-iframe">
             <iframe class="w-100" height="560" :src="'https://www.google.com/maps/embed/v1/search?&key=AIzaSyD-Yjh575xmaPu3O-gBx_kk4AZ1Nyx_GjI&q='+mapItems[brand][mapIndex].address"></iframe>
@@ -30,17 +43,17 @@
                 mapItems: {
                     ['shabu']: [
                         {
-                            title: '橘色涮涮屋一館',
+                            title: '橘色一館',
                             address: '106台北市大安區大安路一段135號',
                             infos: '+886 2 8780 59559<br>service@group.com'
                         },
                         {
-                            title: '橘色涮涮屋二館',
+                            title: '橘色二館',
                             address: '106台北市大安區仁愛路四段29-2號',
                             infos: '+886 2 8780 59559<br>service@group.com'
                         },
                         {
-                            title: '橘色涮涮屋新光A9旗艦',
+                            title: '新光A9旗艦',
                             address: '110台北市信義區松壽路9號5樓',
                             infos: '+886 2 8780 59559<br>service@group.com'
                         }
@@ -50,7 +63,9 @@
             }
         },
         methods: {
-
+            tabMap(e){
+                this.mapIndex = e.index;
+            }
         },
         props: {
             brand: {
@@ -67,7 +82,7 @@
             margin-bottom: 80px
             padding: 0 80px
             .map-item
-                max-width: calc(100%/3)
+                width: calc(100%/3)
                 padding: 20px
                 .map-title
                     font-size: 20px
@@ -88,4 +103,51 @@
             iframe
                 display: block
                 border: none
+
+    @media only screen and (max-width: 991px)
+        .map-list
+            padding: 0 38px !important
+            margin-bottom: 20px !important
+            .el-tabs__nav-wrap
+                &:after
+                    display: none
+                .el-tabs__item
+                    &.is-active
+                        color: #f26c23
+                .el-tabs__active-bar
+                    background-color: #f26c23
+                    height: 1px
+                    bottom: 5px
+                    &:before , &:after
+                        content: ""
+                        position: absolute
+                        top: 0
+                        background: #ef803a
+                        left: 50%
+                    &:before
+                        width: 1px
+                        height: 20px
+                    &:after
+                        border-radius: 100%
+                        top: 20px
+                        left: 50%
+                        transform: translate(-50% , -50%)   
+                        
+            .el-tabs__content
+                text-align: center
+                p
+                    margin: 0
+                    font-size: 12px !important
+                    font-weight: 400 !important
+                    line-height: 20px
+                    color: #ef803a !important
+            .el-tabs__header
+                margin: 0 0 35px
+
+        .map-iframe
+            margin-bottom: 50px
+            iframe
+                height: 180px
+                padding: 0 38px
+
 </style>

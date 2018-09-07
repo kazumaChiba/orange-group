@@ -17,6 +17,7 @@ window.Vue = require('vue');
 
 import App from './App'
 import router from './router'
+import store from './store'
 
 // Fullpage : https://github.com/alvarotrigo/fullPage.js/
 import Vue from 'vue'
@@ -74,5 +75,6 @@ Vue.use(ElementUI);
 const app = new Vue({
     el: '#app',
     router,
+    store,
     render: h => h(App)
 });

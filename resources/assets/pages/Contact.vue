@@ -1,12 +1,12 @@
 <template>
     <div id="block-contact">
-        <banner title="聯絡<span class='text-orange'>我們</span>" img="/images/slideshow_1.jpg"></banner>
+        <banner title="聯絡<span class='text-orange'>我們</span>" img="/images/banner_contact.png"></banner>
         <div id="block-contact-brands" class="position-relative">
             <div class="container">
-                <div class="row">
+                <div class="contact-brands-list d-flex flex-wrap">
                     <div class="contact-brands-item -intro-text d-flex justify-content-center align-items-center">
-                        <div>
-                            <span class="text-orange text-size-2 text-line-left d-block position-relative">竭誠歡迎與我們聯繫</span>
+                        <div class="overflow-hidden">
+                            <span class="text-orange text-line-left d-block position-relative">竭誠歡迎與我們聯繫</span>
                             <p class="brand-intro-title">橘色餐飲集團</p>
                             <p class="brand-intro-subtitle">請選擇您想聯繫的集團單位<br>我們會儘速與您聯絡，謝謝。</p>
                         </div>
@@ -19,8 +19,12 @@
                         @click="brandName = item.name"
                     >
                         <img class="position-relative mb-2" :src="item.img">
-                        <p class="text-orange brand-title position-relative text-center">{{item.title}}</p>
+                        <p class="text-orange brand-title position-relative text-center d-none d-md-block">{{item.title}}</p>
                         <div v-html="item.intro"></div>
+                    </div>
+                    <div class="contact-brands-item d-flex flex-column align-items-center justify-content-center">
+                        <p class="text-orange brand-title position-relative text-center">人力招募</p>
+                        <p class="text-size-2 font-weight-bold mb-0">即刻加入橘色大家庭</p>
                     </div>
                 </div>
             </div>
@@ -56,29 +60,23 @@ export default {
                     name: 'extension_1',
                 },
                 {
-                    img: '/images/index_logo.png',
+                    img: '/images/icon_m1cafe.png',
                     title: 'M ONE CAFE',
                     intro: '',
                     name: 'm_one_cafe',
                 },
                 {
-                    img: '/images/index_logo.png',
+                    img: '/images/icon_m1spa.png',
                     title: 'M ONE SPA',
                     intro: '',
                     name: 'm_one_spa',
                 },
                 {
-                    img: '/images/index_logo.png',
+                    img: '/images/icon_sakura.png',
                     title: 'SAKURA SPA',
                     intro: '',
                     name: 'sakura_spa',
                 },
-                {
-                    img: '/images/index_logo.png',
-                    title: '人力招募',
-                    intro: '<p class="text-size-2 font-weight-bold">即刻加入橘色大家庭</p>',
-                    name: 'join',
-                }
             ],
             brandName: '',
         }
@@ -93,22 +91,20 @@ export default {
 </script>
 
 <style lang="sass">
-    #header
-        top: 0
     #block-contact
         #block-contact-brands
             transform: translateY(-150px)
             margin-bottom: -50px
-            .row
-                height: 500px
+            .contact-brands-list
                 position: relative
                 background: white
                 .contact-brands-item
-                    width: 25%
+                    flex: 25%
                     box-shadow: -10px -10px 60px rgba(0, 0, 0, 0.1)
                     overflow: hidden
                     padding: 40px
                     position: relative
+                    height: 250px
                     &:before , &:after
                         content: ""
                         width: 100%
@@ -124,7 +120,7 @@ export default {
                     &:after
                         background: #f26d23
                     &.-intro-text
-                        width: 50%
+                        flex: 50%
                     img
                         width: 80px
                     >*
@@ -149,6 +145,7 @@ export default {
                 .text-line-left
                     margin-bottom: 20px
                     font-weight: 500
+                    font-size: 15px
                     &:before
                         content: ""
                         position: absolute
@@ -162,5 +159,42 @@ export default {
                     font-weight: 500
                     margin-bottom: 0         
 
-    
+        @media only screen and (max-width: 991px)
+            #block-contact-brands 
+                transform: translateY(0)
+                margin: 50px 0  
+                .contact-brands-list 
+                    .contact-brands-item
+                        flex: 50%
+                        box-shadow: none
+                        border: 1px solid #ccc
+                        padding: 20px 0
+                        height: auto
+                        &.-intro-text
+                            flex: 100%
+                            border: none
+                            padding: 0px
+                            margin-bottom: 15px
+                        &:nth-child(2n-1)
+                            border-left: none
+                        &:not(:last-child):not(:nth-last-child(2))
+                            border-bottom: none
+                        img
+                            width: 50px
+                    .text-line-left
+                        text-align: center
+                        margin-bottom: 10px
+                        font-size: 12px
+                        &:before
+                            display: none
+                    .brand-intro-title
+                        font-size: 23px
+                        text-align: center
+                    .brand-intro-subtitle
+                        font-size: 14px
+                    .brand-title
+                        font-size: 16px
+                    .text-size-2
+                        font-size: 12px !important
+            
 </style>

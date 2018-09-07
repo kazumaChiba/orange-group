@@ -4,8 +4,6 @@ $color-white: #ffffff
 body,html
     font-family: "source-han-serif-tc",標楷體,"PingFang TC",Arial,新細明體,serif , sans-serif
     letter-spacing: 2px
-    background-color: white
-
 h1,h2,h3,h4,h5
     font-weight: 400
 h1
@@ -28,6 +26,9 @@ h5
     font-size: 15px !important    
 .text-size-3
     font-size: 16px !important  
+
+.overflow-hidden
+    overflow: hidden    
 
 /* color */
 .text-orange , .link-orange
@@ -163,11 +164,25 @@ html,body,#app,#block-main
             //box-shadow: 0 5px 10px 0 rgba(73,59,65,.15)
             background: white
             margin-top: 0
+            #main-menu 
+                .menu-outer 
+                    #mobile-menu 
+                        .buger-icon
+                            top: 13px
             .logo
                 position: relative
-                img
-                    height: 50px
-                    width: auto
+                height: 50px
+                width: auto
+                left: 23px
+                padding: 0
+                position: absolute
+                top: 13px
+                position: absolute
+                &#footer-logo
+                    display: none
+                &#footer-logo-black
+                    display: block
+                    
             .menu-title 
                 color: gray
                 &.router-link-active
@@ -179,15 +194,13 @@ html,body,#app,#block-main
                     text-decoration: none
                     transition: color .3s
 
-        &.active
-            z-index: 0
-            transition-delay: 1s
+        // &.active
+        //     z-index: 0
+        //     transition-delay: 1s
         .logo
             position: absolute
             left: 0
             top: 0
-            img
-                width: 140px
     #footer
         .container
             padding: 20px 0
@@ -267,8 +280,8 @@ html,body,#app,#block-main
         transition: all .5s
         .center
             .news-head
-                padding-top: 104% !important
-                max-height: 300px
+                // padding-top: 104% !important
+                // max-height: 300px
             .news-title
                 font-size: 26px
         .news-item
@@ -371,3 +384,44 @@ html,body,#app,#block-main
 .hidden
     transition: all .5s
     opacity: 0 !important
+
+/* Responsive */
+
+@media only screen and (max-width: 1200px)
+    #fp-nav
+        display: none !important
+
+@media only screen and (max-width: 991px)
+    .container
+        padding-right: 38px
+        padding-left: 38px
+    #app
+        .main-title
+            font-size: 28px
+            span
+                color: white !important
+                letter-spacing: 5px
+        .sub-title
+            font-size: 12px
+
+    #block-news 
+        .news-list 
+            .news-item 
+                margin-bottom: 20px
+                .news-title
+                    font-size: 16px
+                p
+                    font-size: 14px
+                    color: gray 
+            .block-list
+                &.beside
+                    .news-title
+                        font-size: 14px
+        .btn-orange
+            margin-top: 20px
+            padding: 15px 45px !important
+
+
+
+
+

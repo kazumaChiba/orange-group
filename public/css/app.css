@@ -3796,7 +3796,6 @@ body,
 html {
   font-family: "source-han-serif-tc",標楷體,"PingFang TC",Arial,新細明體,serif , sans-serif;
   letter-spacing: 2px;
-  background-color: white;
 }
 
 h1,
@@ -3840,6 +3839,10 @@ h5 {
 
 .text-size-3 {
   font-size: 16px !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 /* color */
@@ -4061,13 +4064,27 @@ body,
   margin-top: 0;
 }
 
-#app #header.position-fixed .logo {
-  position: relative;
+#app #header.position-fixed #main-menu .menu-outer #mobile-menu .buger-icon {
+  top: 13px;
 }
 
-#app #header.position-fixed .logo img {
+#app #header.position-fixed .logo {
+  position: relative;
   height: 50px;
   width: auto;
+  left: 23px;
+  padding: 0;
+  position: absolute;
+  top: 13px;
+  position: absolute;
+}
+
+#app #header.position-fixed .logo#footer-logo {
+  display: none;
+}
+
+#app #header.position-fixed .logo#footer-logo-black {
+  display: block;
 }
 
 #app #header.position-fixed .menu-title {
@@ -4089,20 +4106,10 @@ body,
   transition: color .3s;
 }
 
-#app #header.active {
-  z-index: 0;
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
-}
-
 #app #header .logo {
   position: absolute;
   left: 0;
   top: 0;
-}
-
-#app #header .logo img {
-  width: 140px;
 }
 
 #app #footer .container {
@@ -4207,11 +4214,6 @@ body,
 #block-news .news-list {
   -webkit-transition: all .5s;
   transition: all .5s;
-}
-
-#block-news .news-list .center .news-head {
-  padding-top: 104% !important;
-  max-height: 300px;
 }
 
 #block-news .news-list .center .news-title {
@@ -4361,5 +4363,55 @@ body,
   -webkit-transition: all .5s;
   transition: all .5s;
   opacity: 0 !important;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1200px) {
+  #fp-nav {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .container {
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+
+  #app .main-title {
+    font-size: 28px;
+  }
+
+  #app .main-title span {
+    color: white !important;
+    letter-spacing: 5px;
+  }
+
+  #app .sub-title {
+    font-size: 12px;
+  }
+
+  #block-news .news-list .news-item {
+    margin-bottom: 20px;
+  }
+
+  #block-news .news-list .news-item .news-title {
+    font-size: 16px;
+  }
+
+  #block-news .news-list .news-item p {
+    font-size: 14px;
+    color: gray;
+  }
+
+  #block-news .news-list .block-list.beside .news-title {
+    font-size: 14px;
+  }
+
+  #block-news .btn-orange {
+    margin-top: 20px;
+    padding: 15px 45px !important;
+  }
 }
 
