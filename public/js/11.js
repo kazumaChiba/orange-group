@@ -994,6 +994,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             newsItems: [{
+                id: 1,
                 background: '/images/news_v1.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
@@ -1001,6 +1002,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/#/news/detail'
             }, {
+                id: 2,
                 background: '/images/news_v3.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
@@ -1008,6 +1010,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/#/news/detail'
             }, {
+                id: 3,
                 background: '/images/news_v5.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
@@ -1015,6 +1018,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/#/news/detail'
             }, {
+                id: 4,
                 background: '/images/news_v2.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
@@ -1022,6 +1026,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/#/news/detail'
             }, {
+                id: 5,
                 background: '/images/news_v4.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
@@ -1029,6 +1034,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/#/news/detail'
             }, {
+                id: 6,
                 background: '/images/news_v1.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
@@ -1036,6 +1042,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/#/news/detail'
             }, {
+                id: 7,
                 background: '/images/news_v3.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
@@ -1043,6 +1050,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/#/news/detail'
             }, {
+                id: 8,
                 background: '/images/news_v5.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
@@ -1050,6 +1058,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/#/news/detail'
             }, {
+                id: 9,
                 background: '/images/news_v2.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
@@ -1057,6 +1066,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/#/news/detail'
             }, {
+                id: 10,
                 background: '/images/news_v4.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
@@ -1064,6 +1074,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/#/news/detail'
             }, {
+                id: 11,
                 background: '/images/news_v1.png',
                 date: '2018/3/21',
                 category: 'Extension 1 by 橘色',
@@ -1071,6 +1082,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/#/news/detail'
             }, {
+                id: 12,
                 background: '/images/news_v2.png',
                 date: '2018/3/21',
                 category: 'Extension 1 by 橘色',
@@ -1078,6 +1090,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/#/news/detail'
             }, {
+                id: 13,
                 background: '/images/news_v3.png',
                 date: '2018/3/21',
                 category: 'Extension 1 by 橘色',
@@ -1085,6 +1098,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/#/news/detail'
             }, {
+                id: 14,
                 background: '/images/news_v4.png',
                 date: '2018/3/21',
                 category: 'Extension 1 by 橘色',
@@ -1092,6 +1106,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/#/news/detail'
             }, {
+                id: 15,
                 background: '/images/news_v5.png',
                 date: '2018/3/21',
                 category: 'Extension 1 by 橘色',
@@ -1356,7 +1371,7 @@ var render = function() {
                                       "router-link",
                                       {
                                         staticClass: "btn-border",
-                                        attrs: { to: "/news/detail" }
+                                        attrs: { to: "/news/detail/" + item.id }
                                       },
                                       [_vm._v("了解更多")]
                                     )
