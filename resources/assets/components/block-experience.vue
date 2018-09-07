@@ -224,7 +224,7 @@ export default {
                 //transition: stroke-dasharray 6s cubic-bezier(0.47, 0, 0.745, 0.715), stroke 6s cubic-bezier(0.215, 0.61, 0.355, 1)
             &.rotate
                 stroke: #f26d23
-                transition: stroke-dasharray 0.3s, stroke 0.3s, stroke-opacity 1.2s
+                transition: stroke-dasharray 0.3s, stroke-opacity 1.2s
                 //stroke-dasharray: 295,471
                 //transition: stroke 1s
     #block-experience

@@ -82,7 +82,9 @@
                     easing: 'easeInOutCubic',
 	                easingcss3: 'ease',
 	                lazyLoading: true,
-	                resetSliders: true
+	                resetSliders: true,
+	                fitToSection: true,
+	                fitToSectionDelay: 2000
                 }, 
                 sectionIndex: 0,
                 sectionPosition: 'section-1',
