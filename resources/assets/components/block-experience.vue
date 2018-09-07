@@ -403,11 +403,12 @@ export default {
 
     @media only screen and (max-width: 767px)
         #block-experience 
+            .bg-inner
+                &.bg-black-cover
+                    &:before
+                        opacity: 0
             #content-experience 
                 transform: scale(0.55)
-                .bg-inner
-                    &.bg-black-cover
-                            display: none
                 .experience-inner
                     h5
                         span
