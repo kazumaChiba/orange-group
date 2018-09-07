@@ -38,7 +38,7 @@
             </div>
         </div>
         <div id="teams-say" class="d-none d-lg-block">
-            <div
+            <!-- <div
                 class="d-flex teams-content text-white position-relative align-items-center" 
                 :style="'background-image:url('+slick_teams[teamIndex].img_big+')'"
             >
@@ -47,7 +47,23 @@
                     <p class="team-desc position-relative" v-html="slick_teams[teamIndex].text"></p>
                     <span class="team-name d-block text-right  position-relative">- {{slick_teams[teamIndex].team}} {{slick_teams[teamIndex].member}}</span>
                 </div>
-            </div>
+            </div> -->
+            <slick
+                class="teams-view"
+                ref="slick"
+                :options="teamsOptionView"
+            >
+                <div 
+                    class="team-content-texts position-relative d-flex flex-column justify-content-center text-white"
+                    v-for="(item,$index) in slick_teams"
+                    :key="$index"    
+                    :style="'background-image:url('+item.img_big+')'"
+                >
+                    <h3 class=" position-relative">看看我們的夥伴們怎麼說</h3>
+                    <p class="team-desc position-relative" v-html="item.text"></p>
+                    <span class="team-name d-block text-right  position-relative">- {{item.team}} {{item.member}}</span>
+                </div>
+            </slick>
             <slick
                 class="teams"
                 ref="slick"
@@ -124,6 +140,8 @@ export default {
             teamsOption: {
                 slidesToShow: 4,
                 slidesToScroll: 4,
+                asNavFor: '.teams-view',
+                focusOnSelect: true,
                 responsive: [
                     {
                         breakpoint: 991,
@@ -134,6 +152,12 @@ export default {
                         }
                     }
                 ],
+            },
+            teamsOptionView: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                asNavFor: '.teams',
             },
             slick_teams: [
                 {
@@ -204,10 +228,10 @@ export default {
                 fadein();
             });
 
-            jQuery(".team-item").click(function(){
-                jQuery(".team-item.active").removeClass("active");
-                jQuery(this).addClass("active");
-            });
+            // jQuery(".team-item").click(function(){
+            //     jQuery(".team-item.active").removeClass("active");
+            //     jQuery(this).addClass("active");
+            // });
 
             function fadein(){
                 let nowp = jQuery(window).scrollTop();
@@ -406,15 +430,8 @@ export default {
                     color: gray
     
     #teams-say
-        .teams-content
-            min-height: 700px
-            padding: 0 20vw
-            background-repeat: no-repeat
-            background-size: cover
+        .team-content-texts
             background-position: center
-            transition: all .5s
-            .team-content-texts
-                width: 60%
             &:before
                 content: ""
                 position: absolute
@@ -424,6 +441,15 @@ export default {
                 left: 0
                 top: 0
                 z-index: 1
+        .teams-view
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+            transition: all .5s
+            .team-content-texts
+                width: 60%
+                height: 700px
+                padding: 20vw
             &:after
                 content: ""
                 position: absolute
@@ -457,6 +483,13 @@ export default {
                 font-size: 20px
                 z-index: 2
         .teams
+            .slick-current
+                .team-item
+                    .team-title
+                        color: white
+                    &:before
+                        background: rgba(242, 108, 36, 0.85)
+                        transition: all .5s
             .team-item
                 height: 25vw
                 cursor: pointer
@@ -476,7 +509,7 @@ export default {
                     width: 100%
                     height: 100%
                     background: white
-                &:hover , &.active
+                &:hover
                     .team-title
                         color: white
                     &:before
@@ -556,6 +589,7 @@ export default {
                     line-height: 20px
                     font-size: 14px
                     letter-spacing: 1px
+                    z-index: 2
                     &:before
                         display: none
                 &:after

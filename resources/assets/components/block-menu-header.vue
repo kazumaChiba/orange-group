@@ -53,7 +53,7 @@
 <style lang="sass">   
     #header
         #circle-bg
-            //
+            z-index: -1
         .logo
             padding-left: 35px
             width: 160px
