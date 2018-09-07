@@ -83,7 +83,7 @@
                              v-if="newsCategories[newsIndex] == item.category || newsIndex == 0"
                         >
                             <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + item.background + ')'">
-                                <router-link :to="'/news/detail'" class="btn-border">了解更多</router-link>
+                                <router-link :to="'/news/detail/1'" class="btn-border">了解更多</router-link>
                             </div>
                             <div class="news-content">
                                 <div class="news-info">

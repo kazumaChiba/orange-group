@@ -278,7 +278,7 @@ export default {
             p
                 z-index: 2
             .slide-title
-                font-size: 110px
+                font-size: 180px
                 font-weight: 600
             .slide-subtitle
                 font-size: 42px

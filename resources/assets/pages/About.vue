@@ -377,11 +377,11 @@ export default {
 	            if(jQuery("#block-about-year .circle-b").length > 0){
 		            if(jQuery(window).scrollTop() >= jQuery("#block-secret").offset().top - 100){
 			            jQuery("#about-tabs").addClass("position-fixed");
-			            // jQuery("#header").addClass("hidden");
+			            jQuery("#header").addClass("hidden");
 		            }
 		            else{
 			            jQuery("#about-tabs").removeClass("position-fixed");
-			            // jQuery("#header").removeClass("hidden");
+			            jQuery("#header").removeClass("hidden");
 		            }
                 }
 
