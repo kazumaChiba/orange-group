@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>cff</title>
+        <title>橘色涮涮屋</title>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
         <script src="https://use.typekit.net/jzy1fau.js"></script>

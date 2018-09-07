@@ -1356,7 +1356,7 @@ var render = function() {
                                       "router-link",
                                       {
                                         staticClass: "btn-border",
-                                        attrs: { to: "/news/detail/" }
+                                        attrs: { to: "/news/detail" }
                                       },
                                       [_vm._v("了解更多")]
                                     )

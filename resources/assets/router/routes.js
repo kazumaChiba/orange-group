@@ -15,21 +15,15 @@ const routes = [
             },
 	        {
 		        path: 'news',
-		        //name: '橘色新訊',
+		        name: '橘色新訊',
                 component: resolve => require(['pages/News.vue'], resolve),
-                children: [
-                    {
-                        path: '',
-                        name: '橘色新訊',
-                        component: resolve => require(['pages/News.vue'], resolve),
-                    },
-                    {
-                        path: 'detail/:id',
-                        //name: '新光三越旗艦店開幕全店享九折優惠',
-                        component: resolve => require(['pages/NewsInner.vue'], resolve)
-                    }
-                ]
-	        },
+
+            },
+            {
+                path: 'news/detail/:id',
+                name: '新光三越旗艦店開幕全店享九折優惠',
+                component: resolve => require(['pages/NewsInner.vue'], resolve)
+            },
 	        {
 		        path: 'family',
 		        name: '橘色家庭',
