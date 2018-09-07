@@ -247,6 +247,7 @@ export default {
                     .bg-inner
                         background-position-y: 0
                         transition: all .8s
+                        background-position: 50% center
 
         .bg-transition
             &.bg-left , &.bg-right
