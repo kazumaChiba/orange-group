@@ -21,7 +21,7 @@
                     </h3>
                     <span class="sub-title">orange brands</span>
                 </div>
-                <div id="slide-brands" class="content-brands w-100 d-flex align-items-center justify-content-between mt-5 mb-5">
+                <div id="slide-brands" class="content-brands mt-5 mb-5">
                     <!-- <span class="btn-orange"  @click="brandIndex = 0; startAnimate('500')">橘色涮涮屋</span> -->
                     <!-- <div 
                         class="info-brands align-items-end border-radius-100 d-flex justify-content-center text-left position-relative"
@@ -32,6 +32,7 @@
                         <a :href="brandItems[brandIndex].book">線上訂位</a>
                     </div> -->
                     <!-- <span class="btn-orange" @click="brandIndex = 1; startAnimate('500')">M One Cafe</span> -->
+                    <span>zzz</span>
                     <span>zzz</span>
                     <span>zzz</span>
                 </div>
