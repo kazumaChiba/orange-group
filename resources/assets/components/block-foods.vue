@@ -24,8 +24,14 @@
                  </div>
             </div>
             <div class="content-food right-content d-flex flex-column justify-content-center position-relative text-md-left text-center">
-                <svg class="loader" :class="{active : addTransition}">
-                    <circle class="internal-circle" cx="30%" cy="55%" r="450"></circle>
+                <svg class="loader"  :class="{active : addTransition}" width="375px" height="448px" viewBox="0 0 375 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Content-Menu-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -146.000000)" opacity="0.3" stroke-linecap="round" stroke-linejoin="round">
+                        <g id="Group-2" transform="translate(1.000000, 148.000000)" stroke="#EB5E00" stroke-width="3">
+                            <path d="M312.173763,40.2023514 C327.008876,52.7655673 337.499672,63.6939976 343.646152,72.9876421" id="Path-7"></path>
+                            <path d="M0.849439987,53.3105358 C23.4164086,27.796038 51.2869526,10.1784141 84.461072,0.45766393" id="Path-6"></path>
+                            <path d="M374.134624,309.213237 C336.940959,386.205086 276.84813,431.096347 193.856138,443.88702" id="Path-8"></path>
+                        </g>
+                    </g>
                 </svg>
                 <h3 class="main-title text-black text-uppercase w-100">
                     <span class="fs-inherit text-orange">橘色</span>價值

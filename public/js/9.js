@@ -6119,6 +6119,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -6259,12 +6265,73 @@ var render = function() {
           [
             _c(
               "svg",
-              { staticClass: "loader", class: { active: _vm.addTransition } },
+              {
+                staticClass: "loader",
+                class: { active: _vm.addTransition },
+                attrs: {
+                  width: "375px",
+                  height: "448px",
+                  viewBox: "0 0 375 448",
+                  version: "1.1",
+                  xmlns: "http://www.w3.org/2000/svg",
+                  "xmlns:xlink": "http://www.w3.org/1999/xlink"
+                }
+              },
               [
-                _c("circle", {
-                  staticClass: "internal-circle",
-                  attrs: { cx: "30%", cy: "55%", r: "450" }
-                })
+                _c(
+                  "g",
+                  {
+                    attrs: {
+                      id: "Content-Menu-3",
+                      stroke: "none",
+                      "stroke-width": "1",
+                      fill: "none",
+                      "fill-rule": "evenodd",
+                      transform: "translate(0.000000, -146.000000)",
+                      opacity: "0.3",
+                      "stroke-linecap": "round",
+                      "stroke-linejoin": "round"
+                    }
+                  },
+                  [
+                    _c(
+                      "g",
+                      {
+                        attrs: {
+                          id: "Group-2",
+                          transform: "translate(1.000000, 148.000000)",
+                          stroke: "#EB5E00",
+                          "stroke-width": "3"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M312.173763,40.2023514 C327.008876,52.7655673 337.499672,63.6939976 343.646152,72.9876421",
+                            id: "Path-7"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M0.849439987,53.3105358 C23.4164086,27.796038 51.2869526,10.1784141 84.461072,0.45766393",
+                            id: "Path-6"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M374.134624,309.213237 C336.940959,386.205086 276.84813,431.096347 193.856138,443.88702",
+                            id: "Path-8"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
               ]
             ),
             _vm._v(" "),
