@@ -134,13 +134,13 @@
                     &:before
                         width: 1px
                         height: 18px
-                    &:after
-                        border-radius: 100%
-                        top: 20px
-                        left: 50%
-                        transform: translate(-50% , -50%)   
-                        width: 3px
-                        height: 3px
+                    // &:after
+                    //     border-radius: 100%
+                    //     top: 20px
+                    //     left: 50%
+                    //     transform: translate(-50% , -50%)   
+                    //     width: 3px
+                    //     height: 3px
             .el-tabs__content
                 text-align: center
                 p
