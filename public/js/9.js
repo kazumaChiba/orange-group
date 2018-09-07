@@ -13233,7 +13233,6 @@ var render = function() {
                     }
                   },
                   [
-                    _c("title", [_vm._v("橘色總公司logo_oi")]),
                     _c("path", {
                       staticStyle: { fill: "#ed6c00", "fill-rule": "evenodd" },
                       attrs: {

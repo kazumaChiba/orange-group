@@ -278,7 +278,7 @@ export default {
             p
                 z-index: 2
             .slide-title
-                font-size: 180px
+                font-size: 10vw
                 font-weight: 600
             .slide-subtitle
                 font-size: 42px
@@ -300,6 +300,7 @@ export default {
                 &:after
                     height: 30px 
                     animation: scrolling 1.5s infinite ease-in-out
+                    background: #f3621d
             &:before
                 content: ""
                 position: absolute
