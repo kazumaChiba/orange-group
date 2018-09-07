@@ -1401,14 +1401,15 @@ var render = function() {
                                       )
                                     ]),
                                     _vm._v(" "),
-                                    _c("a", {
+                                    _c("router-link", {
                                       staticClass: "news-title",
-                                      attrs: { href: item.link },
+                                      attrs: { to: "/news/detail/" + item.id },
                                       domProps: {
                                         innerHTML: _vm._s(item.title)
                                       }
                                     })
-                                  ]
+                                  ],
+                                  1
                                 )
                               ]
                             )

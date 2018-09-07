@@ -83,7 +83,7 @@
                                         <span class="text-black text-size-1">{{item.date}}</span>
                                         <span class="text-orange text-size-1">{{item.category}}</span>
                                     </div>
-                                    <a class="news-title" :href="item.link" v-html="item.title"></a>
+                                    <router-link :to="'/news/detail/'+item.id" class="news-title" v-html="item.title"></router-link>
                                 </div>
                             </div>
                         </div>

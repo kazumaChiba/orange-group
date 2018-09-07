@@ -5760,27 +5760,32 @@ var render = function() {
                               1
                             ),
                             _vm._v(" "),
-                            _c("div", { staticClass: "news-content" }, [
-                              _c("div", { staticClass: "news-info" }, [
-                                _c(
-                                  "span",
-                                  { staticClass: "text-black text-size-1" },
-                                  [_vm._v(_vm._s(item.date))]
-                                ),
+                            _c(
+                              "div",
+                              { staticClass: "news-content" },
+                              [
+                                _c("div", { staticClass: "news-info" }, [
+                                  _c(
+                                    "span",
+                                    { staticClass: "text-black text-size-1" },
+                                    [_vm._v(_vm._s(item.date))]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "span",
+                                    { staticClass: "text-orange text-size-1" },
+                                    [_vm._v(_vm._s(item.category))]
+                                  )
+                                ]),
                                 _vm._v(" "),
-                                _c(
-                                  "span",
-                                  { staticClass: "text-orange text-size-1" },
-                                  [_vm._v(_vm._s(item.category))]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("a", {
-                                staticClass: "news-title",
-                                attrs: { href: item.link },
-                                domProps: { innerHTML: _vm._s(item.title) }
-                              })
-                            ])
+                                _c("router-link", {
+                                  staticClass: "news-title",
+                                  attrs: { to: "/news/detail/" + item.id },
+                                  domProps: { innerHTML: _vm._s(item.title) }
+                                })
+                              ],
+                              1
+                            )
                           ]
                         )
                       : _vm._e()
