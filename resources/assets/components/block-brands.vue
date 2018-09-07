@@ -236,7 +236,7 @@ export default {
                     slidesToScroll: 1,
                     slidesToShow: 3,
                     centerMode: true,
-                    asNavFor: '#slide-brands',
+                    // asNavFor: '#slide-brands',
                 },
             }
         },

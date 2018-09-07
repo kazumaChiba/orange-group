@@ -4989,8 +4989,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             slickOptions: {
                 slidesToScroll: 1,
                 slidesToShow: 3,
-                centerMode: true,
-                asNavFor: '#slide-brands'
+                centerMode: true
+                // asNavFor: '#slide-brands',
             }
         };
     },
