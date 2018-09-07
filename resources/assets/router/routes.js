@@ -22,7 +22,7 @@ const routes = [
             {
                 path: 'news/detail/:id',
                 name: '新光三越旗艦店開幕全店享九折優惠',
-                component: resolve => require(['pages/NewsInner.vue'], resolve)
+                component: resolve => require(['pages/NewsInner.vue'], resolve),
             },
 	        {
 		        path: 'family',
