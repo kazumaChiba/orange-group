@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="news-item-head flex-column position-relative w-100">
                         <h2 class="news-item-title">新光三越旗艦店開幕<br>全店享九折優惠</h2>
-                        <div class="news-item-info d-flex">
+                        <div class="news-item-info d-flex flex-column flex-lg-row">
                             <div class="news-info -date d-flex flex-column mr-5">
                                 <span class="info-title">發佈日期：</span>
                                 <span class="info-text">2018/3/21</span>
@@ -54,7 +54,7 @@
                             <h3 class="text-intro-title">測試描述標題文字</h3>
                             <p>測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>
                         </div>
-                        <div class="item-news-foot w-100 d-flex justify-content-between">
+                        <div class="item-news-foot w-100 d-flex justify-content-between flex-column flex-lg-row">
                             <div class="item-tags-list">
                                 <span class="item-tag">橘色涮涮屋</span>
                                 <span class="item-tag">新店</span>
@@ -234,6 +234,28 @@ export default {
                         background-color: #0076b4
         .el-breadcrumb
             justify-content: left
-        
 
+        @media only screen and (max-width: 991px)    
+            .news-item-head 
+                margin-top: 120px
+                .news-item-title
+                    margin-bottom: 20px
+                    font-size: 32px
+                .news-item-info
+                    margin-bottom: 20px
+                    .news-info
+                        margin-bottom: 10px
+                .btn-play
+                    margin-bottom: 40px
+
+            .item-news-body 
+                .item-news-content
+                    padding: 0 25px
+                    p
+                        line-height: 25px
+                    .text-big-orange , .text-intro-title
+                        font-size: 20px
+                        padding: 10px 0
+                .item-tags-list
+                    margin-bottom: 30px
 </style>

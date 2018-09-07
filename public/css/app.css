@@ -4267,6 +4267,7 @@ body,
 #block-news .news-list .news-item .news-head a {
   display: none;
   z-index: 2;
+  text-align: center;
 }
 
 #block-news .news-list .news-item .news-head .text-size-1 {
