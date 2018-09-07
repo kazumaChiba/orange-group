@@ -375,14 +375,16 @@ export default {
 
             function scrollTabs(){
 	            if(jQuery("#block-about-year .circle-b").length > 0){
-		            if(jQuery(window).scrollTop() >= jQuery("#block-secret").offset().top - 100){
-			            jQuery("#about-tabs").addClass("position-fixed");
-			            jQuery("#header").addClass("hidden");
-		            }
-		            else{
-			            jQuery("#about-tabs").removeClass("position-fixed");
-			            jQuery("#header").removeClass("hidden");
-		            }
+                    if(jQuery(window).width() > 768){
+                        if(jQuery(window).scrollTop() >= jQuery("#block-secret").offset().top - 100){
+                            jQuery("#about-tabs").addClass("position-fixed");
+                            jQuery("#header").addClass("hidden");
+                        }
+                        else{
+                            jQuery("#about-tabs").removeClass("position-fixed");
+                            jQuery("#header").removeClass("hidden");
+                        }
+                    }
                 }
 
                 if(jQuery("#block-about-year").length > 0){
