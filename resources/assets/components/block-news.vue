@@ -234,7 +234,6 @@ export default {
                 margin-top: 0 !important
                 display: none !important
             .news-list 
-                padding: 0 38px
                 .block-list
                     width: auto
                     &:last-child

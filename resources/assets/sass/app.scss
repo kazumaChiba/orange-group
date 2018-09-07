@@ -19,5 +19,8 @@
 // Animate.css
 @import '~animate.css/animate.css';
 
-@import "web";
+//Slick slider
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css');
 
+@import "web";

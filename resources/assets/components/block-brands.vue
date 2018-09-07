@@ -1,7 +1,5 @@
 <template>
     <div id="block-brands" class="section text-white position-relative text-center">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
         <div class="bg-transition -old bg-black-cover"
              :class="{'active' : addTransition, select: brandIndex == 0}"
              style="right: auto; left: 0"
@@ -21,23 +19,38 @@
                     </h3>
                     <span class="sub-title">orange brands</span>
                 </div>
-                <div id="slide-brands" class="content-brands w-100 d-flex align-items-center justify-content-between mt-5 mb-5">
-                    <!-- <span class="btn-orange"  @click="brandIndex = 0; startAnimate('500')">橘色涮涮屋</span> -->
-                    <!-- <div 
-                        class="info-brands align-items-end border-radius-100 d-flex justify-content-center text-left position-relative"
-                        :style="'background-image: url(' + brandItems[brandIndex].logo + ')'"
-                    >    
-                        <a :href="brandItems[brandIndex].contact">聯絡我們</a>
-                        <span>・</span>
-                        <a :href="brandItems[brandIndex].book">線上訂位</a>
-                    </div> -->
-                    <!-- <span class="btn-orange" @click="brandIndex = 1; startAnimate('500')">M One Cafe</span> -->
-                    <span>zzz</span>
-                    <span>zzz</span>
-                </div>
+                <slick 
+                    id="slide-brands" 
+                    class="content-brands w-100 d-flex align-items-center justify-content-between mt-5 mb-5"
+                    :options="slickOptions"
+                >
+                    <div
+                        class="slick-brands"
+                        v-for="(item,$index) in brandItems"
+                        :key="$index"
+                    >
+                        <div class="content-brands position-relative d-flex flex-column align-items-center justify-content-center" >
+                            <span class="brand-title">
+                                {{item.title}}
+                            </span>
+                            <div 
+                                class="info-brands align-items-end position-relative d-flex justify-content-center text-left"
+                                :style="'background-image: url(' + item.logo + ')'"
+                            >
+                                <a :href="brandItems[brandIndex].contact">聯絡我們</a>
+                                <span>・</span>
+                                <a :href="brandItems[brandIndex].book">線上訂位</a>
+                            </div>
+                            <!-- <div class="slick-brand-text">
+                                <p class="text-title">{{item.title}}</p>
+                                <p class="text-brand-info" v-html="item.text"></p>
+                            </div> -->
+                        </div>
+                    </div>
+                </slick>
                 <p class="text-brands" v-html="brandItems[brandIndex].text" :class="{'fade' : addTransition}"></p>
             </div>
-            <div class="d-md-none d-block　position-relative">
+            <div id="slide-brands-mobile"  class="d-md-none d-block　position-relative">
                 <div>
                     <h3 class="main-title text-uppercase">
                         <span class="fs-inherit text-orange">
@@ -71,12 +84,34 @@
 </template>
 
 <style lang="sass">
-    
-    // @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css')
-    // @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css')
-
     #app
         #block-brands
+            #slide-brands-mobile
+                margin-top: 30px
+                .content-brands
+                    .info-brands
+                        width: 300px
+                        height: 300px
+                        border: 1px solid white
+                        padding: 60px 40px
+                        font-size: 30px
+                        background-size: 100px
+                        background-repeat: no-repeat
+                        background-position: center 50px
+                        &:before
+                            content: ""
+                            position: absolute
+                            background: rgba(242, 108, 35, 0.4)
+                            width: 100%
+                            height: 100%
+                            background: rgba(242, 108, 35, 0.4)
+                            border-radius: 100%
+                            left: 0
+                            z-index: -1
+                            bottom: 0
+                        a , span
+                            font-size: 16px
+
             .fp-controlArrow
                 &.fp-next , &.fp-prev
                     border: 3px solid white
@@ -105,30 +140,23 @@
                 padding: 0 15px   
                 .row
                     padding: 100px 0 
-                .content-brands
-                    .info-brands
-                        width: 300px
-                        height: 300px
-                        border: 1px solid white
-                        padding: 60px 40px
-                        font-size: 30px
-                        background-size: 100px
-                        background-repeat: no-repeat
-                        background-position: center 50px
-                        &:before
-                            content: ""
-                            position: absolute
-                            background: rgba(242, 108, 35, 0.4)
-                            width: 100%
-                            height: 100%
-                            background: rgba(242, 108, 35, 0.4)
-                            border-radius: 100%
-                            left: 0
-                            z-index: -1
-                            bottom: 0
-                        a , span
-                            font-size: 16px
-                            
+                    .slick-slide
+                        .content-brands
+                            width: 150px
+                            height: 50px
+                            border: 1px solid white
+                            margin: 0 auto
+                            transition: all .5s
+                            .info-brands
+                                display: none !important
+                        &.slick-current
+                            .content-brands
+                                width: 300px
+                                height: 300px
+                                border-radius: 100%
+                                // .info-brands
+                                //     display: flex !important
+
                 .text-brands
                     font-size: 30px
                     letter-spacing: 20px
@@ -148,15 +176,16 @@
                 .fp-tableCell
                     height: 100% !important
                 .container 
-                    .content-brands 
-                        .info-brands
-                            width: 250px
-                            height: 250px
-                            margin-bottom: 50px
-                        .slick-brand-text
-                            width: 250px
-                            .text-brand-info
-                                line-height: 30px
+                    #slide-brands-mobile 
+                        .content-brands 
+                            .info-brands
+                                width: 250px
+                                height: 250px
+                                margin-bottom: 30px
+                            .slick-brand-text
+                                width: 250px
+                                .text-brand-info
+                                    line-height: 30px
 
 
 </style>
@@ -203,6 +232,12 @@ export default {
                         book: '#',
 	                },
                 ],
+                slickOptions: {
+                    slidesToScroll: 1,
+                    slidesToShow: 3,
+                    centerMode: true,
+                    asNavFor: '#slide-brands',
+                },
             }
         },
         methods: {
@@ -215,12 +250,14 @@ export default {
             },
         },
         mounted: function() {
-            jQuery(document).ready(function(){
-                jQuery("#slide-brands").slick({
-                    slidesToScroll: 1,
-                    slidesToShow: 1,
-                });
-            });
+            // jQuery(document).ready(function(){
+            //     jQuery("#slide-brands").slick({
+            //         slidesToScroll: 1,
+            //         slidesToShow: 3,
+            //         centerMode: true,
+            //         asNavFor: '',
+            //     });
+            // });
         },
         components: {
             Slick,

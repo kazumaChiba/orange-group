@@ -548,7 +548,7 @@ export default {
                     height: 300px
                     padding: 40px 20px
                     background-size: cover
-                    background-position: center
+                    background-position: 80px top
                 .team-desc
                     padding: 0  
                     width: 60%

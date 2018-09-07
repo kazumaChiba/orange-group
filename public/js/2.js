@@ -140,7 +140,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n}\n#footer .footer .footer-info {\n      margin-bottom: 100px;\n      line-height: 25px;\n      font-size: 14px;\n      font-weight: 100;\n}\n#footer .footer .footer-info div {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#footer .footer .footer-info p {\n        margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n        font-size: 18px;\n        font-weight: 100;\n        line-height: 30px;\n}\n#footer .footer.footer-join {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer.footer-join:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: rgba(0, 0, 0, 0.8);\n        top: 0px;\n}\n#footer .footer .btn-orange:hover {\n      background: white;\n      color: #f26d23 !important;\n      font-weight: 500;\n}\n@media only screen and (max-width: 991px) {\n#app #footer .footer .col-contact-us {\n    -webkit-box-flex: 100%;\n        -ms-flex: 100%;\n            flex: 100%;\n}\n#app #footer .container .join-us-slogan {\n    line-height: 45px;\n    margin-bottom: 50px;\n}\n#app #footer .container .join-us-slogan span {\n      font-size: 28px;\n}\n#app #footer .logo {\n    height: 100px;\n}\n#app .btn-orange.fat {\n    padding: 20px 45px;\n}\n}\n@media only screen and (max-width: 420px) {\n#app #footer {\n    height: auto;\n}\n#app #footer .container .join-us-slogan {\n      font-size: 16px;\n      line-height: 20px;\n      margin-bottom: 30px;\n      text-align: center !important;\n}\n#app #footer .container .join-us-slogan span {\n        font-size: 16px;\n}\n#app #footer #copyright, #app #footer #copyright a {\n      white-space: normal;\n}\n#app #footer .footer {\n      margin-bottom: 0 !important;\n}\n#app #footer .footer .col p {\n        font-size: 13px !important;\n}\n#app #footer .btn-orange.fat {\n      padding: 12px 30px;\n      font-size: 13px;\n}\n}\n", ""]);
+exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .join-us-slogan {\n    font-size: 28px;\n    font-weight: lighter;\n}\n#footer .container .join-us-slogan span {\n      font-size: 48px;\n      line-height: 40px;\n      font-weight: bold;\n}\n#footer .footer-social {\n    margin-bottom: 60px;\n}\n#footer:before {\n    background: rgba(0, 0, 0, 0.85);\n}\n#footer .fp-tableCell {\n    position: relative;\n    z-index: 2;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#footer .fp-tableCell .footer-info-title {\n      letter-spacing: 6px;\n      font-weight: 500;\n      font-size: 15px;\n}\n#footer .footer-social .footer-icons {\n    font-size: 20px;\n}\n#footer .footer {\n    -webkit-box-flex: 2;\n        -ms-flex: 2;\n            flex: 2;\n}\n#footer .footer .footer-info {\n      margin-bottom: 100px;\n      line-height: 25px;\n      font-size: 14px;\n      font-weight: 100;\n}\n#footer .footer .footer-info div {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#footer .footer .footer-info p {\n        margin-bottom: 30px;\n}\n#footer .footer .footer-info .footer-text-right .footer-info-subtitle {\n        font-size: 18px;\n        font-weight: 100;\n        line-height: 30px;\n}\n#footer .footer.footer-join {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n}\n#footer .footer.footer-join:before {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        background: rgba(0, 0, 0, 0.8);\n        top: 0px;\n}\n#footer .footer .btn-orange:hover {\n      background: white;\n      color: #f26d23 !important;\n      font-weight: 500;\n}\n@media only screen and (max-width: 991px) {\n#app #footer .footer .col-contact-us {\n    -webkit-box-flex: 100%;\n        -ms-flex: 100%;\n            flex: 100%;\n}\n#app #footer .container .join-us-slogan {\n    line-height: 45px;\n    margin-bottom: 50px;\n}\n#app #footer .container .join-us-slogan span {\n      font-size: 28px;\n}\n#app #footer .logo {\n    height: 100px;\n}\n#app .btn-orange.fat {\n    padding: 20px 45px;\n}\n}\n@media only screen and (max-width: 420px) {\n#app #footer {\n    height: auto;\n}\n#app #footer .container .join-us-slogan {\n      font-size: 16px;\n      line-height: 20px;\n      margin-bottom: 30px;\n      text-align: center !important;\n      padding: 0px 28px;\n}\n#app #footer .container .join-us-slogan span {\n        font-size: 16px;\n}\n#app #footer #copyright, #app #footer #copyright a {\n      white-space: normal;\n}\n#app #footer .footer {\n      margin-bottom: 0 !important;\n}\n#app #footer .footer .col p {\n        font-size: 13px !important;\n}\n#app #footer .btn-orange.fat {\n      padding: 12px 30px;\n      font-size: 13px;\n}\n}\n", ""]);
 
 // exports
 
@@ -4743,7 +4743,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#app #block-brands .fp-controlArrow.fp-next, #app #block-brands .fp-controlArrow.fp-prev {\n  border: 3px solid white;\n  width: 20px;\n  height: 20px;\n  border-radius: 5px 0 5px 0px;\n  border-top-color: transparent;\n  border-right-color: transparent;\n  -webkit-transform: rotate(225deg);\n          transform: rotate(225deg);\n  position: absolute;\n  bottom: 90px;\n  top: unset;\n}\n#app #block-brands .fp-controlArrow.fp-prev {\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n}\n#app #block-brands .bg-black-cover {\n  width: 0;\n  height: 100vh;\n  -webkit-transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n  transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n  background-position: center;\n}\n#app #block-brands .bg-black-cover.select {\n    -webkit-transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n    width: 105vw;\n}\n#app #block-brands .container {\n  z-index: 2;\n  padding: 0 15px;\n}\n#app #block-brands .container .row {\n    padding: 100px 0;\n}\n#app #block-brands .container .content-brands .info-brands {\n    width: 300px;\n    height: 300px;\n    border: 1px solid white;\n    padding: 60px 40px;\n    font-size: 30px;\n    background-size: 100px;\n    background-repeat: no-repeat;\n    background-position: center 50px;\n}\n#app #block-brands .container .content-brands .info-brands:before {\n      content: \"\";\n      position: absolute;\n      background: rgba(242, 108, 35, 0.4);\n      width: 100%;\n      height: 100%;\n      background: rgba(242, 108, 35, 0.4);\n      border-radius: 100%;\n      left: 0;\n      z-index: -1;\n      bottom: 0;\n}\n#app #block-brands .container .content-brands .info-brands a, #app #block-brands .container .content-brands .info-brands span {\n      font-size: 16px;\n}\n#app #block-brands .container .text-brands {\n    font-size: 30px;\n    letter-spacing: 20px;\n    line-height: 45px;\n    font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n      letter-spacing: 20px;\n}\n@media only screen and (max-width: 768px) {\n#app #block-brands .fp-slides {\n    height: calc(100vh - 200px);\n}\n#app #block-brands .fp-tableCell {\n    height: 100% !important;\n}\n#app #block-brands .container .content-brands .info-brands {\n    width: 250px;\n    height: 250px;\n    margin-bottom: 50px;\n}\n#app #block-brands .container .content-brands .slick-brand-text {\n    width: 250px;\n}\n#app #block-brands .container .content-brands .slick-brand-text .text-brand-info {\n      line-height: 30px;\n}\n}\n", ""]);
+exports.push([module.i, "\n#app #block-brands #slide-brands-mobile {\n  margin-top: 30px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands {\n    width: 300px;\n    height: 300px;\n    border: 1px solid white;\n    padding: 60px 40px;\n    font-size: 30px;\n    background-size: 100px;\n    background-repeat: no-repeat;\n    background-position: center 50px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands:before {\n      content: \"\";\n      position: absolute;\n      background: rgba(242, 108, 35, 0.4);\n      width: 100%;\n      height: 100%;\n      background: rgba(242, 108, 35, 0.4);\n      border-radius: 100%;\n      left: 0;\n      z-index: -1;\n      bottom: 0;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands a, #app #block-brands #slide-brands-mobile .content-brands .info-brands span {\n      font-size: 16px;\n}\n#app #block-brands .fp-controlArrow.fp-next, #app #block-brands .fp-controlArrow.fp-prev {\n  border: 3px solid white;\n  width: 20px;\n  height: 20px;\n  border-radius: 5px 0 5px 0px;\n  border-top-color: transparent;\n  border-right-color: transparent;\n  -webkit-transform: rotate(225deg);\n          transform: rotate(225deg);\n  position: absolute;\n  bottom: 90px;\n  top: unset;\n}\n#app #block-brands .fp-controlArrow.fp-prev {\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n}\n#app #block-brands .bg-black-cover {\n  width: 0;\n  height: 100vh;\n  -webkit-transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n  transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n  background-position: center;\n}\n#app #block-brands .bg-black-cover.select {\n    -webkit-transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);\n    width: 105vw;\n}\n#app #block-brands .container {\n  z-index: 2;\n  padding: 0 15px;\n}\n#app #block-brands .container .row {\n    padding: 100px 0;\n}\n#app #block-brands .container .row .slick-slide .content-brands {\n      width: 150px;\n      height: 50px;\n      border: 1px solid white;\n      margin: 0 auto;\n      -webkit-transition: all .5s;\n      transition: all .5s;\n}\n#app #block-brands .container .row .slick-slide .content-brands .info-brands {\n        display: none !important;\n}\n#app #block-brands .container .row .slick-slide.slick-current .content-brands {\n      width: 300px;\n      height: 300px;\n      border-radius: 100%;\n}\n#app #block-brands .container .text-brands {\n    font-size: 30px;\n    letter-spacing: 20px;\n    line-height: 45px;\n    font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n      letter-spacing: 20px;\n}\n@media only screen and (max-width: 768px) {\n#app #block-brands .fp-slides {\n    height: calc(100vh - 200px);\n}\n#app #block-brands .fp-tableCell {\n    height: 100% !important;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .info-brands {\n    width: 250px;\n    height: 250px;\n    margin-bottom: 30px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text {\n    width: 250px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text .text-brand-info {\n      line-height: 30px;\n}\n}\n", ""]);
 
 // exports
 
@@ -4757,6 +4757,35 @@ exports.push([module.i, "\n#app #block-brands .fp-controlArrow.fp-next, #app #bl
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_slick__ = __webpack_require__(382);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_slick___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_slick__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4956,7 +4985,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 logo: '/images/icon_m1spa.png',
                 contact: '#',
                 book: '#'
-            }]
+            }],
+            slickOptions: {
+                slidesToScroll: 1,
+                slidesToShow: 3,
+                centerMode: true,
+                asNavFor: '#slide-brands'
+            }
         };
     },
     methods: {
@@ -4971,12 +5006,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }
     },
     mounted: function mounted() {
-        jQuery(document).ready(function () {
-            jQuery("#slide-brands").slick({
-                slidesToScroll: 1,
-                slidesToShow: 1
-            });
-        });
+        // jQuery(document).ready(function(){
+        //     jQuery("#slide-brands").slick({
+        //         slidesToScroll: 1,
+        //         slidesToShow: 3,
+        //         centerMode: true,
+        //         asNavFor: '',
+        //     });
+        // });
     },
     components: {
         Slick: __WEBPACK_IMPORTED_MODULE_0_vue_slick___default.a
@@ -4999,20 +5036,6 @@ var render = function() {
       attrs: { id: "block-brands" }
     },
     [
-      _c("link", {
-        attrs: {
-          href:
-            "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-        }
-      }),
-      _vm._v(" "),
-      _c("link", {
-        attrs: {
-          href:
-            "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-        }
-      }),
-      _vm._v(" "),
       _c("div", {
         staticClass: "bg-transition -old bg-black-cover",
         class: { active: _vm.addTransition, select: _vm.brandIndex == 0 },
@@ -5043,7 +5066,70 @@ var render = function() {
             [
               _vm._m(0),
               _vm._v(" "),
-              _vm._m(1),
+              _c(
+                "slick",
+                {
+                  staticClass:
+                    "content-brands w-100 d-flex align-items-center justify-content-between mt-5 mb-5",
+                  attrs: { id: "slide-brands", options: _vm.slickOptions }
+                },
+                _vm._l(_vm.brandItems, function(item, $index) {
+                  return _c(
+                    "div",
+                    { key: $index, staticClass: "slick-brands" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "content-brands position-relative d-flex flex-column align-items-center justify-content-center"
+                        },
+                        [
+                          _c("span", { staticClass: "brand-title" }, [
+                            _vm._v(
+                              "\n                            " +
+                                _vm._s(item.title) +
+                                "\n                        "
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "info-brands align-items-end position-relative d-flex justify-content-center text-left",
+                              style: "background-image: url(" + item.logo + ")"
+                            },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  attrs: {
+                                    href: _vm.brandItems[_vm.brandIndex].contact
+                                  }
+                                },
+                                [_vm._v("聯絡我們")]
+                              ),
+                              _vm._v(" "),
+                              _c("span", [_vm._v("・")]),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  attrs: {
+                                    href: _vm.brandItems[_vm.brandIndex].book
+                                  }
+                                },
+                                [_vm._v("線上訂位")]
+                              )
+                            ]
+                          )
+                        ]
+                      )
+                    ]
+                  )
+                })
+              ),
               _vm._v(" "),
               _c("p", {
                 staticClass: "text-brands",
@@ -5052,14 +5138,18 @@ var render = function() {
                   innerHTML: _vm._s(_vm.brandItems[_vm.brandIndex].text)
                 }
               })
-            ]
+            ],
+            1
           ),
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "d-md-none d-block　position-relative" },
+            {
+              staticClass: "d-md-none d-block　position-relative",
+              attrs: { id: "slide-brands-mobile" }
+            },
             [
-              _vm._m(2),
+              _vm._m(1),
               _vm._v(" "),
               _vm._l(_vm.brandItems, function(item, $index) {
                 return _c(
@@ -5144,20 +5234,6 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("span", { staticClass: "sub-title" }, [_vm._v("orange brands")])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "content-brands w-100 d-flex align-items-center justify-content-between mt-5 mb-5",
-        attrs: { id: "slide-brands" }
-      },
-      [_c("span", [_vm._v("zzz")]), _vm._v(" "), _c("span", [_vm._v("zzz")])]
-    )
   },
   function() {
     var _vm = this
@@ -5274,7 +5350,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#block-news .fp-tableCell {\n  height: auto !important;\n}\n#block-news > div {\n  z-index: 3;\n  position: relative;\n}\n#block-news .news-list {\n  -webkit-transition: all .5s;\n  transition: all .5s;\n}\n#block-news .news-list .block-list {\n    width: 20%;\n}\n#block-news .news-list .block-list.center {\n      width: 50%;\n}\n@media only screen and (max-width: 991px) {\n.section-pd {\n    padding: 0;\n}\n#app #block-news {\n    padding: 80px 0px;\n}\n#app #block-news .main-title .text-orange {\n      color: #f26e22 !important;\n}\n#app #block-news .news-categories {\n      margin-top: 0 !important;\n      display: none !important;\n}\n#app #block-news .news-list {\n      padding: 0 38px;\n}\n#app #block-news .news-list .block-list {\n        width: auto;\n}\n#app #block-news .news-list .block-list:last-child {\n          display: none;\n}\n#app #block-news .news-list .block-list.beside .news-item {\n          -webkit-box-flex: 1;\n              -ms-flex: 1;\n                  flex: 1;\n}\n#app #block-news .news-list .block-list.beside .news-item:first-child {\n            margin-right: 5px;\n}\n#app #block-news .news-list .block-list.beside .news-item:last-child {\n            margin-left: 5px;\n}\n}\n", ""]);
+exports.push([module.i, "\n#block-news .fp-tableCell {\n  height: auto !important;\n}\n#block-news > div {\n  z-index: 3;\n  position: relative;\n}\n#block-news .news-list {\n  -webkit-transition: all .5s;\n  transition: all .5s;\n}\n#block-news .news-list .block-list {\n    width: 20%;\n}\n#block-news .news-list .block-list.center {\n      width: 50%;\n}\n@media only screen and (max-width: 991px) {\n.section-pd {\n    padding: 0;\n}\n#app #block-news {\n    padding: 80px 0px;\n}\n#app #block-news .main-title .text-orange {\n      color: #f26e22 !important;\n}\n#app #block-news .news-categories {\n      margin-top: 0 !important;\n      display: none !important;\n}\n#app #block-news .news-list .block-list {\n      width: auto;\n}\n#app #block-news .news-list .block-list:last-child {\n        display: none;\n}\n#app #block-news .news-list .block-list.beside .news-item {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#app #block-news .news-list .block-list.beside .news-item:first-child {\n          margin-right: 5px;\n}\n#app #block-news .news-list .block-list.beside .news-item:last-child {\n          margin-left: 5px;\n}\n}\n", ""]);
 
 // exports
 

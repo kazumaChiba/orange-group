@@ -166,6 +166,7 @@ export default {
                         line-height: 20px
                         margin-bottom: 30px
                         text-align: center !important
+                        padding: 0px 28px
                         span
                             font-size: 16px
                 #copyright , #copyright a

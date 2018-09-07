@@ -62,7 +62,6 @@
                 &:focus
                     outline: none
                     border-bottom-color: #f26c23
-                    border-width: 2px
                     &::placeholder
                         color: transparent
                         transition: all .3s

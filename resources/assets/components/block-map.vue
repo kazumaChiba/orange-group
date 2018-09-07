@@ -112,12 +112,19 @@
                 &:after
                     display: none
                 .el-tabs__item
+                    font-size: 12px
                     &.is-active
                         color: #f26c23
+                .el-tabs__nav-scroll
+                    height: 65px
+                    .el-tabs__nav
+                        float: none
+                        text-align: center
                 .el-tabs__active-bar
                     background-color: #f26c23
                     height: 1px
                     bottom: 5px
+                    left: 15px
                     &:before , &:after
                         content: ""
                         position: absolute
@@ -126,13 +133,14 @@
                         left: 50%
                     &:before
                         width: 1px
-                        height: 20px
+                        height: 18px
                     &:after
                         border-radius: 100%
                         top: 20px
                         left: 50%
                         transform: translate(-50% , -50%)   
-                        
+                        width: 3px
+                        height: 3px
             .el-tabs__content
                 text-align: center
                 p
@@ -142,7 +150,7 @@
                     line-height: 20px
                     color: #ef803a !important
             .el-tabs__header
-                margin: 0 0 35px
+                margin-bottom: 0
 
         .map-iframe
             margin-bottom: 50px
