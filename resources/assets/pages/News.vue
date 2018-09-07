@@ -340,6 +340,9 @@ export default {
             font-weight: 300
 
     @media only screen and (max-width: 991px)
+        #block-breadcrumb
+            .banner-title
+                font-size: 28px
         #block-news
             margin-bottom: 55px
             #block-news-lists
