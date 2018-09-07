@@ -226,7 +226,8 @@ export default {
         padding: 0
     #app 
         #block-news
-            padding: 80px 0px
+            .row
+                padding: 80px 0px
             .main-title 
                 .text-orange
                     color: #f26e22 !important
