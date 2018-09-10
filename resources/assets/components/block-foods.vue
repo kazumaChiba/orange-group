@@ -24,12 +24,25 @@
                  </div>
             </div>
             <div class="content-food right-content d-flex flex-column justify-content-center position-relative text-md-left text-center">
-                <svg class="loader"  :class="{active : addTransition}" width="375px" height="448px" viewBox="0 0 375 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Content-Menu-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -146.000000)" opacity="0.3" stroke-linecap="round" stroke-linejoin="round">
-                        <g id="Group-2" transform="translate(1.000000, 148.000000)" stroke="#EB5E00" stroke-width="3">
+                <!-- <svg class="loader"  :class="{active : addTransition}" width="850px" height="850px" viewBox="0 0 425 425" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Content-Menu-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"  opacity="0.3" stroke-linecap="round" stroke-linejoin="round">
+                        <g id="Group-2" stroke="#EB5E00" stroke-width="3">
                             <path d="M312.173763,40.2023514 C327.008876,52.7655673 337.499672,63.6939976 343.646152,72.9876421" id="Path-7"></path>
                             <path d="M0.849439987,53.3105358 C23.4164086,27.796038 51.2869526,10.1784141 84.461072,0.45766393" id="Path-6"></path>
                             <path d="M374.134624,309.213237 C336.940959,386.205086 276.84813,431.096347 193.856138,443.88702" id="Path-8"></path>
+                        </g>
+                    </g>
+                </svg> -->
+                <svg class="loader" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 850 850" style="enable-background:new 0 0 850 850;" xml:space="preserve">
+                    <g id="Content-Menu-3" transform="translate(0.000000, -146.000000)" style="opacity:0.3;">
+                        <g id="Group-2" transform="translate(1.000000, 148.000000)">
+                            <path id="Path-7" style="fill:none;stroke:#EB5E00;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;" d="M664.1,74.2
+                                c28.4,24.1,48.5,45,60.3,62.8"/>
+                            <path id="Path-6" style="fill:none;stroke:#EB5E00;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;" d="M67.4,99.3
+                                C110.6,50.4,164,16.6,227.6-2"/>
+                            <path id="Path-8" style="fill:none;stroke:#EB5E00;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;" d="M782.9,589.8
+                                C711.6,737.4,596.4,823.5,437.3,848"/>
                         </g>
                     </g>
                 </svg>
@@ -216,21 +229,14 @@
                             letter-spacing: 2px
                     .loader
                         position: absolute
-                        width: 50vw
-                        height: 100vh
-                        stroke-linecap: round
-                        stroke-width: 5
-                        fill: none
+                        width: 850px
+                        height: 850px
+                        bottom: 0
                         left: 0 
-                        .internal-circle
-                            stroke: #f26c23
-                            stroke-dasharray: 55%,10%,25%
-                            opacity: .4
-                            transform-origin: 30% 55%
                         &.active
-                            .internal-circle
-                                transform: rotate(180deg)
-                                transition: all .5s ease-in-out
+                            transform: rotate(360deg)
+                            transition: all .5s ease-in-out
+                                
                     .more-food-info
                         display: none
 
