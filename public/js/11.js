@@ -985,6 +985,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -1060,7 +1068,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 id: 9,
                 background: '/images/news_v2.png',
-                date: '2018/3/21',
+                date: '2018/8/21',
                 category: '橘色涮涮屋',
                 title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
@@ -1068,7 +1076,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 id: 10,
                 background: '/images/news_v4.png',
-                date: '2018/3/21',
+                date: '2018/8/21',
                 category: '橘色涮涮屋',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
@@ -1076,7 +1084,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 id: 11,
                 background: '/images/news_v1.png',
-                date: '2018/3/21',
+                date: '2018/10/21',
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
@@ -1084,7 +1092,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 id: 12,
                 background: '/images/news_v2.png',
-                date: '2018/3/21',
+                date: '2018/10/21',
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
@@ -1092,7 +1100,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 id: 13,
                 background: '/images/news_v3.png',
-                date: '2018/3/21',
+                date: '2018/12/21',
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
@@ -1100,7 +1108,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 id: 14,
                 background: '/images/news_v4.png',
-                date: '2018/3/21',
+                date: '2018/12/21',
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
@@ -1108,18 +1116,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 id: 15,
                 background: '/images/news_v5.png',
-                date: '2018/3/21',
+                date: '2018/12/21',
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                 link: '/#/news/detail'
             }],
-            newsCategories: ['全部新訊', '橘色涮涮屋', 'Extension 1 by 橘色'],
-            newsIndex: 0,
+            newsCategories: ['橘色涮涮屋', 'Extension 1 by 橘色'],
+            // newsIndex: 0,
             viewIndex: 8,
             year: 2018,
             month: '',
-            category: '全部新訊',
+            category: '',
             loadEnd: false
         };
     },
@@ -1135,13 +1143,37 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     methods: {
         loadMore: function loadMore() {
+            var filterNewsLength = this.newsItems.filter(this.filterNews).length;
             this.viewIndex += 4;
-            if (this.viewIndex >= this.newsItems.length) {
+            if (this.viewIndex >= filterNewsLength) {
                 this.loadEnd = true;
             }
         },
-        filterCate: function filterCate(index) {
-            this.newsIndex = index;
+
+        // filterCate(index){
+        //     this.newsIndex = index;
+        // },
+        newsYear: function newsYear(date) {
+            return date.split('/')[0];
+        },
+        newsMonth: function newsMonth(date) {
+            return date.split('/')[1];
+        },
+        filterNews: function filterNews(value) {
+            return (value.category == this.category || this.category == '') && (this.newsMonth(value.date) == this.month || this.month == '') && this.newsYear(value.date) == this.year;
+        },
+        filterCate: function filterCate(value) {
+            this.category = value;
+            this.filterChange();
+        },
+        filterChange: function filterChange() {
+            this.viewIndex = 8;
+            var filterNewsLength = this.newsItems.filter(this.filterNews).length;
+            if (this.viewIndex >= filterNewsLength) {
+                this.loadEnd = true;
+            } else {
+                this.loadEnd = false;
+            }
         }
     }
 });
@@ -1188,30 +1220,51 @@ var render = function() {
                       staticClass: "news-categories -category d-flex",
                       attrs: { id: "category-items" }
                     },
-                    _vm._l(_vm.newsCategories, function(item, $index) {
-                      return _c(
+                    [
+                      _c(
                         "div",
                         {
-                          key: $index,
                           staticClass:
                             "category-items mr-4 ml-4 d-flex align-items-center",
-                          class: _vm.newsIndex == $index ? "active" : "",
+                          class: _vm.category == "" ? "active" : "",
                           on: {
                             click: function($event) {
-                              _vm.newsIndex = $index
-                              _vm.category = _vm.newsCategories[_vm.newsIndex]
+                              _vm.filterCate("")
                             }
                           }
                         },
                         [
                           _vm._v(
-                            "\n                            " +
-                              _vm._s(item) +
-                              "\n                        "
+                            "\n                            全部新訊\n                        "
                           )
                         ]
-                      )
-                    })
+                      ),
+                      _vm._v(" "),
+                      _vm._l(_vm.newsCategories, function(item, $index) {
+                        return _c(
+                          "div",
+                          {
+                            key: $index,
+                            staticClass:
+                              "category-items mr-4 ml-4 d-flex align-items-center",
+                            class: _vm.category == item ? "active" : "",
+                            on: {
+                              click: function($event) {
+                                _vm.filterCate(item)
+                              }
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n                            " +
+                                _vm._s(item) +
+                                "\n                        "
+                            )
+                          ]
+                        )
+                      })
+                    ],
+                    2
                   ),
                   _vm._v(" "),
                   _c("div", { staticClass: "news-categories -date" }, [
@@ -1232,7 +1285,7 @@ var render = function() {
                             _c(
                               "el-select",
                               {
-                                on: { change: _vm.filterCate },
+                                on: { change: _vm.filterChange },
                                 model: {
                                   value: _vm.category,
                                   callback: function($$v) {
@@ -1241,15 +1294,22 @@ var render = function() {
                                   expression: "category"
                                 }
                               },
-                              _vm._l(_vm.newsCategories, function(
-                                item,
-                                $index
-                              ) {
-                                return _c("el-option", {
-                                  key: $index,
-                                  attrs: { label: item, value: $index }
+                              [
+                                _c("el-option", {
+                                  attrs: { label: "", value: "全部新訊" }
+                                }),
+                                _vm._v(" "),
+                                _vm._l(_vm.newsCategories, function(
+                                  item,
+                                  $index
+                                ) {
+                                  return _c("el-option", {
+                                    key: $index,
+                                    attrs: { label: item, value: $index }
+                                  })
                                 })
-                              })
+                              ],
+                              2
                             )
                           ],
                           1
@@ -1264,6 +1324,7 @@ var render = function() {
                             _c(
                               "el-select",
                               {
+                                on: { change: _vm.filterChange },
                                 model: {
                                   value: _vm.year,
                                   callback: function($$v) {
@@ -1298,6 +1359,7 @@ var render = function() {
                             _c(
                               "el-select",
                               {
+                                on: { change: _vm.filterChange },
                                 model: {
                                   value: _vm.month,
                                   callback: function($$v) {
@@ -1342,13 +1404,11 @@ var render = function() {
                     _c(
                       "div",
                       { staticClass: "row" },
-                      _vm._l(_vm.newsItems.slice(0, _vm.viewIndex), function(
+                      _vm._l(_vm.newsItems.filter(_vm.filterNews), function(
                         item,
                         $index
                       ) {
-                        return item.category ==
-                          _vm.newsCategories[_vm.newsIndex] ||
-                          _vm.newsIndex == 0
+                        return $index < _vm.viewIndex
                           ? _c(
                               "div",
                               {

@@ -7,12 +7,18 @@
                     <div class="container d-flex">
                         <div id="category-items" class="news-categories -category d-flex">
                             <div 
-                                
+                                class="category-items mr-4 ml-4 d-flex align-items-center" 
+                                :class="(category == '') ? 'active' : ''"
+                                @click="filterCate('');"
+                            >
+                                全部新訊
+                            </div>
+                            <div 
                                 v-for="(item,$index) in newsCategories" 
                                 :key="$index" 
                                 class="category-items mr-4 ml-4 d-flex align-items-center" 
-                                :class="(newsIndex == $index) ? 'active' : ''"
-                                @click="newsIndex = $index; category = newsCategories[newsIndex]"
+                                :class="(category == item) ? 'active' : ''"
+                                @click="filterCate(item);"
                             >
                                 {{item}}
                             </div>
@@ -20,7 +26,8 @@
                         <div class="news-categories -date">
                             <div id="category-date" class="d-flex justify-content-end">
                                 <div class="filter-date -cate position-relative d-block d-lg-none">
-                                    <el-select v-model="category"  @change="filterCate">
+                                    <el-select v-model="category" @change="filterChange"> <!-- @change="filterCate" -->
+                                        <el-option :label="''" :value="'全部新訊'"></el-option>
                                         <el-option 
                                             v-for="(item,$index) in newsCategories"
                                             :key="$index" 
@@ -30,7 +37,7 @@
                                     </el-select>
                                 </div>
                                 <div class="filter-date -year position-relative">
-                                    <el-select v-model="year">
+                                    <el-select v-model="year" @change="filterChange">
                                         <el-option :label="'2018'" :value="2018"></el-option>
                                         <el-option :label="'2015'" :value="2015"></el-option>
                                         <el-option :label="'2013'" :value="2013"></el-option>
@@ -46,7 +53,7 @@
                                     </el-dropdown>-->
                                 </div>
                                 <div class="filter-date -month">
-                                    <el-select v-model="month">
+                                    <el-select v-model="month" @change="filterChange">
                                         <el-option :label="'月份'" :value="''"></el-option>
                                         <el-option :label="'10月'" :value="10"></el-option>
                                         <el-option :label="'9月'" :value="9"></el-option>
@@ -69,11 +76,12 @@
                 <div id="block-news-items" class="news-list">
                     <div class="container">
                         <div class="row">
+                            <!-- v-if="($index < viewIndex) && (item.category == newsCategories[newsIndex] || newsIndex == 0) && (newsYear(item.date) == year) && (newsMonth(item.date) == month || month == '')" -->
                             <div 
                                 class="news-item col-12 col-md-3"
-                                v-for="(item,$index) in newsItems.slice(0,viewIndex)"
+                                v-for="(item,$index) in newsItems.filter(filterNews)"
                                 :key="$index"    
-                                v-if="item.category == newsCategories[newsIndex] || newsIndex == 0"
+                                v-if="($index < viewIndex)"
                             >
                                 <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + item.background + ')'">
                                     <router-link :to="'/news/detail/'+item.id" class="btn-border">了解更多</router-link>
@@ -188,7 +196,7 @@ export default {
                 {
                     id: 9,
                     background: '/images/news_v2.png',
-                    date: '2018/3/21',
+                    date: '2018/8/21',
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
@@ -197,7 +205,7 @@ export default {
                 {
                     id: 10,
                     background: '/images/news_v4.png',
-                    date: '2018/3/21',
+                    date: '2018/8/21',
                     category: '橘色涮涮屋',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
@@ -206,7 +214,7 @@ export default {
                 {
                     id: 11,
                     background: '/images/news_v1.png',
-                    date: '2018/3/21',
+                    date: '2018/10/21',
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
@@ -215,7 +223,7 @@ export default {
                 {
                     id: 12,
                     background: '/images/news_v2.png',
-                    date: '2018/3/21',
+                    date: '2018/10/21',
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
@@ -224,7 +232,7 @@ export default {
                 {
                     id: 13,
                     background: '/images/news_v3.png',
-                    date: '2018/3/21',
+                    date: '2018/12/21',
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
@@ -233,7 +241,7 @@ export default {
                 {
                     id: 14,
                     background: '/images/news_v4.png',
-                    date: '2018/3/21',
+                    date: '2018/12/21',
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
@@ -242,19 +250,19 @@ export default {
                 {
                     id: 15,
                     background: '/images/news_v5.png',
-                    date: '2018/3/21',
+                    date: '2018/12/21',
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
                     link: '/#/news/detail'
                 },
             ],
-            newsCategories: ['全部新訊','橘色涮涮屋','Extension 1 by 橘色'],
-            newsIndex: 0,
+            newsCategories: ['橘色涮涮屋','Extension 1 by 橘色'],
+            // newsIndex: 0,
             viewIndex: 8,
 	        year: 2018,
             month: '',
-            category: '全部新訊',
+            category: '',
             loadEnd: false,
         }
     },
@@ -269,14 +277,40 @@ export default {
     },
     methods: {
         loadMore(){
+            let filterNewsLength = this.newsItems.filter(this.filterNews).length;
             this.viewIndex += 4;
-            if(this.viewIndex >= this.newsItems.length){
+            if(this.viewIndex >= filterNewsLength){
                 this.loadEnd = true;
             }
         },
-        filterCate(index){
-            this.newsIndex = index;
-        }
+        // filterCate(index){
+        //     this.newsIndex = index;
+        // },
+        newsYear(date){
+            return date.split('/')[0];
+        },
+        newsMonth(date) {
+            return date.split('/')[1];
+        },
+        filterNews(value) {
+            return (value.category == this.category || this.category == '') 
+                    && (this.newsMonth(value.date) == this.month || this.month == '')
+                    && (this.newsYear(value.date) == this.year);
+        },
+        filterCate(value){
+            this.category = value;
+            this.filterChange();
+        },
+        filterChange() {
+            this.viewIndex = 8;
+            let filterNewsLength = this.newsItems.filter(this.filterNews).length;
+            if(this.viewIndex >= filterNewsLength){
+                this.loadEnd = true;
+            }
+            else{
+                this.loadEnd = false;
+            }
+        },
     }
 }
 </script>
