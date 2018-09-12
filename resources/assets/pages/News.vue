@@ -26,14 +26,15 @@
                         <div class="news-categories -date">
                             <div id="category-date" class="d-flex justify-content-end">
                                 <div class="filter-date -cate position-relative d-block d-lg-none">
-                                    <el-select v-model="category" @change="filterChange"> <!-- @change="filterCate" -->
-                                        <el-option :label="''" :value="'全部新訊'"></el-option>
+                                    <el-select v-model="category" @change="filterCate">
+                                        <el-option :label="'全部新訊'" :value="''"></el-option>
                                         <el-option 
                                             v-for="(item,$index) in newsCategories"
                                             :key="$index" 
                                             :label="item" 
-                                            :value="$index"
-                                            ></el-option>
+                                            :value="item"
+                                        >
+                                        </el-option>
                                     </el-select>
                                 </div>
                                 <div class="filter-date -year position-relative">
@@ -42,15 +43,6 @@
                                         <el-option :label="'2015'" :value="2015"></el-option>
                                         <el-option :label="'2013'" :value="2013"></el-option>
                                     </el-select>
-                                    <!--<el-dropdown trigger="click" class="text-white">
-                                        <span class="el-dropdown-link">
-                                            2018<i class="el-icon-arrow-down el-icon--right"></i>
-                                        </span>
-                                        <el-dropdown-menu slot="dropdown">
-                                            <el-dropdown-item>2018</el-dropdown-item>
-                                            <el-dropdown-item>2015</el-dropdown-item>
-                                        </el-dropdown-menu>
-                                    </el-dropdown>-->
                                 </div>
                                 <div class="filter-date -month">
                                     <el-select v-model="month" @change="filterChange">
@@ -59,15 +51,6 @@
                                         <el-option :label="'9月'" :value="9"></el-option>
                                         <el-option :label="'8月'" :value="8"></el-option>
                                     </el-select>
-                                    <!--<el-dropdown trigger="click" class="text-white">
-                                        <span class="el-dropdown-link">
-                                            9月<i class="el-icon-arrow-down el-icon--right"></i>
-                                        </span>
-                                        <el-dropdown-menu slot="dropdown">
-                                            <el-dropdown-item>10月</el-dropdown-item>
-                                            <el-dropdown-item>11月</el-dropdown-item>
-                                        </el-dropdown-menu>
-                                    </el-dropdown>-->
                                 </div>
                             </div>
                         </div>
@@ -83,9 +66,12 @@
                                 :key="$index"    
                                 v-if="($index < viewIndex)"
                             >
-                                <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + item.background + ')'">
-                                    <router-link :to="'/news/detail/'+item.id" class="btn-border">了解更多</router-link>
-                                </div>
+
+                                <router-link :to="'/news/detail/'+item.id">
+                                    <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + item.background + ')'">
+                                        <span class="btn-border btn-readmore">了解更多</span>
+                                    </div>
+                                </router-link>
                                 <div class="news-content text-center">
                                     <div>
                                         <span class="text-black text-size-1">{{item.date}}</span>
@@ -128,7 +114,6 @@ export default {
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                    link: '/#/news/detail',
                 },
                 {
                     id: 2,
@@ -137,7 +122,6 @@ export default {
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                    link: '/#/news/detail',
                 },
                 {
                     id: 3,
@@ -146,7 +130,6 @@ export default {
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                    link: '/#/news/detail'
                 },
                 {
                     id: 4,
@@ -155,7 +138,6 @@ export default {
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                    link: '/#/news/detail'
                 },
                 {
                     id: 5,
@@ -164,7 +146,6 @@ export default {
                     category: '橘色涮涮屋',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                    link: '/#/news/detail'
                 },
                 {
                     id: 6,
@@ -173,7 +154,6 @@ export default {
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                    link: '/#/news/detail'
                 },
                 {
                     id: 7,
@@ -182,7 +162,6 @@ export default {
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                    link: '/#/news/detail'
                 },
                 {
                     id: 8,
@@ -200,7 +179,6 @@ export default {
                     category: '橘色涮涮屋',
                     title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                    link: '/#/news/detail'
                 },
                 {
                     id: 10,
@@ -209,7 +187,6 @@ export default {
                     category: '橘色涮涮屋',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                    link: '/#/news/detail'
                 },
                 {
                     id: 11,
@@ -218,7 +195,6 @@ export default {
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                    link: '/#/news/detail'
                 },
                 {
                     id: 12,
@@ -227,7 +203,6 @@ export default {
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                    link: '/#/news/detail'
                 },
                 {
                     id: 13,
@@ -236,7 +211,6 @@ export default {
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                    link: '/#/news/detail'
                 },
                 {
                     id: 14,
@@ -245,7 +219,6 @@ export default {
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                    link: '/#/news/detail'
                 },
                 {
                     id: 15,
@@ -254,11 +227,9 @@ export default {
                     category: 'Extension 1 by 橘色',
                     title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                     intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                    link: '/#/news/detail'
                 },
             ],
             newsCategories: ['橘色涮涮屋','Extension 1 by 橘色'],
-            // newsIndex: 0,
             viewIndex: 8,
 	        year: 2018,
             month: '',
@@ -283,9 +254,6 @@ export default {
                 this.loadEnd = true;
             }
         },
-        // filterCate(index){
-        //     this.newsIndex = index;
-        // },
         newsYear(date){
             return date.split('/')[0];
         },
@@ -314,12 +282,8 @@ export default {
     }
 }
 </script>
-<style lang="sass" scope>
-#block-news
-    &:before
-        background-attachment: fixed
-</style>
-<style lang="sass">
+
+<style lang="sass"  scope>
     .el-input__inner
         -webkit-appearance: none
         border-radius: 0
@@ -330,6 +294,8 @@ export default {
         color: #fff
     #block-news
         margin-bottom: 180px
+        &:before
+            background-attachment: fixed
         .filter-date
             &.-year
                 width: 90px
@@ -367,6 +333,10 @@ export default {
             .news-item
                 width: 25%
                 padding: 0 16px
+                .news-head
+                    padding-top: 120%
+                    margin-bottom: 10px  
+                    flex: 1
             
     #block-breadcrumb
         .banner-title

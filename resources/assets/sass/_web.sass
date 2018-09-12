@@ -151,7 +151,7 @@ html,body,#app,#block-main
     #header
         top: 0
         z-index: 999999
-        width: 100% 
+        width: 100vw
         display: flex
         align-items: center
         position: fixed
@@ -170,14 +170,12 @@ html,body,#app,#block-main
                         .buger-icon
                             top: 13px
             .logo
-                position: relative
                 height: 50px
                 width: auto
-                left: 23px
                 padding: 0
-                position: absolute
-                top: 13px
-                position: absolute
+                left: 23px
+                top: 50%
+                transform: translateY(-50%)
                 &#footer-logo
                     display: none
                 &#footer-logo-black
@@ -264,6 +262,7 @@ html,body,#app,#block-main
         height: 400px
         left: 0
         top: 0
+        z-index: -1
     &:before
         background-size: 25px 25px
         background-image: radial-gradient(#0000000d 20%, transparent 15%), radial-gradient(#0000000d 20%, transparent 20%)
@@ -290,13 +289,8 @@ html,body,#app,#block-main
             //height: 460px
             overflow: hidden
             .news-head
-                //height: 350px
-                padding-top: 130%
-                margin-bottom: 10px  
-                flex: 1
                 background-position: center
                 background-size: cover
-                //max-height: 860px
                 &:before
                     content: ""
                     background: #f26d23
@@ -310,14 +304,16 @@ html,body,#app,#block-main
                 &:hover
                     &:before
                         opacity: 0.6
-                    a
+                    .btn-readmore
                         position: absolute
                         top: 50%
                         left: 50%
                         width: 150px
                         transform: translate(-50%, -50%)
                         display: block
-                a
+                        background: white
+                        color: #f26b23
+                .btn-readmore
                     display: none
                     z-index: 2
                     text-align: center
@@ -408,7 +404,7 @@ html,body,#app,#block-main
     #block-news 
         .news-list 
             .news-item 
-                margin-bottom: 20px
+                margin-bottom: 50px
                 .news-title
                     font-size: 16px
                 p

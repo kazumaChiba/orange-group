@@ -1,10 +1,10 @@
 <template>
     <div id="block-map-body"  v-if="mapItems[brand]">    
         <div class="map-list container">
-            <div class="row d-flex justify-content-between ">
+            <div class="row d-flex justify-content-center ">
                 <div 
                     class="map-item d-none d-md-block"
-                    :class="mapIndex == $index ? 'active' : ''"
+                    :class="{active : (mapIndex == $index) || (mapIndex > mapItems[brand].length && $index == 0)}"
                     v-for="(item,$index) in mapItems[brand]"
                     :key="$index"
                     @click="mapIndex = $index"
@@ -32,7 +32,13 @@
             </el-tabs>
         </div>
         <div class="map-iframe">
-            <iframe class="w-100" height="560" :src="'https://www.google.com/maps/embed/v1/search?&key=AIzaSyD-Yjh575xmaPu3O-gBx_kk4AZ1Nyx_GjI&q='+mapItems[brand][mapIndex].address"></iframe>
+            <!-- <iframe class="w-100" height="560" :src="'https://www.google.com/maps/embed/v1/search?&key=AIzaSyD-Yjh575xmaPu3O-gBx_kk4AZ1Nyx_GjI&q='+mapItems[brand][mapIndex].address"></iframe> -->
+            <GmapMap v-if="brand == 'shabu'" ref="mapRef" :center="mapItems[brand][mapIndex].center" :zoom="14" style="width: 100%; height: 560px" :option="mapoption">
+                <GmapMarker icon="/images/marker.png" :position="mapItems[brand][mapIndex].center" :clickable="false" :draggable="false"></GmapMarker>
+            </GmapMap>
+            <GmapMap v-else ref="mapRef" :center="mapItems[brand][0].center" :zoom="14" style="width: 100%; height: 560px" :option="mapoption">
+                <GmapMarker icon="/images/marker.png" :position="mapItems[brand][0].center" :clickable="false" :draggable="false"></GmapMarker>
+            </GmapMap>
         </div>
     </div>
 </template>
@@ -40,22 +46,83 @@
     export default {
         data: function() {
             return{
+                mapoption:{
+                    zoomControl: false,
+                    mapTypeControl: false,
+                    streetViewControl: false
+                },
                 mapItems: {
                     ['shabu']: [
                         {
                             title: '橘色一館',
                             address: '106台北市大安區大安路一段135號',
-                            infos: '+886 2 8780 59559<br>service@group.com'
+                            infos: '+886 2 8780 59559<br>service@group.com',
+                            center: {
+                                lat: 25.038958,
+                                lng: 121.546416,
+                            },
                         },
                         {
                             title: '橘色二館',
                             address: '106台北市大安區仁愛路四段29-2號',
-                            infos: '+886 2 8780 59559<br>service@group.com'
+                            infos: '+886 2 8780 59559<br>service@group.com',
+                            center: {
+                                lat: 25.038688,
+                                lng: 121.546257,
+                            },
                         },
                         {
                             title: '新光A9旗艦',
                             address: '110台北市信義區松壽路9號5樓',
-                            infos: '+886 2 8780 59559<br>service@group.com'
+                            infos: '+886 2 8780 59559<br>service@group.com',
+                            center: {
+                                lat: 25.036865,
+                                lng: 121.567281,
+                            },
+                        }
+                    ],
+                    ['extension_1']: [
+                        {
+                            title: 'Extension 1 by 橘色',
+                            address: '11492台北市內湖區瑞光路631號1樓',
+                            infos: '+886 2 8780 59559<br>service@group.com',
+                            center: {
+                                lat: 25.036865,
+                                lng: 121.567281,
+                            },
+                        }
+                    ],
+                    ['m_one_cafe']: [
+                        {
+                            title: 'M One Cafe',
+                            address: '106台北市大安區仁愛路四段27巷6-1號',
+                            infos: '+886 2 8780 59559<br>service@group.com',
+                            center: {
+                                lat: 25.038892,
+                                lng: 121.545126,
+                            },
+                        }
+                    ],
+                    ['m_one_spa']: [
+                        {
+                            title: 'M One Spa',
+                            address: '106台北市大安區仁愛路四段27巷6-1號B1',
+                            infos: '+886 2 8780 59559<br>service@group.com',
+                            center: {
+                                lat: 25.038912, 
+                                lng: 121.545112,
+                            },
+                        }
+                    ],
+                    ['sakura_spa']: [
+                        {
+                            title: 'SAKURA SPA',
+                            address: '106台北市大安區仁愛路四段110號',
+                            infos: '+886 2 8780 59559<br>service@group.com',
+                            center: {
+                                lat: 25.037087, 
+                                lng: 121.549374,
+                            },
                         }
                     ],
                 },
@@ -71,7 +138,7 @@
             brand: {
                 type: String,
                 default: 'shabu'
-            }
+            },
         },
     }
 </script>

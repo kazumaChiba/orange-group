@@ -1296,7 +1296,7 @@ var render = function() {
                               },
                               [
                                 _c("el-option", {
-                                  attrs: { label: "", value: "全部新訊" }
+                                  attrs: { label: "全部新訊", value: "" }
                                 }),
                                 _vm._v(" "),
                                 _vm._l(_vm.newsCategories, function(
@@ -1305,7 +1305,7 @@ var render = function() {
                                 ) {
                                   return _c("el-option", {
                                     key: $index,
-                                    attrs: { label: item, value: $index }
+                                    attrs: { label: item, value: item }
                                   })
                                 })
                               ],

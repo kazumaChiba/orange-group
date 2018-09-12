@@ -2,7 +2,7 @@
     <div id="footer" class="section text-white text-center bg-black-cover position-relative d-flex flex-column justify-content-center" style="background-image:url('/images/footer.png')">
         <div class="footer footer-join position-relative d-flex align-items-center justify-content-between w-100">
             <div class="container">
-                <div class="row d-flex justify-content-between align-items-center flex-column flex-lg-row">
+                <div class="row d-flex w-100 m-0 justify-content-between align-items-center flex-column flex-lg-row">
                     <div class="join-us-slogan text-left">
                         持續創造價值並帶領團隊實現目標和理想<br>
                         <span class="text-orange">以前瞻眼光、宏觀策略成為產業先驅</span>
@@ -13,7 +13,7 @@
         </div>
         <div class="footer container">
             <div class="d-flex flex-column justify-content-end h-100">
-                <div class="row mb-lg-5 pb-lg-5 flex-wrap-reverse flex-lg-row">
+                <div class="d-flex mb-lg-5 pb-lg-5 flex-wrap-reverse flex-lg-row">
                     <div class="col col-contact-us">
                         <div class="footer-text-left text-center text-lg-left pt-5">
                             <div class="d-inline-block text-center">

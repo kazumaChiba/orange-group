@@ -118,7 +118,7 @@
                         subtitle: '隨時歡迎您與我們聯繫，無論是訂位餐飲或是任何其他相關問題，都可以提出詢問！',
                         form:   {
                             template:
-                                '<form>'+
+                                '<form method="post" action="MailTo:alice@daydream-lab.com">'+
                                     '<div class="contact-form-field d-flex flex-column flex-wrap">'+
                                         '<div class="field-item field-user d-flex align-items-center position-relative">'+
                                             '<input placeholder="您的姓名">'+
@@ -161,7 +161,7 @@
                         subtitle: '隨時歡迎您與我們聯繫，無論是訂位餐飲或是任何其他相關問題，都可以提出詢問！',     
                         form:   {
                             template:
-                                '<form>'+
+                                '<form method="post" action="MailTo:alice@daydream-lab.com">'+
                                     '<div class="contact-form-field d-flex flex-column flex-wrap">'+
                                         '<div class="field-item field-user d-flex align-items-center position-relative">'+
                                             '<input placeholder="您的姓名">'+
@@ -206,7 +206,7 @@
             brand: {
                 type: String,
                 default: 'shabu',
-            }
+            },
         },
     }
 </script>

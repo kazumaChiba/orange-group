@@ -4743,7 +4743,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#app #block-brands {\n  background-size: cover;\n  background-position: center;\n}\n#app #block-brands .slick-arrow {\n    position: absolute;\n    width: 150px;\n    height: 50px;\n    background: #f26b23;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n    top: 50%;\n}\n#app #block-brands .slick-arrow:hover {\n      background: rgba(0, 0, 0, 0.8);\n      cursor: pointer;\n}\n#app #block-brands .slick-arrow.btn-next {\n      right: 15px;\n}\n#app #block-brands .slick-arrow.btn-prev {\n      left: 15px;\n}\n#app #block-brands #slide-brands {\n    width: 50%;\n}\n#app #block-brands #slide-brands .slick-list {\n      content: \"\";\n      width: 300px;\n      height: 300px;\n      position: absolute;\n      left: calc(50% - 150px);\n      background: rgba(242, 106, 35, 0.1);\n      border-radius: 100%;\n      border: 1px solid white;\n}\n#app #block-brands .fp-slidesNav {\n    display: none;\n}\n#app #block-brands #slide-brands-mobile {\n    margin-top: 30px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands {\n      width: 300px;\n      height: 300px;\n      border: 1px solid white;\n      padding: 60px 40px;\n      font-size: 30px;\n      background-size: 100px;\n      background-repeat: no-repeat;\n      background-position: center 50px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands:before {\n        content: \"\";\n        position: absolute;\n        background: rgba(242, 108, 35, 0.4);\n        width: 100%;\n        height: 100%;\n        background: rgba(242, 108, 35, 0.4);\n        border-radius: 100%;\n        left: 0;\n        z-index: -1;\n        bottom: 0;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands a, #app #block-brands #slide-brands-mobile .content-brands .info-brands span {\n        font-size: 16px;\n}\n#app #block-brands .fp-controlArrow.fp-next, #app #block-brands .fp-controlArrow.fp-prev {\n    border: 3px solid white;\n    width: 20px;\n    height: 20px;\n    border-radius: 5px 0 5px 0px;\n    border-top-color: transparent;\n    border-right-color: transparent;\n    -webkit-transform: rotate(225deg);\n            transform: rotate(225deg);\n    position: absolute;\n    top: calc(50% + 210px);\n}\n#app #block-brands .fp-controlArrow.fp-prev {\n    -webkit-transform: rotate(45deg);\n            transform: rotate(45deg);\n}\n#app #block-brands .bg-black-cover {\n    width: 0;\n    height: 100vh;\n    -webkit-transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    background-position: center;\n}\n#app #block-brands .bg-black-cover.select {\n      -webkit-animation: bgActive 1s;\n              animation: bgActive 1s;\n}\n#app #block-brands .container {\n    z-index: 2;\n    padding: 0 15px;\n}\n#app #block-brands .container .row {\n      padding: 100px 0;\n}\n#app #block-brands .container .row .slick-track {\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-align: center;\n            -ms-flex-align: center;\n                align-items: center;\n}\n#app #block-brands .container .row .slick-slide .content-brands {\n        width: 300px;\n        height: 300px;\n        border-radius: 100%;\n        border-color: white;\n        -webkit-transition: all .5s;\n        transition: all .5s;\n        padding: 80px 0;\n}\n#app #block-brands .container .row .slick-slide .content-brands img {\n          width: 100px;\n          height: auto;\n          margin-bottom: 20px;\n}\n#app #block-brands .container .row .slick-slide .content-brands .brand-title {\n          display: none;\n}\n#app #block-brands .container .row .slick-slide .content-brands .info-brands, #app #block-brands .container .row .slick-slide .content-brands img {\n          display: -webkit-box !important;\n          display: -ms-flexbox !important;\n          display: flex !important;\n}\n#app #block-brands .container .text-brands {\n      font-size: 26px;\n      letter-spacing: 18px;\n      line-height: 45px;\n      font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n        letter-spacing: 20px;\n}\n@media only screen and (max-width: 768px) {\n#app #block-brands .fp-slides {\n    height: calc(100vh - 200px);\n}\n#app #block-brands .fp-tableCell {\n    height: 100% !important;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .text-title {\n    display: none;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .info-brands {\n    width: 250px;\n    height: 250px;\n    margin-bottom: 30px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text {\n    width: 250px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text .text-brand-info {\n      line-height: 30px;\n}\n}\n@-webkit-keyframes bgActive {\n0% {\n    width: 0;\n}\n100% {\n    width: 100vw;\n    display: none;\n}\n}\n@keyframes bgActive {\n0% {\n    width: 0;\n}\n100% {\n    width: 100vw;\n    display: none;\n}\n}\n", ""]);
+exports.push([module.i, "\n#app #block-brands {\n  background-size: cover;\n  background-position: center;\n}\n#app #block-brands .slick-arrow {\n    position: absolute;\n    width: 150px;\n    height: 50px;\n    background: #f26b23;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n    top: 50%;\n}\n#app #block-brands .slick-arrow:hover {\n      background: rgba(0, 0, 0, 0.8);\n      cursor: pointer;\n}\n#app #block-brands .slick-arrow.btn-next {\n      right: 15px;\n}\n#app #block-brands .slick-arrow.btn-prev {\n      left: 15px;\n}\n#app #block-brands #slide-brands {\n    height: 300px;\n}\n#app #block-brands #slide-brands .slick-list {\n      content: \"\";\n      width: 300px;\n      height: 300px;\n      position: absolute;\n      left: calc(50% - 150px);\n      background: rgba(242, 106, 35, 0.1);\n      border-radius: 100%;\n      border: 1px solid white;\n}\n#app #block-brands .fp-slidesNav {\n    display: none;\n}\n#app #block-brands #slide-brands-mobile {\n    margin-top: 30px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands {\n      width: 300px;\n      height: 300px;\n      border: 1px solid white;\n      font-size: 30px;\n      background-size: 100px;\n      background-repeat: no-repeat;\n      background-position: center 50px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands:before {\n        content: \"\";\n        position: absolute;\n        background: rgba(242, 108, 35, 0.4);\n        width: 100%;\n        height: 100%;\n        background: rgba(242, 108, 35, 0.4);\n        border-radius: 100%;\n        left: 0;\n        z-index: -1;\n        bottom: 0;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands a, #app #block-brands #slide-brands-mobile .content-brands .info-brands span {\n        font-size: 13px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands a {\n        border-bottom: 1px solid white;\n        padding: 3px;\n}\n#app #block-brands #slide-brands-mobile .content-brands img {\n      height: 120px;\n      width: auto;\n      margin-bottom: 20px;\n}\n#app #block-brands .fp-controlArrow.fp-next, #app #block-brands .fp-controlArrow.fp-prev {\n    border: 3px solid white;\n    width: 20px;\n    height: 20px;\n    border-radius: 5px 0 5px 0px;\n    border-top-color: transparent;\n    border-right-color: transparent;\n    -webkit-transform: rotate(225deg);\n            transform: rotate(225deg);\n    position: absolute;\n    top: calc(50% + 210px);\n}\n#app #block-brands .fp-controlArrow.fp-prev {\n    -webkit-transform: rotate(45deg);\n            transform: rotate(45deg);\n}\n#app #block-brands .bg-black-cover {\n    width: 0;\n    height: 100vh;\n    -webkit-transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    background-position: center;\n}\n#app #block-brands .bg-black-cover.select {\n      -webkit-animation: bgActive 1s;\n              animation: bgActive 1s;\n}\n#app #block-brands .container {\n    z-index: 2;\n    padding: 0 15px;\n}\n#app #block-brands .container .row {\n      padding: 100px 0;\n}\n#app #block-brands .container .row .slick-track {\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-align: center;\n            -ms-flex-align: center;\n                align-items: center;\n}\n#app #block-brands .container .row .slick-slide .content-brands {\n        width: 300px;\n        height: 300px;\n        border-radius: 100%;\n        border-color: white;\n        -webkit-transition: all .5s;\n        transition: all .5s;\n}\n#app #block-brands .container .row .slick-slide .content-brands img {\n          width: auto;\n          height: 150px;\n          margin-bottom: 20px;\n}\n#app #block-brands .container .row .slick-slide .content-brands .brand-title {\n          display: none;\n}\n#app #block-brands .container .row .slick-slide .content-brands .info-brands, #app #block-brands .container .row .slick-slide .content-brands img {\n          display: -webkit-box !important;\n          display: -ms-flexbox !important;\n          display: flex !important;\n}\n#app #block-brands .container .text-brands {\n      font-size: 26px;\n      letter-spacing: 18px;\n      line-height: 45px;\n      font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n        letter-spacing: 20px;\n}\n@media only screen and (max-width: 768px) {\n#app #block-brands .fp-slides {\n    height: calc(100vh - 200px);\n}\n#app #block-brands .fp-tableCell {\n    height: 100% !important;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .text-title {\n    display: none;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .info-brands {\n    width: 250px;\n    height: 250px;\n    margin-bottom: 30px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text {\n    width: 250px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text .text-brand-info {\n      line-height: 30px;\n}\n#app #block-brands .container #slide-brands-mobile .slick-brand-text {\n    padding: 0 30px;\n}\n}\n@-webkit-keyframes bgActive {\n0% {\n    width: 0;\n}\n100% {\n    width: 100vw;\n    display: none;\n}\n}\n@keyframes bgActive {\n0% {\n    width: 0;\n}\n100% {\n    width: 100vw;\n    display: none;\n}\n}\n", ""]);
 
 // exports
 
@@ -5002,20 +5002,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            addTransition: false,
-            brandIndex: 0,
+            indexBrand: 0,
             indexNext: 1,
             indexPrev: 3,
-            indexNew: 0,
             delayIndex: 0,
             bgActive: false,
             brandItems: [{
@@ -5026,17 +5021,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 contact: '#',
                 book: '#'
             }, {
-                url: '/images/slideshow_1.jpg',
+                url: '/images/banner_contact.png',
                 title: 'M One Cafe',
                 text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！',
-                logo: '/images/home3_icon2.png',
+                logo: '/images/icon_cafe.png',
                 contact: '#',
                 book: '#'
             }, {
-                url: '/images/bg_brand_1.png',
+                url: '/images/banner_about.png',
                 title: '橘色鍋物',
                 text: '<span class="text-orange">橘色</span>鍋物<br>不管多少人都能吃得精彩！',
-                logo: '/images/icon_cafe.png',
+                logo: '/images/home3_icon2.png',
                 contact: '#',
                 book: '#'
             }, {
@@ -5053,64 +5048,57 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 centerMode: true,
                 draggable: false,
                 arrows: false,
-                // nextArrow: '<span class="brand-title btn-next">橘色鍋物</span>',
-                // prevArrow: '<span class="brand-title btn-prev">橘色鍋物</span>',
                 centerPadding: 0
-
-                // asNavFor: '#slide-brands',
             }
         };
     },
     methods: {
         slickNext: function slickNext() {
+            this.indexBrand++;
+            this.countIndex();
+
+            this.$refs.slick.next();
+        },
+        slickPrev: function slickPrev() {
+            this.indexBrand--;
+            this.countIndex();
+
+            this.$refs.slick.prev();
+        },
+        countIndex: function countIndex() {
+            this.bgActive = true;
+            var itemsLength = this.brandItems.length - 1;
+
+            if (this.indexBrand > itemsLength) {
+                this.indexBrand = 0;
+            } else if (this.indexBrand < 0) {
+                this.indexBrand = itemsLength;
+            }
+
+            this.indexNext = this.indexBrand + 1;
+            this.indexPrev = this.indexBrand - 1;
+
+            if (this.indexNext > itemsLength) {
+                this.indexNext = 0;
+            } else if (this.indexNext < 0) {
+                this.indexNext = 3;
+            }
+            if (this.indexPrev > itemsLength) {
+                this.indexPrev = 0;
+            } else if (this.indexPrev < 0) {
+                this.indexPrev = 3;
+            }
+            this.delayBg();
+        },
+        delayBg: function delayBg() {
             var _this = this;
 
-            this.bgActive = true;
-            this.indexNew = this.indexNext;
-            this.brandIndex++;
-            this.indexNext++;
-            this.indexPrev++;
-            if (this.brandIndex >= this.brandItems.length) {
-                this.brandIndex = 0;
-            }
-            if (this.indexPrev >= this.brandItems.length) {
-                this.indexPrev = 0;
-            }
-            if (this.indexNext >= this.brandItems.length) {
-                this.indexNext = 0;
-            }
             setTimeout(function () {
-                _this.delayIndex = _this.brandIndex;
+                _this.delayIndex = _this.indexBrand;
             }, 800);
             setTimeout(function () {
                 _this.bgActive = false;
             }, 1400);
-            this.$refs.slick.next();
-        },
-        slickPrev: function slickPrev() {
-            var _this2 = this;
-
-            this.bgActive = true;
-            this.indexNew = this.indexPrev;
-            this.brandIndex--;
-            this.indexNext--;
-            this.indexPrev--;
-            if (this.brandIndex <= 0) {
-                this.brandIndex = this.brandItems.length - 1;
-            }
-            if (this.indexPrev <= 0) {
-                this.indexPrev = this.brandItems.length - 1;
-            }
-            if (this.indexNext <= 0) {
-                this.indexNext = this.brandItems.length - 1;
-            }
-            setTimeout(function () {
-                _this2.delayIndex = _this2.brandIndex;
-            }, 800);
-            setTimeout(function () {
-                _this2.bgActive = false;
-            }, 1400);
-            this.$refs.slick.prev();
         }
     },
     mounted: function mounted() {
@@ -5148,7 +5136,8 @@ var render = function() {
         staticClass: "bg-transition -new bg-black-cover",
         class: { select: _vm.bgActive },
         staticStyle: { right: "0", left: "auto" },
-        style: "background-image: url(" + _vm.brandItems[_vm.indexNew].url + ")"
+        style:
+          "background-image: url(" + _vm.brandItems[_vm.indexBrand].url + ")"
       }),
       _vm._v(" "),
       _c(
@@ -5162,95 +5151,109 @@ var render = function() {
             "div",
             {
               staticClass:
-                "row h-100 w-100 flex-column align-items-center justify-content-between d-md-flex d-none"
+                "row h-100 w-100 flex-column align-items-center justify-content-center d-md-flex d-none"
             },
             [
               _vm._m(0),
               _vm._v(" "),
               _c(
-                "span",
-                {
-                  staticClass: "brand-title btn-prev slick-arrow",
-                  on: { click: _vm.slickPrev }
-                },
-                [_vm._v(_vm._s(_vm.brandItems[_vm.indexPrev].title))]
-              ),
-              _vm._v(" "),
-              _c(
-                "slick",
-                {
-                  ref: "slick",
-                  staticClass:
-                    "content-brands d-flex align-items-center justify-content-between mt-5 mb-5",
-                  attrs: { id: "slide-brands", options: _vm.slickOptions }
-                },
-                _vm._l(_vm.brandItems, function(item, $index) {
-                  return _c(
-                    "div",
-                    { key: $index, staticClass: "slick-brands" },
-                    [
-                      _c(
+                "div",
+                [
+                  _c(
+                    "span",
+                    {
+                      staticClass: "brand-title btn-prev slick-arrow",
+                      on: { click: _vm.slickPrev }
+                    },
+                    [_vm._v(_vm._s(_vm.brandItems[_vm.indexPrev].title))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "slick",
+                    {
+                      ref: "slick",
+                      staticClass:
+                        "content-brands d-flex align-items-center justify-content-center mt-5 mb-5",
+                      attrs: { id: "slide-brands", options: _vm.slickOptions }
+                    },
+                    _vm._l(_vm.brandItems, function(item, $index) {
+                      return _c(
                         "div",
-                        {
-                          staticClass:
-                            "content-brands position-relative d-flex flex-column align-items-center justify-content-between"
-                        },
+                        { key: $index, staticClass: "slick-brands" },
                         [
-                          _c("img", { attrs: { src: item.logo } }),
-                          _vm._v(" "),
                           _c(
                             "div",
                             {
                               staticClass:
-                                "info-brands align-items-end position-relative d-flex justify-content-center text-left"
+                                "content-brands position-relative d-flex flex-column align-items-center justify-content-center"
                             },
                             [
-                              _c(
-                                "a",
-                                {
-                                  attrs: {
-                                    href: _vm.brandItems[_vm.brandIndex].contact
-                                  }
-                                },
-                                [_vm._v("聯絡我們")]
-                              ),
-                              _vm._v(" "),
-                              _c("span", [_vm._v("・")]),
+                              _c("img", { attrs: { src: item.logo } }),
                               _vm._v(" "),
                               _c(
-                                "a",
+                                "div",
                                 {
-                                  attrs: {
-                                    href: _vm.brandItems[_vm.brandIndex].book
-                                  }
+                                  staticClass:
+                                    "info-brands align-items-end position-relative d-flex justify-content-center text-left"
                                 },
-                                [_vm._v("線上訂位")]
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      attrs: {
+                                        href:
+                                          _vm.brandItems[_vm.indexBrand].contact
+                                      }
+                                    },
+                                    [_vm._v("聯絡我們")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("span", [_vm._v("・")]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "a",
+                                    {
+                                      attrs: {
+                                        href:
+                                          _vm.brandItems[_vm.indexBrand].book
+                                      }
+                                    },
+                                    [_vm._v("線上訂位")]
+                                  )
+                                ]
                               )
                             ]
                           )
                         ]
                       )
-                    ]
+                    })
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    {
+                      staticClass: "brand-title btn-next slick-arrow",
+                      on: { click: _vm.slickNext }
+                    },
+                    [_vm._v(_vm._s(_vm.brandItems[_vm.indexNext].title))]
                   )
-                })
+                ],
+                1
               ),
               _vm._v(" "),
               _c(
-                "span",
-                {
-                  staticClass: "brand-title btn-next slick-arrow",
-                  on: { click: _vm.slickNext }
-                },
-                [_vm._v(_vm._s(_vm.brandItems[_vm.indexNext].title))]
-              ),
-              _vm._v(" "),
-              _c("p", {
-                staticClass: "text-brands",
-                class: { fade: _vm.addTransition },
-                domProps: {
-                  innerHTML: _vm._s(_vm.brandItems[_vm.indexNext].text)
-                }
-              })
+                "transition-group",
+                { attrs: { mode: "out-in", name: "fade" } },
+                _vm._l(_vm.brandItems, function(item, $index) {
+                  return _vm.indexBrand == $index
+                    ? _c("p", {
+                        key: $index,
+                        staticClass: "text-brands",
+                        domProps: { innerHTML: _vm._s(item.text) }
+                      })
+                    : _vm._e()
+                })
+              )
             ],
             1
           ),
@@ -5280,46 +5283,57 @@ var render = function() {
                           "div",
                           {
                             staticClass:
-                              "info-brands align-items-end position-relative border-radius-100 d-flex justify-content-center text-left",
-                            style: "background-image: url(" + item.logo + ")"
+                              "info-brands d-flex flex-column align-items-center position-relative border-radius-100 justify-content-center text-left"
                           },
                           [
-                            _c(
-                              "a",
-                              {
-                                attrs: {
-                                  href: _vm.brandItems[_vm.brandIndex].contact
-                                }
-                              },
-                              [_vm._v("聯絡我們")]
-                            ),
-                            _vm._v(" "),
-                            _c("span", [_vm._v("・")]),
+                            _c("img", { attrs: { src: item.logo } }),
                             _vm._v(" "),
                             _c(
-                              "a",
+                              "div",
                               {
-                                attrs: {
-                                  href: _vm.brandItems[_vm.brandIndex].book
-                                }
+                                staticClass:
+                                  "d-flex align-items-center justify-content-center"
                               },
-                              [_vm._v("線上訂位")]
+                              [
+                                _c(
+                                  "a",
+                                  {
+                                    attrs: {
+                                      href:
+                                        _vm.brandItems[_vm.indexBrand].contact
+                                    }
+                                  },
+                                  [_vm._v("聯絡我們")]
+                                ),
+                                _vm._v(" "),
+                                _c("span", [_vm._v("・")]),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    attrs: {
+                                      href: _vm.brandItems[_vm.indexBrand].book
+                                    }
+                                  },
+                                  [_vm._v("線上訂位")]
+                                )
+                              ]
                             )
                           ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "slick-brand-text" }, [
-                          _c("p", { staticClass: "text-title" }, [
-                            _vm._v(_vm._s(item.title))
-                          ]),
-                          _vm._v(" "),
-                          _c("p", {
-                            staticClass: "text-brand-info",
-                            domProps: { innerHTML: _vm._s(item.text) }
-                          })
-                        ])
+                        )
                       ]
-                    )
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "slick-brand-text" }, [
+                      _c("p", { staticClass: "text-title" }, [
+                        _vm._v(_vm._s(item.title))
+                      ]),
+                      _vm._v(" "),
+                      _c("p", {
+                        staticClass: "text-brand-info",
+                        domProps: { innerHTML: _vm._s(item.text) }
+                      })
+                    ])
                   ]
                 )
               })
@@ -6054,7 +6068,7 @@ exports = module.exports = __webpack_require__(48)(false);
 
 
 // module
-exports.push([module.i, "\n#block-foods {\n  background-size: cover;\n  background-position: 0;\n}\n#block-foods.active .block-food-body .content-food.left-content, #block-foods.active .block-food-body .content-food.right-content {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n    opacity: 1;\n}\n#block-foods.active .block-food-body .bg-left .bg-inner {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    background-position-y: center;\n}\n#block-foods .line-top:before {\n    content: \"\";\n    background: #f46f1b;\n    width: 60px;\n    height: 1px;\n    display: block;\n    margin-bottom: 20px;\n}\n#block-foods .block-food-body {\n    background-repeat: no-repeat;\n    background-size: cover;\n    height: 100vh;\n}\n#block-foods .block-food-body:after {\n      content: \"\";\n      position: absolute;\n      left: 0;\n      width: 100%;\n      height: 100%;\n      background: rgba(0, 0, 0, 0.6);\n}\n#block-foods .block-food-body .bg-left .bg-inner {\n      background-position: center;\n      background-size: cover;\n      background-position-y: 100vh;\n      -webkit-transition: all .5s;\n      transition: all .5s;\n}\n#block-foods .block-food-body .bg-left .bg-inner.active {\n        background-position-y: 100vh;\n        -webkit-transition: initial;\n        transition: initial;\n}\n#block-foods .block-food-body .content-food {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      padding: 0 100px;\n      overflow: hidden;\n      z-index: 2;\n}\n#block-foods .block-food-body .content-food .big_title {\n        font-size: 140px;\n        font-weight: 600;\n}\n#block-foods .block-food-body .content-food .more-food-info {\n        width: 100px;\n        height: 100px;\n        display: inline-block;\n        border-radius: 100%;\n        background-position: center;\n        background-size: cover;\n        cursor: pointer;\n        margin-right: 25px;\n        -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);\n                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);\n}\n#block-foods .block-food-body .content-food .more-food-info.active, #block-foods .block-food-body .content-food .more-food-info:hover {\n          opacity: 0.8;\n          -webkit-box-shadow: 0px 0px 20px black;\n                  box-shadow: 0px 0px 20px black;\n          -webkit-transition: all .3s;\n          transition: all .3s;\n}\n#block-foods .block-food-body .content-food > div {\n        position: relative;\n        z-index: 2;\n}\n#block-foods .block-food-body .content-food.left-content, #block-foods .block-food-body .content-food.right-content {\n        -webkit-transition: opacity 1s, -webkit-transform 1s;\n        transition: opacity 1s, -webkit-transform 1s;\n        transition: transform 1s, opacity 1s;\n        transition: transform 1s, opacity 1s, -webkit-transform 1s;\n        opacity: 0;\n}\n#block-foods .block-food-body .content-food.left-content {\n        background: transparent;\n        padding: 100px;\n}\n#block-foods .block-food-body .content-food.left-content .line-top {\n          line-height: 25px;\n}\n#block-foods .block-food-body .content-food.right-content {\n        background: white;\n        z-index: 2;\n        -webkit-transform: translateY(-100%);\n                transform: translateY(-100%);\n}\n#block-foods .block-food-body .content-food.right-content:before, #block-foods .block-food-body .content-food.right-content:after {\n          content: \"\";\n          position: absolute;\n          border-radius: 100%;\n}\n#block-foods .block-food-body .content-food.right-content:before {\n          width: 850px;\n          height: 850px;\n          background: rgba(242, 108, 35, 0.1);\n          right: -540px;\n          bottom: -480px;\n}\n#block-foods .block-food-body .content-food.right-content:after {\n          width: 100px;\n          height: 100px;\n          background: rgba(0, 0, 0, 0.22);\n          right: -70px;\n          bottom: 300px;\n}\n#block-foods .block-food-body .content-food.right-content .food-info-inner {\n          height: 500px;\n          width: 500px;\n          background: #f26d23;\n          border-radius: 100%;\n          -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n                  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n          -webkit-transition: all .5s;\n          transition: all .5s;\n}\n#block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-info {\n            font-weight: 300;\n            letter-spacing: 2px;\n}\n#block-foods .block-food-body .content-food.right-content .loader {\n          position: absolute;\n          width: 850px;\n          height: 850px;\n          bottom: 0;\n          left: 0;\n}\n#block-foods .block-food-body .content-food.right-content .loader.active {\n            -webkit-transform: rotate(360deg);\n                    transform: rotate(360deg);\n            -webkit-transition: all .5s ease-in-out;\n            transition: all .5s ease-in-out;\n}\n#block-foods .block-food-body .content-food.right-content .more-food-info {\n          display: none;\n}\n@media only screen and (max-width: 991px) {\n#app #block-foods .bg-transition {\n    width: 100vw;\n}\n#app #block-foods .block-food-body .content-food h3, #app #block-foods .block-food-body .content-food span {\n    color: white !important;\n    letter-spacing: 5px;\n    text-align: center;\n}\n#app #block-foods .block-food-body .content-food h3 {\n    font-size: 28px;\n    z-index: 2;\n}\n#app #block-foods .block-food-body .content-food .sub-title {\n    font-size: 12px;\n}\n#app #block-foods .block-food-body .content-food.left-content {\n    display: none !important;\n}\n#app #block-foods .block-food-body .content-food.right-content {\n    background: transparent;\n    padding: 90px 20px 23px 20px;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#app #block-foods .block-food-body .content-food.right-content .more-food-info {\n      display: block;\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner {\n      height: 300px;\n      width: 300px;\n      background: rgba(242, 109, 35, 0.8);\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-title {\n        font-size: 21px;\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-info {\n        font-size: 12px;\n}\n#app #block-foods .block-food-body .content-food .more-food-info {\n    margin: 0 20px;\n    width: 68px;\n    height: 68px;\n    border: 1px solid #f26b23;\n}\n#app #block-foods .block-food-body .content-food .more-food-info:last-child {\n      margin-right: 0;\n}\n#app #block-foods .block-food-body .content-food .more-food-info span {\n      left: 0;\n      bottom: -25px;\n      font-size: 12px;\n      letter-spacing: 2px;\n}\n#app #block-foods .block-food-body .content-food .loader {\n    width: 100vw;\n    left: 15%;\n}\n}\n@media only screen and (max-width: 420px) {\n#app #block-foods .block-food-body .content-food.right-content {\n    padding: 25px 20px;\n}\n#app #block-foods .block-food-body .content-food .loader circle {\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n}\n#app #block-foods .block-food-body .content-food .loader.active circle {\n    -webkit-transform: rotate(180deg) scale(0.6);\n            transform: rotate(180deg) scale(0.6);\n}\n}\n", ""]);
+exports.push([module.i, "\n#block-foods {\n  background-size: cover;\n  background-position: 0;\n}\n#block-foods.active .block-food-body .content-food.left-content, #block-foods.active .block-food-body .content-food.right-content {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n    opacity: 1;\n}\n#block-foods.active .block-food-body .bg-left .bg-inner {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    background-position-y: center;\n}\n#block-foods .line-top:before {\n    content: \"\";\n    background: #f46f1b;\n    width: 60px;\n    height: 1px;\n    display: block;\n    margin-bottom: 20px;\n}\n#block-foods .block-food-body {\n    background-repeat: no-repeat;\n    background-size: cover;\n    height: 100vh;\n}\n#block-foods .block-food-body:after {\n      content: \"\";\n      position: absolute;\n      left: 0;\n      width: 100%;\n      height: 100%;\n      background: rgba(0, 0, 0, 0.6);\n}\n#block-foods .block-food-body .bg-left .bg-inner {\n      background-position: center;\n      background-size: cover;\n      background-position-y: 100vh;\n      -webkit-transition: all .5s;\n      transition: all .5s;\n}\n#block-foods .block-food-body .bg-left .bg-inner.active {\n        background-position-y: 100vh;\n        -webkit-transition: initial;\n        transition: initial;\n}\n#block-foods .block-food-body .content-food {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      padding: 0 100px;\n      overflow: hidden;\n      z-index: 2;\n}\n#block-foods .block-food-body .content-food .big_title {\n        font-size: 140px;\n        font-weight: 600;\n}\n#block-foods .block-food-body .content-food .more-food-info {\n        width: 100px;\n        height: 100px;\n        display: inline-block;\n        border-radius: 100%;\n        background-position: center;\n        background-size: cover;\n        cursor: pointer;\n        margin-right: 25px;\n        -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);\n                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);\n}\n#block-foods .block-food-body .content-food .more-food-info.active, #block-foods .block-food-body .content-food .more-food-info:hover {\n          opacity: 0.8;\n          -webkit-box-shadow: 0px 0px 20px black;\n                  box-shadow: 0px 0px 20px black;\n          -webkit-transition: all .3s;\n          transition: all .3s;\n}\n#block-foods .block-food-body .content-food > div {\n        position: relative;\n        z-index: 2;\n}\n#block-foods .block-food-body .content-food.left-content, #block-foods .block-food-body .content-food.right-content {\n        -webkit-transition: opacity 1s, -webkit-transform 1s;\n        transition: opacity 1s, -webkit-transform 1s;\n        transition: transform 1s, opacity 1s;\n        transition: transform 1s, opacity 1s, -webkit-transform 1s;\n        opacity: 0;\n}\n#block-foods .block-food-body .content-food.left-content {\n        background: transparent;\n        padding: 100px;\n}\n#block-foods .block-food-body .content-food.left-content .line-top {\n          line-height: 25px;\n}\n#block-foods .block-food-body .content-food.right-content {\n        background: white;\n        z-index: 2;\n        -webkit-transform: translateY(-100%);\n                transform: translateY(-100%);\n}\n#block-foods .block-food-body .content-food.right-content:before, #block-foods .block-food-body .content-food.right-content:after {\n          content: \"\";\n          position: absolute;\n          border-radius: 100%;\n}\n#block-foods .block-food-body .content-food.right-content:before {\n          width: 850px;\n          height: 850px;\n          background: rgba(242, 108, 35, 0.1);\n          right: -540px;\n          bottom: -480px;\n}\n#block-foods .block-food-body .content-food.right-content:after {\n          width: 100px;\n          height: 100px;\n          background: rgba(0, 0, 0, 0.22);\n          right: -70px;\n          bottom: 300px;\n}\n#block-foods .block-food-body .content-food.right-content .food-info-inner {\n          height: 500px;\n          width: 500px;\n          background: #f26d23;\n          border-radius: 100%;\n          -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n                  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n          -webkit-transition: all .5s;\n          transition: all .5s;\n}\n#block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-info {\n            font-weight: 300;\n            letter-spacing: 2px;\n}\n#block-foods .block-food-body .content-food.right-content .loader {\n          position: absolute;\n          width: auto;\n          height: 100vh;\n          bottom: -30px;\n          left: -140px;\n}\n#block-foods .block-food-body .content-food.right-content .loader.active {\n            -webkit-transform: rotate(360deg);\n                    transform: rotate(360deg);\n            -webkit-transition: all .5s ease-in-out;\n            transition: all .5s ease-in-out;\n}\n#block-foods .block-food-body .content-food.right-content .more-food-info {\n          display: none;\n}\n@media only screen and (max-width: 991px) {\n#app #block-foods .bg-transition {\n    width: 100vw;\n}\n#app #block-foods .block-food-body .content-food h3, #app #block-foods .block-food-body .content-food span {\n    color: white !important;\n    letter-spacing: 5px;\n    text-align: center;\n}\n#app #block-foods .block-food-body .content-food h3 {\n    font-size: 28px;\n    z-index: 2;\n}\n#app #block-foods .block-food-body .content-food .sub-title {\n    font-size: 12px;\n}\n#app #block-foods .block-food-body .content-food.left-content {\n    display: none !important;\n}\n#app #block-foods .block-food-body .content-food.right-content {\n    background: transparent;\n    padding: 90px 20px 23px 20px;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#app #block-foods .block-food-body .content-food.right-content .more-food-info {\n      display: block;\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner {\n      height: 300px;\n      width: 300px;\n      background: rgba(242, 109, 35, 0.8);\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-title {\n        font-size: 21px;\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-info {\n        font-size: 12px;\n}\n#app #block-foods .block-food-body .content-food .more-food-info {\n    margin: 0 20px;\n    width: 68px;\n    height: 68px;\n    border: 1px solid #f26b23;\n}\n#app #block-foods .block-food-body .content-food .more-food-info:last-child {\n      margin-right: 0;\n}\n#app #block-foods .block-food-body .content-food .more-food-info span {\n      left: 0;\n      bottom: -25px;\n      font-size: 12px;\n      letter-spacing: 2px;\n}\n#app #block-foods .block-food-body .content-food .loader {\n    width: 100vw;\n    left: 15%;\n}\n}\n@media only screen and (max-width: 420px) {\n#app #block-foods .block-food-body .content-food.right-content {\n    padding: 25px 20px;\n}\n#app #block-foods .block-food-body .content-food .loader circle {\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n}\n#app #block-foods .block-food-body .content-food .loader.active circle {\n    -webkit-transform: rotate(180deg) scale(0.6);\n            transform: rotate(180deg) scale(0.6);\n}\n}\n", ""]);
 
 // exports
 
@@ -6066,12 +6080,6 @@ exports.push([module.i, "\n#block-foods {\n  background-size: cover;\n  backgrou
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -6280,81 +6288,63 @@ var render = function() {
               "svg",
               {
                 staticClass: "loader",
-                staticStyle: { "enable-background": "new 0 0 850 850" },
-                attrs: {
-                  version: "1.1",
-                  xmlns: "http://www.w3.org/2000/svg",
-                  "xmlns:xlink": "http://www.w3.org/1999/xlink",
-                  viewBox: "0 0 850 850",
-                  "xml:space": "preserve"
-                }
+                class: { active: _vm.addTransition },
+                attrs: { viewBox: "0 0 850 850" }
               },
               [
                 _c(
                   "g",
                   {
                     staticStyle: { opacity: "0.3" },
-                    attrs: {
-                      id: "Content-Menu-3",
-                      transform: "translate(0.000000, -146.000000)"
-                    }
+                    attrs: { id: "Content-Menu-3" }
                   },
                   [
-                    _c(
-                      "g",
-                      {
+                    _c("g", { attrs: { id: "Group-2" } }, [
+                      _c("path", {
+                        staticStyle: {
+                          fill: "none",
+                          stroke: "#EB5E00",
+                          "stroke-width": "5",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round"
+                        },
                         attrs: {
-                          id: "Group-2",
-                          transform: "translate(1.000000, 148.000000)"
+                          id: "Path-7",
+                          d:
+                            "M694.2,99.9\n                        c27.2,23.1,46.5,43.1,57.8,60.2"
                         }
-                      },
-                      [
-                        _c("path", {
-                          staticStyle: {
-                            fill: "none",
-                            stroke: "#EB5E00",
-                            "stroke-width": "3",
-                            "stroke-linecap": "round",
-                            "stroke-linejoin": "round"
-                          },
-                          attrs: {
-                            id: "Path-7",
-                            d:
-                              "M664.1,74.2\n                            c28.4,24.1,48.5,45,60.3,62.8"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          staticStyle: {
-                            fill: "none",
-                            stroke: "#EB5E00",
-                            "stroke-width": "3",
-                            "stroke-linecap": "round",
-                            "stroke-linejoin": "round"
-                          },
-                          attrs: {
-                            id: "Path-6",
-                            d:
-                              "M67.4,99.3\n                            C110.6,50.4,164,16.6,227.6-2"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          staticStyle: {
-                            fill: "none",
-                            stroke: "#EB5E00",
-                            "stroke-width": "3",
-                            "stroke-linecap": "round",
-                            "stroke-linejoin": "round"
-                          },
-                          attrs: {
-                            id: "Path-8",
-                            d:
-                              "M782.9,589.8\n                            C711.6,737.4,596.4,823.5,437.3,848"
-                          }
-                        })
-                      ]
-                    )
+                      }),
+                      _vm._v(" "),
+                      _c("path", {
+                        staticStyle: {
+                          fill: "none",
+                          stroke: "#EB5E00",
+                          "stroke-width": "5",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round"
+                        },
+                        attrs: {
+                          id: "Path-6",
+                          d:
+                            "M122.8,124\n                        c41.4-46.8,92.6-79.2,153.5-97"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("path", {
+                        staticStyle: {
+                          fill: "none",
+                          stroke: "#EB5E00",
+                          "stroke-width": "5",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round"
+                        },
+                        attrs: {
+                          id: "Path-8",
+                          d:
+                            "M807.9,593.7\n                        C739.6,735,629.3,817.4,477,840.9"
+                        }
+                      })
+                    ])
                   ]
                 )
               ]

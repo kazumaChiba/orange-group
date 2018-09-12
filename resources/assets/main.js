@@ -22,6 +22,20 @@ import store from './store'
 // Fullpage : https://github.com/alvarotrigo/fullPage.js/
 import Vue from 'vue'
 
+import * as VueGoogleMaps from 'vue2-google-maps'
+Vue.use(VueGoogleMaps, {
+    load: {
+        key: 'AIzaSyBQiOSZLRvuKC0Ejo-2tLNv5v3l_qfbrW4', //AIzaSyD-Yjh575xmaPu3O-gBx_kk4AZ1Nyx_GjI
+        libraries: 'places',
+    },
+    // Demonstrating how we can customize the name of the components
+    //installComponents: true,
+});
+
+Vue.component('GmapMap', VueGoogleMaps.Map);
+Vue.component('GmapMarker', VueGoogleMaps.Marker);
+Vue.component('GmapInfoWindow', VueGoogleMaps.InfoWindow);
+
 //https://www.npmjs.com/package/vue2-scrollbar
 
 

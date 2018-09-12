@@ -28,7 +28,7 @@
                         <!--<el-scrollbar>-->
                         <div class="container position-relative m-auto section-pd">
                             <!--<vue-scrollbar classes="my-scrollbar" ref="Scrollbar" :onMaxScroll="handleMaxScroll" :style="{height: '100vh'}">-->
-                            <div class="row flex-column align-items-center justify-content-center flex-nowrap">
+                            <div class="flex-column align-items-center justify-content-center">
                                 <h3 class="main-title text-uppercase">
                                     <span class="fs-inherit text-orange">橘色</span>新訊
                                 </h3>
@@ -204,14 +204,19 @@
     #app
         .logo
             position: absolute
-
+        #block-news
+            .main-title 
+                .text-orange
+                    color: #f26e22 !important
+            .sub-title
+                font-weight: 200
         //.main-title
             //line-height: 35px
         //.sub-title
-            letter-spacing: 10px
-            font-weight: 100
-            font-size: 16px
-            font-family: "PingFang SC",微軟正黑體
+            // letter-spacing: 10px
+            // font-weight: 100
+            // font-size: 16px
+            // font-family: "PingFang SC",微軟正黑體
         
 </style>
 <style lang="sass">

@@ -157,6 +157,7 @@
                                 top: 28px
                                 left: 23px
                                 padding: 0
+                                transform: translate(0)
                 
             #burger-menu
                 display: none !important

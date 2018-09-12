@@ -1,18 +1,18 @@
 webpackJsonp([4],{
 
-/***/ 356:
+/***/ 394:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(592)
+  __webpack_require__(630)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(8)
 /* script */
-var __vue_script__ = __webpack_require__(594)
+var __vue_script__ = __webpack_require__(632)
 /* template */
-var __vue_template__ = __webpack_require__(595)
+var __vue_template__ = __webpack_require__(633)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -52,19 +52,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 365:
+/***/ 403:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(366)
+  __webpack_require__(404)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(8)
 /* script */
-var __vue_script__ = __webpack_require__(368)
+var __vue_script__ = __webpack_require__(406)
 /* template */
-var __vue_template__ = __webpack_require__(369)
+var __vue_template__ = __webpack_require__(407)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -104,17 +104,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 366:
+/***/ 404:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(367);
+var content = __webpack_require__(405);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(204)("b8d6fad2", content, false, {});
+var update = __webpack_require__(31)("b8d6fad2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -131,10 +131,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 367:
+/***/ 405:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(23)(false);
 // imports
 
 
@@ -146,7 +146,7 @@ exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .j
 
 /***/ }),
 
-/***/ 368:
+/***/ 406:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -228,7 +228,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 369:
+/***/ 407:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -256,7 +256,7 @@ var render = function() {
               "div",
               {
                 staticClass:
-                  "row d-flex justify-content-between align-items-center flex-column flex-lg-row"
+                  "row d-flex w-100 m-0 justify-content-between align-items-center flex-column flex-lg-row"
               },
               [
                 _vm._m(0),
@@ -281,7 +281,8 @@ var render = function() {
             _c(
               "div",
               {
-                staticClass: "row mb-lg-5 pb-lg-5 flex-wrap-reverse flex-lg-row"
+                staticClass:
+                  "d-flex mb-lg-5 pb-lg-5 flex-wrap-reverse flex-lg-row"
               },
               [
                 _vm._m(1),
@@ -528,19 +529,19 @@ if (false) {
 
 /***/ }),
 
-/***/ 374:
+/***/ 412:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(375)
+  __webpack_require__(413)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(8)
 /* script */
-var __vue_script__ = __webpack_require__(377)
+var __vue_script__ = __webpack_require__(415)
 /* template */
-var __vue_template__ = __webpack_require__(378)
+var __vue_template__ = __webpack_require__(416)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -580,17 +581,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 375:
+/***/ 413:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(376);
+var content = __webpack_require__(414);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(204)("822c5f64", content, false, {});
+var update = __webpack_require__(31)("822c5f64", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -607,26 +608,27 @@ if(false) {
 
 /***/ }),
 
-/***/ 376:
+/***/ 414:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(23)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n#block-breadcrumb {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  height: 50vh;\n}\n#block-breadcrumb:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    top: 0;\n}\n@media only screen and (max-width: 991px) {\n#block-breadcrumb {\n      height: 220px;\n}\n#block-breadcrumb .banner-title {\n        font-size: 28px;\n}\n#block-breadcrumb .banner-title span {\n          color: white !important;\n}\n}\n", ""]);
+exports.push([module.i, "\n#block-breadcrumb {\n  background-repeat: no-repeat;\n  background-size: auto;\n  background-position: top;\n  background-attachment: fixed;\n  height: 50vh;\n}\n#block-breadcrumb:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    top: 0;\n}\n@media only screen and (max-width: 991px) {\n#block-breadcrumb {\n      height: 220px;\n}\n#block-breadcrumb .banner-title {\n        font-size: 28px;\n}\n#block-breadcrumb .banner-title span {\n          color: white !important;\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 377:
+/***/ 415:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -687,7 +689,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 378:
+/***/ 416:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -783,17 +785,17 @@ if (false) {
 
 /***/ }),
 
-/***/ 592:
+/***/ 630:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(593);
+var content = __webpack_require__(631);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(204)("3bcafb7a", content, false, {});
+var update = __webpack_require__(31)("3bcafb7a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -810,31 +812,31 @@ if(false) {
 
 /***/ }),
 
-/***/ 593:
+/***/ 631:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(23)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n@charset \"UTF-8\";\n#block-news-item {\n  height: 95vh;\n}\n#block-news-item .news-item-head {\n    margin-top: 25vh;\n}\n#block-news-item .news-item-head .news-item-title {\n      font-size: 60px;\n      margin-bottom: 70px;\n}\n#block-news-item .news-item-head .news-item-info {\n      margin-bottom: 50px;\n}\n#block-news-item .news-item-head .news-item-info .info-title {\n        font-size: 13px;\n        color: #b3b3b3;\n}\n#block-news-item .item-news-body {\n    background: white;\n    color: black;\n    margin-top: 30px;\n}\n#block-news-item .item-news-body .item-relatives {\n      margin: 45px 0;\n}\n#block-news-item .item-news-body .item-relatives .item-relative.-pre {\n        padding-left: 30px;\n}\n#block-news-item .item-news-body .item-relatives .item-relative.-pre a:before {\n          right: auto;\n          left: -25px;\n          -webkit-transform: rotate(180deg);\n                  transform: rotate(180deg);\n}\n#block-news-item .item-news-body .item-relatives .item-relative.-next {\n        padding-right: 30px;\n}\n#block-news-item .item-news-body .item-relatives .item-relative a:before {\n        content: \"\\2794\";\n        position: absolute;\n        top: 0;\n        right: -25px;\n}\n#block-news-item .item-news-body .item-relatives .title-relative {\n        font-size: 13px;\n        color: gray;\n}\n#block-news-item .item-news-body .item-relatives a {\n        display: block;\n        color: black;\n        margin-top: 5px;\n}\n#block-news-item .item-news-body .item-relatives a:hover {\n          color: #f36f1b;\n}\n#block-news-item .item-news-body .item-intro-text {\n      font-size: 22px;\n      line-height: 35px;\n}\n#block-news-item .item-news-body .item-news-content {\n      line-height: 28px;\n      padding: 100px 180px;\n}\n#block-news-item .item-news-body .item-news-content p, #block-news-item .item-news-body .item-news-content span, #block-news-item .item-news-body .item-news-content ul {\n        margin: 30px 0;\n        font-size: 15px;\n        font-weight: 500;\n}\n#block-news-item .item-news-body .item-news-content img {\n        width: 100%;\n        margin: 30px 0px 20px 0;\n}\n#block-news-item .item-news-body .item-news-content .text-img {\n        margin-top: 0;\n        font-size: 18px;\n}\n#block-news-item .item-news-body .item-news-content .text-big-orange {\n        font-size: 38px;\n        color: #f26e22;\n        text-align: center;\n        padding: 40px 0;\n        margin: 15px 0;\n        position: relative;\n}\n#block-news-item .item-news-body .item-news-content .text-big-orange:after {\n          content: \"\";\n          width: 30px;\n          height: 1px;\n          background: #f26e22;\n          position: absolute;\n          bottom: 0;\n          left: calc(50% - 15px);\n}\n#block-news-item .item-news-body .item-news-content .text-intro-small {\n        font-size: 14px;\n        font-weight: 600;\n}\n#block-news-item .item-news-body .item-news-content .text-intro-title {\n        font-size: 33px;\n        color: #f26e22;\n        padding: 20px 0;\n        margin: 15px 0;\n}\n#block-news-item .item-news-foot {\n    padding-bottom: 30px;\n    margin-bottom: 30px;\n    border-bottom: 1px solid #ccc;\n}\n#block-news-item .item-news-foot .item-social-list span {\n      font-size: 13px;\n      color: gray;\n}\n#block-news-item .item-news-foot .item-tags-list .item-tag {\n      border: 1px solid #ccc;\n      color: gray;\n      padding: 5px 15px;\n      font-size: 12px;\n      margin-right: 5px;\n}\n#block-news-item .item-news-foot .item-tags-list .item-tag:hover {\n        border-color: #f26d23;\n        color: #f26d23;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n        cursor: pointer;\n}\n#block-news-item .item-news-foot .item-social .social-icons {\n      width: 30px;\n      height: 30px;\n      border-radius: 100%;\n}\n#block-news-item .item-news-foot .item-social .social-icons:hover {\n        color: white;\n}\n#block-news-item .item-news-foot .item-social .social-icons.facebook {\n        background-color: #3b5999;\n}\n#block-news-item .item-news-foot .item-social .social-icons.twitter {\n        background-color: #53acee;\n}\n#block-news-item .item-news-foot .item-social .social-icons.google {\n        background-color: #dd4a3a;\n}\n#block-news-item .item-news-foot .item-social .social-icons.linkedin-in {\n        background-color: #0076b4;\n}\n#block-news-item .el-breadcrumb {\n    -webkit-box-pack: left;\n        -ms-flex-pack: left;\n            justify-content: left;\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\n#block-news-item {\n  height: 95vh;\n}\n#block-news-item .news-item-head {\n    margin-top: 25vh;\n}\n#block-news-item .news-item-head .news-item-title {\n      font-size: 60px;\n      margin-bottom: 70px;\n}\n#block-news-item .news-item-head .news-item-info {\n      margin-bottom: 50px;\n}\n#block-news-item .news-item-head .news-item-info .info-title {\n        font-size: 13px;\n        color: #b3b3b3;\n}\n#block-news-item .item-news-body {\n    background: white;\n    color: black;\n    margin-top: 30px;\n}\n#block-news-item .item-news-body .item-relatives {\n      margin: 45px 0;\n}\n#block-news-item .item-news-body .item-relatives .item-relative.-pre {\n        padding-left: 30px;\n}\n#block-news-item .item-news-body .item-relatives .item-relative.-pre a:before {\n          right: auto;\n          left: -25px;\n          -webkit-transform: rotate(180deg);\n                  transform: rotate(180deg);\n}\n#block-news-item .item-news-body .item-relatives .item-relative.-next {\n        padding-right: 30px;\n}\n#block-news-item .item-news-body .item-relatives .item-relative a:before {\n        content: \"\\2794\";\n        position: absolute;\n        top: 0;\n        right: -25px;\n}\n#block-news-item .item-news-body .item-relatives .title-relative {\n        font-size: 13px;\n        color: gray;\n}\n#block-news-item .item-news-body .item-relatives a {\n        display: block;\n        color: black;\n        margin-top: 5px;\n}\n#block-news-item .item-news-body .item-relatives a:hover {\n          color: #f36f1b;\n}\n#block-news-item .item-news-body .item-intro-text {\n      font-size: 22px;\n      line-height: 35px;\n}\n#block-news-item .item-news-body .item-news-content {\n      line-height: 28px;\n      padding: 100px 180px;\n}\n#block-news-item .item-news-body .item-news-content p, #block-news-item .item-news-body .item-news-content span, #block-news-item .item-news-body .item-news-content ul {\n        margin: 30px 0;\n        font-size: 15px;\n        font-weight: 500;\n}\n#block-news-item .item-news-body .item-news-content img {\n        width: 100%;\n        margin: 30px 0px 20px 0;\n}\n#block-news-item .item-news-body .item-news-content .text-img {\n        margin-top: 0;\n        font-size: 18px;\n}\n#block-news-item .item-news-body .item-news-content .text-big-orange {\n        font-size: 38px;\n        color: #f26e22;\n        text-align: center;\n        padding: 40px 0;\n        margin: 15px 0;\n        position: relative;\n}\n#block-news-item .item-news-body .item-news-content .text-big-orange:after {\n          content: \"\";\n          width: 30px;\n          height: 1px;\n          background: #f26e22;\n          position: absolute;\n          bottom: 0;\n          left: calc(50% - 15px);\n}\n#block-news-item .item-news-body .item-news-content .text-intro-small {\n        font-size: 14px;\n        font-weight: 600;\n}\n#block-news-item .item-news-body .item-news-content .text-intro-title {\n        font-size: 33px;\n        color: #f26e22;\n        padding: 20px 0;\n        margin: 15px 0;\n}\n#block-news-item .item-news-foot {\n    padding-bottom: 30px;\n    margin-bottom: 30px;\n    border-bottom: 1px solid #ccc;\n}\n#block-news-item .item-news-foot .item-social-list span {\n      font-size: 13px;\n      color: gray;\n}\n#block-news-item .item-news-foot .item-tags-list .item-tag {\n      border: 1px solid #ccc;\n      color: gray;\n      padding: 5px 15px;\n      font-size: 12px;\n      margin-right: 5px;\n}\n#block-news-item .item-news-foot .item-tags-list .item-tag:hover {\n        border-color: #f26d23;\n        color: #f26d23;\n        -webkit-transition: all .3s;\n        transition: all .3s;\n        cursor: pointer;\n}\n#block-news-item .item-news-foot .item-social .social-icons {\n      width: 30px;\n      height: 30px;\n      border-radius: 100%;\n}\n#block-news-item .item-news-foot .item-social .social-icons:hover {\n        color: white;\n        -webkit-box-shadow: 0px 0 15px rgba(0, 0, 0, 0.4);\n                box-shadow: 0px 0 15px rgba(0, 0, 0, 0.4);\n}\n#block-news-item .item-news-foot .item-social .social-icons.facebook {\n        background-color: #3b5999;\n}\n#block-news-item .item-news-foot .item-social .social-icons.twitter {\n        background-color: #53acee;\n}\n#block-news-item .item-news-foot .item-social .social-icons.google {\n        background-color: #dd4a3a;\n}\n#block-news-item .item-news-foot .item-social .social-icons.linkedin-in {\n        background-color: #0076b4;\n}\n#block-news-item .el-breadcrumb {\n    -webkit-box-pack: left;\n        -ms-flex-pack: left;\n            justify-content: left;\n}\n@media only screen and (max-width: 991px) {\n#block-news-item .news-item-head {\n      margin-top: 120px;\n}\n#block-news-item .news-item-head .news-item-title {\n        margin-bottom: 20px;\n        font-size: 32px;\n}\n#block-news-item .news-item-head .news-item-info {\n        margin-bottom: 20px;\n}\n#block-news-item .news-item-head .news-item-info .news-info {\n          margin-bottom: 10px;\n}\n#block-news-item .news-item-head .btn-play {\n        margin-bottom: 40px;\n}\n#block-news-item .item-news-body .item-news-content {\n      padding: 0 25px;\n}\n#block-news-item .item-news-body .item-news-content p {\n        line-height: 25px;\n}\n#block-news-item .item-news-body .item-news-content .text-big-orange, #block-news-item .item-news-body .item-news-content .text-intro-title {\n        font-size: 20px;\n        padding: 10px 0;\n}\n#block-news-item .item-news-body .item-tags-list {\n      margin-bottom: 30px;\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 594:
+/***/ 632:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_banner__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_banner__ = __webpack_require__(412);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_banner___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_components_block_banner__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header__ = __webpack_require__(214);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_components_block_menu_header__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_footer__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_footer__ = __webpack_require__(403);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_components_block_footer__);
 //
 //
@@ -948,7 +950,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 595:
+/***/ 633:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -1069,7 +1071,7 @@ var render = function() {
                   "div",
                   {
                     staticClass:
-                      "item-news-foot w-100 d-flex justify-content-between"
+                      "item-news-foot w-100 d-flex justify-content-between flex-column flex-lg-row"
                   },
                   [
                     _vm._m(4),
@@ -1175,27 +1177,31 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "news-item-info d-flex" }, [
-      _c("div", { staticClass: "news-info -date d-flex flex-column mr-5" }, [
-        _c("span", { staticClass: "info-title" }, [_vm._v("發佈日期：")]),
+    return _c(
+      "div",
+      { staticClass: "news-item-info d-flex flex-column flex-lg-row" },
+      [
+        _c("div", { staticClass: "news-info -date d-flex flex-column mr-5" }, [
+          _c("span", { staticClass: "info-title" }, [_vm._v("發佈日期：")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "info-text" }, [_vm._v("2018/3/21")])
+        ]),
         _vm._v(" "),
-        _c("span", { staticClass: "info-text" }, [_vm._v("2018/3/21")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "news-info -group d-flex flex-column mr-5" }, [
-        _c("span", { staticClass: "info-title" }, [_vm._v("發佈單位：")]),
+        _c("div", { staticClass: "news-info -group d-flex flex-column mr-5" }, [
+          _c("span", { staticClass: "info-title" }, [_vm._v("發佈單位：")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "info-text text-orange" }, [
+            _vm._v("橘色涮涮屋")
+          ])
+        ]),
         _vm._v(" "),
-        _c("span", { staticClass: "info-text text-orange" }, [
-          _vm._v("橘色涮涮屋")
+        _c("div", { staticClass: "news-info -cate d-flex flex-column mr-5" }, [
+          _c("span", { staticClass: "info-title" }, [_vm._v("發佈類別：")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "info-text" }, [_vm._v("最新消息")])
         ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "news-info -cate d-flex flex-column mr-5" }, [
-        _c("span", { staticClass: "info-title" }, [_vm._v("發佈類別：")]),
-        _vm._v(" "),
-        _c("span", { staticClass: "info-text" }, [_vm._v("最新消息")])
-      ])
-    ])
+      ]
+    )
   },
   function() {
     var _vm = this

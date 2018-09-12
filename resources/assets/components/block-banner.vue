@@ -20,8 +20,9 @@
 <style lang="sass">   
     #block-breadcrumb
         background-repeat: no-repeat
-        background-size: cover
-        background-position: center
+        background-size: auto
+        background-position: top
+        background-attachment: fixed
         height: 50vh
         &:before
             content: ""

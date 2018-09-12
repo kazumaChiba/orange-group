@@ -54,14 +54,16 @@
                 :options="teamsOptionView"
             >
                 <div 
-                    class="team-content-texts position-relative d-flex flex-column justify-content-center text-white"
+                    class="team-content"
                     v-for="(item,$index) in slick_teams"
                     :key="$index"    
                     :style="'background-image:url('+item.img_big+')'"
                 >
-                    <h3 class=" position-relative">看看我們的夥伴們怎麼說</h3>
-                    <p class="team-desc position-relative" v-html="item.text"></p>
-                    <span class="team-name d-block text-right  position-relative">- {{item.team}} {{item.member}}</span>
+                    <div class="team-content-texts position-relative d-flex flex-column justify-content-center text-white">
+                        <h3 class=" position-relative">看看我們的夥伴們怎麼說</h3>
+                        <p class="team-desc position-relative" v-html="item.text"></p>
+                        <span class="team-name d-block text-right  position-relative">- {{item.team}} {{item.member}}</span>
+                    </div>
                 </div>
             </slick>
             <slick
@@ -142,6 +144,7 @@ export default {
                 slidesToScroll: 4,
                 asNavFor: '.teams-view',
                 focusOnSelect: true,
+                arrows: false,
                 responsive: [
                     {
                         breakpoint: 991,
@@ -207,6 +210,7 @@ export default {
             this.$refs.slick.prev();
         },
         reInit() {
+            console.log("reinit");
             this.$nextTick(() => {
                 this.$refs.slick.reSlick();
             });
@@ -228,10 +232,9 @@ export default {
                 fadein();
             });
 
-            // jQuery(".team-item").click(function(){
-            //     jQuery(".team-item.active").removeClass("active");
-            //     jQuery(this).addClass("active");
-            // });
+            jQuery(window).resize(function(){
+                jQuery(".slick-slider").slick('resize');
+            });
 
             function fadein(){
                 let nowp = jQuery(window).scrollTop();
@@ -292,6 +295,7 @@ export default {
             clip-path: ellipse(80vw 55vh at 50vw 30vh)
             z-index: 2
             background-size: cover
+            background-attachment: fixed
             &:before
                 background: rgba(74, 31, 12, 0.5)
                 width: 100%
@@ -430,17 +434,19 @@ export default {
                     color: gray
     
     #teams-say
-        .team-content-texts
+        .team-content
             background-position: center
-            &:before
-                content: ""
-                position: absolute
-                background: rgba(0, 0, 0, 0.3)
-                width: 100%
-                height: 100%
-                left: 0
-                top: 0
-                z-index: 1
+            background-size: cover
+            .team-content-texts
+                &:before
+                    content: ""
+                    position: absolute
+                    background: linear-gradient(to right,rgba(0, 0, 0, 0.5),transparent)
+                    width: 100vw
+                    height: 100%
+                    left: 0
+                    top: 0
+                    z-index: 1
         .teams-view
             background-repeat: no-repeat
             background-size: cover
@@ -449,7 +455,7 @@ export default {
             .team-content-texts
                 width: 60%
                 height: 700px
-                padding: 20vw
+                padding: 20vw 0 20vw 20vw
             &:after
                 content: ""
                 position: absolute
@@ -583,6 +589,15 @@ export default {
                     padding: 40px 20px
                     background-size: cover
                     background-position: center
+                    &:before
+                        content: ""
+                        position: absolute
+                        background: linear-gradient(to right,rgba(0, 0, 0, 0.5),transparent)
+                        width: 100vw
+                        height: 100%
+                        left: 0
+                        top: 0
+                        z-index: 1
                 .team-desc
                     padding: 0  
                     width: 60%

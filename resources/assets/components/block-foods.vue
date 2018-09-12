@@ -24,27 +24,21 @@
                  </div>
             </div>
             <div class="content-food right-content d-flex flex-column justify-content-center position-relative text-md-left text-center">
-                <!-- <svg class="loader"  :class="{active : addTransition}" width="850px" height="850px" viewBox="0 0 425 425" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Content-Menu-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"  opacity="0.3" stroke-linecap="round" stroke-linejoin="round">
-                        <g id="Group-2" stroke="#EB5E00" stroke-width="3">
-                            <path d="M312.173763,40.2023514 C327.008876,52.7655673 337.499672,63.6939976 343.646152,72.9876421" id="Path-7"></path>
-                            <path d="M0.849439987,53.3105358 C23.4164086,27.796038 51.2869526,10.1784141 84.461072,0.45766393" id="Path-6"></path>
-                            <path d="M374.134624,309.213237 C336.940959,386.205086 276.84813,431.096347 193.856138,443.88702" id="Path-8"></path>
-                        </g>
+                <svg 
+                    :class="{'active' : addTransition}"
+                    class="loader" 
+                    viewBox="0 0 850 850" 
+                >
+                <g id="Content-Menu-3" style="opacity:0.3;">
+                    <g id="Group-2">
+                        <path id="Path-7" style="fill:none;stroke:#EB5E00;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;" d="M694.2,99.9
+                            c27.2,23.1,46.5,43.1,57.8,60.2"/>
+                        <path id="Path-6" style="fill:none;stroke:#EB5E00;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;" d="M122.8,124
+                            c41.4-46.8,92.6-79.2,153.5-97"/>
+                        <path id="Path-8" style="fill:none;stroke:#EB5E00;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;" d="M807.9,593.7
+                            C739.6,735,629.3,817.4,477,840.9"/>
                     </g>
-                </svg> -->
-                <svg class="loader" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 850 850" style="enable-background:new 0 0 850 850;" xml:space="preserve">
-                    <g id="Content-Menu-3" transform="translate(0.000000, -146.000000)" style="opacity:0.3;">
-                        <g id="Group-2" transform="translate(1.000000, 148.000000)">
-                            <path id="Path-7" style="fill:none;stroke:#EB5E00;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;" d="M664.1,74.2
-                                c28.4,24.1,48.5,45,60.3,62.8"/>
-                            <path id="Path-6" style="fill:none;stroke:#EB5E00;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;" d="M67.4,99.3
-                                C110.6,50.4,164,16.6,227.6-2"/>
-                            <path id="Path-8" style="fill:none;stroke:#EB5E00;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;" d="M782.9,589.8
-                                C711.6,737.4,596.4,823.5,437.3,848"/>
-                        </g>
-                    </g>
+                </g>
                 </svg>
                 <h3 class="main-title text-black text-uppercase w-100">
                     <span class="fs-inherit text-orange">橘色</span>價值
@@ -229,10 +223,10 @@
                             letter-spacing: 2px
                     .loader
                         position: absolute
-                        width: 850px
-                        height: 850px
-                        bottom: 0
-                        left: 0 
+                        width: auto
+                        height: 100vh
+                        bottom: -30px
+                        left: -140px 
                         &.active
                             transform: rotate(360deg)
                             transition: all .5s ease-in-out

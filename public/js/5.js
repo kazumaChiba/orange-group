@@ -1,18 +1,18 @@
 webpackJsonp([5],{
 
-/***/ 357:
+/***/ 395:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(596)
+  __webpack_require__(634)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(8)
 /* script */
-var __vue_script__ = __webpack_require__(598)
+var __vue_script__ = __webpack_require__(636)
 /* template */
-var __vue_template__ = __webpack_require__(599)
+var __vue_template__ = __webpack_require__(637)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -52,19 +52,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 365:
+/***/ 403:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(366)
+  __webpack_require__(404)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(8)
 /* script */
-var __vue_script__ = __webpack_require__(368)
+var __vue_script__ = __webpack_require__(406)
 /* template */
-var __vue_template__ = __webpack_require__(369)
+var __vue_template__ = __webpack_require__(407)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -104,17 +104,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 366:
+/***/ 404:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(367);
+var content = __webpack_require__(405);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(204)("b8d6fad2", content, false, {});
+var update = __webpack_require__(31)("b8d6fad2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -131,10 +131,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 367:
+/***/ 405:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(23)(false);
 // imports
 
 
@@ -146,7 +146,7 @@ exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .j
 
 /***/ }),
 
-/***/ 368:
+/***/ 406:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -228,7 +228,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 369:
+/***/ 407:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -256,7 +256,7 @@ var render = function() {
               "div",
               {
                 staticClass:
-                  "row d-flex justify-content-between align-items-center flex-column flex-lg-row"
+                  "row d-flex w-100 m-0 justify-content-between align-items-center flex-column flex-lg-row"
               },
               [
                 _vm._m(0),
@@ -281,7 +281,8 @@ var render = function() {
             _c(
               "div",
               {
-                staticClass: "row mb-lg-5 pb-lg-5 flex-wrap-reverse flex-lg-row"
+                staticClass:
+                  "d-flex mb-lg-5 pb-lg-5 flex-wrap-reverse flex-lg-row"
               },
               [
                 _vm._m(1),
@@ -528,15 +529,15 @@ if (false) {
 
 /***/ }),
 
-/***/ 382:
+/***/ 420:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(8)
 /* script */
-var __vue_script__ = __webpack_require__(383)
+var __vue_script__ = __webpack_require__(421)
 /* template */
-var __vue_template__ = __webpack_require__(385)
+var __vue_template__ = __webpack_require__(423)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -576,14 +577,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 383:
+/***/ 421:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
 //
 //
@@ -596,7 +597,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 // Check if the request came from the browser and is not server rendered
 if (typeof window !== 'undefined') {
-  var slick = __webpack_require__(384);
+  var slick = __webpack_require__(422);
 }
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -760,7 +761,7 @@ if (typeof window !== 'undefined') {
 
 /***/ }),
 
-/***/ 384:
+/***/ 422:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
@@ -783,7 +784,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 ;(function(factory) {
     'use strict';
     if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(50)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(57)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -3781,7 +3782,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 /***/ }),
 
-/***/ 385:
+/***/ 423:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -3802,17 +3803,17 @@ if (false) {
 
 /***/ }),
 
-/***/ 596:
+/***/ 634:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(597);
+var content = __webpack_require__(635);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(204)("05c7039f", content, false, {});
+var update = __webpack_require__(31)("05c7039f", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -3829,33 +3830,51 @@ if(false) {
 
 /***/ }),
 
-/***/ 597:
+/***/ 635:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(23)(false);
 // imports
 exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css);", ""]);
 exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css);", ""]);
 
 // module
-exports.push([module.i, "\n@charset \"UTF-8\";\n#block-family .fadein {\n  top: 0 !important;\n  opacity: 1 !important;\n  -webkit-transition: all .5s ease-out;\n  transition: all .5s ease-out;\n}\n#block-family .fadein .big_title {\n    -webkit-transform: translateY(0) !important;\n            transform: translateY(0) !important;\n    -webkit-transition: all .5s ease-out;\n    transition: all .5s ease-out;\n}\n#block-family .fadein img {\n    -webkit-transform: translateY(0) !important;\n            transform: translateY(0) !important;\n    -webkit-transition: all .5s ease-out;\n    transition: all .5s ease-out;\n}\n#block-family .slideshow:after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: url(/images/family_bg_back.png);\n  top: 0;\n  left: 0;\n  background-repeat: no-repeat;\n  background-position: bottom;\n}\n#block-family .slideshow .slider {\n  position: relative;\n  overflow: hidden;\n  height: 90vh;\n  -webkit-clip-path: ellipse(80vw 55vh at 50vw 30vh);\n          clip-path: ellipse(80vw 55vh at 50vw 30vh);\n  z-index: 2;\n  background-size: cover;\n}\n#block-family .slideshow .slider:before {\n    background: rgba(74, 31, 12, 0.5);\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    z-index: 1;\n}\n#block-family .slideshow .slider p {\n    z-index: 2;\n}\n#block-family .slideshow .slider .slide-title {\n    font-size: 110px;\n    font-weight: 600;\n}\n#block-family .slideshow .slider .slide-subtitle {\n    font-size: 42px;\n    font-weight: 500;\n}\n#block-family .slideshow .slider .slide-text {\n    font-size: 18px;\n    bottom: 18vh;\n    cursor: pointer;\n}\n#block-family .slideshow .slider .slide-text:before, #block-family .slideshow .slider .slide-text:after {\n      content: \"\";\n      position: absolute;\n      width: 2px;\n      height: calc(11vh + 60px);\n      background: white;\n      left: 50%;\n      top: 50px;\n}\n#block-family .slideshow .slider .slide-text:before {\n      opacity: 0.6;\n}\n#block-family .slideshow .slider .slide-text:after {\n      height: 30px;\n      -webkit-animation: scrolling 1.5s infinite ease-in-out;\n              animation: scrolling 1.5s infinite ease-in-out;\n}\n#block-family .slideshow .slider:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(56, 26, 2, 0.16);\n}\n@-webkit-keyframes scrolling {\n100% {\n    top: calc(10vh + 30px);\n}\n}\n@keyframes scrolling {\n100% {\n    top: calc(10vh + 30px);\n}\n}\n#block-family #family-intro .family-title {\n  font-size: 45px;\n  padding-right: 10vw;\n  line-height: 67px;\n  position: relative;\n  margin-top: 80px;\n  padding-right: 80px;\n  top: 100px;\n  opacity: 0;\n  -webkit-transition: all .3s ease-out;\n  transition: all .3s ease-out;\n}\n#block-family #family-intro .family-title:before {\n    content: \"\";\n    position: absolute;\n    width: 1.6px;\n    height: 50px;\n    background: #f26e22;\n    top: 14px;\n    right: 65px;\n}\n#block-family #family-intro .family-step-list #step-0:before {\n  background-image: url(/images/family_bg1.png);\n  left: 0;\n  top: -150%;\n}\n#block-family #family-intro .family-step-list #step-1:before {\n  background-image: url(/images/family_bg2.png);\n  background-position: right;\n  top: -80%;\n}\n#block-family #family-intro .family-step-list #step-2:before {\n  background-image: url(/images/family_bg3.png);\n  top: -50%;\n}\n#block-family #family-intro .family-step-list .family-step {\n  margin-bottom: 350px;\n  position: relative;\n}\n#block-family #family-intro .family-step-list .family-step:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    background-size: contain;\n    background-repeat: no-repeat;\n    padding-top: 95%;\n}\n#block-family #family-intro .family-step-list .family-step .left {\n    -webkit-box-flex: 6;\n        -ms-flex: 6;\n            flex: 6;\n    opacity: 0;\n    -webkit-transition: all .6s ease-out;\n    transition: all .6s ease-out;\n}\n#block-family #family-intro .family-step-list .family-step .left .big_title {\n      z-index: 1;\n      -webkit-transform: translateY(350px);\n              transform: translateY(350px);\n}\n#block-family #family-intro .family-step-list .family-step .left img {\n      -webkit-transform: translateY(150px);\n              transform: translateY(150px);\n      -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);\n              box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);\n}\n#block-family #family-intro .family-step-list .family-step .right {\n    top: 300px;\n    -webkit-box-flex: 3;\n        -ms-flex: 3;\n            flex: 3;\n    opacity: 0;\n    -webkit-transition: all .6s ease-out;\n    transition: all .6s ease-out;\n}\n#block-family #family-intro .family-step-list .family-step .right .big_title {\n      z-index: 1;\n      -webkit-transform: translateY(350px);\n              transform: translateY(350px);\n}\n#block-family #family-intro .family-step-list .family-step .right img {\n      -webkit-transform: translateY(150px);\n              transform: translateY(150px);\n}\n#block-family #family-intro .family-step-list .family-step:nth-child(2n) {\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: reverse;\n        -ms-flex-direction: row-reverse;\n            flex-direction: row-reverse;\n}\n#block-family #family-intro .family-step-list .family-step:nth-child(2n) .big_title {\n      text-align: right;\n}\n#block-family #family-intro .family-step-list .family-step:nth-child(2n) .big_title, #block-family #family-intro .family-step-list .family-step:nth-child(2n) .step-title, #block-family #family-intro .family-step-list .family-step:nth-child(2n) .subtitle, #block-family #family-intro .family-step-list .family-step:nth-child(2n) .desc {\n      margin-right: 0;\n      margin-left: auto;\n}\n#block-family #family-intro .family-step-list .family-step .big_title, #block-family #family-intro .family-step-list .family-step .step-title, #block-family #family-intro .family-step-list .family-step .subtitle, #block-family #family-intro .family-step-list .family-step .desc {\n    font-weight: 500;\n    width: 60%;\n}\n#block-family #family-intro .family-step-list .family-step .big_title {\n    opacity: 0.6;\n    font-size: 250px;\n    top: -210px;\n    font-weight: 600;\n    width: 100%;\n    padding: 0 80px;\n}\n#block-family #family-intro .family-step-list .family-step .step-title {\n    font-size: 35px;\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    margin-bottom: 25px;\n    padding-right: 45px;\n    border-right: 1px solid;\n    line-height: 45px;\n}\n#block-family #family-intro .family-step-list .family-step .subtitle {\n    font-size: 23px;\n    margin-bottom: 40px;\n}\n#block-family #family-intro .family-step-list .family-step .desc {\n    color: gray;\n}\n#block-family #teams-say .teams-content {\n  min-height: 700px;\n  padding: 0 20vw;\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n}\n#block-family #teams-say .teams-content .team-content-texts {\n    width: 60%;\n}\n#block-family #teams-say .teams-content:before {\n    content: \"\";\n    position: absolute;\n    background: rgba(0, 0, 0, 0.3);\n    width: 100%;\n    height: 100%;\n    left: 0;\n    top: 0;\n    z-index: 1;\n}\n#block-family #teams-say .teams-content:after {\n    content: \"\";\n    position: absolute;\n    top: calc(50% - 215px);\n    left: 180px;\n    background-image: url(/images/q.png);\n    background-repeat: no-repeat;\n    background-size: contain;\n    width: 332px;\n    height: 430px;\n}\n#block-family #teams-say .teams-content h3 {\n    margin-bottom: 50px;\n    font-size: 40px;\n    z-index: 2;\n}\n#block-family #teams-say .teams-content .team-desc {\n    line-height: 40px;\n    font-size: 18px;\n    margin-bottom: 30px;\n    padding-left: 100px;\n    z-index: 2;\n}\n#block-family #teams-say .teams-content .team-desc:before {\n      content: '\\201C';\n      font-size: 150px;\n      position: absolute;\n      left: auto;\n      top: 20px;\n      color: #f26d22;\n      -webkit-transform: rotate(180deg);\n              transform: rotate(180deg);\n      -webkit-transform-origin: 0 0;\n              transform-origin: 0 0;\n}\n#block-family #teams-say .teams-content .team-name {\n    font-size: 20px;\n    z-index: 2;\n}\n#block-family #teams-say .teams .team-item {\n  height: 25vw;\n  cursor: pointer;\n  -webkit-box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.15);\n          box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.15);\n  background-size: cover;\n  background-position: center;\n}\n#block-family #teams-say .teams .team-item:nth-child(1) {\n    z-index: 3;\n}\n#block-family #teams-say .teams .team-item:nth-child(2) {\n    z-index: 2;\n}\n#block-family #teams-say .teams .team-item:nth-child(3) {\n    z-index: 1;\n}\n#block-family #teams-say .teams .team-item:nth-child(4) {\n    z-index: 0;\n}\n#block-family #teams-say .teams .team-item .team-title {\n    font-size: 35px;\n    color: #f26c24;\n    z-index: 1;\n}\n#block-family #teams-say .teams .team-item:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: white;\n}\n#block-family #teams-say .teams .team-item:hover .team-title, #block-family #teams-say .teams .team-item.active .team-title {\n    color: white;\n}\n#block-family #teams-say .teams .team-item:hover:before, #block-family #teams-say .teams .team-item.active:before {\n    background: rgba(242, 108, 36, 0.85);\n    -webkit-transition: all .5s;\n    transition: all .5s;\n}\n@-webkit-keyframes swichAnimate {\n100% {\n    opacity: 0;\n}\n}\n@keyframes swichAnimate {\n100% {\n    opacity: 0;\n}\n}\n@media only screen and (max-width: 991px) {\n#block-family .slideshow:after {\n    display: none;\n}\n#block-family .slideshow .slider {\n    -webkit-clip-path: none;\n            clip-path: none;\n    height: 220px;\n    padding-bottom: 10px;\n}\n#block-family .slideshow .slider .slide-title {\n      font-size: 32px;\n      letter-spacing: 5px;\n      font-weight: 500;\n      margin-bottom: 5px;\n}\n#block-family .slideshow .slider .slide-subtitle {\n      font-size: 16px;\n      text-align: center !important;\n}\n#block-family #family-intro .family-step-list .family-step {\n    margin: 50px 0 0 0;\n}\n#block-family #family-intro .family-step-list .family-step .left .big_title {\n      font-size: 23px;\n      top: 0;\n      white-space: nowrap;\n      padding: 0;\n      font-weight: 400;\n      opacity: 1;\n      position: relative !important;\n      text-align: center;\n      margin-bottom: 25px;\n}\n#block-family #family-intro .family-step-list .family-step .left img {\n      padding: 0 20px;\n}\n#block-family #family-intro .family-step-list .family-step .right {\n      padding: 20px !important;\n}\n#block-family #family-intro .family-step-list .family-step .step-title, #block-family #family-intro .family-step-list .family-step .subtitle, #block-family #family-intro .family-step-list .family-step .desc {\n      font-size: 16px;\n      width: 100%;\n}\n#block-family #family-intro .family-step-list .family-step .step-title {\n      padding: 0;\n      margin: 0;\n      border: none;\n}\n#block-family #family-intro .family-step-list .family-step .subtitle {\n      margin-bottom: 15px;\n}\n#block-family #family-intro .family-step-list .family-step .desc {\n      font-size: 14px;\n}\n#block-family #teams-say {\n    margin-top: 50px;\n}\n#block-family #teams-say h3 {\n      font-size: 21px;\n      color: #f26e22;\n      text-align: center;\n      margin-bottom: 22px;\n}\n#block-family #teams-say .teams-content {\n      padding: 0;\n      min-height: unset;\n}\n#block-family #teams-say .teams-content .team-content-texts {\n        width: 100%;\n        height: 300px;\n        padding: 40px 20px;\n        background-size: cover;\n        background-position: 80px top;\n}\n#block-family #teams-say .teams-content .team-desc {\n        padding: 0;\n        width: 60%;\n        line-height: 20px;\n        font-size: 14px;\n        letter-spacing: 1px;\n}\n#block-family #teams-say .teams-content .team-desc:before {\n          display: none;\n}\n#block-family #teams-say .teams-content:after {\n        display: none;\n}\n#block-family #teams-say .slick-dotted.slick-slider {\n      margin-bottom: 0;\n}\n#block-family #teams-say .slick-dots {\n      bottom: 8px;\n}\n#block-family #teams-say .slick-dots li button:before {\n        opacity: 1;\n        color: white;\n}\n#block-family #teams-say .slick-dots li.slick-active button:before {\n        opacity: 1;\n        color: #eb5e00;\n}\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\n#block-family .fadein {\n  top: 0 !important;\n  opacity: 1 !important;\n  -webkit-transition: all .5s ease-out;\n  transition: all .5s ease-out;\n}\n#block-family .fadein .big_title {\n    -webkit-transform: translateY(0) !important;\n            transform: translateY(0) !important;\n    -webkit-transition: all .5s ease-out;\n    transition: all .5s ease-out;\n}\n#block-family .fadein img {\n    -webkit-transform: translateY(0) !important;\n            transform: translateY(0) !important;\n    -webkit-transition: all .5s ease-out;\n    transition: all .5s ease-out;\n}\n#block-family .slideshow:after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: url(/images/family_bg_back.png);\n  top: 0;\n  left: 0;\n  background-repeat: no-repeat;\n  background-position: bottom;\n}\n#block-family .slideshow .slider {\n  position: relative;\n  overflow: hidden;\n  height: 90vh;\n  -webkit-clip-path: ellipse(80vw 55vh at 50vw 30vh);\n          clip-path: ellipse(80vw 55vh at 50vw 30vh);\n  z-index: 2;\n  background-size: cover;\n  background-attachment: fixed;\n}\n#block-family .slideshow .slider:before {\n    background: rgba(74, 31, 12, 0.5);\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    z-index: 1;\n}\n#block-family .slideshow .slider p {\n    z-index: 2;\n}\n#block-family .slideshow .slider .slide-title {\n    font-size: 10vw;\n    font-weight: 600;\n}\n#block-family .slideshow .slider .slide-subtitle {\n    font-size: 42px;\n    font-weight: 500;\n}\n#block-family .slideshow .slider .slide-text {\n    font-size: 18px;\n    bottom: 18vh;\n    cursor: pointer;\n}\n#block-family .slideshow .slider .slide-text:before, #block-family .slideshow .slider .slide-text:after {\n      content: \"\";\n      position: absolute;\n      width: 2px;\n      height: calc(11vh + 60px);\n      background: white;\n      left: 50%;\n      top: 50px;\n}\n#block-family .slideshow .slider .slide-text:before {\n      opacity: 0.6;\n}\n#block-family .slideshow .slider .slide-text:after {\n      height: 30px;\n      -webkit-animation: scrolling 1.5s infinite ease-in-out;\n              animation: scrolling 1.5s infinite ease-in-out;\n      background: #f3621d;\n}\n#block-family .slideshow .slider:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(56, 26, 2, 0.16);\n}\n@-webkit-keyframes scrolling {\n100% {\n    top: calc(10vh + 30px);\n}\n}\n@keyframes scrolling {\n100% {\n    top: calc(10vh + 30px);\n}\n}\n#block-family #family-intro .family-title {\n  font-size: 45px;\n  padding-right: 10vw;\n  line-height: 67px;\n  position: relative;\n  margin-top: 80px;\n  padding-right: 80px;\n  top: 100px;\n  opacity: 0;\n  -webkit-transition: all .3s ease-out;\n  transition: all .3s ease-out;\n}\n#block-family #family-intro .family-title:before {\n    content: \"\";\n    position: absolute;\n    width: 1.6px;\n    height: 50px;\n    background: #f26e22;\n    top: 14px;\n    right: 65px;\n}\n#block-family #family-intro .family-step-list #step-0:before {\n  background-image: url(/images/family_bg1.png);\n  left: 0;\n  top: -150%;\n}\n#block-family #family-intro .family-step-list #step-1:before {\n  background-image: url(/images/family_bg2.png);\n  background-position: right;\n  top: -80%;\n}\n#block-family #family-intro .family-step-list #step-2:before {\n  background-image: url(/images/family_bg3.png);\n  top: -50%;\n}\n#block-family #family-intro .family-step-list .family-step {\n  margin-bottom: 350px;\n  position: relative;\n}\n#block-family #family-intro .family-step-list .family-step:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    background-size: contain;\n    background-repeat: no-repeat;\n    padding-top: 95%;\n}\n#block-family #family-intro .family-step-list .family-step .left {\n    -webkit-box-flex: 6;\n        -ms-flex: 6;\n            flex: 6;\n    opacity: 0;\n    -webkit-transition: all .6s ease-out;\n    transition: all .6s ease-out;\n}\n#block-family #family-intro .family-step-list .family-step .left .big_title {\n      z-index: 1;\n      -webkit-transform: translateY(350px);\n              transform: translateY(350px);\n}\n#block-family #family-intro .family-step-list .family-step .left img {\n      -webkit-transform: translateY(150px);\n              transform: translateY(150px);\n      -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);\n              box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);\n}\n#block-family #family-intro .family-step-list .family-step .right {\n    top: 300px;\n    -webkit-box-flex: 3;\n        -ms-flex: 3;\n            flex: 3;\n    opacity: 0;\n    -webkit-transition: all .6s ease-out;\n    transition: all .6s ease-out;\n}\n#block-family #family-intro .family-step-list .family-step .right .big_title {\n      z-index: 1;\n      -webkit-transform: translateY(350px);\n              transform: translateY(350px);\n}\n#block-family #family-intro .family-step-list .family-step .right img {\n      -webkit-transform: translateY(150px);\n              transform: translateY(150px);\n}\n#block-family #family-intro .family-step-list .family-step:nth-child(2n) {\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: reverse;\n        -ms-flex-direction: row-reverse;\n            flex-direction: row-reverse;\n}\n#block-family #family-intro .family-step-list .family-step:nth-child(2n) .big_title {\n      text-align: right;\n}\n#block-family #family-intro .family-step-list .family-step:nth-child(2n) .big_title, #block-family #family-intro .family-step-list .family-step:nth-child(2n) .step-title, #block-family #family-intro .family-step-list .family-step:nth-child(2n) .subtitle, #block-family #family-intro .family-step-list .family-step:nth-child(2n) .desc {\n      margin-right: 0;\n      margin-left: auto;\n}\n#block-family #family-intro .family-step-list .family-step .big_title, #block-family #family-intro .family-step-list .family-step .step-title, #block-family #family-intro .family-step-list .family-step .subtitle, #block-family #family-intro .family-step-list .family-step .desc {\n    font-weight: 500;\n    width: 60%;\n}\n#block-family #family-intro .family-step-list .family-step .big_title {\n    opacity: 0.6;\n    font-size: 250px;\n    top: -210px;\n    font-weight: 600;\n    width: 100%;\n    padding: 0 80px;\n}\n#block-family #family-intro .family-step-list .family-step .step-title {\n    font-size: 35px;\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    margin-bottom: 25px;\n    padding-right: 45px;\n    border-right: 1px solid;\n    line-height: 45px;\n}\n#block-family #family-intro .family-step-list .family-step .subtitle {\n    font-size: 23px;\n    margin-bottom: 40px;\n}\n#block-family #family-intro .family-step-list .family-step .desc {\n    color: gray;\n}\n#block-family #teams-say .team-content {\n  background-position: center;\n  background-size: cover;\n}\n#block-family #teams-say .team-content .team-content-texts:before {\n    content: \"\";\n    position: absolute;\n    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(transparent));\n    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);\n    width: 100vw;\n    height: 100%;\n    left: 0;\n    top: 0;\n    z-index: 1;\n}\n#block-family #teams-say .teams-view {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n}\n#block-family #teams-say .teams-view .team-content-texts {\n    width: 60%;\n    height: 700px;\n    padding: 20vw 0 20vw 20vw;\n}\n#block-family #teams-say .teams-view:after {\n    content: \"\";\n    position: absolute;\n    top: calc(50% - 215px);\n    left: 180px;\n    background-image: url(/images/q.png);\n    background-repeat: no-repeat;\n    background-size: contain;\n    width: 332px;\n    height: 430px;\n}\n#block-family #teams-say .teams-view h3 {\n    margin-bottom: 50px;\n    font-size: 40px;\n    z-index: 2;\n}\n#block-family #teams-say .teams-view .team-desc {\n    line-height: 40px;\n    font-size: 18px;\n    margin-bottom: 30px;\n    padding-left: 100px;\n    z-index: 2;\n}\n#block-family #teams-say .teams-view .team-desc:before {\n      content: '\\201C';\n      font-size: 150px;\n      position: absolute;\n      left: auto;\n      top: 20px;\n      color: #f26d22;\n      -webkit-transform: rotate(180deg);\n              transform: rotate(180deg);\n      -webkit-transform-origin: 0 0;\n              transform-origin: 0 0;\n}\n#block-family #teams-say .teams-view .team-name {\n    font-size: 20px;\n    z-index: 2;\n}\n#block-family #teams-say .teams .slick-current .team-item .team-title {\n  color: white;\n}\n#block-family #teams-say .teams .slick-current .team-item:before {\n  background: rgba(242, 108, 36, 0.85);\n  -webkit-transition: all .5s;\n  transition: all .5s;\n}\n#block-family #teams-say .teams .team-item {\n  height: 25vw;\n  cursor: pointer;\n  -webkit-box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.15);\n          box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.15);\n  background-size: cover;\n  background-position: center;\n}\n#block-family #teams-say .teams .team-item:nth-child(1) {\n    z-index: 3;\n}\n#block-family #teams-say .teams .team-item:nth-child(2) {\n    z-index: 2;\n}\n#block-family #teams-say .teams .team-item:nth-child(3) {\n    z-index: 1;\n}\n#block-family #teams-say .teams .team-item:nth-child(4) {\n    z-index: 0;\n}\n#block-family #teams-say .teams .team-item .team-title {\n    font-size: 35px;\n    color: #f26c24;\n    z-index: 1;\n}\n#block-family #teams-say .teams .team-item:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: white;\n}\n#block-family #teams-say .teams .team-item:hover .team-title {\n    color: white;\n}\n#block-family #teams-say .teams .team-item:hover:before {\n    background: rgba(242, 108, 36, 0.85);\n    -webkit-transition: all .5s;\n    transition: all .5s;\n}\n@-webkit-keyframes swichAnimate {\n100% {\n    opacity: 0;\n}\n}\n@keyframes swichAnimate {\n100% {\n    opacity: 0;\n}\n}\n@media only screen and (max-width: 991px) {\n#block-family .slideshow:after {\n    display: none;\n}\n#block-family .slideshow .slider {\n    -webkit-clip-path: none;\n            clip-path: none;\n    height: 220px;\n    padding-bottom: 10px;\n}\n#block-family .slideshow .slider .slide-title {\n      font-size: 32px;\n      letter-spacing: 5px;\n      font-weight: 500;\n      margin-bottom: 5px;\n}\n#block-family .slideshow .slider .slide-subtitle {\n      font-size: 16px;\n      text-align: center !important;\n}\n#block-family #family-intro .family-step-list .family-step {\n    margin: 50px 0 0 0;\n}\n#block-family #family-intro .family-step-list .family-step .left .big_title {\n      font-size: 23px;\n      top: 0;\n      white-space: nowrap;\n      padding: 0;\n      font-weight: 400;\n      opacity: 1;\n      position: relative !important;\n      text-align: center;\n      margin-bottom: 25px;\n}\n#block-family #family-intro .family-step-list .family-step .left img {\n      padding: 0 20px;\n}\n#block-family #family-intro .family-step-list .family-step .right {\n      padding: 20px !important;\n}\n#block-family #family-intro .family-step-list .family-step .step-title, #block-family #family-intro .family-step-list .family-step .subtitle, #block-family #family-intro .family-step-list .family-step .desc {\n      font-size: 16px;\n      width: 100%;\n}\n#block-family #family-intro .family-step-list .family-step .step-title {\n      padding: 0;\n      margin: 0;\n      border: none;\n}\n#block-family #family-intro .family-step-list .family-step .subtitle {\n      margin-bottom: 15px;\n}\n#block-family #family-intro .family-step-list .family-step .desc {\n      font-size: 14px;\n}\n#block-family #teams-say {\n    margin-top: 50px;\n}\n#block-family #teams-say h3 {\n      font-size: 21px;\n      color: #f26e22;\n      text-align: center;\n      margin-bottom: 22px;\n}\n#block-family #teams-say .teams-content {\n      padding: 0;\n      min-height: unset;\n}\n#block-family #teams-say .teams-content .team-content-texts {\n        width: 100%;\n        height: 300px;\n        padding: 40px 20px;\n        background-size: cover;\n        background-position: center;\n}\n#block-family #teams-say .teams-content .team-content-texts:before {\n          content: \"\";\n          position: absolute;\n          background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(transparent));\n          background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);\n          width: 100vw;\n          height: 100%;\n          left: 0;\n          top: 0;\n          z-index: 1;\n}\n#block-family #teams-say .teams-content .team-desc {\n        padding: 0;\n        width: 60%;\n        line-height: 20px;\n        font-size: 14px;\n        letter-spacing: 1px;\n        z-index: 2;\n}\n#block-family #teams-say .teams-content .team-desc:before {\n          display: none;\n}\n#block-family #teams-say .teams-content:after {\n        display: none;\n}\n#block-family #teams-say .slick-dotted.slick-slider {\n      margin-bottom: 0;\n}\n#block-family #teams-say .slick-dots {\n      bottom: 8px;\n}\n#block-family #teams-say .slick-dots li button:before {\n        opacity: 1;\n        color: white;\n}\n#block-family #teams-say .slick-dots li.slick-active button:before {\n        opacity: 1;\n        color: #eb5e00;\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 598:
+/***/ 636:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__ = __webpack_require__(214);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_footer__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_footer__ = __webpack_require__(403);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_components_block_footer__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_slick__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_slick__ = __webpack_require__(420);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_slick___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue_slick__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3978,6 +3997,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             teamsOption: {
                 slidesToShow: 4,
                 slidesToScroll: 4,
+                asNavFor: '.teams-view',
+                focusOnSelect: true,
+                arrows: false,
                 responsive: [{
                     breakpoint: 991,
                     settings: {
@@ -3987,30 +4009,36 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     }
                 }]
             },
+            teamsOptionView: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                asNavFor: '.teams'
+            },
             slick_teams: [{
                 team: '橘色公關團隊1',
                 member: '某某某',
-                text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
+                text: '「測試描述文試描述文字測試描述文字測試描述文字測試描述文字」',
                 img: '/images/family_s1.png',
-                img_big: '/images/family_s1.png'
+                img_big: '/images/family_b1.png'
             }, {
                 team: '橘色公關團隊2',
                 member: '某某某',
-                text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
+                text: '「測試描述文試描述文字測試描述文字測試描述文字測試描述文字」',
                 img: '/images/family_s2.png',
-                img_big: '/images/family_s2.png'
+                img_big: '/images/family_b2.png'
             }, {
                 team: '橘色公關團隊3',
                 member: '某某某',
-                text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
+                text: '「測試描述文試描述文字測試描述文字測試描述文字測試描述文字」',
                 img: '/images/family_s3.png',
-                img_big: '/images/family_s3.png'
+                img_big: '/images/family_b3.png'
             }, {
                 team: '橘色公關團隊4',
                 member: '某某某',
-                text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
+                text: '「測試描述文試描述文字測試描述文字測試描述文字測試描述文字」',
                 img: '/images/family_s4.png',
-                img_big: '/images/family_s4.png'
+                img_big: '/images/family_b4.png'
             }],
             teamIndex: 0
         };
@@ -4030,6 +4058,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         reInit: function reInit() {
             var _this = this;
 
+            console.log("reinit");
             this.$nextTick(function () {
                 _this.$refs.slick.reSlick();
             });
@@ -4050,9 +4079,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 fadein();
             });
 
-            jQuery(".team-item").click(function () {
-                jQuery(".team-item.active").removeClass("active");
-                jQuery(this).addClass("active");
+            jQuery(window).resize(function () {
+                jQuery(".slick-slider").slick('resize');
             });
 
             function fadein() {
@@ -4079,7 +4107,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 599:
+/***/ 637:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -4178,49 +4206,54 @@ var render = function() {
         { staticClass: "d-none d-lg-block", attrs: { id: "teams-say" } },
         [
           _c(
-            "div",
+            "slick",
             {
-              staticClass:
-                "d-flex teams-content text-white position-relative align-items-center",
-              style:
-                "background-image:url(" +
-                _vm.slick_teams[_vm.teamIndex].img_big +
-                ")"
+              ref: "slick",
+              staticClass: "teams-view",
+              attrs: { options: _vm.teamsOptionView }
             },
-            [
-              _c(
+            _vm._l(_vm.slick_teams, function(item, $index) {
+              return _c(
                 "div",
-                { staticClass: "team-content-texts position-relative" },
+                {
+                  key: $index,
+                  staticClass: "team-content",
+                  style: "background-image:url(" + item.img_big + ")"
+                },
                 [
-                  _c("h3", { staticClass: " position-relative" }, [
-                    _vm._v("看看我們的夥伴們怎麼說")
-                  ]),
-                  _vm._v(" "),
-                  _c("p", {
-                    staticClass: "team-desc position-relative",
-                    domProps: {
-                      innerHTML: _vm._s(_vm.slick_teams[_vm.teamIndex].text)
-                    }
-                  }),
-                  _vm._v(" "),
                   _c(
-                    "span",
+                    "div",
                     {
                       staticClass:
-                        "team-name d-block text-right  position-relative"
+                        "team-content-texts position-relative d-flex flex-column justify-content-center text-white"
                     },
                     [
-                      _vm._v(
-                        "- " +
-                          _vm._s(_vm.slick_teams[_vm.teamIndex].team) +
-                          " " +
-                          _vm._s(_vm.slick_teams[_vm.teamIndex].member)
+                      _c("h3", { staticClass: " position-relative" }, [
+                        _vm._v("看看我們的夥伴們怎麼說")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", {
+                        staticClass: "team-desc position-relative",
+                        domProps: { innerHTML: _vm._s(item.text) }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        {
+                          staticClass:
+                            "team-name d-block text-right  position-relative"
+                        },
+                        [
+                          _vm._v(
+                            "- " + _vm._s(item.team) + " " + _vm._s(item.member)
+                          )
+                        ]
                       )
                     ]
                   )
                 ]
               )
-            ]
+            })
           ),
           _vm._v(" "),
           _c(

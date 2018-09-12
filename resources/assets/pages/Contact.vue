@@ -32,7 +32,6 @@
         <div id="contact-form">
             <contact-form :brand="brandName"></contact-form>
         </div>
-        
         <block-footer></block-footer>
     </div>
 </template>

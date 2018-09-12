@@ -224,6 +224,7 @@ export default {
                     border-radius: 100%
                     &:hover
                         color: white
+                        box-shadow: 0px 0 15px rgba(0, 0, 0, 0.4)
                     &.facebook
                         background-color: #3b5999
                     &.twitter
