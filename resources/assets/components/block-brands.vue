@@ -151,8 +151,8 @@
                             border-bottom: 1px solid white
                             padding: 3px
                     img
-                        height: 120px
-                        width: auto
+                        width: 120px
+                        height: auto
                         margin-bottom: 20px
 
             .fp-controlArrow
@@ -194,8 +194,8 @@
                             border-color: white
                             transition: all .5s
                             img
-                                width: auto
-                                height: 150px
+                                width: 150px
+                                height: auto
                                 margin-bottom: 20px
                             .brand-title
                                 display: none
@@ -259,7 +259,7 @@ export default {
                         url: '/images/bg_brand_1.png',
                         title: 'EXTENSION1',
                         text: '美食不孤單，小鍋<span class="text-orange">新</span>食尚！<br>享受一個人的自在、兩個人的美好、一群人的熱鬧！',
-                        logo: '/images/home3_icon1.png',
+                        logo: '/images/icon_extension_white.png',
                         contact: '#',
                         book: '#',
                     },
@@ -267,7 +267,7 @@ export default {
                         url: '/images/banner_contact.png',
                         title: 'M One Cafe',
                         text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！',
-                        logo: '/images/icon_cafe.png',
+                        logo: '/images/icon_cafe_white.png',
                         contact: '#',
                         book: '#',
                     },
@@ -275,7 +275,7 @@ export default {
 		                url: '/images/banner_about.png',
 		                title: '橘色鍋物',
                         text: '<span class="text-orange">橘色</span>鍋物<br>不管多少人都能吃得精彩！',
-                        logo: '/images/home3_icon2.png',
+                        logo: '/images/icon_shabu.png',
                         contact: '#',
                         book: '#',
                     },
@@ -283,7 +283,15 @@ export default {
 		                url: '/images/slideshow_1.jpg',
 		                title: '橘色舒體',
                         text: '<span class="text-orange">橘色</span>舒體<br>測試描述文字',
-                        logo: '/images/icon_m1spa.png',
+                        logo: '/images/icon_spa_white.png',
+                        contact: '#',
+                        book: '#',
+                    },
+                    {
+		                url: '/images/slideshow_1.jpg',
+		                title: 'SAKURA',
+                        text: '男女<span class="text-orange">健康</span>生活館<br>測試描述文字',
+                        logo: '/images/icon_sakura_white.png',
                         contact: '#',
                         book: '#',
 	                },

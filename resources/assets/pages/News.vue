@@ -283,13 +283,8 @@ export default {
 }
 </script>
 
-<style lang="sass"  scope>
-    .el-input__inner
-        -webkit-appearance: none
-        border-radius: 0
-        border: unset
-        background: transparent
-        color: white
+<style lang="sass" scoped>
+
     .el-select__caret
         color: #fff
     #block-news

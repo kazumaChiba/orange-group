@@ -382,6 +382,24 @@ html,body,#app,#block-main
     transition: all .5s
     opacity: 0 !important
 
+.el-scrollbar , .el-select-dropdown__list
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1)
+    border-radius: 3px    
+    overflow: visible
+
+#block-news
+    .el-input__inner
+        -webkit-appearance: none
+        border-radius: 0
+        border: unset
+        background: transparent
+        color: white
+    &.section
+        .el-input__inner
+            color: #606266
+            border: 1px solid #dcdfe6
+            background: white
+
 /* Responsive */
 
 @media only screen and (max-width: 1200px)

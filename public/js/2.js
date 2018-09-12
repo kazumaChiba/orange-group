@@ -888,27 +888,32 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             brandItems: [{
-                img: '/images/index_logo.png',
+                img: '/images/icon_shabu.png',
+                hoverImg: '/images/contact_shabu_white.png',
                 title: '橘色涮涮屋',
                 intro: '',
                 name: 'shabu'
             }, {
-                img: '/images/index_logo.png',
+                img: '/images/contact_extension.png',
+                hoverImg: '/images/',
                 title: 'EXTENSION 1 BY 橘色',
                 intro: '',
                 name: 'extension_1'
             }, {
-                img: '/images/icon_m1cafe.png',
+                img: '/images/icon_cafe.png',
+                hoverImg: '/images/icon_cafe_white.png',
                 title: 'M ONE CAFE',
                 intro: '',
                 name: 'm_one_cafe'
             }, {
-                img: '/images/icon_m1spa.png',
+                img: '/images/contact_spa.png',
+                hoverImg: '/images/icon_spa_white.png',
                 title: 'M ONE SPA',
                 intro: '',
                 name: 'm_one_spa'
             }, {
-                img: '/images/icon_sakura.png',
+                img: '/images/contact_sakura.png',
+                hoverImg: '/images/contact_sakura_white.png',
                 title: 'SAKURA SPA',
                 intro: '',
                 name: 'sakura_spa'

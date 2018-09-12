@@ -4744,7 +4744,7 @@ exports = module.exports = __webpack_require__(23)(false);
 
 
 // module
-exports.push([module.i, "\n#app #block-brands {\n  background-size: cover;\n  background-position: center;\n}\n#app #block-brands .slick-arrow {\n    position: absolute;\n    width: 150px;\n    height: 50px;\n    background: #f26b23;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n    top: 50%;\n}\n#app #block-brands .slick-arrow:hover {\n      background: rgba(0, 0, 0, 0.8);\n      cursor: pointer;\n}\n#app #block-brands .slick-arrow.btn-next {\n      right: 15px;\n}\n#app #block-brands .slick-arrow.btn-prev {\n      left: 15px;\n}\n#app #block-brands #slide-brands {\n    height: 300px;\n}\n#app #block-brands #slide-brands .slick-list {\n      content: \"\";\n      width: 300px;\n      height: 300px;\n      position: absolute;\n      left: calc(50% - 150px);\n      background: rgba(242, 106, 35, 0.1);\n      border-radius: 100%;\n      border: 1px solid white;\n}\n#app #block-brands .fp-slidesNav {\n    display: none;\n}\n#app #block-brands #slide-brands-mobile {\n    margin-top: 30px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands {\n      width: 300px;\n      height: 300px;\n      border: 1px solid white;\n      font-size: 30px;\n      background-size: 100px;\n      background-repeat: no-repeat;\n      background-position: center 50px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands:before {\n        content: \"\";\n        position: absolute;\n        background: rgba(242, 108, 35, 0.4);\n        width: 100%;\n        height: 100%;\n        background: rgba(242, 108, 35, 0.4);\n        border-radius: 100%;\n        left: 0;\n        z-index: -1;\n        bottom: 0;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands a, #app #block-brands #slide-brands-mobile .content-brands .info-brands span {\n        font-size: 13px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands a {\n        border-bottom: 1px solid white;\n        padding: 3px;\n}\n#app #block-brands #slide-brands-mobile .content-brands img {\n      height: 120px;\n      width: auto;\n      margin-bottom: 20px;\n}\n#app #block-brands .fp-controlArrow.fp-next, #app #block-brands .fp-controlArrow.fp-prev {\n    border: 3px solid white;\n    width: 20px;\n    height: 20px;\n    border-radius: 5px 0 5px 0px;\n    border-top-color: transparent;\n    border-right-color: transparent;\n    -webkit-transform: rotate(225deg);\n            transform: rotate(225deg);\n    position: absolute;\n    top: calc(50% + 210px);\n}\n#app #block-brands .fp-controlArrow.fp-prev {\n    -webkit-transform: rotate(45deg);\n            transform: rotate(45deg);\n}\n#app #block-brands .bg-black-cover {\n    width: 0;\n    height: 100vh;\n    -webkit-transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    background-position: center;\n}\n#app #block-brands .bg-black-cover.select {\n      -webkit-animation: bgActive 1s;\n              animation: bgActive 1s;\n}\n#app #block-brands .container {\n    z-index: 2;\n    padding: 0 15px;\n}\n#app #block-brands .container .row {\n      padding: 100px 0;\n}\n#app #block-brands .container .row .slick-track {\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-align: center;\n            -ms-flex-align: center;\n                align-items: center;\n}\n#app #block-brands .container .row .slick-slide .content-brands {\n        width: 300px;\n        height: 300px;\n        border-radius: 100%;\n        border-color: white;\n        -webkit-transition: all .5s;\n        transition: all .5s;\n}\n#app #block-brands .container .row .slick-slide .content-brands img {\n          width: auto;\n          height: 150px;\n          margin-bottom: 20px;\n}\n#app #block-brands .container .row .slick-slide .content-brands .brand-title {\n          display: none;\n}\n#app #block-brands .container .row .slick-slide .content-brands .info-brands, #app #block-brands .container .row .slick-slide .content-brands img {\n          display: -webkit-box !important;\n          display: -ms-flexbox !important;\n          display: flex !important;\n}\n#app #block-brands .container .text-brands {\n      font-size: 26px;\n      letter-spacing: 18px;\n      line-height: 45px;\n      font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n        letter-spacing: 20px;\n}\n@media only screen and (max-width: 768px) {\n#app #block-brands .fp-slides {\n    height: calc(100vh - 200px);\n}\n#app #block-brands .fp-tableCell {\n    height: 100% !important;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .text-title {\n    display: none;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .info-brands {\n    width: 250px;\n    height: 250px;\n    margin-bottom: 30px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text {\n    width: 250px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text .text-brand-info {\n      line-height: 30px;\n}\n#app #block-brands .container #slide-brands-mobile .slick-brand-text {\n    padding: 0 30px;\n}\n}\n@-webkit-keyframes bgActive {\n0% {\n    width: 0;\n}\n100% {\n    width: 100vw;\n    display: none;\n}\n}\n@keyframes bgActive {\n0% {\n    width: 0;\n}\n100% {\n    width: 100vw;\n    display: none;\n}\n}\n", ""]);
+exports.push([module.i, "\n#app #block-brands {\n  background-size: cover;\n  background-position: center;\n}\n#app #block-brands .slick-arrow {\n    position: absolute;\n    width: 150px;\n    height: 50px;\n    background: #f26b23;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n    top: 50%;\n}\n#app #block-brands .slick-arrow:hover {\n      background: rgba(0, 0, 0, 0.8);\n      cursor: pointer;\n}\n#app #block-brands .slick-arrow.btn-next {\n      right: 15px;\n}\n#app #block-brands .slick-arrow.btn-prev {\n      left: 15px;\n}\n#app #block-brands #slide-brands {\n    height: 300px;\n}\n#app #block-brands #slide-brands .slick-list {\n      content: \"\";\n      width: 300px;\n      height: 300px;\n      position: absolute;\n      left: calc(50% - 150px);\n      background: rgba(242, 106, 35, 0.1);\n      border-radius: 100%;\n      border: 1px solid white;\n}\n#app #block-brands .fp-slidesNav {\n    display: none;\n}\n#app #block-brands #slide-brands-mobile {\n    margin-top: 30px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands {\n      width: 300px;\n      height: 300px;\n      border: 1px solid white;\n      font-size: 30px;\n      background-size: 100px;\n      background-repeat: no-repeat;\n      background-position: center 50px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands:before {\n        content: \"\";\n        position: absolute;\n        background: rgba(242, 108, 35, 0.4);\n        width: 100%;\n        height: 100%;\n        background: rgba(242, 108, 35, 0.4);\n        border-radius: 100%;\n        left: 0;\n        z-index: -1;\n        bottom: 0;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands a, #app #block-brands #slide-brands-mobile .content-brands .info-brands span {\n        font-size: 13px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands a {\n        border-bottom: 1px solid white;\n        padding: 3px;\n}\n#app #block-brands #slide-brands-mobile .content-brands img {\n      width: 120px;\n      height: auto;\n      margin-bottom: 20px;\n}\n#app #block-brands .fp-controlArrow.fp-next, #app #block-brands .fp-controlArrow.fp-prev {\n    border: 3px solid white;\n    width: 20px;\n    height: 20px;\n    border-radius: 5px 0 5px 0px;\n    border-top-color: transparent;\n    border-right-color: transparent;\n    -webkit-transform: rotate(225deg);\n            transform: rotate(225deg);\n    position: absolute;\n    top: calc(50% + 210px);\n}\n#app #block-brands .fp-controlArrow.fp-prev {\n    -webkit-transform: rotate(45deg);\n            transform: rotate(45deg);\n}\n#app #block-brands .bg-black-cover {\n    width: 0;\n    height: 100vh;\n    -webkit-transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    background-position: center;\n}\n#app #block-brands .bg-black-cover.select {\n      -webkit-animation: bgActive 1s;\n              animation: bgActive 1s;\n}\n#app #block-brands .container {\n    z-index: 2;\n    padding: 0 15px;\n}\n#app #block-brands .container .row {\n      padding: 100px 0;\n}\n#app #block-brands .container .row .slick-track {\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-align: center;\n            -ms-flex-align: center;\n                align-items: center;\n}\n#app #block-brands .container .row .slick-slide .content-brands {\n        width: 300px;\n        height: 300px;\n        border-radius: 100%;\n        border-color: white;\n        -webkit-transition: all .5s;\n        transition: all .5s;\n}\n#app #block-brands .container .row .slick-slide .content-brands img {\n          width: 150px;\n          height: auto;\n          margin-bottom: 20px;\n}\n#app #block-brands .container .row .slick-slide .content-brands .brand-title {\n          display: none;\n}\n#app #block-brands .container .row .slick-slide .content-brands .info-brands, #app #block-brands .container .row .slick-slide .content-brands img {\n          display: -webkit-box !important;\n          display: -ms-flexbox !important;\n          display: flex !important;\n}\n#app #block-brands .container .text-brands {\n      font-size: 26px;\n      letter-spacing: 18px;\n      line-height: 45px;\n      font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n        letter-spacing: 20px;\n}\n@media only screen and (max-width: 768px) {\n#app #block-brands .fp-slides {\n    height: calc(100vh - 200px);\n}\n#app #block-brands .fp-tableCell {\n    height: 100% !important;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .text-title {\n    display: none;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .info-brands {\n    width: 250px;\n    height: 250px;\n    margin-bottom: 30px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text {\n    width: 250px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text .text-brand-info {\n      line-height: 30px;\n}\n#app #block-brands .container #slide-brands-mobile .slick-brand-text {\n    padding: 0 30px;\n}\n}\n@-webkit-keyframes bgActive {\n0% {\n    width: 0;\n}\n100% {\n    width: 100vw;\n    display: none;\n}\n}\n@keyframes bgActive {\n0% {\n    width: 0;\n}\n100% {\n    width: 100vw;\n    display: none;\n}\n}\n", ""]);
 
 // exports
 
@@ -5018,28 +5018,35 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 url: '/images/bg_brand_1.png',
                 title: 'EXTENSION1',
                 text: '美食不孤單，小鍋<span class="text-orange">新</span>食尚！<br>享受一個人的自在、兩個人的美好、一群人的熱鬧！',
-                logo: '/images/home3_icon1.png',
+                logo: '/images/icon_extension_white.png',
                 contact: '#',
                 book: '#'
             }, {
                 url: '/images/banner_contact.png',
                 title: 'M One Cafe',
                 text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！',
-                logo: '/images/icon_cafe.png',
+                logo: '/images/icon_cafe_white.png',
                 contact: '#',
                 book: '#'
             }, {
                 url: '/images/banner_about.png',
                 title: '橘色鍋物',
                 text: '<span class="text-orange">橘色</span>鍋物<br>不管多少人都能吃得精彩！',
-                logo: '/images/home3_icon2.png',
+                logo: '/images/icon_shabu.png',
                 contact: '#',
                 book: '#'
             }, {
                 url: '/images/slideshow_1.jpg',
                 title: '橘色舒體',
                 text: '<span class="text-orange">橘色</span>舒體<br>測試描述文字',
-                logo: '/images/icon_m1spa.png',
+                logo: '/images/icon_spa_white.png',
+                contact: '#',
+                book: '#'
+            }, {
+                url: '/images/slideshow_1.jpg',
+                title: 'SAKURA',
+                text: '男女<span class="text-orange">健康</span>生活館<br>測試描述文字',
+                logo: '/images/icon_sakura_white.png',
                 contact: '#',
                 book: '#'
             }],
@@ -5450,87 +5457,6 @@ module.exports = Component.exports
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -13388,167 +13314,198 @@ var render = function() {
                       [
                         $index == 2 &&
                         _vm.newsItems.filter(_vm.filterFeature)[0]
-                          ? _c("div", [
-                              _c(
-                                "div",
-                                {
-                                  staticClass:
-                                    "news-head d-flex align-items-center justify-content-center position-relative",
-                                  style:
-                                    "background-image: url(" +
-                                    _vm.newsItems.filter(_vm.filterFeature)[0]
-                                      .background +
-                                    ")"
-                                },
-                                [
-                                  _c(
-                                    "router-link",
-                                    {
-                                      staticClass: "btn-border btn-readmore",
+                          ? _c(
+                              "div",
+                              [
+                                _c(
+                                  "router-link",
+                                  { attrs: { to: "/news/detail/" + item.id } },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "news-head d-flex align-items-center justify-content-center position-relative",
+                                        style:
+                                          "background-image: url(" +
+                                          _vm.newsItems.filter(
+                                            _vm.filterFeature
+                                          )[0].background +
+                                          ")"
+                                      },
+                                      [
+                                        _c(
+                                          "router-link",
+                                          {
+                                            staticClass:
+                                              "btn-border btn-readmore",
+                                            attrs: {
+                                              to:
+                                                "/news/detail/" +
+                                                _vm.newsItems.filter(
+                                                  _vm.filterFeature
+                                                )[0].id
+                                            }
+                                          },
+                                          [_vm._v("了解更多")]
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "news-content text-center" },
+                                  [
+                                    _c("div", [
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-black text-size-1"
+                                        },
+                                        [
+                                          _vm._v(
+                                            _vm._s(
+                                              _vm.newsItems.filter(
+                                                _vm.filterFeature
+                                              )[0].date
+                                            )
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-orange text-size-1"
+                                        },
+                                        [
+                                          _vm._v(
+                                            _vm._s(
+                                              _vm.newsItems.filter(
+                                                _vm.filterFeature
+                                              )[0].category
+                                            )
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("router-link", {
+                                      staticClass: "news-title",
                                       attrs: {
                                         to:
                                           "/news/detail/" +
                                           _vm.newsItems.filter(
                                             _vm.filterFeature
                                           )[0].id
+                                      },
+                                      domProps: {
+                                        innerHTML: _vm._s(
+                                          _vm.newsItems.filter(
+                                            _vm.filterFeature
+                                          )[0].title
+                                        )
                                       }
-                                    },
-                                    [_vm._v("了解更多")]
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                { staticClass: "news-content text-center" },
-                                [
-                                  _c("div", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "text-black text-size-1" },
-                                      [
-                                        _vm._v(
-                                          _vm._s(
-                                            _vm.newsItems.filter(
-                                              _vm.filterFeature
-                                            )[0].date
-                                          )
-                                        )
-                                      ]
-                                    ),
+                                    }),
                                     _vm._v(" "),
+                                    _c("p", {
+                                      staticClass: "news-desc",
+                                      domProps: {
+                                        innerHTML: _vm._s(
+                                          _vm.newsItems.filter(
+                                            _vm.filterFeature
+                                          )[0].intro
+                                        )
+                                      }
+                                    })
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            )
+                          : _c(
+                              "div",
+                              [
+                                _c(
+                                  "router-link",
+                                  { attrs: { to: "/news/detail/" + item.id } },
+                                  [
                                     _c(
-                                      "span",
+                                      "div",
                                       {
-                                        staticClass: "text-orange text-size-1"
+                                        staticClass:
+                                          "news-head d-flex align-items-center justify-content-center position-relative",
+                                        style:
+                                          "background-image: url(" +
+                                          item.background +
+                                          ")"
                                       },
                                       [
-                                        _vm._v(
-                                          _vm._s(
-                                            _vm.newsItems.filter(
-                                              _vm.filterFeature
-                                            )[0].category
-                                          )
+                                        _c(
+                                          "router-link",
+                                          {
+                                            staticClass:
+                                              "btn-border btn-readmore",
+                                            attrs: {
+                                              to: "/news/detail/" + item.id
+                                            }
+                                          },
+                                          [_vm._v("了解更多")]
                                         )
-                                      ]
+                                      ],
+                                      1
                                     )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("router-link", {
-                                    staticClass: "news-title",
-                                    attrs: {
-                                      to:
-                                        "/news/detail/" +
-                                        _vm.newsItems.filter(
-                                          _vm.filterFeature
-                                        )[0].id
-                                    },
-                                    domProps: {
-                                      innerHTML: _vm._s(
-                                        _vm.newsItems.filter(
-                                          _vm.filterFeature
-                                        )[0].title
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "news-content text-center" },
+                                  [
+                                    _c("div", [
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-black text-size-1"
+                                        },
+                                        [_vm._v(_vm._s(item.date))]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-orange text-size-1"
+                                        },
+                                        [_vm._v(_vm._s(item.category))]
                                       )
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("p", {
-                                    staticClass: "news-desc",
-                                    domProps: {
-                                      innerHTML: _vm._s(
-                                        _vm.newsItems.filter(
-                                          _vm.filterFeature
-                                        )[0].intro
-                                      )
-                                    }
-                                  })
-                                ],
-                                1
-                              )
-                            ])
-                          : _c("div", [
-                              _c(
-                                "div",
-                                {
-                                  staticClass:
-                                    "news-head d-flex align-items-center justify-content-center position-relative",
-                                  style:
-                                    "background-image: url(" +
-                                    item.background +
-                                    ")"
-                                },
-                                [
-                                  _c(
-                                    "router-link",
-                                    {
-                                      staticClass: "btn-border btn-readmore",
-                                      attrs: { to: "/news/detail/" + item.id }
-                                    },
-                                    [_vm._v("了解更多")]
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                { staticClass: "news-content text-center" },
-                                [
-                                  _c("div", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "text-black text-size-1" },
-                                      [_vm._v(_vm._s(item.date))]
-                                    ),
+                                    ]),
                                     _vm._v(" "),
-                                    _c(
-                                      "span",
-                                      {
-                                        staticClass: "text-orange text-size-1"
-                                      },
-                                      [_vm._v(_vm._s(item.category))]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("router-link", {
-                                    staticClass: "news-title",
-                                    attrs: { to: "/news/detail/" + item.id },
-                                    domProps: { innerHTML: _vm._s(item.title) }
-                                  }),
-                                  _vm._v(" "),
-                                  $index == 2
-                                    ? _c("p", {
-                                        staticClass: "news-desc",
-                                        domProps: {
-                                          innerHTML: _vm._s(item.intro)
-                                        }
-                                      })
-                                    : _vm._e()
-                                ],
-                                1
-                              )
-                            ])
+                                    _c("router-link", {
+                                      staticClass: "news-title",
+                                      attrs: { to: "/news/detail/" + item.id },
+                                      domProps: {
+                                        innerHTML: _vm._s(item.title)
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    $index == 2
+                                      ? _c("p", {
+                                          staticClass: "news-desc",
+                                          domProps: {
+                                            innerHTML: _vm._s(item.intro)
+                                          }
+                                        })
+                                      : _vm._e()
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            )
                       ]
                     )
                   : _vm._e()
