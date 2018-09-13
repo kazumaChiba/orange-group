@@ -36,9 +36,9 @@
             a , .is-link
                 &:hover
                     color: black
-            &.no-redirect .el-breadcrumb__separator::before
-                content: "/"
-                color: #000
+                // .el-breadcrumb__separator::before
+                //     content: "/"
+                //     color: #000
 </style>
 <script>
 	export default {

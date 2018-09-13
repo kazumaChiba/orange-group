@@ -56,9 +56,9 @@
                         </div>
                         <div class="item-news-foot w-100 d-flex justify-content-between flex-column flex-lg-row">
                             <div class="item-tags-list">
-                                <span class="item-tag">橘色涮涮屋</span>
-                                <span class="item-tag">新店</span>
-                                <span class="item-tag">新光三越</span>
+                                <router-link class="item-tag" :to="'/news/search/橘色涮涮屋'">橘色涮涮屋</router-link>
+                                <router-link class="item-tag" :to="'/news/search/黑毛和牛'">黑毛和牛</router-link>
+                                <router-link class="item-tag" :to="'/news/search/金色三麥啤酒'">金色三麥啤酒</router-link>
                             </div>
                             <div class="item-social-list d-flex">
                                 <span class="d-inline-flex align-items-center mr-3">社群分享</span>
@@ -73,11 +73,11 @@
                         <div class="item-relatives w-100 d-flex justify-content-between">
                             <div class="item-relative -pre text-left">
                                 <span class="title-relative">上一則訊息</span>
-                                <a class="position-relative" href="#">消息標題文字</a>
+                                <router-link class="position-relative" :to="'#'">消息標題文字</router-link>
                             </div>
                             <div class="item-relative -next text-right">
                                 <span class="title-relative">下一則訊息</span>
-                                <a class="position-relative" href="#">消息標題文字</a>
+                                <router-link class="position-relative" :to="'#'">消息標題文字</router-link>
                             </div>
                         </div>
                     </div>
@@ -112,7 +112,6 @@ export default {
 </script>
 
 <style lang="sass">
-
     #block-news-item
         height: 95vh
         .news-item-head

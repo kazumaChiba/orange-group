@@ -1,4 +1,4 @@
-webpackJsonp([8],Array(392).concat([
+webpackJsonp([16],Array(392).concat([
 /* 392 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1558,7 +1558,7 @@ exports = module.exports = __webpack_require__(23)(false);
 
 
 // module
-exports.push([module.i, "\n#block-breadcrumb {\n  background-repeat: no-repeat;\n  background-size: auto;\n  background-position: top;\n  background-attachment: fixed;\n  height: 50vh;\n  padding-top: 70px;\n}\n#block-breadcrumb:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    top: 0;\n}\n#block-breadcrumb .text-tag {\n    font-size: 20px;\n    border: 1px solid white;\n    padding: 5px 25px;\n    margin-top: 35px;\n    display: inline-block;\n}\n#block-breadcrumb .el-breadcrumb__item .el-breadcrumb__inner:hover .no-redirect {\n    color: white;\n}\n@media only screen and (max-width: 991px) {\n#block-breadcrumb {\n      height: 220px;\n}\n#block-breadcrumb.pageTag {\n        height: 270px;\n}\n#block-breadcrumb .banner-title {\n        font-size: 28px;\n}\n#block-breadcrumb .banner-title span {\n          color: white !important;\n}\n}\n", ""]);
+exports.push([module.i, "\n#block-breadcrumb {\n  background-repeat: no-repeat;\n  background-size: auto;\n  background-position: top;\n  background-attachment: fixed;\n  height: 50vh;\n  padding-top: 70px;\n}\n#block-breadcrumb:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    top: 0;\n}\n#block-breadcrumb .text-tag {\n    font-size: 20px;\n    border: 1px solid white;\n    padding: 5px 25px;\n    margin-top: 35px;\n    display: inline-block;\n}\n@media only screen and (max-width: 991px) {\n#block-breadcrumb {\n      height: 220px;\n}\n#block-breadcrumb.pageTag {\n        height: 270px;\n}\n#block-breadcrumb .banner-title {\n        font-size: 28px;\n}\n#block-breadcrumb .banner-title span {\n          color: white !important;\n}\n}\n", ""]);
 
 // exports
 
@@ -1569,11 +1569,6 @@ exports.push([module.i, "\n#block-breadcrumb {\n  background-repeat: no-repeat;\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
 //
 //
 //

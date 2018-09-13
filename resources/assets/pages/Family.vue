@@ -296,6 +296,7 @@ export default {
             z-index: 2
             background-size: cover
             background-attachment: fixed
+            background-position: center
             &:before
                 background: rgba(74, 31, 12, 0.5)
                 width: 100%

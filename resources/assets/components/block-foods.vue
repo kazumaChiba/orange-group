@@ -17,7 +17,7 @@
                     <div
                         v-for="(item , $index) in foodItems"
                         :key="$index" class="more-food-info"
-                        @click="food_index = $index;  bgAnimated(100); startAnimate(500)"
+                        @click="clickValue($index)"
                         :class="food_index == $index ? 'active' : ''"
                         :style="'background-image:url('+item.url+')'"
                     ></div>
@@ -96,6 +96,13 @@
             }
         },
         methods: {
+            clickValue(value){
+                if(!this.addTransition){
+                    this.food_index = value;  
+                    this.bgAnimated(100); 
+                    this.startAnimate(1000);
+                }
+            },
             bgAnimated(time){
                 this.bgTransition = true;
                 setTimeout(()=>{
@@ -117,7 +124,7 @@
 <style lang="sass" rel="stylesheet/sass">
     #block-foods
         background-size: cover
-        background-position: 0
+        background-position: center
         &.active
             .block-food-body
                 .content-food
@@ -229,7 +236,7 @@
                         left: -140px 
                         &.active
                             transform: rotate(360deg)
-                            transition: all .5s ease-in-out
+                            transition: all 1s cubic-bezier(1.00, 0.105 , 0.00, 1.00)
                                 
                     .more-food-info
                         display: none
@@ -281,8 +288,11 @@
                                 font-size: 12px
                                 letter-spacing: 2px
                         .loader
-                            width: 100vw
-                            left: 15%
+                            width: 120%
+                            left: -30px
+                            top: -10px
+                            #Content-Menu-3
+                                opacity: 0.6 !important
     
     @media only screen and (max-width: 420px)
         #app 
@@ -291,12 +301,6 @@
                     .content-food 
                         &.right-content
                             padding: 25px 20px
-                        .loader
-                            circle
-                                transform: scale(0.6)
-                            &.active
-                                circle
-                                    transform: rotate(180deg) scale(0.6)
 
 
 </style>

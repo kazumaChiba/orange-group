@@ -1,71 +1,18 @@
 webpackJsonp([11],{
 
-/***/ 208:
+/***/ 403:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(586)
-  __webpack_require__(588)
+  __webpack_require__(404)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(8)
 /* script */
-var __vue_script__ = __webpack_require__(590)
+var __vue_script__ = __webpack_require__(406)
 /* template */
-var __vue_template__ = __webpack_require__(591)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/pages/News.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-03657a3c", Component.options)
-  } else {
-    hotAPI.reload("data-v-03657a3c", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 365:
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(366)
-}
-var normalizeComponent = __webpack_require__(49)
-/* script */
-var __vue_script__ = __webpack_require__(368)
-/* template */
-var __vue_template__ = __webpack_require__(369)
+var __vue_template__ = __webpack_require__(407)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -105,17 +52,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 366:
+/***/ 404:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(367);
+var content = __webpack_require__(405);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(204)("b8d6fad2", content, false, {});
+var update = __webpack_require__(31)("b8d6fad2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -132,10 +79,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 367:
+/***/ 405:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(23)(false);
 // imports
 
 
@@ -147,7 +94,7 @@ exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .j
 
 /***/ }),
 
-/***/ 368:
+/***/ 406:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -229,7 +176,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 369:
+/***/ 407:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -257,7 +204,7 @@ var render = function() {
               "div",
               {
                 staticClass:
-                  "row d-flex justify-content-between align-items-center flex-column flex-lg-row"
+                  "row d-flex w-100 m-0 justify-content-between align-items-center flex-column flex-lg-row"
               },
               [
                 _vm._m(0),
@@ -282,7 +229,8 @@ var render = function() {
             _c(
               "div",
               {
-                staticClass: "row mb-lg-5 pb-lg-5 flex-wrap-reverse flex-lg-row"
+                staticClass:
+                  "d-flex mb-lg-5 pb-lg-5 flex-wrap-reverse flex-lg-row"
               },
               [
                 _vm._m(1),
@@ -529,19 +477,19 @@ if (false) {
 
 /***/ }),
 
-/***/ 374:
+/***/ 412:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(375)
+  __webpack_require__(413)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(8)
 /* script */
-var __vue_script__ = __webpack_require__(377)
+var __vue_script__ = __webpack_require__(415)
 /* template */
-var __vue_template__ = __webpack_require__(378)
+var __vue_template__ = __webpack_require__(416)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -581,17 +529,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 375:
+/***/ 413:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(376);
+var content = __webpack_require__(414);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(204)("822c5f64", content, false, {});
+var update = __webpack_require__(31)("822c5f64", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -608,26 +556,46 @@ if(false) {
 
 /***/ }),
 
-/***/ 376:
+/***/ 414:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(23)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n#block-breadcrumb {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  height: 50vh;\n}\n#block-breadcrumb:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    top: 0;\n}\n@media only screen and (max-width: 991px) {\n#block-breadcrumb {\n      height: 220px;\n}\n#block-breadcrumb .banner-title {\n        font-size: 28px;\n}\n#block-breadcrumb .banner-title span {\n          color: white !important;\n}\n}\n", ""]);
+exports.push([module.i, "\n#block-breadcrumb {\n  background-repeat: no-repeat;\n  background-size: auto;\n  background-position: top;\n  background-attachment: fixed;\n  height: 50vh;\n  padding-top: 70px;\n}\n#block-breadcrumb:before {\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    top: 0;\n}\n#block-breadcrumb .text-tag {\n    font-size: 20px;\n    border: 1px solid white;\n    padding: 5px 25px;\n    margin-top: 35px;\n    display: inline-block;\n}\n#block-breadcrumb .el-breadcrumb__item .el-breadcrumb__inner:hover .no-redirect {\n    color: white;\n}\n@media only screen and (max-width: 991px) {\n#block-breadcrumb {\n      height: 220px;\n}\n#block-breadcrumb.pageTag {\n        height: 270px;\n}\n#block-breadcrumb .banner-title {\n        font-size: 28px;\n}\n#block-breadcrumb .banner-title span {\n          color: white !important;\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 377:
+/***/ 415:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -682,13 +650,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         img: {
             type: String,
             default: '/images/slideshow_1.jpg'
+        },
+        tag: {
+            type: String,
+            default: ''
         }
     }
 });
 
 /***/ }),
 
-/***/ 378:
+/***/ 416:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -700,16 +672,19 @@ var render = function() {
     {
       staticClass:
         "position-relative w-100 d-flex align-items-center justify-content-center",
+      class: _vm.tag != "" ? "pageTag" : "",
       style: "background-image:url(" + _vm.img + ")",
       attrs: { id: "block-breadcrumb" }
     },
     [
       _c(
         "div",
-        { staticClass: "position-relative text-white pt-4 pt-lg-0" },
+        {
+          staticClass: "position-relative text-white pt-4 pt-lg-0 text-center"
+        },
         [
           _c("h2", {
-            staticClass: "mb-2 mb-lg-4 banner-title",
+            staticClass: "mb-2 mb-lg-3 banner-title",
             domProps: { innerHTML: _vm._s(_vm.title) }
           }),
           _vm._v(" "),
@@ -765,7 +740,11 @@ var render = function() {
               })
             ],
             2
-          )
+          ),
+          _vm._v(" "),
+          _vm.tag != ""
+            ? _c("span", { staticClass: "text-tag" }, [_vm._v(_vm._s(_vm.tag))])
+            : _vm._e()
         ],
         1
       )
@@ -784,23 +763,75 @@ if (false) {
 
 /***/ }),
 
-/***/ 586:
+/***/ 662:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(663)
+}
+var normalizeComponent = __webpack_require__(8)
+/* script */
+var __vue_script__ = __webpack_require__(665)
+/* template */
+var __vue_template__ = __webpack_require__(666)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-1674c088"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/pages/NewsTag.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1674c088", Component.options)
+  } else {
+    hotAPI.reload("data-v-1674c088", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 663:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(587);
+var content = __webpack_require__(664);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(204)("42e1514a", content, false, {});
+var update = __webpack_require__(31)("041b17c3", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03657a3c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./News.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03657a3c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./News.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1674c088\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./NewsTag.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1674c088\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./NewsTag.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -811,180 +842,34 @@ if(false) {
 
 /***/ }),
 
-/***/ 587:
+/***/ 664:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(23)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n#block-news:before {\n  background-attachment: fixed;\n}\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 588:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(589);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(204)("4074ab8c", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03657a3c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./News.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03657a3c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./News.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 589:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(48)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.el-input__inner {\n  -webkit-appearance: none;\n  border-radius: 0;\n  border: unset;\n  background: transparent;\n  color: white;\n}\n.el-select__caret {\n  color: #fff;\n}\n#block-news {\n  margin-bottom: 180px;\n}\n#block-news .filter-date.-year {\n    width: 90px;\n}\n#block-news .filter-date.-month {\n    width: 85px;\n}\n#block-news .btn-load-more.no-more {\n    background: rgba(0, 0, 0, 0.6);\n}\n#block-news #block-news-lists {\n    z-index: 2;\n    margin-bottom: 80px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories {\n      padding: 55px 0;\n      font-size: 14px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories.-category {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date {\n        padding: 5px;\n        background: #f26d23;\n        cursor: pointer;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-month {\n          margin-right: 20px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-year:after, #block-news #block-news-lists #block-news-filter .news-categories .filter-date.-cate:after {\n          content: \"\";\n          position: absolute;\n          height: 60%;\n          width: 1px;\n          background: rgba(255, 255, 255, 0.6);\n          right: 0;\n          top: 20%;\n}\n#block-news #block-news-items .news-item {\n    width: 25%;\n    padding: 0 16px;\n}\n#block-breadcrumb .banner-title {\n  font-size: 90px;\n  font-weight: 300;\n}\n@media only screen and (max-width: 991px) {\n#block-breadcrumb .banner-title {\n    font-size: 28px;\n}\n#block-news {\n    margin-bottom: 55px;\n}\n#block-news #block-news-lists {\n      margin-bottom: 0;\n}\n#block-news #block-news-filter .news-categories {\n      padding: 30px 0;\n}\n#block-news #block-news-filter .news-categories.-category {\n        display: none !important;\n}\n#block-news #block-news-filter .news-categories.-date .filter-date {\n        width: auto;\n        -webkit-box-flex: 2;\n            -ms-flex: 2;\n                flex: 2;\n}\n#block-news #block-news-filter .news-categories.-date .filter-date.-cate {\n          -webkit-box-flex: 3;\n              -ms-flex: 3;\n                  flex: 3;\n}\n#block-news #block-news-filter .news-categories.-date .filter-date.-month {\n          margin-right: 0 !important;\n}\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 590:
+/***/ 665:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_banner__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_banner__ = __webpack_require__(412);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_banner___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_components_block_banner__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header__ = __webpack_require__(214);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_components_block_menu_header__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_footer__ = __webpack_require__(365);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_components_block_footer__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_news_load__ = __webpack_require__(667);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_news_load___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_components_news_load__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_components_block_footer__ = __webpack_require__(403);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_components_block_footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_components_block_footer__);
 //
 //
 //
@@ -997,6 +882,256 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {};
+    },
+    components: {
+        Banner: __WEBPACK_IMPORTED_MODULE_0_components_block_banner___default.a,
+        MenuHeader: __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header___default.a,
+        LoadNews: __WEBPACK_IMPORTED_MODULE_2_components_news_load___default.a,
+        BlockFooter: __WEBPACK_IMPORTED_MODULE_3_components_block_footer___default.a
+    },
+    mounted: function mounted() {},
+
+    methods: {}
+});
+
+/***/ }),
+
+/***/ 666:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "position-relative" },
+    [
+      _c("banner", {
+        attrs: {
+          title: "<span class='text-orange'>搜尋</span>結果",
+          img: "/images/banner_news.png",
+          tag: this.$route.params.tag
+        }
+      }),
+      _vm._v(" "),
+      _c("load-news", { attrs: { isTag: true, tag: this.$route.params.tag } }),
+      _vm._v(" "),
+      _c("block-footer")
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-1674c088", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 667:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(668)
+}
+var normalizeComponent = __webpack_require__(8)
+/* script */
+var __vue_script__ = __webpack_require__(670)
+/* template */
+var __vue_template__ = __webpack_require__(671)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-1cda90eb"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/components/news-load.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1cda90eb", Component.options)
+  } else {
+    hotAPI.reload("data-v-1cda90eb", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 668:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(669);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(31)("15642ac6", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1cda90eb\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./news-load.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1cda90eb\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./news-load.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 669:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(23)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.el-select__caret[data-v-1cda90eb] {\n  color: #fff;\n}\n#block-breadcrumb .banner-title[data-v-1cda90eb] {\n  font-size: 90px;\n  font-weight: 300;\n}\n#block-news[data-v-1cda90eb] {\n  margin-bottom: 180px;\n}\n#block-news[data-v-1cda90eb]:before {\n    background-attachment: fixed;\n}\n#block-news.pageTag #block-news-lists #block-news-filter .news-categories[data-v-1cda90eb], #block-news.pageTag #block-news-lists #block-news-filter .el-select[data-v-1cda90eb] {\n    display: none;\n}\n#block-news.pageTag #block-news-lists #block-news-filter .filter-date[data-v-1cda90eb]:after {\n    display: none;\n}\n#block-news .filter-date.-year[data-v-1cda90eb] {\n    width: 90px;\n}\n#block-news .filter-date.-month[data-v-1cda90eb] {\n    width: 85px;\n}\n#block-news .btn-load-more.no-more[data-v-1cda90eb] {\n    background: rgba(0, 0, 0, 0.6);\n}\n#block-news #block-news-lists[data-v-1cda90eb] {\n    z-index: 2;\n    margin-bottom: 80px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories[data-v-1cda90eb] {\n      padding: 55px 0;\n      font-size: 14px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories.-category[data-v-1cda90eb] {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date[data-v-1cda90eb] {\n        padding: 5px;\n        background: #f26d23;\n        cursor: pointer;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-month[data-v-1cda90eb] {\n          margin-right: 20px;\n}\n#block-news #block-news-lists #block-news-filter .news-categories .filter-date.-year[data-v-1cda90eb]:after, #block-news #block-news-lists #block-news-filter .news-categories .filter-date.-cate[data-v-1cda90eb]:after {\n          content: \"\";\n          position: absolute;\n          height: 60%;\n          width: 1px;\n          background: rgba(255, 255, 255, 0.6);\n          right: 0;\n          top: 20%;\n}\n#block-news-items .news-item[data-v-1cda90eb] {\n  width: 25%;\n  padding: 0 16px;\n}\n#block-news-items .news-item .news-head[data-v-1cda90eb] {\n    padding-top: 120%;\n    margin-bottom: 10px;\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n}\n@media only screen and (max-width: 991px) {\n#block-breadcrumb .banner-title[data-v-1cda90eb] {\n    font-size: 28px;\n}\n#block-news[data-v-1cda90eb] {\n    margin-bottom: 55px;\n}\n#block-news #block-news-lists[data-v-1cda90eb] {\n      margin-bottom: 0;\n}\n#block-news #block-news-filter .news-categories[data-v-1cda90eb] {\n      padding: 30px 0;\n}\n#block-news #block-news-filter .news-categories.-category[data-v-1cda90eb] {\n        display: none !important;\n}\n#block-news #block-news-filter .news-categories.-date .filter-date[data-v-1cda90eb] {\n        width: auto;\n        -webkit-box-flex: 2;\n            -ms-flex: 2;\n                flex: 2;\n}\n#block-news #block-news-filter .news-categories.-date .filter-date.-cate[data-v-1cda90eb] {\n          -webkit-box-flex: 3;\n              -ms-flex: 3;\n                  flex: 3;\n}\n#block-news #block-news-filter .news-categories.-date .filter-date.-month[data-v-1cda90eb] {\n          margin-right: 0 !important;\n}\n#block-news.pageTag #block-news-lists #block-news-filter .news-categories[data-v-1cda90eb], #block-news.pageTag #block-news-lists #block-news-filter .el-select[data-v-1cda90eb] {\n      display: block;\n      width: 100%;\n}\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 670:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -1008,7 +1143,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 category: '橘色涮涮屋',
                 title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                tags: ['黑毛和牛', '橘色涮涮屋', '山珍海味']
             }, {
                 id: 2,
                 background: '/images/news_v3.png',
@@ -1016,7 +1151,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 category: '橘色涮涮屋',
                 title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                tags: ['黑毛和牛', '橘色涮涮屋', '山珍海味']
             }, {
                 id: 3,
                 background: '/images/news_v5.png',
@@ -1024,7 +1159,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 category: '橘色涮涮屋',
                 title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                tags: ['黑毛和牛', '橘色涮涮屋', '山珍海味']
             }, {
                 id: 4,
                 background: '/images/news_v2.png',
@@ -1032,7 +1167,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 category: '橘色涮涮屋',
                 title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                tags: ['黑毛和牛', '橘色涮涮屋', '山珍海味']
             }, {
                 id: 5,
                 background: '/images/news_v4.png',
@@ -1040,7 +1175,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 category: '橘色涮涮屋',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                tags: ['黑毛和牛', '橘色涮涮屋', '山珍海味']
             }, {
                 id: 6,
                 background: '/images/news_v1.png',
@@ -1048,7 +1183,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 category: '橘色涮涮屋',
                 title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                tags: ['黑毛和牛', '橘色涮涮屋', '山珍海味']
             }, {
                 id: 7,
                 background: '/images/news_v3.png',
@@ -1056,7 +1191,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 category: '橘色涮涮屋',
                 title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                tags: ['黑毛和牛', '橘色涮涮屋', '山珍海味']
             }, {
                 id: 8,
                 background: '/images/news_v5.png',
@@ -1064,7 +1199,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 category: '橘色涮涮屋',
                 title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                tags: ['黑毛和牛', '橘色涮涮屋', '山珍海味']
             }, {
                 id: 9,
                 background: '/images/news_v2.png',
@@ -1072,7 +1207,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 category: '橘色涮涮屋',
                 title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                tags: ['黑毛和牛', 'Extension 1 by 橘色', '山珍海味']
             }, {
                 id: 10,
                 background: '/images/news_v4.png',
@@ -1080,7 +1215,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 category: '橘色涮涮屋',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                tags: ['黑毛和牛', '橘色涮涮屋', '山珍海味']
             }, {
                 id: 11,
                 background: '/images/news_v1.png',
@@ -1088,7 +1223,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                tags: ['金色三麥啤酒', 'Extension 1 by 橘色', '美食新體驗']
             }, {
                 id: 12,
                 background: '/images/news_v2.png',
@@ -1096,7 +1231,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                tags: ['金色三麥啤酒', 'Extension 1 by 橘色', '美食新體驗']
             }, {
                 id: 13,
                 background: '/images/news_v3.png',
@@ -1104,7 +1239,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                tags: ['金色三麥啤酒', '橘色涮涮屋', '美食新體驗']
             }, {
                 id: 14,
                 background: '/images/news_v4.png',
@@ -1112,7 +1247,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                tags: ['金色三麥啤酒', 'Extension 1 by 橘色', '美食新體驗']
             }, {
                 id: 15,
                 background: '/images/news_v5.png',
@@ -1120,27 +1255,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/#/news/detail'
+                tags: ['金色三麥啤酒', 'Extension 1 by 橘色', '美食新體驗']
             }],
-            newsCategories: ['橘色涮涮屋', 'Extension 1 by 橘色'],
-            // newsIndex: 0,
             viewIndex: 8,
+            loadEnd: false,
+            newsCategories: ['橘色涮涮屋', 'Extension 1 by 橘色'],
             year: 2018,
             month: '',
-            category: '',
-            loadEnd: false
+            category: ''
         };
     },
-    components: {
-        Banner: __WEBPACK_IMPORTED_MODULE_0_components_block_banner___default.a,
-        MenuHeader: __WEBPACK_IMPORTED_MODULE_1_components_block_menu_header___default.a,
-        BlockFooter: __WEBPACK_IMPORTED_MODULE_2_components_block_footer___default.a
-    },
-    mounted: function mounted() {
-        // this.$store.dispatch("update_news_items",this.newsItems);
-        // console.log(this.$store.state.user.news_items[0].title);
-    },
+    computed: {},
+    created: function created() {},
 
+    mounted: function mounted() {
+        //console.log(this.$route.matched)
+    },
     methods: {
         loadMore: function loadMore() {
             var filterNewsLength = this.newsItems.filter(this.filterNews).length;
@@ -1149,10 +1279,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 this.loadEnd = true;
             }
         },
-
-        // filterCate(index){
-        //     this.newsIndex = index;
-        // },
         newsYear: function newsYear(date) {
             return date.split('/')[0];
         },
@@ -1160,7 +1286,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             return date.split('/')[1];
         },
         filterNews: function filterNews(value) {
-            return (value.category == this.category || this.category == '') && (this.newsMonth(value.date) == this.month || this.month == '') && this.newsYear(value.date) == this.year;
+            if (this.isTag) {
+                return (value.category == this.category || this.category == '') && value.tags.includes(this.tag);
+            } else {
+                return (value.category == this.category || this.category == '') && (this.newsMonth(value.date) == this.month || this.month == '') && this.newsYear(value.date) == this.year;
+            }
         },
         filterCate: function filterCate(value) {
             this.category = value;
@@ -1175,12 +1305,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 this.loadEnd = false;
             }
         }
+    },
+    components: {},
+    props: {
+        isTag: {
+            type: Boolean,
+            default: false
+        },
+        tag: {
+            type: String,
+            default: ''
+        }
+
     }
 });
 
 /***/ }),
 
-/***/ 591:
+/***/ 671:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -1189,133 +1331,118 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "position-relative" },
+    {
+      staticClass: "news-body position-relative",
+      class: { pageTag: _vm.isTag },
+      attrs: { id: "block-news" }
+    },
     [
-      _c("banner", {
-        attrs: {
-          title: "<span class='text-orange'>橘色</span>新訊",
-          img: "/images/banner_news.png"
-        }
-      }),
-      _vm._v(" "),
       _c(
         "div",
-        {
-          staticClass: "news-body position-relative",
-          attrs: { id: "block-news" }
-        },
+        { staticClass: "position-relative", attrs: { id: "block-news-lists" } },
         [
-          _c(
-            "div",
-            {
-              staticClass: "position-relative",
-              attrs: { id: "block-news-lists" }
-            },
-            [
-              _c("div", { attrs: { id: "block-news-filter" } }, [
-                _c("div", { staticClass: "container d-flex" }, [
+          _c("div", { attrs: { id: "block-news-filter" } }, [
+            _c("div", { staticClass: "container d-flex" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "news-categories -category d-flex",
+                  attrs: { id: "category-items" }
+                },
+                [
                   _c(
                     "div",
                     {
-                      staticClass: "news-categories -category d-flex",
-                      attrs: { id: "category-items" }
+                      staticClass:
+                        "category-items mr-4 ml-4 d-flex align-items-center",
+                      class: _vm.category == "" ? "active" : "",
+                      on: {
+                        click: function($event) {
+                          _vm.filterCate("")
+                        }
+                      }
                     },
                     [
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "category-items mr-4 ml-4 d-flex align-items-center",
-                          class: _vm.category == "" ? "active" : "",
-                          on: {
-                            click: function($event) {
-                              _vm.filterCate("")
-                            }
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "\n                            全部新訊\n                        "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _vm._l(_vm.newsCategories, function(item, $index) {
-                        return _c(
-                          "div",
-                          {
-                            key: $index,
-                            staticClass:
-                              "category-items mr-4 ml-4 d-flex align-items-center",
-                            class: _vm.category == item ? "active" : "",
-                            on: {
-                              click: function($event) {
-                                _vm.filterCate(item)
-                              }
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "\n                            " +
-                                _vm._s(item) +
-                                "\n                        "
-                            )
-                          ]
-                        )
-                      })
-                    ],
-                    2
+                      _vm._v(
+                        "\n                        全部新訊\n                    "
+                      )
+                    ]
                   ),
                   _vm._v(" "),
-                  _c("div", { staticClass: "news-categories -date" }, [
+                  _vm._l(_vm.newsCategories, function(item, $index) {
+                    return _c(
+                      "div",
+                      {
+                        key: $index,
+                        staticClass:
+                          "category-items mr-4 ml-4 d-flex align-items-center",
+                        class: _vm.category == item ? "active" : "",
+                        on: {
+                          click: function($event) {
+                            _vm.filterCate(item)
+                          }
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                        " +
+                            _vm._s(item) +
+                            "\n                    "
+                        )
+                      ]
+                    )
+                  })
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "news-categories -date" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "d-flex justify-content-end",
+                    attrs: { id: "category-date" }
+                  },
+                  [
                     _c(
                       "div",
                       {
-                        staticClass: "d-flex justify-content-end",
-                        attrs: { id: "category-date" }
+                        staticClass:
+                          "filter-date -cate position-relative d-block d-lg-none"
                       },
                       [
                         _c(
-                          "div",
+                          "el-select",
                           {
-                            staticClass:
-                              "filter-date -cate position-relative d-block d-lg-none"
+                            on: { change: _vm.filterCate },
+                            model: {
+                              value: _vm.category,
+                              callback: function($$v) {
+                                _vm.category = $$v
+                              },
+                              expression: "category"
+                            }
                           },
                           [
-                            _c(
-                              "el-select",
-                              {
-                                on: { change: _vm.filterChange },
-                                model: {
-                                  value: _vm.category,
-                                  callback: function($$v) {
-                                    _vm.category = $$v
-                                  },
-                                  expression: "category"
-                                }
-                              },
-                              [
-                                _c("el-option", {
-                                  attrs: { label: "全部新訊", value: "" }
-                                }),
-                                _vm._v(" "),
-                                _vm._l(_vm.newsCategories, function(
-                                  item,
-                                  $index
-                                ) {
-                                  return _c("el-option", {
-                                    key: $index,
-                                    attrs: { label: item, value: item }
-                                  })
-                                })
-                              ],
-                              2
-                            )
+                            _c("el-option", {
+                              attrs: { label: "全部新訊", value: "" }
+                            }),
+                            _vm._v(" "),
+                            _vm._l(_vm.newsCategories, function(item, $index) {
+                              return _c("el-option", {
+                                key: $index,
+                                attrs: { label: item, value: item }
+                              })
+                            })
                           ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c(
+                          2
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    !_vm.isTag
+                      ? _c(
                           "div",
                           {
                             staticClass: "filter-date -year position-relative"
@@ -1350,9 +1477,11 @@ var render = function() {
                             )
                           ],
                           1
-                        ),
-                        _vm._v(" "),
-                        _c(
+                        )
+                      : _vm._e(),
+                    _vm._v(" "),
+                    !_vm.isTag
+                      ? _c(
                           "div",
                           { staticClass: "filter-date -month" },
                           [
@@ -1390,30 +1519,42 @@ var render = function() {
                           ],
                           1
                         )
-                      ]
-                    )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "news-list", attrs: { id: "block-news-items" } },
-                [
-                  _c("div", { staticClass: "container" }, [
-                    _c(
-                      "div",
-                      { staticClass: "row" },
-                      _vm._l(_vm.newsItems.filter(_vm.filterNews), function(
-                        item,
-                        $index
-                      ) {
-                        return $index < _vm.viewIndex
-                          ? _c(
-                              "div",
+                      : _vm._e()
+                  ]
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "news-list", attrs: { id: "block-news-items" } },
+            [
+              _c("div", { staticClass: "container" }, [
+                _c(
+                  "div",
+                  { staticClass: "row" },
+                  _vm._l(_vm.newsItems.filter(_vm.filterNews), function(
+                    item,
+                    $index
+                  ) {
+                    return $index < _vm.viewIndex
+                      ? _c(
+                          "div",
+                          {
+                            key: $index,
+                            staticClass: "news-item col-12 col-md-3"
+                          },
+                          [
+                            _c(
+                              "router-link",
                               {
-                                key: $index,
-                                staticClass: "news-item col-12 col-md-3"
+                                attrs: {
+                                  to: {
+                                    path: "/news/detail/" + item.id,
+                                    params: { title: item.title }
+                                  }
+                                }
                               },
                               [
                                 _c(
@@ -1428,83 +1569,75 @@ var render = function() {
                                   },
                                   [
                                     _c(
-                                      "router-link",
+                                      "span",
                                       {
-                                        staticClass: "btn-border",
-                                        attrs: { to: "/news/detail/" + item.id }
+                                        staticClass: "btn-border btn-readmore"
                                       },
                                       [_vm._v("了解更多")]
                                     )
-                                  ],
-                                  1
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "news-content text-center" },
-                                  [
-                                    _c("div", [
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "text-black text-size-1"
-                                        },
-                                        [_vm._v(_vm._s(item.date))]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "text-orange text-size-1"
-                                        },
-                                        [_vm._v(_vm._s(item.category))]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("router-link", {
-                                      staticClass: "news-title",
-                                      attrs: { to: "/news/detail/" + item.id },
-                                      domProps: {
-                                        innerHTML: _vm._s(item.title)
-                                      }
-                                    })
-                                  ],
-                                  1
+                                  ]
                                 )
                               ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "news-content text-center" },
+                              [
+                                _c("div", [
+                                  _c(
+                                    "span",
+                                    { staticClass: "text-black text-size-1" },
+                                    [_vm._v(_vm._s(item.date))]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "span",
+                                    { staticClass: "text-orange text-size-1" },
+                                    [_vm._v(_vm._s(item.category))]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("router-link", {
+                                  staticClass: "news-title",
+                                  attrs: {
+                                    to: { path: "/news/detail/" + item.id }
+                                  },
+                                  domProps: { innerHTML: _vm._s(item.title) }
+                                })
+                              ],
+                              1
                             )
-                          : _vm._e()
-                      })
-                    )
-                  ])
-                ]
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "btn-load-more text-center" }, [
-            _c(
-              "a",
-              {
-                staticClass: "btn-load-more btn-orange fat",
-                class: { "no-more": _vm.loadEnd },
-                on: { click: _vm.loadMore }
-              },
-              [
-                _vm._v(
-                  "\n                " +
-                    _vm._s(_vm.loadEnd ? "無更多新訊" : "載入更多") +
-                    "\n            "
+                          ],
+                          1
+                        )
+                      : _vm._e()
+                  })
                 )
-              ]
-            )
-          ])
+              ])
+            ]
+          )
         ]
       ),
       _vm._v(" "),
-      _c("block-footer")
-    ],
-    1
+      _c("div", { staticClass: "btn-load-more text-center" }, [
+        _c(
+          "a",
+          {
+            staticClass: "btn-load-more btn-orange fat",
+            class: { "no-more": _vm.loadEnd },
+            on: { click: _vm.loadMore }
+          },
+          [
+            _vm._v(
+              "\n            " +
+                _vm._s(_vm.loadEnd ? "無更多新訊" : "載入更多") +
+                "\n        "
+            )
+          ]
+        )
+      ])
+    ]
   )
 }
 var staticRenderFns = []
@@ -1513,7 +1646,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-03657a3c", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-1cda90eb", module.exports)
   }
 }
 

@@ -73,7 +73,7 @@
                 options: {
                     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
 	                sectionSelector: '.section',
-                    scrollOverflow: false,
+                    // scrollOverflow: false,
                     navigation: true,
                     navigationTooltips: ['橘色體驗','橘色價值','橘色版圖','橘色新訊'],
                     afterLoad: this.afterLoad,
@@ -118,6 +118,7 @@
 		    });
         },
         methods: {
+            
             afterLoad(originSection, activeSection){
                 if(this.ps){
 	                this.ps.update();
@@ -158,7 +159,6 @@
 		        //console.log(direction);
             },
             handleResize(){
-                console.log("resize");
                 fullpage_api.reBuild();
             }
             
@@ -178,6 +178,8 @@
 </script>
 
 <style lang="sass" scoped>
+    @import "~fullpage.js/dist/fullpage.css"
+    
     #fullpage
         transition-duration: .8s !important
         transition-timing-function: cubic-bezier(.5,0,0,1) !important

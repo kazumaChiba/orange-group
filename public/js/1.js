@@ -3804,6 +3804,21 @@ if (false) {
 
 /***/ }),
 
+/***/ 473:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(23)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*!\r\n * fullPage 3.0.2\r\n * https://github.com/alvarotrigo/fullPage.js\r\n *\r\n * @license GPLv3 for open source use only\r\n * or Fullpage Commercial License for commercial use\r\n * http://alvarotrigo.com/fullPage/pricing/\r\n *\r\n * Copyright (C) 2018 http://alvarotrigo.com/fullPage - A project by Alvaro Trigo\r\n */\r\nhtml.fp-enabled,\r\n.fp-enabled body {\r\n    margin: 0;\r\n    padding: 0;\r\n    overflow:hidden;\r\n\r\n    /*Avoid flicker on slides transitions for mobile phones #336 */\r\n    -webkit-tap-highlight-color: rgba(0,0,0,0);\r\n}\r\n.fp-section {\r\n    position: relative;\r\n    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */\r\n    -moz-box-sizing: border-box; /* <=28 */\r\n    box-sizing: border-box;\r\n}\r\n.fp-slide {\r\n    float: left;\r\n}\r\n.fp-slide, .fp-slidesContainer {\r\n    height: 100%;\r\n    display: block;\r\n}\r\n.fp-slides {\r\n    z-index:1;\r\n    height: 100%;\r\n    overflow: hidden;\r\n    position: relative;\r\n    -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */\r\n    transition: all 0.3s ease-out;\r\n}\r\n.fp-section.fp-table, .fp-slide.fp-table {\r\n    display: table;\r\n    table-layout:fixed;\r\n    width: 100%;\r\n}\r\n.fp-tableCell {\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n.fp-slidesContainer {\r\n    float: left;\r\n    position: relative;\r\n}\r\n.fp-controlArrow {\r\n    -webkit-user-select: none; /* webkit (safari, chrome) browsers */\r\n    -moz-user-select: none; /* mozilla browsers */\r\n    -khtml-user-select: none; /* webkit (konqueror) browsers */\r\n    -ms-user-select: none; /* IE10+ */\r\n    position: absolute;\r\n    z-index: 4;\r\n    top: 50%;\r\n    cursor: pointer;\r\n    width: 0;\r\n    height: 0;\r\n    border-style: solid;\r\n    margin-top: -38px;\r\n    -webkit-transform: translate3d(0,0,0);\r\n    -ms-transform: translate3d(0,0,0);\r\n    transform: translate3d(0,0,0);\r\n}\r\n.fp-controlArrow.fp-prev {\r\n    left: 15px;\r\n    width: 0;\r\n    border-width: 38.5px 34px 38.5px 0;\r\n    border-color: transparent #fff transparent transparent;\r\n}\r\n.fp-controlArrow.fp-next {\r\n    right: 15px;\r\n    border-width: 38.5px 0 38.5px 34px;\r\n    border-color: transparent transparent transparent #fff;\r\n}\r\n.fp-scrollable {\r\n    overflow: hidden;\r\n    position: relative;\r\n}\r\n.fp-scroller{\r\n    overflow: hidden;\r\n}\r\n.iScrollIndicator{\r\n    border: 0 !important;\r\n}\r\n.fp-notransition {\r\n    -webkit-transition: none !important;\r\n    transition: none !important;\r\n}\r\n#fp-nav {\r\n    position: fixed;\r\n    z-index: 100;\r\n    margin-top: -32px;\r\n    top: 50%;\r\n    opacity: 1;\r\n    -webkit-transform: translate3d(0,0,0);\r\n}\r\n#fp-nav.fp-right {\r\n    right: 17px;\r\n}\r\n#fp-nav.fp-left {\r\n    left: 17px;\r\n}\r\n.fp-slidesNav{\r\n    position: absolute;\r\n    z-index: 4;\r\n    opacity: 1;\r\n    -webkit-transform: translate3d(0,0,0);\r\n    -ms-transform: translate3d(0,0,0);\r\n    transform: translate3d(0,0,0);\r\n    left: 0 !important;\r\n    right: 0;\r\n    margin: 0 auto !important;\r\n}\r\n.fp-slidesNav.fp-bottom {\r\n    bottom: 17px;\r\n}\r\n.fp-slidesNav.fp-top {\r\n    top: 17px;\r\n}\r\n#fp-nav ul,\r\n.fp-slidesNav ul {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n#fp-nav ul li,\r\n.fp-slidesNav ul li {\r\n    display: block;\r\n    width: 14px;\r\n    height: 13px;\r\n    margin: 7px;\r\n    position:relative;\r\n}\r\n.fp-slidesNav ul li {\r\n    display: inline-block;\r\n}\r\n#fp-nav ul li a,\r\n.fp-slidesNav ul li a {\r\n    display: block;\r\n    position: relative;\r\n    z-index: 1;\r\n    width: 100%;\r\n    height: 100%;\r\n    cursor: pointer;\r\n    text-decoration: none;\r\n}\r\n#fp-nav ul li a.active span,\r\n.fp-slidesNav ul li a.active span,\r\n#fp-nav ul li:hover a.active span,\r\n.fp-slidesNav ul li:hover a.active span{\r\n    height: 12px;\r\n    width: 12px;\r\n    margin: -6px 0 0 -6px;\r\n    border-radius: 100%;\r\n }\r\n#fp-nav ul li a span,\r\n.fp-slidesNav ul li a span {\r\n    border-radius: 50%;\r\n    position: absolute;\r\n    z-index: 1;\r\n    height: 4px;\r\n    width: 4px;\r\n    border: 0;\r\n    background: #333;\r\n    left: 50%;\r\n    top: 50%;\r\n    margin: -2px 0 0 -2px;\r\n    -webkit-transition: all 0.1s ease-in-out;\r\n    -moz-transition: all 0.1s ease-in-out;\r\n    -o-transition: all 0.1s ease-in-out;\r\n    transition: all 0.1s ease-in-out;\r\n}\r\n#fp-nav ul li:hover a span,\r\n.fp-slidesNav ul li:hover a span{\r\n    width: 10px;\r\n    height: 10px;\r\n    margin: -5px 0px 0px -5px;\r\n}\r\n#fp-nav ul li .fp-tooltip {\r\n    position: absolute;\r\n    top: -2px;\r\n    color: #fff;\r\n    font-size: 14px;\r\n    font-family: arial, helvetica, sans-serif;\r\n    white-space: nowrap;\r\n    max-width: 220px;\r\n    overflow: hidden;\r\n    display: block;\r\n    opacity: 0;\r\n    width: 0;\r\n    cursor: pointer;\r\n}\r\n#fp-nav ul li:hover .fp-tooltip,\r\n#fp-nav.fp-show-active a.active + .fp-tooltip {\r\n    -webkit-transition: opacity 0.2s ease-in;\r\n    transition: opacity 0.2s ease-in;\r\n    width: auto;\r\n    opacity: 1;\r\n}\r\n#fp-nav ul li .fp-tooltip.fp-right {\r\n    right: 20px;\r\n}\r\n#fp-nav ul li .fp-tooltip.fp-left {\r\n    left: 20px;\r\n}\r\n.fp-auto-height.fp-section,\r\n.fp-auto-height .fp-slide,\r\n.fp-auto-height .fp-tableCell{\r\n    height: auto !important;\r\n}\r\n\r\n.fp-responsive .fp-auto-height-responsive.fp-section,\r\n.fp-responsive .fp-auto-height-responsive .fp-slide,\r\n.fp-responsive .fp-auto-height-responsive .fp-tableCell {\r\n    height: auto !important;\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ 476:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3836,7 +3851,7 @@ if(false) {
 
 exports = module.exports = __webpack_require__(23)(false);
 // imports
-
+exports.i(__webpack_require__(473), "");
 
 // module
 exports.push([module.i, "\n#fullpage[data-v-e3a27224] {\n  -webkit-transition-duration: .8s !important;\n          transition-duration: .8s !important;\n  -webkit-transition-timing-function: cubic-bezier(0.5, 0, 0, 1) !important;\n          transition-timing-function: cubic-bezier(0.5, 0, 0, 1) !important;\n}\n#burger-menu[data-v-e3a27224] {\n  width: 0px;\n  height: 25px;\n  text-align: center;\n  overflow: hidden;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  position: absolute;\n  right: 30px;\n  top: 53px;\n  z-index: 9999999;\n}\n#burger-menu[data-v-e3a27224]:before {\n    content: \"|||\";\n    color: #f26c23;\n    -webkit-transform: rotate(90deg);\n            transform: rotate(90deg);\n    display: inline-block;\n    font-weight: bold;\n}\n#burger-menu[data-v-e3a27224]:hover {\n    cursor: pointer;\n}\n#burger-menu.menu-close[data-v-e3a27224] {\n    width: 25px;\n}\n#app .logo[data-v-e3a27224] {\n  position: absolute;\n}\n#app #block-news .main-title .text-orange[data-v-e3a27224] {\n  color: #f26e22 !important;\n}\n#app #block-news .sub-title[data-v-e3a27224] {\n  font-weight: 200;\n}\n", ""]);
@@ -3984,7 +3999,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             options: {
                 licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                 sectionSelector: '.section',
-                scrollOverflow: false,
+                // scrollOverflow: false,
                 navigation: true,
                 navigationTooltips: ['橘色體驗', '橘色價值', '橘色版圖', '橘色新訊'],
                 afterLoad: this.afterLoad,
@@ -4068,7 +4083,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             //console.log(direction);
         },
         handleResize: function handleResize() {
-            console.log("resize");
             fullpage_api.reBuild();
         }
     },
@@ -4312,7 +4326,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         setTimeout(function () {
             setInterval(function () {
                 _this.is_run = true;
-                //this.onPlusStep()
+                _this.onPlusStep();
             }, 300);
         }, 1300);
     },
@@ -4744,7 +4758,7 @@ exports = module.exports = __webpack_require__(23)(false);
 
 
 // module
-exports.push([module.i, "\n#app #block-brands {\n  background-size: cover;\n  background-position: center;\n}\n#app #block-brands .slick-arrow {\n    position: absolute;\n    width: 150px;\n    height: 50px;\n    background: #f26b23;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n    top: 50%;\n}\n#app #block-brands .slick-arrow:hover {\n      background: rgba(0, 0, 0, 0.8);\n      cursor: pointer;\n}\n#app #block-brands .slick-arrow.btn-next {\n      right: 15px;\n}\n#app #block-brands .slick-arrow.btn-prev {\n      left: 15px;\n}\n#app #block-brands #slide-brands {\n    height: 300px;\n}\n#app #block-brands #slide-brands .slick-list {\n      content: \"\";\n      width: 300px;\n      height: 300px;\n      position: absolute;\n      left: calc(50% - 150px);\n      background: rgba(242, 106, 35, 0.1);\n      border-radius: 100%;\n      border: 1px solid white;\n}\n#app #block-brands .fp-slidesNav {\n    display: none;\n}\n#app #block-brands #slide-brands-mobile {\n    margin-top: 30px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands {\n      width: 300px;\n      height: 300px;\n      border: 1px solid white;\n      font-size: 30px;\n      background-size: 100px;\n      background-repeat: no-repeat;\n      background-position: center 50px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands:before {\n        content: \"\";\n        position: absolute;\n        background: rgba(242, 108, 35, 0.4);\n        width: 100%;\n        height: 100%;\n        background: rgba(242, 108, 35, 0.4);\n        border-radius: 100%;\n        left: 0;\n        z-index: -1;\n        bottom: 0;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands a, #app #block-brands #slide-brands-mobile .content-brands .info-brands span {\n        font-size: 13px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands a {\n        border-bottom: 1px solid white;\n        padding: 3px;\n}\n#app #block-brands #slide-brands-mobile .content-brands img {\n      width: 120px;\n      height: auto;\n      margin-bottom: 20px;\n}\n#app #block-brands .fp-controlArrow.fp-next, #app #block-brands .fp-controlArrow.fp-prev {\n    border: 3px solid white;\n    width: 20px;\n    height: 20px;\n    border-radius: 5px 0 5px 0px;\n    border-top-color: transparent;\n    border-right-color: transparent;\n    -webkit-transform: rotate(225deg);\n            transform: rotate(225deg);\n    position: absolute;\n    top: calc(50% + 210px);\n}\n#app #block-brands .fp-controlArrow.fp-prev {\n    -webkit-transform: rotate(45deg);\n            transform: rotate(45deg);\n}\n#app #block-brands .bg-black-cover {\n    width: 0;\n    height: 100vh;\n    -webkit-transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    background-position: center;\n}\n#app #block-brands .bg-black-cover.select {\n      -webkit-animation: bgActive 1s;\n              animation: bgActive 1s;\n}\n#app #block-brands .container {\n    z-index: 2;\n    padding: 0 15px;\n}\n#app #block-brands .container .row {\n      padding: 100px 0;\n}\n#app #block-brands .container .row .slick-track {\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-align: center;\n            -ms-flex-align: center;\n                align-items: center;\n}\n#app #block-brands .container .row .slick-slide .content-brands {\n        width: 300px;\n        height: 300px;\n        border-radius: 100%;\n        border-color: white;\n        -webkit-transition: all .5s;\n        transition: all .5s;\n}\n#app #block-brands .container .row .slick-slide .content-brands img {\n          width: 150px;\n          height: auto;\n          margin-bottom: 20px;\n}\n#app #block-brands .container .row .slick-slide .content-brands .brand-title {\n          display: none;\n}\n#app #block-brands .container .row .slick-slide .content-brands .info-brands, #app #block-brands .container .row .slick-slide .content-brands img {\n          display: -webkit-box !important;\n          display: -ms-flexbox !important;\n          display: flex !important;\n}\n#app #block-brands .container .text-brands {\n      font-size: 26px;\n      letter-spacing: 18px;\n      line-height: 45px;\n      font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n        letter-spacing: 20px;\n}\n@media only screen and (max-width: 768px) {\n#app #block-brands .fp-slides {\n    height: calc(100vh - 200px);\n}\n#app #block-brands .fp-tableCell {\n    height: 100% !important;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .text-title {\n    display: none;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .info-brands {\n    width: 250px;\n    height: 250px;\n    margin-bottom: 30px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text {\n    width: 250px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text .text-brand-info {\n      line-height: 30px;\n}\n#app #block-brands .container #slide-brands-mobile .slick-brand-text {\n    padding: 0 30px;\n}\n}\n@-webkit-keyframes bgActive {\n0% {\n    width: 0;\n}\n100% {\n    width: 100vw;\n    display: none;\n}\n}\n@keyframes bgActive {\n0% {\n    width: 0;\n}\n100% {\n    width: 100vw;\n    display: none;\n}\n}\n", ""]);
+exports.push([module.i, "\n#app #block-brands {\n  background-size: cover;\n  background-position: center;\n}\n#app #block-brands .slick-arrow {\n    position: absolute;\n    width: 150px;\n    height: 50px;\n    background: #f26b23;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n    top: 50%;\n}\n#app #block-brands .slick-arrow:hover {\n      background: rgba(0, 0, 0, 0.8);\n      cursor: pointer;\n}\n#app #block-brands .slick-arrow.btn-next {\n      right: 15px;\n}\n#app #block-brands .slick-arrow.btn-prev {\n      left: 15px;\n}\n#app #block-brands #slide-brands {\n    height: 300px;\n}\n#app #block-brands #slide-brands .slick-list {\n      content: \"\";\n      width: 300px;\n      height: 300px;\n      position: absolute;\n      left: calc(50% - 150px);\n      background: rgba(242, 106, 35, 0.1);\n      border-radius: 100%;\n      border: 1px solid white;\n}\n#app #block-brands #slide-brands .slick-list .info-brands a {\n        border-bottom: 1px solid white;\n}\n#app #block-brands .fp-slidesNav {\n    display: none;\n}\n#app #block-brands #slide-brands-mobile {\n    margin-top: 30px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands {\n      width: 300px;\n      height: 300px;\n      border: 1px solid white;\n      font-size: 30px;\n      background-size: 100px;\n      background-repeat: no-repeat;\n      background-position: center 50px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands:before {\n        content: \"\";\n        position: absolute;\n        background: rgba(242, 108, 35, 0.4);\n        width: 100%;\n        height: 100%;\n        background: rgba(242, 108, 35, 0.4);\n        border-radius: 100%;\n        left: 0;\n        z-index: -1;\n        bottom: 0;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands a, #app #block-brands #slide-brands-mobile .content-brands .info-brands span {\n        font-size: 13px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands a {\n        border-bottom: 1px solid white;\n        padding: 3px;\n}\n#app #block-brands #slide-brands-mobile .content-brands img {\n      width: 120px;\n      height: auto;\n      margin-bottom: 20px;\n}\n#app #block-brands .fp-controlArrow.fp-next, #app #block-brands .fp-controlArrow.fp-prev {\n    border: 3px solid white;\n    width: 20px;\n    height: 20px;\n    border-radius: 5px 0 5px 0px;\n    border-top-color: transparent;\n    border-right-color: transparent;\n    -webkit-transform: rotate(225deg);\n            transform: rotate(225deg);\n    position: absolute;\n    top: calc(50% + 210px);\n}\n#app #block-brands .fp-controlArrow.fp-prev {\n    -webkit-transform: rotate(45deg);\n            transform: rotate(45deg);\n}\n#app #block-brands .bg-black-cover {\n    width: 0;\n    height: 100vh;\n    -webkit-transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    background-position: center;\n}\n#app #block-brands .bg-black-cover.select {\n      -webkit-animation: bgActive 1s;\n              animation: bgActive 1s;\n}\n#app #block-brands .container {\n    z-index: 2;\n    padding: 0 15px;\n}\n#app #block-brands .container .row {\n      padding: 100px 0;\n}\n#app #block-brands .container .row .slick-track {\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-align: center;\n            -ms-flex-align: center;\n                align-items: center;\n}\n#app #block-brands .container .row .slick-slide .content-brands {\n        width: 300px;\n        height: 300px;\n        border-radius: 100%;\n        border-color: white;\n        -webkit-transition: all .5s;\n        transition: all .5s;\n}\n#app #block-brands .container .row .slick-slide .content-brands img {\n          width: 150px;\n          height: auto;\n          margin-bottom: 20px;\n}\n#app #block-brands .container .row .slick-slide .content-brands .brand-title {\n          display: none;\n}\n#app #block-brands .container .row .slick-slide .content-brands .info-brands, #app #block-brands .container .row .slick-slide .content-brands img {\n          display: -webkit-box !important;\n          display: -ms-flexbox !important;\n          display: flex !important;\n}\n#app #block-brands .container .text-brands {\n      font-size: 26px;\n      letter-spacing: 18px;\n      line-height: 45px;\n      font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n        letter-spacing: 20px;\n}\n@media only screen and (max-width: 768px) {\n#app #block-brands .fp-slides {\n    height: calc(100vh - 200px);\n}\n#app #block-brands .fp-tableCell {\n    height: 100% !important;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .text-title {\n    display: none;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .info-brands {\n    width: 250px;\n    height: 250px;\n    margin-bottom: 30px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text {\n    width: 250px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text .text-brand-info {\n      line-height: 30px;\n}\n#app #block-brands .container #slide-brands-mobile .slick-brand-text {\n    padding: 0 30px;\n}\n}\n@-webkit-keyframes bgActive {\n0% {\n    width: 0;\n}\n100% {\n    width: 100vw;\n    display: none;\n}\n}\n@keyframes bgActive {\n0% {\n    width: 0;\n}\n100% {\n    width: 100vw;\n    display: none;\n}\n}\n", ""]);
 
 // exports
 
@@ -5003,6 +5017,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -5015,38 +5033,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             delayIndex: 0,
             bgActive: false,
             brandItems: [{
+                url: '/images/banner_about.png',
+                title: '橘色鍋物',
+                text: '<span class="text-orange">橘色</span>鍋物<br>不管多少人都能吃得精彩！',
+                logo: '/images/home3_icon1.png',
+                contact: '#',
+                book: '#'
+            }, {
                 url: '/images/bg_brand_1.png',
                 title: 'EXTENSION1',
                 text: '美食不孤單，小鍋<span class="text-orange">新</span>食尚！<br>享受一個人的自在、兩個人的美好、一群人的熱鬧！',
-                logo: '/images/icon_extension_white.png',
+                logo: '/images/home3_icon2.png',
                 contact: '#',
                 book: '#'
             }, {
                 url: '/images/banner_contact.png',
                 title: 'M One Cafe',
                 text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！',
-                logo: '/images/icon_cafe_white.png',
-                contact: '#',
-                book: '#'
-            }, {
-                url: '/images/banner_about.png',
-                title: '橘色鍋物',
-                text: '<span class="text-orange">橘色</span>鍋物<br>不管多少人都能吃得精彩！',
-                logo: '/images/icon_shabu.png',
-                contact: '#',
-                book: '#'
-            }, {
-                url: '/images/slideshow_1.jpg',
-                title: '橘色舒體',
-                text: '<span class="text-orange">橘色</span>舒體<br>測試描述文字',
-                logo: '/images/icon_spa_white.png',
+                logo: '/images/home3_icon3.png',
                 contact: '#',
                 book: '#'
             }, {
                 url: '/images/slideshow_1.jpg',
                 title: 'SAKURA',
                 text: '男女<span class="text-orange">健康</span>生活館<br>測試描述文字',
-                logo: '/images/icon_sakura_white.png',
+                logo: '/images/home3_icon4.png',
+                contact: '#',
+                book: '#'
+            }, {
+                url: '/images/slideshow_1.jpg',
+                title: '橘色舒體',
+                text: '<span class="text-orange">橘色</span>舒體<br>測試描述文字',
+                logo: '/images/home3_icon5.png',
                 contact: '#',
                 book: '#'
             }],
@@ -5062,16 +5080,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     methods: {
         slickNext: function slickNext() {
-            this.indexBrand++;
-            this.countIndex();
+            if (!this.bgActive) {
+                this.indexBrand++;
+                this.countIndex();
 
-            this.$refs.slick.next();
+                this.$refs.slick.next();
+            }
         },
         slickPrev: function slickPrev() {
-            this.indexBrand--;
-            this.countIndex();
+            if (!this.bgActive) {
+                this.indexBrand--;
+                this.countIndex();
 
-            this.$refs.slick.prev();
+                this.$refs.slick.prev();
+            }
         },
         countIndex: function countIndex() {
             this.bgActive = true;
@@ -5110,12 +5132,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }
     },
     mounted: function mounted() {
-        // jQuery(document).ready(function(){
-        //     jQuery(".content-brands").click(function(){
-        //         jQuery("#slide-brands").slickPrev();
-        //     })
+        // jQuery(document).ready(()=>{
+        //     console.log(fullpage_api.getFullpageData.afterSlideLoad);
         // });
     },
+
     components: {
         Slick: __WEBPACK_IMPORTED_MODULE_0_vue_slick___default.a
     }
@@ -5278,7 +5299,11 @@ var render = function() {
               _vm._l(_vm.brandItems, function(item, $index) {
                 return _c(
                   "div",
-                  { key: $index, staticClass: "slide slick-brands" },
+                  {
+                    key: $index,
+                    staticClass: "slide slick-brands",
+                    attrs: { "data-anchor": $index }
+                  },
                   [
                     _c(
                       "div",
@@ -5303,28 +5328,15 @@ var render = function() {
                                   "d-flex align-items-center justify-content-center"
                               },
                               [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        _vm.brandItems[_vm.indexBrand].contact
-                                    }
-                                  },
-                                  [_vm._v("聯絡我們")]
-                                ),
+                                _c("a", { attrs: { href: item.contact } }, [
+                                  _vm._v("聯絡我們")
+                                ]),
                                 _vm._v(" "),
                                 _c("span", [_vm._v("・")]),
                                 _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href: _vm.brandItems[_vm.indexBrand].book
-                                    }
-                                  },
-                                  [_vm._v("線上訂位")]
-                                )
+                                _c("a", { attrs: { href: item.book } }, [
+                                  _vm._v("線上訂位")
+                                ])
                               ]
                             )
                           ]
@@ -5404,13 +5416,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(663)
+  __webpack_require__(492)
 }
 var normalizeComponent = __webpack_require__(8)
 /* script */
 var __vue_script__ = __webpack_require__(494)
 /* template */
-var __vue_template__ = __webpack_require__(665)
+var __vue_template__ = __webpack_require__(495)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -5446,6 +5458,48 @@ if (false) {(function () {
 })()}
 
 module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 492:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(493);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(31)("819f9c88", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e9078d8\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-news.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e9078d8\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-news.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 493:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(23)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#block-news .block-news-outer .block-news-filter[data-v-1e9078d8] {\n  margin-bottom: 20px;\n  margin-top: 40px;\n}\n#block-news .block-news-outer .block-news-filter .news-categories[data-v-1e9078d8] {\n    font-size: 14px;\n}\n#block-news .news-list[data-v-1e9078d8] {\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  height: 985px;\n}\n#block-news .news-list .news-item[data-v-1e9078d8] {\n    width: calc(25% - 40px);\n    max-height: 450px;\n}\n#block-news .news-list .news-item.feature[data-v-1e9078d8] {\n      width: 50%;\n      max-height: unset;\n}\n#block-news .news-list .news-item .news-head[data-v-1e9078d8] {\n      padding-top: 130%;\n}\n#block-news .news-list .news-item .news-content[data-v-1e9078d8] {\n      padding: 10px 0;\n}\n#block-news .news-list .news-item .news-content .news-desc[data-v-1e9078d8] {\n        margin-top: 20px;\n        height: 73px;\n        overflow: hidden;\n        font-size: 14px;\n        line-height: 24px;\n        text-align: center;\n        color: #797979;\n}\n@media only screen and (max-width: 991px) {\n.section-pd[data-v-1e9078d8] {\n    padding: 0;\n}\n#app #block-news .news-categories[data-v-1e9078d8] {\n    margin-top: 0 !important;\n}\n#app #block-news .news-list[data-v-1e9078d8] {\n    height: auto;\n}\n#app #block-news .news-list .news-item[data-v-1e9078d8] {\n      width: 100%;\n      max-height: unset;\n}\n}\n", ""]);
+
+// exports
 
 
 /***/ }),
@@ -5649,6 +5703,355 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
+/***/ 495:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "news-body w-100" }, [
+    _c("div", { staticClass: "block-news-outer position-relative" }, [
+      _c("div", { staticClass: "block-news-lists position-relative" }, [
+        _c(
+          "div",
+          { staticClass: "block-news-filter" },
+          [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "news-categories -category justify-content-center d-none d-md-flex"
+              },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "category-items mr-4 ml-4 d-flex align-items-center",
+                    class: _vm.category == "" ? "active" : "",
+                    on: {
+                      click: function($event) {
+                        _vm.category = ""
+                      }
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                            全部新訊\n                        "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _vm._l(_vm.newsCategories, function(item, $index) {
+                  return _c(
+                    "div",
+                    {
+                      key: $index,
+                      staticClass:
+                        "category-items mr-4 ml-4 d-flex align-items-center",
+                      class: _vm.category == item ? "active" : "",
+                      on: {
+                        click: function($event) {
+                          _vm.category = item
+                        }
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(item) +
+                          "\n                        "
+                      )
+                    ]
+                  )
+                })
+              ],
+              2
+            ),
+            _vm._v(" "),
+            _c(
+              "el-select",
+              {
+                staticClass: "d-block d-md-none",
+                on: { change: _vm.filterCate },
+                model: {
+                  value: _vm.category,
+                  callback: function($$v) {
+                    _vm.category = $$v
+                  },
+                  expression: "category"
+                }
+              },
+              [
+                _c("el-option", { attrs: { label: "全部新訊", value: "" } }),
+                _vm._v(" "),
+                _vm._l(_vm.newsCategories, function(item, $index) {
+                  return _c("el-option", {
+                    key: $index,
+                    attrs: { label: item, value: item }
+                  })
+                })
+              ],
+              2
+            )
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "news-list", attrs: { id: "block-news-items" } },
+          [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "d-flex flex-column flex-wrap align-items-center h-100"
+              },
+              _vm._l(_vm.newsItems.filter(_vm.filterNews), function(
+                item,
+                $index
+              ) {
+                return $index < 5
+                  ? _c(
+                      "div",
+                      {
+                        key: $index,
+                        staticClass: "news-item",
+                        class: { feature: $index == 2 }
+                      },
+                      [
+                        $index == 2 &&
+                        _vm.newsItems.filter(_vm.filterFeature)[0]
+                          ? _c(
+                              "div",
+                              [
+                                _c(
+                                  "router-link",
+                                  { attrs: { to: "/news/detail/" + item.id } },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "news-head d-flex align-items-center justify-content-center position-relative",
+                                        style:
+                                          "background-image: url(" +
+                                          _vm.newsItems.filter(
+                                            _vm.filterFeature
+                                          )[0].background +
+                                          ")"
+                                      },
+                                      [
+                                        _c(
+                                          "router-link",
+                                          {
+                                            staticClass:
+                                              "btn-border btn-readmore",
+                                            attrs: {
+                                              to:
+                                                "/news/detail/" +
+                                                _vm.newsItems.filter(
+                                                  _vm.filterFeature
+                                                )[0].id
+                                            }
+                                          },
+                                          [_vm._v("了解更多")]
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "news-content text-center" },
+                                  [
+                                    _c("div", [
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-black text-size-1"
+                                        },
+                                        [
+                                          _vm._v(
+                                            _vm._s(
+                                              _vm.newsItems.filter(
+                                                _vm.filterFeature
+                                              )[0].date
+                                            )
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-orange text-size-1"
+                                        },
+                                        [
+                                          _vm._v(
+                                            _vm._s(
+                                              _vm.newsItems.filter(
+                                                _vm.filterFeature
+                                              )[0].category
+                                            )
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("router-link", {
+                                      staticClass: "news-title",
+                                      attrs: {
+                                        to:
+                                          "/news/detail/" +
+                                          _vm.newsItems.filter(
+                                            _vm.filterFeature
+                                          )[0].id
+                                      },
+                                      domProps: {
+                                        innerHTML: _vm._s(
+                                          _vm.newsItems.filter(
+                                            _vm.filterFeature
+                                          )[0].title
+                                        )
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("p", {
+                                      staticClass: "news-desc",
+                                      domProps: {
+                                        innerHTML: _vm._s(
+                                          _vm.newsItems.filter(
+                                            _vm.filterFeature
+                                          )[0].intro
+                                        )
+                                      }
+                                    })
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            )
+                          : _c(
+                              "div",
+                              [
+                                _c(
+                                  "router-link",
+                                  { attrs: { to: "/news/detail/" + item.id } },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "news-head d-flex align-items-center justify-content-center position-relative",
+                                        style:
+                                          "background-image: url(" +
+                                          item.background +
+                                          ")"
+                                      },
+                                      [
+                                        _c(
+                                          "router-link",
+                                          {
+                                            staticClass:
+                                              "btn-border btn-readmore",
+                                            attrs: {
+                                              to: "/news/detail/" + item.id
+                                            }
+                                          },
+                                          [_vm._v("了解更多")]
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "news-content text-center" },
+                                  [
+                                    _c("div", [
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-black text-size-1"
+                                        },
+                                        [_vm._v(_vm._s(item.date))]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-orange text-size-1"
+                                        },
+                                        [_vm._v(_vm._s(item.category))]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("router-link", {
+                                      staticClass: "news-title",
+                                      attrs: { to: "/news/detail/" + item.id },
+                                      domProps: {
+                                        innerHTML: _vm._s(item.title)
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    $index == 2
+                                      ? _c("p", {
+                                          staticClass: "news-desc",
+                                          domProps: {
+                                            innerHTML: _vm._s(item.intro)
+                                          }
+                                        })
+                                      : _vm._e()
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            )
+                      ]
+                    )
+                  : _vm._e()
+              })
+            )
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "btn-load-more text-center" },
+        [
+          _c(
+            "router-link",
+            { staticClass: "news-title", attrs: { to: "/news/" } },
+            [_vm._v("更多橘色新訊")]
+          )
+        ],
+        1
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-1e9078d8", module.exports)
+  }
+}
+
+/***/ }),
+
 /***/ 496:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5736,7 +6139,7 @@ exports = module.exports = __webpack_require__(23)(false);
 
 
 // module
-exports.push([module.i, "\n#block-foods {\n  background-size: cover;\n  background-position: 0;\n}\n#block-foods.active .block-food-body .content-food.left-content, #block-foods.active .block-food-body .content-food.right-content {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n    opacity: 1;\n}\n#block-foods.active .block-food-body .bg-left .bg-inner {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    background-position-y: center;\n}\n#block-foods .line-top:before {\n    content: \"\";\n    background: #f46f1b;\n    width: 60px;\n    height: 1px;\n    display: block;\n    margin-bottom: 20px;\n}\n#block-foods .block-food-body {\n    background-repeat: no-repeat;\n    background-size: cover;\n    height: 100vh;\n}\n#block-foods .block-food-body:after {\n      content: \"\";\n      position: absolute;\n      left: 0;\n      width: 100%;\n      height: 100%;\n      background: rgba(0, 0, 0, 0.6);\n}\n#block-foods .block-food-body .bg-left .bg-inner {\n      background-position: center;\n      background-size: cover;\n      background-position-y: 100vh;\n      -webkit-transition: all .5s;\n      transition: all .5s;\n}\n#block-foods .block-food-body .bg-left .bg-inner.active {\n        background-position-y: 100vh;\n        -webkit-transition: initial;\n        transition: initial;\n}\n#block-foods .block-food-body .content-food {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      padding: 0 100px;\n      overflow: hidden;\n      z-index: 2;\n}\n#block-foods .block-food-body .content-food .big_title {\n        font-size: 140px;\n        font-weight: 600;\n}\n#block-foods .block-food-body .content-food .more-food-info {\n        width: 100px;\n        height: 100px;\n        display: inline-block;\n        border-radius: 100%;\n        background-position: center;\n        background-size: cover;\n        cursor: pointer;\n        margin-right: 25px;\n        -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);\n                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);\n}\n#block-foods .block-food-body .content-food .more-food-info.active, #block-foods .block-food-body .content-food .more-food-info:hover {\n          opacity: 0.8;\n          -webkit-box-shadow: 0px 0px 20px black;\n                  box-shadow: 0px 0px 20px black;\n          -webkit-transition: all .3s;\n          transition: all .3s;\n}\n#block-foods .block-food-body .content-food > div {\n        position: relative;\n        z-index: 2;\n}\n#block-foods .block-food-body .content-food.left-content, #block-foods .block-food-body .content-food.right-content {\n        -webkit-transition: opacity 1s, -webkit-transform 1s;\n        transition: opacity 1s, -webkit-transform 1s;\n        transition: transform 1s, opacity 1s;\n        transition: transform 1s, opacity 1s, -webkit-transform 1s;\n        opacity: 0;\n}\n#block-foods .block-food-body .content-food.left-content {\n        background: transparent;\n        padding: 100px;\n}\n#block-foods .block-food-body .content-food.left-content .line-top {\n          line-height: 25px;\n}\n#block-foods .block-food-body .content-food.right-content {\n        background: white;\n        z-index: 2;\n        -webkit-transform: translateY(-100%);\n                transform: translateY(-100%);\n}\n#block-foods .block-food-body .content-food.right-content:before, #block-foods .block-food-body .content-food.right-content:after {\n          content: \"\";\n          position: absolute;\n          border-radius: 100%;\n}\n#block-foods .block-food-body .content-food.right-content:before {\n          width: 850px;\n          height: 850px;\n          background: rgba(242, 108, 35, 0.1);\n          right: -540px;\n          bottom: -480px;\n}\n#block-foods .block-food-body .content-food.right-content:after {\n          width: 100px;\n          height: 100px;\n          background: rgba(0, 0, 0, 0.22);\n          right: -70px;\n          bottom: 300px;\n}\n#block-foods .block-food-body .content-food.right-content .food-info-inner {\n          height: 500px;\n          width: 500px;\n          background: #f26d23;\n          border-radius: 100%;\n          -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n                  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n          -webkit-transition: all .5s;\n          transition: all .5s;\n}\n#block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-info {\n            font-weight: 300;\n            letter-spacing: 2px;\n}\n#block-foods .block-food-body .content-food.right-content .loader {\n          position: absolute;\n          width: auto;\n          height: 100vh;\n          bottom: -30px;\n          left: -140px;\n}\n#block-foods .block-food-body .content-food.right-content .loader.active {\n            -webkit-transform: rotate(360deg);\n                    transform: rotate(360deg);\n            -webkit-transition: all .5s ease-in-out;\n            transition: all .5s ease-in-out;\n}\n#block-foods .block-food-body .content-food.right-content .more-food-info {\n          display: none;\n}\n@media only screen and (max-width: 991px) {\n#app #block-foods .bg-transition {\n    width: 100vw;\n}\n#app #block-foods .block-food-body .content-food h3, #app #block-foods .block-food-body .content-food span {\n    color: white !important;\n    letter-spacing: 5px;\n    text-align: center;\n}\n#app #block-foods .block-food-body .content-food h3 {\n    font-size: 28px;\n    z-index: 2;\n}\n#app #block-foods .block-food-body .content-food .sub-title {\n    font-size: 12px;\n}\n#app #block-foods .block-food-body .content-food.left-content {\n    display: none !important;\n}\n#app #block-foods .block-food-body .content-food.right-content {\n    background: transparent;\n    padding: 90px 20px 23px 20px;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#app #block-foods .block-food-body .content-food.right-content .more-food-info {\n      display: block;\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner {\n      height: 300px;\n      width: 300px;\n      background: rgba(242, 109, 35, 0.8);\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-title {\n        font-size: 21px;\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-info {\n        font-size: 12px;\n}\n#app #block-foods .block-food-body .content-food .more-food-info {\n    margin: 0 20px;\n    width: 68px;\n    height: 68px;\n    border: 1px solid #f26b23;\n}\n#app #block-foods .block-food-body .content-food .more-food-info:last-child {\n      margin-right: 0;\n}\n#app #block-foods .block-food-body .content-food .more-food-info span {\n      left: 0;\n      bottom: -25px;\n      font-size: 12px;\n      letter-spacing: 2px;\n}\n#app #block-foods .block-food-body .content-food .loader {\n    width: 100vw;\n    left: 15%;\n}\n}\n@media only screen and (max-width: 420px) {\n#app #block-foods .block-food-body .content-food.right-content {\n    padding: 25px 20px;\n}\n#app #block-foods .block-food-body .content-food .loader circle {\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n}\n#app #block-foods .block-food-body .content-food .loader.active circle {\n    -webkit-transform: rotate(180deg) scale(0.6);\n            transform: rotate(180deg) scale(0.6);\n}\n}\n", ""]);
+exports.push([module.i, "\n#block-foods {\n  background-size: cover;\n  background-position: center;\n}\n#block-foods.active .block-food-body .content-food.left-content, #block-foods.active .block-food-body .content-food.right-content {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n    opacity: 1;\n}\n#block-foods.active .block-food-body .bg-left .bg-inner {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    background-position-y: center;\n}\n#block-foods .line-top:before {\n    content: \"\";\n    background: #f46f1b;\n    width: 60px;\n    height: 1px;\n    display: block;\n    margin-bottom: 20px;\n}\n#block-foods .block-food-body {\n    background-repeat: no-repeat;\n    background-size: cover;\n    height: 100vh;\n}\n#block-foods .block-food-body:after {\n      content: \"\";\n      position: absolute;\n      left: 0;\n      width: 100%;\n      height: 100%;\n      background: rgba(0, 0, 0, 0.6);\n}\n#block-foods .block-food-body .bg-left .bg-inner {\n      background-position: center;\n      background-size: cover;\n      background-position-y: 100vh;\n      -webkit-transition: all .5s;\n      transition: all .5s;\n}\n#block-foods .block-food-body .bg-left .bg-inner.active {\n        background-position-y: 100vh;\n        -webkit-transition: initial;\n        transition: initial;\n}\n#block-foods .block-food-body .content-food {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      padding: 0 100px;\n      overflow: hidden;\n      z-index: 2;\n}\n#block-foods .block-food-body .content-food .big_title {\n        font-size: 140px;\n        font-weight: 600;\n}\n#block-foods .block-food-body .content-food .more-food-info {\n        width: 100px;\n        height: 100px;\n        display: inline-block;\n        border-radius: 100%;\n        background-position: center;\n        background-size: cover;\n        cursor: pointer;\n        margin-right: 25px;\n        -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);\n                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);\n}\n#block-foods .block-food-body .content-food .more-food-info.active, #block-foods .block-food-body .content-food .more-food-info:hover {\n          opacity: 0.8;\n          -webkit-box-shadow: 0px 0px 20px black;\n                  box-shadow: 0px 0px 20px black;\n          -webkit-transition: all .3s;\n          transition: all .3s;\n}\n#block-foods .block-food-body .content-food > div {\n        position: relative;\n        z-index: 2;\n}\n#block-foods .block-food-body .content-food.left-content, #block-foods .block-food-body .content-food.right-content {\n        -webkit-transition: opacity 1s, -webkit-transform 1s;\n        transition: opacity 1s, -webkit-transform 1s;\n        transition: transform 1s, opacity 1s;\n        transition: transform 1s, opacity 1s, -webkit-transform 1s;\n        opacity: 0;\n}\n#block-foods .block-food-body .content-food.left-content {\n        background: transparent;\n        padding: 100px;\n}\n#block-foods .block-food-body .content-food.left-content .line-top {\n          line-height: 25px;\n}\n#block-foods .block-food-body .content-food.right-content {\n        background: white;\n        z-index: 2;\n        -webkit-transform: translateY(-100%);\n                transform: translateY(-100%);\n}\n#block-foods .block-food-body .content-food.right-content:before, #block-foods .block-food-body .content-food.right-content:after {\n          content: \"\";\n          position: absolute;\n          border-radius: 100%;\n}\n#block-foods .block-food-body .content-food.right-content:before {\n          width: 850px;\n          height: 850px;\n          background: rgba(242, 108, 35, 0.1);\n          right: -540px;\n          bottom: -480px;\n}\n#block-foods .block-food-body .content-food.right-content:after {\n          width: 100px;\n          height: 100px;\n          background: rgba(0, 0, 0, 0.22);\n          right: -70px;\n          bottom: 300px;\n}\n#block-foods .block-food-body .content-food.right-content .food-info-inner {\n          height: 500px;\n          width: 500px;\n          background: #f26d23;\n          border-radius: 100%;\n          -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n                  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n          -webkit-transition: all .5s;\n          transition: all .5s;\n}\n#block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-info {\n            font-weight: 300;\n            letter-spacing: 2px;\n}\n#block-foods .block-food-body .content-food.right-content .loader {\n          position: absolute;\n          width: auto;\n          height: 100vh;\n          bottom: -30px;\n          left: -140px;\n}\n#block-foods .block-food-body .content-food.right-content .loader.active {\n            -webkit-transform: rotate(360deg);\n                    transform: rotate(360deg);\n            -webkit-transition: all 1s cubic-bezier(1, 0.105, 0, 1);\n            transition: all 1s cubic-bezier(1, 0.105, 0, 1);\n}\n#block-foods .block-food-body .content-food.right-content .more-food-info {\n          display: none;\n}\n@media only screen and (max-width: 991px) {\n#app #block-foods .bg-transition {\n    width: 100vw;\n}\n#app #block-foods .block-food-body .content-food h3, #app #block-foods .block-food-body .content-food span {\n    color: white !important;\n    letter-spacing: 5px;\n    text-align: center;\n}\n#app #block-foods .block-food-body .content-food h3 {\n    font-size: 28px;\n    z-index: 2;\n}\n#app #block-foods .block-food-body .content-food .sub-title {\n    font-size: 12px;\n}\n#app #block-foods .block-food-body .content-food.left-content {\n    display: none !important;\n}\n#app #block-foods .block-food-body .content-food.right-content {\n    background: transparent;\n    padding: 90px 20px 23px 20px;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#app #block-foods .block-food-body .content-food.right-content .more-food-info {\n      display: block;\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner {\n      height: 300px;\n      width: 300px;\n      background: rgba(242, 109, 35, 0.8);\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-title {\n        font-size: 21px;\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-info {\n        font-size: 12px;\n}\n#app #block-foods .block-food-body .content-food .more-food-info {\n    margin: 0 20px;\n    width: 68px;\n    height: 68px;\n    border: 1px solid #f26b23;\n}\n#app #block-foods .block-food-body .content-food .more-food-info:last-child {\n      margin-right: 0;\n}\n#app #block-foods .block-food-body .content-food .more-food-info span {\n      left: 0;\n      bottom: -25px;\n      font-size: 12px;\n      letter-spacing: 2px;\n}\n#app #block-foods .block-food-body .content-food .loader {\n    width: 120%;\n    left: -30px;\n    top: -10px;\n}\n#app #block-foods .block-food-body .content-food .loader #Content-Menu-3 {\n      opacity: 0.6 !important;\n}\n}\n@media only screen and (max-width: 420px) {\n#app #block-foods .block-food-body .content-food.right-content {\n    padding: 25px 20px;\n}\n}\n", ""]);
 
 // exports
 
@@ -5842,6 +6245,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     },
     methods: {
+        clickValue: function clickValue(value) {
+            if (!this.addTransition) {
+                this.food_index = value;
+                this.bgAnimated(100);
+                this.startAnimate(1000);
+            }
+        },
         bgAnimated: function bgAnimated(time) {
             var _this = this;
 
@@ -5932,9 +6342,7 @@ var render = function() {
                     style: "background-image:url(" + item.url + ")",
                     on: {
                       click: function($event) {
-                        _vm.food_index = $index
-                        _vm.bgAnimated(100)
-                        _vm.startAnimate(500)
+                        _vm.clickValue($index)
                       }
                     }
                   })
@@ -13146,397 +13554,6 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-e3a27224", module.exports)
-  }
-}
-
-/***/ }),
-
-/***/ 663:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(664);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(31)("819f9c88", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e9078d8\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-news.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e9078d8\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-news.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 664:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(23)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n#block-news .block-news-outer .block-news-filter[data-v-1e9078d8] {\n  margin-bottom: 20px;\n  margin-top: 40px;\n}\n#block-news .block-news-outer .block-news-filter .news-categories[data-v-1e9078d8] {\n    font-size: 14px;\n}\n#block-news .news-list[data-v-1e9078d8] {\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  height: 985px;\n}\n#block-news .news-list .news-item[data-v-1e9078d8] {\n    width: calc(25% - 40px);\n    max-height: 450px;\n}\n#block-news .news-list .news-item.feature[data-v-1e9078d8] {\n      width: 50%;\n      max-height: unset;\n}\n#block-news .news-list .news-item .news-head[data-v-1e9078d8] {\n      padding-top: 130%;\n}\n#block-news .news-list .news-item .news-content[data-v-1e9078d8] {\n      padding: 10px 0;\n}\n#block-news .news-list .news-item .news-content .news-desc[data-v-1e9078d8] {\n        margin-top: 20px;\n        height: 73px;\n        overflow: hidden;\n        font-size: 14px;\n        line-height: 24px;\n        text-align: center;\n        color: #797979;\n}\n@media only screen and (max-width: 991px) {\n.section-pd[data-v-1e9078d8] {\n    padding: 0;\n}\n#app #block-news .news-categories[data-v-1e9078d8] {\n    margin-top: 0 !important;\n}\n#app #block-news .news-list[data-v-1e9078d8] {\n    height: auto;\n}\n#app #block-news .news-list .news-item[data-v-1e9078d8] {\n      width: 100%;\n      max-height: unset;\n}\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 665:
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "news-body w-100" }, [
-    _c("div", { staticClass: "block-news-outer position-relative" }, [
-      _c("div", { staticClass: "block-news-lists position-relative" }, [
-        _c(
-          "div",
-          { staticClass: "block-news-filter" },
-          [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "news-categories -category justify-content-center d-none d-md-flex"
-              },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "category-items mr-4 ml-4 d-flex align-items-center",
-                    class: _vm.category == "" ? "active" : "",
-                    on: {
-                      click: function($event) {
-                        _vm.category = ""
-                      }
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\n                            全部新訊\n                        "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _vm._l(_vm.newsCategories, function(item, $index) {
-                  return _c(
-                    "div",
-                    {
-                      key: $index,
-                      staticClass:
-                        "category-items mr-4 ml-4 d-flex align-items-center",
-                      class: _vm.category == item ? "active" : "",
-                      on: {
-                        click: function($event) {
-                          _vm.category = item
-                        }
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n                            " +
-                          _vm._s(item) +
-                          "\n                        "
-                      )
-                    ]
-                  )
-                })
-              ],
-              2
-            ),
-            _vm._v(" "),
-            _c(
-              "el-select",
-              {
-                staticClass: "d-block d-md-none",
-                on: { change: _vm.filterCate },
-                model: {
-                  value: _vm.category,
-                  callback: function($$v) {
-                    _vm.category = $$v
-                  },
-                  expression: "category"
-                }
-              },
-              [
-                _c("el-option", { attrs: { label: "全部新訊", value: "" } }),
-                _vm._v(" "),
-                _vm._l(_vm.newsCategories, function(item, $index) {
-                  return _c("el-option", {
-                    key: $index,
-                    attrs: { label: item, value: item }
-                  })
-                })
-              ],
-              2
-            )
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "news-list", attrs: { id: "block-news-items" } },
-          [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "d-flex flex-column flex-wrap align-items-center h-100"
-              },
-              _vm._l(_vm.newsItems.filter(_vm.filterNews), function(
-                item,
-                $index
-              ) {
-                return $index < 5
-                  ? _c(
-                      "div",
-                      {
-                        key: $index,
-                        staticClass: "news-item",
-                        class: { feature: $index == 2 }
-                      },
-                      [
-                        $index == 2 &&
-                        _vm.newsItems.filter(_vm.filterFeature)[0]
-                          ? _c(
-                              "div",
-                              [
-                                _c(
-                                  "router-link",
-                                  { attrs: { to: "/news/detail/" + item.id } },
-                                  [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "news-head d-flex align-items-center justify-content-center position-relative",
-                                        style:
-                                          "background-image: url(" +
-                                          _vm.newsItems.filter(
-                                            _vm.filterFeature
-                                          )[0].background +
-                                          ")"
-                                      },
-                                      [
-                                        _c(
-                                          "router-link",
-                                          {
-                                            staticClass:
-                                              "btn-border btn-readmore",
-                                            attrs: {
-                                              to:
-                                                "/news/detail/" +
-                                                _vm.newsItems.filter(
-                                                  _vm.filterFeature
-                                                )[0].id
-                                            }
-                                          },
-                                          [_vm._v("了解更多")]
-                                        )
-                                      ],
-                                      1
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "news-content text-center" },
-                                  [
-                                    _c("div", [
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "text-black text-size-1"
-                                        },
-                                        [
-                                          _vm._v(
-                                            _vm._s(
-                                              _vm.newsItems.filter(
-                                                _vm.filterFeature
-                                              )[0].date
-                                            )
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "text-orange text-size-1"
-                                        },
-                                        [
-                                          _vm._v(
-                                            _vm._s(
-                                              _vm.newsItems.filter(
-                                                _vm.filterFeature
-                                              )[0].category
-                                            )
-                                          )
-                                        ]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("router-link", {
-                                      staticClass: "news-title",
-                                      attrs: {
-                                        to:
-                                          "/news/detail/" +
-                                          _vm.newsItems.filter(
-                                            _vm.filterFeature
-                                          )[0].id
-                                      },
-                                      domProps: {
-                                        innerHTML: _vm._s(
-                                          _vm.newsItems.filter(
-                                            _vm.filterFeature
-                                          )[0].title
-                                        )
-                                      }
-                                    }),
-                                    _vm._v(" "),
-                                    _c("p", {
-                                      staticClass: "news-desc",
-                                      domProps: {
-                                        innerHTML: _vm._s(
-                                          _vm.newsItems.filter(
-                                            _vm.filterFeature
-                                          )[0].intro
-                                        )
-                                      }
-                                    })
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            )
-                          : _c(
-                              "div",
-                              [
-                                _c(
-                                  "router-link",
-                                  { attrs: { to: "/news/detail/" + item.id } },
-                                  [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "news-head d-flex align-items-center justify-content-center position-relative",
-                                        style:
-                                          "background-image: url(" +
-                                          item.background +
-                                          ")"
-                                      },
-                                      [
-                                        _c(
-                                          "router-link",
-                                          {
-                                            staticClass:
-                                              "btn-border btn-readmore",
-                                            attrs: {
-                                              to: "/news/detail/" + item.id
-                                            }
-                                          },
-                                          [_vm._v("了解更多")]
-                                        )
-                                      ],
-                                      1
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "news-content text-center" },
-                                  [
-                                    _c("div", [
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "text-black text-size-1"
-                                        },
-                                        [_vm._v(_vm._s(item.date))]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "text-orange text-size-1"
-                                        },
-                                        [_vm._v(_vm._s(item.category))]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("router-link", {
-                                      staticClass: "news-title",
-                                      attrs: { to: "/news/detail/" + item.id },
-                                      domProps: {
-                                        innerHTML: _vm._s(item.title)
-                                      }
-                                    }),
-                                    _vm._v(" "),
-                                    $index == 2
-                                      ? _c("p", {
-                                          staticClass: "news-desc",
-                                          domProps: {
-                                            innerHTML: _vm._s(item.intro)
-                                          }
-                                        })
-                                      : _vm._e()
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            )
-                      ]
-                    )
-                  : _vm._e()
-              })
-            )
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "btn-load-more text-center" },
-        [
-          _c(
-            "router-link",
-            { staticClass: "news-title", attrs: { to: "/news/" } },
-            [_vm._v("更多橘色新訊")]
-          )
-        ],
-        1
-      )
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-1e9078d8", module.exports)
   }
 }
 

@@ -42,19 +42,19 @@
                                 v-if="($index < 5)"
                             >
                                 
-                                <div v-if="$index == 2 && newsItems.filter(filterFeature)[0]">
+                                <div v-if="$index == 2 && item">
                                     <router-link :to="'/news/detail/'+item.id">
-                                        <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + newsItems.filter(filterFeature)[0].background + ')'">
-                                            <router-link :to="'/news/detail/'+newsItems.filter(filterFeature)[0].id" class="btn-border btn-readmore">了解更多</router-link>
+                                        <div class="news-head d-flex align-items-center justify-content-center position-relative" :style="'background-image: url(' + item.background + ')'">
+                                            <router-link :to="'/news/detail/'+item.id" class="btn-border btn-readmore">了解更多</router-link>
                                         </div>
                                     </router-link>
                                     <div class="news-content text-center">
                                         <div>
-                                            <span class="text-black text-size-1">{{newsItems.filter(filterFeature)[0].date}}</span>
-                                            <span class="text-orange text-size-1">{{newsItems.filter(filterFeature)[0].category}}</span>
+                                            <span class="text-black text-size-1">{{item.date}}</span>
+                                            <span class="text-orange text-size-1">{{item.category}}</span>
                                         </div>
-                                        <router-link :to="'/news/detail/'+newsItems.filter(filterFeature)[0].id" class="news-title" v-html="newsItems.filter(filterFeature)[0].title"></router-link>
-                                        <p class="news-desc" v-html="newsItems.filter(filterFeature)[0].intro"></p>
+                                        <router-link :to="'/news/detail/'+item.id" class="news-title" v-html="item.title"></router-link>
+                                        <p class="news-desc" v-html="item.intro"></p>
                                     </div>
                                 </div>
                                 <div v-else>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="btn-load-more text-center">
-                    <router-link :to="'/news/'" class="news-title">更多橘色新訊</router-link>
+                    <router-link :to="'/news'" class="news-title">更多橘色新訊</router-link>
                 </div>
             </div>
     </div>

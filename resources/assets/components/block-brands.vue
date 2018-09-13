@@ -55,7 +55,7 @@
                     </p>
                 </transition-group>
             </div>
-            <div id="slide-brands-mobile"  class="d-md-none d-block　position-relative">
+             <div id="slide-brands-mobile"  class="d-md-none d-block　position-relative">
                 <div>
                     <h3 class="main-title text-uppercase">
                         <span class="fs-inherit text-orange">
@@ -67,14 +67,15 @@
                     class="slide slick-brands"
                     v-for="(item,$index) in brandItems"
                     :key="$index"
+                    :data-anchor="$index"
                 >
                     <div class="content-brands position-relative d-flex flex-column align-items-center justify-content-center" >
                         <div class="info-brands d-flex flex-column align-items-center position-relative border-radius-100 justify-content-center text-left">
                             <img :src="item.logo" />
                             <div class="d-flex align-items-center justify-content-center">
-                                <a :href="brandItems[indexBrand].contact">聯絡我們</a>
+                                <a :href="item.contact">聯絡我們</a>
                                 <span>・</span>
-                                <a :href="brandItems[indexBrand].book">線上訂位</a>
+                                <a :href="item.book">線上訂位</a>
                             </div>
                         </div>
                     </div>
@@ -121,6 +122,9 @@
                     background: rgba(242, 106, 35, .1)
                     border-radius: 100%
                     border: 1px solid white
+                    .info-brands
+                        a
+                            border-bottom: 1px solid white
             .fp-slidesNav
                 display: none
             #slide-brands-mobile
@@ -256,10 +260,18 @@ export default {
                 bgActive: false,
                 brandItems: [
                     {
+		                url: '/images/banner_about.png',
+		                title: '橘色鍋物',
+                        text: '<span class="text-orange">橘色</span>鍋物<br>不管多少人都能吃得精彩！',
+                        logo: '/images/home3_icon1.png',
+                        contact: '#',
+                        book: '#',
+                    },
+                    {
                         url: '/images/bg_brand_1.png',
                         title: 'EXTENSION1',
                         text: '美食不孤單，小鍋<span class="text-orange">新</span>食尚！<br>享受一個人的自在、兩個人的美好、一群人的熱鬧！',
-                        logo: '/images/icon_extension_white.png',
+                        logo: '/images/home3_icon2.png',
                         contact: '#',
                         book: '#',
                     },
@@ -267,23 +279,7 @@ export default {
                         url: '/images/banner_contact.png',
                         title: 'M One Cafe',
                         text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！',
-                        logo: '/images/icon_cafe_white.png',
-                        contact: '#',
-                        book: '#',
-                    },
-	                {
-		                url: '/images/banner_about.png',
-		                title: '橘色鍋物',
-                        text: '<span class="text-orange">橘色</span>鍋物<br>不管多少人都能吃得精彩！',
-                        logo: '/images/icon_shabu.png',
-                        contact: '#',
-                        book: '#',
-                    },
-                    {
-		                url: '/images/slideshow_1.jpg',
-		                title: '橘色舒體',
-                        text: '<span class="text-orange">橘色</span>舒體<br>測試描述文字',
-                        logo: '/images/icon_spa_white.png',
+                        logo: '/images/home3_icon3.png',
                         contact: '#',
                         book: '#',
                     },
@@ -291,10 +287,18 @@ export default {
 		                url: '/images/slideshow_1.jpg',
 		                title: 'SAKURA',
                         text: '男女<span class="text-orange">健康</span>生活館<br>測試描述文字',
-                        logo: '/images/icon_sakura_white.png',
+                        logo: '/images/home3_icon4.png',
                         contact: '#',
                         book: '#',
 	                },
+                    {
+		                url: '/images/slideshow_1.jpg',
+		                title: '橘色舒體',
+                        text: '<span class="text-orange">橘色</span>舒體<br>測試描述文字',
+                        logo: '/images/home3_icon5.png',
+                        contact: '#',
+                        book: '#',
+                    },
                 ],
                 slickOptions: {
                     slidesToScroll: 1,
@@ -308,16 +312,20 @@ export default {
         },
         methods: {
             slickNext() {
-                this.indexBrand++;
-                this.countIndex();
+                if(!this.bgActive){
+                    this.indexBrand++;
+                    this.countIndex();
 
-                this.$refs.slick.next();
+                    this.$refs.slick.next();
+                }
             },
             slickPrev() {
-                this.indexBrand--;
-                this.countIndex();
+                if(!this.bgActive){
+                    this.indexBrand--;
+                    this.countIndex();
 
-                this.$refs.slick.prev();
+                    this.$refs.slick.prev();
+                }
             },
             countIndex(){
                 this.bgActive = true;
@@ -354,13 +362,18 @@ export default {
                 setTimeout(()=>{
                     this.bgActive = false;
                 },1400);
-            }
+            },
+            // afterSlideLoad(section, origin, destination, direction){
+            //     console.log("slide");
+            //     if(origin.anchor != null){
+            //         this.indexBrand = origin.anchor;
+            //         this.delayBg();
+            //     }
+            // },
         },
-        mounted: function() {
-            // jQuery(document).ready(function(){
-            //     jQuery(".content-brands").click(function(){
-            //         jQuery("#slide-brands").slickPrev();
-            //     })
+        mounted() {
+            // jQuery(document).ready(()=>{
+            //     console.log(fullpage_api.getFullpageData.afterSlideLoad);
             // });
         },
         components: {

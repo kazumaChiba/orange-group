@@ -1,19 +1,19 @@
 webpackJsonp([9],{
 
-/***/ 354:
+/***/ 391:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(438)
-  __webpack_require__(440)
+  __webpack_require__(476)
+  __webpack_require__(478)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(8)
 /* script */
-var __vue_script__ = __webpack_require__(442)
+var __vue_script__ = __webpack_require__(480)
 /* template */
-var __vue_template__ = __webpack_require__(466)
+var __vue_template__ = __webpack_require__(504)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -53,19 +53,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 365:
+/***/ 403:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(366)
+  __webpack_require__(404)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(8)
 /* script */
-var __vue_script__ = __webpack_require__(368)
+var __vue_script__ = __webpack_require__(406)
 /* template */
-var __vue_template__ = __webpack_require__(369)
+var __vue_template__ = __webpack_require__(407)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -105,17 +105,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 366:
+/***/ 404:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(367);
+var content = __webpack_require__(405);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(204)("b8d6fad2", content, false, {});
+var update = __webpack_require__(31)("b8d6fad2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -132,10 +132,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 367:
+/***/ 405:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(23)(false);
 // imports
 
 
@@ -147,7 +147,7 @@ exports.push([module.i, "\n#footer {\n  height: 100vh;\n}\n#footer .container .j
 
 /***/ }),
 
-/***/ 368:
+/***/ 406:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -229,7 +229,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 369:
+/***/ 407:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -257,7 +257,7 @@ var render = function() {
               "div",
               {
                 staticClass:
-                  "row d-flex justify-content-between align-items-center flex-column flex-lg-row"
+                  "row d-flex w-100 m-0 justify-content-between align-items-center flex-column flex-lg-row"
               },
               [
                 _vm._m(0),
@@ -282,7 +282,8 @@ var render = function() {
             _c(
               "div",
               {
-                staticClass: "row mb-lg-5 pb-lg-5 flex-wrap-reverse flex-lg-row"
+                staticClass:
+                  "d-flex mb-lg-5 pb-lg-5 flex-wrap-reverse flex-lg-row"
               },
               [
                 _vm._m(1),
@@ -529,15 +530,15 @@ if (false) {
 
 /***/ }),
 
-/***/ 382:
+/***/ 420:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(8)
 /* script */
-var __vue_script__ = __webpack_require__(383)
+var __vue_script__ = __webpack_require__(421)
 /* template */
-var __vue_template__ = __webpack_require__(385)
+var __vue_template__ = __webpack_require__(423)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -577,14 +578,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 383:
+/***/ 421:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
 //
 //
@@ -597,7 +598,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 // Check if the request came from the browser and is not server rendered
 if (typeof window !== 'undefined') {
-  var slick = __webpack_require__(384);
+  var slick = __webpack_require__(422);
 }
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -761,7 +762,7 @@ if (typeof window !== 'undefined') {
 
 /***/ }),
 
-/***/ 384:
+/***/ 422:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
@@ -784,7 +785,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 ;(function(factory) {
     'use strict';
     if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(50)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(57)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -3782,7 +3783,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 /***/ }),
 
-/***/ 385:
+/***/ 423:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -3803,17 +3804,32 @@ if (false) {
 
 /***/ }),
 
-/***/ 438:
+/***/ 473:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(23)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*!\r\n * fullPage 3.0.2\r\n * https://github.com/alvarotrigo/fullPage.js\r\n *\r\n * @license GPLv3 for open source use only\r\n * or Fullpage Commercial License for commercial use\r\n * http://alvarotrigo.com/fullPage/pricing/\r\n *\r\n * Copyright (C) 2018 http://alvarotrigo.com/fullPage - A project by Alvaro Trigo\r\n */\r\nhtml.fp-enabled,\r\n.fp-enabled body {\r\n    margin: 0;\r\n    padding: 0;\r\n    overflow:hidden;\r\n\r\n    /*Avoid flicker on slides transitions for mobile phones #336 */\r\n    -webkit-tap-highlight-color: rgba(0,0,0,0);\r\n}\r\n.fp-section {\r\n    position: relative;\r\n    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */\r\n    -moz-box-sizing: border-box; /* <=28 */\r\n    box-sizing: border-box;\r\n}\r\n.fp-slide {\r\n    float: left;\r\n}\r\n.fp-slide, .fp-slidesContainer {\r\n    height: 100%;\r\n    display: block;\r\n}\r\n.fp-slides {\r\n    z-index:1;\r\n    height: 100%;\r\n    overflow: hidden;\r\n    position: relative;\r\n    -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */\r\n    transition: all 0.3s ease-out;\r\n}\r\n.fp-section.fp-table, .fp-slide.fp-table {\r\n    display: table;\r\n    table-layout:fixed;\r\n    width: 100%;\r\n}\r\n.fp-tableCell {\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n.fp-slidesContainer {\r\n    float: left;\r\n    position: relative;\r\n}\r\n.fp-controlArrow {\r\n    -webkit-user-select: none; /* webkit (safari, chrome) browsers */\r\n    -moz-user-select: none; /* mozilla browsers */\r\n    -khtml-user-select: none; /* webkit (konqueror) browsers */\r\n    -ms-user-select: none; /* IE10+ */\r\n    position: absolute;\r\n    z-index: 4;\r\n    top: 50%;\r\n    cursor: pointer;\r\n    width: 0;\r\n    height: 0;\r\n    border-style: solid;\r\n    margin-top: -38px;\r\n    -webkit-transform: translate3d(0,0,0);\r\n    -ms-transform: translate3d(0,0,0);\r\n    transform: translate3d(0,0,0);\r\n}\r\n.fp-controlArrow.fp-prev {\r\n    left: 15px;\r\n    width: 0;\r\n    border-width: 38.5px 34px 38.5px 0;\r\n    border-color: transparent #fff transparent transparent;\r\n}\r\n.fp-controlArrow.fp-next {\r\n    right: 15px;\r\n    border-width: 38.5px 0 38.5px 34px;\r\n    border-color: transparent transparent transparent #fff;\r\n}\r\n.fp-scrollable {\r\n    overflow: hidden;\r\n    position: relative;\r\n}\r\n.fp-scroller{\r\n    overflow: hidden;\r\n}\r\n.iScrollIndicator{\r\n    border: 0 !important;\r\n}\r\n.fp-notransition {\r\n    -webkit-transition: none !important;\r\n    transition: none !important;\r\n}\r\n#fp-nav {\r\n    position: fixed;\r\n    z-index: 100;\r\n    margin-top: -32px;\r\n    top: 50%;\r\n    opacity: 1;\r\n    -webkit-transform: translate3d(0,0,0);\r\n}\r\n#fp-nav.fp-right {\r\n    right: 17px;\r\n}\r\n#fp-nav.fp-left {\r\n    left: 17px;\r\n}\r\n.fp-slidesNav{\r\n    position: absolute;\r\n    z-index: 4;\r\n    opacity: 1;\r\n    -webkit-transform: translate3d(0,0,0);\r\n    -ms-transform: translate3d(0,0,0);\r\n    transform: translate3d(0,0,0);\r\n    left: 0 !important;\r\n    right: 0;\r\n    margin: 0 auto !important;\r\n}\r\n.fp-slidesNav.fp-bottom {\r\n    bottom: 17px;\r\n}\r\n.fp-slidesNav.fp-top {\r\n    top: 17px;\r\n}\r\n#fp-nav ul,\r\n.fp-slidesNav ul {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n#fp-nav ul li,\r\n.fp-slidesNav ul li {\r\n    display: block;\r\n    width: 14px;\r\n    height: 13px;\r\n    margin: 7px;\r\n    position:relative;\r\n}\r\n.fp-slidesNav ul li {\r\n    display: inline-block;\r\n}\r\n#fp-nav ul li a,\r\n.fp-slidesNav ul li a {\r\n    display: block;\r\n    position: relative;\r\n    z-index: 1;\r\n    width: 100%;\r\n    height: 100%;\r\n    cursor: pointer;\r\n    text-decoration: none;\r\n}\r\n#fp-nav ul li a.active span,\r\n.fp-slidesNav ul li a.active span,\r\n#fp-nav ul li:hover a.active span,\r\n.fp-slidesNav ul li:hover a.active span{\r\n    height: 12px;\r\n    width: 12px;\r\n    margin: -6px 0 0 -6px;\r\n    border-radius: 100%;\r\n }\r\n#fp-nav ul li a span,\r\n.fp-slidesNav ul li a span {\r\n    border-radius: 50%;\r\n    position: absolute;\r\n    z-index: 1;\r\n    height: 4px;\r\n    width: 4px;\r\n    border: 0;\r\n    background: #333;\r\n    left: 50%;\r\n    top: 50%;\r\n    margin: -2px 0 0 -2px;\r\n    -webkit-transition: all 0.1s ease-in-out;\r\n    -moz-transition: all 0.1s ease-in-out;\r\n    -o-transition: all 0.1s ease-in-out;\r\n    transition: all 0.1s ease-in-out;\r\n}\r\n#fp-nav ul li:hover a span,\r\n.fp-slidesNav ul li:hover a span{\r\n    width: 10px;\r\n    height: 10px;\r\n    margin: -5px 0px 0px -5px;\r\n}\r\n#fp-nav ul li .fp-tooltip {\r\n    position: absolute;\r\n    top: -2px;\r\n    color: #fff;\r\n    font-size: 14px;\r\n    font-family: arial, helvetica, sans-serif;\r\n    white-space: nowrap;\r\n    max-width: 220px;\r\n    overflow: hidden;\r\n    display: block;\r\n    opacity: 0;\r\n    width: 0;\r\n    cursor: pointer;\r\n}\r\n#fp-nav ul li:hover .fp-tooltip,\r\n#fp-nav.fp-show-active a.active + .fp-tooltip {\r\n    -webkit-transition: opacity 0.2s ease-in;\r\n    transition: opacity 0.2s ease-in;\r\n    width: auto;\r\n    opacity: 1;\r\n}\r\n#fp-nav ul li .fp-tooltip.fp-right {\r\n    right: 20px;\r\n}\r\n#fp-nav ul li .fp-tooltip.fp-left {\r\n    left: 20px;\r\n}\r\n.fp-auto-height.fp-section,\r\n.fp-auto-height .fp-slide,\r\n.fp-auto-height .fp-tableCell{\r\n    height: auto !important;\r\n}\r\n\r\n.fp-responsive .fp-auto-height-responsive.fp-section,\r\n.fp-responsive .fp-auto-height-responsive .fp-slide,\r\n.fp-responsive .fp-auto-height-responsive .fp-tableCell {\r\n    height: auto !important;\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 476:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(439);
+var content = __webpack_require__(477);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(204)("c420dc4c", content, false, {});
+var update = __webpack_require__(31)("c420dc4c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -3830,32 +3846,32 @@ if(false) {
 
 /***/ }),
 
-/***/ 439:
+/***/ 477:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(23)(false);
 // imports
-
+exports.i(__webpack_require__(473), "");
 
 // module
-exports.push([module.i, "\n#fullpage[data-v-e3a27224] {\n  -webkit-transition-duration: .8s !important;\n          transition-duration: .8s !important;\n  -webkit-transition-timing-function: cubic-bezier(0.5, 0, 0, 1) !important;\n          transition-timing-function: cubic-bezier(0.5, 0, 0, 1) !important;\n}\n#burger-menu[data-v-e3a27224] {\n  width: 0px;\n  height: 25px;\n  text-align: center;\n  overflow: hidden;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  position: absolute;\n  right: 30px;\n  top: 53px;\n  z-index: 9999999;\n}\n#burger-menu[data-v-e3a27224]:before {\n    content: \"|||\";\n    color: #f26c23;\n    -webkit-transform: rotate(90deg);\n            transform: rotate(90deg);\n    display: inline-block;\n    font-weight: bold;\n}\n#burger-menu[data-v-e3a27224]:hover {\n    cursor: pointer;\n}\n#burger-menu.menu-close[data-v-e3a27224] {\n    width: 25px;\n}\n#app .logo[data-v-e3a27224] {\n  position: absolute;\n}\n", ""]);
+exports.push([module.i, "\n#fullpage[data-v-e3a27224] {\n  -webkit-transition-duration: .8s !important;\n          transition-duration: .8s !important;\n  -webkit-transition-timing-function: cubic-bezier(0.5, 0, 0, 1) !important;\n          transition-timing-function: cubic-bezier(0.5, 0, 0, 1) !important;\n}\n#burger-menu[data-v-e3a27224] {\n  width: 0px;\n  height: 25px;\n  text-align: center;\n  overflow: hidden;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  position: absolute;\n  right: 30px;\n  top: 53px;\n  z-index: 9999999;\n}\n#burger-menu[data-v-e3a27224]:before {\n    content: \"|||\";\n    color: #f26c23;\n    -webkit-transform: rotate(90deg);\n            transform: rotate(90deg);\n    display: inline-block;\n    font-weight: bold;\n}\n#burger-menu[data-v-e3a27224]:hover {\n    cursor: pointer;\n}\n#burger-menu.menu-close[data-v-e3a27224] {\n    width: 25px;\n}\n#app .logo[data-v-e3a27224] {\n  position: absolute;\n}\n#app #block-news .main-title .text-orange[data-v-e3a27224] {\n  color: #f26e22 !important;\n}\n#app #block-news .sub-title[data-v-e3a27224] {\n  font-weight: 200;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 440:
+/***/ 478:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(441);
+var content = __webpack_require__(479);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(204)("648b341c", content, false, {});
+var update = __webpack_require__(31)("648b341c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -3872,10 +3888,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 441:
+/***/ 479:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(23)(false);
 // imports
 
 
@@ -3887,28 +3903,28 @@ exports.push([module.i, "\n#fp-nav.fp-right {\n  opacity: 0;\n  display: -webkit
 
 /***/ }),
 
-/***/ 442:
+/***/ 480:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__ = __webpack_require__(214);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_components_block_menu_header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_components_block_menu_header__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_experience__ = __webpack_require__(443);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_experience__ = __webpack_require__(481);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_components_block_experience___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_components_block_experience__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_brands__ = __webpack_require__(448);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_brands__ = __webpack_require__(486);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_components_block_brands___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_components_block_brands__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_components_block_news__ = __webpack_require__(453);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_components_block_news__ = __webpack_require__(491);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_components_block_news___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_components_block_news__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_components_block_foods__ = __webpack_require__(458);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_components_block_foods__ = __webpack_require__(496);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_components_block_foods___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_components_block_foods__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_components_block_footer__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_components_block_footer__ = __webpack_require__(403);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_components_block_footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_components_block_footer__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vue_fullpage_js__ = __webpack_require__(463);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vue_fullpage_js__ = __webpack_require__(501);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vue_fullpage_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_vue_fullpage_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vue2_scrollbar__ = __webpack_require__(464);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vue2_scrollbar__ = __webpack_require__(502);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vue2_scrollbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_vue2_scrollbar__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_perfect_scrollbar__ = __webpack_require__(465);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_perfect_scrollbar__ = __webpack_require__(503);
 //
 //
 //
@@ -3983,7 +3999,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             options: {
                 licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                 sectionSelector: '.section',
-                scrollOverflow: false,
+                // scrollOverflow: false,
                 navigation: true,
                 navigationTooltips: ['橘色體驗', '橘色價值', '橘色版圖', '橘色新訊'],
                 afterLoad: this.afterLoad,
@@ -4067,7 +4083,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             //console.log(direction);
         },
         handleResize: function handleResize() {
-            console.log("resize");
             fullpage_api.reBuild();
         }
     },
@@ -4086,19 +4101,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 443:
+/***/ 481:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(444)
+  __webpack_require__(482)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(8)
 /* script */
-var __vue_script__ = __webpack_require__(446)
+var __vue_script__ = __webpack_require__(484)
 /* template */
-var __vue_template__ = __webpack_require__(447)
+var __vue_template__ = __webpack_require__(485)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -4138,17 +4153,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 444:
+/***/ 482:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(445);
+var content = __webpack_require__(483);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(204)("b9557f26", content, false, {});
+var update = __webpack_require__(31)("b9557f26", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -4165,10 +4180,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 445:
+/***/ 483:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(23)(false);
 // imports
 
 
@@ -4180,7 +4195,7 @@ exports.push([module.i, "\n#loading-circle .loading-bar {\n  stroke: #732A0A;\n 
 
 /***/ }),
 
-/***/ 446:
+/***/ 484:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4311,7 +4326,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         setTimeout(function () {
             setInterval(function () {
                 _this.is_run = true;
-                //this.onPlusStep()
+                _this.onPlusStep();
             }, 300);
         }, 1300);
     },
@@ -4379,7 +4394,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 447:
+/***/ 485:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -4656,19 +4671,19 @@ if (false) {
 
 /***/ }),
 
-/***/ 448:
+/***/ 486:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(449)
+  __webpack_require__(487)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(8)
 /* script */
-var __vue_script__ = __webpack_require__(451)
+var __vue_script__ = __webpack_require__(489)
 /* template */
-var __vue_template__ = __webpack_require__(452)
+var __vue_template__ = __webpack_require__(490)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -4708,17 +4723,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 449:
+/***/ 487:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(450);
+var content = __webpack_require__(488);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(204)("7b45937c", content, false, {});
+var update = __webpack_require__(31)("7b45937c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -4735,28 +4750,32 @@ if(false) {
 
 /***/ }),
 
-/***/ 450:
+/***/ 488:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(23)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n#app #block-brands {\n  background-size: cover;\n  background-position: center;\n}\n#app #block-brands .slick-arrow {\n    position: absolute;\n    width: 150px;\n    height: 50px;\n    background: #f26b23;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n    top: 50%;\n}\n#app #block-brands .slick-arrow:hover {\n      background: rgba(0, 0, 0, 0.8);\n      cursor: pointer;\n}\n#app #block-brands .slick-arrow.btn-next {\n      right: 15px;\n}\n#app #block-brands .slick-arrow.btn-prev {\n      left: 15px;\n}\n#app #block-brands #slide-brands {\n    height: 300px;\n}\n#app #block-brands #slide-brands .slick-list {\n      content: \"\";\n      width: 300px;\n      height: 300px;\n      position: absolute;\n      left: calc(50% - 150px);\n      background: rgba(242, 106, 35, 0.1);\n      border-radius: 100%;\n      border: 1px solid white;\n}\n#app #block-brands .fp-slidesNav {\n    display: none;\n}\n#app #block-brands #slide-brands-mobile {\n    margin-top: 30px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands {\n      width: 300px;\n      height: 300px;\n      border: 1px solid white;\n      font-size: 30px;\n      background-size: 100px;\n      background-repeat: no-repeat;\n      background-position: center 50px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands:before {\n        content: \"\";\n        position: absolute;\n        background: rgba(242, 108, 35, 0.4);\n        width: 100%;\n        height: 100%;\n        background: rgba(242, 108, 35, 0.4);\n        border-radius: 100%;\n        left: 0;\n        z-index: -1;\n        bottom: 0;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands a, #app #block-brands #slide-brands-mobile .content-brands .info-brands span {\n        font-size: 13px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands a {\n        border-bottom: 1px solid white;\n        padding: 3px;\n}\n#app #block-brands #slide-brands-mobile .content-brands img {\n      height: 120px;\n      width: auto;\n      margin-bottom: 20px;\n}\n#app #block-brands .fp-controlArrow.fp-next, #app #block-brands .fp-controlArrow.fp-prev {\n    border: 3px solid white;\n    width: 20px;\n    height: 20px;\n    border-radius: 5px 0 5px 0px;\n    border-top-color: transparent;\n    border-right-color: transparent;\n    -webkit-transform: rotate(225deg);\n            transform: rotate(225deg);\n    position: absolute;\n    top: calc(50% + 210px);\n}\n#app #block-brands .fp-controlArrow.fp-prev {\n    -webkit-transform: rotate(45deg);\n            transform: rotate(45deg);\n}\n#app #block-brands .bg-black-cover {\n    width: 0;\n    height: 100vh;\n    -webkit-transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    background-position: center;\n}\n#app #block-brands .bg-black-cover.select {\n      -webkit-animation: bgActive 1s;\n              animation: bgActive 1s;\n}\n#app #block-brands .container {\n    z-index: 2;\n    padding: 0 15px;\n}\n#app #block-brands .container .row {\n      padding: 100px 0;\n}\n#app #block-brands .container .row .slick-track {\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-align: center;\n            -ms-flex-align: center;\n                align-items: center;\n}\n#app #block-brands .container .row .slick-slide .content-brands {\n        width: 300px;\n        height: 300px;\n        border-radius: 100%;\n        border-color: white;\n        -webkit-transition: all .5s;\n        transition: all .5s;\n}\n#app #block-brands .container .row .slick-slide .content-brands img {\n          width: auto;\n          height: 150px;\n          margin-bottom: 20px;\n}\n#app #block-brands .container .row .slick-slide .content-brands .brand-title {\n          display: none;\n}\n#app #block-brands .container .row .slick-slide .content-brands .info-brands, #app #block-brands .container .row .slick-slide .content-brands img {\n          display: -webkit-box !important;\n          display: -ms-flexbox !important;\n          display: flex !important;\n}\n#app #block-brands .container .text-brands {\n      font-size: 26px;\n      letter-spacing: 18px;\n      line-height: 45px;\n      font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n        letter-spacing: 20px;\n}\n@media only screen and (max-width: 768px) {\n#app #block-brands .fp-slides {\n    height: calc(100vh - 200px);\n}\n#app #block-brands .fp-tableCell {\n    height: 100% !important;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .text-title {\n    display: none;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .info-brands {\n    width: 250px;\n    height: 250px;\n    margin-bottom: 30px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text {\n    width: 250px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text .text-brand-info {\n      line-height: 30px;\n}\n#app #block-brands .container #slide-brands-mobile .slick-brand-text {\n    padding: 0 30px;\n}\n}\n@-webkit-keyframes bgActive {\n0% {\n    width: 0;\n}\n100% {\n    width: 100vw;\n    display: none;\n}\n}\n@keyframes bgActive {\n0% {\n    width: 0;\n}\n100% {\n    width: 100vw;\n    display: none;\n}\n}\n", ""]);
+exports.push([module.i, "\n#app #block-brands {\n  background-size: cover;\n  background-position: center;\n}\n#app #block-brands .slick-arrow {\n    position: absolute;\n    width: 150px;\n    height: 50px;\n    background: #f26b23;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-transition: all .3s;\n    transition: all .3s;\n    top: 50%;\n}\n#app #block-brands .slick-arrow:hover {\n      background: rgba(0, 0, 0, 0.8);\n      cursor: pointer;\n}\n#app #block-brands .slick-arrow.btn-next {\n      right: 15px;\n}\n#app #block-brands .slick-arrow.btn-prev {\n      left: 15px;\n}\n#app #block-brands #slide-brands {\n    height: 300px;\n}\n#app #block-brands #slide-brands .slick-list {\n      content: \"\";\n      width: 300px;\n      height: 300px;\n      position: absolute;\n      left: calc(50% - 150px);\n      background: rgba(242, 106, 35, 0.1);\n      border-radius: 100%;\n      border: 1px solid white;\n}\n#app #block-brands #slide-brands .slick-list .info-brands a {\n        border-bottom: 1px solid white;\n}\n#app #block-brands .fp-slidesNav {\n    display: none;\n}\n#app #block-brands #slide-brands-mobile {\n    margin-top: 30px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands {\n      width: 300px;\n      height: 300px;\n      border: 1px solid white;\n      font-size: 30px;\n      background-size: 100px;\n      background-repeat: no-repeat;\n      background-position: center 50px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands:before {\n        content: \"\";\n        position: absolute;\n        background: rgba(242, 108, 35, 0.4);\n        width: 100%;\n        height: 100%;\n        background: rgba(242, 108, 35, 0.4);\n        border-radius: 100%;\n        left: 0;\n        z-index: -1;\n        bottom: 0;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands a, #app #block-brands #slide-brands-mobile .content-brands .info-brands span {\n        font-size: 13px;\n}\n#app #block-brands #slide-brands-mobile .content-brands .info-brands a {\n        border-bottom: 1px solid white;\n        padding: 3px;\n}\n#app #block-brands #slide-brands-mobile .content-brands img {\n      width: 120px;\n      height: auto;\n      margin-bottom: 20px;\n}\n#app #block-brands .fp-controlArrow.fp-next, #app #block-brands .fp-controlArrow.fp-prev {\n    border: 3px solid white;\n    width: 20px;\n    height: 20px;\n    border-radius: 5px 0 5px 0px;\n    border-top-color: transparent;\n    border-right-color: transparent;\n    -webkit-transform: rotate(225deg);\n            transform: rotate(225deg);\n    position: absolute;\n    top: calc(50% + 210px);\n}\n#app #block-brands .fp-controlArrow.fp-prev {\n    -webkit-transform: rotate(45deg);\n            transform: rotate(45deg);\n}\n#app #block-brands .bg-black-cover {\n    width: 0;\n    height: 100vh;\n    -webkit-transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: width 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);\n    background-position: center;\n}\n#app #block-brands .bg-black-cover.select {\n      -webkit-animation: bgActive 1s;\n              animation: bgActive 1s;\n}\n#app #block-brands .container {\n    z-index: 2;\n    padding: 0 15px;\n}\n#app #block-brands .container .row {\n      padding: 100px 0;\n}\n#app #block-brands .container .row .slick-track {\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-align: center;\n            -ms-flex-align: center;\n                align-items: center;\n}\n#app #block-brands .container .row .slick-slide .content-brands {\n        width: 300px;\n        height: 300px;\n        border-radius: 100%;\n        border-color: white;\n        -webkit-transition: all .5s;\n        transition: all .5s;\n}\n#app #block-brands .container .row .slick-slide .content-brands img {\n          width: 150px;\n          height: auto;\n          margin-bottom: 20px;\n}\n#app #block-brands .container .row .slick-slide .content-brands .brand-title {\n          display: none;\n}\n#app #block-brands .container .row .slick-slide .content-brands .info-brands, #app #block-brands .container .row .slick-slide .content-brands img {\n          display: -webkit-box !important;\n          display: -ms-flexbox !important;\n          display: flex !important;\n}\n#app #block-brands .container .text-brands {\n      font-size: 26px;\n      letter-spacing: 18px;\n      line-height: 45px;\n      font-weight: lighter;\n}\n#app #block-brands .container .text-brands .text-orange {\n        letter-spacing: 20px;\n}\n@media only screen and (max-width: 768px) {\n#app #block-brands .fp-slides {\n    height: calc(100vh - 200px);\n}\n#app #block-brands .fp-tableCell {\n    height: 100% !important;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .text-title {\n    display: none;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .info-brands {\n    width: 250px;\n    height: 250px;\n    margin-bottom: 30px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text {\n    width: 250px;\n}\n#app #block-brands .container #slide-brands-mobile .content-brands .slick-brand-text .text-brand-info {\n      line-height: 30px;\n}\n#app #block-brands .container #slide-brands-mobile .slick-brand-text {\n    padding: 0 30px;\n}\n}\n@-webkit-keyframes bgActive {\n0% {\n    width: 0;\n}\n100% {\n    width: 100vw;\n    display: none;\n}\n}\n@keyframes bgActive {\n0% {\n    width: 0;\n}\n100% {\n    width: 100vw;\n    display: none;\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 451:
+/***/ 489:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_slick__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_slick__ = __webpack_require__(420);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_slick___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_slick__);
+//
+//
+//
+//
 //
 //
 //
@@ -5014,31 +5033,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             delayIndex: 0,
             bgActive: false,
             brandItems: [{
+                url: '/images/banner_about.png',
+                title: '橘色鍋物',
+                text: '<span class="text-orange">橘色</span>鍋物<br>不管多少人都能吃得精彩！',
+                logo: '/images/home3_icon1.png',
+                contact: '#',
+                book: '#'
+            }, {
                 url: '/images/bg_brand_1.png',
                 title: 'EXTENSION1',
                 text: '美食不孤單，小鍋<span class="text-orange">新</span>食尚！<br>享受一個人的自在、兩個人的美好、一群人的熱鬧！',
-                logo: '/images/home3_icon1.png',
+                logo: '/images/home3_icon2.png',
                 contact: '#',
                 book: '#'
             }, {
                 url: '/images/banner_contact.png',
                 title: 'M One Cafe',
                 text: 'M<span class="text-orange">One</span>Cafe<br>不管多少人都能吃得精彩！',
-                logo: '/images/icon_cafe.png',
+                logo: '/images/home3_icon3.png',
                 contact: '#',
                 book: '#'
             }, {
-                url: '/images/banner_about.png',
-                title: '橘色鍋物',
-                text: '<span class="text-orange">橘色</span>鍋物<br>不管多少人都能吃得精彩！',
-                logo: '/images/home3_icon2.png',
+                url: '/images/slideshow_1.jpg',
+                title: 'SAKURA',
+                text: '男女<span class="text-orange">健康</span>生活館<br>測試描述文字',
+                logo: '/images/home3_icon4.png',
                 contact: '#',
                 book: '#'
             }, {
                 url: '/images/slideshow_1.jpg',
                 title: '橘色舒體',
                 text: '<span class="text-orange">橘色</span>舒體<br>測試描述文字',
-                logo: '/images/icon_m1spa.png',
+                logo: '/images/home3_icon5.png',
                 contact: '#',
                 book: '#'
             }],
@@ -5054,16 +5080,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     methods: {
         slickNext: function slickNext() {
-            this.indexBrand++;
-            this.countIndex();
+            if (!this.bgActive) {
+                this.indexBrand++;
+                this.countIndex();
 
-            this.$refs.slick.next();
+                this.$refs.slick.next();
+            }
         },
         slickPrev: function slickPrev() {
-            this.indexBrand--;
-            this.countIndex();
+            if (!this.bgActive) {
+                this.indexBrand--;
+                this.countIndex();
 
-            this.$refs.slick.prev();
+                this.$refs.slick.prev();
+            }
         },
         countIndex: function countIndex() {
             this.bgActive = true;
@@ -5102,12 +5132,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }
     },
     mounted: function mounted() {
-        // jQuery(document).ready(function(){
-        //     jQuery(".content-brands").click(function(){
-        //         jQuery("#slide-brands").slickPrev();
-        //     })
+        // jQuery(document).ready(()=>{
+        //     console.log(fullpage_api.getFullpageData.afterSlideLoad);
         // });
     },
+
     components: {
         Slick: __WEBPACK_IMPORTED_MODULE_0_vue_slick___default.a
     }
@@ -5115,7 +5144,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 452:
+/***/ 490:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -5270,7 +5299,11 @@ var render = function() {
               _vm._l(_vm.brandItems, function(item, $index) {
                 return _c(
                   "div",
-                  { key: $index, staticClass: "slide slick-brands" },
+                  {
+                    key: $index,
+                    staticClass: "slide slick-brands",
+                    attrs: { "data-anchor": $index }
+                  },
                   [
                     _c(
                       "div",
@@ -5295,28 +5328,15 @@ var render = function() {
                                   "d-flex align-items-center justify-content-center"
                               },
                               [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        _vm.brandItems[_vm.indexBrand].contact
-                                    }
-                                  },
-                                  [_vm._v("聯絡我們")]
-                                ),
+                                _c("a", { attrs: { href: item.contact } }, [
+                                  _vm._v("聯絡我們")
+                                ]),
                                 _vm._v(" "),
                                 _c("span", [_vm._v("・")]),
                                 _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href: _vm.brandItems[_vm.indexBrand].book
-                                    }
-                                  },
-                                  [_vm._v("線上訂位")]
-                                )
+                                _c("a", { attrs: { href: item.book } }, [
+                                  _vm._v("線上訂位")
+                                ])
                               ]
                             )
                           ]
@@ -5390,25 +5410,25 @@ if (false) {
 
 /***/ }),
 
-/***/ 453:
+/***/ 491:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(454)
+  __webpack_require__(492)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(8)
 /* script */
-var __vue_script__ = __webpack_require__(456)
+var __vue_script__ = __webpack_require__(494)
 /* template */
-var __vue_template__ = __webpack_require__(457)
+var __vue_template__ = __webpack_require__(495)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-1e9078d8"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -5442,23 +5462,23 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 454:
+/***/ 492:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(455);
+var content = __webpack_require__(493);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(204)("125a11db", content, false, {});
+var update = __webpack_require__(31)("819f9c88", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e9078d8\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-news.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e9078d8\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-news.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e9078d8\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-news.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e9078d8\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./block-news.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -5469,42 +5489,28 @@ if(false) {
 
 /***/ }),
 
-/***/ 455:
+/***/ 493:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(23)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n#block-news .fp-tableCell {\n  height: auto !important;\n}\n#block-news > div {\n  z-index: 3;\n  position: relative;\n}\n#block-news .news-list {\n  -webkit-transition: all .5s;\n  transition: all .5s;\n}\n#block-news .news-list .block-list {\n    width: 20%;\n}\n#block-news .news-list .block-list.center {\n      width: 50%;\n}\n@media only screen and (max-width: 991px) {\n.section-pd {\n    padding: 0;\n}\n#app #block-news .row {\n    padding: 80px 0px;\n}\n#app #block-news .main-title .text-orange {\n    color: #f26e22 !important;\n}\n#app #block-news .news-categories {\n    margin-top: 0 !important;\n    display: none !important;\n}\n#app #block-news .news-list {\n    padding: 0 38px;\n}\n#app #block-news .news-list .block-list {\n      width: auto;\n}\n#app #block-news .news-list .block-list:last-child {\n        display: none;\n}\n#app #block-news .news-list .block-list.beside .news-item {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n}\n#app #block-news .news-list .block-list.beside .news-item:first-child {\n          margin-right: 5px;\n}\n#app #block-news .news-list .block-list.beside .news-item:last-child {\n          margin-left: 5px;\n}\n}\n", ""]);
+exports.push([module.i, "\n#block-news .block-news-outer .block-news-filter[data-v-1e9078d8] {\n  margin-bottom: 20px;\n  margin-top: 40px;\n}\n#block-news .block-news-outer .block-news-filter .news-categories[data-v-1e9078d8] {\n    font-size: 14px;\n}\n#block-news .news-list[data-v-1e9078d8] {\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  height: 985px;\n}\n#block-news .news-list .news-item[data-v-1e9078d8] {\n    width: calc(25% - 40px);\n    max-height: 450px;\n}\n#block-news .news-list .news-item.feature[data-v-1e9078d8] {\n      width: 50%;\n      max-height: unset;\n}\n#block-news .news-list .news-item .news-head[data-v-1e9078d8] {\n      padding-top: 130%;\n}\n#block-news .news-list .news-item .news-content[data-v-1e9078d8] {\n      padding: 10px 0;\n}\n#block-news .news-list .news-item .news-content .news-desc[data-v-1e9078d8] {\n        margin-top: 20px;\n        height: 73px;\n        overflow: hidden;\n        font-size: 14px;\n        line-height: 24px;\n        text-align: center;\n        color: #797979;\n}\n@media only screen and (max-width: 991px) {\n.section-pd[data-v-1e9078d8] {\n    padding: 0;\n}\n#app #block-news .news-categories[data-v-1e9078d8] {\n    margin-top: 0 !important;\n}\n#app #block-news .news-list[data-v-1e9078d8] {\n    height: auto;\n}\n#app #block-news .news-list .news-item[data-v-1e9078d8] {\n      width: 100%;\n      max-height: unset;\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 456:
+/***/ 494:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -5593,381 +5599,409 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
-        return {
+        var _ref;
+
+        return _ref = {
             newsItems: [{
+                id: 0,
                 background: '/images/news_v1.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
                 title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/',
                 feature: true
             }, {
+                id: 1,
                 background: '/images/news_v3.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
                 title: '橘色公告－員工旅遊<br>謝謝辛勤付出的每一位夥伴<br>2018/05/20(日)',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/',
-                feature: false
+                feature: true
             }, {
+                id: 2,
                 background: '/images/news_v5.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/',
                 feature: false
             }, {
+                id: 3,
                 background: '/images/news_v2.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
                 title: '日本黑毛和牛 豪華海陸雙饗<br>一次滿足山珍海味!!!<br>♥♥♥挑戰味蕾極限 ',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/',
                 feature: false
             }, {
+                id: 4,
                 background: '/images/news_v4.png',
                 date: '2018/3/21',
                 category: '橘色涮涮屋',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/',
                 feature: false
             }, {
+                id: 5,
                 background: '/images/news_v1.png',
                 date: '2018/3/21',
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/',
                 feature: false
             }, {
+                id: 6,
                 background: '/images/news_v2.png',
                 date: '2018/3/21',
                 category: 'Extension 1 by 橘色',
                 title: '橘色公告－員工旅遊<br>謝謝辛勤付出的每一位夥伴<br>2018/05/20(日)～2018/05/24(四)<br>員工旅遊 暫停營業',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/',
                 feature: false
             }, {
+                id: 7,
                 background: '/images/news_v3.png',
                 date: '2018/3/21',
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/',
                 feature: false
             }, {
+                id: 8,
                 background: '/images/news_v4.png',
                 date: '2018/3/21',
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/',
                 feature: false
             }, {
+                id: 9,
                 background: '/images/news_v5.png',
                 date: '2018/3/21',
                 category: 'Extension 1 by 橘色',
                 title: '獨家引進金色三麥啤酒<br>創造鍋物美食新體驗',
                 intro: '測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字',
-                link: '/',
                 feature: false
             }],
             newsCategories: ['全部新訊', '橘色涮涮屋', 'Extension 1 by 橘色'],
             newsIndex: 0,
             viewIndex: 0
-        };
+        }, _defineProperty(_ref, 'newsCategories', ['橘色涮涮屋', 'Extension 1 by 橘色']), _defineProperty(_ref, 'category', ''), _ref;
     },
-    methods: {}
+    methods: {
+        filterCate: function filterCate(value) {
+            this.category = value;
+        },
+        filterNews: function filterNews(value) {
+            return value.category == this.category || this.category == '';
+        },
+        filterFeature: function filterFeature(value) {
+            return (value.category == this.category || this.category == '') && value.feature == true;
+        }
+    }
 });
 
 /***/ }),
 
-/***/ 457:
+/***/ 495:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "news-body w-100" },
-    [
-      _c(
-        "div",
-        {
-          staticClass:
-            "news-categories d-flex justify-content-center text-size-2 mt-5 mb-3"
-        },
-        _vm._l(_vm.newsCategories, function(item, $index) {
-          return _c(
-            "div",
-            {
-              key: $index,
-              staticClass: "category-items mr-4 ml-4",
-              class: _vm.newsIndex == $index ? "active" : "",
-              on: {
-                click: function($event) {
-                  _vm.newsIndex = $index
+  return _c("div", { staticClass: "news-body w-100" }, [
+    _c("div", { staticClass: "block-news-outer position-relative" }, [
+      _c("div", { staticClass: "block-news-lists position-relative" }, [
+        _c(
+          "div",
+          { staticClass: "block-news-filter" },
+          [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "news-categories -category justify-content-center d-none d-md-flex"
+              },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "category-items mr-4 ml-4 d-flex align-items-center",
+                    class: _vm.category == "" ? "active" : "",
+                    on: {
+                      click: function($event) {
+                        _vm.category = ""
+                      }
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                            全部新訊\n                        "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _vm._l(_vm.newsCategories, function(item, $index) {
+                  return _c(
+                    "div",
+                    {
+                      key: $index,
+                      staticClass:
+                        "category-items mr-4 ml-4 d-flex align-items-center",
+                      class: _vm.category == item ? "active" : "",
+                      on: {
+                        click: function($event) {
+                          _vm.category = item
+                        }
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(item) +
+                          "\n                        "
+                      )
+                    ]
+                  )
+                })
+              ],
+              2
+            ),
+            _vm._v(" "),
+            _c(
+              "el-select",
+              {
+                staticClass: "d-block d-md-none",
+                on: { change: _vm.filterCate },
+                model: {
+                  value: _vm.category,
+                  callback: function($$v) {
+                    _vm.category = $$v
+                  },
+                  expression: "category"
                 }
-              }
-            },
-            [_vm._v("\n            " + _vm._s(item) + "\n        ")]
-          )
-        })
-      ),
-      _vm._v(" "),
-      _c(
-        "transition-group",
-        {
-          staticClass:
-            "news-list-outer d-flex flex-column flex-wrap align-items-center",
-          attrs: { name: "fade", tag: "div" }
-        },
-        _vm._l(_vm.viewIndex + 1, function(n, $groupIndex) {
-          return _c(
-            "div",
-            {
-              key: $groupIndex,
-              staticClass:
-                "news-list d-flex flex-lg-row flex-column-reverse justify-content-between w-100 "
-            },
-            [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "block-list beside flex-row flex-lg-column d-flex justify-content-between justify-content-lg-start"
-                },
-                _vm._l(
-                  _vm.newsItems.slice(_vm.viewIndex, _vm.viewIndex + 2),
-                  function(item, $index) {
-                    return _vm.newsCategories[_vm.newsIndex] == item.category ||
-                      _vm.newsIndex == 0
-                      ? _c(
-                          "div",
-                          { key: $index + "a", staticClass: "news-item" },
-                          [
-                            _c(
+              },
+              [
+                _c("el-option", { attrs: { label: "全部新訊", value: "" } }),
+                _vm._v(" "),
+                _vm._l(_vm.newsCategories, function(item, $index) {
+                  return _c("el-option", {
+                    key: $index,
+                    attrs: { label: item, value: item }
+                  })
+                })
+              ],
+              2
+            )
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "news-list", attrs: { id: "block-news-items" } },
+          [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "d-flex flex-column flex-wrap align-items-center h-100"
+              },
+              _vm._l(_vm.newsItems.filter(_vm.filterNews), function(
+                item,
+                $index
+              ) {
+                return $index < 5
+                  ? _c(
+                      "div",
+                      {
+                        key: $index,
+                        staticClass: "news-item",
+                        class: { feature: $index == 2 }
+                      },
+                      [
+                        $index == 2 && item
+                          ? _c(
                               "div",
-                              {
-                                staticClass:
-                                  "news-head d-flex align-items-center justify-content-center position-relative",
-                                style:
-                                  "background-image: url(" +
-                                  item.background +
-                                  ")"
-                              },
                               [
                                 _c(
                                   "router-link",
-                                  {
-                                    staticClass: "btn-border",
-                                    attrs: { to: "/news/detail" }
-                                  },
-                                  [_vm._v("了解更多")]
-                                )
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              { staticClass: "news-content" },
-                              [
-                                _c("div", { staticClass: "news-info" }, [
-                                  _c(
-                                    "span",
-                                    { staticClass: "text-black text-size-1" },
-                                    [_vm._v(_vm._s(item.date))]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "span",
-                                    { staticClass: "text-orange text-size-1" },
-                                    [_vm._v(_vm._s(item.category))]
-                                  )
-                                ]),
+                                  { attrs: { to: "/news/detail/" + item.id } },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "news-head d-flex align-items-center justify-content-center position-relative",
+                                        style:
+                                          "background-image: url(" +
+                                          item.background +
+                                          ")"
+                                      },
+                                      [
+                                        _c(
+                                          "router-link",
+                                          {
+                                            staticClass:
+                                              "btn-border btn-readmore",
+                                            attrs: {
+                                              to: "/news/detail/" + item.id
+                                            }
+                                          },
+                                          [_vm._v("了解更多")]
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ]
+                                ),
                                 _vm._v(" "),
-                                _c("router-link", {
-                                  staticClass: "news-title",
-                                  attrs: { to: "/news/detail/" + item.id },
-                                  domProps: { innerHTML: _vm._s(item.title) }
-                                })
+                                _c(
+                                  "div",
+                                  { staticClass: "news-content text-center" },
+                                  [
+                                    _c("div", [
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-black text-size-1"
+                                        },
+                                        [_vm._v(_vm._s(item.date))]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-orange text-size-1"
+                                        },
+                                        [_vm._v(_vm._s(item.category))]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("router-link", {
+                                      staticClass: "news-title",
+                                      attrs: { to: "/news/detail/" + item.id },
+                                      domProps: {
+                                        innerHTML: _vm._s(item.title)
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("p", {
+                                      staticClass: "news-desc",
+                                      domProps: {
+                                        innerHTML: _vm._s(item.intro)
+                                      }
+                                    })
+                                  ],
+                                  1
+                                )
                               ],
                               1
                             )
-                          ]
-                        )
-                      : _vm._e()
-                  }
-                )
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "block-list center flex-column justify-content-between"
-                },
-                [
-                  _vm.newsCategories[_vm.newsIndex] ==
-                    _vm.newsItems[_vm.viewIndex + 2].category ||
-                  _vm.newsIndex == 0
-                    ? _c(
-                        "div",
-                        {
-                          staticClass:
-                            "news-item d-flex flex-column h-100 w-100"
-                        },
-                        [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "news-head d-flex align-items-center justify-content-center position-relative",
-                              style:
-                                "background-image: url(" +
-                                _vm.newsItems[_vm.viewIndex + 2].background +
-                                ")"
-                            },
-                            [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: "btn-border",
-                                  attrs: { to: "/news/detail" }
-                                },
-                                [_vm._v("了解更多")]
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "news-content" }, [
-                            _c("div", { staticClass: "news-info" }, [
-                              _c(
-                                "span",
-                                { staticClass: "text-black text-size-1" },
-                                [
-                                  _vm._v(
-                                    _vm._s(
-                                      _vm.newsItems[_vm.viewIndex + 2].date
+                          : _c(
+                              "div",
+                              [
+                                _c(
+                                  "router-link",
+                                  { attrs: { to: "/news/detail/" + item.id } },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "news-head d-flex align-items-center justify-content-center position-relative",
+                                        style:
+                                          "background-image: url(" +
+                                          item.background +
+                                          ")"
+                                      },
+                                      [
+                                        _c(
+                                          "router-link",
+                                          {
+                                            staticClass:
+                                              "btn-border btn-readmore",
+                                            attrs: {
+                                              to: "/news/detail/" + item.id
+                                            }
+                                          },
+                                          [_vm._v("了解更多")]
+                                        )
+                                      ],
+                                      1
                                     )
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "span",
-                                { staticClass: "text-orange text-size-1" },
-                                [
-                                  _vm._v(
-                                    _vm._s(
-                                      _vm.newsItems[_vm.viewIndex + 2].category
-                                    )
-                                  )
-                                ]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("a", {
-                              staticClass: "news-title",
-                              attrs: {
-                                href: _vm.newsItems[_vm.viewIndex + 2].link
-                              },
-                              domProps: {
-                                innerHTML: _vm._s(
-                                  _vm.newsItems[_vm.viewIndex + 2].title
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "news-content text-center" },
+                                  [
+                                    _c("div", [
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-black text-size-1"
+                                        },
+                                        [_vm._v(_vm._s(item.date))]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "text-orange text-size-1"
+                                        },
+                                        [_vm._v(_vm._s(item.category))]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("router-link", {
+                                      staticClass: "news-title",
+                                      attrs: { to: "/news/detail/" + item.id },
+                                      domProps: {
+                                        innerHTML: _vm._s(item.title)
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    $index == 2
+                                      ? _c("p", {
+                                          staticClass: "news-desc",
+                                          domProps: {
+                                            innerHTML: _vm._s(item.intro)
+                                          }
+                                        })
+                                      : _vm._e()
+                                  ],
+                                  1
                                 )
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("p", { staticClass: "mt-3" }, [
-                              _vm._v(
-                                "\n                                    " +
-                                  _vm._s(
-                                    _vm.newsItems[_vm.viewIndex + 2].intro
-                                  ) +
-                                  "\n                                "
-                              )
-                            ])
-                          ])
-                        ]
-                      )
-                    : _vm._e()
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "block-list beside flex-column justify-content-between"
-                },
-                _vm._l(
-                  _vm.newsItems.slice(_vm.viewIndex + 3, _vm.viewIndex + 5),
-                  function(item, $index) {
-                    return _vm.newsCategories[_vm.newsIndex] == item.category ||
-                      _vm.newsIndex == 0
-                      ? _c("div", { key: $index, staticClass: "news-item" }, [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "news-head d-flex align-items-center justify-content-center position-relative",
-                              style:
-                                "background-image: url(" + item.background + ")"
-                            },
-                            [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: "btn-border",
-                                  attrs: { to: "/news/detail/1" }
-                                },
-                                [_vm._v("了解更多")]
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "news-content" }, [
-                            _c("div", { staticClass: "news-info" }, [
-                              _c(
-                                "span",
-                                { staticClass: "text-black text-size-1" },
-                                [_vm._v(_vm._s(item.date))]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "span",
-                                { staticClass: "text-orange text-size-1" },
-                                [_vm._v(_vm._s(item.category))]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("a", {
-                              staticClass: "news-title",
-                              attrs: { href: item.link },
-                              domProps: { innerHTML: _vm._s(item.title) }
-                            })
-                          ])
-                        ])
-                      : _vm._e()
-                  }
-                )
-              )
-            ]
+                              ],
+                              1
+                            )
+                      ]
+                    )
+                  : _vm._e()
+              })
+            )
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "btn-load-more text-center" },
+        [
+          _c(
+            "router-link",
+            { staticClass: "news-title", attrs: { to: "/news" } },
+            [_vm._v("更多橘色新訊")]
           )
-        })
+        ],
+        1
       )
-    ],
-    1
-  )
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -5981,19 +6015,19 @@ if (false) {
 
 /***/ }),
 
-/***/ 458:
+/***/ 496:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(459)
+  __webpack_require__(497)
 }
-var normalizeComponent = __webpack_require__(49)
+var normalizeComponent = __webpack_require__(8)
 /* script */
-var __vue_script__ = __webpack_require__(461)
+var __vue_script__ = __webpack_require__(499)
 /* template */
-var __vue_template__ = __webpack_require__(462)
+var __vue_template__ = __webpack_require__(500)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -6033,17 +6067,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 459:
+/***/ 497:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(460);
+var content = __webpack_require__(498);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(204)("e8adc522", content, false, {});
+var update = __webpack_require__(31)("e8adc522", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -6060,22 +6094,22 @@ if(false) {
 
 /***/ }),
 
-/***/ 460:
+/***/ 498:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(48)(false);
+exports = module.exports = __webpack_require__(23)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n#block-foods {\n  background-size: cover;\n  background-position: 0;\n}\n#block-foods.active .block-food-body .content-food.left-content, #block-foods.active .block-food-body .content-food.right-content {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n    opacity: 1;\n}\n#block-foods.active .block-food-body .bg-left .bg-inner {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    background-position-y: center;\n}\n#block-foods .line-top:before {\n    content: \"\";\n    background: #f46f1b;\n    width: 60px;\n    height: 1px;\n    display: block;\n    margin-bottom: 20px;\n}\n#block-foods .block-food-body {\n    background-repeat: no-repeat;\n    background-size: cover;\n    height: 100vh;\n}\n#block-foods .block-food-body:after {\n      content: \"\";\n      position: absolute;\n      left: 0;\n      width: 100%;\n      height: 100%;\n      background: rgba(0, 0, 0, 0.6);\n}\n#block-foods .block-food-body .bg-left .bg-inner {\n      background-position: center;\n      background-size: cover;\n      background-position-y: 100vh;\n      -webkit-transition: all .5s;\n      transition: all .5s;\n}\n#block-foods .block-food-body .bg-left .bg-inner.active {\n        background-position-y: 100vh;\n        -webkit-transition: initial;\n        transition: initial;\n}\n#block-foods .block-food-body .content-food {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      padding: 0 100px;\n      overflow: hidden;\n      z-index: 2;\n}\n#block-foods .block-food-body .content-food .big_title {\n        font-size: 140px;\n        font-weight: 600;\n}\n#block-foods .block-food-body .content-food .more-food-info {\n        width: 100px;\n        height: 100px;\n        display: inline-block;\n        border-radius: 100%;\n        background-position: center;\n        background-size: cover;\n        cursor: pointer;\n        margin-right: 25px;\n        -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);\n                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);\n}\n#block-foods .block-food-body .content-food .more-food-info.active, #block-foods .block-food-body .content-food .more-food-info:hover {\n          opacity: 0.8;\n          -webkit-box-shadow: 0px 0px 20px black;\n                  box-shadow: 0px 0px 20px black;\n          -webkit-transition: all .3s;\n          transition: all .3s;\n}\n#block-foods .block-food-body .content-food > div {\n        position: relative;\n        z-index: 2;\n}\n#block-foods .block-food-body .content-food.left-content, #block-foods .block-food-body .content-food.right-content {\n        -webkit-transition: opacity 1s, -webkit-transform 1s;\n        transition: opacity 1s, -webkit-transform 1s;\n        transition: transform 1s, opacity 1s;\n        transition: transform 1s, opacity 1s, -webkit-transform 1s;\n        opacity: 0;\n}\n#block-foods .block-food-body .content-food.left-content {\n        background: transparent;\n        padding: 100px;\n}\n#block-foods .block-food-body .content-food.left-content .line-top {\n          line-height: 25px;\n}\n#block-foods .block-food-body .content-food.right-content {\n        background: white;\n        z-index: 2;\n        -webkit-transform: translateY(-100%);\n                transform: translateY(-100%);\n}\n#block-foods .block-food-body .content-food.right-content:before, #block-foods .block-food-body .content-food.right-content:after {\n          content: \"\";\n          position: absolute;\n          border-radius: 100%;\n}\n#block-foods .block-food-body .content-food.right-content:before {\n          width: 850px;\n          height: 850px;\n          background: rgba(242, 108, 35, 0.1);\n          right: -540px;\n          bottom: -480px;\n}\n#block-foods .block-food-body .content-food.right-content:after {\n          width: 100px;\n          height: 100px;\n          background: rgba(0, 0, 0, 0.22);\n          right: -70px;\n          bottom: 300px;\n}\n#block-foods .block-food-body .content-food.right-content .food-info-inner {\n          height: 500px;\n          width: 500px;\n          background: #f26d23;\n          border-radius: 100%;\n          -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n                  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n          -webkit-transition: all .5s;\n          transition: all .5s;\n}\n#block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-info {\n            font-weight: 300;\n            letter-spacing: 2px;\n}\n#block-foods .block-food-body .content-food.right-content .loader {\n          position: absolute;\n          width: auto;\n          height: 100vh;\n          bottom: -30px;\n          left: -140px;\n}\n#block-foods .block-food-body .content-food.right-content .loader.active {\n            -webkit-transform: rotate(360deg);\n                    transform: rotate(360deg);\n            -webkit-transition: all .5s ease-in-out;\n            transition: all .5s ease-in-out;\n}\n#block-foods .block-food-body .content-food.right-content .more-food-info {\n          display: none;\n}\n@media only screen and (max-width: 991px) {\n#app #block-foods .bg-transition {\n    width: 100vw;\n}\n#app #block-foods .block-food-body .content-food h3, #app #block-foods .block-food-body .content-food span {\n    color: white !important;\n    letter-spacing: 5px;\n    text-align: center;\n}\n#app #block-foods .block-food-body .content-food h3 {\n    font-size: 28px;\n    z-index: 2;\n}\n#app #block-foods .block-food-body .content-food .sub-title {\n    font-size: 12px;\n}\n#app #block-foods .block-food-body .content-food.left-content {\n    display: none !important;\n}\n#app #block-foods .block-food-body .content-food.right-content {\n    background: transparent;\n    padding: 90px 20px 23px 20px;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#app #block-foods .block-food-body .content-food.right-content .more-food-info {\n      display: block;\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner {\n      height: 300px;\n      width: 300px;\n      background: rgba(242, 109, 35, 0.8);\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-title {\n        font-size: 21px;\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-info {\n        font-size: 12px;\n}\n#app #block-foods .block-food-body .content-food .more-food-info {\n    margin: 0 20px;\n    width: 68px;\n    height: 68px;\n    border: 1px solid #f26b23;\n}\n#app #block-foods .block-food-body .content-food .more-food-info:last-child {\n      margin-right: 0;\n}\n#app #block-foods .block-food-body .content-food .more-food-info span {\n      left: 0;\n      bottom: -25px;\n      font-size: 12px;\n      letter-spacing: 2px;\n}\n#app #block-foods .block-food-body .content-food .loader {\n    width: 100vw;\n    left: 15%;\n}\n}\n@media only screen and (max-width: 420px) {\n#app #block-foods .block-food-body .content-food.right-content {\n    padding: 25px 20px;\n}\n#app #block-foods .block-food-body .content-food .loader circle {\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n}\n#app #block-foods .block-food-body .content-food .loader.active circle {\n    -webkit-transform: rotate(180deg) scale(0.6);\n            transform: rotate(180deg) scale(0.6);\n}\n}\n", ""]);
+exports.push([module.i, "\n#block-foods {\n  background-size: cover;\n  background-position: center;\n}\n#block-foods.active .block-food-body .content-food.left-content, #block-foods.active .block-food-body .content-food.right-content {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n    opacity: 1;\n}\n#block-foods.active .block-food-body .bg-left .bg-inner {\n    -webkit-transition-delay: .3s;\n            transition-delay: .3s;\n    background-position-y: center;\n}\n#block-foods .line-top:before {\n    content: \"\";\n    background: #f46f1b;\n    width: 60px;\n    height: 1px;\n    display: block;\n    margin-bottom: 20px;\n}\n#block-foods .block-food-body {\n    background-repeat: no-repeat;\n    background-size: cover;\n    height: 100vh;\n}\n#block-foods .block-food-body:after {\n      content: \"\";\n      position: absolute;\n      left: 0;\n      width: 100%;\n      height: 100%;\n      background: rgba(0, 0, 0, 0.6);\n}\n#block-foods .block-food-body .bg-left .bg-inner {\n      background-position: center;\n      background-size: cover;\n      background-position-y: 100vh;\n      -webkit-transition: all .5s;\n      transition: all .5s;\n}\n#block-foods .block-food-body .bg-left .bg-inner.active {\n        background-position-y: 100vh;\n        -webkit-transition: initial;\n        transition: initial;\n}\n#block-foods .block-food-body .content-food {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      padding: 0 100px;\n      overflow: hidden;\n      z-index: 2;\n}\n#block-foods .block-food-body .content-food .big_title {\n        font-size: 140px;\n        font-weight: 600;\n}\n#block-foods .block-food-body .content-food .more-food-info {\n        width: 100px;\n        height: 100px;\n        display: inline-block;\n        border-radius: 100%;\n        background-position: center;\n        background-size: cover;\n        cursor: pointer;\n        margin-right: 25px;\n        -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);\n                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);\n}\n#block-foods .block-food-body .content-food .more-food-info.active, #block-foods .block-food-body .content-food .more-food-info:hover {\n          opacity: 0.8;\n          -webkit-box-shadow: 0px 0px 20px black;\n                  box-shadow: 0px 0px 20px black;\n          -webkit-transition: all .3s;\n          transition: all .3s;\n}\n#block-foods .block-food-body .content-food > div {\n        position: relative;\n        z-index: 2;\n}\n#block-foods .block-food-body .content-food.left-content, #block-foods .block-food-body .content-food.right-content {\n        -webkit-transition: opacity 1s, -webkit-transform 1s;\n        transition: opacity 1s, -webkit-transform 1s;\n        transition: transform 1s, opacity 1s;\n        transition: transform 1s, opacity 1s, -webkit-transform 1s;\n        opacity: 0;\n}\n#block-foods .block-food-body .content-food.left-content {\n        background: transparent;\n        padding: 100px;\n}\n#block-foods .block-food-body .content-food.left-content .line-top {\n          line-height: 25px;\n}\n#block-foods .block-food-body .content-food.right-content {\n        background: white;\n        z-index: 2;\n        -webkit-transform: translateY(-100%);\n                transform: translateY(-100%);\n}\n#block-foods .block-food-body .content-food.right-content:before, #block-foods .block-food-body .content-food.right-content:after {\n          content: \"\";\n          position: absolute;\n          border-radius: 100%;\n}\n#block-foods .block-food-body .content-food.right-content:before {\n          width: 850px;\n          height: 850px;\n          background: rgba(242, 108, 35, 0.1);\n          right: -540px;\n          bottom: -480px;\n}\n#block-foods .block-food-body .content-food.right-content:after {\n          width: 100px;\n          height: 100px;\n          background: rgba(0, 0, 0, 0.22);\n          right: -70px;\n          bottom: 300px;\n}\n#block-foods .block-food-body .content-food.right-content .food-info-inner {\n          height: 500px;\n          width: 500px;\n          background: #f26d23;\n          border-radius: 100%;\n          -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n                  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n          -webkit-transition: all .5s;\n          transition: all .5s;\n}\n#block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-info {\n            font-weight: 300;\n            letter-spacing: 2px;\n}\n#block-foods .block-food-body .content-food.right-content .loader {\n          position: absolute;\n          width: auto;\n          height: 100vh;\n          bottom: -30px;\n          left: -140px;\n}\n#block-foods .block-food-body .content-food.right-content .loader.active {\n            -webkit-transform: rotate(360deg);\n                    transform: rotate(360deg);\n            -webkit-transition: all 1s cubic-bezier(1, 0.105, 0, 1);\n            transition: all 1s cubic-bezier(1, 0.105, 0, 1);\n}\n#block-foods .block-food-body .content-food.right-content .more-food-info {\n          display: none;\n}\n@media only screen and (max-width: 991px) {\n#app #block-foods .bg-transition {\n    width: 100vw;\n}\n#app #block-foods .block-food-body .content-food h3, #app #block-foods .block-food-body .content-food span {\n    color: white !important;\n    letter-spacing: 5px;\n    text-align: center;\n}\n#app #block-foods .block-food-body .content-food h3 {\n    font-size: 28px;\n    z-index: 2;\n}\n#app #block-foods .block-food-body .content-food .sub-title {\n    font-size: 12px;\n}\n#app #block-foods .block-food-body .content-food.left-content {\n    display: none !important;\n}\n#app #block-foods .block-food-body .content-food.right-content {\n    background: transparent;\n    padding: 90px 20px 23px 20px;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#app #block-foods .block-food-body .content-food.right-content .more-food-info {\n      display: block;\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner {\n      height: 300px;\n      width: 300px;\n      background: rgba(242, 109, 35, 0.8);\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-title {\n        font-size: 21px;\n}\n#app #block-foods .block-food-body .content-food.right-content .food-info-inner .text-food-info {\n        font-size: 12px;\n}\n#app #block-foods .block-food-body .content-food .more-food-info {\n    margin: 0 20px;\n    width: 68px;\n    height: 68px;\n    border: 1px solid #f26b23;\n}\n#app #block-foods .block-food-body .content-food .more-food-info:last-child {\n      margin-right: 0;\n}\n#app #block-foods .block-food-body .content-food .more-food-info span {\n      left: 0;\n      bottom: -25px;\n      font-size: 12px;\n      letter-spacing: 2px;\n}\n#app #block-foods .block-food-body .content-food .loader {\n    width: 120%;\n    left: -30px;\n    top: -10px;\n}\n#app #block-foods .block-food-body .content-food .loader #Content-Menu-3 {\n      opacity: 0.6 !important;\n}\n}\n@media only screen and (max-width: 420px) {\n#app #block-foods .block-food-body .content-food.right-content {\n    padding: 25px 20px;\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 461:
+/***/ 499:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6174,6 +6208,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     },
     methods: {
+        clickValue: function clickValue(value) {
+            if (!this.addTransition) {
+                this.food_index = value;
+                this.bgAnimated(100);
+                this.startAnimate(1000);
+            }
+        },
         bgAnimated: function bgAnimated(time) {
             var _this = this;
 
@@ -6198,7 +6239,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 462:
+/***/ 500:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -6264,9 +6305,7 @@ var render = function() {
                     style: "background-image:url(" + item.url + ")",
                     on: {
                       click: function($event) {
-                        _vm.food_index = $index
-                        _vm.bgAnimated(100)
-                        _vm.startAnimate(500)
+                        _vm.clickValue($index)
                       }
                     }
                   })
@@ -6438,7 +6477,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 463:
+/***/ 501:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -10738,7 +10777,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 464:
+/***/ 502:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -11886,7 +11925,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 465:
+/***/ 503:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13210,7 +13249,7 @@ PerfectScrollbar.prototype.removePsClasses = function removePsClasses () {
 
 /***/ }),
 
-/***/ 466:
+/***/ 504:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -13417,7 +13456,7 @@ var render = function() {
                               "div",
                               {
                                 staticClass:
-                                  "row flex-column align-items-center justify-content-center flex-nowrap"
+                                  "flex-column align-items-center justify-content-center"
                               },
                               [
                                 _c(

@@ -143,7 +143,7 @@ export default {
         	setTimeout(()=>{
 		        setInterval(()=>{
 			        this.is_run = true;
-			        //this.onPlusStep()
+			        this.onPlusStep()
                 },300)
             },1300)
         },

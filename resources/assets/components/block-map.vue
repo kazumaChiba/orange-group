@@ -1,5 +1,5 @@
 <template>
-    <div id="block-map-body"  v-if="mapItems[brand]">    
+    <div id="block-map-body"  v-if="mapItems[brand]" :class="brand">    
         <div class="map-list container">
             <div class="row d-flex justify-content-center ">
                 <div 
@@ -36,6 +36,7 @@
             <GmapMap v-if="brand == 'shabu'" ref="mapRef" :center="mapItems[brand][mapIndex].center" :zoom="14" style="width: 100%; height: 560px" :option="mapoption">
                 <GmapMarker icon="/images/marker.png" :position="mapItems[brand][mapIndex].center" :clickable="false" :draggable="false"></GmapMarker>
             </GmapMap>
+            
             <GmapMap v-else ref="mapRef" :center="mapItems[brand][0].center" :zoom="14" style="width: 100%; height: 560px" :option="mapoption">
                 <GmapMarker icon="/images/marker.png" :position="mapItems[brand][0].center" :clickable="false" :draggable="false"></GmapMarker>
             </GmapMap>
@@ -58,8 +59,8 @@
                             address: '106台北市大安區大安路一段135號',
                             infos: '+886 2 8780 59559<br>service@group.com',
                             center: {
-                                lat: 25.038958,
-                                lng: 121.546416,
+                                lat: 25.038750, 
+                                lng: 121.546168,
                             },
                         },
                         {
@@ -67,8 +68,8 @@
                             address: '106台北市大安區仁愛路四段29-2號',
                             infos: '+886 2 8780 59559<br>service@group.com',
                             center: {
-                                lat: 25.038688,
-                                lng: 121.546257,
+                                lat: 25.038510, 
+                                lng: 121.545324,
                             },
                         },
                         {
@@ -76,8 +77,8 @@
                             address: '110台北市信義區松壽路9號5樓',
                             infos: '+886 2 8780 59559<br>service@group.com',
                             center: {
-                                lat: 25.036865,
-                                lng: 121.567281,
+                                lat: 25.036681, 
+                                lng: 121.566699,
                             },
                         }
                     ],
@@ -109,8 +110,8 @@
                             address: '106台北市大安區仁愛路四段27巷6-1號B1',
                             infos: '+886 2 8780 59559<br>service@group.com',
                             center: {
-                                lat: 25.038912, 
-                                lng: 121.545112,
+                                lat: 25.038880, 
+                                lng: 121.545117,
                             },
                         }
                     ],
@@ -120,8 +121,8 @@
                             address: '106台北市大安區仁愛路四段110號',
                             infos: '+886 2 8780 59559<br>service@group.com',
                             center: {
-                                lat: 25.037087, 
-                                lng: 121.549374,
+                                lat: 25.037052, 
+                                lng: 121.549363,
                             },
                         }
                     ],
@@ -172,57 +173,53 @@
                 border: none
 
     @media only screen and (max-width: 991px)
-        .map-list
-            padding: 0 38px !important
-            margin-bottom: 20px !important
-            .el-tabs__nav-wrap
-                &:after
-                    display: none
-                .el-tabs__item
-                    font-size: 12px
-                    &.is-active
+        #block-map-body 
+            &:not(.shabu)
+                .map-list 
+                    .el-tabs__nav-wrap 
+                        .el-tabs__active-bar
+                            width: 100% !important
+            .map-list
+                padding: 0 38px !important
+                margin-bottom: 20px !important
+                .el-tabs__nav-wrap
+                    &:after
+                        display: none
+                    .el-tabs__item
+                        font-size: 12px
                         color: #f26c23
-                .el-tabs__nav-scroll
-                    height: 65px
-                    .el-tabs__nav
-                        float: none
+                    .el-tabs__nav-scroll
+                        height: 65px
+                        .el-tabs__nav
+                            float: none
+                            text-align: center
+                    .el-tabs__active-bar
+                        background-color: #f26c23
+                        height: 1px
+                        bottom: 5px
                         text-align: center
-                .el-tabs__active-bar
-                    background-color: #f26c23
-                    height: 1px
-                    bottom: 5px
-                    left: 15px
-                    &:before , &:after
-                        content: ""
-                        position: absolute
-                        top: 0
-                        background: #ef803a
-                        left: 50%
-                    &:before
-                        width: 1px
-                        height: 18px
-                    // &:after
-                    //     border-radius: 100%
-                    //     top: 20px
-                    //     left: 50%
-                    //     transform: translate(-50% , -50%)   
-                    //     width: 3px
-                    //     height: 3px
-            .el-tabs__content
-                text-align: center
-                p
-                    margin: 0
-                    font-size: 12px !important
-                    font-weight: 400 !important
-                    line-height: 20px
-                    color: #ef803a !important
-            .el-tabs__header
-                margin-bottom: 0
+                        left: 15px
+                        &:before
+                            content: ""
+                            width: 1px
+                            height: 18px
+                            background-color: #f26c23
+                            display: inline-block
+                .el-tabs__content
+                    text-align: center
+                    p
+                        margin: 0
+                        font-size: 12px !important
+                        font-weight: 400 !important
+                        line-height: 20px
+                        color: #ef803a !important
+                .el-tabs__header
+                    margin-bottom: 0
 
-        .map-iframe
-            margin-bottom: 50px
-            iframe
-                height: 180px
-                padding: 0 38px
+            .map-iframe
+                margin-bottom: 50px
+                iframe
+                    height: 180px
+                    padding: 0 38px
 
 </style>
