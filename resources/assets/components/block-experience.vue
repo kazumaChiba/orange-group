@@ -2,7 +2,7 @@
     <div id="block-experience" class="position-relative section text-white text-center h-100" :style="'background-image:url('+experience[experience_index_old].url+')'">
         <div class="bg-transition bg-left" :class="{'active' : bgTransition}">
             <div 
-                class="bg-inner position-absolute" 
+                class="bg-inner position-absolute bg-black-cover" 
                 :class="{'active' : bgTransition}"
                 :style="'background-image:url('+experience[experience_index].url+')'"
             ></div>
@@ -66,7 +66,7 @@
                     <!--<div class="circle-line left"></div>
                     <div class="circle-line right"></div>-->
                 </div>
-                <div class="circle-option position-absolute" :class="'e_index_'+experience_index">
+                <div class="circle-option position-absolute" :class="'e_index_'+experience_index" :style="'transform: scale(1.05) rotate('+rotate+'deg)'">
                     <a class="text-circle-option left" @mouseenter="onStopStep()"  @mouseleave="onContinueStep()" @click="onClickCircleItem(0, 'ex')" :class="experience_index == 0 ? 'active' : ''">體驗</a>
                     <a class="text-circle-option top" @mouseenter="onStopStep()"  @mouseleave="onContinueStep()" @click="onClickCircleItem(1, 'pot')" :class="experience_index == 1 ? 'active' : ''">鍋物</a>
                     <a class="text-circle-option right" @mouseenter="onStopStep()"  @mouseleave="onContinueStep()" @click="onClickCircleItem(2, 'coffee')" :class="experience_index == 2 ? 'active' : ''">咖啡</a>
@@ -106,7 +106,8 @@ export default {
 	            is_run: false,
                 is_rotate: false,
 	            circle_stop: false,
-	            circle_dasharray: 0
+                circle_dasharray: 0,
+                rotate: 0,
             }
         },
         components: {
@@ -158,7 +159,48 @@ export default {
                 }, parseInt(time) + 800);
             },
             onClickCircleItem(index, view){
-	            this.experience_view = view;
+                
+                console.log(index);
+                switch(index){
+                    case 0:
+                        this.rotate += 90*this.experience_index;
+                        break;
+                    case 1:
+                        if(this.experience_index == 0){
+                            this.rotate += 270;
+                        }
+                        else if(this.experience_index == 2){
+                            this.rotate += 90;
+                        }
+                        else if(this.experience_index == 3){
+                            this.rotate += 180;
+                        }
+                        break;
+                    case 2:
+                        if(this.experience_index == 0){
+                            this.rotate += 180;
+                        }
+                        else if(this.experience_index == 1){
+                            this.rotate += 270;
+                        }
+                        else if(this.experience_index == 3){
+                            this.rotate += 90;
+                        }
+                        break;
+                    case 3:
+                        if(this.experience_index == 0){
+                            this.rotate += 90;
+                        }
+                        else if(this.experience_index == 1){
+                            this.rotate += 180;
+                        }
+                        else if(this.experience_index == 3){
+                            this.rotate += 270;
+                        }
+                        break;
+                }
+                console.log(this.rotate);
+                this.experience_view = view;
 	            this.experience_index = index;
 	            this.bgAnimated(800)
 
@@ -224,7 +266,7 @@ export default {
                 //transition: stroke-dasharray 6s cubic-bezier(0.47, 0, 0.745, 0.715), stroke 6s cubic-bezier(0.215, 0.61, 0.355, 1)
             &.rotate
                 stroke: #f26d23
-                transition: stroke-dasharray 0.3s, stroke 0.3s, stroke-opacity 1.2s
+                transition: stroke-dasharray 0.3s, stroke-opacity 1.2s
                 //stroke-dasharray: 295,471
                 //transition: stroke 1s
     #block-experience
@@ -247,6 +289,7 @@ export default {
                     .bg-inner
                         background-position-y: 0
                         transition: all .8s
+                        background-position: 50% center
 
         .bg-transition
             &.bg-left , &.bg-right
@@ -395,13 +438,17 @@ export default {
                             transition-delay: .5s
                     @for $i from 0 through 3
                         &.e_index_#{$i}
-                            transform: rotate($i*(-90deg)) scale(1.05)
+                            //transform: rotate($i*(-90deg)) scale(1.05)
                             a
                                 transition: all .3s 
                                 transform: rotate($i*90deg) !important
 
     @media only screen and (max-width: 767px)
         #block-experience 
+            .bg-inner
+                &.bg-black-cover
+                    &:before
+                        opacity: 0
             #content-experience 
                 transform: scale(0.55)
                 .experience-inner

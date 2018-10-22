@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="news-item-head flex-column position-relative w-100">
                         <h2 class="news-item-title">新光三越旗艦店開幕<br>全店享九折優惠</h2>
-                        <div class="news-item-info d-flex">
+                        <div class="news-item-info d-flex flex-column flex-lg-row">
                             <div class="news-info -date d-flex flex-column mr-5">
                                 <span class="info-title">發佈日期：</span>
                                 <span class="info-text">2018/3/21</span>
@@ -54,11 +54,11 @@
                             <h3 class="text-intro-title">測試描述標題文字</h3>
                             <p>測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字</p>
                         </div>
-                        <div class="item-news-foot w-100 d-flex justify-content-between">
+                        <div class="item-news-foot w-100 d-flex justify-content-between flex-column flex-lg-row">
                             <div class="item-tags-list">
-                                <span class="item-tag">橘色涮涮屋</span>
-                                <span class="item-tag">新店</span>
-                                <span class="item-tag">新光三越</span>
+                                <router-link class="item-tag" :to="'/news/search/橘色涮涮屋'">橘色涮涮屋</router-link>
+                                <router-link class="item-tag" :to="'/news/search/黑毛和牛'">黑毛和牛</router-link>
+                                <router-link class="item-tag" :to="'/news/search/金色三麥啤酒'">金色三麥啤酒</router-link>
                             </div>
                             <div class="item-social-list d-flex">
                                 <span class="d-inline-flex align-items-center mr-3">社群分享</span>
@@ -73,11 +73,11 @@
                         <div class="item-relatives w-100 d-flex justify-content-between">
                             <div class="item-relative -pre text-left">
                                 <span class="title-relative">上一則訊息</span>
-                                <a class="position-relative" href="#">消息標題文字</a>
+                                <router-link class="position-relative" :to="'#'">消息標題文字</router-link>
                             </div>
                             <div class="item-relative -next text-right">
                                 <span class="title-relative">下一則訊息</span>
-                                <a class="position-relative" href="#">消息標題文字</a>
+                                <router-link class="position-relative" :to="'#'">消息標題文字</router-link>
                             </div>
                         </div>
                     </div>
@@ -112,7 +112,6 @@ export default {
 </script>
 
 <style lang="sass">
-
     #block-news-item
         height: 95vh
         .news-item-head
@@ -224,6 +223,7 @@ export default {
                     border-radius: 100%
                     &:hover
                         color: white
+                        box-shadow: 0px 0 15px rgba(0, 0, 0, 0.4)
                     &.facebook
                         background-color: #3b5999
                     &.twitter
@@ -234,6 +234,28 @@ export default {
                         background-color: #0076b4
         .el-breadcrumb
             justify-content: left
-        
 
+        @media only screen and (max-width: 991px)    
+            .news-item-head 
+                margin-top: 120px
+                .news-item-title
+                    margin-bottom: 20px
+                    font-size: 32px
+                .news-item-info
+                    margin-bottom: 20px
+                    .news-info
+                        margin-bottom: 10px
+                .btn-play
+                    margin-bottom: 40px
+
+            .item-news-body 
+                .item-news-content
+                    padding: 0 25px
+                    p
+                        line-height: 25px
+                    .text-big-orange , .text-intro-title
+                        font-size: 20px
+                        padding: 10px 0
+                .item-tags-list
+                    margin-bottom: 30px
 </style>

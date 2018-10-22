@@ -151,7 +151,7 @@ html,body,#app,#block-main
     #header
         top: 0
         z-index: 999999
-        width: 100% 
+        width: 100vw
         display: flex
         align-items: center
         position: fixed
@@ -161,23 +161,21 @@ html,body,#app,#block-main
         margin-top: 30px
         &.position-fixed
             border-bottom: 2px solid #efefef
-            //box-shadow: 0 5px 10px 0 rgba(73,59,65,.15)
-            background: white
+            background: rgba(255, 255, 255, 0.95)
             margin-top: 0
+            box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1)
             #main-menu 
                 .menu-outer 
                     #mobile-menu 
                         .buger-icon
                             top: 13px
             .logo
-                position: relative
                 height: 50px
                 width: auto
-                left: 23px
                 padding: 0
-                position: absolute
-                top: 13px
-                position: absolute
+                left: 23px
+                top: 50%
+                transform: translateY(-50%)
                 &#footer-logo
                     display: none
                 &#footer-logo-black
@@ -264,6 +262,7 @@ html,body,#app,#block-main
         height: 400px
         left: 0
         top: 0
+        z-index: -1
     &:before
         background-size: 25px 25px
         background-image: radial-gradient(#0000000d 20%, transparent 15%), radial-gradient(#0000000d 20%, transparent 20%)
@@ -289,14 +288,17 @@ html,body,#app,#block-main
             transition: all .5s
             //height: 460px
             overflow: hidden
+            &:hover
+                .news-head
+                    &:before
+                        opacity: 0.6
+                    .btn-readmore
+                        display: block
+                .news-title
+                    color: $color-orange
             .news-head
-                //height: 350px
-                padding-top: 130%
-                margin-bottom: 10px  
-                flex: 1
                 background-position: center
                 background-size: cover
-                //max-height: 860px
                 &:before
                     content: ""
                     background: #f26d23
@@ -307,26 +309,21 @@ html,body,#app,#block-main
                     transition: all .3s
                     top: 0
                     left: 0
-                &:hover
-                    &:before
-                        opacity: 0.6
-                    a
-                        position: absolute
-                        top: 50%
-                        left: 50%
-                        width: 150px
-                        transform: translate(-50%, -50%)
-                        display: block
-                a
+                .btn-readmore
+                    top: 50%
+                    transform: translateY(-50%)
+                    position: absolute
                     display: none
                     z-index: 2
+                    text-align: center
+                    width: 150px
+                    &:hover
+                        display: block                    
                 .text-size-1
                     font-size: 13px !important
             .news-title
                 color: black
                 font-weight: 500
-                &:hover
-                    color: $color-orange
     .news-content
         .news-info
             margin-bottom: 5px
@@ -385,6 +382,24 @@ html,body,#app,#block-main
     transition: all .5s
     opacity: 0 !important
 
+// .el-scrollbar , .el-select-dropdown__list
+//     box-shadow: 0 2px 12px 0 rgba(0,0,0,.1)
+//     border-radius: 3px    
+//     overflow: visible
+
+#block-news
+    .el-input__inner
+        -webkit-appearance: none
+        border-radius: 0
+        border: unset
+        background: transparent
+        color: white
+    &.section
+        .el-input__inner
+            color: #606266
+            border: 1px solid #dcdfe6
+            background: white
+
 /* Responsive */
 
 @media only screen and (max-width: 1200px)
@@ -407,7 +422,7 @@ html,body,#app,#block-main
     #block-news 
         .news-list 
             .news-item 
-                margin-bottom: 20px
+                margin-bottom: 50px
                 .news-title
                     font-size: 16px
                 p

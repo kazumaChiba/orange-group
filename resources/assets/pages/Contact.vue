@@ -19,6 +19,7 @@
                         @click="brandName = item.name"
                     >
                         <img class="position-relative mb-2" :src="item.img">
+                        <img class="position-relative mb-2 hover-img" :src="item.hoverImg">
                         <p class="text-orange brand-title position-relative text-center d-none d-md-block">{{item.title}}</p>
                         <div v-html="item.intro"></div>
                     </div>
@@ -32,7 +33,6 @@
         <div id="contact-form">
             <contact-form :brand="brandName"></contact-form>
         </div>
-        
         <block-footer></block-footer>
     </div>
 </template>
@@ -48,31 +48,36 @@ export default {
         return {
             brandItems: [
                 {
-                    img: '/images/index_logo.png',
+                    img: '/images/icon_1.png',
+                    hoverImg: '/images/icon_1_white.png',
                     title: '橘色涮涮屋',
                     intro: '',
                     name: 'shabu',
                 },
                 {
-                    img: '/images/index_logo.png',
+                    img: '/images/icon_2.png',
+                    hoverImg: '/images/icon_2_white.png',
                     title: 'EXTENSION 1 BY 橘色',
                     intro: '',
                     name: 'extension_1',
                 },
                 {
-                    img: '/images/icon_m1cafe.png',
+                    img: '/images/icon_3.png',
+                    hoverImg: '/images/icon_3_white.png',
                     title: 'M ONE CAFE',
                     intro: '',
                     name: 'm_one_cafe',
                 },
                 {
-                    img: '/images/icon_m1spa.png',
+                    img: '/images/icon_4.png',
+                    hoverImg: '/images/icon_4_white.png',
                     title: 'M ONE SPA',
                     intro: '',
                     name: 'm_one_spa',
                 },
                 {
-                    img: '/images/icon_sakura.png',
+                    img: '/images/icon_5.png',
+                    hoverImg: '/images/icon_5_white.png',
                     title: 'SAKURA SPA',
                     intro: '',
                     name: 'sakura_spa',
@@ -123,11 +128,18 @@ export default {
                         flex: 50%
                     img
                         width: 80px
+                        &.hover-img
+                            display: none
                     >*
                         z-index: 2
                     &:not(.-intro-text)
                         &:hover , &.active
                             cursor: pointer
+                            img
+                                &:not(.hover-img)
+                                    display: none
+                                &.hover-img
+                                    display: block
                             .brand-title , p
                                 color: white !important
                             &:before

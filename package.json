@@ -53,9 +53,6 @@
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-free-brands": "^5.0.13",
-    "@fortawesome/fontawesome-pro-light": "^5.0.13",
-    "@fortawesome/fontawesome-pro-regular": "^5.0.13",
-    "@fortawesome/fontawesome-pro-solid": "^5.0.13",
     "@fortawesome/vue-fontawesome": "0.0.22",
     "ajv": "^6.5.0",
     "animate.css": "^3.7.0",
@@ -75,8 +72,10 @@
     "stf-vue-select": "^0.1.11",
     "svgo": "^1.0.5",
     "svgo-loader": "^2.1.0",
+    "v-owl-carousel": "^1.0.2",
     "vue-autosize": "git+https://github.com/mage3k/vue-autosize.git",
     "vue-axios": "^2.1.1",
+    "vue-carousel": "^0.13.1",
     "vue-fullpage": "^2.0.5",
     "vue-fullpage.js": "0.0.4",
     "vue-hotel-datepicker": "git+https://github.com/northwalker/vue-hotel-datepicker.git",
@@ -85,6 +84,7 @@
     "vue2-scrollbar": "0.0.3",
     "vuejs-datepicker": "^0.9.29",
     "vuex": "^3.0.1",
+    "vuex-router-sync": "^5.0.0",
     "xlsx": "^0.13.0",
     "yarn": "^1.6.0"
   }

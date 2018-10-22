@@ -3,7 +3,7 @@
         <div 
             v-if="$route.path != '/'" 
             id="header" 
-            class="w-100"
+            class=""
         >
             <div class="d-flex w-100">
                 <router-link :to="'/'">
@@ -38,7 +38,7 @@ export default {
     mounted: function() {
         jQuery(document).ready(function(){
             jQuery(window).scroll(function(){
-                if(jQuery(window).scrollTop() > 150){
+                if(jQuery(window).scrollTop() > 0){
                     jQuery("#header").addClass("position-fixed");
                 }
                 else{

@@ -38,7 +38,7 @@
             </div>
         </div>
         <div id="teams-say" class="d-none d-lg-block">
-            <div
+            <!-- <div
                 class="d-flex teams-content text-white position-relative align-items-center" 
                 :style="'background-image:url('+slick_teams[teamIndex].img_big+')'"
             >
@@ -47,7 +47,25 @@
                     <p class="team-desc position-relative" v-html="slick_teams[teamIndex].text"></p>
                     <span class="team-name d-block text-right  position-relative">- {{slick_teams[teamIndex].team}} {{slick_teams[teamIndex].member}}</span>
                 </div>
-            </div>
+            </div> -->
+            <slick
+                class="teams-view"
+                ref="slick"
+                :options="teamsOptionView"
+            >
+                <div 
+                    class="team-content"
+                    v-for="(item,$index) in slick_teams"
+                    :key="$index"    
+                    :style="'background-image:url('+item.img_big+')'"
+                >
+                    <div class="team-content-texts position-relative d-flex flex-column justify-content-center text-white">
+                        <h3 class=" position-relative">看看我們的夥伴們怎麼說</h3>
+                        <p class="team-desc position-relative" v-html="item.text"></p>
+                        <span class="team-name d-block text-right  position-relative">- {{item.team}} {{item.member}}</span>
+                    </div>
+                </div>
+            </slick>
             <slick
                 class="teams"
                 ref="slick"
@@ -124,6 +142,9 @@ export default {
             teamsOption: {
                 slidesToShow: 4,
                 slidesToScroll: 4,
+                asNavFor: '.teams-view',
+                focusOnSelect: true,
+                arrows: false,
                 responsive: [
                     {
                         breakpoint: 991,
@@ -135,34 +156,40 @@ export default {
                     }
                 ],
             },
+            teamsOptionView: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                asNavFor: '.teams',
+            },
             slick_teams: [
                 {
                     team: '橘色公關團隊1',
                     member: '某某某',
-                    text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
+                    text: '「測試描述文試描述文字測試描述文字測試描述文字測試描述文字」',
                     img: '/images/family_s1.png',
-                    img_big: '/images/family_s1.png',
+                    img_big: '/images/family_b1.png',
                 },
                 {
                     team: '橘色公關團隊2',
                     member: '某某某',
-                    text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
+                    text: '「測試描述文試描述文字測試描述文字測試描述文字測試描述文字」',
                     img: '/images/family_s2.png',
-                    img_big: '/images/family_s2.png',
+                    img_big: '/images/family_b2.png',
                 },
                 {
                     team: '橘色公關團隊3',
                     member: '某某某',
-                    text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
+                    text: '「測試描述文試描述文字測試描述文字測試描述文字測試描述文字」',
                     img: '/images/family_s3.png',
-                    img_big: '/images/family_s3.png',
+                    img_big: '/images/family_b3.png',
                 },
                 {
                     team: '橘色公關團隊4',
                     member: '某某某',
-                    text: '「測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字測試描述文字」',
+                    text: '「測試描述文試描述文字測試描述文字測試描述文字測試描述文字」',
                     img: '/images/family_s4.png',
-                    img_big: '/images/family_s4.png',
+                    img_big: '/images/family_b4.png',
                 },
             ],
             teamIndex: 0,
@@ -183,6 +210,7 @@ export default {
             this.$refs.slick.prev();
         },
         reInit() {
+            console.log("reinit");
             this.$nextTick(() => {
                 this.$refs.slick.reSlick();
             });
@@ -204,9 +232,8 @@ export default {
                 fadein();
             });
 
-            jQuery(".team-item").click(function(){
-                jQuery(".team-item.active").removeClass("active");
-                jQuery(this).addClass("active");
+            jQuery(window).resize(function(){
+                jQuery(".slick-slider").slick('resize');
             });
 
             function fadein(){
@@ -268,6 +295,8 @@ export default {
             clip-path: ellipse(80vw 55vh at 50vw 30vh)
             z-index: 2
             background-size: cover
+            background-attachment: fixed
+            background-position: center
             &:before
                 background: rgba(74, 31, 12, 0.5)
                 width: 100%
@@ -278,7 +307,7 @@ export default {
             p
                 z-index: 2
             .slide-title
-                font-size: 110px
+                font-size: 10vw
                 font-weight: 600
             .slide-subtitle
                 font-size: 42px
@@ -300,6 +329,7 @@ export default {
                 &:after
                     height: 30px 
                     animation: scrolling 1.5s infinite ease-in-out
+                    background: #f3621d
             &:before
                 content: ""
                 position: absolute
@@ -405,24 +435,28 @@ export default {
                     color: gray
     
     #teams-say
-        .teams-content
-            min-height: 700px
-            padding: 0 20vw
+        .team-content
+            background-position: center
+            background-size: cover
+            .team-content-texts
+                &:before
+                    content: ""
+                    position: absolute
+                    background: linear-gradient(to right,rgba(0, 0, 0, 0.5),transparent)
+                    width: 100vw
+                    height: 100%
+                    left: 0
+                    top: 0
+                    z-index: 1
+        .teams-view
             background-repeat: no-repeat
             background-size: cover
             background-position: center
             transition: all .5s
             .team-content-texts
                 width: 60%
-            &:before
-                content: ""
-                position: absolute
-                background: rgba(0, 0, 0, 0.3)
-                width: 100%
-                height: 100%
-                left: 0
-                top: 0
-                z-index: 1
+                height: 700px
+                padding: 20vw 0 20vw 20vw
             &:after
                 content: ""
                 position: absolute
@@ -456,6 +490,13 @@ export default {
                 font-size: 20px
                 z-index: 2
         .teams
+            .slick-current
+                .team-item
+                    .team-title
+                        color: white
+                    &:before
+                        background: rgba(242, 108, 36, 0.85)
+                        transition: all .5s
             .team-item
                 height: 25vw
                 cursor: pointer
@@ -475,7 +516,7 @@ export default {
                     width: 100%
                     height: 100%
                     background: white
-                &:hover , &.active
+                &:hover
                     .team-title
                         color: white
                     &:before
@@ -549,12 +590,22 @@ export default {
                     padding: 40px 20px
                     background-size: cover
                     background-position: center
+                    &:before
+                        content: ""
+                        position: absolute
+                        background: linear-gradient(to right,rgba(0, 0, 0, 0.5),transparent)
+                        width: 100vw
+                        height: 100%
+                        left: 0
+                        top: 0
+                        z-index: 1
                 .team-desc
                     padding: 0  
                     width: 60%
                     line-height: 20px
                     font-size: 14px
                     letter-spacing: 1px
+                    z-index: 2
                     &:before
                         display: none
                 &:after

@@ -17,15 +17,28 @@
                     <div
                         v-for="(item , $index) in foodItems"
                         :key="$index" class="more-food-info"
-                        @click="food_index = $index;  bgAnimated(100); startAnimate(500)"
+                        @click="clickValue($index)"
                         :class="food_index == $index ? 'active' : ''"
                         :style="'background-image:url('+item.url+')'"
                     ></div>
                  </div>
             </div>
             <div class="content-food right-content d-flex flex-column justify-content-center position-relative text-md-left text-center">
-                <svg class="loader" :class="{active : addTransition}">
-                    <circle class="internal-circle" cx="30%" cy="55%" r="450"></circle>
+                <svg 
+                    :class="{'active' : addTransition}"
+                    class="loader" 
+                    viewBox="0 0 850 850" 
+                >
+                <g id="Content-Menu-3" style="opacity:0.3;">
+                    <g id="Group-2">
+                        <path id="Path-7" style="fill:none;stroke:#EB5E00;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;" d="M694.2,99.9
+                            c27.2,23.1,46.5,43.1,57.8,60.2"/>
+                        <path id="Path-6" style="fill:none;stroke:#EB5E00;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;" d="M122.8,124
+                            c41.4-46.8,92.6-79.2,153.5-97"/>
+                        <path id="Path-8" style="fill:none;stroke:#EB5E00;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;" d="M807.9,593.7
+                            C739.6,735,629.3,817.4,477,840.9"/>
+                    </g>
+                </g>
                 </svg>
                 <h3 class="main-title text-black text-uppercase w-100">
                     <span class="fs-inherit text-orange">橘色</span>價值
@@ -83,6 +96,13 @@
             }
         },
         methods: {
+            clickValue(value){
+                if(!this.addTransition){
+                    this.food_index = value;  
+                    this.bgAnimated(100); 
+                    this.startAnimate(1000);
+                }
+            },
             bgAnimated(time){
                 this.bgTransition = true;
                 setTimeout(()=>{
@@ -104,7 +124,7 @@
 <style lang="sass" rel="stylesheet/sass">
     #block-foods
         background-size: cover
-        background-position: 0
+        background-position: center
         &.active
             .block-food-body
                 .content-food
@@ -210,21 +230,14 @@
                             letter-spacing: 2px
                     .loader
                         position: absolute
-                        width: 50vw
+                        width: auto
                         height: 100vh
-                        stroke-linecap: round
-                        stroke-width: 5
-                        fill: none
-                        left: 0 
-                        .internal-circle
-                            stroke: #f26c23
-                            stroke-dasharray: 55%,10%,25%
-                            opacity: .4
-                            transform-origin: 30% 55%
+                        bottom: -30px
+                        left: -140px 
                         &.active
-                            .internal-circle
-                                transform: rotate(180deg)
-                                transition: all .5s ease-in-out
+                            transform: rotate(360deg)
+                            transition: all 1s cubic-bezier(1.00, 0.105 , 0.00, 1.00)
+                                
                     .more-food-info
                         display: none
 
@@ -275,8 +288,11 @@
                                 font-size: 12px
                                 letter-spacing: 2px
                         .loader
-                            width: 100vw
-                            left: 15%
+                            width: 120%
+                            left: -30px
+                            top: -10px
+                            #Content-Menu-3
+                                opacity: 0.6 !important
     
     @media only screen and (max-width: 420px)
         #app 
@@ -285,12 +301,6 @@
                     .content-food 
                         &.right-content
                             padding: 25px 20px
-                        .loader
-                            circle
-                                transform: scale(0.6)
-                            &.active
-                                circle
-                                    transform: rotate(180deg) scale(0.6)
 
 
 </style>

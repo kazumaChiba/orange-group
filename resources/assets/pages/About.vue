@@ -375,14 +375,16 @@ export default {
 
             function scrollTabs(){
 	            if(jQuery("#block-about-year .circle-b").length > 0){
-		            if(jQuery(window).scrollTop() >= jQuery("#block-secret").offset().top - 100){
-			            jQuery("#about-tabs").addClass("position-fixed");
-			            // jQuery("#header").addClass("hidden");
-		            }
-		            else{
-			            jQuery("#about-tabs").removeClass("position-fixed");
-			            // jQuery("#header").removeClass("hidden");
-		            }
+                    if(jQuery(window).width() > 768){
+                        if(jQuery(window).scrollTop() >= jQuery("#block-secret").offset().top - 100){
+                            jQuery("#about-tabs").addClass("position-fixed");
+                            jQuery("#header").addClass("hidden").css("z-index","1");
+                        }
+                        else{
+                            jQuery("#about-tabs").removeClass("position-fixed");
+                            jQuery("#header").removeClass("hidden").css("z-index","99999");
+                        }
+                    }
                 }
 
                 if(jQuery("#block-about-year").length > 0){
@@ -428,7 +430,6 @@ export default {
         left: 50%
         transform: translateX(-50%)
         margin-top: 50px
-
         &.position-fixed
             border-bottom: 2px solid #efefef
             position: fixed
@@ -641,8 +642,8 @@ export default {
                         display: inline-block
                         font-size: 35px
             .year-right
-                height: 470px
-                overflow-y: scroll
+                // height: 470px
+                // overflow-y: scroll
                 flex: 5
                 padding: 40px 0 40px 100px
             .year-month-list
@@ -788,10 +789,11 @@ export default {
                                     transform: scale(0.5)
                 .year-body 
                     .year-left
-                        padding: 40px 0
-                        flex: 2
-                        span
-                            font-size: 20px
+                        display: none
+                        // padding: 40px 0
+                        // flex: 2
+                        // span
+                        //     font-size: 20px
                     .year-right
                         padding: 0 0 0 15px
                         .year-month-list 
@@ -803,7 +805,7 @@ export default {
                                         font-size: 18px
                                 .right
                                     padding: 0 10px
-                                    .title
+                                    .title ㄔ
                                         font-size: 16px
 
             #block-about-video 
